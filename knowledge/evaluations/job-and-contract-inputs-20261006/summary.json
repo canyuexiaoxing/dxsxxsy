@@ -1,0 +1,63 @@
+[
+  {
+    "case": {
+      "id": "job-ad",
+      "title": "模拟招聘信息审查",
+      "official_url": null,
+      "section": "结构化招聘文字输入",
+      "facts": "招聘信息（模拟材料，不对应真实企业）\n招聘单位：示例客户服务有限公司（虚构）\n岗位：客户服务专员；招聘对象：应届毕业生，无经验可培训。\n工作地点：杭州；月薪：5000至6500元，具体金额面议。\n工作时间：每日8小时、每周5天；入职签订劳动合同，依法办理社保。\n入职条件：报到时向公司缴纳岗位保障金1000元，离职办完交接后退还。\n证件要求：入职时提交身份证和毕业证原件，由公司统一保管三个月，期满返还。\n本材料仅为招聘信息，求职者尚未付款、未交证件、未签约、未到岗。\n",
+      "expected": [
+        "识别1000元岗位保障金",
+        "识别身份证毕业证原件保管三个月",
+        "不能把未发生的欠薪、社保漏缴、培训贷或违约金写成事实"
+      ],
+      "request": "我打算应聘，请审查这则招聘信息。还没有付款、交证件或入职，不要把条款风险当作已经发生的损害。"
+    },
+    "report_generated": true,
+    "quotes_match_supplied_material": true,
+    "finding_titles": [
+      "以“岗位保障金”作为入职条件，属禁止性收费安排",
+      "要求上交身份证、毕业证原件并由公司保管三个月",
+      "薪资仅写区间且“面议”，具体待遇不明确",
+      "工作时间与社保仅作概括承诺，缺少可核对细节"
+    ],
+    "citation_ids": [
+      "K001",
+      "K007",
+      "LCL-084",
+      "SUP-F19",
+      "SUP-R001",
+      "SUP-R003"
+    ],
+    "followup_action": "answer",
+    "report_versions_after_followup": 1,
+    "elapsed_seconds": 31.8,
+    "error": null
+  },
+  {
+    "case": {
+      "id": "contract-pdf",
+      "title": "模拟劳动合同PDF审查",
+      "official_url": null,
+      "section": "两页待签劳动合同PDF",
+      "facts": "使用附带PDF完整条款，不使用案情总结。",
+      "file_path": "E:\\workp\\aixx\\output\\pdf\\模拟劳动合同.pdf",
+      "expected": [
+        "一年合同三个月试用期超限",
+        "试用期不缴社保",
+        "未约定专项培训服务期和竞业限制却设置30000元辞职违约金",
+        "正常报酬与工时条款不额外报风险",
+        "引用对应的PDF原文及页码"
+      ],
+      "request": "我准备入职，这是对方发来的两页待签劳动合同草案。请逐条审查风险并给出修改建议；尚未签署或实际履行，不要假定已发生欠薪、未缴社保或解除。"
+    },
+    "report_generated": null,
+    "quotes_match_supplied_material": null,
+    "finding_titles": null,
+    "citation_ids": null,
+    "followup_action": null,
+    "report_versions_after_followup": null,
+    "elapsed_seconds": 51.9,
+    "error": "报告内容或引用修正后仍不合要求，本次未写入报告；请重试或补充材料"
+  }
+]

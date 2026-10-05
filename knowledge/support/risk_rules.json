@@ -1,0 +1,623 @@
+[
+  {
+    "id": "SUP-R001",
+    "title": "入职收费",
+    "kind": "support",
+    "text": "用人单位将交押金或其他收费作为招用条件，须核对主体、用途、录用关联；正常第三方独立服务不能一概判红。\n关联依据编号：K001、K005",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "入职收费",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K001",
+      "K005"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R002",
+    "title": "招聘转培训和贷款",
+    "kind": "support",
+    "text": "先招聘再以能力不足推销培训贷款，核对招聘承诺、培训与放款主体；高风险信号不等于最终诈骗定性。\n关联依据编号：K005、K001",
+    "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "招聘转培训和贷款",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K005",
+      "K001"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R003",
+    "title": "扣押证件",
+    "kind": "support",
+    "text": "扣留身份证或其他证件原件作为入职或离职条件；正常查验不等于扣押。\n关联依据编号：K001",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "扣押证件",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K001"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R004",
+    "title": "招聘与培训主体不同",
+    "kind": "support",
+    "text": "属于需要关注的组合信号，不能仅因主体不同直接判违法；核对独立培训自愿性、收费、岗位承诺。\n关联依据编号：K005",
+    "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "招聘与培训主体不同",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K005"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R005",
+    "title": "就业歧视",
+    "kind": "support",
+    "text": "核实限制性别、地域等要求与岗位关系及法定例外，不直接套用其他案例赔偿金额。\n关联依据编号：SUP-L-employment-3、SUP-L-employment-26、SUP-L-women-43",
+    "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "就业歧视",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "SUP-L-employment-3",
+      "SUP-L-employment-26",
+      "SUP-L-women-43"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R006",
+    "title": "付费保录直签",
+    "kind": "support",
+    "text": "收费且保证国企录取或声称送钱即可入职是重点风险，核对官方招聘公告；一般内推不当然违法。\n关联依据编号：SUP-W-hiring",
+    "url": "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543035.shtml",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "付费保录直签",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "SUP-W-hiring"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R007",
+    "title": "职业中介许可",
+    "kind": "support",
+    "text": "经营性职业中介需要人力资源服务许可；咨询培训等其他业务可能实行备案。未展示证件不等于已核实无许可，应核实当地许可公示。\n关联依据编号：SUP-L-market",
+    "url": "https://www.beijing.gov.cn/zhengce/gwywj/201905/t20190522_61354.html",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "职业中介许可",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "SUP-L-market"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R008",
+    "title": "高薪低门槛",
+    "kind": "support",
+    "text": "异常高薪、零门槛、无需面试等宣传须结合主体和具体岗位核实。\n关联依据编号：K005",
+    "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "高薪低门槛",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K005"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R009",
+    "title": "制造焦虑推销培训",
+    "kind": "support",
+    "text": "打击求职者能力后推销培训，核对是否以培训或贷款为安排工作条件。\n关联依据编号：K005",
+    "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "制造焦虑推销培训",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K005"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R010",
+    "title": "主体不明或查询无结果",
+    "kind": "support",
+    "text": "索取全称和统一社会信用代码，交叉核实名称与登记；一次搜索无结果不能证明未注册，异常记录也需核对日期和内容。\n关联依据编号：核查入口与用途说明；不作法律定性",
+    "url": "https://12333.gov.cn/",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "主体不明或查询无结果",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R011",
+    "title": "薪资面议",
+    "kind": "support",
+    "text": "本身不当然违法；要求书面明确工资构成、支付时间、绩效条件和工作地点。\n关联依据编号：K002、LCL-017",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "薪资面议",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K002",
+      "LCL-017"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R012",
+    "title": "超过一个月未签合同",
+    "kind": "support",
+    "text": "先核对实际用工起点、书面文件内容、是否拒签及相关例外；不能看到未签合同就自动计算二倍工资。\n关联依据编号：K003、LCL-082",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "超过一个月未签合同",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K003",
+      "LCL-082"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R013",
+    "title": "试用期不办理社保",
+    "kind": "support",
+    "text": "在适用劳动关系及法定参保范围内核对30日登记义务和实际缴费，不把试用期视为免缴。\n关联依据编号：SUP-L-social-58、SUP-L-social-84、LL-2018-072",
+    "url": "https://www.hbqj.gov.cn/zjz/zfxxgk/fdzdgknr/gysyjs_34501/shbz_36238/202106/t20210624_3611391.html",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "试用期不办理社保",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "SUP-L-social-58",
+      "SUP-L-social-84",
+      "LL-2018-072"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R014",
+    "title": "空白合同或仅约定试用期",
+    "kind": "support",
+    "text": "空白合同要求先补齐；仅约定试用期则试用期不成立，该期限为劳动合同期限，不等于整份合同全部无效。\n关联依据编号：LCL-016、LCL-017、K004",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "空白合同或仅约定试用期",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "LCL-016",
+      "LCL-017",
+      "K004"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R015",
+    "title": "自愿放弃社保",
+    "kind": "support",
+    "text": "不能以约定放弃或现金补贴替代法定参保义务，应核对适用范围和缴费记录。\n关联依据编号：LL-2018-072、SUP-L-social-58",
+    "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "自愿放弃社保",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "LL-2018-072",
+      "SUP-L-social-58"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R016",
+    "title": "三方协议违约金",
+    "kind": "support",
+    "text": "原R016与R017合并；删除5万元和5000元机械阈值。根据损失、违约及协议性质审查，依法请求调整而非承诺免除。\n关联依据编号：SUP-L-civil-585、LCL-025",
+    "url": "https://www.court.gov.cn/zixun/xiangqing/233181.html",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "三方协议违约金",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "SUP-L-civil-585",
+      "LCL-025"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R018",
+    "title": "外包与劳务派遣",
+    "kind": "support",
+    "text": "A签合同、B管理属于进一步核查信号，也可能是合法派遣。结合合同、实际管理、岗位和许可判断，不只看主体不同。\n关联依据编号：SUP-L-dispatch、LCL-057、LCL-058、LCL-066",
+    "url": "https://rsj.sh.gov.cn/trlzyhshbzbgz_17256/20240813/t0035_1427021.html",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "外包与劳务派遣",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "SUP-L-dispatch",
+      "LCL-057",
+      "LCL-058",
+      "LCL-066"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R020",
+    "title": "境外高薪招聘",
+    "kind": "support",
+    "text": "异常高薪与旅游签证、接送、先缴费等组合需重点核实合法工作手续；不把所有境外岗位判诈骗。\n关联依据编号：SUP-W-overseas",
+    "url": "https://gaj.wuhan.gov.cn/jmzx/jfts/202502/t20250210_2530886.html",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "境外高薪招聘",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "SUP-W-overseas"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R021",
+    "title": "重复或期满延长试用期",
+    "kind": "support",
+    "text": "同一单位同一劳动者仅可约定一次，试用期届满后再试用须重点审查。违法试用期赔偿还须核对实际履行和超出时间。\n关联依据编号：K004、LCL-083",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "重复或期满延长试用期",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K004",
+      "LCL-083"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R022",
+    "title": "试用期超过上限",
+    "kind": "support",
+    "text": "分别核对合同长度对应1、2、6个月上限，以及不得约定试用期的情形，不能只查是否超过6个月。\n关联依据编号：K004",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "试用期超过上限",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K004"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R023",
+    "title": "试用期低工资",
+    "kind": "support",
+    "text": "完整读取实施条例十五条的或者与最低工资底线，查合同工资、同岗工资、地点及标准。\n关联依据编号：SUP-L-implementation、LCL-020",
+    "url": "https://rsj.sh.gov.cn/tgwyxzfgwj_17255/20200617/t0035_1388240.html",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "试用期低工资",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "SUP-L-implementation",
+      "LCL-020"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R024",
+    "title": "无薪试岗",
+    "kind": "support",
+    "text": "查是否实际用工、劳动管理、交付劳动；真实短时面试技能测试不得自动当作劳动关系。\n关联依据编号：LCL-007、LCL-030",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "无薪试岗",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "LCL-007",
+      "LCL-030"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R025",
+    "title": "绩效不达标辞退",
+    "kind": "support",
+    "text": "核对录用条件、制度告知、实际证据、培训调岗及解除程序；不将缺少一项证据直接推导为必获2N。\n关联依据编号：LCL-021、LCL-039、LCL-040、LCL-048、LCL-087",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "绩效不达标辞退",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "LCL-021",
+      "LCL-039",
+      "LCL-040",
+      "LCL-048",
+      "LCL-087"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R026",
+    "title": "拖欠或克扣工资",
+    "kind": "support",
+    "text": "核对约定发薪日、应付与实际到账、扣款理由及证据。\n关联依据编号：LL-2018-050、LCL-030",
+    "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "拖欠或克扣工资",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "LL-2018-050",
+      "LCL-030"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R027",
+    "title": "996与未付加班费",
+    "kind": "support",
+    "text": "工时上限和加班报酬分别判断，时间跨度不等于实际工时；核实休息、审批和考勤。\n关联依据编号：LL-2018-041、LL-2018-042、LL-2018-044",
+    "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "996与未付加班费",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "LL-2018-041",
+      "LL-2018-042",
+      "LL-2018-044"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R028",
+    "title": "口头加班与审批",
+    "kind": "support",
+    "text": "保留工作安排与考勤，未办理审批不当然排除实际安排加班；自愿加班也须核实实际工作要求。\n关联依据编号：LL-2018-044",
+    "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+    "location": "风险判定辅助",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "口头加班与审批",
+      "风险判定辅助"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "LL-2018-044"
+    ],
+    "support_category": "风险判定辅助",
+    "origin_document": "三色判定规则库.docx"
+  }
+]

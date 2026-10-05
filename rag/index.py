@@ -17,6 +17,7 @@ def select_evidence(ranked_ids,mapping):
     ranked=[mapping[sid] for sid in ranked_ids if sid in mapping]
     chosen=[e for e in ranked if e['kind']=='law'][:3]
     chosen += [e for e in ranked if e['kind'] in {'warning','guide'}][:2]
+    chosen += [e for e in ranked if e['kind']=='support'][:2]
     cases=[e for e in ranked if e['kind']=='case']
     if cases:
         case=cases[0]
@@ -77,7 +78,7 @@ class KnowledgeIndex:
             entries=self._entries(); mapping={e['id']:e for e in entries}
             vector=self.embedding.encode([query])
             semantic=[]
-            for kinds in [('law',),('warning','guide'),('case',)]:
+            for kinds in [('law',),('warning','guide'),('support',),('case',)]:
                 count=sum(e['kind'] in kinds for e in entries)
                 if not count: continue
                 condition={'kind':kinds[0]} if len(kinds)==1 else {'kind':{'$in':list(kinds)}}

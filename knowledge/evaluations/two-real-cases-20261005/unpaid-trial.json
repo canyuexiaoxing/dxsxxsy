@@ -1,0 +1,2143 @@
+{
+  "case": {
+    "id": "unpaid-trial",
+    "title": "河北无薪试岗",
+    "section": "七、河北某劳务派遣服务有限公司无薪试岗案",
+    "facts": "某劳务派遣服务有限公司以岗前培训考核、适应性试岗为名，设定3至7天的无薪试岗期。试岗期满后，企业以考核不合格、不适应岗位等理由辞退劳动者，拒不支付试岗期间的劳动报酬。",
+    "expected": [
+      "识别无薪试岗和劳动报酬风险",
+      "核查是否实际劳动及管理，不能凭名称断言劳动关系",
+      "建议保存劳动管理和报酬证据、向人社部门反映",
+      "不得自动保证2N或把官方处理结果说成用户事实"
+    ]
+  },
+  "official_url": "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543035.shtml",
+  "input_disclosure": "只输入案情事实，隐藏处理结论、处罚金额和未在输入中披露的资质调查结果；采用第三人称，不冒充真实受害人。",
+  "test_limit": "运行库已有相关案例，属于集成验证，不是独立盲测。",
+  "turns": [
+    {
+      "input": "请分析这份招聘或用工材料的风险，并给出依据及下一步建议。",
+      "reply": {
+        "session_id": "Sbbf867b0675c4d15a2547086be6aa085",
+        "action": "report",
+        "message": "",
+        "questions": [],
+        "evidence_ids": [
+          "LCL-007",
+          "LCL-030",
+          "LCL-058",
+          "LCL-083",
+          "LL-2018-021",
+          "SUP-F06",
+          "SUP-R024",
+          "K005"
+        ],
+        "report": {
+          "summary": "材料描述的是一家中介/劳务派遣公司以“岗前培训考核、适应性试岗”为名设定3-7天无薪试岗期，试岗期满以“考核不合格、不适应岗位”辞退且拒付试岗期报酬的模式。其核心风险在于：以“试岗”名义可能掩盖实际用工、借试用/考核之名规避劳动报酬义务，且存在被反复“试岗—辞退”而不予支付报酬的操作空间。是否构成违法、能否主张报酬，取决于试岗期间是否已实际接受劳动管理、是否实际提供劳动及证据保存情况，需结合事实核验，本报告不构成对该公司违法或犯罪的认定。",
+          "findings": [
+            {
+              "title": "以“无薪试岗期”名义用工，可能规避劳动报酬支付义务",
+              "level": "high",
+              "quote": "某劳务派遣服务有限公司以岗前培训考核、适应性试岗为名，设定3至7天的无薪试岗期。",
+              "material_id": "M294452dd2dd54bae9408b8467df23c6f",
+              "page_number": 1,
+              "explanation": "材料显示一律设定3-7天无薪试岗。依据《劳动合同法》第七条，用人单位自用工之日起即与劳动者建立劳动关系；第三十条要求按约定和国家规定及时足额支付劳动报酬。因此若试岗期间劳动者已实际接受劳动管理、按安排提供劳动，则“无薪”约定不能对抗依法支付报酬的义务，需要结合考勤、工作安排、劳动成果等判断是否属于真实用工。注意：短暂的真实面试技能测试不能直接等同于劳动关系，须区分具体情形。",
+              "evidence_ids": [
+                "LCL-007",
+                "LCL-030",
+                "SUP-F06",
+                "SUP-R024"
+              ],
+              "suggestions": [
+                "留存试岗通知、排班/考勤记录、工作群聊天、任务分配与成果、工位与门禁记录、同岗位正式员工信息等，用以证明是否实际接受劳动管理并提供劳动。",
+                "要求对方书面明确试岗期间是否安排工作、由谁管理、是否计薪；对“无薪”要求可要求书面说明并保留拒绝无薪安排的意思表示证据。",
+                "如已实际提供劳动，可通过劳动监察投诉或劳动仲裁主张该期间报酬，注意仲裁时效；不要因约定“无薪”而当然放弃主张。"
+              ]
+            },
+            {
+              "title": "试用期/试岗期上限与“不合格”辞退理由的合法性需核实",
+              "level": "attention",
+              "quote": "试岗期满后，企业以考核不合格、不适应岗位等理由辞退劳动者，拒不支付试岗期间的劳动报酬。",
+              "material_id": "M294452dd2dd54bae9408b8467df23c6f",
+              "page_number": 1,
+              "explanation": "材料称试岗期满以“考核不合格、不适应岗位”辞退。一方面，若将“试岗”认定为试用期，其时长须与合同期限对应并符合法定上限（且同一双方只能约定一次试用期），材料未提供劳动合同期限与试用期约定，无法直接判断是否超越法定上限；另一方面，以“不符合录用条件”解除须有事先明确的录用条件、可核查的考核依据和充分证据，仅凭“不适应岗位”可能难以支撑合法解除。此点需补足考核标准和解除依据后才能定性。",
+              "evidence_ids": [
+                "LL-2018-021",
+                "LCL-083"
+              ],
+              "suggestions": [
+                "要求对方提供书面的试用期/试岗期约定、录用条件、考核标准与考核结果，核对合同期限与试用期上限是否匹配。",
+                "若被以“不合格”辞退，注意收集考核过程记录与解除通知，评估后续主张违法解除赔偿金或补足工资的可行性。",
+                "如试用期超过法定上限，可向劳动行政部门投诉，并留意第八十三条关于超期履行的赔偿金规定。"
+              ]
+            },
+            {
+              "title": "劳务派遣主体身份与报酬支付责任需核实",
+              "level": "attention",
+              "quote": "某劳务派遣服务有限公司以岗前培训考核、适应性试岗为名，设定3至7天的无薪试岗期。",
+              "material_id": "M294452dd2dd54bae9408b8467df23c6f",
+              "page_number": 1,
+              "explanation": "材料指向“劳务派遣服务有限公司”。依据《劳动合同法》第五十八条，劳务派遣单位是用人单位，应当履行用人单位的义务，与劳动者订立二年以上固定期限劳动合同并按月支付劳动报酬；第五十九条要求劳务派遣单位与用工单位订立派遣协议，约定劳动报酬数额与支付方式。试岗期间报酬由派遣单位还是用工单位实际承担、是否已订立派遣协议，材料未说明，影响后续主张对象与路径，需核实。",
+              "evidence_ids": [
+                "LCL-058",
+                "LCL-059"
+              ],
+              "suggestions": [
+                "核实签约主体：是与派遣公司签约还是与用工单位直接签约，索要劳动合同、派遣协议中涉报酬条款的说明。",
+                "保存工资发放主体、银行卡流水、招聘渠道信息，明确向派遣单位主张还是向用工单位主张。",
+                "如对方以“试岗合格后再签合同”为由不签书面合同，可主张书面劳动合同权利并向劳动监察反映。"
+              ]
+            },
+            {
+              "title": "反复“试岗—辞退”模式的持续性风险与证据固定",
+              "level": "uncertain",
+              "quote": "试岗期满后，企业以考核不合格、不适应岗位等理由辞退劳动者，拒不支付试岗期间的劳动报酬。",
+              "material_id": "M294452dd2dd54bae9408b8467df23c6f",
+              "page_number": 1,
+              "explanation": "材料描述的是该公司惯常做法，但未提供个案证据（如具体岗位、持续时间、是否已有同类投诉或处理记录）。是否存在系统性规避报酬的用工模式、是否涉及更多劳动者，需进一步核实；此点目前只能作为风险提示，不能认定为违法或诈骗。",
+              "evidence_ids": [
+                "SUP-F06",
+                "LCL-030"
+              ],
+              "suggestions": [
+                "尽可能记录每次试岗的时间、岗位、对接人、考核结果与解除理由，形成时间线。",
+                "如发现同一公司短期反复招聘同类“试岗”岗位，可向当地劳动监察举报并联合其他受影响求职者提交材料。",
+                "如涉及收费培训、贷款等附加要求，参照K005提示：对要求高额费用培训才能安排岗位的，应谨慎核实并保留证据。"
+              ]
+            }
+          ],
+          "limitations": [
+            "材料仅为一段文字描述，未提供劳动合同、试用期约定、考勤记录、工资发放凭证、派遣协议等原始材料，无法判断试岗期间是否已实际接受劳动管理并提供劳动。",
+            "无法确认“试岗期”在法律上被认定为试用期、实习期还是普通用工的前置环节，影响试用期上限与解除合法性的判断。",
+            "未提供用人单位全称、所在地、劳动者身份（是否在校生）等信息，无法判断适用规则与主张路径。",
+            "本报告不构成对该公司违法或犯罪的认定，也不保证任何仲裁或诉讼结果；具体权利义务需结合完整证据与当地现行规定判断。"
+          ],
+          "change_reason": "",
+          "version": 1,
+          "created_at": "2026-10-05T15:46:34.030954+00:00",
+          "sources": [
+            {
+              "id": "K005",
+              "title": "五部门警惕招转培、培训贷风险提示",
+              "kind": "warning",
+              "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+              "location": "风险提示第三项",
+              "published_at": "2026-05-18",
+              "verified_at": "2026-10-03",
+              "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+              "scope": "求职被转向收费培训及培训贷款风险。",
+              "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+              "tags": [
+                "招转培",
+                "培训贷",
+                "贷款",
+                "高额培训费",
+                "包就业",
+                "先培训后入职"
+              ]
+            },
+            {
+              "id": "LCL-007",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "location": "第七条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-04",
+              "text": "第七条　用人单位自用工之日起即与劳动者建立劳动关系。用人单位应当建立职工名册备查。",
+              "scope": "本条所列情形；第二章　劳动合同的订立 ",
+              "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+              "tags": [
+                "劳动合同法",
+                "第七条",
+                "第二章　劳动合同的订立"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 7,
+              "chapter": "第二章　劳动合同的订立",
+              "section": "",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+            },
+            {
+              "id": "LCL-030",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "location": "第三十条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-04",
+              "text": "第三十条　用人单位应当按照劳动合同约定和国家规定，向劳动者及时足额支付劳动报酬。\n用人单位拖欠或者未足额支付劳动报酬的，劳动者可以依法向当地人民法院申请支付令，人民法院应当依法发出支付令。",
+              "scope": "本条所列情形；第三章　劳动合同的履行和变更 ",
+              "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+              "tags": [
+                "劳动合同法",
+                "第三十条",
+                "第三章　劳动合同的履行和变更"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 30,
+              "chapter": "第三章　劳动合同的履行和变更",
+              "section": "",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+            },
+            {
+              "id": "LCL-058",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "location": "第五十八条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-04",
+              "text": "第五十八条　劳务派遣单位是本法所称用人单位，应当履行用人单位对劳动者的义务。劳务派遣单位与被派遣劳动者订立的劳动合同，除应当载明本法第十七条规定的事项外，还应当载明被派遣劳动者的用工单位以及派遣期限、工作岗位等情况。\n劳务派遣单位应当与被派遣劳动者订立二年以上的固定期限劳动合同，按月支付劳动报酬；被派遣劳动者在无工作期间，劳务派遣单位应当按照所在地人民政府规定的最低工资标准，向其按月支付报酬。",
+              "scope": "本条所列情形；第五章　特别规定 第二节　劳务派遣",
+              "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+              "tags": [
+                "劳动合同法",
+                "第五十八条",
+                "第五章　特别规定"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 58,
+              "chapter": "第五章　特别规定",
+              "section": "第二节　劳务派遣",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [
+                "LCL-017"
+              ],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+            },
+            {
+              "id": "LCL-059",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "location": "第五十九条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-04",
+              "text": "第五十九条　劳务派遣单位派遣劳动者应当与接受以劳务派遣形式用工的单位（以下称用工单位）订立劳务派遣协议。劳务派遣协议应当约定派遣岗位和人员数量、派遣期限、劳动报酬和社会保险费的数额与支付方式以及违反协议的责任。\n用工单位应当根据工作岗位的实际需要与劳务派遣单位确定派遣期限，不得将连续用工期限分割订立数个短期劳务派遣协议。",
+              "scope": "本条所列情形；第五章　特别规定 第二节　劳务派遣",
+              "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+              "tags": [
+                "劳动合同法",
+                "第五十九条",
+                "第五章　特别规定"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 59,
+              "chapter": "第五章　特别规定",
+              "section": "第二节　劳务派遣",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+            },
+            {
+              "id": "LCL-083",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "location": "第八十三条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-04",
+              "text": "第八十三条　用人单位违反本法规定与劳动者约定试用期的，由劳动行政部门责令改正；违法约定的试用期已经履行的，由用人单位以劳动者试用期满月工资为标准，按已经履行的超过法定试用期的期间向劳动者支付赔偿金。",
+              "scope": "本条所列情形；第七章　法律责任 ",
+              "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+              "tags": [
+                "劳动合同法",
+                "第八十三条",
+                "第七章　法律责任"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 83,
+              "chapter": "第七章　法律责任",
+              "section": "",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+            },
+            {
+              "id": "LL-2018-021",
+              "title": "中华人民共和国劳动法",
+              "kind": "law",
+              "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+              "location": "第二十一条",
+              "published_at": "2018-12-29",
+              "verified_at": "2026-10-05",
+              "text": "第二十一条\n劳动合同可以约定试用期。试用期最长不得超过六个月。",
+              "scope": "本条所列情形；第三章 劳动合同和集体合同",
+              "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。劳动合同事项还应结合劳动合同法具体规定。试用期具体上限按合同期限区分，须结合劳动合同法第十九条；不得以六个月总上限认定一年合同约定六个月试用期合法。",
+              "tags": [
+                "劳动法",
+                "第二十一条",
+                "第三章 劳动合同和集体合同",
+                "试用期"
+              ],
+              "law_id": "labor-law-2018",
+              "article_number": 21,
+              "chapter": "第三章 劳动合同和集体合同",
+              "version": "2018年12月29日修正",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+              "related_article_ids": [
+                "K004"
+              ],
+              "supporting_source_urls": []
+            },
+            {
+              "id": "SUP-F06",
+              "title": "无薪试岗和面试技能测试",
+              "kind": "support",
+              "text": "不能用试岗名称掩盖实际用工。应核实是否已经接受劳动管理并提供实际劳动，若建立劳动关系，应依法支付报酬。短暂真实面试技能测试不能直接等同劳动关系。\n关联依据编号：LCL-007、LCL-030、LL-2018-050",
+              "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "location": "高频问答",
+              "published_at": "",
+              "verified_at": "2026-10-05",
+              "scope": "大学生招聘、签约、用工与就业权益咨询",
+              "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+              "tags": [
+                "无薪试岗和面试技能测试",
+                "高频问答"
+              ],
+              "content_form": "reviewed_support",
+              "verification_status": "curated_with_references",
+              "related_article_ids": [
+                "LCL-007",
+                "LCL-030",
+                "LL-2018-050"
+              ],
+              "support_category": "高频问答",
+              "origin_document": "大学生就业权益高频问题回答.docx"
+            },
+            {
+              "id": "SUP-R024",
+              "title": "无薪试岗",
+              "kind": "support",
+              "text": "查是否实际用工、劳动管理、交付劳动；真实短时面试技能测试不得自动当作劳动关系。\n关联依据编号：LCL-007、LCL-030",
+              "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "location": "风险判定辅助",
+              "published_at": "",
+              "verified_at": "2026-10-05",
+              "scope": "大学生招聘、签约、用工与就业权益咨询",
+              "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+              "tags": [
+                "无薪试岗",
+                "风险判定辅助"
+              ],
+              "content_form": "reviewed_support",
+              "verification_status": "curated_with_references",
+              "related_article_ids": [
+                "LCL-007",
+                "LCL-030"
+              ],
+              "support_category": "风险判定辅助",
+              "origin_document": "三色判定规则库.docx"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ]
+          },
+          {
+            "id": "LCL-007",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第七条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第七条　用人单位自用工之日起即与劳动者建立劳动关系。用人单位应当建立职工名册备查。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第七条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 7,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "LCL-030",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第三十条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第三十条　用人单位应当按照劳动合同约定和国家规定，向劳动者及时足额支付劳动报酬。\n用人单位拖欠或者未足额支付劳动报酬的，劳动者可以依法向当地人民法院申请支付令，人民法院应当依法发出支付令。",
+            "scope": "本条所列情形；第三章　劳动合同的履行和变更 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第三十条",
+              "第三章　劳动合同的履行和变更"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 30,
+            "chapter": "第三章　劳动合同的履行和变更",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "LCL-058",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第五十八条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第五十八条　劳务派遣单位是本法所称用人单位，应当履行用人单位对劳动者的义务。劳务派遣单位与被派遣劳动者订立的劳动合同，除应当载明本法第十七条规定的事项外，还应当载明被派遣劳动者的用工单位以及派遣期限、工作岗位等情况。\n劳务派遣单位应当与被派遣劳动者订立二年以上的固定期限劳动合同，按月支付劳动报酬；被派遣劳动者在无工作期间，劳务派遣单位应当按照所在地人民政府规定的最低工资标准，向其按月支付报酬。",
+            "scope": "本条所列情形；第五章　特别规定 第二节　劳务派遣",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第五十八条",
+              "第五章　特别规定"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 58,
+            "chapter": "第五章　特别规定",
+            "section": "第二节　劳务派遣",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [
+              "LCL-017"
+            ],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "LCL-059",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第五十九条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第五十九条　劳务派遣单位派遣劳动者应当与接受以劳务派遣形式用工的单位（以下称用工单位）订立劳务派遣协议。劳务派遣协议应当约定派遣岗位和人员数量、派遣期限、劳动报酬和社会保险费的数额与支付方式以及违反协议的责任。\n用工单位应当根据工作岗位的实际需要与劳务派遣单位确定派遣期限，不得将连续用工期限分割订立数个短期劳务派遣协议。",
+            "scope": "本条所列情形；第五章　特别规定 第二节　劳务派遣",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第五十九条",
+              "第五章　特别规定"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 59,
+            "chapter": "第五章　特别规定",
+            "section": "第二节　劳务派遣",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "LCL-083",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第八十三条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第八十三条　用人单位违反本法规定与劳动者约定试用期的，由劳动行政部门责令改正；违法约定的试用期已经履行的，由用人单位以劳动者试用期满月工资为标准，按已经履行的超过法定试用期的期间向劳动者支付赔偿金。",
+            "scope": "本条所列情形；第七章　法律责任 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第八十三条",
+              "第七章　法律责任"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 83,
+            "chapter": "第七章　法律责任",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "LL-2018-021",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第二十一条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第二十一条\n劳动合同可以约定试用期。试用期最长不得超过六个月。",
+            "scope": "本条所列情形；第三章 劳动合同和集体合同",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。劳动合同事项还应结合劳动合同法具体规定。试用期具体上限按合同期限区分，须结合劳动合同法第十九条；不得以六个月总上限认定一年合同约定六个月试用期合法。",
+            "tags": [
+              "劳动法",
+              "第二十一条",
+              "第三章 劳动合同和集体合同",
+              "试用期"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 21,
+            "chapter": "第三章 劳动合同和集体合同",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [
+              "K004"
+            ],
+            "supporting_source_urls": []
+          },
+          {
+            "id": "SUP-F06",
+            "title": "无薪试岗和面试技能测试",
+            "kind": "support",
+            "text": "不能用试岗名称掩盖实际用工。应核实是否已经接受劳动管理并提供实际劳动，若建立劳动关系，应依法支付报酬。短暂真实面试技能测试不能直接等同劳动关系。\n关联依据编号：LCL-007、LCL-030、LL-2018-050",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "无薪试岗和面试技能测试",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "LCL-007",
+              "LCL-030",
+              "LL-2018-050"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx"
+          },
+          {
+            "id": "SUP-R024",
+            "title": "无薪试岗",
+            "kind": "support",
+            "text": "查是否实际用工、劳动管理、交付劳动；真实短时面试技能测试不得自动当作劳动关系。\n关联依据编号：LCL-007、LCL-030",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "风险判定辅助",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "无薪试岗",
+              "风险判定辅助"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "LCL-007",
+              "LCL-030"
+            ],
+            "support_category": "风险判定辅助",
+            "origin_document": "三色判定规则库.docx"
+          }
+        ]
+      }
+    },
+    {
+      "input": "针对刚才报告，下一步应该找谁处理，需要保存哪些证据？不要假定已有处罚或保证获得赔偿。",
+      "reply": {
+        "session_id": "Sbbf867b0675c4d15a2547086be6aa085",
+        "action": "answer",
+        "message": "针对“下一步找谁处理、保存哪些证据”，结合你现有材料（仅为一段文字描述，尚无个案证据）分两步走：\n\n一、可以找谁\n1. 劳动保障监察（人力资源社会保障部门）：针对未签书面合同、无薪试岗、拖欠劳动报酬、劳务派遣单位违法收费（如以培训名义收费、扣押工资）等问题，可向用人单位所在地或用工所在地的人社部门劳动保障监察机构投诉举报。依据：LCL-030（用人单位应及时足额支付劳动报酬）；LL-2018-091（克扣或无故拖欠工资，劳动行政部门可责令支付工资报酬、经济补偿并可责令赔偿金）；LCL-060（派遣单位不得克扣报酬、派遣单位与用工单位不得向被派遣劳动者收费）。\n2. 劳动人事争议仲裁：如主张试岗期间工资、违法解除赔偿、未签书面合同等，可向劳动关系履行地或用人单位所在地的仲裁机构申请仲裁，注意时效。依据：SUP-L-arbitration-27（一般时效1年，自知道或应当知道权利被侵害之日起计算；因拖欠劳动报酬发生争议，劳动关系存续期间不受一年限制，但劳动关系终止的应自终止之日起一年内提出）；LCL-030（拖欠或未足额支付报酬可向法院申请支付令）。\n3. 其他渠道：如实际遭遇的是以“培训”为名的收费、贷款，向人社部门投诉举报或视情况向公安机关报案（K007、SUP-A01）；如属普通欠薪纠纷，优先走人社/仲裁渠道，与涉嫌犯罪的报案渠道区分开。\n4. 上级/线索渠道：若同一公司在短期内反复以“试岗—辞退”方式招聘同类岗位，可向当地人社部门反映线索，联合其他受影响求职者提交材料。\n\n二、需要保存的证据（越早固定越好）\n1. 招聘与沟通：招聘广告/岗位发布页面截图、聊天记录（微信/群/邮件）、试岗通知、对接人员身份信息。K007明确建议保留聊天记录、协议文本和转账凭证。\n2. 用工事实：考勤/排班记录、打卡截图、工位与门禁记录、任务分配与交付成果、工作群记录、同事证言、现场照片（注意不要泄露他人隐私）。C002案中法院正是依据实际接受劳动管理、取得报酬、工作属于公司业务组成来认定劳动关系（该案为地方文档核对、未核验法院官方来源的个案，仅供参考，不能直接套用）。\n3. 约定与主体：劳动合同、试用期/试岗期约定、录用条件与考核标准、劳务派遣协议相关条款、签约主体名称与统一社会信用代码。依据：LCL-058、LCL-059、LCL-060。\n4. 报酬与支付：工资约定、此前发薪记录与银行流水、工资发放主体、被扣款或收费的转账凭证。\n5. 解除环节：解除通知、辞退理由、考核结果告知记录（签收与否都留存，正常签收通知不等于同意解除，也不必一概拒收）。\n6. 时效与固定：尽量通过书面/可留痕方式向对方主张权利（可构成时效中断），记录主张时间；对易丢失的电子证据可做公证或使用可信时间戳。依据：SUP-L-arbitration-27。\n\n三、边界说明\n现有材料无法确认你是否已实际提供劳动、是否与派遣公司签约、试岗期是否被约定为试用期，因此不能判断是否构成违法、也不保证任何投诉或仲裁结果。是否受理、是否支持以及金额均取决于证据和当地规定。建议先做一次时间线梳理，再决定先投诉还是先仲裁；如涉及收费培训/贷款，可同时参考K005与SUP-A01，但已签借款不要自行停还。\n\n如需，我可以按你补充的信息（签约主体、是否实际工作、是否已有书面约定）给出更具体的渠道与材料清单。",
+        "questions": [],
+        "evidence_ids": [
+          "LCL-030",
+          "LL-2018-091",
+          "LCL-060",
+          "LCL-058",
+          "LCL-059",
+          "SUP-L-arbitration-27",
+          "K007",
+          "SUP-A01",
+          "C002-reasoning",
+          "K005"
+        ],
+        "report": null,
+        "sources": [
+          {
+            "id": "LCL-030",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第三十条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第三十条　用人单位应当按照劳动合同约定和国家规定，向劳动者及时足额支付劳动报酬。\n用人单位拖欠或者未足额支付劳动报酬的，劳动者可以依法向当地人民法院申请支付令，人民法院应当依法发出支付令。",
+            "scope": "本条所列情形；第三章　劳动合同的履行和变更 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第三十条",
+              "第三章　劳动合同的履行和变更"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 30,
+            "chapter": "第三章　劳动合同的履行和变更",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "LL-2018-091",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第九十一条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第九十一条\n用人单位有下列侵害劳动者合法权益情形之一的，由劳动行政部门责令支付劳动者的工资报酬、经济补偿，并可以责令支付赔偿金：\n（一）克扣或者无故拖欠劳动者工资的；\n（二）拒不支付劳动者延长工作时间工资报酬的；\n（三）低于当地最低工资标准支付劳动者工资的；\n（四）解除劳动合同后，未依照本法规定给予劳动者经济补偿的。",
+            "scope": "本条所列情形；第十二章 法律责任",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+            "tags": [
+              "劳动法",
+              "第九十一条",
+              "第十二章 法律责任"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 91,
+            "chapter": "第十二章 法律责任",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": []
+          },
+          {
+            "id": "LCL-060",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第六十条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第六十条　劳务派遣单位应当将劳务派遣协议的内容告知被派遣劳动者。\n劳务派遣单位不得克扣用工单位按照劳务派遣协议支付给被派遣劳动者的劳动报酬。\n劳务派遣单位和用工单位不得向被派遣劳动者收取费用。",
+            "scope": "本条所列情形；第五章　特别规定 第二节　劳务派遣",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第六十条",
+              "第五章　特别规定"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 60,
+            "chapter": "第五章　特别规定",
+            "section": "第二节　劳务派遣",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "LCL-058",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第五十八条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第五十八条　劳务派遣单位是本法所称用人单位，应当履行用人单位对劳动者的义务。劳务派遣单位与被派遣劳动者订立的劳动合同，除应当载明本法第十七条规定的事项外，还应当载明被派遣劳动者的用工单位以及派遣期限、工作岗位等情况。\n劳务派遣单位应当与被派遣劳动者订立二年以上的固定期限劳动合同，按月支付劳动报酬；被派遣劳动者在无工作期间，劳务派遣单位应当按照所在地人民政府规定的最低工资标准，向其按月支付报酬。",
+            "scope": "本条所列情形；第五章　特别规定 第二节　劳务派遣",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第五十八条",
+              "第五章　特别规定"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 58,
+            "chapter": "第五章　特别规定",
+            "section": "第二节　劳务派遣",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [
+              "LCL-017"
+            ],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "LCL-059",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第五十九条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第五十九条　劳务派遣单位派遣劳动者应当与接受以劳务派遣形式用工的单位（以下称用工单位）订立劳务派遣协议。劳务派遣协议应当约定派遣岗位和人员数量、派遣期限、劳动报酬和社会保险费的数额与支付方式以及违反协议的责任。\n用工单位应当根据工作岗位的实际需要与劳务派遣单位确定派遣期限，不得将连续用工期限分割订立数个短期劳务派遣协议。",
+            "scope": "本条所列情形；第五章　特别规定 第二节　劳务派遣",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第五十九条",
+              "第五章　特别规定"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 59,
+            "chapter": "第五章　特别规定",
+            "section": "第二节　劳务派遣",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "SUP-L-arbitration-27",
+            "title": "中华人民共和国劳动争议调解仲裁法",
+            "kind": "law",
+            "text": "第二十七条 劳动争议申请仲裁的时效期间为一年。仲裁时效期间从当事人知道或者应当知道其权利被侵害之日起计算。\n前款规定的仲裁时效，因当事人一方向对方当事人主张权利，或者向有关部门请求权利救济，或者对方当事人同意履行义务而中断。从中断时起，仲裁时效期间重新计算。\n因不可抗力或者有其他正当理由，当事人不能在本条第一款规定的仲裁时效期间申请仲裁的，仲裁时效中止。从中止时效的原因消除之日起，仲裁时效期间继续计算。\n劳动关系存续期间因拖欠劳动报酬发生争议的，劳动者申请仲裁不受本条第一款规定的仲裁时效期间的限制；但是，劳动关系终止的，应当自劳动关系终止之日起一年内提出。",
+            "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/201912/t20191219_1307906.html",
+            "location": "第二十七条",
+            "published_at": "2007-12-29",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国劳动争议调解仲裁法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": ""
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ]
+          },
+          {
+            "id": "SUP-A01",
+            "title": "入职收费与培训贷款",
+            "kind": "support",
+            "text": "先暂停新增付款和不明授权，保存招聘、协议、转账、聊天证据；按主体及争议性质选择人社、消费维权、民事诉讼等渠道；涉嫌犯罪或人身危险报警。已签借款不要自行停还款，合同取消不当然免除借贷责任。\n关联依据编号：K001、K005",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "维权行动卡",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "入职收费与培训贷款",
+              "维权行动卡"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K001",
+              "K005"
+            ],
+            "support_category": "维权行动卡",
+            "origin_document": "维权行动指南.docx"
+          },
+          {
+            "id": "C002-reasoning",
+            "title": "未签劳动合同、未缴社保与实际劳动关系争议",
+            "kind": "case",
+            "url": "",
+            "location": "法院理由；用户提供文书 P57–P59、P62–P63",
+            "published_at": "2026-05-20",
+            "verified_at": "2026-10-04",
+            "text": "【用户提供裁判文书的脱敏整理，已对照本地文档，官方真实性与完整性待核验；非法律原文】\n法院依据实际接受劳动管理、取得劳动报酬、工作属于公司业务组成等因素认定劳动关系；未签书面合同不使实际劳动关系消失。法院不采纳公司关于合作关系的抗辩，支持本案未签书面合同期间的双倍工资差额及因未缴社保解除的经济补偿。仲裁时效及解除通知的效果是该案具体审查内容。",
+            "scope": "虽被称为合作关系但存在实际用工管理，未签书面合同、未缴社保的争议。",
+            "boundary": "须核实实际管理、报酬、业务组成、工作期限及仲裁时效。补偿与双倍工资金额仅针对本案；对应现行规则须另查法条。",
+            "tags": [
+              "劳动关系",
+              "未签合同",
+              "双倍工资",
+              "社保",
+              "考勤",
+              "合作关系",
+              "经济补偿"
+            ],
+            "case_id": "C002",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "C002-facts",
+              "C002-reasoning",
+              "C002-outcome"
+            ],
+            "court": "湖北省武汉市中级人民法院",
+            "judgment_date": "2026-05-20",
+            "procedural_status": "二审终审",
+            "source_document": "判决书原文.docx",
+            "source_paragraphs": "P57–P59、P62–P63",
+            "content_form": "redacted_summary",
+            "verification_status": "local_document_checked_official_pending",
+            "verification_note": "verified_at仅为本地文档核对日期，未完成法院官网真实性核验。"
+          },
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "report_generated": true,
+  "quotes_match_supplied_material": true,
+  "summary": "材料描述的是一家中介/劳务派遣公司以“岗前培训考核、适应性试岗”为名设定3-7天无薪试岗期，试岗期满以“考核不合格、不适应岗位”辞退且拒付试岗期报酬的模式。其核心风险在于：以“试岗”名义可能掩盖实际用工、借试用/考核之名规避劳动报酬义务，且存在被反复“试岗—辞退”而不予支付报酬的操作空间。是否构成违法、能否主张报酬，取决于试岗期间是否已实际接受劳动管理、是否实际提供劳动及证据保存情况，需结合事实核验，本报告不构成对该公司违法或犯罪的认定。",
+  "finding_titles": [
+    "以“无薪试岗期”名义用工，可能规避劳动报酬支付义务",
+    "试用期/试岗期上限与“不合格”辞退理由的合法性需核实",
+    "劳务派遣主体身份与报酬支付责任需核实",
+    "反复“试岗—辞退”模式的持续性风险与证据固定"
+  ],
+  "citation_ids": [
+    "LCL-007",
+    "LCL-030",
+    "LCL-058",
+    "LCL-059",
+    "LCL-083",
+    "LL-2018-021",
+    "SUP-F06",
+    "SUP-R024"
+  ],
+  "followup_action": "answer",
+  "report_versions_after_followup": 1,
+  "traces": [
+    [
+      {
+        "tool": "search_knowledge",
+        "arguments": {
+          "query": "无薪试岗期 试用期 拒付劳动报酬 劳务派遣 违法"
+        },
+        "result": [
+          {
+            "id": "LCL-061",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第六十一条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第六十一条　劳务派遣单位跨地区派遣劳动者的，被派遣劳动者享有的劳动报酬和劳动条件，按照用工单位所在地的标准执行。",
+            "scope": "本条所列情形；第五章　特别规定 第二节　劳务派遣",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第六十一条",
+              "第五章　特别规定"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 61,
+            "chapter": "第五章　特别规定",
+            "section": "第二节　劳务派遣",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "LCL-083",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第八十三条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第八十三条　用人单位违反本法规定与劳动者约定试用期的，由劳动行政部门责令改正；违法约定的试用期已经履行的，由用人单位以劳动者试用期满月工资为标准，按已经履行的超过法定试用期的期间向劳动者支付赔偿金。",
+            "scope": "本条所列情形；第七章　法律责任 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第八十三条",
+              "第七章　法律责任"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 83,
+            "chapter": "第七章　法律责任",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "LCL-058",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第五十八条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第五十八条　劳务派遣单位是本法所称用人单位，应当履行用人单位对劳动者的义务。劳务派遣单位与被派遣劳动者订立的劳动合同，除应当载明本法第十七条规定的事项外，还应当载明被派遣劳动者的用工单位以及派遣期限、工作岗位等情况。\n劳务派遣单位应当与被派遣劳动者订立二年以上的固定期限劳动合同，按月支付劳动报酬；被派遣劳动者在无工作期间，劳务派遣单位应当按照所在地人民政府规定的最低工资标准，向其按月支付报酬。",
+            "scope": "本条所列情形；第五章　特别规定 第二节　劳务派遣",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第五十八条",
+              "第五章　特别规定"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 58,
+            "chapter": "第五章　特别规定",
+            "section": "第二节　劳务派遣",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [
+              "LCL-017"
+            ],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "SUP-W-overseas",
+            "title": "公安机关提示：警惕境外高薪招聘",
+            "kind": "warning",
+            "text": "公安机关提醒：应警惕境外异常高薪、包吃住、报销机票、专人接送等组合诱饵，以及以旅游、商务考察代替合法工作手续的安排。不要仅凭这些宣传相信岗位真实。遇境外失联、被困，应向属地公安机关报警并向我国驻外使领馆求助。合法境外就业不能仅凭地点认定为诈骗。本条仅整理求职安全提示，不将历史侦查进展当作当前情况。",
+            "url": "https://gaj.wuhan.gov.cn/jmzx/jfts/202502/t20250210_2530886.html",
+            "location": "官方风险提示",
+            "published_at": "2025-02-10",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "公安机关提示：警惕境外高薪招聘",
+              "官方风险提示"
+            ],
+            "content_form": "official_warning_summary",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "官方风险提示",
+            "origin_document": "补充法条＋官方文件.docx"
+          },
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ]
+          },
+          {
+            "id": "SUP-F06",
+            "title": "无薪试岗和面试技能测试",
+            "kind": "support",
+            "text": "不能用试岗名称掩盖实际用工。应核实是否已经接受劳动管理并提供实际劳动，若建立劳动关系，应依法支付报酬。短暂真实面试技能测试不能直接等同劳动关系。\n关联依据编号：LCL-007、LCL-030、LL-2018-050",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "无薪试岗和面试技能测试",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "LCL-007",
+              "LCL-030",
+              "LL-2018-050"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx"
+          },
+          {
+            "id": "SUP-R024",
+            "title": "无薪试岗",
+            "kind": "support",
+            "text": "查是否实际用工、劳动管理、交付劳动；真实短时面试技能测试不得自动当作劳动关系。\n关联依据编号：LCL-007、LCL-030",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "风险判定辅助",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "无薪试岗",
+              "风险判定辅助"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "LCL-007",
+              "LCL-030"
+            ],
+            "support_category": "风险判定辅助",
+            "origin_document": "三色判定规则库.docx"
+          },
+          {
+            "id": "O006-facts",
+            "title": "试用期拒绝996违法加班后被解除劳动合同",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+            "location": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同 · 基本案情",
+            "published_at": "2021-08-26",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】快递公司规定早9点至晚9点、每周工作6天。试用期劳动者拒绝违法超时加班，被以不符合录用条件为由解除。",
+            "scope": "用违法超时加班安排作为试用期录用条件的争议。",
+            "boundary": "须核实实际工时和解除理由；不能推广为拒绝任何加班均合法。该案为终局仲裁，不能标为法院判决。",
+            "tags": [
+              "996",
+              "早9晚9",
+              "每周6天",
+              "试用期",
+              "拒绝违法加班",
+              "不符合录用条件",
+              "违法解除"
+            ],
+            "case_id": "O006",
+            "chunk_role": "facts",
+            "related_ids": [
+              "O006-facts",
+              "O006-reasoning",
+              "O006-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部、最高人民法院",
+            "source_case_position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "labor_arbitration",
+            "procedural_status": "官方明确终局仲裁裁决；另有监察责令改正"
+          },
+          {
+            "id": "O006-reasoning",
+            "title": "试用期拒绝996违法加班后被解除劳动合同",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+            "location": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同 · 案例分析",
+            "published_at": "2021-08-26",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】官方分析认为工时制度违反延长工作时间上限，拒绝违法超时加班不能据此认定试用期不符合录用条件。",
+            "scope": "用违法超时加班安排作为试用期录用条件的争议。",
+            "boundary": "须核实实际工时和解除理由；不能推广为拒绝任何加班均合法。该案为终局仲裁，不能标为法院判决。",
+            "tags": [
+              "996",
+              "早9晚9",
+              "每周6天",
+              "试用期",
+              "拒绝违法加班",
+              "不符合录用条件",
+              "违法解除"
+            ],
+            "case_id": "O006",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "O006-facts",
+              "O006-reasoning",
+              "O006-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部、最高人民法院",
+            "source_case_position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "labor_arbitration",
+            "procedural_status": "官方明确终局仲裁裁决；另有监察责令改正"
+          },
+          {
+            "id": "O006-outcome",
+            "title": "试用期拒绝996违法加班后被解除劳动合同",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+            "location": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同 · 仲裁处理结果",
+            "published_at": "2021-08-26",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】仲裁终局裁决公司支付违法解除赔偿金8000元；监察机构责令改正违法规章制度并警告。金额仅适用于该案。",
+            "scope": "用违法超时加班安排作为试用期录用条件的争议。",
+            "boundary": "须核实实际工时和解除理由；不能推广为拒绝任何加班均合法。该案为终局仲裁，不能标为法院判决。",
+            "tags": [
+              "996",
+              "早9晚9",
+              "每周6天",
+              "试用期",
+              "拒绝违法加班",
+              "不符合录用条件",
+              "违法解除"
+            ],
+            "case_id": "O006",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "O006-facts",
+              "O006-reasoning",
+              "O006-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部、最高人民法院",
+            "source_case_position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "labor_arbitration",
+            "procedural_status": "官方明确终局仲裁裁决；另有监察责令改正"
+          }
+        ]
+      },
+      {
+        "tool": "search_knowledge",
+        "arguments": {
+          "query": "劳务派遣单位 试用期 用工单位 劳动合同法 规定"
+        },
+        "result": [
+          {
+            "id": "LCL-059",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第五十九条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第五十九条　劳务派遣单位派遣劳动者应当与接受以劳务派遣形式用工的单位（以下称用工单位）订立劳务派遣协议。劳务派遣协议应当约定派遣岗位和人员数量、派遣期限、劳动报酬和社会保险费的数额与支付方式以及违反协议的责任。\n用工单位应当根据工作岗位的实际需要与劳务派遣单位确定派遣期限，不得将连续用工期限分割订立数个短期劳务派遣协议。",
+            "scope": "本条所列情形；第五章　特别规定 第二节　劳务派遣",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第五十九条",
+              "第五章　特别规定"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 59,
+            "chapter": "第五章　特别规定",
+            "section": "第二节　劳务派遣",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "LCL-058",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第五十八条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第五十八条　劳务派遣单位是本法所称用人单位，应当履行用人单位对劳动者的义务。劳务派遣单位与被派遣劳动者订立的劳动合同，除应当载明本法第十七条规定的事项外，还应当载明被派遣劳动者的用工单位以及派遣期限、工作岗位等情况。\n劳务派遣单位应当与被派遣劳动者订立二年以上的固定期限劳动合同，按月支付劳动报酬；被派遣劳动者在无工作期间，劳务派遣单位应当按照所在地人民政府规定的最低工资标准，向其按月支付报酬。",
+            "scope": "本条所列情形；第五章　特别规定 第二节　劳务派遣",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第五十八条",
+              "第五章　特别规定"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 58,
+            "chapter": "第五章　特别规定",
+            "section": "第二节　劳务派遣",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [
+              "LCL-017"
+            ],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "LL-2018-021",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第二十一条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第二十一条\n劳动合同可以约定试用期。试用期最长不得超过六个月。",
+            "scope": "本条所列情形；第三章 劳动合同和集体合同",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。劳动合同事项还应结合劳动合同法具体规定。试用期具体上限按合同期限区分，须结合劳动合同法第十九条；不得以六个月总上限认定一年合同约定六个月试用期合法。",
+            "tags": [
+              "劳动法",
+              "第二十一条",
+              "第三章 劳动合同和集体合同",
+              "试用期"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 21,
+            "chapter": "第三章 劳动合同和集体合同",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [
+              "K004"
+            ],
+            "supporting_source_urls": []
+          },
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ]
+          },
+          {
+            "id": "K006",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第四项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "签订涉及贷款的协议，务必核实放款方资质、贷款利率、还款方式及违约责任。慎重在平台注册信息及办理贷款，坚持理性借贷，避免过度负债，切勿轻信“免息分期”“低门槛、秒到账”等承诺，避免陷入非法债务纠纷。",
+            "scope": "贷款或分期支付协议的核实事项。",
+            "boundary": "分期是否属于贷款要看协议和主体；不能仅凭分期二字认定违法。",
+            "tags": [
+              "分期",
+              "借款协议",
+              "贷款利率",
+              "还款",
+              "培训贷",
+              "违约责任"
+            ]
+          },
+          {
+            "id": "SUP-R022",
+            "title": "试用期超过上限",
+            "kind": "support",
+            "text": "分别核对合同长度对应1、2、6个月上限，以及不得约定试用期的情形，不能只查是否超过6个月。\n关联依据编号：K004",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "风险判定辅助",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "试用期超过上限",
+              "风险判定辅助"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K004"
+            ],
+            "support_category": "风险判定辅助",
+            "origin_document": "三色判定规则库.docx"
+          },
+          {
+            "id": "SUP-F07",
+            "title": "试用期时长上限",
+            "kind": "support",
+            "text": "合同三个月以上不满一年：最多一个月；一年以上不满三年：最多二个月；三年以上固定期限或无固定期限：最多六个月。以完成一定任务为期限或期限不满三个月的合同不得约定试用期，同一双方只能约定一次。\n关联依据编号：K004",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "试用期时长上限",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K004"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx"
+          },
+          {
+            "id": "O006-facts",
+            "title": "试用期拒绝996违法加班后被解除劳动合同",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+            "location": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同 · 基本案情",
+            "published_at": "2021-08-26",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】快递公司规定早9点至晚9点、每周工作6天。试用期劳动者拒绝违法超时加班，被以不符合录用条件为由解除。",
+            "scope": "用违法超时加班安排作为试用期录用条件的争议。",
+            "boundary": "须核实实际工时和解除理由；不能推广为拒绝任何加班均合法。该案为终局仲裁，不能标为法院判决。",
+            "tags": [
+              "996",
+              "早9晚9",
+              "每周6天",
+              "试用期",
+              "拒绝违法加班",
+              "不符合录用条件",
+              "违法解除"
+            ],
+            "case_id": "O006",
+            "chunk_role": "facts",
+            "related_ids": [
+              "O006-facts",
+              "O006-reasoning",
+              "O006-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部、最高人民法院",
+            "source_case_position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "labor_arbitration",
+            "procedural_status": "官方明确终局仲裁裁决；另有监察责令改正"
+          },
+          {
+            "id": "O006-reasoning",
+            "title": "试用期拒绝996违法加班后被解除劳动合同",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+            "location": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同 · 案例分析",
+            "published_at": "2021-08-26",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】官方分析认为工时制度违反延长工作时间上限，拒绝违法超时加班不能据此认定试用期不符合录用条件。",
+            "scope": "用违法超时加班安排作为试用期录用条件的争议。",
+            "boundary": "须核实实际工时和解除理由；不能推广为拒绝任何加班均合法。该案为终局仲裁，不能标为法院判决。",
+            "tags": [
+              "996",
+              "早9晚9",
+              "每周6天",
+              "试用期",
+              "拒绝违法加班",
+              "不符合录用条件",
+              "违法解除"
+            ],
+            "case_id": "O006",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "O006-facts",
+              "O006-reasoning",
+              "O006-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部、最高人民法院",
+            "source_case_position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "labor_arbitration",
+            "procedural_status": "官方明确终局仲裁裁决；另有监察责令改正"
+          },
+          {
+            "id": "O006-outcome",
+            "title": "试用期拒绝996违法加班后被解除劳动合同",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+            "location": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同 · 仲裁处理结果",
+            "published_at": "2021-08-26",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】仲裁终局裁决公司支付违法解除赔偿金8000元；监察机构责令改正违法规章制度并警告。金额仅适用于该案。",
+            "scope": "用违法超时加班安排作为试用期录用条件的争议。",
+            "boundary": "须核实实际工时和解除理由；不能推广为拒绝任何加班均合法。该案为终局仲裁，不能标为法院判决。",
+            "tags": [
+              "996",
+              "早9晚9",
+              "每周6天",
+              "试用期",
+              "拒绝违法加班",
+              "不符合录用条件",
+              "违法解除"
+            ],
+            "case_id": "O006",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "O006-facts",
+              "O006-reasoning",
+              "O006-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部、最高人民法院",
+            "source_case_position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "labor_arbitration",
+            "procedural_status": "官方明确终局仲裁裁决；另有监察责令改正"
+          }
+        ]
+      },
+      {
+        "tool": "get_source",
+        "arguments": {
+          "source_id": "SUP-F06"
+        },
+        "result": {
+          "id": "SUP-F06",
+          "title": "无薪试岗和面试技能测试",
+          "kind": "support",
+          "text": "不能用试岗名称掩盖实际用工。应核实是否已经接受劳动管理并提供实际劳动，若建立劳动关系，应依法支付报酬。短暂真实面试技能测试不能直接等同劳动关系。\n关联依据编号：LCL-007、LCL-030、LL-2018-050",
+          "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "location": "高频问答",
+          "published_at": "",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "无薪试岗和面试技能测试",
+            "高频问答"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "LCL-007",
+            "LCL-030",
+            "LL-2018-050"
+          ],
+          "support_category": "高频问答",
+          "origin_document": "大学生就业权益高频问题回答.docx"
+        }
+      },
+      {
+        "tool": "get_source",
+        "arguments": {
+          "source_id": "LCL-007"
+        },
+        "result": {
+          "id": "LCL-007",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "location": "第七条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-04",
+          "text": "第七条　用人单位自用工之日起即与劳动者建立劳动关系。用人单位应当建立职工名册备查。",
+          "scope": "本条所列情形；第二章　劳动合同的订立 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第七条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 7,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+        }
+      },
+      {
+        "tool": "get_source",
+        "arguments": {
+          "source_id": "LCL-030"
+        },
+        "result": {
+          "id": "LCL-030",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "location": "第三十条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-04",
+          "text": "第三十条　用人单位应当按照劳动合同约定和国家规定，向劳动者及时足额支付劳动报酬。\n用人单位拖欠或者未足额支付劳动报酬的，劳动者可以依法向当地人民法院申请支付令，人民法院应当依法发出支付令。",
+          "scope": "本条所列情形；第三章　劳动合同的履行和变更 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第三十条",
+            "第三章　劳动合同的履行和变更"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 30,
+          "chapter": "第三章　劳动合同的履行和变更",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+        }
+      }
+    ],
+    [
+      {
+        "tool": "search_knowledge",
+        "arguments": {
+          "query": "拖欠劳动报酬 劳动监察投诉 劳动仲裁 维权渠道 证据保存"
+        },
+        "result": [
+          {
+            "id": "LCL-030",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第三十条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第三十条　用人单位应当按照劳动合同约定和国家规定，向劳动者及时足额支付劳动报酬。\n用人单位拖欠或者未足额支付劳动报酬的，劳动者可以依法向当地人民法院申请支付令，人民法院应当依法发出支付令。",
+            "scope": "本条所列情形；第三章　劳动合同的履行和变更 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第三十条",
+              "第三章　劳动合同的履行和变更"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 30,
+            "chapter": "第三章　劳动合同的履行和变更",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "SUP-L-arbitration-27",
+            "title": "中华人民共和国劳动争议调解仲裁法",
+            "kind": "law",
+            "text": "第二十七条 劳动争议申请仲裁的时效期间为一年。仲裁时效期间从当事人知道或者应当知道其权利被侵害之日起计算。\n前款规定的仲裁时效，因当事人一方向对方当事人主张权利，或者向有关部门请求权利救济，或者对方当事人同意履行义务而中断。从中断时起，仲裁时效期间重新计算。\n因不可抗力或者有其他正当理由，当事人不能在本条第一款规定的仲裁时效期间申请仲裁的，仲裁时效中止。从中止时效的原因消除之日起，仲裁时效期间继续计算。\n劳动关系存续期间因拖欠劳动报酬发生争议的，劳动者申请仲裁不受本条第一款规定的仲裁时效期间的限制；但是，劳动关系终止的，应当自劳动关系终止之日起一年内提出。",
+            "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/201912/t20191219_1307906.html",
+            "location": "第二十七条",
+            "published_at": "2007-12-29",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国劳动争议调解仲裁法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": ""
+          },
+          {
+            "id": "LL-2018-091",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第九十一条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第九十一条\n用人单位有下列侵害劳动者合法权益情形之一的，由劳动行政部门责令支付劳动者的工资报酬、经济补偿，并可以责令支付赔偿金：\n（一）克扣或者无故拖欠劳动者工资的；\n（二）拒不支付劳动者延长工作时间工资报酬的；\n（三）低于当地最低工资标准支付劳动者工资的；\n（四）解除劳动合同后，未依照本法规定给予劳动者经济补偿的。",
+            "scope": "本条所列情形；第十二章 法律责任",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+            "tags": [
+              "劳动法",
+              "第九十一条",
+              "第十二章 法律责任"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 91,
+            "chapter": "第十二章 法律责任",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": []
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ]
+          },
+          {
+            "id": "SUP-W-overseas",
+            "title": "公安机关提示：警惕境外高薪招聘",
+            "kind": "warning",
+            "text": "公安机关提醒：应警惕境外异常高薪、包吃住、报销机票、专人接送等组合诱饵，以及以旅游、商务考察代替合法工作手续的安排。不要仅凭这些宣传相信岗位真实。遇境外失联、被困，应向属地公安机关报警并向我国驻外使领馆求助。合法境外就业不能仅凭地点认定为诈骗。本条仅整理求职安全提示，不将历史侦查进展当作当前情况。",
+            "url": "https://gaj.wuhan.gov.cn/jmzx/jfts/202502/t20250210_2530886.html",
+            "location": "官方风险提示",
+            "published_at": "2025-02-10",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "公安机关提示：警惕境外高薪招聘",
+              "官方风险提示"
+            ],
+            "content_form": "official_warning_summary",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "官方风险提示",
+            "origin_document": "补充法条＋官方文件.docx"
+          },
+          {
+            "id": "SUP-A01",
+            "title": "入职收费与培训贷款",
+            "kind": "support",
+            "text": "先暂停新增付款和不明授权，保存招聘、协议、转账、聊天证据；按主体及争议性质选择人社、消费维权、民事诉讼等渠道；涉嫌犯罪或人身危险报警。已签借款不要自行停还款，合同取消不当然免除借贷责任。\n关联依据编号：K001、K005",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "维权行动卡",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "入职收费与培训贷款",
+              "维权行动卡"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K001",
+              "K005"
+            ],
+            "support_category": "维权行动卡",
+            "origin_document": "维权行动指南.docx"
+          },
+          {
+            "id": "SUP-A02",
+            "title": "不签合同或不交社保",
+            "kind": "support",
+            "text": "保存实际用工、发薪和管理证据，书面要求补签及参保；合同与工资争议按条件申请仲裁，登记缴费问题向当地人社、社保及负责征缴的部门咨询处理；二倍工资须审查适用条件。仲裁可向履行地或单位所在地申请，并核对时效。\n关联依据编号：K003、LCL-082、SUP-L-social-58、SUP-L-arbitration-21、SUP-L-arbitration-27",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "维权行动卡",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "不签合同或不交社保",
+              "维权行动卡"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K003",
+              "LCL-082",
+              "SUP-L-social-58",
+              "SUP-L-arbitration-21",
+              "SUP-L-arbitration-27"
+            ],
+            "support_category": "维权行动卡",
+            "origin_document": "维权行动指南.docx"
+          },
+          {
+            "id": "C002-facts",
+            "title": "未签劳动合同、未缴社保与实际劳动关系争议",
+            "kind": "case",
+            "url": "",
+            "location": "法院查明事实；用户提供文书 P55–P61",
+            "published_at": "2026-05-20",
+            "verified_at": "2026-10-04",
+            "text": "【用户提供裁判文书的脱敏整理，已对照本地文档，官方真实性与完整性待核验；非法律原文】\n劳动者于2024年3月入职某公司从事财务出纳，约定月工资4000元，存在指纹考勤、请假审批和固定工作时间；公司未签书面劳动合同、未缴社会保险。劳动者于2025年4月发出解除通知，后申请仲裁。公司辩称双方系合作或代理记账关系；这一辩解不等于法院认定。",
+            "scope": "虽被称为合作关系但存在实际用工管理，未签书面合同、未缴社保的争议。",
+            "boundary": "须核实实际管理、报酬、业务组成、工作期限及仲裁时效。补偿与双倍工资金额仅针对本案；对应现行规则须另查法条。",
+            "tags": [
+              "劳动关系",
+              "未签合同",
+              "双倍工资",
+              "社保",
+              "考勤",
+              "合作关系",
+              "经济补偿"
+            ],
+            "case_id": "C002",
+            "chunk_role": "facts",
+            "related_ids": [
+              "C002-facts",
+              "C002-reasoning",
+              "C002-outcome"
+            ],
+            "court": "湖北省武汉市中级人民法院",
+            "judgment_date": "2026-05-20",
+            "procedural_status": "二审终审",
+            "source_document": "判决书原文.docx",
+            "source_paragraphs": "P55–P61",
+            "content_form": "redacted_summary",
+            "verification_status": "local_document_checked_official_pending",
+            "verification_note": "verified_at仅为本地文档核对日期，未完成法院官网真实性核验。"
+          },
+          {
+            "id": "C002-reasoning",
+            "title": "未签劳动合同、未缴社保与实际劳动关系争议",
+            "kind": "case",
+            "url": "",
+            "location": "法院理由；用户提供文书 P57–P59、P62–P63",
+            "published_at": "2026-05-20",
+            "verified_at": "2026-10-04",
+            "text": "【用户提供裁判文书的脱敏整理，已对照本地文档，官方真实性与完整性待核验；非法律原文】\n法院依据实际接受劳动管理、取得劳动报酬、工作属于公司业务组成等因素认定劳动关系；未签书面合同不使实际劳动关系消失。法院不采纳公司关于合作关系的抗辩，支持本案未签书面合同期间的双倍工资差额及因未缴社保解除的经济补偿。仲裁时效及解除通知的效果是该案具体审查内容。",
+            "scope": "虽被称为合作关系但存在实际用工管理，未签书面合同、未缴社保的争议。",
+            "boundary": "须核实实际管理、报酬、业务组成、工作期限及仲裁时效。补偿与双倍工资金额仅针对本案；对应现行规则须另查法条。",
+            "tags": [
+              "劳动关系",
+              "未签合同",
+              "双倍工资",
+              "社保",
+              "考勤",
+              "合作关系",
+              "经济补偿"
+            ],
+            "case_id": "C002",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "C002-facts",
+              "C002-reasoning",
+              "C002-outcome"
+            ],
+            "court": "湖北省武汉市中级人民法院",
+            "judgment_date": "2026-05-20",
+            "procedural_status": "二审终审",
+            "source_document": "判决书原文.docx",
+            "source_paragraphs": "P57–P59、P62–P63",
+            "content_form": "redacted_summary",
+            "verification_status": "local_document_checked_official_pending",
+            "verification_note": "verified_at仅为本地文档核对日期，未完成法院官网真实性核验。"
+          },
+          {
+            "id": "C002-outcome",
+            "title": "未签劳动合同、未缴社保与实际劳动关系争议",
+            "kind": "case",
+            "url": "",
+            "location": "裁判结果；用户提供文书 P60、P64–P67",
+            "published_at": "2026-05-20",
+            "verified_at": "2026-10-04",
+            "text": "【用户提供裁判文书的脱敏整理，已对照本地文档，官方真实性与完整性待核验；非法律原文】\n二审驳回上诉、维持原判，确认2024年3月10日至2025年4月7日存在劳动关系；支付经济补偿6000元和未订立书面劳动合同的双倍工资差额40086.43元。文书载明终审；不保证其他未签合同或未缴社保情形获得相同金额。",
+            "scope": "虽被称为合作关系但存在实际用工管理，未签书面合同、未缴社保的争议。",
+            "boundary": "须核实实际管理、报酬、业务组成、工作期限及仲裁时效。补偿与双倍工资金额仅针对本案；对应现行规则须另查法条。",
+            "tags": [
+              "劳动关系",
+              "未签合同",
+              "双倍工资",
+              "社保",
+              "考勤",
+              "合作关系",
+              "经济补偿"
+            ],
+            "case_id": "C002",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "C002-facts",
+              "C002-reasoning",
+              "C002-outcome"
+            ],
+            "court": "湖北省武汉市中级人民法院",
+            "judgment_date": "2026-05-20",
+            "procedural_status": "二审终审",
+            "source_document": "判决书原文.docx",
+            "source_paragraphs": "P60、P64–P67",
+            "content_form": "redacted_summary",
+            "verification_status": "local_document_checked_official_pending",
+            "verification_note": "verified_at仅为本地文档核对日期，未完成法院官网真实性核验。"
+          }
+        ]
+      },
+      {
+        "tool": "search_knowledge",
+        "arguments": {
+          "query": "劳务派遣 无薪试岗 拖欠工资 举报 劳动保障监察"
+        },
+        "result": [
+          {
+            "id": "LCL-061",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第六十一条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第六十一条　劳务派遣单位跨地区派遣劳动者的，被派遣劳动者享有的劳动报酬和劳动条件，按照用工单位所在地的标准执行。",
+            "scope": "本条所列情形；第五章　特别规定 第二节　劳务派遣",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第六十一条",
+              "第五章　特别规定"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 61,
+            "chapter": "第五章　特别规定",
+            "section": "第二节　劳务派遣",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "LCL-060",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第六十条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第六十条　劳务派遣单位应当将劳务派遣协议的内容告知被派遣劳动者。\n劳务派遣单位不得克扣用工单位按照劳务派遣协议支付给被派遣劳动者的劳动报酬。\n劳务派遣单位和用工单位不得向被派遣劳动者收取费用。",
+            "scope": "本条所列情形；第五章　特别规定 第二节　劳务派遣",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第六十条",
+              "第五章　特别规定"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 60,
+            "chapter": "第五章　特别规定",
+            "section": "第二节　劳务派遣",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "LCL-062",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第六十二条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第六十二条　用工单位应当履行下列义务：\n（一）执行国家劳动标准，提供相应的劳动条件和劳动保护；\n（二）告知被派遣劳动者的工作要求和劳动报酬；\n（三）支付加班费、绩效奖金，提供与工作岗位相关的福利待遇；\n（四）对在岗被派遣劳动者进行工作岗位所必需的培训；\n（五）连续用工的，实行正常的工资调整机制。\n用工单位不得将被派遣劳动者再派遣到其他用人单位。",
+            "scope": "本条所列情形；第五章　特别规定 第二节　劳务派遣",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第六十二条",
+              "第五章　特别规定"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 62,
+            "chapter": "第五章　特别规定",
+            "section": "第二节　劳务派遣",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "SUP-W-overseas",
+            "title": "公安机关提示：警惕境外高薪招聘",
+            "kind": "warning",
+            "text": "公安机关提醒：应警惕境外异常高薪、包吃住、报销机票、专人接送等组合诱饵，以及以旅游、商务考察代替合法工作手续的安排。不要仅凭这些宣传相信岗位真实。遇境外失联、被困，应向属地公安机关报警并向我国驻外使领馆求助。合法境外就业不能仅凭地点认定为诈骗。本条仅整理求职安全提示，不将历史侦查进展当作当前情况。",
+            "url": "https://gaj.wuhan.gov.cn/jmzx/jfts/202502/t20250210_2530886.html",
+            "location": "官方风险提示",
+            "published_at": "2025-02-10",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "公安机关提示：警惕境外高薪招聘",
+              "官方风险提示"
+            ],
+            "content_form": "official_warning_summary",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "官方风险提示",
+            "origin_document": "补充法条＋官方文件.docx"
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ]
+          },
+          {
+            "id": "SUP-F06",
+            "title": "无薪试岗和面试技能测试",
+            "kind": "support",
+            "text": "不能用试岗名称掩盖实际用工。应核实是否已经接受劳动管理并提供实际劳动，若建立劳动关系，应依法支付报酬。短暂真实面试技能测试不能直接等同劳动关系。\n关联依据编号：LCL-007、LCL-030、LL-2018-050",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "无薪试岗和面试技能测试",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "LCL-007",
+              "LCL-030",
+              "LL-2018-050"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx"
+          },
+          {
+            "id": "SUP-R024",
+            "title": "无薪试岗",
+            "kind": "support",
+            "text": "查是否实际用工、劳动管理、交付劳动；真实短时面试技能测试不得自动当作劳动关系。\n关联依据编号：LCL-007、LCL-030",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "风险判定辅助",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "无薪试岗",
+              "风险判定辅助"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "LCL-007",
+              "LCL-030"
+            ],
+            "support_category": "风险判定辅助",
+            "origin_document": "三色判定规则库.docx"
+          },
+          {
+            "id": "O005-facts",
+            "title": "劳务派遣驾驶员工资被扣作风险押金",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+            "location": "第10项：上海某劳务派遣有限公司违法收取风险押金案件 · 调查事实",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】上海某派遣公司派遣11名驾驶员到客运公司工作，逐月扣部分工资作为风险押金。",
+            "scope": "派遣单位按月扣工资作为风险押金。",
+            "boundary": "4.9万元为该案退还总额，不是每人金额或通用赔偿标准；原文未披露法院判决。",
+            "tags": [
+              "劳务派遣",
+              "驾驶员",
+              "风险押金",
+              "扣工资",
+              "保证金",
+              "退还押金"
+            ],
+            "case_id": "O005",
+            "chunk_role": "facts",
+            "related_ids": [
+              "O005-facts",
+              "O005-reasoning",
+              "O005-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部",
+            "source_case_position": "第10项：上海某劳务派遣有限公司违法收取风险押金案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "人社部门督促退还押金，原文明确已退还"
+          },
+          {
+            "id": "O005-reasoning",
+            "title": "劳务派遣驾驶员工资被扣作风险押金",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+            "location": "第10项：上海某劳务派遣有限公司违法收取风险押金案件 · 执法认定",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门认定该收费违反劳动合同法有关不得要求担保或以其他名义收取财物的规定。",
+            "scope": "派遣单位按月扣工资作为风险押金。",
+            "boundary": "4.9万元为该案退还总额，不是每人金额或通用赔偿标准；原文未披露法院判决。",
+            "tags": [
+              "劳务派遣",
+              "驾驶员",
+              "风险押金",
+              "扣工资",
+              "保证金",
+              "退还押金"
+            ],
+            "case_id": "O005",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "O005-facts",
+              "O005-reasoning",
+              "O005-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部",
+            "source_case_position": "第10项：上海某劳务派遣有限公司违法收取风险押金案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "人社部门督促退还押金，原文明确已退还"
+          },
+          {
+            "id": "O005-outcome",
+            "title": "劳务派遣驾驶员工资被扣作风险押金",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+            "location": "第10项：上海某劳务派遣有限公司违法收取风险押金案件 · 处理结果",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】经属地人社部门督促，公司已退还风险押金合计4.9万元。不是每人退还4.9万元，也不是法院赔偿判项。",
+            "scope": "派遣单位按月扣工资作为风险押金。",
+            "boundary": "4.9万元为该案退还总额，不是每人金额或通用赔偿标准；原文未披露法院判决。",
+            "tags": [
+              "劳务派遣",
+              "驾驶员",
+              "风险押金",
+              "扣工资",
+              "保证金",
+              "退还押金"
+            ],
+            "case_id": "O005",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "O005-facts",
+              "O005-reasoning",
+              "O005-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部",
+            "source_case_position": "第10项：上海某劳务派遣有限公司违法收取风险押金案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "人社部门督促退还押金，原文明确已退还"
+          }
+        ]
+      }
+    ]
+  ],
+  "elapsed_seconds": 18.07,
+  "manual_review": {
+    "core": "通过：无薪试岗报酬风险、实际用工核实、证据和人社/仲裁路径均被识别。",
+    "issues": [
+      "关于具体试用期上限及不符合录用条件解除，报告第二项引用劳动法21、劳动合同法83，缺少直接对应的劳动合同法19、21、39，编号存在但支持不够精准。",
+      "反复试岗辞退的持续模式并未由输入直接证明，虽标为待核实，宜改为核查建议，不另列风险点。",
+      "后续建议延伸到收费贷款等未涉及情形，宜缩短并明确仅在另有该事实时适用。"
+    ]
+  }
+}

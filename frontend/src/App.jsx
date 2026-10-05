@@ -8,7 +8,7 @@ const dateText=value=>new Date(value).toLocaleDateString('zh-CN',{month:'2-digit
 
 function Sources({sources}) {
   if (!sources?.length) return null;
-  return <details className="sources" open><summary><BookOpen size={24}/>法规与资料依据<CaretDown className="chevron" size={18}/></summary><div className="source-list">{sources.map((s,i)=><details className="source" open={i===0} key={s.id}><summary className="source-title">{s.title} <span>{s.location}</span><CaretDown size={16}/></summary><p>{s.text}</p><div className="source-meta">{({law:'法律法规',warning:'官方风险提示',guide:'办事指南',case:'典型案例'})[s.kind]||s.kind} · {s.id}</div>{s.boundary&&<details className="boundary"><summary>查看适用边界</summary><p>{s.boundary}</p></details>}{sourceUrl(s.url)&&<a href={s.url} target="_blank" rel="noreferrer">查看官方原文<ArrowUpRight size={15}/></a>}</details>)}</div></details>;
+  return <details className="sources" open><summary><BookOpen size={24}/>法规与资料依据<CaretDown className="chevron" size={18}/></summary><div className="source-list">{sources.map((s,i)=><details className="source" open={i===0} key={s.id}><summary className="source-title">{s.title} <span>{s.location}</span><CaretDown size={16}/></summary><p>{s.text}</p><div className="source-meta">{({law:'法律法规',warning:'官方风险提示',guide:'办事指南',case:'典型案例',support:'辅助资料（团队整理）'})[s.kind]||s.kind} · {s.id}</div>{s.boundary&&<details className="boundary"><summary>查看适用边界</summary><p>{s.boundary}</p></details>}{sourceUrl(s.url)&&<a href={s.url} target="_blank" rel="noreferrer">{s.kind==='support'?'查看核对依据 / 查询入口':'查看官方原文'}<ArrowUpRight size={15}/></a>}</details>)}</div></details>;
 }
 
 function Report({report,session}) {

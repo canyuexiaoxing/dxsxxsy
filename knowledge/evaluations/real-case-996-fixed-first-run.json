@@ -1,0 +1,1228 @@
+{
+  "source": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+  "test_type": "已入库案例的端到端测试，不代表未见案例泛化能力",
+  "input_contains_court_outcome": false,
+  "session_id": "S8c8d38b96d3946f3940ec0f00f9e42fe",
+  "turns": [
+    {
+      "input": "以下是人社部与最高人民法院公开发布案例1中的用工制度与处理行为摘要，不是任何个人的私密材料，也不包含姓名或联系方式。某快递公司规定工作时间为早9时至晚9时，每周工作6天。公司表示这是其工作制度要求，并对试用期内拒绝这种安排的员工以不符合录用条件为由解除劳动合同。请分析这种制度及解除理由的风险，说明需要核查哪些证据，以及遇到该类安排时可以怎样处理。只根据这些公开信息分析，不预设仲裁或法院结论。",
+      "http_status": 200,
+      "elapsed_seconds": 14.31,
+      "output": {
+        "session_id": "S8c8d38b96d3946f3940ec0f00f9e42fe",
+        "action": "report",
+        "message": "",
+        "questions": [],
+        "evidence_ids": [
+          "O006-facts",
+          "O006-reasoning",
+          "O006-outcome",
+          "LL-2018-036",
+          "LL-2018-041",
+          "LL-2018-090",
+          "LCL-039",
+          "LCL-021",
+          "LL-2018-025",
+          "K007"
+        ],
+        "report": {
+          "summary": "本次分析仅基于你提供的公开案例摘要（某快递公司规定早9时至晚9时、每周6天，并对试用期内拒绝该安排的员工以“不符合录用条件”解除劳动合同），不预设任何仲裁或法院结论。从现行规范看，该“早9晚9、每周6天”的制度安排在未依法取得特殊工时审批、且未另行安排补休或支付加班报酬的情况下，明显超过法定标准工时与延长工作时间上限，存在被认定为违法规章制度并受行政处理的风险；以“拒绝违法超时加班”作为“不符合录用条件”的解除理由，其合法性和举证充分性均存在较高风险，官方公开案例的处理思路也倾向不支持此类解除。同时，“早9晚9”只是时间跨度，不等于实际工作时长，需结合休息时长、考勤、工时审批等证据核查后才能对具体工时是否违法下判断。",
+          "findings": [
+            {
+              "title": "“早9晚9、每周6天”的制度安排可能超出法定工时和加班上限",
+              "level": "high",
+              "quote": "某快递公司规定工作时间为早9时至晚9时，每周工作6天。",
+              "material_id": "user",
+              "page_number": 0,
+              "explanation": "《劳动法》第三十六条规定每日不超过八小时、平均每周不超过四十四小时的工时制度（该条还须结合国务院关于每日八小时、每周四十小时的规定理解，不能直接把四十四小时当作当前标准工时）；第四十一条规定延长工作时间一般每日不超过一小时，特殊原因每日不超过三小时且每月不超过三十六小时。你描述的“每天9时至21时、每周6天”属于较长的时间跨度，若无特殊工时审批、也无充分休息与补休安排，通常难以满足上述上限。需注意：早9晚9只是跨度，不等于实际工作时长，缺少休息时长、考勤与工时审批信息时不宜直接计算每日或每周实际工时，因此此处是风险信号而非违法认定。",
+              "evidence_ids": [
+                "LL-2018-036",
+                "LL-2018-041",
+                "O006-facts",
+                "O006-reasoning"
+              ],
+              "suggestions": [
+                "核查公司是否就相关岗位取得综合计算工时或不定时工作制的行政审批文件及其有效期、适用岗位范围。",
+                "区分“在岗时间跨度”与“实际工作时间”，核对考勤记录、打卡数据、排班表、休息与用餐安排，确认每日实际工作时长与每月加班小时数。",
+                "核查是否存在补休安排、加班审批流程，以及加班工资是否按法定标准支付。"
+              ]
+            },
+            {
+              "title": "以“不符合录用条件”解除试用期员工，理由与举证均存在较高风险",
+              "level": "high",
+              "quote": "公司表示这是其工作制度要求，并对试用期内拒绝这种安排的员工以不符合录用条件为由解除劳动合同。",
+              "material_id": "user",
+              "page_number": 0,
+              "explanation": "《劳动合同法》第三十九条第一项要求“在试用期间被证明不符合录用条件”方可解除，第二十一条进一步限定试用期解除须限于第三十九条和第四十条第一、二项情形，并应向劳动者说明理由。若解除的真实原因是劳动者拒绝超出法定上限的加班安排，而该加班本身可能违法，则以此认定“不符合录用条件”缺乏正当性基础，用人单位需承担较重的举证责任。官方公开案例的分析亦持相近思路：工时制度违反延长工作时间上限，拒绝违法超时加班不能据此认定为试用期不符合录用条件。需强调：官方案例的处理结果仅为个案参考，不是规范依据，也不能直接套用于你未来的具体情形。",
+              "evidence_ids": [
+                "LCL-039",
+                "LCL-021",
+                "LL-2018-025",
+                "O006-reasoning",
+                "O006-outcome"
+              ],
+              "suggestions": [
+                "核查招聘公告、录用通知书、岗位说明书中有无事先明确、可量化的“录用条件”，以及是否与加班服从度挂钩。",
+                "核查解除通知书的书面理由、送达时间与说明理由的方式，保留原件或截图。",
+                "比较公司对不同员工的处理是否一致，避免仅因拒绝超时加班而差别对待。",
+                "注意：官方案例为终局仲裁裁决（另有监察责令改正），不是法院生效判决，其赔偿金额仅适用于该案，不能作为你自身结果的预期。"
+              ]
+            },
+            {
+              "title": "以“公司工作制度要求”作为强制超时加班的依据，效力存在疑问",
+              "level": "attention",
+              "quote": "公司表示这是其工作制度要求，并对试用期内拒绝这种安排的员工以不符合录用条件为由解除劳动合同。",
+              "material_id": "user",
+              "page_number": 0,
+              "explanation": "《劳动法》第四十一条要求延长工作时间须出于生产经营需要、经与工会和劳动者协商，并受每日和每月上限限制。若公司仅以内部制度要求为由，未与劳动者协商、也未履行法定上限和审批程序，该制度在加班安排上的效力与合法性存在疑问。行政层面，《劳动法》第九十条规定，用人单位违反本法延长劳动者工作时间的，由劳动行政部门给予警告、责令改正，并可处以罚款。是否构成违法及如何处理，仍须由有权机关结合实际情况认定，本分析不作违法认定。",
+              "evidence_ids": [
+                "LL-2018-041",
+                "LL-2018-090",
+                "O006-reasoning"
+              ],
+              "suggestions": [
+                "核查员工手册、规章制度中关于工作时间与加班的条款，以及其制定是否经过民主程序和公示告知。",
+                "核查公司是否就制度内容向员工送达、培训并留存签收记录。",
+                "如已发生争议，可向当地人力资源社会保障部门咨询或投诉举报，由主管部门依职权核查。"
+              ]
+            },
+            {
+              "title": "现有公开信息不足以对具体个案工时与解除性质下定论",
+              "level": "uncertain",
+              "quote": "只根据这些公开信息分析，不预设仲裁或法院结论。",
+              "material_id": "user",
+              "page_number": 0,
+              "explanation": "你提供的是公开案例摘要，未包含实际考勤、加班审批、工资支付、录用条件文本、解除通知等关键材料，也未包含特殊工时审批信息。因此无法判断该制度在具体岗位上是否确实违法、解除是否构成违法解除，也不宜预设任何仲裁或法院结论。",
+              "evidence_ids": [
+                "O006-facts"
+              ],
+              "suggestions": [
+                "补齐上述关键材料后再行评估；如暂无法补齐，可先就证据留存和咨询渠道采取行动。",
+                "对关键沟通尽量保留书面或可留痕形式，避免仅依赖口头承诺。"
+              ]
+            }
+          ],
+          "limitations": [
+            "本次分析仅基于用户提供的公开案例摘要，未获取任何个人材料、劳动合同、考勤或工资记录，也不含任何企业名称或个人身份信息。",
+            "未独立核验任何用人单位资质、制度内容或个案事实；文中不构成对企业或个人的违法认定。",
+            "官方公开案例（O006系列）为经核对的官方摘要、非完整裁判文书，其处理结果为终局仲裁裁决并另有监察责令改正，不是法院生效判决，且未独立调取完整裁判文书；案例结果不可直接套用。",
+            "缺少休息时长、考勤记录与工时审批信息，因此未计算每日或每周实际工时，仅将其作为时间跨度风险信号提示。",
+            "未包含工作地现行特殊工时审批规定、地方加班工资计算细则及劳动保障监察具体程序，需结合当地规定进一步核实。",
+            "本分析不构成法律意见，也不能替代劳动仲裁、诉讼或行政程序中的专业判断。"
+          ],
+          "change_reason": "",
+          "version": 1,
+          "created_at": "2026-10-05T15:01:29.250863+00:00",
+          "sources": [
+            {
+              "id": "K007",
+              "title": "五部门警惕招转培、培训贷风险提示",
+              "kind": "guide",
+              "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+              "location": "风险提示第五项",
+              "published_at": "2026-05-18",
+              "verified_at": "2026-10-03",
+              "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+              "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+              "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+              "tags": [
+                "保留证据",
+                "聊天记录",
+                "转账凭证",
+                "投诉",
+                "报案",
+                "建议"
+              ]
+            },
+            {
+              "id": "LCL-021",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "location": "第二十一条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-04",
+              "text": "第二十一条　在试用期中，除劳动者有本法第三十九条和第四十条第一项、第二项规定的情形外，用人单位不得解除劳动合同。用人单位在试用期解除劳动合同的，应当向劳动者说明理由。",
+              "scope": "本条所列情形；第二章　劳动合同的订立 ",
+              "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+              "tags": [
+                "劳动合同法",
+                "第二十一条",
+                "第二章　劳动合同的订立"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 21,
+              "chapter": "第二章　劳动合同的订立",
+              "section": "",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [
+                "LCL-039"
+              ],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+            },
+            {
+              "id": "LCL-039",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "location": "第三十九条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-04",
+              "text": "第三十九条　劳动者有下列情形之一的，用人单位可以解除劳动合同：\n（一）在试用期间被证明不符合录用条件的；\n（二）严重违反用人单位的规章制度的；\n（三）严重失职，营私舞弊，给用人单位造成重大损害的；\n（四）劳动者同时与其他用人单位建立劳动关系，对完成本单位的工作任务造成严重影响，或者经用人单位提出，拒不改正的；\n（五）因本法第二十六条第一款第一项规定的情形致使劳动合同无效的；\n（六）被依法追究刑事责任的。",
+              "scope": "本条所列情形；第四章　劳动合同的解除和终止 ",
+              "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+              "tags": [
+                "劳动合同法",
+                "第三十九条",
+                "第四章　劳动合同的解除和终止"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 39,
+              "chapter": "第四章　劳动合同的解除和终止",
+              "section": "",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [
+                "LCL-026"
+              ],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+            },
+            {
+              "id": "LL-2018-025",
+              "title": "中华人民共和国劳动法",
+              "kind": "law",
+              "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+              "location": "第二十五条",
+              "published_at": "2018-12-29",
+              "verified_at": "2026-10-05",
+              "text": "第二十五条\n劳动者有下列情形之一的，用人单位可以解除劳动合同：\n（一）在试用期间被证明不符合录用条件的；\n（二）严重违反劳动纪律或者用人单位规章制度的；\n（三）严重失职，营私舞弊，对用人单位利益造成重大损害的；\n（四）被依法追究刑事责任的。",
+              "scope": "本条所列情形；第三章 劳动合同和集体合同",
+              "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。劳动合同事项还应结合劳动合同法具体规定。",
+              "tags": [
+                "劳动法",
+                "第二十五条",
+                "第三章 劳动合同和集体合同"
+              ],
+              "law_id": "labor-law-2018",
+              "article_number": 25,
+              "chapter": "第三章 劳动合同和集体合同",
+              "version": "2018年12月29日修正",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+              "related_article_ids": [
+                "LCL-039"
+              ],
+              "supporting_source_urls": []
+            },
+            {
+              "id": "LL-2018-036",
+              "title": "中华人民共和国劳动法",
+              "kind": "law",
+              "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+              "location": "第三十六条",
+              "published_at": "2018-12-29",
+              "verified_at": "2026-10-05",
+              "text": "第三十六条\n国家实行劳动者每日工作时间不超过八小时、平均每周工作时间不超过四十四小时的工时制度。",
+              "scope": "本条所列情形；第四章 工作时间和休息休假",
+              "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。本条原文平均每周不超过四十四小时须结合国务院关于职工工作时间的规定第三条每日八小时、每周四十小时；不可把四十四小时直接当作当前标准工时。",
+              "tags": [
+                "劳动法",
+                "第三十六条",
+                "第四章 工作时间和休息休假",
+                "工时",
+                "工作时间"
+              ],
+              "law_id": "labor-law-2018",
+              "article_number": 36,
+              "chapter": "第四章 工作时间和休息休假",
+              "version": "2018年12月29日修正",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+              "related_article_ids": [],
+              "supporting_source_urls": [
+                "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/201710/t20171009_780941.html"
+              ]
+            },
+            {
+              "id": "LL-2018-041",
+              "title": "中华人民共和国劳动法",
+              "kind": "law",
+              "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+              "location": "第四十一条",
+              "published_at": "2018-12-29",
+              "verified_at": "2026-10-05",
+              "text": "第四十一条\n用人单位由于生产经营需要，经与工会和劳动者协商后可以延长工作时间，一般每日不得超过一小时；因特殊原因需要延长工作时间的，在保障劳动者身体健康的条件下延长工作时间每日不得超过三小时，但是每月不得超过三十六小时。",
+              "scope": "本条所列情形；第四章 工作时间和休息休假",
+              "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+              "tags": [
+                "劳动法",
+                "第四十一条",
+                "第四章 工作时间和休息休假",
+                "加班",
+                "加班上限",
+                "三十六小时"
+              ],
+              "law_id": "labor-law-2018",
+              "article_number": 41,
+              "chapter": "第四章 工作时间和休息休假",
+              "version": "2018年12月29日修正",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+              "related_article_ids": [],
+              "supporting_source_urls": []
+            },
+            {
+              "id": "LL-2018-090",
+              "title": "中华人民共和国劳动法",
+              "kind": "law",
+              "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+              "location": "第九十条",
+              "published_at": "2018-12-29",
+              "verified_at": "2026-10-05",
+              "text": "第九十条\n用人单位违反本法规定，延长劳动者工作时间的，由劳动行政部门给予警告，责令改正，并可以处以罚款。",
+              "scope": "本条所列情形；第十二章 法律责任",
+              "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+              "tags": [
+                "劳动法",
+                "第九十条",
+                "第十二章 法律责任"
+              ],
+              "law_id": "labor-law-2018",
+              "article_number": 90,
+              "chapter": "第十二章 法律责任",
+              "version": "2018年12月29日修正",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+              "related_article_ids": [],
+              "supporting_source_urls": []
+            },
+            {
+              "id": "O006-facts",
+              "title": "试用期拒绝996违法加班后被解除劳动合同",
+              "kind": "case",
+              "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+              "location": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同 · 基本案情",
+              "published_at": "2021-08-26",
+              "verified_at": "2026-10-04",
+              "text": "【官方发布案例的核对摘要，非完整裁判文书】快递公司规定早9点至晚9点、每周工作6天。试用期劳动者拒绝违法超时加班，被以不符合录用条件为由解除。",
+              "scope": "用违法超时加班安排作为试用期录用条件的争议。",
+              "boundary": "须核实实际工时和解除理由；不能推广为拒绝任何加班均合法。该案为终局仲裁，不能标为法院判决。",
+              "tags": [
+                "996",
+                "早9晚9",
+                "每周6天",
+                "试用期",
+                "拒绝违法加班",
+                "不符合录用条件",
+                "违法解除"
+              ],
+              "case_id": "O006",
+              "chunk_role": "facts",
+              "related_ids": [
+                "O006-facts",
+                "O006-reasoning",
+                "O006-outcome"
+              ],
+              "source_publisher": "人力资源社会保障部、最高人民法院",
+              "source_case_position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+              "content_form": "official_case_summary",
+              "verification_status": "official_source_checked",
+              "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+              "decision_type": "labor_arbitration",
+              "procedural_status": "官方明确终局仲裁裁决；另有监察责令改正"
+            },
+            {
+              "id": "O006-outcome",
+              "title": "试用期拒绝996违法加班后被解除劳动合同",
+              "kind": "case",
+              "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+              "location": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同 · 仲裁处理结果",
+              "published_at": "2021-08-26",
+              "verified_at": "2026-10-04",
+              "text": "【官方发布案例的核对摘要，非完整裁判文书】仲裁终局裁决公司支付违法解除赔偿金8000元；监察机构责令改正违法规章制度并警告。金额仅适用于该案。",
+              "scope": "用违法超时加班安排作为试用期录用条件的争议。",
+              "boundary": "须核实实际工时和解除理由；不能推广为拒绝任何加班均合法。该案为终局仲裁，不能标为法院判决。",
+              "tags": [
+                "996",
+                "早9晚9",
+                "每周6天",
+                "试用期",
+                "拒绝违法加班",
+                "不符合录用条件",
+                "违法解除"
+              ],
+              "case_id": "O006",
+              "chunk_role": "outcome",
+              "related_ids": [
+                "O006-facts",
+                "O006-reasoning",
+                "O006-outcome"
+              ],
+              "source_publisher": "人力资源社会保障部、最高人民法院",
+              "source_case_position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+              "content_form": "official_case_summary",
+              "verification_status": "official_source_checked",
+              "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+              "decision_type": "labor_arbitration",
+              "procedural_status": "官方明确终局仲裁裁决；另有监察责令改正"
+            },
+            {
+              "id": "O006-reasoning",
+              "title": "试用期拒绝996违法加班后被解除劳动合同",
+              "kind": "case",
+              "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+              "location": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同 · 案例分析",
+              "published_at": "2021-08-26",
+              "verified_at": "2026-10-04",
+              "text": "【官方发布案例的核对摘要，非完整裁判文书】官方分析认为工时制度违反延长工作时间上限，拒绝违法超时加班不能据此认定试用期不符合录用条件。",
+              "scope": "用违法超时加班安排作为试用期录用条件的争议。",
+              "boundary": "须核实实际工时和解除理由；不能推广为拒绝任何加班均合法。该案为终局仲裁，不能标为法院判决。",
+              "tags": [
+                "996",
+                "早9晚9",
+                "每周6天",
+                "试用期",
+                "拒绝违法加班",
+                "不符合录用条件",
+                "违法解除"
+              ],
+              "case_id": "O006",
+              "chunk_role": "reasoning",
+              "related_ids": [
+                "O006-facts",
+                "O006-reasoning",
+                "O006-outcome"
+              ],
+              "source_publisher": "人力资源社会保障部、最高人民法院",
+              "source_case_position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+              "content_form": "official_case_summary",
+              "verification_status": "official_source_checked",
+              "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+              "decision_type": "labor_arbitration",
+              "procedural_status": "官方明确终局仲裁裁决；另有监察责令改正"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ]
+          },
+          {
+            "id": "LCL-021",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第二十一条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第二十一条　在试用期中，除劳动者有本法第三十九条和第四十条第一项、第二项规定的情形外，用人单位不得解除劳动合同。用人单位在试用期解除劳动合同的，应当向劳动者说明理由。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二十一条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 21,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [
+              "LCL-039"
+            ],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "LCL-039",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第三十九条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第三十九条　劳动者有下列情形之一的，用人单位可以解除劳动合同：\n（一）在试用期间被证明不符合录用条件的；\n（二）严重违反用人单位的规章制度的；\n（三）严重失职，营私舞弊，给用人单位造成重大损害的；\n（四）劳动者同时与其他用人单位建立劳动关系，对完成本单位的工作任务造成严重影响，或者经用人单位提出，拒不改正的；\n（五）因本法第二十六条第一款第一项规定的情形致使劳动合同无效的；\n（六）被依法追究刑事责任的。",
+            "scope": "本条所列情形；第四章　劳动合同的解除和终止 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第三十九条",
+              "第四章　劳动合同的解除和终止"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 39,
+            "chapter": "第四章　劳动合同的解除和终止",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [
+              "LCL-026"
+            ],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "LL-2018-025",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第二十五条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第二十五条\n劳动者有下列情形之一的，用人单位可以解除劳动合同：\n（一）在试用期间被证明不符合录用条件的；\n（二）严重违反劳动纪律或者用人单位规章制度的；\n（三）严重失职，营私舞弊，对用人单位利益造成重大损害的；\n（四）被依法追究刑事责任的。",
+            "scope": "本条所列情形；第三章 劳动合同和集体合同",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。劳动合同事项还应结合劳动合同法具体规定。",
+            "tags": [
+              "劳动法",
+              "第二十五条",
+              "第三章 劳动合同和集体合同"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 25,
+            "chapter": "第三章 劳动合同和集体合同",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [
+              "LCL-039"
+            ],
+            "supporting_source_urls": []
+          },
+          {
+            "id": "LL-2018-036",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第三十六条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第三十六条\n国家实行劳动者每日工作时间不超过八小时、平均每周工作时间不超过四十四小时的工时制度。",
+            "scope": "本条所列情形；第四章 工作时间和休息休假",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。本条原文平均每周不超过四十四小时须结合国务院关于职工工作时间的规定第三条每日八小时、每周四十小时；不可把四十四小时直接当作当前标准工时。",
+            "tags": [
+              "劳动法",
+              "第三十六条",
+              "第四章 工作时间和休息休假",
+              "工时",
+              "工作时间"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 36,
+            "chapter": "第四章 工作时间和休息休假",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": [
+              "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/201710/t20171009_780941.html"
+            ]
+          },
+          {
+            "id": "LL-2018-041",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第四十一条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第四十一条\n用人单位由于生产经营需要，经与工会和劳动者协商后可以延长工作时间，一般每日不得超过一小时；因特殊原因需要延长工作时间的，在保障劳动者身体健康的条件下延长工作时间每日不得超过三小时，但是每月不得超过三十六小时。",
+            "scope": "本条所列情形；第四章 工作时间和休息休假",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+            "tags": [
+              "劳动法",
+              "第四十一条",
+              "第四章 工作时间和休息休假",
+              "加班",
+              "加班上限",
+              "三十六小时"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 41,
+            "chapter": "第四章 工作时间和休息休假",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": []
+          },
+          {
+            "id": "LL-2018-090",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第九十条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第九十条\n用人单位违反本法规定，延长劳动者工作时间的，由劳动行政部门给予警告，责令改正，并可以处以罚款。",
+            "scope": "本条所列情形；第十二章 法律责任",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+            "tags": [
+              "劳动法",
+              "第九十条",
+              "第十二章 法律责任"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 90,
+            "chapter": "第十二章 法律责任",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": []
+          },
+          {
+            "id": "O006-facts",
+            "title": "试用期拒绝996违法加班后被解除劳动合同",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+            "location": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同 · 基本案情",
+            "published_at": "2021-08-26",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】快递公司规定早9点至晚9点、每周工作6天。试用期劳动者拒绝违法超时加班，被以不符合录用条件为由解除。",
+            "scope": "用违法超时加班安排作为试用期录用条件的争议。",
+            "boundary": "须核实实际工时和解除理由；不能推广为拒绝任何加班均合法。该案为终局仲裁，不能标为法院判决。",
+            "tags": [
+              "996",
+              "早9晚9",
+              "每周6天",
+              "试用期",
+              "拒绝违法加班",
+              "不符合录用条件",
+              "违法解除"
+            ],
+            "case_id": "O006",
+            "chunk_role": "facts",
+            "related_ids": [
+              "O006-facts",
+              "O006-reasoning",
+              "O006-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部、最高人民法院",
+            "source_case_position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "labor_arbitration",
+            "procedural_status": "官方明确终局仲裁裁决；另有监察责令改正"
+          },
+          {
+            "id": "O006-outcome",
+            "title": "试用期拒绝996违法加班后被解除劳动合同",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+            "location": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同 · 仲裁处理结果",
+            "published_at": "2021-08-26",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】仲裁终局裁决公司支付违法解除赔偿金8000元；监察机构责令改正违法规章制度并警告。金额仅适用于该案。",
+            "scope": "用违法超时加班安排作为试用期录用条件的争议。",
+            "boundary": "须核实实际工时和解除理由；不能推广为拒绝任何加班均合法。该案为终局仲裁，不能标为法院判决。",
+            "tags": [
+              "996",
+              "早9晚9",
+              "每周6天",
+              "试用期",
+              "拒绝违法加班",
+              "不符合录用条件",
+              "违法解除"
+            ],
+            "case_id": "O006",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "O006-facts",
+              "O006-reasoning",
+              "O006-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部、最高人民法院",
+            "source_case_position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "labor_arbitration",
+            "procedural_status": "官方明确终局仲裁裁决；另有监察责令改正"
+          },
+          {
+            "id": "O006-reasoning",
+            "title": "试用期拒绝996违法加班后被解除劳动合同",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+            "location": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同 · 案例分析",
+            "published_at": "2021-08-26",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】官方分析认为工时制度违反延长工作时间上限，拒绝违法超时加班不能据此认定试用期不符合录用条件。",
+            "scope": "用违法超时加班安排作为试用期录用条件的争议。",
+            "boundary": "须核实实际工时和解除理由；不能推广为拒绝任何加班均合法。该案为终局仲裁，不能标为法院判决。",
+            "tags": [
+              "996",
+              "早9晚9",
+              "每周6天",
+              "试用期",
+              "拒绝违法加班",
+              "不符合录用条件",
+              "违法解除"
+            ],
+            "case_id": "O006",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "O006-facts",
+              "O006-reasoning",
+              "O006-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部、最高人民法院",
+            "source_case_position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "labor_arbitration",
+            "procedural_status": "官方明确终局仲裁裁决；另有监察责令改正"
+          }
+        ]
+      }
+    }
+  ],
+  "raw_model_messages": [
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "index": 0,
+          "id": "call_00_9eZQjLCVn326hoXzyWXA2101",
+          "type": "function",
+          "function": {
+            "name": "search_knowledge",
+            "arguments": "{\"query\": \"用人单位违法延长工作时间 每周工作6天 早9晚9 劳动法 工时制度 加班\"}"
+          }
+        },
+        {
+          "index": 1,
+          "id": "call_01_1ekxPq3xhj95nnzu06aS5909",
+          "type": "function",
+          "function": {
+            "name": "search_knowledge",
+            "arguments": "{\"query\": \"试用期以不符合录用条件解除劳动合同 录用条件 举证 劳动合同法第39条\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "{\"action\": \"report\", \"message\": \"\", \"questions\": [], \"evidence_ids\": [\"O006-facts\", \"O006-reasoning\", \"O006-outcome\", \"LL-2018-036\", \"LL-2018-041\", \"LL-2018-090\", \"LCL-039\", \"LCL-021\", \"LL-2018-025\", \"K007\"], \"report\": {\"summary\": \"本次分析仅基于你提供的公开案例摘要（某快递公司规定早9时至晚9时、每周6天，并对试用期内拒绝该安排的员工以“不符合录用条件”解除劳动合同），不预设任何仲裁或法院结论。从现行规范看，该“早9晚9、每周6天”的制度安排在未依法取得特殊工时审批、且未另行安排补休或支付加班报酬的情况下，明显超过法定标准工时与延长工作时间上限，存在被认定为违法规章制度并受行政处理的风险；以“拒绝违法超时加班”作为“不符合录用条件”的解除理由，其合法性和举证充分性均存在较高风险，官方公开案例的处理思路也倾向不支持此类解除。同时，“早9晚9”只是时间跨度，不等于实际工作时长，需结合休息时长、考勤、工时审批等证据核查后才能对具体工时是否违法下判断。\", \"findings\": [{\"title\": \"“早9晚9、每周6天”的制度安排可能超出法定工时和加班上限\", \"level\": \"high\", \"quote_id\": \"Q1feb496877f73d21b718\", \"explanation\": \"《劳动法》第三十六条规定每日不超过八小时、平均每周不超过四十四小时的工时制度（该条还须结合国务院关于每日八小时、每周四十小时的规定理解，不能直接把四十四小时当作当前标准工时）；第四十一条规定延长工作时间一般每日不超过一小时，特殊原因每日不超过三小时且每月不超过三十六小时。你描述的“每天9时至21时、每周6天”属于较长的时间跨度，若无特殊工时审批、也无充分休息与补休安排，通常难以满足上述上限。需注意：早9晚9只是跨度，不等于实际工作时长，缺少休息时长、考勤与工时审批信息时不宜直接计算每日或每周实际工时，因此此处是风险信号而非违法认定。\", \"evidence_ids\": [\"LL-2018-036\", \"LL-2018-041\", \"O006-facts\", \"O006-reasoning\"], \"suggestions\": [\"核查公司是否就相关岗位取得综合计算工时或不定时工作制的行政审批文件及其有效期、适用岗位范围。\", \"区分“在岗时间跨度”与“实际工作时间”，核对考勤记录、打卡数据、排班表、休息与用餐安排，确认每日实际工作时长与每月加班小时数。\", \"核查是否存在补休安排、加班审批流程，以及加班工资是否按法定标准支付。\"]}, {\"title\": \"以“不符合录用条件”解除试用期员工，理由与举证均存在较高风险\", \"level\": \"high\", \"quote_id\": \"Q2ac6b17d17057eea60ae\", \"explanation\": \"《劳动合同法》第三十九条第一项要求“在试用期间被证明不符合录用条件”方可解除，第二十一条进一步限定试用期解除须限于第三十九条和第四十条第一、二项情形，并应向劳动者说明理由。若解除的真实原因是劳动者拒绝超出法定上限的加班安排，而该加班本身可能违法，则以此认定“不符合录用条件”缺乏正当性基础，用人单位需承担较重的举证责任。官方公开案例的分析亦持相近思路：工时制度违反延长工作时间上限，拒绝违法超时加班不能据此认定为试用期不符合录用条件。需强调：官方案例的处理结果仅为个案参考，不是规范依据，也不能直接套用于你未来的具体情形。\", \"evidence_ids\": [\"LCL-039\", \"LCL-021\", \"LL-2018-025\", \"O006-reasoning\", \"O006-outcome\"], \"suggestions\": [\"核查招聘公告、录用通知书、岗位说明书中有无事先明确、可量化的“录用条件”，以及是否与加班服从度挂钩。\", \"核查解除通知书的书面理由、送达时间与说明理由的方式，保留原件或截图。\", \"比较公司对不同员工的处理是否一致，避免仅因拒绝超时加班而差别对待。\", \"注意：官方案例为终局仲裁裁决（另有监察责令改正），不是法院生效判决，其赔偿金额仅适用于该案，不能作为你自身结果的预期。\"]}, {\"title\": \"以“公司工作制度要求”作为强制超时加班的依据，效力存在疑问\", \"level\": \"attention\", \"quote_id\": \"Q2ac6b17d17057eea60ae\", \"explanation\": \"《劳动法》第四十一条要求延长工作时间须出于生产经营需要、经与工会和劳动者协商，并受每日和每月上限限制。若公司仅以内部制度要求为由，未与劳动者协商、也未履行法定上限和审批程序，该制度在加班安排上的效力与合法性存在疑问。行政层面，《劳动法》第九十条规定，用人单位违反本法延长劳动者工作时间的，由劳动行政部门给予警告、责令改正，并可处以罚款。是否构成违法及如何处理，仍须由有权机关结合实际情况认定，本分析不作违法认定。\", \"evidence_ids\": [\"LL-2018-041\", \"LL-2018-090\", \"O006-reasoning\"], \"suggestions\": [\"核查员工手册、规章制度中关于工作时间与加班的条款，以及其制定是否经过民主程序和公示告知。\", \"核查公司是否就制度内容向员工送达、培训并留存签收记录。\", \"如已发生争议，可向当地人力资源社会保障部门咨询或投诉举报，由主管部门依职权核查。\"]}, {\"title\": \"现有公开信息不足以对具体个案工时与解除性质下定论\", \"level\": \"uncertain\", \"quote_id\": \"Q3b6e530c1e7d6b09e028\", \"explanation\": \"你提供的是公开案例摘要，未包含实际考勤、加班审批、工资支付、录用条件文本、解除通知等关键材料，也未包含特殊工时审批信息。因此无法判断该制度在具体岗位上是否确实违法、解除是否构成违法解除，也不宜预设任何仲裁或法院结论。\", \"evidence_ids\": [\"O006-facts\"], \"suggestions\": [\"补齐上述关键材料后再行评估；如暂无法补齐，可先就证据留存和咨询渠道采取行动。\", \"对关键沟通尽量保留书面或可留痕形式，避免仅依赖口头承诺。\"]}], \"limitations\": [\"本次分析仅基于用户提供的公开案例摘要，未获取任何个人材料、劳动合同、考勤或工资记录，也不含任何企业名称或个人身份信息。\", \"未独立核验任何用人单位资质、制度内容或个案事实；文中不构成对企业或个人的违法认定。\", \"官方公开案例（O006系列）为经核对的官方摘要、非完整裁判文书，其处理结果为终局仲裁裁决并另有监察责令改正，不是法院生效判决，且未独立调取完整裁判文书；案例结果不可直接套用。\", \"缺少休息时长、考勤记录与工时审批信息，因此未计算每日或每周实际工时，仅将其作为时间跨度风险信号提示。\", \"未包含工作地现行特殊工时审批规定、地方加班工资计算细则及劳动保障监察具体程序，需结合当地规定进一步核实。\", \"本分析不构成法律意见，也不能替代劳动仲裁、诉讼或行政程序中的专业判断。\"], \"change_reason\": \"\"}}"
+    }
+  ],
+  "tool_traces": [
+    [
+      {
+        "tool": "search_knowledge",
+        "arguments": {
+          "query": "用人单位违法延长工作时间 每周工作6天 早9晚9 劳动法 工时制度 加班"
+        },
+        "result": [
+          {
+            "id": "LL-2018-041",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第四十一条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第四十一条\n用人单位由于生产经营需要，经与工会和劳动者协商后可以延长工作时间，一般每日不得超过一小时；因特殊原因需要延长工作时间的，在保障劳动者身体健康的条件下延长工作时间每日不得超过三小时，但是每月不得超过三十六小时。",
+            "scope": "本条所列情形；第四章 工作时间和休息休假",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+            "tags": [
+              "劳动法",
+              "第四十一条",
+              "第四章 工作时间和休息休假",
+              "加班",
+              "加班上限",
+              "三十六小时"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 41,
+            "chapter": "第四章 工作时间和休息休假",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": []
+          },
+          {
+            "id": "LL-2018-090",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第九十条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第九十条\n用人单位违反本法规定，延长劳动者工作时间的，由劳动行政部门给予警告，责令改正，并可以处以罚款。",
+            "scope": "本条所列情形；第十二章 法律责任",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+            "tags": [
+              "劳动法",
+              "第九十条",
+              "第十二章 法律责任"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 90,
+            "chapter": "第十二章 法律责任",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": []
+          },
+          {
+            "id": "LL-2018-036",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第三十六条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第三十六条\n国家实行劳动者每日工作时间不超过八小时、平均每周工作时间不超过四十四小时的工时制度。",
+            "scope": "本条所列情形；第四章 工作时间和休息休假",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。本条原文平均每周不超过四十四小时须结合国务院关于职工工作时间的规定第三条每日八小时、每周四十小时；不可把四十四小时直接当作当前标准工时。",
+            "tags": [
+              "劳动法",
+              "第三十六条",
+              "第四章 工作时间和休息休假",
+              "工时",
+              "工作时间"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 36,
+            "chapter": "第四章 工作时间和休息休假",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": [
+              "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/201710/t20171009_780941.html"
+            ]
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ]
+          },
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ]
+          },
+          {
+            "id": "O006-facts",
+            "title": "试用期拒绝996违法加班后被解除劳动合同",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+            "location": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同 · 基本案情",
+            "published_at": "2021-08-26",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】快递公司规定早9点至晚9点、每周工作6天。试用期劳动者拒绝违法超时加班，被以不符合录用条件为由解除。",
+            "scope": "用违法超时加班安排作为试用期录用条件的争议。",
+            "boundary": "须核实实际工时和解除理由；不能推广为拒绝任何加班均合法。该案为终局仲裁，不能标为法院判决。",
+            "tags": [
+              "996",
+              "早9晚9",
+              "每周6天",
+              "试用期",
+              "拒绝违法加班",
+              "不符合录用条件",
+              "违法解除"
+            ],
+            "case_id": "O006",
+            "chunk_role": "facts",
+            "related_ids": [
+              "O006-facts",
+              "O006-reasoning",
+              "O006-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部、最高人民法院",
+            "source_case_position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "labor_arbitration",
+            "procedural_status": "官方明确终局仲裁裁决；另有监察责令改正"
+          },
+          {
+            "id": "O006-reasoning",
+            "title": "试用期拒绝996违法加班后被解除劳动合同",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+            "location": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同 · 案例分析",
+            "published_at": "2021-08-26",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】官方分析认为工时制度违反延长工作时间上限，拒绝违法超时加班不能据此认定试用期不符合录用条件。",
+            "scope": "用违法超时加班安排作为试用期录用条件的争议。",
+            "boundary": "须核实实际工时和解除理由；不能推广为拒绝任何加班均合法。该案为终局仲裁，不能标为法院判决。",
+            "tags": [
+              "996",
+              "早9晚9",
+              "每周6天",
+              "试用期",
+              "拒绝违法加班",
+              "不符合录用条件",
+              "违法解除"
+            ],
+            "case_id": "O006",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "O006-facts",
+              "O006-reasoning",
+              "O006-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部、最高人民法院",
+            "source_case_position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "labor_arbitration",
+            "procedural_status": "官方明确终局仲裁裁决；另有监察责令改正"
+          },
+          {
+            "id": "O006-outcome",
+            "title": "试用期拒绝996违法加班后被解除劳动合同",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+            "location": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同 · 仲裁处理结果",
+            "published_at": "2021-08-26",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】仲裁终局裁决公司支付违法解除赔偿金8000元；监察机构责令改正违法规章制度并警告。金额仅适用于该案。",
+            "scope": "用违法超时加班安排作为试用期录用条件的争议。",
+            "boundary": "须核实实际工时和解除理由；不能推广为拒绝任何加班均合法。该案为终局仲裁，不能标为法院判决。",
+            "tags": [
+              "996",
+              "早9晚9",
+              "每周6天",
+              "试用期",
+              "拒绝违法加班",
+              "不符合录用条件",
+              "违法解除"
+            ],
+            "case_id": "O006",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "O006-facts",
+              "O006-reasoning",
+              "O006-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部、最高人民法院",
+            "source_case_position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "labor_arbitration",
+            "procedural_status": "官方明确终局仲裁裁决；另有监察责令改正"
+          }
+        ]
+      },
+      {
+        "tool": "search_knowledge",
+        "arguments": {
+          "query": "试用期以不符合录用条件解除劳动合同 录用条件 举证 劳动合同法第39条"
+        },
+        "result": [
+          {
+            "id": "LCL-039",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第三十九条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第三十九条　劳动者有下列情形之一的，用人单位可以解除劳动合同：\n（一）在试用期间被证明不符合录用条件的；\n（二）严重违反用人单位的规章制度的；\n（三）严重失职，营私舞弊，给用人单位造成重大损害的；\n（四）劳动者同时与其他用人单位建立劳动关系，对完成本单位的工作任务造成严重影响，或者经用人单位提出，拒不改正的；\n（五）因本法第二十六条第一款第一项规定的情形致使劳动合同无效的；\n（六）被依法追究刑事责任的。",
+            "scope": "本条所列情形；第四章　劳动合同的解除和终止 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第三十九条",
+              "第四章　劳动合同的解除和终止"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 39,
+            "chapter": "第四章　劳动合同的解除和终止",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [
+              "LCL-026"
+            ],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "LCL-021",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "第二十一条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-04",
+            "text": "第二十一条　在试用期中，除劳动者有本法第三十九条和第四十条第一项、第二项规定的情形外，用人单位不得解除劳动合同。用人单位在试用期解除劳动合同的，应当向劳动者说明理由。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二十一条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 21,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [
+              "LCL-039"
+            ],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+          },
+          {
+            "id": "LL-2018-025",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第二十五条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第二十五条\n劳动者有下列情形之一的，用人单位可以解除劳动合同：\n（一）在试用期间被证明不符合录用条件的；\n（二）严重违反劳动纪律或者用人单位规章制度的；\n（三）严重失职，营私舞弊，对用人单位利益造成重大损害的；\n（四）被依法追究刑事责任的。",
+            "scope": "本条所列情形；第三章 劳动合同和集体合同",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。劳动合同事项还应结合劳动合同法具体规定。",
+            "tags": [
+              "劳动法",
+              "第二十五条",
+              "第三章 劳动合同和集体合同"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 25,
+            "chapter": "第三章 劳动合同和集体合同",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [
+              "LCL-039"
+            ],
+            "supporting_source_urls": []
+          },
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ]
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ]
+          },
+          {
+            "id": "O006-facts",
+            "title": "试用期拒绝996违法加班后被解除劳动合同",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+            "location": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同 · 基本案情",
+            "published_at": "2021-08-26",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】快递公司规定早9点至晚9点、每周工作6天。试用期劳动者拒绝违法超时加班，被以不符合录用条件为由解除。",
+            "scope": "用违法超时加班安排作为试用期录用条件的争议。",
+            "boundary": "须核实实际工时和解除理由；不能推广为拒绝任何加班均合法。该案为终局仲裁，不能标为法院判决。",
+            "tags": [
+              "996",
+              "早9晚9",
+              "每周6天",
+              "试用期",
+              "拒绝违法加班",
+              "不符合录用条件",
+              "违法解除"
+            ],
+            "case_id": "O006",
+            "chunk_role": "facts",
+            "related_ids": [
+              "O006-facts",
+              "O006-reasoning",
+              "O006-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部、最高人民法院",
+            "source_case_position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "labor_arbitration",
+            "procedural_status": "官方明确终局仲裁裁决；另有监察责令改正"
+          },
+          {
+            "id": "O006-reasoning",
+            "title": "试用期拒绝996违法加班后被解除劳动合同",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+            "location": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同 · 案例分析",
+            "published_at": "2021-08-26",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】官方分析认为工时制度违反延长工作时间上限，拒绝违法超时加班不能据此认定试用期不符合录用条件。",
+            "scope": "用违法超时加班安排作为试用期录用条件的争议。",
+            "boundary": "须核实实际工时和解除理由；不能推广为拒绝任何加班均合法。该案为终局仲裁，不能标为法院判决。",
+            "tags": [
+              "996",
+              "早9晚9",
+              "每周6天",
+              "试用期",
+              "拒绝违法加班",
+              "不符合录用条件",
+              "违法解除"
+            ],
+            "case_id": "O006",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "O006-facts",
+              "O006-reasoning",
+              "O006-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部、最高人民法院",
+            "source_case_position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "labor_arbitration",
+            "procedural_status": "官方明确终局仲裁裁决；另有监察责令改正"
+          },
+          {
+            "id": "O006-outcome",
+            "title": "试用期拒绝996违法加班后被解除劳动合同",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+            "location": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同 · 仲裁处理结果",
+            "published_at": "2021-08-26",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】仲裁终局裁决公司支付违法解除赔偿金8000元；监察机构责令改正违法规章制度并警告。金额仅适用于该案。",
+            "scope": "用违法超时加班安排作为试用期录用条件的争议。",
+            "boundary": "须核实实际工时和解除理由；不能推广为拒绝任何加班均合法。该案为终局仲裁，不能标为法院判决。",
+            "tags": [
+              "996",
+              "早9晚9",
+              "每周6天",
+              "试用期",
+              "拒绝违法加班",
+              "不符合录用条件",
+              "违法解除"
+            ],
+            "case_id": "O006",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "O006-facts",
+              "O006-reasoning",
+              "O006-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部、最高人民法院",
+            "source_case_position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "labor_arbitration",
+            "procedural_status": "官方明确终局仲裁裁决；另有监察责令改正"
+          }
+        ]
+      }
+    ]
+  ],
+  "word_export_status": 200
+}

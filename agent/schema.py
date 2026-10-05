@@ -8,9 +8,10 @@ class StrictModel(BaseModel):
 class Finding(StrictModel):
     title:str
     level:Literal['high','attention','uncertain']
-    quote:str
-    material_id:str
-    page_number:int
+    quote_id:str=Field(default='',exclude=True,description='从material_quotes选择的原句编号，不得使用知识库依据编号')
+    quote:str=''
+    material_id:str='user'
+    page_number:int=0
     explanation:str
     evidence_ids:list[str]
     suggestions:list[str]
@@ -19,7 +20,7 @@ class Report(StrictModel):
     summary:str
     findings:list[Finding]
     limitations:list[str]
-    change_reason:str
+    change_reason:str=''
 
     @field_validator('change_reason',mode='before')
     @classmethod

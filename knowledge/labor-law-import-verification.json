@@ -1,0 +1,131 @@
+{
+  "total_chunks": 305,
+  "labor_law_articles": 107,
+  "labor_contract_law_articles": 98,
+  "source_body_match": true,
+  "existing_entries_preserved": true,
+  "total_body_characters": 27122,
+  "retrieval_checks": [
+    {
+      "query": "延长工作时间的加班费150%，休息日又不能补休200%，法定节假日300%",
+      "expected_any": [
+        "LL-2018-044"
+      ],
+      "returned_ids": [
+        "LL-2018-044",
+        "LL-2018-041",
+        "LL-2018-038",
+        "K005",
+        "K007",
+        "O006-facts",
+        "O006-reasoning",
+        "O006-outcome"
+      ],
+      "passed": true
+    },
+    {
+      "query": "每天加班三小时，每月加班超过三十六小时的限制",
+      "expected_any": [
+        "LL-2018-041"
+      ],
+      "returned_ids": [
+        "LL-2018-041",
+        "LL-2018-036",
+        "LCL-068",
+        "K005",
+        "K007",
+        "O006-facts",
+        "O006-reasoning",
+        "O006-outcome"
+      ],
+      "passed": true
+    },
+    {
+      "query": "工资应当按月支付，不得克扣或无故拖欠工资",
+      "expected_any": [
+        "LL-2018-050"
+      ],
+      "returned_ids": [
+        "LL-2018-050",
+        "LL-2018-091",
+        "LCL-030",
+        "K005",
+        "K007",
+        "O019-facts",
+        "O019-reasoning",
+        "O019-outcome"
+      ],
+      "passed": true
+    },
+    {
+      "query": "用人单位支付工资不能低于当地最低工资标准",
+      "expected_any": [
+        "LL-2018-048"
+      ],
+      "returned_ids": [
+        "LL-2018-048",
+        "LCL-085",
+        "LL-2018-091",
+        "K005",
+        "K007",
+        "O019-facts",
+        "O019-reasoning",
+        "O019-outcome"
+      ],
+      "passed": true
+    },
+    {
+      "query": "劳动者就业不因民族种族性别宗教信仰而受歧视",
+      "expected_any": [
+        "LL-2018-012",
+        "LL-2018-013"
+      ],
+      "returned_ids": [
+        "LL-2018-012",
+        "LL-2018-013",
+        "LL-2018-003",
+        "K005",
+        "K007",
+        "O027-facts",
+        "O027-reasoning",
+        "O027-outcome"
+      ],
+      "passed": true
+    },
+    {
+      "query": "怀孕七个月以上不得安排延长工作时间和夜班劳动",
+      "expected_any": [
+        "LL-2018-061"
+      ],
+      "returned_ids": [
+        "LL-2018-061",
+        "LL-2018-063",
+        "LL-2018-043",
+        "K007",
+        "K005",
+        "O019-facts",
+        "O019-reasoning",
+        "O019-outcome"
+      ],
+      "passed": true
+    },
+    {
+      "query": "劳动合同一年，试用期六个月是否可以",
+      "expected_any": [
+        "K004"
+      ],
+      "returned_ids": [
+        "LL-2018-021",
+        "K004",
+        "LCL-070",
+        "K005",
+        "K006",
+        "O006-facts",
+        "O006-reasoning",
+        "O006-outcome"
+      ],
+      "passed": true
+    }
+  ],
+  "passed": 7
+}

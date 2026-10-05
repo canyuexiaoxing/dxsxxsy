@@ -1,0 +1,317 @@
+[
+  {
+    "id": "SUP-C01",
+    "title": "企业登记核查",
+    "kind": "support",
+    "text": "按企业全称或统一社会信用代码查询登记、公示、异常等信息；核对同名和日期。查不到不能证明不存在，正常记录不能保证招聘安全。\n关联依据编号：核查入口与用途说明；不作法律定性",
+    "url": "https://www.gsxt.gov.cn/",
+    "location": "核查渠道",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "企业登记核查",
+      "核查渠道"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [],
+    "support_category": "核查渠道",
+    "origin_document": "官方核查渠道清单.docx"
+  },
+  {
+    "id": "SUP-C02",
+    "title": "信用公示查询",
+    "kind": "support",
+    "text": "查询公开信用及行政处罚等信息，受公示范围与时间影响；不得将无结果当作无违法记录。\n关联依据编号：核查入口与用途说明；不作法律定性",
+    "url": "https://www.creditchina.gov.cn/",
+    "location": "核查渠道",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "信用公示查询",
+      "核查渠道"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [],
+    "support_category": "核查渠道",
+    "origin_document": "官方核查渠道清单.docx"
+  },
+  {
+    "id": "SUP-C03",
+    "title": "公开裁判文书",
+    "kind": "support",
+    "text": "检索公开裁判文书，可能需要登录、验证码；并非全部案件均公开，须读程序状态与事实，不将涉诉直接等同违法或败诉。\n关联依据编号：核查入口与用途说明；不作法律定性",
+    "url": "https://wenshu.court.gov.cn/",
+    "location": "核查渠道",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "公开裁判文书",
+      "核查渠道"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [],
+    "support_category": "核查渠道",
+    "origin_document": "官方核查渠道清单.docx"
+  },
+  {
+    "id": "SUP-C04",
+    "title": "法院执行信息",
+    "kind": "support",
+    "text": "查询公开被执行、失信及限制消费等信息，核对名称和身份；执行记录不同于所有诉讼记录。\n关联依据编号：核查入口与用途说明；不作法律定性",
+    "url": "https://zxgk.court.gov.cn/",
+    "location": "核查渠道",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "法院执行信息",
+      "核查渠道"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [],
+    "support_category": "核查渠道",
+    "origin_document": "官方核查渠道清单.docx"
+  },
+  {
+    "id": "SUP-C05",
+    "title": "人社政务与中介许可",
+    "kind": "support",
+    "text": "全国人社政务服务入口；职业中介许可还应查属地人社部门许可公示或联系12333确认。合同备案功能依地区开放，不声称全国可统一查询所有合同。\n关联依据编号：核查入口与用途说明；不作法律定性",
+    "url": "https://12333.gov.cn/",
+    "location": "核查渠道",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "人社政务与中介许可",
+      "核查渠道"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [],
+    "support_category": "核查渠道",
+    "origin_document": "官方核查渠道清单.docx"
+  },
+  {
+    "id": "SUP-C06",
+    "title": "大学生就业服务平台",
+    "kind": "support",
+    "text": "查招聘与就业服务信息，可与招聘单位官网交叉核验；平台发布不能替代岗位真实性和合同条款核查。\n关联依据编号：核查入口与用途说明；不作法律定性",
+    "url": "https://www.ncss.cn/",
+    "location": "核查渠道",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "大学生就业服务平台",
+      "核查渠道"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [],
+    "support_category": "核查渠道",
+    "origin_document": "官方核查渠道清单.docx"
+  },
+  {
+    "id": "SUP-C07",
+    "title": "中国公共招聘网",
+    "kind": "support",
+    "text": "获取公共招聘信息；核对发布单位和实际招聘方，不据平台来源直接给安全保证。\n关联依据编号：核查入口与用途说明；不作法律定性",
+    "url": "https://job.mohrss.gov.cn/",
+    "location": "核查渠道",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "中国公共招聘网",
+      "核查渠道"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [],
+    "support_category": "核查渠道",
+    "origin_document": "官方核查渠道清单.docx"
+  },
+  {
+    "id": "SUP-C08",
+    "title": "国聘招聘平台",
+    "kind": "support",
+    "text": "国投人力资源服务有限公司运营的招聘平台，不等于政府登记核验系统，也不保证每个岗位均无风险。\n关联依据编号：核查入口与用途说明；不作法律定性",
+    "url": "https://www.iguopin.com/",
+    "location": "核查渠道",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "国聘招聘平台",
+      "核查渠道"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [],
+    "support_category": "核查渠道",
+    "origin_document": "官方核查渠道清单.docx"
+  },
+  {
+    "id": "SUP-C09",
+    "title": "社保个人权益查询",
+    "kind": "support",
+    "text": "本人实名登录查询已开放地区及险种的参保权益记录；也可通过人社平台、掌上12333或正规电子社保卡渠道。不要将完整身份证、银行卡发给本助手代查。\n关联依据编号：核查入口与用途说明；不作法律定性",
+    "url": "https://si.12333.gov.cn/",
+    "location": "核查渠道",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "社保个人权益查询",
+      "核查渠道"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [],
+    "support_category": "核查渠道",
+    "origin_document": "官方核查渠道清单.docx"
+  },
+  {
+    "id": "SUP-C10",
+    "title": "12333人社咨询",
+    "kind": "support",
+    "text": "咨询当地劳动保障、就业与参保业务和对应投诉办理渠道，具体受理范围依当地安排。\n关联依据编号：核查入口与用途说明；不作法律定性",
+    "url": "https://12333.gov.cn/",
+    "location": "核查渠道",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "12333人社咨询",
+      "核查渠道"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [],
+    "support_category": "核查渠道",
+    "origin_document": "官方核查渠道清单.docx"
+  },
+  {
+    "id": "SUP-C11",
+    "title": "12348公共法律服务",
+    "kind": "support",
+    "text": "可拨12348咨询法律和申请法律援助路径；咨询不等于裁决，也不保证任何案件均符合免费代理条件。\n关联依据编号：核查入口与用途说明；不作法律定性",
+    "url": "https://www.12348.gov.cn/",
+    "location": "核查渠道",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "12348公共法律服务",
+      "核查渠道"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [],
+    "support_category": "核查渠道",
+    "origin_document": "官方核查渠道清单.docx"
+  },
+  {
+    "id": "SUP-C12",
+    "title": "12338妇女维权",
+    "kind": "support",
+    "text": "女性就业歧视等权益问题可联系12338；不替代仲裁和法院程序。\n关联依据编号：核查入口与用途说明；不作法律定性",
+    "url": "https://www.fujian.gov.cn/yy/wxym/cydh/",
+    "location": "核查渠道",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "12338妇女维权",
+      "核查渠道"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [],
+    "support_category": "核查渠道",
+    "origin_document": "官方核查渠道清单.docx"
+  },
+  {
+    "id": "SUP-C13",
+    "title": "12351工会维权",
+    "kind": "support",
+    "text": "职工权益问题可拨12351联系工会咨询；各地具体服务范围须核实。\n关联依据编号：核查入口与用途说明；不作法律定性",
+    "url": "https://www.fujian.gov.cn/yy/wxym/cydh/",
+    "location": "核查渠道",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "12351工会维权",
+      "核查渠道"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [],
+    "support_category": "核查渠道",
+    "origin_document": "官方核查渠道清单.docx"
+  },
+  {
+    "id": "SUP-C14",
+    "title": "根治欠薪线索反映",
+    "kind": "support",
+    "text": "按官方指引进入全国根治欠薪线索反映平台，注意适用对象及范围，主要用于欠薪线索，不能当作培训贷款或所有消费纠纷的通用投诉入口。\n关联依据编号：核查入口与用途说明；不作法律定性",
+    "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zhuanti/jinbaogongcheng/jbgcdianhuazixunfuwu/jbgcdhzxfwgzdt/202012/t20201217_405910.html",
+    "location": "核查渠道",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "根治欠薪线索反映",
+      "核查渠道"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [],
+    "support_category": "核查渠道",
+    "origin_document": "官方核查渠道清单.docx"
+  },
+  {
+    "id": "SUP-C15",
+    "title": "110紧急报警",
+    "kind": "support",
+    "text": "涉嫌犯罪或生命财产安全受到紧急威胁时报警110；普通合同争议应先核对行政、民事等受理路径。\n关联依据编号：核查入口与用途说明；不作法律定性",
+    "url": "https://www.shaanxi.gov.cn/zfxxgk/zfgb/2017_3991/d6q_3997/201703/t20170331_1639039.html",
+    "location": "核查渠道",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "110紧急报警",
+      "核查渠道"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [],
+    "support_category": "核查渠道",
+    "origin_document": "官方核查渠道清单.docx"
+  }
+]

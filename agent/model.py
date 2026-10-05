@@ -1,3 +1,4 @@
+import json
 from urllib.parse import urlsplit
 import httpx
 
@@ -27,3 +28,20 @@ class ChatModel:
             return {k:message[k] for k in ['role','content','tool_calls'] if k in message}
         except ModelError: raise
         except Exception: raise ModelError('模型接口超时、连接失败或响应格式异常') from None
+
+
+    def review(self,context,result,sources):
+        from .quality import EDITOR_PROMPT
+        from .schema import TurnResult
+        from pydantic import ValidationError
+        facts={k:context[k] for k in ('materials','history','latest_report','current_message','material_quotes')}
+        facts['history']=[m for m in facts['history'] if m['role']=='user']
+        fields=('id','kind','title','location','text','boundary','verification_status','related_article_ids')
+        payload={'context':facts,'draft':result.model_dump(),'sources':[{k:e[k] for k in fields if k in e} for e in sources.values()]}
+        message=self.complete([{'role':'system','content':EDITOR_PROMPT+'\n输出结构：'+json.dumps(TurnResult.model_json_schema(),ensure_ascii=False)},{'role':'user','content':json.dumps(payload,ensure_ascii=False)}])
+        try:
+            revised=json.loads(message.get('content') or '')
+            TurnResult.model_validate(revised)
+            return {'corrected_result':revised,'issues':[]}
+        except (ValidationError,json.JSONDecodeError):
+            raise ModelError('输出整理结果格式异常，本次未保存报告，请重试') from None

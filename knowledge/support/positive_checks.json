@@ -1,0 +1,93 @@
+[
+  {
+    "id": "SUP-R034",
+    "title": "官方投递渠道检查",
+    "kind": "support",
+    "text": "仅是信息核验的积极信号，不是绿灯保证。须交叉核验主体、联系方式、合同及收费。\n关联依据编号：核查入口与用途说明；不作法律定性",
+    "url": "https://12333.gov.cn/",
+    "location": "核查清单",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "官方投递渠道检查",
+      "核查清单"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [],
+    "support_category": "核查清单",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R035",
+    "title": "地址主体一致检查",
+    "kind": "support",
+    "text": "清晰办公地址、登记与签约主体一致有助核验；登记正常不保证岗位真实或合同合规。\n关联依据编号：核查入口与用途说明；不作法律定性",
+    "url": "https://12333.gov.cn/",
+    "location": "核查清单",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "地址主体一致检查",
+      "核查清单"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [],
+    "support_category": "核查清单",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R036",
+    "title": "岗位薪资清晰检查",
+    "kind": "support",
+    "text": "明确职责、地点和薪资有助沟通，仍需核对报酬构成与履行条件。\n关联依据编号：K002、LCL-017",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "核查清单",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "岗位薪资清晰检查",
+      "核查清单"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K002",
+      "LCL-017"
+    ],
+    "support_category": "核查清单",
+    "origin_document": "三色判定规则库.docx"
+  },
+  {
+    "id": "SUP-R037",
+    "title": "书面合同完整检查",
+    "kind": "support",
+    "text": "签订完整书面合同是积极核查事项，仍需逐项检查违法条款，不自动标安全。\n关联依据编号：K003、LCL-017、LCL-026",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "核查清单",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "书面合同完整检查",
+      "核查清单"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K003",
+      "LCL-017",
+      "LCL-026"
+    ],
+    "support_category": "核查清单",
+    "origin_document": "三色判定规则库.docx"
+  }
+]

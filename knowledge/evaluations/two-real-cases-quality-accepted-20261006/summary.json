@@ -1,0 +1,79 @@
+[
+  {
+    "case": {
+      "id": "unpaid-trial",
+      "title": "河北无薪试岗",
+      "section": "七、河北某劳务派遣服务有限公司无薪试岗案",
+      "facts": "某劳务派遣服务有限公司以岗前培训考核、适应性试岗为名，设定3至7天的无薪试岗期。试岗期满后，企业以考核不合格、不适应岗位等理由辞退劳动者，拒不支付试岗期间的劳动报酬。",
+      "expected": [
+        "识别无薪试岗和劳动报酬风险",
+        "核查是否实际劳动及管理，不能凭名称断言劳动关系",
+        "建议保存劳动管理和报酬证据、向人社部门反映",
+        "不得自动保证2N或把官方处理结果说成用户事实"
+      ]
+    },
+    "report_generated": true,
+    "quotes_match_supplied_material": true,
+    "finding_titles": [
+      "以“无薪试岗”为名不支付报酬的付酬风险",
+      "以“考核不合格、不适应岗位”为由辞退的解除风险",
+      "劳务派遣主体与许可信息的核查需要"
+    ],
+    "citation_ids": [
+      "LCL-007",
+      "LCL-020",
+      "LCL-030",
+      "LCL-057",
+      "LCL-058",
+      "LCL-060",
+      "LCL-066",
+      "LL-2018-050",
+      "SUP-F06",
+      "SUP-L-implementation",
+      "SUP-R018",
+      "SUP-R024"
+    ],
+    "followup_action": "answer",
+    "report_versions_after_followup": 1,
+    "elapsed_seconds": 28.8,
+    "error": null
+  },
+  {
+    "case": {
+      "id": "disguised-dispatch",
+      "title": "江苏假外包真派遣",
+      "section": "五、江苏某企业管理咨询公司从事假外包真派遣案",
+      "facts": "某企业管理咨询公司以业务外包名义与某纺织公司签订合作协议。厂房、机器、原材料由纺织公司提供，纺织公司负责新员工岗前培训，并直接核验工作成果与质量。现场管理人员是纺织公司原职工，管理流程、岗位内容与其在纺织公司工作期间完全一致。企业管理咨询公司收到纺织公司每月支付的费用后，为所谓外包员工支付工资、缴纳社保费。",
+      "expected": [
+        "识别可能以外包名义实行劳务派遣",
+        "关联劳务派遣暂行规定27与劳动合同法57",
+        "许可状态未输入，不得直接认定已证实无证经营",
+        "不得把由另一公司付薪缴社保单独认定为违法",
+        "提供合同、管理记录、许可核查与人社处理建议"
+      ]
+    },
+    "report_generated": true,
+    "quotes_match_supplied_material": true,
+    "finding_titles": [
+      "以“外包”名义实际按原岗位管理，存在被认定为假外包/真派遣的风险",
+      "用工主体与劳动关系归属不清，可能影响社保、工伤与解除维权对象",
+      "招聘阶段对用工形式和责任主体告知不明确，影响知情判断"
+    ],
+    "citation_ids": [
+      "K002",
+      "LCL-007",
+      "LCL-017",
+      "LCL-058",
+      "O014-facts",
+      "O014-outcome",
+      "O014-reasoning",
+      "SUP-L-dispatch",
+      "SUP-R011",
+      "SUP-R018"
+    ],
+    "followup_action": "answer",
+    "report_versions_after_followup": 1,
+    "elapsed_seconds": 31.32,
+    "error": null
+  }
+]

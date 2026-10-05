@@ -1,0 +1,439 @@
+{
+  "count": 391,
+  "queries": [
+    {
+      "query": "三方协议违约金6000元是不是超过5000元就违法",
+      "retrieved": [
+        {
+          "id": "LCL-022",
+          "kind": "law",
+          "title": "中华人民共和国劳动合同法",
+          "related_article_ids": []
+        },
+        {
+          "id": "SUP-L-civil-585",
+          "kind": "law",
+          "title": "中华人民共和国民法典",
+          "related_article_ids": []
+        },
+        {
+          "id": "LCL-025",
+          "kind": "law",
+          "title": "中华人民共和国劳动合同法",
+          "related_article_ids": [
+            "LCL-022"
+          ]
+        },
+        {
+          "id": "K006",
+          "kind": "warning",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "related_article_ids": []
+        },
+        {
+          "id": "K007",
+          "kind": "guide",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "related_article_ids": []
+        },
+        {
+          "id": "SUP-F15",
+          "kind": "support",
+          "title": "三方协议违约金超过5000元",
+          "related_article_ids": [
+            "SUP-L-civil-585",
+            "LCL-022",
+            "LCL-023",
+            "LCL-025"
+          ]
+        },
+        {
+          "id": "SUP-R016",
+          "kind": "support",
+          "title": "三方协议违约金",
+          "related_article_ids": [
+            "SUP-L-civil-585",
+            "LCL-025"
+          ]
+        },
+        {
+          "id": "C001-facts",
+          "kind": "case",
+          "title": "毕业生入职前就业协议违约争议",
+          "related_article_ids": []
+        },
+        {
+          "id": "C001-reasoning",
+          "kind": "case",
+          "title": "毕业生入职前就业协议违约争议",
+          "related_article_ids": []
+        },
+        {
+          "id": "C001-outcome",
+          "kind": "case",
+          "title": "毕业生入职前就业协议违约争议",
+          "related_article_ids": []
+        }
+      ]
+    },
+    {
+      "query": "公司说试用期不交社保以补贴代替",
+      "retrieved": [
+        {
+          "id": "LCL-070",
+          "kind": "law",
+          "title": "中华人民共和国劳动合同法",
+          "related_article_ids": []
+        },
+        {
+          "id": "LCL-038",
+          "kind": "law",
+          "title": "中华人民共和国劳动合同法",
+          "related_article_ids": [
+            "LCL-026"
+          ]
+        },
+        {
+          "id": "LCL-083",
+          "kind": "law",
+          "title": "中华人民共和国劳动合同法",
+          "related_article_ids": []
+        },
+        {
+          "id": "K005",
+          "kind": "warning",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "related_article_ids": []
+        },
+        {
+          "id": "SUP-W-hiring",
+          "kind": "warning",
+          "title": "警惕付费保录、直签与国企内推骗局",
+          "related_article_ids": []
+        },
+        {
+          "id": "SUP-F09",
+          "kind": "support",
+          "title": "社保补贴能否代替缴纳",
+          "related_article_ids": [
+            "SUP-L-social-58",
+            "LL-2018-072"
+          ]
+        },
+        {
+          "id": "SUP-R013",
+          "kind": "support",
+          "title": "试用期不办理社保",
+          "related_article_ids": [
+            "SUP-L-social-58",
+            "SUP-L-social-84",
+            "LL-2018-072"
+          ]
+        },
+        {
+          "id": "O006-facts",
+          "kind": "case",
+          "title": "试用期拒绝996违法加班后被解除劳动合同",
+          "related_article_ids": []
+        },
+        {
+          "id": "O006-reasoning",
+          "kind": "case",
+          "title": "试用期拒绝996违法加班后被解除劳动合同",
+          "related_article_ids": []
+        },
+        {
+          "id": "O006-outcome",
+          "kind": "case",
+          "title": "试用期拒绝996违法加班后被解除劳动合同",
+          "related_article_ids": []
+        }
+      ]
+    },
+    {
+      "query": "招聘公司与培训公司不是同一个是否违法",
+      "retrieved": [
+        {
+          "id": "LCL-091",
+          "kind": "law",
+          "title": "中华人民共和国劳动合同法",
+          "related_article_ids": []
+        },
+        {
+          "id": "LL-2018-099",
+          "kind": "law",
+          "title": "中华人民共和国劳动法",
+          "related_article_ids": [
+            "LCL-091"
+          ]
+        },
+        {
+          "id": "SUP-L-employment-62",
+          "kind": "law",
+          "title": "中华人民共和国就业促进法",
+          "related_article_ids": []
+        },
+        {
+          "id": "K005",
+          "kind": "warning",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "related_article_ids": []
+        },
+        {
+          "id": "K007",
+          "kind": "guide",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "related_article_ids": []
+        },
+        {
+          "id": "SUP-R004",
+          "kind": "support",
+          "title": "招聘与培训主体不同",
+          "related_article_ids": [
+            "K005"
+          ]
+        },
+        {
+          "id": "SUP-F16",
+          "kind": "support",
+          "title": "招聘限男性是否违法",
+          "related_article_ids": [
+            "SUP-L-employment-27",
+            "SUP-L-women-43"
+          ]
+        },
+        {
+          "id": "O009-facts",
+          "kind": "case",
+          "title": "招聘公司与实际办公公司不同，关联企业混同用工",
+          "related_article_ids": []
+        },
+        {
+          "id": "O009-reasoning",
+          "kind": "case",
+          "title": "招聘公司与实际办公公司不同，关联企业混同用工",
+          "related_article_ids": []
+        },
+        {
+          "id": "O009-outcome",
+          "kind": "case",
+          "title": "招聘公司与实际办公公司不同，关联企业混同用工",
+          "related_article_ids": []
+        }
+      ]
+    },
+    {
+      "query": "怎么核实职业中介有没有许可证",
+      "retrieved": [
+        {
+          "id": "SUP-L-market",
+          "kind": "law",
+          "title": "人力资源市场暂行条例",
+          "related_article_ids": []
+        },
+        {
+          "id": "LCL-057",
+          "kind": "law",
+          "title": "中华人民共和国劳动合同法",
+          "related_article_ids": []
+        },
+        {
+          "id": "LCL-075",
+          "kind": "law",
+          "title": "中华人民共和国劳动合同法",
+          "related_article_ids": []
+        },
+        {
+          "id": "K007",
+          "kind": "guide",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "related_article_ids": []
+        },
+        {
+          "id": "K005",
+          "kind": "warning",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "related_article_ids": []
+        },
+        {
+          "id": "SUP-R007",
+          "kind": "support",
+          "title": "职业中介许可",
+          "related_article_ids": [
+            "SUP-L-market"
+          ]
+        },
+        {
+          "id": "SUP-A05",
+          "kind": "support",
+          "title": "核验公司与中介",
+          "related_article_ids": [
+            "SUP-L-market"
+          ]
+        },
+        {
+          "id": "O003-facts",
+          "kind": "case",
+          "title": "虚构化妆师助理岗位、招聘转为收费培训",
+          "related_article_ids": []
+        },
+        {
+          "id": "O003-reasoning",
+          "kind": "case",
+          "title": "虚构化妆师助理岗位、招聘转为收费培训",
+          "related_article_ids": []
+        },
+        {
+          "id": "O003-outcome",
+          "kind": "case",
+          "title": "虚构化妆师助理岗位、招聘转为收费培训",
+          "related_article_ids": []
+        }
+      ]
+    },
+    {
+      "query": "不签劳动合同应该去哪里仲裁",
+      "retrieved": [
+        {
+          "id": "LCL-026",
+          "kind": "law",
+          "title": "中华人民共和国劳动合同法",
+          "related_article_ids": []
+        },
+        {
+          "id": "LCL-077",
+          "kind": "law",
+          "title": "中华人民共和国劳动合同法",
+          "related_article_ids": []
+        },
+        {
+          "id": "LCL-081",
+          "kind": "law",
+          "title": "中华人民共和国劳动合同法",
+          "related_article_ids": []
+        },
+        {
+          "id": "K007",
+          "kind": "guide",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "related_article_ids": []
+        },
+        {
+          "id": "K006",
+          "kind": "warning",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "related_article_ids": []
+        },
+        {
+          "id": "SUP-F02",
+          "kind": "support",
+          "title": "只签三方不签劳动合同",
+          "related_article_ids": [
+            "K003",
+            "LCL-017",
+            "LCL-082"
+          ]
+        },
+        {
+          "id": "SUP-A02",
+          "kind": "support",
+          "title": "不签合同或不交社保",
+          "related_article_ids": [
+            "K003",
+            "LCL-082",
+            "SUP-L-social-58",
+            "SUP-L-arbitration-21",
+            "SUP-L-arbitration-27"
+          ]
+        },
+        {
+          "id": "C002-facts",
+          "kind": "case",
+          "title": "未签劳动合同、未缴社保与实际劳动关系争议",
+          "related_article_ids": []
+        },
+        {
+          "id": "C002-reasoning",
+          "kind": "case",
+          "title": "未签劳动合同、未缴社保与实际劳动关系争议",
+          "related_article_ids": []
+        },
+        {
+          "id": "C002-outcome",
+          "kind": "case",
+          "title": "未签劳动合同、未缴社保与实际劳动关系争议",
+          "related_article_ids": []
+        }
+      ]
+    },
+    {
+      "query": "境外工作包吃包住报销机票专人接送靠谱吗",
+      "retrieved": [
+        {
+          "id": "LCL-061",
+          "kind": "law",
+          "title": "中华人民共和国劳动合同法",
+          "related_article_ids": []
+        },
+        {
+          "id": "LCL-094",
+          "kind": "law",
+          "title": "中华人民共和国劳动合同法",
+          "related_article_ids": []
+        },
+        {
+          "id": "LCL-060",
+          "kind": "law",
+          "title": "中华人民共和国劳动合同法",
+          "related_article_ids": []
+        },
+        {
+          "id": "SUP-W-overseas",
+          "kind": "warning",
+          "title": "公安机关提示：警惕境外高薪招聘",
+          "related_article_ids": []
+        },
+        {
+          "id": "SUP-W-hiring",
+          "kind": "warning",
+          "title": "警惕付费保录、直签与国企内推骗局",
+          "related_article_ids": []
+        },
+        {
+          "id": "SUP-R020",
+          "kind": "support",
+          "title": "境外高薪招聘",
+          "related_article_ids": [
+            "SUP-W-overseas"
+          ]
+        },
+        {
+          "id": "SUP-R008",
+          "kind": "support",
+          "title": "高薪低门槛",
+          "related_article_ids": [
+            "K005"
+          ]
+        },
+        {
+          "id": "O002-facts",
+          "kind": "case",
+          "title": "无证中介承诺地铁内推、收定金后推诿退款",
+          "related_article_ids": []
+        },
+        {
+          "id": "O002-reasoning",
+          "kind": "case",
+          "title": "无证中介承诺地铁内推、收定金后推诿退款",
+          "related_article_ids": []
+        },
+        {
+          "id": "O002-outcome",
+          "kind": "case",
+          "title": "无证中介承诺地铁内推、收定金后推诿退款",
+          "related_article_ids": []
+        }
+      ]
+    }
+  ]
+}

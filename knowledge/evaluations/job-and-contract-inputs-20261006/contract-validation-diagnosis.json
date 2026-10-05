@@ -1,0 +1,61 @@
+{
+  "scope": "离线检查保存的最后一次模型输出，无修改或重新生成报告。",
+  "error": "报告内容或引用修正后仍不合要求，本次未写入报告；请重试或补充材料",
+  "quote_resolution_issues": [
+    {
+      "field": [
+        "report",
+        "findings",
+        2,
+        "quote_id"
+      ],
+      "type": "unknown_material_quote"
+    }
+  ],
+  "findings": [
+    {
+      "title": "一年期合同约定三个月试用期，超过法定上限",
+      "quote_id": "Qf170d0c805d13655bc0d",
+      "quote_id_in_original_catalogue": true
+    },
+    {
+      "title": "约定试用期不缴社保，属排除法定义务的条款",
+      "quote_id": "Q394376c8833a76bc6bb2",
+      "quote_id_in_original_catalogue": true
+    },
+    {
+      "title": "无服务期、无竞业限制，却约定3万元离职违约金",
+      "quote_id": "Qe0e14ee4041fbab5f347",
+      "quote_id_in_original_catalogue": false
+    },
+    {
+      "title": "合同文本缺少多项法定必备条款，信息不完整",
+      "quote_id": "Qd7c29860359687c9d8d4",
+      "quote_id_in_original_catalogue": true
+    },
+    {
+      "title": "试用期工资条款同时叠加两个80%标准，且金额是否达标无法核实",
+      "quote_id": "Qda50717b0a01109c6db9",
+      "quote_id_in_original_catalogue": true
+    },
+    {
+      "title": "加班仅写“按法律规定”，未明确审批与计算方式",
+      "quote_id": "Qd7c29860359687c9d8d4",
+      "quote_id_in_original_catalogue": true
+    },
+    {
+      "title": "合同起止时间与其他条款涉及具体日期，需签字前核对一致性",
+      "quote_id": "Qb958961315a5bf93dfb1",
+      "quote_id_in_original_catalogue": true
+    },
+    {
+      "title": "材料明确标注为虚构测试文本，未核验真实性与主体资质",
+      "quote_id": "Qeb774c221224ed756963",
+      "quote_id_in_original_catalogue": true
+    }
+  ],
+  "page_read_methods": [
+    "pdf_text",
+    "pdf_text"
+  ]
+}

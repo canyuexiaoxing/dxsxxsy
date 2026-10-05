@@ -1,0 +1,68 @@
+[
+  {
+    "case": {
+      "id": "withheld-certificates",
+      "title": "山东扣押毕业证和教师资格证",
+      "official_url": "https://chinajob.mohrss.gov.cn/c/2025-09-16/450655.shtml",
+      "section": "二、淄博衡中艺术学校扣押劳动者证件案",
+      "facts": "某高校毕业生与一家艺术培训学校签订就业协议，约定入职从事教学工作。学校称办理入职手续需要核对证件，要求毕业生提交毕业证和教师资格证原件，随后扣留这两份证件，拒绝归还。",
+      "expected": [
+        "识别核验与扣押证件的区别",
+        "关联劳动合同法第九条和第八十四条",
+        "建议书面要求返还、保存交接及拒还记录、向人社投诉",
+        "不能把就业协议直接当作劳动合同，也不能凭未披露事项认定欠薪或收费"
+      ]
+    },
+    "report_generated": true,
+    "quotes_match_supplied_material": true,
+    "finding_titles": [
+      "学校以办理入职手续为名扣留毕业证、教师资格证原件并拒绝归还"
+    ],
+    "citation_ids": [
+      "K001",
+      "K007",
+      "LCL-079",
+      "LCL-084"
+    ],
+    "followup_action": "answer",
+    "report_versions_after_followup": 1,
+    "elapsed_seconds": 21.21,
+    "error": null
+  },
+  {
+    "case": {
+      "id": "fire-training-fee",
+      "title": "吉林招聘转入职培训收费",
+      "official_url": "https://hrss.jl.gov.cn/ldgx/ldjc/ldjczfnljs/202605/t20260526_9631818.html",
+      "section": "一、吉林省某消防安全服务有限公司以安排工作为名收取培训费案",
+      "facts": "一家消防安全服务公司以安排工作为名向求职者收取入职培训费。招聘过程中，公司没有提前明确说明该岗位要求持消防相关证书上岗，随后以入职培训为由向求职者收费。",
+      "expected": [
+        "识别招聘阶段未披露持证条件及以安排入职为名收费",
+        "关联劳动合同法第八条、第九条及官方招转培提示",
+        "建议保存招聘信息、协议、转账记录与沟通记录并向人社反映",
+        "无贷款和诈骗调查事实，不应直接认定培训贷或刑事诈骗，不保证退费结果"
+      ]
+    },
+    "report_generated": true,
+    "quotes_match_supplied_material": true,
+    "finding_titles": [
+      "以安排工作为名收取入职培训费",
+      "招聘时未提前说明持证要求，事后以培训收费",
+      "可能被要求承担培训相关费用或违约金的风险"
+    ],
+    "citation_ids": [
+      "K001",
+      "K005",
+      "K007",
+      "LCL-022",
+      "LCL-025",
+      "LCL-084",
+      "SUP-F12",
+      "SUP-R009"
+    ],
+    "followup_action": "answer",
+    "report_versions_after_followup": 1,
+    "elapsed_seconds": 24.07,
+    "error": null
+  }
+]

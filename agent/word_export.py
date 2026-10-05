@@ -139,7 +139,7 @@ def render_report_docx(report,title='求职材料自查',material_names=None):
     if not report.get('limitations'): paragraph('原报告未单独列出局限；这不代表所有事实均已核实。')
     document.add_heading('04  依据与来源',1)
     paragraph('法条、风险提示、指南及案例分别标注；案例结论只用于个案参考。',color='71847D')
-    kinds={'law':'法律条文','warning':'官方风险提示','guide':'办事与证据指南','case':'案例参考'}
+    kinds={'law':'法律条文','warning':'官方风险提示','guide':'办事与证据指南','case':'案例参考','support':'辅助资料（团队整理）'}
     for source in report.get('sources',[]):
         start=len(document.paragraphs)
         document.add_heading(f'{source["id"]}  {source["title"]}',2)

@@ -1,0 +1,855 @@
+{
+  "question": "知识库接入检验：请解释三方就业协议违约金是否有全国统一的5000元上限，并给出法律依据。这是一般知识咨询，没有任何真实个人案件，不要生成材料风险报告。",
+  "reply": {
+    "session_id": "S7bfd163a1dfe42509f70fc05d4991cbb",
+    "action": "answer",
+    "message": "结论：不存在“三方就业协议违约金全国统一5000元上限”这样的规定，也不存在统一的5万元上限。\n\n一、为什么没有统一上限\n三方就业协议（毕业生就业协议）在法律性质上通常被看作入职前、以将来建立劳动关系为意向的民事约定，与已实际用工后签订的劳动合同不同。它的违约金属于“约定违约金”范畴，适用的是《民法典》第五百八十五条：当事人可以约定违约金，但约定违约金过分高于实际损失的，当事人可以请求人民法院或仲裁机构适当减少——法律给的是“与实际损失是否相当”的判断标准，而不是一个固定金额阈值。\n\n二、5000元这个数字是怎么被误传的\n这类说法多是把教育培训、服务期等场景中的经验数字，或者个案中法院的裁量结果当成了全国标准。个案裁判金额（例如常见争议中出现的5万元左右）也只是该案对特定协议、损失和履行情况的具体裁量，不能当作统一阈值或“市场价”。\n\n三、如果涉及劳动关系，违约金另有独立规则\n一旦实际用工、进入劳动关系层面，则要看《劳动合同法》第二十二条（专项培训费用的服务期违约金，数额不得超过培训费用，也不得超过服务期尚未履行部分应分摊的培训费用）和第二十三条（竞业限制违约金），第二十五条明确：除上述两种情形外，用人单位不得与劳动者约定由劳动者承担违约金。这套规则与三方协议违约金是不同轨道，不能互相套用，也不能用“5000元上限”去解释劳动合同违约金。\n\n四、实务判断三步\n1. 看协议性质和签订时间：是入职前的就业协议，还是已建立劳动关系后的劳动合同；\n2. 看条款本身：违约金是否明确约定、对应何种违约行为、是否约定损失计算方法；\n3. 看履行与损失：是否实际违约、用人单位能证明的实际损失是多少，据此评估是否可请求调减。任何结论都要以具体协议文本和事实为前提，结果不能被保证。\n\n由于本次是一般知识咨询，未生成材料风险报告。以上为一般性说明，不构成法律意见，也不能替代对具体协议和个案的判断。",
+    "questions": [],
+    "evidence_ids": [
+      "SUP-L-civil-585",
+      "LCL-022",
+      "LCL-023",
+      "LCL-025",
+      "SUP-F15",
+      "SUP-F01",
+      "C001-reasoning",
+      "C001-outcome"
+    ],
+    "report": null,
+    "sources": [
+      {
+        "id": "SUP-L-civil-585",
+        "title": "中华人民共和国民法典",
+        "kind": "law",
+        "text": "第五百八十五条 当事人可以约定一方违约时应当根据违约情况向对方支付一定数额的违约金，也可以约定因违约产生的损失赔偿额的计算方法。\n 约定的违约金低于造成的损失的，人民法院或者仲裁机构可以根据当事人的请求予以增加；约定的违约金过分高于造成的损失的，人民法院或者仲裁机构可以根据当事人的请求予以适当减少。\n 当事人就迟延履行约定违约金的，违约方支付违约金后，还应当履行债务。",
+        "url": "https://www.court.gov.cn/zixun/xiangqing/233181.html",
+        "location": "第五百八十五条",
+        "published_at": "2020-05-28",
+        "verified_at": "2026-10-05",
+        "scope": "大学生招聘、签约、用工与就业权益咨询",
+        "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+        "tags": [
+          "中华人民共和国民法典",
+          "补充法条"
+        ],
+        "content_form": "official_article_fulltext",
+        "verification_status": "official_source_checked",
+        "related_article_ids": [],
+        "support_category": "补充法条",
+        "origin_document": "补充法条＋官方文件.docx"
+      },
+      {
+        "id": "LCL-022",
+        "title": "中华人民共和国劳动合同法",
+        "kind": "law",
+        "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+        "location": "第二十二条",
+        "published_at": "2012-12-28",
+        "verified_at": "2026-10-04",
+        "text": "第二十二条　用人单位为劳动者提供专项培训费用，对其进行专业技术培训的，可以与该劳动者订立协议，约定服务期。\n劳动者违反服务期约定的，应当按照约定向用人单位支付违约金。违约金的数额不得超过用人单位提供的培训费用。用人单位要求劳动者支付的违约金不得超过服务期尚未履行部分所应分摊的培训费用。\n用人单位与劳动者约定服务期的，不影响按照正常的工资调整机制提高劳动者在服务期期间的劳动报酬。",
+        "scope": "本条所列情形；第二章　劳动合同的订立 ",
+        "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+        "tags": [
+          "劳动合同法",
+          "第二十二条",
+          "第二章　劳动合同的订立"
+        ],
+        "law_id": "labor-contract-law-2012",
+        "article_number": 22,
+        "chapter": "第二章　劳动合同的订立",
+        "section": "",
+        "version": "2012年12月28日修正",
+        "amendment_effective_at": "2013-07-01",
+        "content_form": "official_article_fulltext",
+        "verification_status": "official_source_checked",
+        "related_article_ids": [],
+        "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+      },
+      {
+        "id": "LCL-023",
+        "title": "中华人民共和国劳动合同法",
+        "kind": "law",
+        "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+        "location": "第二十三条",
+        "published_at": "2012-12-28",
+        "verified_at": "2026-10-04",
+        "text": "第二十三条　用人单位与劳动者可以在劳动合同中约定保守用人单位的商业秘密和与知识产权相关的保密事项。\n对负有保密义务的劳动者，用人单位可以在劳动合同或者保密协议中与劳动者约定竞业限制条款，并约定在解除或者终止劳动合同后，在竞业限制期限内按月给予劳动者经济补偿。劳动者违反竞业限制约定的，应当按照约定向用人单位支付违约金。",
+        "scope": "本条所列情形；第二章　劳动合同的订立 ",
+        "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+        "tags": [
+          "劳动合同法",
+          "第二十三条",
+          "第二章　劳动合同的订立"
+        ],
+        "law_id": "labor-contract-law-2012",
+        "article_number": 23,
+        "chapter": "第二章　劳动合同的订立",
+        "section": "",
+        "version": "2012年12月28日修正",
+        "amendment_effective_at": "2013-07-01",
+        "content_form": "official_article_fulltext",
+        "verification_status": "official_source_checked",
+        "related_article_ids": [],
+        "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+      },
+      {
+        "id": "LCL-025",
+        "title": "中华人民共和国劳动合同法",
+        "kind": "law",
+        "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+        "location": "第二十五条",
+        "published_at": "2012-12-28",
+        "verified_at": "2026-10-04",
+        "text": "第二十五条　除本法第二十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+        "scope": "本条所列情形；第二章　劳动合同的订立 ",
+        "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+        "tags": [
+          "劳动合同法",
+          "第二十五条",
+          "第二章　劳动合同的订立"
+        ],
+        "law_id": "labor-contract-law-2012",
+        "article_number": 25,
+        "chapter": "第二章　劳动合同的订立",
+        "section": "",
+        "version": "2012年12月28日修正",
+        "amendment_effective_at": "2013-07-01",
+        "content_form": "official_article_fulltext",
+        "verification_status": "official_source_checked",
+        "related_article_ids": [
+          "LCL-022"
+        ],
+        "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+      },
+      {
+        "id": "SUP-F15",
+        "title": "三方协议违约金超过5000元",
+        "kind": "support",
+        "text": "不存在统一的5000元或5万元判定阈值。应核对是否违约、条款、实际损失、请求调整的条件；过分高于损失可依法请求适当减少，结果不能保证。劳动合同违约金另须核对劳动合同法第二十二至二十五条，不能混用。\n关联依据编号：SUP-L-civil-585、LCL-022、LCL-023、LCL-025",
+        "url": "https://www.court.gov.cn/zixun/xiangqing/233181.html",
+        "location": "高频问答",
+        "published_at": "",
+        "verified_at": "2026-10-05",
+        "scope": "大学生招聘、签约、用工与就业权益咨询",
+        "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+        "tags": [
+          "三方协议违约金超过5000元",
+          "高频问答"
+        ],
+        "content_form": "reviewed_support",
+        "verification_status": "curated_with_references",
+        "related_article_ids": [
+          "SUP-L-civil-585",
+          "LCL-022",
+          "LCL-023",
+          "LCL-025"
+        ],
+        "support_category": "高频问答",
+        "origin_document": "大学生就业权益高频问题回答.docx"
+      },
+      {
+        "id": "SUP-F01",
+        "title": "三方协议与劳动合同区别",
+        "kind": "support",
+        "text": "三方协议通常解决毕业生就业约定，劳动合同确认用工权利义务。不能概括为入职后三方协议全部自动失效；违约金等条款应结合约定和履行情况另行分析。\n关联依据编号：K003、SUP-L-civil-585",
+        "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+        "location": "高频问答",
+        "published_at": "",
+        "verified_at": "2026-10-05",
+        "scope": "大学生招聘、签约、用工与就业权益咨询",
+        "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+        "tags": [
+          "三方协议与劳动合同区别",
+          "高频问答"
+        ],
+        "content_form": "reviewed_support",
+        "verification_status": "curated_with_references",
+        "related_article_ids": [
+          "K003",
+          "SUP-L-civil-585"
+        ],
+        "support_category": "高频问答",
+        "origin_document": "大学生就业权益高频问题回答.docx"
+      },
+      {
+        "id": "C001-reasoning",
+        "title": "毕业生入职前就业协议违约争议",
+        "kind": "case",
+        "url": "",
+        "location": "法院理由；用户提供文书 P20、P22–P24",
+        "published_at": "2022-12-25",
+        "verified_at": "2026-10-04",
+        "text": "【用户提供裁判文书的脱敏整理，已对照本地文档，官方真实性与完整性待核验；非法律原文】\n二审法院认为：案涉就业协议体现未来建立劳动关系的意向，与实际用工后形成的劳动合同在主体、内容及签订时间方面存在区别。该案不按劳动合同处理；毕业生未按约报到构成违约。该案法院支持高校主张的违约责任，不代表实际劳动合同可以任意约定违约金。",
+        "scope": "毕业生实际入职前的就业协议、报到承诺和违约责任。",
+        "boundary": "只反映该案对入职前协议性质的判断，不能推导所有三方协议违约金均有效；已实际用工的情况须另行核实。",
+        "tags": [
+          "毕业生",
+          "三方协议",
+          "就业协议",
+          "违约金",
+          "未报到",
+          "劳动合同区别"
+        ],
+        "case_id": "C001",
+        "chunk_role": "reasoning",
+        "related_ids": [
+          "C001-facts",
+          "C001-reasoning",
+          "C001-outcome"
+        ],
+        "court": "辽宁省锦州市中级人民法院",
+        "judgment_date": "2022-12-25",
+        "procedural_status": "二审终审",
+        "source_document": "判决书原文.docx",
+        "source_paragraphs": "P20、P22–P24",
+        "content_form": "redacted_summary",
+        "verification_status": "local_document_checked_official_pending",
+        "verification_note": "verified_at仅为本地文档核对日期，未完成法院官网真实性核验。"
+      },
+      {
+        "id": "C001-outcome",
+        "title": "毕业生入职前就业协议违约争议",
+        "kind": "case",
+        "url": "",
+        "location": "裁判结果；用户提供文书 P20、P25–P28",
+        "published_at": "2022-12-25",
+        "verified_at": "2026-10-04",
+        "text": "【用户提供裁判文书的脱敏整理，已对照本地文档，官方真实性与完整性待核验；非法律原文】\n一审判令毕业生支付剩余违约金49000元；二审驳回上诉、维持原判，文书载明为终审判决。此金额为个案裁判结果，不能当作统一赔偿标准。原文关于50000元是否包含已付1000元的表述有差异，本摘要以一审判项及二审维持结果为准。",
+        "scope": "毕业生实际入职前的就业协议、报到承诺和违约责任。",
+        "boundary": "只反映该案对入职前协议性质的判断，不能推导所有三方协议违约金均有效；已实际用工的情况须另行核实。",
+        "tags": [
+          "毕业生",
+          "三方协议",
+          "就业协议",
+          "违约金",
+          "未报到",
+          "劳动合同区别"
+        ],
+        "case_id": "C001",
+        "chunk_role": "outcome",
+        "related_ids": [
+          "C001-facts",
+          "C001-reasoning",
+          "C001-outcome"
+        ],
+        "court": "辽宁省锦州市中级人民法院",
+        "judgment_date": "2022-12-25",
+        "procedural_status": "二审终审",
+        "source_document": "判决书原文.docx",
+        "source_paragraphs": "P20、P25–P28",
+        "content_form": "redacted_summary",
+        "verification_status": "local_document_checked_official_pending",
+        "verification_note": "verified_at仅为本地文档核对日期，未完成法院官网真实性核验。"
+      }
+    ]
+  },
+  "trace": [
+    {
+      "tool": "search_knowledge",
+      "arguments": {
+        "query": "三方就业协议 违约金 5000元 上限 法律依据"
+      },
+      "result": [
+        {
+          "id": "LCL-022",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "location": "第二十二条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-04",
+          "text": "第二十二条　用人单位为劳动者提供专项培训费用，对其进行专业技术培训的，可以与该劳动者订立协议，约定服务期。\n劳动者违反服务期约定的，应当按照约定向用人单位支付违约金。违约金的数额不得超过用人单位提供的培训费用。用人单位要求劳动者支付的违约金不得超过服务期尚未履行部分所应分摊的培训费用。\n用人单位与劳动者约定服务期的，不影响按照正常的工资调整机制提高劳动者在服务期期间的劳动报酬。",
+          "scope": "本条所列情形；第二章　劳动合同的订立 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第二十二条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 22,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+        },
+        {
+          "id": "LCL-025",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "location": "第二十五条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-04",
+          "text": "第二十五条　除本法第二十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+          "scope": "本条所列情形；第二章　劳动合同的订立 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第二十五条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 25,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [
+            "LCL-022"
+          ],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+        },
+        {
+          "id": "LCL-090",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "location": "第九十条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-04",
+          "text": "第九十条　劳动者违反本法规定解除劳动合同，或者违反劳动合同中约定的保密义务或者竞业限制，给用人单位造成损失的，应当承担赔偿责任。",
+          "scope": "本条所列情形；第七章　法律责任 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第九十条",
+            "第七章　法律责任"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 90,
+          "chapter": "第七章　法律责任",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+        },
+        {
+          "id": "K006",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "kind": "warning",
+          "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+          "location": "风险提示第四项",
+          "published_at": "2026-05-18",
+          "verified_at": "2026-10-03",
+          "text": "签订涉及贷款的协议，务必核实放款方资质、贷款利率、还款方式及违约责任。慎重在平台注册信息及办理贷款，坚持理性借贷，避免过度负债，切勿轻信“免息分期”“低门槛、秒到账”等承诺，避免陷入非法债务纠纷。",
+          "scope": "贷款或分期支付协议的核实事项。",
+          "boundary": "分期是否属于贷款要看协议和主体；不能仅凭分期二字认定违法。",
+          "tags": [
+            "分期",
+            "借款协议",
+            "贷款利率",
+            "还款",
+            "培训贷",
+            "违约责任"
+          ]
+        },
+        {
+          "id": "K007",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "kind": "guide",
+          "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+          "location": "风险提示第五项",
+          "published_at": "2026-05-18",
+          "verified_at": "2026-10-03",
+          "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+          "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+          "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+          "tags": [
+            "保留证据",
+            "聊天记录",
+            "转账凭证",
+            "投诉",
+            "报案",
+            "建议"
+          ]
+        },
+        {
+          "id": "SUP-F15",
+          "title": "三方协议违约金超过5000元",
+          "kind": "support",
+          "text": "不存在统一的5000元或5万元判定阈值。应核对是否违约、条款、实际损失、请求调整的条件；过分高于损失可依法请求适当减少，结果不能保证。劳动合同违约金另须核对劳动合同法第二十二至二十五条，不能混用。\n关联依据编号：SUP-L-civil-585、LCL-022、LCL-023、LCL-025",
+          "url": "https://www.court.gov.cn/zixun/xiangqing/233181.html",
+          "location": "高频问答",
+          "published_at": "",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "三方协议违约金超过5000元",
+            "高频问答"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "SUP-L-civil-585",
+            "LCL-022",
+            "LCL-023",
+            "LCL-025"
+          ],
+          "support_category": "高频问答",
+          "origin_document": "大学生就业权益高频问题回答.docx"
+        },
+        {
+          "id": "SUP-F01",
+          "title": "三方协议与劳动合同区别",
+          "kind": "support",
+          "text": "三方协议通常解决毕业生就业约定，劳动合同确认用工权利义务。不能概括为入职后三方协议全部自动失效；违约金等条款应结合约定和履行情况另行分析。\n关联依据编号：K003、SUP-L-civil-585",
+          "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "location": "高频问答",
+          "published_at": "",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "三方协议与劳动合同区别",
+            "高频问答"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "K003",
+            "SUP-L-civil-585"
+          ],
+          "support_category": "高频问答",
+          "origin_document": "大学生就业权益高频问题回答.docx"
+        },
+        {
+          "id": "C001-facts",
+          "title": "毕业生入职前就业协议违约争议",
+          "kind": "case",
+          "url": "",
+          "location": "案情与争点；用户提供文书 P19–P21",
+          "published_at": "2022-12-25",
+          "verified_at": "2026-10-04",
+          "text": "【用户提供裁判文书的脱敏整理，已对照本地文档，官方真实性与完整性待核验；非法律原文】\n法院查明：毕业生与某高校签订引进毕业生协议，约定报到期限及未报到的违约责任。毕业生后来选择攻读博士而未按约报到。高校请求承担违约责任；毕业生主张应按劳动合同法限制违约金。双方尚未实际建立劳动关系。",
+          "scope": "毕业生实际入职前的就业协议、报到承诺和违约责任。",
+          "boundary": "只反映该案对入职前协议性质的判断，不能推导所有三方协议违约金均有效；已实际用工的情况须另行核实。",
+          "tags": [
+            "毕业生",
+            "三方协议",
+            "就业协议",
+            "违约金",
+            "未报到",
+            "劳动合同区别"
+          ],
+          "case_id": "C001",
+          "chunk_role": "facts",
+          "related_ids": [
+            "C001-facts",
+            "C001-reasoning",
+            "C001-outcome"
+          ],
+          "court": "辽宁省锦州市中级人民法院",
+          "judgment_date": "2022-12-25",
+          "procedural_status": "二审终审",
+          "source_document": "判决书原文.docx",
+          "source_paragraphs": "P19–P21",
+          "content_form": "redacted_summary",
+          "verification_status": "local_document_checked_official_pending",
+          "verification_note": "verified_at仅为本地文档核对日期，未完成法院官网真实性核验。"
+        },
+        {
+          "id": "C001-reasoning",
+          "title": "毕业生入职前就业协议违约争议",
+          "kind": "case",
+          "url": "",
+          "location": "法院理由；用户提供文书 P20、P22–P24",
+          "published_at": "2022-12-25",
+          "verified_at": "2026-10-04",
+          "text": "【用户提供裁判文书的脱敏整理，已对照本地文档，官方真实性与完整性待核验；非法律原文】\n二审法院认为：案涉就业协议体现未来建立劳动关系的意向，与实际用工后形成的劳动合同在主体、内容及签订时间方面存在区别。该案不按劳动合同处理；毕业生未按约报到构成违约。该案法院支持高校主张的违约责任，不代表实际劳动合同可以任意约定违约金。",
+          "scope": "毕业生实际入职前的就业协议、报到承诺和违约责任。",
+          "boundary": "只反映该案对入职前协议性质的判断，不能推导所有三方协议违约金均有效；已实际用工的情况须另行核实。",
+          "tags": [
+            "毕业生",
+            "三方协议",
+            "就业协议",
+            "违约金",
+            "未报到",
+            "劳动合同区别"
+          ],
+          "case_id": "C001",
+          "chunk_role": "reasoning",
+          "related_ids": [
+            "C001-facts",
+            "C001-reasoning",
+            "C001-outcome"
+          ],
+          "court": "辽宁省锦州市中级人民法院",
+          "judgment_date": "2022-12-25",
+          "procedural_status": "二审终审",
+          "source_document": "判决书原文.docx",
+          "source_paragraphs": "P20、P22–P24",
+          "content_form": "redacted_summary",
+          "verification_status": "local_document_checked_official_pending",
+          "verification_note": "verified_at仅为本地文档核对日期，未完成法院官网真实性核验。"
+        },
+        {
+          "id": "C001-outcome",
+          "title": "毕业生入职前就业协议违约争议",
+          "kind": "case",
+          "url": "",
+          "location": "裁判结果；用户提供文书 P20、P25–P28",
+          "published_at": "2022-12-25",
+          "verified_at": "2026-10-04",
+          "text": "【用户提供裁判文书的脱敏整理，已对照本地文档，官方真实性与完整性待核验；非法律原文】\n一审判令毕业生支付剩余违约金49000元；二审驳回上诉、维持原判，文书载明为终审判决。此金额为个案裁判结果，不能当作统一赔偿标准。原文关于50000元是否包含已付1000元的表述有差异，本摘要以一审判项及二审维持结果为准。",
+          "scope": "毕业生实际入职前的就业协议、报到承诺和违约责任。",
+          "boundary": "只反映该案对入职前协议性质的判断，不能推导所有三方协议违约金均有效；已实际用工的情况须另行核实。",
+          "tags": [
+            "毕业生",
+            "三方协议",
+            "就业协议",
+            "违约金",
+            "未报到",
+            "劳动合同区别"
+          ],
+          "case_id": "C001",
+          "chunk_role": "outcome",
+          "related_ids": [
+            "C001-facts",
+            "C001-reasoning",
+            "C001-outcome"
+          ],
+          "court": "辽宁省锦州市中级人民法院",
+          "judgment_date": "2022-12-25",
+          "procedural_status": "二审终审",
+          "source_document": "判决书原文.docx",
+          "source_paragraphs": "P20、P25–P28",
+          "content_form": "redacted_summary",
+          "verification_status": "local_document_checked_official_pending",
+          "verification_note": "verified_at仅为本地文档核对日期，未完成法院官网真实性核验。"
+        }
+      ]
+    },
+    {
+      "tool": "search_knowledge",
+      "arguments": {
+        "query": "就业协议 违约金 约定 劳动合同法 第二十五条"
+      },
+      "result": [
+        {
+          "id": "LCL-025",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "location": "第二十五条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-04",
+          "text": "第二十五条　除本法第二十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+          "scope": "本条所列情形；第二章　劳动合同的订立 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第二十五条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 25,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [
+            "LCL-022"
+          ],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+        },
+        {
+          "id": "LCL-022",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "location": "第二十二条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-04",
+          "text": "第二十二条　用人单位为劳动者提供专项培训费用，对其进行专业技术培训的，可以与该劳动者订立协议，约定服务期。\n劳动者违反服务期约定的，应当按照约定向用人单位支付违约金。违约金的数额不得超过用人单位提供的培训费用。用人单位要求劳动者支付的违约金不得超过服务期尚未履行部分所应分摊的培训费用。\n用人单位与劳动者约定服务期的，不影响按照正常的工资调整机制提高劳动者在服务期期间的劳动报酬。",
+          "scope": "本条所列情形；第二章　劳动合同的订立 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第二十二条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 22,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+        },
+        {
+          "id": "LCL-023",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "location": "第二十三条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-04",
+          "text": "第二十三条　用人单位与劳动者可以在劳动合同中约定保守用人单位的商业秘密和与知识产权相关的保密事项。\n对负有保密义务的劳动者，用人单位可以在劳动合同或者保密协议中与劳动者约定竞业限制条款，并约定在解除或者终止劳动合同后，在竞业限制期限内按月给予劳动者经济补偿。劳动者违反竞业限制约定的，应当按照约定向用人单位支付违约金。",
+          "scope": "本条所列情形；第二章　劳动合同的订立 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第二十三条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 23,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html"
+        },
+        {
+          "id": "K006",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "kind": "warning",
+          "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+          "location": "风险提示第四项",
+          "published_at": "2026-05-18",
+          "verified_at": "2026-10-03",
+          "text": "签订涉及贷款的协议，务必核实放款方资质、贷款利率、还款方式及违约责任。慎重在平台注册信息及办理贷款，坚持理性借贷，避免过度负债，切勿轻信“免息分期”“低门槛、秒到账”等承诺，避免陷入非法债务纠纷。",
+          "scope": "贷款或分期支付协议的核实事项。",
+          "boundary": "分期是否属于贷款要看协议和主体；不能仅凭分期二字认定违法。",
+          "tags": [
+            "分期",
+            "借款协议",
+            "贷款利率",
+            "还款",
+            "培训贷",
+            "违约责任"
+          ]
+        },
+        {
+          "id": "K007",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "kind": "guide",
+          "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+          "location": "风险提示第五项",
+          "published_at": "2026-05-18",
+          "verified_at": "2026-10-03",
+          "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+          "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+          "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+          "tags": [
+            "保留证据",
+            "聊天记录",
+            "转账凭证",
+            "投诉",
+            "报案",
+            "建议"
+          ]
+        },
+        {
+          "id": "SUP-F15",
+          "title": "三方协议违约金超过5000元",
+          "kind": "support",
+          "text": "不存在统一的5000元或5万元判定阈值。应核对是否违约、条款、实际损失、请求调整的条件；过分高于损失可依法请求适当减少，结果不能保证。劳动合同违约金另须核对劳动合同法第二十二至二十五条，不能混用。\n关联依据编号：SUP-L-civil-585、LCL-022、LCL-023、LCL-025",
+          "url": "https://www.court.gov.cn/zixun/xiangqing/233181.html",
+          "location": "高频问答",
+          "published_at": "",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "三方协议违约金超过5000元",
+            "高频问答"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "SUP-L-civil-585",
+            "LCL-022",
+            "LCL-023",
+            "LCL-025"
+          ],
+          "support_category": "高频问答",
+          "origin_document": "大学生就业权益高频问题回答.docx"
+        },
+        {
+          "id": "SUP-F01",
+          "title": "三方协议与劳动合同区别",
+          "kind": "support",
+          "text": "三方协议通常解决毕业生就业约定，劳动合同确认用工权利义务。不能概括为入职后三方协议全部自动失效；违约金等条款应结合约定和履行情况另行分析。\n关联依据编号：K003、SUP-L-civil-585",
+          "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "location": "高频问答",
+          "published_at": "",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "三方协议与劳动合同区别",
+            "高频问答"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "K003",
+            "SUP-L-civil-585"
+          ],
+          "support_category": "高频问答",
+          "origin_document": "大学生就业权益高频问题回答.docx"
+        },
+        {
+          "id": "C001-facts",
+          "title": "毕业生入职前就业协议违约争议",
+          "kind": "case",
+          "url": "",
+          "location": "案情与争点；用户提供文书 P19–P21",
+          "published_at": "2022-12-25",
+          "verified_at": "2026-10-04",
+          "text": "【用户提供裁判文书的脱敏整理，已对照本地文档，官方真实性与完整性待核验；非法律原文】\n法院查明：毕业生与某高校签订引进毕业生协议，约定报到期限及未报到的违约责任。毕业生后来选择攻读博士而未按约报到。高校请求承担违约责任；毕业生主张应按劳动合同法限制违约金。双方尚未实际建立劳动关系。",
+          "scope": "毕业生实际入职前的就业协议、报到承诺和违约责任。",
+          "boundary": "只反映该案对入职前协议性质的判断，不能推导所有三方协议违约金均有效；已实际用工的情况须另行核实。",
+          "tags": [
+            "毕业生",
+            "三方协议",
+            "就业协议",
+            "违约金",
+            "未报到",
+            "劳动合同区别"
+          ],
+          "case_id": "C001",
+          "chunk_role": "facts",
+          "related_ids": [
+            "C001-facts",
+            "C001-reasoning",
+            "C001-outcome"
+          ],
+          "court": "辽宁省锦州市中级人民法院",
+          "judgment_date": "2022-12-25",
+          "procedural_status": "二审终审",
+          "source_document": "判决书原文.docx",
+          "source_paragraphs": "P19–P21",
+          "content_form": "redacted_summary",
+          "verification_status": "local_document_checked_official_pending",
+          "verification_note": "verified_at仅为本地文档核对日期，未完成法院官网真实性核验。"
+        },
+        {
+          "id": "C001-reasoning",
+          "title": "毕业生入职前就业协议违约争议",
+          "kind": "case",
+          "url": "",
+          "location": "法院理由；用户提供文书 P20、P22–P24",
+          "published_at": "2022-12-25",
+          "verified_at": "2026-10-04",
+          "text": "【用户提供裁判文书的脱敏整理，已对照本地文档，官方真实性与完整性待核验；非法律原文】\n二审法院认为：案涉就业协议体现未来建立劳动关系的意向，与实际用工后形成的劳动合同在主体、内容及签订时间方面存在区别。该案不按劳动合同处理；毕业生未按约报到构成违约。该案法院支持高校主张的违约责任，不代表实际劳动合同可以任意约定违约金。",
+          "scope": "毕业生实际入职前的就业协议、报到承诺和违约责任。",
+          "boundary": "只反映该案对入职前协议性质的判断，不能推导所有三方协议违约金均有效；已实际用工的情况须另行核实。",
+          "tags": [
+            "毕业生",
+            "三方协议",
+            "就业协议",
+            "违约金",
+            "未报到",
+            "劳动合同区别"
+          ],
+          "case_id": "C001",
+          "chunk_role": "reasoning",
+          "related_ids": [
+            "C001-facts",
+            "C001-reasoning",
+            "C001-outcome"
+          ],
+          "court": "辽宁省锦州市中级人民法院",
+          "judgment_date": "2022-12-25",
+          "procedural_status": "二审终审",
+          "source_document": "判决书原文.docx",
+          "source_paragraphs": "P20、P22–P24",
+          "content_form": "redacted_summary",
+          "verification_status": "local_document_checked_official_pending",
+          "verification_note": "verified_at仅为本地文档核对日期，未完成法院官网真实性核验。"
+        },
+        {
+          "id": "C001-outcome",
+          "title": "毕业生入职前就业协议违约争议",
+          "kind": "case",
+          "url": "",
+          "location": "裁判结果；用户提供文书 P20、P25–P28",
+          "published_at": "2022-12-25",
+          "verified_at": "2026-10-04",
+          "text": "【用户提供裁判文书的脱敏整理，已对照本地文档，官方真实性与完整性待核验；非法律原文】\n一审判令毕业生支付剩余违约金49000元；二审驳回上诉、维持原判，文书载明为终审判决。此金额为个案裁判结果，不能当作统一赔偿标准。原文关于50000元是否包含已付1000元的表述有差异，本摘要以一审判项及二审维持结果为准。",
+          "scope": "毕业生实际入职前的就业协议、报到承诺和违约责任。",
+          "boundary": "只反映该案对入职前协议性质的判断，不能推导所有三方协议违约金均有效；已实际用工的情况须另行核实。",
+          "tags": [
+            "毕业生",
+            "三方协议",
+            "就业协议",
+            "违约金",
+            "未报到",
+            "劳动合同区别"
+          ],
+          "case_id": "C001",
+          "chunk_role": "outcome",
+          "related_ids": [
+            "C001-facts",
+            "C001-reasoning",
+            "C001-outcome"
+          ],
+          "court": "辽宁省锦州市中级人民法院",
+          "judgment_date": "2022-12-25",
+          "procedural_status": "二审终审",
+          "source_document": "判决书原文.docx",
+          "source_paragraphs": "P20、P25–P28",
+          "content_form": "redacted_summary",
+          "verification_status": "local_document_checked_official_pending",
+          "verification_note": "verified_at仅为本地文档核对日期，未完成法院官网真实性核验。"
+        }
+      ]
+    },
+    {
+      "tool": "get_source",
+      "arguments": {
+        "source_id": "SUP-L-civil-585"
+      },
+      "result": {
+        "id": "SUP-L-civil-585",
+        "title": "中华人民共和国民法典",
+        "kind": "law",
+        "text": "第五百八十五条 当事人可以约定一方违约时应当根据违约情况向对方支付一定数额的违约金，也可以约定因违约产生的损失赔偿额的计算方法。\n 约定的违约金低于造成的损失的，人民法院或者仲裁机构可以根据当事人的请求予以增加；约定的违约金过分高于造成的损失的，人民法院或者仲裁机构可以根据当事人的请求予以适当减少。\n 当事人就迟延履行约定违约金的，违约方支付违约金后，还应当履行债务。",
+        "url": "https://www.court.gov.cn/zixun/xiangqing/233181.html",
+        "location": "第五百八十五条",
+        "published_at": "2020-05-28",
+        "verified_at": "2026-10-05",
+        "scope": "大学生招聘、签约、用工与就业权益咨询",
+        "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+        "tags": [
+          "中华人民共和国民法典",
+          "补充法条"
+        ],
+        "content_form": "official_article_fulltext",
+        "verification_status": "official_source_checked",
+        "related_article_ids": [],
+        "support_category": "补充法条",
+        "origin_document": "补充法条＋官方文件.docx"
+      }
+    }
+  ],
+  "review": {
+    "status": "core_answer_and_citations_verified",
+    "notes": [
+      "成功通过真实API完成问答，未生成无材料报告，引用了民法典585及劳动合同法22、23、25。",
+      "模型对5000元说法误传原因作了未经核验的推测；此段不作为正式知识库内容。已补充不得编造传言来源的边界约束。",
+      "本次不代表全部题型、所有检索候选或所有模型输出已经验证。"
+    ]
+  }
+}

@@ -1,0 +1,489 @@
+[
+  {
+    "id": "SUP-F01",
+    "title": "三方协议与劳动合同区别",
+    "kind": "support",
+    "text": "三方协议通常解决毕业生就业约定，劳动合同确认用工权利义务。不能概括为入职后三方协议全部自动失效；违约金等条款应结合约定和履行情况另行分析。\n关联依据编号：K003、SUP-L-civil-585",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "三方协议与劳动合同区别",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K003",
+      "SUP-L-civil-585"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F02",
+    "title": "只签三方不签劳动合同",
+    "kind": "support",
+    "text": "建立劳动关系应订立书面劳动合同；已建立但未同时订立的，应自用工之日起一个月内订立。不能未满一个月便直接判定违法；三方协议不当然替代劳动合同，也不能只看文件标题。\n关联依据编号：K003、LCL-017、LCL-082",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "只签三方不签劳动合同",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K003",
+      "LCL-017",
+      "LCL-082"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F03",
+    "title": "试用期是否包含在合同期限",
+    "kind": "support",
+    "text": "试用期包含在合同期限内。合同仅约定试用期的，试用期不成立，该期限为劳动合同期限。\n关联依据编号：K004",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "试用期是否包含在合同期限",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K004"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F04",
+    "title": "空白合同怎么办",
+    "kind": "support",
+    "text": "签署前补齐工作地点、岗位、报酬等条款，双方各留合同文本。已签空白合同，应保存当时版本和沟通记录、书面要求核实，不直接认定整份合同当然无效。\n关联依据编号：LCL-016、LCL-017、LCL-026",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "空白合同怎么办",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "LCL-016",
+      "LCL-017",
+      "LCL-026"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F05",
+    "title": "在校实习与试用期区别",
+    "kind": "support",
+    "text": "学校安排的教学实习与实际就业用工需要区分；不能仅以在校身份或合同名叫实习就认定一律不受劳动法保护。应核实实习目的、学校安排、管理、报酬和实际用工情况；劳动关系判断可能需要补充更具体的依据。\n关联依据编号：LCL-002、LCL-007、K004",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "在校实习与试用期区别",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "LCL-002",
+      "LCL-007",
+      "K004"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F06",
+    "title": "无薪试岗和面试技能测试",
+    "kind": "support",
+    "text": "不能用试岗名称掩盖实际用工。应核实是否已经接受劳动管理并提供实际劳动，若建立劳动关系，应依法支付报酬。短暂真实面试技能测试不能直接等同劳动关系。\n关联依据编号：LCL-007、LCL-030、LL-2018-050",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "无薪试岗和面试技能测试",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "LCL-007",
+      "LCL-030",
+      "LL-2018-050"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F07",
+    "title": "试用期时长上限",
+    "kind": "support",
+    "text": "合同三个月以上不满一年：最多一个月；一年以上不满三年：最多二个月；三年以上固定期限或无固定期限：最多六个月。以完成一定任务为期限或期限不满三个月的合同不得约定试用期，同一双方只能约定一次。\n关联依据编号：K004",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "试用期时长上限",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K004"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F08",
+    "title": "试用期被辞退能否获得赔偿",
+    "kind": "support",
+    "text": "先核对解除理由、录用条件、证据及程序。试用期解除还可能适用其他法定事由，不能仅凭单位未证明不符合录用条件就一律认定违法或自动获赔2N。违法解除的救济依具体条件确定。\n关联依据编号：LCL-021、LCL-039、LCL-040、LCL-048、LCL-087",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "试用期被辞退能否获得赔偿",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "LCL-021",
+      "LCL-039",
+      "LCL-040",
+      "LCL-048",
+      "LCL-087"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F09",
+    "title": "社保补贴能否代替缴纳",
+    "kind": "support",
+    "text": "建立劳动关系并属于依法参保范围时，现金补贴不能代替法定参保义务，试用期不是免缴理由。应查本人登记及缴费状态；登记期限与月度缴费时间分别核实。\n关联依据编号：SUP-L-social-58、LL-2018-072",
+    "url": "https://www.hbqj.gov.cn/zjz/zfxxgk/fdzdgknr/gysyjs_34501/shbz_36238/202106/t20210624_3611391.html",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "社保补贴能否代替缴纳",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "SUP-L-social-58",
+      "LL-2018-072"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F10",
+    "title": "试用期工资标准",
+    "kind": "support",
+    "text": "按照实施条例第十五条核对本单位同岗最低档工资80%或合同工资80%，并不得低于用人单位所在地最低工资标准；另注意合同履行地等地域条件，不把法条中的或者改成一律同时满足两个80%。\n关联依据编号：SUP-L-implementation、LCL-020",
+    "url": "https://rsj.sh.gov.cn/tgwyxzfgwj_17255/20200617/t0035_1388240.html",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "试用期工资标准",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "SUP-L-implementation",
+      "LCL-020"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F11",
+    "title": "加班费与拒绝违法加班",
+    "kind": "support",
+    "text": "工时、加班安排、休息日补休和加班工资分别核对。不得把支付加班费当作突破上限的许可；不能把所有未付加班费的争议都简化为可拒绝任何工作安排，须注意特殊工时和法定例外。\n关联依据编号：LL-2018-041、LL-2018-042、LL-2018-044、LCL-031",
+    "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "加班费与拒绝违法加班",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "LL-2018-041",
+      "LL-2018-042",
+      "LL-2018-044",
+      "LCL-031"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F12",
+    "title": "面试收培训费是否合法",
+    "kind": "support",
+    "text": "先问谁收、为何收、与录用有何关系。用人单位招用劳动者不得收取财物；真实自愿独立培训服务与附条件入职收费不同，不能仅见培训费三个字就自动套用第九条。\n关联依据编号：K001、K005",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "面试收培训费是否合法",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K001",
+      "K005"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F13",
+    "title": "培训贷款已经签了怎么办",
+    "kind": "support",
+    "text": "保留招聘、培训、贷款三类协议及沟通、支付记录；核对主体、借款责任和承诺。按争议性质向人社、消费维权部门或司法渠道求助，涉嫌诈骗或安全受威胁可报警。不要自行停还款，也不保证培训合同解除后贷款自动免除。\n关联依据编号：K005、K001",
+    "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "培训贷款已经签了怎么办",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K005",
+      "K001"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F14",
+    "title": "零首付购车公司代还贷款",
+    "kind": "support",
+    "text": "属于应重点核实的招聘、车辆买卖和借贷交叉风险：查借款人、车辆权属、派单与收入承诺、违约条款和公司代还约定。没有证据不能说公司必然故意派单制造违约或已构成诈骗。\n关联依据编号：SUP-L-civil-585、K005",
+    "url": "https://www.court.gov.cn/zixun/xiangqing/233181.html",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "零首付购车公司代还贷款",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "SUP-L-civil-585",
+      "K005"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F15",
+    "title": "三方协议违约金超过5000元",
+    "kind": "support",
+    "text": "不存在统一的5000元或5万元判定阈值。应核对是否违约、条款、实际损失、请求调整的条件；过分高于损失可依法请求适当减少，结果不能保证。劳动合同违约金另须核对劳动合同法第二十二至二十五条，不能混用。\n关联依据编号：SUP-L-civil-585、LCL-022、LCL-023、LCL-025",
+    "url": "https://www.court.gov.cn/zixun/xiangqing/233181.html",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "三方协议违约金超过5000元",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "SUP-L-civil-585",
+      "LCL-022",
+      "LCL-023",
+      "LCL-025"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F16",
+    "title": "招聘限男性是否违法",
+    "kind": "support",
+    "text": "除国家另有规定或法定不适合妇女岗位等适用例外外，不应限定男性或以性别拒绝录用妇女。核实岗位及例外依据，不自行扩张例外。\n关联依据编号：SUP-L-employment-27、SUP-L-women-43",
+    "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "招聘限男性是否违法",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "SUP-L-employment-27",
+      "SUP-L-women-43"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F17",
+    "title": "面试询问婚育与恋爱",
+    "kind": "support",
+    "text": "除国家另有规定外，不得超出基本信息进一步询问或调查女性求职者婚育情况。恋爱问题与法条列举的婚育问题不能机械等同，应核对问题目的、内容和是否用作录用条件。\n关联依据编号：SUP-L-women-43",
+    "url": "https://gzca.miit.gov.cn/zwgk/zcwj/zcfg/art/2022/art_47b4c78a8f52484587e1b198c52fa909.html",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "面试询问婚育与恋爱",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "SUP-L-women-43"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F18",
+    "title": "招聘拒绝某地区求职者",
+    "kind": "support",
+    "text": "与岗位无合理关联的地域排斥有平等就业风险；需保存招聘要求和拒绝理由，核实是否存在法定岗位条件，不能仅凭户籍条件三个字认定所有招聘违法。\n关联依据编号：SUP-L-employment-3、SUP-L-employment-26、SUP-L-employment-62",
+    "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "招聘拒绝某地区求职者",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "SUP-L-employment-3",
+      "SUP-L-employment-26",
+      "SUP-L-employment-62"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F19",
+    "title": "身份证原件抵押与正常核验",
+    "kind": "support",
+    "text": "用人单位招用劳动者不得扣押身份证等证件。正常当面核验身份与扣留原件不同；不提交不必要的完整证件信息，保存扣证要求并要求返还。\n关联依据编号：K001",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "身份证原件抵押与正常核验",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "K001"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  },
+  {
+    "id": "SUP-F20",
+    "title": "离职档案与证明",
+    "kind": "support",
+    "text": "单位应在解除或终止劳动合同时出具证明，并在十五日内办理档案和社保关系转移手续；同时应按约办理工作交接。不将欠款争议等当然作为扣档案理由。\n关联依据编号：LCL-050",
+    "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+    "location": "高频问答",
+    "published_at": "",
+    "verified_at": "2026-10-05",
+    "scope": "大学生招聘、签约、用工与就业权益咨询",
+    "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+    "tags": [
+      "离职档案与证明",
+      "高频问答"
+    ],
+    "content_form": "reviewed_support",
+    "verification_status": "curated_with_references",
+    "related_article_ids": [
+      "LCL-050"
+    ],
+    "support_category": "高频问答",
+    "origin_document": "大学生就业权益高频问题回答.docx"
+  }
+]
