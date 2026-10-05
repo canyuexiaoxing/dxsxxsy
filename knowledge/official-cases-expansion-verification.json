@@ -1,0 +1,415 @@
+{
+  "total_database_chunks": 198,
+  "new_cases": 20,
+  "new_case_chunks": 60,
+  "new_case_types": {
+    "civil_judgment": 14,
+    "labor_arbitration": 5,
+    "civil_mediation": 1
+  },
+  "law_articles_preserved": 98,
+  "total_cases": 33,
+  "retrieval_checks": [
+    {
+      "expected_case": "O008",
+      "query": "建筑公司转包给个人招工，工人坠落受伤被认定工伤，没有劳动关系，谁付工伤保险待遇",
+      "actual_cases": [
+        "O008"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-094",
+        "LCL-091",
+        "LCL-093",
+        "K007",
+        "K005",
+        "O008-facts",
+        "O008-reasoning",
+        "O008-outcome"
+      ]
+    },
+    {
+      "expected_case": "O009",
+      "query": "科技公司招聘，数字公司办公和通讯标识，共同老板私人账户发工资，关联企业混同用工欠薪",
+      "actual_cases": [
+        "O009"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-091",
+        "LCL-094",
+        "LCL-093",
+        "K007",
+        "K005",
+        "O009-facts",
+        "O009-reasoning",
+        "O009-outcome"
+      ]
+    },
+    {
+      "expected_case": "O010",
+      "query": "财务负责人故意拒签续约，公司多次微信通知续签，想拿未签合同二倍工资",
+      "actual_cases": [
+        "O010"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-082",
+        "LCL-086",
+        "LCL-091",
+        "K007",
+        "K006",
+        "O010-facts",
+        "O010-reasoning",
+        "O010-outcome"
+      ]
+    },
+    {
+      "expected_case": "O011",
+      "query": "首席技术官只知道两款药物秘密，新公司药品适应症和用药方案不同，同属医药行业竞业710万元",
+      "actual_cases": [
+        "O011"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-024",
+        "LCL-023",
+        "LCL-090",
+        "K005",
+        "K007",
+        "O011-facts",
+        "O011-reasoning",
+        "O011-outcome"
+      ]
+    },
+    {
+      "expected_case": "O012",
+      "query": "销售经理在职签竞业协议后私自联系供应商卖布匹给公司客户，货款归自己",
+      "actual_cases": [
+        "O012"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-024",
+        "LCL-023",
+        "LCL-090",
+        "K006",
+        "K007",
+        "O012-facts",
+        "O012-reasoning",
+        "O012-outcome"
+      ]
+    },
+    {
+      "expected_case": "O013",
+      "query": "保安公司入职约定不缴社保，社保费直接作为补贴，员工据此解除要求经济补偿",
+      "actual_cases": [
+        "O013"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-046",
+        "LCL-038",
+        "LCL-090",
+        "K005",
+        "K007",
+        "O013-facts",
+        "O013-reasoning",
+        "O013-outcome"
+      ]
+    },
+    {
+      "expected_case": "O014",
+      "query": "生产车间工人签内部承包合同，按月工资接受安全制度管理，受伤后公司否认劳动关系",
+      "actual_cases": [
+        "O014"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-094",
+        "LCL-026",
+        "LCL-007",
+        "K007",
+        "K006",
+        "O014-facts",
+        "O014-reasoning",
+        "O014-outcome"
+      ]
+    },
+    {
+      "expected_case": "O015",
+      "query": "公交公司连续两次固定期限合同，投诉口罩后拒绝续签，无固定期限劳动合同选择权",
+      "actual_cases": [
+        "O015"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-014",
+        "LCL-012",
+        "LCL-097",
+        "K007",
+        "K005",
+        "O015-facts",
+        "O015-reasoning",
+        "O015-outcome"
+      ]
+    },
+    {
+      "expected_case": "O016",
+      "query": "研发人员辞职未提前三十天，拒交接技术资料，导致公司样机交付延误损失五万元",
+      "actual_cases": [
+        "O016"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-037",
+        "LCL-040",
+        "LCL-090",
+        "K007",
+        "K005",
+        "O016-facts",
+        "O016-reasoning",
+        "O016-outcome"
+      ]
+    },
+    {
+      "expected_case": "O017",
+      "query": "江苏摄影员工妻子生育，陪产护理假十五天，公司不发护理假工资",
+      "actual_cases": [
+        "O017"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-061",
+        "LCL-028",
+        "LCL-064",
+        "K005",
+        "K007",
+        "O017-facts",
+        "O017-reasoning",
+        "O017-outcome"
+      ]
+    },
+    {
+      "expected_case": "O018",
+      "query": "工伤十二个月停工留薪期后，只有医院病休证明不配合劳动能力鉴定，还能按原工资发吗",
+      "actual_cases": [
+        "O018"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-045",
+        "LCL-042",
+        "LCL-040",
+        "K007",
+        "K005",
+        "O018-facts",
+        "O018-reasoning",
+        "O018-outcome"
+      ]
+    },
+    {
+      "expected_case": "O019",
+      "query": "怀孕工程师被单方退出项目，基本工资3000项目津贴14000，孕期只发3000",
+      "actual_cases": [
+        "O019"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-071",
+        "LCL-090",
+        "LCL-028",
+        "K007",
+        "K005",
+        "O019-facts",
+        "O019-reasoning",
+        "O019-outcome"
+      ]
+    },
+    {
+      "expected_case": "O020",
+      "query": "公司只缴工伤保险，员工自己代付单位应缴的其他社会保险费用，要求损失赔偿",
+      "actual_cases": [
+        "O020"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-038",
+        "LCL-091",
+        "LCL-090",
+        "K005",
+        "K007",
+        "O020-facts",
+        "O020-reasoning",
+        "O020-outcome"
+      ]
+    },
+    {
+      "expected_case": "O021",
+      "query": "普通楼宇巡逻保安接触不到商业秘密，离职竞业一年违约金20万",
+      "actual_cases": [
+        "O021"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-023",
+        "LCL-022",
+        "LCL-090",
+        "K007",
+        "K005",
+        "O021-facts",
+        "O021-reasoning",
+        "O021-outcome"
+      ]
+    },
+    {
+      "expected_case": "O022",
+      "query": "众包外卖骑手自主上线自由抢单，时间和接单量无要求，按单结算是否劳动关系",
+      "actual_cases": [
+        "O022"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-068",
+        "LCL-094",
+        "LCL-071",
+        "K005",
+        "K007",
+        "O022-facts",
+        "O022-reasoning",
+        "O022-outcome"
+      ]
+    },
+    {
+      "expected_case": "O023",
+      "query": "骑手原本劳动合同，被安排注册个体工商户改签项目承包，站点劳动管理完全没变",
+      "actual_cases": [
+        "O023"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-094",
+        "LCL-033",
+        "LCL-091",
+        "K005",
+        "K007",
+        "O023-facts",
+        "O023-reasoning",
+        "O023-outcome"
+      ]
+    },
+    {
+      "expected_case": "O024",
+      "query": "网络主播独家艺人经纪合作，自主决定内容直播时间，形象协商阶梯分成是否劳动关系",
+      "actual_cases": [
+        "O024"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-068",
+        "LCL-007",
+        "LCL-028",
+        "K007",
+        "K005",
+        "O024-facts",
+        "O024-reasoning",
+        "O024-outcome"
+      ]
+    },
+    {
+      "expected_case": "O025",
+      "query": "员工制家政保洁员公司派单每周六天，底薪和服务费，禁止多平台，受伤确认劳动关系",
+      "actual_cases": [
+        "O025"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-061",
+        "LCL-068",
+        "LCL-067",
+        "K007",
+        "K005",
+        "O025-facts",
+        "O025-reasoning",
+        "O025-outcome"
+      ]
+    },
+    {
+      "expected_case": "O026",
+      "query": "事业单位医院职工脱产全日制读研享工资福利，违反服务期辞职，五倍奖金赔偿",
+      "actual_cases": [
+        "O026"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-022",
+        "LCL-083",
+        "LCL-090",
+        "K006",
+        "K005",
+        "O026-facts",
+        "O026-reasoning",
+        "O026-outcome"
+      ]
+    },
+    {
+      "expected_case": "O027",
+      "query": "财务主管收到录用后辞职，入职要求HCG孕检，告知怀孕就取消offer，相同岗位还在招聘",
+      "actual_cases": [
+        "O027"
+      ],
+      "matched": true,
+      "law_count": 3,
+      "related_group_complete": true,
+      "returned_ids": [
+        "LCL-039",
+        "LCL-090",
+        "LCL-021",
+        "K005",
+        "K007",
+        "O027-facts",
+        "O027-reasoning",
+        "O027-outcome"
+      ]
+    }
+  ],
+  "passed": 20
+}

@@ -1,0 +1,106 @@
+{
+  "new_official_cases": 7,
+  "new_chunks": 21,
+  "total_database_chunks": 138,
+  "law_articles_preserved": 98,
+  "retrieval_checks": [
+    {
+      "case_id": "O001",
+      "query": "虚假兼职盈利图片，在线课程入职培训，边学边赚钱覆盖学费",
+      "returned_ids": [
+        "LCL-068",
+        "LCL-091",
+        "LCL-070",
+        "K005",
+        "K007",
+        "O001-facts",
+        "O001-reasoning",
+        "O001-outcome"
+      ]
+    },
+    {
+      "case_id": "O002",
+      "query": "承诺地铁内推，就业服务费5.8万元，定金1.8万元，未入职推诿退款",
+      "returned_ids": [
+        "LCL-091",
+        "LCL-028",
+        "K001",
+        "K005",
+        "K007",
+        "O002-facts",
+        "O002-reasoning",
+        "O002-outcome"
+      ]
+    },
+    {
+      "case_id": "O003",
+      "query": "没有化妆师助理岗位，面试无工作经验，转为收费培训",
+      "returned_ids": [
+        "LCL-070",
+        "LCL-022",
+        "LCL-060",
+        "K005",
+        "K007",
+        "O003-facts",
+        "O003-reasoning",
+        "O003-outcome"
+      ]
+    },
+    {
+      "case_id": "O004",
+      "query": "招聘新媒体运营，44天培训19800元，通过第三方平台分期付款",
+      "returned_ids": [
+        "LCL-022",
+        "LCL-057",
+        "LCL-094",
+        "K006",
+        "K005",
+        "O004-facts",
+        "O004-reasoning",
+        "O004-outcome"
+      ]
+    },
+    {
+      "case_id": "O005",
+      "query": "劳务派遣11名驾驶员，逐月扣工资作为风险押金，退还4.9万元",
+      "returned_ids": [
+        "LCL-092",
+        "LCL-084",
+        "LCL-061",
+        "K007",
+        "K005",
+        "O005-facts",
+        "O005-reasoning",
+        "O005-outcome"
+      ]
+    },
+    {
+      "case_id": "O006",
+      "query": "试用期早9晚9每周6天996，拒绝违法超时加班被辞退",
+      "returned_ids": [
+        "LCL-083",
+        "LCL-021",
+        "LCL-070",
+        "K005",
+        "K007",
+        "O006-facts",
+        "O006-reasoning",
+        "O006-outcome"
+      ]
+    },
+    {
+      "case_id": "O007",
+      "query": "入职签署奋斗者计划，承诺放弃加班费，公司认可加班但拒付",
+      "returned_ids": [
+        "LCL-031",
+        "LCL-085",
+        "LCL-028",
+        "K005",
+        "K007",
+        "O007-facts",
+        "O007-reasoning",
+        "O007-outcome"
+      ]
+    }
+  ]
+}

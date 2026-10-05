@@ -1,0 +1,1 @@
+Built-in image_gen. Final prompt: Generate one Windows app icon for 求职避坑镜; emerald green and mint, bold shield plus magnifying glass, clear at16/32px, no text, transparent outside rounded square. Original generated PNG preserved; ICO format conversion includes16/24/32/48/64/128/256px.

@@ -1,0 +1,15 @@
+{
+  "health": {
+    "status": "ok",
+    "stage": "rag-agent",
+    "vision_configured": true
+  },
+  "session_restored": true,
+  "messages": 8,
+  "versions": [
+    1,
+    2
+  ],
+  "download_status": 200,
+  "agent_route_present": true
+}

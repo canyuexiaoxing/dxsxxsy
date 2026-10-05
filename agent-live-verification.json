@@ -1,0 +1,64 @@
+{
+  "session_id": "S5fb88a75df984475b0150bbc1bd66d47",
+  "synthetic_only": true,
+  "outcomes": [
+    {
+      "action": "ask",
+      "questions": [
+        "这2000元要求交给谁（公司、个人账号、培训机构还是第三方平台）？",
+        "对方说明的用途是什么（押金/保证金、培训费、服装费、体检费、办卡费还是其他）？",
+        "对方是否提供了书面协议、收据或聊天记录等凭证，是否提到不交就不安排入职？"
+      ],
+      "source_ids": [
+        "K001",
+        "K002",
+        "K005"
+      ],
+      "report_version": null
+    },
+    {
+      "action": "report",
+      "questions": [],
+      "source_ids": [
+        "K001",
+        "K002",
+        "K003",
+        "K007",
+        "K008"
+      ],
+      "report_version": 1
+    },
+    {
+      "action": "answer",
+      "questions": [],
+      "source_ids": [
+        "K001",
+        "K005",
+        "K006",
+        "K007",
+        "K008",
+        "K002",
+        "K003"
+      ],
+      "report_version": null
+    },
+    {
+      "action": "revise",
+      "questions": [],
+      "source_ids": [
+        "K001",
+        "K002",
+        "K003",
+        "K005",
+        "K006",
+        "K007"
+      ],
+      "report_version": 2
+    }
+  ],
+  "persisted_messages": 8,
+  "persisted_report_versions": [
+    1,
+    2
+  ]
+}

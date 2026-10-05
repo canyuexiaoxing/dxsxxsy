@@ -1,0 +1,130 @@
+{
+  "distinct_cases": 5,
+  "new_chunks": 15,
+  "database_count": 23,
+  "local_embedding_model": "qwen3-embedding:4b",
+  "identity_check": "passed",
+  "official_source_verification": "pending",
+  "retrieval_checks": [
+    {
+      "query": "毕业生三方就业协议未报到违约金，与劳动合同有什么区别",
+      "case_id": "C001",
+      "returned_ids": [
+        "K003",
+        "K001",
+        "K002",
+        "K006",
+        "K007",
+        "C001-facts",
+        "C001-reasoning",
+        "C001-outcome"
+      ],
+      "kinds": [
+        "law",
+        "law",
+        "law",
+        "warning",
+        "guide",
+        "case",
+        "case",
+        "case"
+      ]
+    },
+    {
+      "query": "公司称合作关系，但是考勤请假审批，未签合同和未缴社保，双倍工资",
+      "case_id": "C002",
+      "returned_ids": [
+        "K003",
+        "K002",
+        "K001",
+        "K007",
+        "K005",
+        "C002-facts",
+        "C002-reasoning",
+        "C002-outcome"
+      ],
+      "kinds": [
+        "law",
+        "law",
+        "law",
+        "guide",
+        "warning",
+        "case",
+        "case",
+        "case"
+      ]
+    },
+    {
+      "query": "飞行培训费80000元，包就业退款，服务协议管辖移送裁定",
+      "case_id": "C003",
+      "returned_ids": [
+        "K003",
+        "K001",
+        "K002",
+        "K005",
+        "K007",
+        "C003-facts",
+        "C003-reasoning",
+        "C003-outcome"
+      ],
+      "kinds": [
+        "law",
+        "law",
+        "law",
+        "warning",
+        "guide",
+        "case",
+        "case",
+        "case"
+      ]
+    },
+    {
+      "query": "招聘因籍贯地域歧视拒绝录用，平等就业权",
+      "case_id": "C004",
+      "returned_ids": [
+        "K002",
+        "K001",
+        "K003",
+        "K005",
+        "K007",
+        "C004-facts",
+        "C004-reasoning",
+        "C004-outcome"
+      ],
+      "kinds": [
+        "law",
+        "law",
+        "law",
+        "warning",
+        "guide",
+        "case",
+        "case",
+        "case"
+      ]
+    },
+    {
+      "query": "三年劳动合同三个月试用期，公司延长考察期，重复试用期违法解除",
+      "case_id": "C005",
+      "returned_ids": [
+        "K004",
+        "K003",
+        "K001",
+        "K005",
+        "K006",
+        "C005-facts",
+        "C005-reasoning",
+        "C005-outcome"
+      ],
+      "kinds": [
+        "law",
+        "law",
+        "law",
+        "warning",
+        "warning",
+        "case",
+        "case",
+        "case"
+      ]
+    }
+  ]
+}

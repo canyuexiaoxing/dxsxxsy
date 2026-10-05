@@ -1,0 +1,35 @@
+{
+  "synthetic_materials_only": true,
+  "checks": [
+    {
+      "filename": "模拟聊天截图.png",
+      "material_id": "M1275f06e00fc49b080cf0bf417fa7ceb",
+      "status": "read",
+      "page_count": 1,
+      "methods": [
+        "vision"
+      ],
+      "passed": true,
+      "issues": [
+        []
+      ]
+    },
+    {
+      "filename": "模拟混合材料.pdf",
+      "material_id": "M538fab3fe4fd418dab1a062aaff7c998",
+      "status": "read",
+      "page_count": 3,
+      "methods": [
+        "pdf_text",
+        "vision",
+        "blank"
+      ],
+      "passed": true,
+      "issues": [
+        [],
+        [],
+        []
+      ]
+    }
+  ]
+}

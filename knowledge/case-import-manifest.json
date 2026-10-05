@@ -1,0 +1,47 @@
+{
+  "source_sha256": "b36a1e216aadeb17175347f89b549d22d79c6ddaa00eeaa323d36d10e66b8758",
+  "source_documents": 6,
+  "distinct_cases": 5,
+  "chunks": 15,
+  "paragraph_numbering": "word/document.xml中的原始非空段落位置编号，包含空段落间隔",
+  "checked_at": "2026-10-04",
+  "official_verification": "pending",
+  "cases": [
+    {
+      "case_id": "C001",
+      "title": "毕业生入职前就业协议违约争议",
+      "source_paragraphs": [
+        "P1–P34"
+      ]
+    },
+    {
+      "case_id": "C002",
+      "title": "未签劳动合同、未缴社保与实际劳动关系争议",
+      "source_paragraphs": [
+        "P37–P74"
+      ]
+    },
+    {
+      "case_id": "C003",
+      "title": "收费培训服务纠纷：仅移送管辖、未判断退款",
+      "source_paragraphs": [
+        "P77–P104"
+      ]
+    },
+    {
+      "case_id": "C004",
+      "title": "招聘因籍贯拒录的平等就业权纠纷",
+      "source_paragraphs": [
+        "P107–P159",
+        "P163–P194"
+      ]
+    },
+    {
+      "case_id": "C005",
+      "title": "重复试用期、绩效扣减与违法解除争议",
+      "source_paragraphs": [
+        "P198–P244"
+      ]
+    }
+  ]
+}

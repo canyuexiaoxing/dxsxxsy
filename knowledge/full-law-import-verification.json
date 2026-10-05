@@ -1,0 +1,77 @@
+{
+  "law_articles": 98,
+  "total_chunks": 117,
+  "completeness": "passed",
+  "existing_cases_preserved": true,
+  "retrieval_checks": [
+    {
+      "query": "公司要求入职交押金，扣押身份证，怎么退还财物",
+      "article_numbers": [
+        9,
+        84,
+        90
+      ],
+      "expected_any": [
+        9,
+        84
+      ]
+    },
+    {
+      "query": "公司一直未签书面劳动合同，要支付二倍工资吗",
+      "article_numbers": [
+        10,
+        11,
+        82
+      ],
+      "expected_any": [
+        10,
+        82
+      ]
+    },
+    {
+      "query": "公司未依法缴纳社会保险费，劳动者能解除劳动合同吗",
+      "article_numbers": [
+        38,
+        49,
+        90
+      ],
+      "expected_any": [
+        38
+      ]
+    },
+    {
+      "query": "经济补偿按工作年限计算，月工资和工作六个月怎么算",
+      "article_numbers": [
+        46,
+        47,
+        97
+      ],
+      "expected_any": [
+        47
+      ]
+    },
+    {
+      "query": "劳务派遣需要行政许可，注册资本二百万元",
+      "article_numbers": [
+        57,
+        59,
+        92
+      ],
+      "expected_any": [
+        57
+      ]
+    },
+    {
+      "query": "劳动合同三年，试用期可以再延长或重复约定吗",
+      "article_numbers": [
+        19,
+        70,
+        83
+      ],
+      "expected_any": [
+        19
+      ]
+    }
+  ],
+  "model": "qwen3-embedding:4b"
+}

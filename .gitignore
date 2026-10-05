@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+data/
+models/
+runtime/
+downloads/
+logs/
+
+frontend/node_modules/
+frontend/dist/
+
+# 本地原始裁判文书与追溯材料
+knowledge/private/

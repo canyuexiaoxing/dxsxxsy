@@ -1,0 +1,90 @@
+{
+  "checked_at": "2026-10-04",
+  "official_pages": 3,
+  "new_cases": 7,
+  "new_chunks": 21,
+  "sources": [
+    {
+      "url": "https://www.court.gov.cn/zixun/xiangqing/490051.html",
+      "snapshot_path": "knowledge\\sources\\official-cases\\b32ff6c8d760.html",
+      "sha256": "b4ecc4884a97d1e8a878dbc5c4d382ef918705fdad2a2c5fe7143761f44ef2c0",
+      "http_status": 200
+    },
+    {
+      "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+      "snapshot_path": null,
+      "note": "官网正文已通过网页检索工具打开核对；直接下载不可用，不伪造HTML快照。"
+    },
+    {
+      "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+      "snapshot_path": "knowledge\\sources\\official-cases\\20b1d19a6977.html",
+      "sha256": "cf60623b16a8469d6c95fd3d1976fd11d4a3e1845821bf1e43814ad909422a71",
+      "http_status": 200
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "O001",
+      "title": "虚构兼职收益诱导付费培训的招转培诈骗",
+      "url": "https://www.court.gov.cn/zixun/xiangqing/490051.html",
+      "position": "案例二：以招聘为幌子诱导付费培训实施诈骗",
+      "published_at": "2026-02-26",
+      "decision_type": "criminal_judgment",
+      "status": "官方摘要明确已发生法律效力"
+    },
+    {
+      "case_id": "O002",
+      "title": "无证中介承诺地铁内推、收定金后推诿退款",
+      "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+      "position": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件",
+      "published_at": "2025-12-11",
+      "decision_type": "administrative_enforcement",
+      "status": "已行政处理，其他涉嫌违法线索移交；未披露刑事判决"
+    },
+    {
+      "case_id": "O003",
+      "title": "虚构化妆师助理岗位、招聘转为收费培训",
+      "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+      "position": "第7项：山东青岛两公司“招转培”案件",
+      "published_at": "2025-12-11",
+      "decision_type": "administrative_enforcement",
+      "status": "行政责令改正、停止办学和退费；未披露退款完成"
+    },
+    {
+      "case_id": "O004",
+      "title": "新媒体岗位诱导44天培训、第三方分期支付",
+      "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+      "position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+      "published_at": "2025-12-11",
+      "decision_type": "administrative_enforcement",
+      "status": "立案调查并责令停止培训、退费；未披露刑事判决"
+    },
+    {
+      "case_id": "O005",
+      "title": "劳务派遣驾驶员工资被扣作风险押金",
+      "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+      "position": "第10项：上海某劳务派遣有限公司违法收取风险押金案件",
+      "published_at": "2025-12-11",
+      "decision_type": "administrative_enforcement",
+      "status": "人社部门督促退还押金，原文明确已退还"
+    },
+    {
+      "case_id": "O006",
+      "title": "试用期拒绝996违法加班后被解除劳动合同",
+      "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+      "position": "案例1：劳动者拒绝违法超时加班安排，用人单位能否解除劳动合同",
+      "published_at": "2021-08-26",
+      "decision_type": "labor_arbitration",
+      "status": "官方明确终局仲裁裁决；另有监察责令改正"
+    },
+    {
+      "case_id": "O007",
+      "title": "入职签署奋斗者计划、放弃加班费协议",
+      "url": "https://www.court.gov.cn/zixun/xiangqing/319151.html",
+      "position": "案例2：劳动者与用人单位订立放弃加班费协议，能否主张加班费",
+      "published_at": "2021-08-26",
+      "decision_type": "labor_arbitration",
+      "status": "官方披露仲裁裁决；未明确裁决是否终局或后续诉讼"
+    }
+  ]
+}
