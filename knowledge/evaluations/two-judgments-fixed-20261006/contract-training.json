@@ -1,0 +1,1859 @@
+{
+  "case": {
+    "id": "contract-training",
+    "title": "真实合同案例-岗前培训服务期",
+    "official_url": "https://www.jsfy.gov.cn/article/91645.html",
+    "section": "江苏法院2021年度劳动人事争议十大典型案例八的协议内容及履行事实",
+    "facts": "培训服务协议内容摘录及履行事实\n根据江苏法院公开案例整理；不是合同原件，未补造未公开条款。\n\n一、公开记载的协议内容\n2020年5月，邱某入职某传播公司，双方签订《培训服务协议》。\n协议约定职前培训为期18天。\n培训内容为公司背景介绍、业务简介、课程体系与品牌课程优势、销售技巧及电话销售技巧。\n培训结束后履职未达到最低服务年限1.5年的，邱某应赔偿全部培训费用。\n\n二、公开记载的履行事实\n公司安排邱某参加了上述培训。2020年9月，邱某离职，公司要求赔偿培训费。\n\n三、摘录范围\n公开资料未给出合同完整原件、全部培训费用金额及逐项费用凭证，本摘录不补造这些内容。\n本材料未包含裁判结论、法院说理和专家点评。\n",
+    "file_path": "E:\\workp\\aixx\\output\\pdf\\真实案件-培训服务协议摘录.pdf",
+    "expected": [
+      "区别一般岗前培训与专项专业技术培训",
+      "识别1.5年服务期与全部培训费返还条款的风险",
+      "不能认为签字就一定需要赔偿",
+      "公司应提供专业技术培训及专项费用证据，不能把未披露费用当成实际欠款"
+    ],
+    "request": "请审查这份PDF里的培训服务协议内容及履行情况。它是法院公开记载的协议摘录，不是完整合同原件；公司要求离职者赔偿全部培训费。目前只能提供这些事实，请给出有限报告、判断条件及应对建议。"
+  },
+  "official_url": "https://www.jsfy.gov.cn/article/91645.html",
+  "input_disclosure": "仅输入法院公开披露的招聘通知或协议内容及履行事实，未提供裁判结果、理由、案号或来源链接；匿名化自然人和企业。",
+  "test_limit": "屏蔽同案C004条目及读取；第二案在本地案例库未检出。模型预训练记忆无法排除，不是严格盲测；两例不能推算实际准确率。",
+  "turns": [
+    {
+      "input": "请审查这份PDF里的培训服务协议内容及履行情况。它是法院公开记载的协议摘录，不是完整合同原件；公司要求离职者赔偿全部培训费。目前只能提供这些事实，请给出有限报告、判断条件及应对建议。",
+      "reply": {
+        "session_id": "S618dd5e14dfd46e2a057e744f1217017",
+        "action": "report",
+        "message": "",
+        "questions": [],
+        "evidence_ids": [
+          "LCL-022",
+          "LCL-025",
+          "LCL-023",
+          "LCL-017"
+        ],
+        "report": {
+          "summary": "本报告仅基于你提供的江苏法院公开案例摘录（非合同原件、未含裁判结论、未标记为已校验）和现行官方规范作有限分析，不构成法律意见，也不是对企业违法或诈骗的认定。材料显示：2020年5月入职签订《培训服务协议》，约定职前培训18天（内容为公司背景介绍、业务简介、课程体系与品牌课程优势、销售技巧及电话销售技巧）、最低服务年限1.5年，未满即“赔偿全部培训费用”；2020年9月离职后公司据此索费。劳动合同法第二十二条仅在用人单位提供专项培训费用、进行专业技术培训时可约定服务期违约金，且违约金不得超过实际培训费用、也不得超过服务期尚未履行部分应分摊的培训费用；第二十五条限定此外不得约定由劳动者承担违约金。是否符合上述条件需结合具体事实判断，材料不足以认定，本报告不就个案作定性结论。",
+          "findings": [
+            {
+              "title": "“未满1.5年即赔偿全部培训费用”条款：培训性质、服务期效力、费用上限与离职索费",
+              "level": "attention",
+              "quote": "培训结束后履职未达到最低服务年限1.5年的，邱某应赔偿全部培训费用。",
+              "material_id": "M3e7a7cbd7fd343b5bc81bac286981ac3",
+              "page_number": 1,
+              "explanation": "该条款将“履职未达1.5年服务期”直接对应“赔偿全部培训费用”，需逐项核查其成立条件。①培训性质：按劳动合同法第二十二条，只有用人单位提供专项培训费用、进行专业技术培训，才可约定服务期及违约金；材料所示18天内容多为公司背景介绍、业务简介、课程体系与品牌课程优势、销售技巧及电话销售技巧，是否构成“专业技术培训”需结合是否提供专项技能训练及费用承担判断，材料不足以认定。②服务期违约金效力：按第二十五条，除第二十二条（服务期）和第二十三条（竞业限制）情形外，用人单位不得约定由劳动者承担违约金，故该条款是否有效取决于是否落入第二十二条或第二十三条，材料未显示竞业限制情形。③费用上限：第二十二条规定违约金数额不得超过用人单位提供的培训费用，且要求支付的违约金不得超过服务期尚未履行部分所应分摊的培训费用；材料未给出培训费用金额及逐项凭证，因此“赔偿全部培训费用”是否超出上限无法核算。④离职索费：公司于2020年9月邱某离职后据该条主张赔偿，能否成立、金额多少均取决于上述条件是否满足，材料不足以认定。本项不作出条款违法或索赔成立的结论。",
+              "evidence_ids": [
+                "LCL-022",
+                "LCL-025",
+                "LCL-023"
+              ],
+              "suggestions": [
+                "以书面方式（如邮件、微信并留存记录）要求公司出具培训费用明细，包括发票、付款凭证、讲师费、场地费、差旅费及是否由公司实际承担，用以判断是否属于第二十二条“专项培训费用”。",
+                "取得协议完整文本，核对服务期起算日、违约金计算方式及是否约定竞业限制，判断是否落入第二十二条或第二十三条。",
+                "按已履行月份自行测算未履行部分应分摊金额，与公司主张金额比较，对超出实际费用或超出分摊额的部分提出异议。",
+                "保存岗位说明书、培训通知、签到表、培训课件、工资及考勤记录，用于证明培训性质与履行情况；对无依据的全额赔偿要求不先行支付，协商不成可通过劳动仲裁或诉讼主张。"
+              ]
+            }
+          ],
+          "limitations": [
+            "材料为法院公开案例整理摘录，非合同原件，未补造未公开条款；提取状态未标记为已校验（extraction_verified=false）。",
+            "材料未包含裁判结论、法院说理和专家点评，无法确认个案结果及违约金是否被支持，本报告不就裁判结果作判断。",
+            "缺少培训费用总金额、逐项费用凭证、协议完整条款、离职原因及是否约定保密或竞业限制，故无法核算实际可主张金额，也无法判断是否落入第二十三条情形。",
+            "本报告仅依据现行劳动合同法等官方来源作条件性分析；这是整理意见，不是裁判机关，不作出裁判或违法认定。",
+            "若后续补充完整条款、费用凭证或裁判文书，结论可能需要修正。"
+          ],
+          "change_reason": "将原两项风险合并为一项：同一培训协议项下的培训性质、服务期效力、费用上限与离职索费属于同一法律义务下的多个判断条件，按规则合并并保留各条件及依据；删除单独列出的材料不足项，改列入 limitations；将证据留存与投诉路径归入 suggestions；删除与本题无关的民法典违约金酌减、入职收费、竞业限制等条文与案例；证据编号仅保留实际用于当前分析的来源。",
+          "version": 1,
+          "created_at": "2026-10-06T12:29:32.223842+00:00",
+          "sources": [
+            {
+              "id": "LCL-022",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+              "location": "第二十二条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-06",
+              "text": "第二十二条　用人单位为劳动者提供专项培训费用，对其进行专业技术培训的，可以与该劳动者订立协议，约定服务期。\n劳动者违反服务期约定的，应当按照约定向用人单位支付违约金。违约金的数额不得超过用人单位提供的培训费用。用人单位要求劳动者支付的违约金不得超过服务期尚未履行部分所应分摊的培训费用。\n用人单位与劳动者约定服务期的，不影响按照正常的工资调整机制提高劳动者在服务期期间的劳动报酬。",
+              "scope": "本条所列情形；第二章　劳动合同的订立 ",
+              "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+              "tags": [
+                "劳动合同法",
+                "第二十二条",
+                "第二章　劳动合同的订立"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 22,
+              "chapter": "第二章　劳动合同的订立",
+              "section": "",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+              "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "source_publisher": "国家市场监督管理总局",
+              "source_level": "national_authority",
+              "legal_database_url": "https://flk.npc.gov.cn/",
+              "legal_database_status": "query_entry_only_not_verified"
+            },
+            {
+              "id": "LCL-025",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+              "location": "第二十五条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-06",
+              "text": "第二十五条　除本法第二十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+              "scope": "本条所列情形；第二章　劳动合同的订立 ",
+              "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+              "tags": [
+                "劳动合同法",
+                "第二十五条",
+                "第二章　劳动合同的订立"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 25,
+              "chapter": "第二章　劳动合同的订立",
+              "section": "",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [
+                "LCL-022"
+              ],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+              "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "source_publisher": "国家市场监督管理总局",
+              "source_level": "national_authority",
+              "legal_database_url": "https://flk.npc.gov.cn/",
+              "legal_database_status": "query_entry_only_not_verified"
+            },
+            {
+              "id": "LCL-023",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+              "location": "第二十三条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-06",
+              "text": "第二十三条　用人单位与劳动者可以在劳动合同中约定保守用人单位的商业秘密和与知识产权相关的保密事项。\n对负有保密义务的劳动者，用人单位可以在劳动合同或者保密协议中与劳动者约定竞业限制条款，并约定在解除或者终止劳动合同后，在竞业限制期限内按月给予劳动者经济补偿。劳动者违反竞业限制约定的，应当按照约定向用人单位支付违约金。",
+              "scope": "本条所列情形；第二章　劳动合同的订立 ",
+              "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+              "tags": [
+                "劳动合同法",
+                "第二十三条",
+                "第二章　劳动合同的订立"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 23,
+              "chapter": "第二章　劳动合同的订立",
+              "section": "",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+              "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "source_publisher": "国家市场监督管理总局",
+              "source_level": "national_authority",
+              "legal_database_url": "https://flk.npc.gov.cn/",
+              "legal_database_status": "query_entry_only_not_verified"
+            },
+            {
+              "id": "LCL-017",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+              "location": "第十七条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-06",
+              "text": "第十七条　劳动合同应当具备以下条款：\n（一）用人单位的名称、住所和法定代表人或者主要负责人；\n（二）劳动者的姓名、住址和居民身份证或者其他有效身份证件号码；\n（三）劳动合同期限；\n（四）工作内容和工作地点；\n（五）工作时间和休息休假；\n（六）劳动报酬；\n（七）社会保险；\n（八）劳动保护、劳动条件和职业危害防护；\n（九）法律、法规规定应当纳入劳动合同的其他事项。\n劳动合同除前款规定的必备条款外，用人单位与劳动者可以约定试用期、培训、保守秘密、补充保险和福利待遇等其他事项。",
+              "scope": "本条所列情形；第二章　劳动合同的订立 ",
+              "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+              "tags": [
+                "劳动合同法",
+                "第十七条",
+                "第二章　劳动合同的订立"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 17,
+              "chapter": "第二章　劳动合同的订立",
+              "section": "",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+              "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "source_publisher": "国家市场监督管理总局",
+              "source_level": "national_authority",
+              "legal_database_url": "https://flk.npc.gov.cn/",
+              "legal_database_status": "query_entry_only_not_verified"
+            }
+          ],
+          "self_checks": []
+        },
+        "sources": [
+          {
+            "id": "LCL-017",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第十七条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第十七条　劳动合同应当具备以下条款：\n（一）用人单位的名称、住所和法定代表人或者主要负责人；\n（二）劳动者的姓名、住址和居民身份证或者其他有效身份证件号码；\n（三）劳动合同期限；\n（四）工作内容和工作地点；\n（五）工作时间和休息休假；\n（六）劳动报酬；\n（七）社会保险；\n（八）劳动保护、劳动条件和职业危害防护；\n（九）法律、法规规定应当纳入劳动合同的其他事项。\n劳动合同除前款规定的必备条款外，用人单位与劳动者可以约定试用期、培训、保守秘密、补充保险和福利待遇等其他事项。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第十七条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 17,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified"
+          },
+          {
+            "id": "LCL-022",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第二十二条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第二十二条　用人单位为劳动者提供专项培训费用，对其进行专业技术培训的，可以与该劳动者订立协议，约定服务期。\n劳动者违反服务期约定的，应当按照约定向用人单位支付违约金。违约金的数额不得超过用人单位提供的培训费用。用人单位要求劳动者支付的违约金不得超过服务期尚未履行部分所应分摊的培训费用。\n用人单位与劳动者约定服务期的，不影响按照正常的工资调整机制提高劳动者在服务期期间的劳动报酬。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二十二条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 22,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified"
+          },
+          {
+            "id": "LCL-023",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第二十三条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第二十三条　用人单位与劳动者可以在劳动合同中约定保守用人单位的商业秘密和与知识产权相关的保密事项。\n对负有保密义务的劳动者，用人单位可以在劳动合同或者保密协议中与劳动者约定竞业限制条款，并约定在解除或者终止劳动合同后，在竞业限制期限内按月给予劳动者经济补偿。劳动者违反竞业限制约定的，应当按照约定向用人单位支付违约金。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二十三条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 23,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified"
+          },
+          {
+            "id": "LCL-025",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第二十五条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第二十五条　除本法第二十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二十五条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 25,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [
+              "LCL-022"
+            ],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified"
+          }
+        ]
+      }
+    },
+    {
+      "input": "针对刚才报告，下一步应该找谁处理，需要保存哪些证据？不要假定已有处罚或保证获得赔偿。",
+      "reply": {
+        "session_id": "S618dd5e14dfd46e2a057e744f1217017",
+        "action": "answer",
+        "message": "说明：以下为基于你已提供材料的一般性处理渠道和证据清单建议，不构成法律意见；不假定已有处罚，也不保证任何赔偿或裁决结果。\n\n一、找谁处理（按争议性质选择，不必全部使用）\n1. 先向公司书面主张与核对：以邮件、微信或书面函要求公司出具培训费用明细及索赔依据，保留往来记录；对无依据的全额索赔不必先行支付。\n2. 劳动用工争议（最可能对应本案——入职、签订培训服务协议、离职后索赔）：向劳动合同履行地或用人单位所在地的劳动人事争议仲裁委员会申请仲裁。仲裁时效一般为一年，自知道或应当知道权利被侵害之日起算，向对方主张权利或向有关部门请求救济可导致时效中断；若涉及拖欠劳动报酬，该部分时效另有规定。\n3. 咨询与投诉渠道：可拨12333人社服务热线，确认当地具体受理范围与办理渠道（范围依当地安排）；如涉及用人单位违法收费、扣押证件等，可向当地人社部门劳动保障监察机构反映。注意：根治欠薪线索平台主要用于欠薪线索，不一定适用于培训服务期费用争议。\n4. 若你认为协议本身系独立培训机构与你的服务消费/民事合同争议：可向法院起诉；是否受理、管辖归属依协议约定和实际履行情况判断。\n5. 重要提示：本材料记载的是江苏法院公开案例整理的协议摘录，你与该案的关系（是否当事人、是否为同类情形）不明；若你并非该案当事人，以下清单需按你实际持有的材料对应调整。\n\n二、建议保存的证据（按实际持有保存，不必为凑齐而伪造）\n1. 协议类：完整的《培训服务协议》文本、劳动合同、岗位说明书及签署或发送记录。\n2. 培训性质类：培训通知、课程安排、签到表、课件、培训照片，用以核对该18天是否属于“专业技术培训”及培训内容。\n3. 费用类：公司出具的费用总额及逐项明细、发票或付款凭证、讲师费/场地费/差旅费凭证，以及各笔费用由公司还是个人承担的凭证。\n4. 沟通类：与公司就服务期、费用、索赔的聊天记录、邮件、通话录音（注意当地取证方式规定）及公司的索赔通知。\n5. 履行与离职类：工资条、考勤记录、社保缴纳记录、离职申请或解除通知、离职时间证明。\n6. 支付类：如已实际支付任何款项，保留转账凭证及备注。\n7. 补强建议：本摘录未包含合同完整原件、费用金额及逐项凭证；应优先取得这些原件或复印件并核对页数与签署页。\n\n三、时效与留痕提醒\n1. 与公司沟通尽量留痕；对书面通知可以签收并注明“对内容有异议”，签收不等于认可其内容。\n2. 时效是否已过需结合你实际知道争议的时间判断，可先向对方书面主张或向仲裁机构咨询以核对时效。\n3. 提交材料时可对非必要的身份证号、银行卡号、住址等信息脱敏。\n\n四、需要你补充的信息\n为给出更针对性的下一步，请告知：你与该案例的关系（本人/同类情形/仅为研究）、是否已收到公司的书面索赔文件、争议发生或收到索赔的时间。",
+        "questions": [
+          "你与这份江苏法院公开案例的关系是什么：是当事人本人、遇到同类情形，还是仅作研究参考？",
+          "你是否已经收到公司就培训费发出的书面索赔文件或通知？收到时间是什么时候？"
+        ],
+        "evidence_ids": [
+          "SUP-L-arbitration-21",
+          "SUP-L-arbitration-27",
+          "SUP-C10",
+          "K007"
+        ],
+        "report": null,
+        "sources": [
+          {
+            "id": "SUP-L-arbitration-21",
+            "title": "中华人民共和国劳动争议调解仲裁法",
+            "kind": "law",
+            "text": "第二十一条 劳动争议仲裁委员会负责管辖本区域内发生的劳动争议。\n劳动争议由劳动合同履行地或者用人单位所在地的劳动争议仲裁委员会管辖。双方当事人分别向劳动合同履行地和用人单位所在地的劳动争议仲裁委员会申请仲裁的，由劳动合同履行地的劳动争议仲裁委员会管辖。",
+            "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/201912/t20191219_1307906.html",
+            "location": "第二十一条",
+            "published_at": "2007-12-29",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国劳动争议调解仲裁法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": ""
+          },
+          {
+            "id": "SUP-L-arbitration-27",
+            "title": "中华人民共和国劳动争议调解仲裁法",
+            "kind": "law",
+            "text": "第二十七条 劳动争议申请仲裁的时效期间为一年。仲裁时效期间从当事人知道或者应当知道其权利被侵害之日起计算。\n前款规定的仲裁时效，因当事人一方向对方当事人主张权利，或者向有关部门请求权利救济，或者对方当事人同意履行义务而中断。从中断时起，仲裁时效期间重新计算。\n因不可抗力或者有其他正当理由，当事人不能在本条第一款规定的仲裁时效期间申请仲裁的，仲裁时效中止。从中止时效的原因消除之日起，仲裁时效期间继续计算。\n劳动关系存续期间因拖欠劳动报酬发生争议的，劳动者申请仲裁不受本条第一款规定的仲裁时效期间的限制；但是，劳动关系终止的，应当自劳动关系终止之日起一年内提出。",
+            "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/201912/t20191219_1307906.html",
+            "location": "第二十七条",
+            "published_at": "2007-12-29",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国劳动争议调解仲裁法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": ""
+          },
+          {
+            "id": "SUP-C10",
+            "title": "12333人社咨询",
+            "kind": "support",
+            "text": "咨询当地劳动保障、就业与参保业务和对应投诉办理渠道，具体受理范围依当地安排。\n关联依据编号：核查入口与用途说明；不作法律定性",
+            "url": "https://12333.gov.cn/",
+            "location": "核查渠道",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "12333人社咨询",
+              "核查渠道"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [],
+            "support_category": "核查渠道",
+            "origin_document": "官方核查渠道清单.docx"
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "input_kind": "pdf",
+  "input_pages": [
+    {
+      "page_number": 1,
+      "text": "培训服务协议内容摘录及履行事实\n根据江苏法院公开案例整理；不是合同原件，未补造未公开条款。\n\n\n一、公开记载的协议内容\n2020年5月，邱某入职某传播公司，双方签订《培训服务协议》。\n协议约定职前培训为期18天。\n培训内容为公司背景介绍、业务简介、课程体系与品牌课程优势、销售技巧及电话销售技巧。\n培训结束后履职未达到最低服务年限1.5年的，邱某应赔偿全部培训费用。\n\n\n二、公开记载的履行事实\n公司安排邱某参加了上述培训。2020年9月，邱某离职，公司要求赔偿培训费。\n\n\n三、摘录范围\n公开资料未给出合同完整原件、全部培训费用金额及逐项费用凭证，本摘录不补造这些内容。\n本材料未包含裁判结论、法院说理和专家点评。",
+      "method": "pdf_text",
+      "status": "read",
+      "issues": []
+    }
+  ],
+  "report_generated": true,
+  "quotes_match_supplied_material": true,
+  "summary": "本报告仅基于你提供的江苏法院公开案例摘录（非合同原件、未含裁判结论、未标记为已校验）和现行官方规范作有限分析，不构成法律意见，也不是对企业违法或诈骗的认定。材料显示：2020年5月入职签订《培训服务协议》，约定职前培训18天（内容为公司背景介绍、业务简介、课程体系与品牌课程优势、销售技巧及电话销售技巧）、最低服务年限1.5年，未满即“赔偿全部培训费用”；2020年9月离职后公司据此索费。劳动合同法第二十二条仅在用人单位提供专项培训费用、进行专业技术培训时可约定服务期违约金，且违约金不得超过实际培训费用、也不得超过服务期尚未履行部分应分摊的培训费用；第二十五条限定此外不得约定由劳动者承担违约金。是否符合上述条件需结合具体事实判断，材料不足以认定，本报告不就个案作定性结论。",
+  "finding_titles": [
+    "“未满1.5年即赔偿全部培训费用”条款：培训性质、服务期效力、费用上限与离职索费"
+  ],
+  "citation_ids": [
+    "LCL-022",
+    "LCL-023",
+    "LCL-025"
+  ],
+  "followup_action": "answer",
+  "report_versions_after_followup": 1,
+  "traces": [
+    [
+      {
+        "tool": "search_knowledge",
+        "arguments": {
+          "query": "劳动合同法 第二十二条 培训服务期 专项培训费用 违约金 上限"
+        },
+        "result": [
+          {
+            "id": "LCL-022",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第二十二条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第二十二条　用人单位为劳动者提供专项培训费用，对其进行专业技术培训的，可以与该劳动者订立协议，约定服务期。\n劳动者违反服务期约定的，应当按照约定向用人单位支付违约金。违约金的数额不得超过用人单位提供的培训费用。用人单位要求劳动者支付的违约金不得超过服务期尚未履行部分所应分摊的培训费用。\n用人单位与劳动者约定服务期的，不影响按照正常的工资调整机制提高劳动者在服务期期间的劳动报酬。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二十二条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 22,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified"
+          },
+          {
+            "id": "LCL-025",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第二十五条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第二十五条　除本法第二十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二十五条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 25,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [
+              "LCL-022"
+            ],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified"
+          },
+          {
+            "id": "LCL-023",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第二十三条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第二十三条　用人单位与劳动者可以在劳动合同中约定保守用人单位的商业秘密和与知识产权相关的保密事项。\n对负有保密义务的劳动者，用人单位可以在劳动合同或者保密协议中与劳动者约定竞业限制条款，并约定在解除或者终止劳动合同后，在竞业限制期限内按月给予劳动者经济补偿。劳动者违反竞业限制约定的，应当按照约定向用人单位支付违约金。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二十三条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 23,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified"
+          },
+          {
+            "id": "K006",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第四项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "签订涉及贷款的协议，务必核实放款方资质、贷款利率、还款方式及违约责任。慎重在平台注册信息及办理贷款，坚持理性借贷，避免过度负债，切勿轻信“免息分期”“低门槛、秒到账”等承诺，避免陷入非法债务纠纷。",
+            "scope": "贷款或分期支付协议的核实事项。",
+            "boundary": "分期是否属于贷款要看协议和主体；不能仅凭分期二字认定违法。",
+            "tags": [
+              "分期",
+              "借款协议",
+              "贷款利率",
+              "还款",
+              "培训贷",
+              "违约责任"
+            ]
+          },
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ]
+          },
+          {
+            "id": "SUP-F15",
+            "title": "三方协议违约金超过5000元",
+            "kind": "support",
+            "text": "不存在统一的5000元或5万元判定阈值。应核对是否违约、条款、实际损失、请求调整的条件；过分高于损失可依法请求适当减少，结果不能保证。劳动合同违约金另须核对劳动合同法第二十二至二十五条，不能混用。\n关联依据编号：SUP-L-civil-585、LCL-022、LCL-023、LCL-025",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/233181.html",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "三方协议违约金超过5000元",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "SUP-L-civil-585",
+              "LCL-022",
+              "LCL-023",
+              "LCL-025"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx"
+          },
+          {
+            "id": "SUP-A01",
+            "title": "入职收费与培训贷款",
+            "kind": "support",
+            "text": "先暂停新增付款和不明授权，保存招聘、协议、转账、聊天证据；按主体及争议性质选择人社、消费维权、民事诉讼等渠道；涉嫌犯罪或人身危险报警。已签借款不要自行停还款，合同取消不当然免除借贷责任。\n关联依据编号：K001、K005",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "维权行动卡",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "入职收费与培训贷款",
+              "维权行动卡"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K001",
+              "K005"
+            ],
+            "support_category": "维权行动卡",
+            "origin_document": "维权行动指南.docx"
+          },
+          {
+            "id": "O026-facts",
+            "title": "事业单位支持全日制读研，违反服务期承担责任",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/507291.html",
+            "location": "案例一 · 基本案情",
+            "published_at": "2026-07-29",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】医院与职工约定脱产读研期间发工资福利，毕业返岗服务，提前离职返还费用并赔偿五倍奖金。职工读研后提出提前解聘。",
+            "scope": "事业单位学历教育服务期",
+            "boundary": "特殊范围为事业单位人事聘用及脱产学历教育；不能套到普通企业岗前培训或推导所有三倍违约金有效。",
+            "tags": [
+              "事业单位学历教育服务期",
+              "事业单位支持全日制读研，违反服务期承担责任"
+            ],
+            "case_id": "O026",
+            "chunk_role": "facts",
+            "related_ids": [
+              "O026-facts",
+              "O026-reasoning",
+              "O026-outcome"
+            ],
+            "source_publisher": "最高人民法院",
+            "source_case_position": "案例一",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已核对官方案例正文；未独立调取完整判决书。发布日期不等同裁判日期。",
+            "decision_type": "civil_judgment",
+            "procedural_status": "官方披露法院判决；未说明审级、生效日期或执行完成"
+          },
+          {
+            "id": "O026-reasoning",
+            "title": "事业单位支持全日制读研，违反服务期承担责任",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/507291.html",
+            "location": "案例一 · 认定理由",
+            "published_at": "2026-07-29",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】法院认为此类全日制学历教育不属于劳动合同法第二十二条的专业技术培训；违反该人事服务期安排造成损失，应承担责任，并调整过高约定。",
+            "scope": "事业单位学历教育服务期",
+            "boundary": "特殊范围为事业单位人事聘用及脱产学历教育；不能套到普通企业岗前培训或推导所有三倍违约金有效。",
+            "tags": [
+              "事业单位学历教育服务期",
+              "事业单位支持全日制读研，违反服务期承担责任"
+            ],
+            "case_id": "O026",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "O026-facts",
+              "O026-reasoning",
+              "O026-outcome"
+            ],
+            "source_publisher": "最高人民法院",
+            "source_case_position": "案例一",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已核对官方案例正文；未独立调取完整判决书。发布日期不等同裁判日期。",
+            "decision_type": "civil_judgment",
+            "procedural_status": "官方披露法院判决；未说明审级、生效日期或执行完成"
+          },
+          {
+            "id": "O026-outcome",
+            "title": "事业单位支持全日制读研，违反服务期承担责任",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/507291.html",
+            "location": "案例一 · 处理结果",
+            "published_at": "2026-07-29",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】法院将奖金赔偿倍数从五倍调整为三倍，无偿取得的其他费用及五险一金全额返还。",
+            "scope": "事业单位学历教育服务期",
+            "boundary": "特殊范围为事业单位人事聘用及脱产学历教育；不能套到普通企业岗前培训或推导所有三倍违约金有效。",
+            "tags": [
+              "事业单位学历教育服务期",
+              "事业单位支持全日制读研，违反服务期承担责任"
+            ],
+            "case_id": "O026",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "O026-facts",
+              "O026-reasoning",
+              "O026-outcome"
+            ],
+            "source_publisher": "最高人民法院",
+            "source_case_position": "案例一",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已核对官方案例正文；未独立调取完整判决书。发布日期不等同裁判日期。",
+            "decision_type": "civil_judgment",
+            "procedural_status": "官方披露法院判决；未说明审级、生效日期或执行完成"
+          },
+          {
+            "id": "SUP-L-civil-585",
+            "title": "中华人民共和国民法典",
+            "kind": "law",
+            "text": "第五百八十五条 当事人可以约定一方违约时应当根据违约情况向对方支付一定数额的违约金，也可以约定因违约产生的损失赔偿额的计算方法。\n 约定的违约金低于造成的损失的，人民法院或者仲裁机构可以根据当事人的请求予以增加；约定的违约金过分高于造成的损失的，人民法院或者仲裁机构可以根据当事人的请求予以适当减少。\n 当事人就迟延履行约定违约金的，违约方支付违约金后，还应当履行债务。",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/233181.html",
+            "location": "第五百八十五条",
+            "published_at": "2020-05-28",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国民法典",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "补充法条＋官方文件.docx"
+          },
+          {
+            "id": "K001",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第九条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+            "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+            "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+            "tags": [
+              "保证金",
+              "押金",
+              "毕业证",
+              "身份证",
+              "扣押证件",
+              "入职收费",
+              "劳动合同法",
+              "第九条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 9,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified"
+          }
+        ]
+      },
+      {
+        "tool": "search_knowledge",
+        "arguments": {
+          "query": "劳动合同法 第二十五条 违约金 约定禁止"
+        },
+        "result": [
+          {
+            "id": "LCL-025",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第二十五条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第二十五条　除本法第二十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二十五条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 25,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [
+              "LCL-022"
+            ],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified"
+          },
+          {
+            "id": "LCL-023",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第二十三条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第二十三条　用人单位与劳动者可以在劳动合同中约定保守用人单位的商业秘密和与知识产权相关的保密事项。\n对负有保密义务的劳动者，用人单位可以在劳动合同或者保密协议中与劳动者约定竞业限制条款，并约定在解除或者终止劳动合同后，在竞业限制期限内按月给予劳动者经济补偿。劳动者违反竞业限制约定的，应当按照约定向用人单位支付违约金。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二十三条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 23,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified"
+          },
+          {
+            "id": "LCL-022",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第二十二条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第二十二条　用人单位为劳动者提供专项培训费用，对其进行专业技术培训的，可以与该劳动者订立协议，约定服务期。\n劳动者违反服务期约定的，应当按照约定向用人单位支付违约金。违约金的数额不得超过用人单位提供的培训费用。用人单位要求劳动者支付的违约金不得超过服务期尚未履行部分所应分摊的培训费用。\n用人单位与劳动者约定服务期的，不影响按照正常的工资调整机制提高劳动者在服务期期间的劳动报酬。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二十二条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 22,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified"
+          },
+          {
+            "id": "K006",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第四项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "签订涉及贷款的协议，务必核实放款方资质、贷款利率、还款方式及违约责任。慎重在平台注册信息及办理贷款，坚持理性借贷，避免过度负债，切勿轻信“免息分期”“低门槛、秒到账”等承诺，避免陷入非法债务纠纷。",
+            "scope": "贷款或分期支付协议的核实事项。",
+            "boundary": "分期是否属于贷款要看协议和主体；不能仅凭分期二字认定违法。",
+            "tags": [
+              "分期",
+              "借款协议",
+              "贷款利率",
+              "还款",
+              "培训贷",
+              "违约责任"
+            ]
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ]
+          },
+          {
+            "id": "SUP-F15",
+            "title": "三方协议违约金超过5000元",
+            "kind": "support",
+            "text": "不存在统一的5000元或5万元判定阈值。应核对是否违约、条款、实际损失、请求调整的条件；过分高于损失可依法请求适当减少，结果不能保证。劳动合同违约金另须核对劳动合同法第二十二至二十五条，不能混用。\n关联依据编号：SUP-L-civil-585、LCL-022、LCL-023、LCL-025",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/233181.html",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "三方协议违约金超过5000元",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "SUP-L-civil-585",
+              "LCL-022",
+              "LCL-023",
+              "LCL-025"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx"
+          },
+          {
+            "id": "SUP-R011",
+            "title": "薪资面议",
+            "kind": "support",
+            "text": "本身不当然违法；要求书面明确工资构成、支付时间、绩效条件和工作地点。\n关联依据编号：K002、LCL-017",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "风险判定辅助",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "薪资面议",
+              "风险判定辅助"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K002",
+              "LCL-017"
+            ],
+            "support_category": "风险判定辅助",
+            "origin_document": "三色判定规则库.docx"
+          },
+          {
+            "id": "O021-facts",
+            "title": "普通巡逻保安离职竞业条款不具约束力",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/462311.html",
+            "location": "案例5 · 基本案情",
+            "published_at": "2025-04-16",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】普通巡逻保安合同附一年竞业限制及20万元违约金。期满后转到另一保安公司，原单位要求支付违约金。",
+            "scope": "竞业限制适格主体",
+            "boundary": "须结合实际岗位与保密事项，不能只凭保安或普通员工职称就判定任何竞业条款无效。",
+            "tags": [
+              "竞业限制适格主体",
+              "普通巡逻保安离职竞业条款不具约束力"
+            ],
+            "case_id": "O021",
+            "chunk_role": "facts",
+            "related_ids": [
+              "O021-facts",
+              "O021-reasoning",
+              "O021-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部、最高人民法院",
+            "source_case_position": "案例5",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已核对官方案例正文；未独立调取完整判决书。发布日期不等同裁判日期。",
+            "decision_type": "labor_arbitration",
+            "procedural_status": "官方披露仲裁裁决；未说明终局性或后续诉讼"
+          },
+          {
+            "id": "O021-reasoning",
+            "title": "普通巡逻保安离职竞业条款不具约束力",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/462311.html",
+            "location": "案例5 · 认定理由",
+            "published_at": "2025-04-16",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】仲裁查明岗位难以知悉商业秘密，单位亦无证据证明接触保密事项，不属于竞业限制适格主体。",
+            "scope": "竞业限制适格主体",
+            "boundary": "须结合实际岗位与保密事项，不能只凭保安或普通员工职称就判定任何竞业条款无效。",
+            "tags": [
+              "竞业限制适格主体",
+              "普通巡逻保安离职竞业条款不具约束力"
+            ],
+            "case_id": "O021",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "O021-facts",
+              "O021-reasoning",
+              "O021-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部、最高人民法院",
+            "source_case_position": "案例5",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已核对官方案例正文；未独立调取完整判决书。发布日期不等同裁判日期。",
+            "decision_type": "labor_arbitration",
+            "procedural_status": "官方披露仲裁裁决；未说明终局性或后续诉讼"
+          },
+          {
+            "id": "O021-outcome",
+            "title": "普通巡逻保安离职竞业条款不具约束力",
+            "kind": "case",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/462311.html",
+            "location": "案例5 · 处理结果",
+            "published_at": "2025-04-16",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】仲裁驳回保安公司的违约金请求。20万元是协议金额，不是实际判赔。",
+            "scope": "竞业限制适格主体",
+            "boundary": "须结合实际岗位与保密事项，不能只凭保安或普通员工职称就判定任何竞业条款无效。",
+            "tags": [
+              "竞业限制适格主体",
+              "普通巡逻保安离职竞业条款不具约束力"
+            ],
+            "case_id": "O021",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "O021-facts",
+              "O021-reasoning",
+              "O021-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部、最高人民法院",
+            "source_case_position": "案例5",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已核对官方案例正文；未独立调取完整判决书。发布日期不等同裁判日期。",
+            "decision_type": "labor_arbitration",
+            "procedural_status": "官方披露仲裁裁决；未说明终局性或后续诉讼"
+          },
+          {
+            "id": "SUP-L-civil-585",
+            "title": "中华人民共和国民法典",
+            "kind": "law",
+            "text": "第五百八十五条 当事人可以约定一方违约时应当根据违约情况向对方支付一定数额的违约金，也可以约定因违约产生的损失赔偿额的计算方法。\n 约定的违约金低于造成的损失的，人民法院或者仲裁机构可以根据当事人的请求予以增加；约定的违约金过分高于造成的损失的，人民法院或者仲裁机构可以根据当事人的请求予以适当减少。\n 当事人就迟延履行约定违约金的，违约方支付违约金后，还应当履行债务。",
+            "url": "https://www.court.gov.cn/zixun/xiangqing/233181.html",
+            "location": "第五百八十五条",
+            "published_at": "2020-05-28",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国民法典",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "补充法条＋官方文件.docx"
+          },
+          {
+            "id": "K002",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第八条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第八条　用人单位招用劳动者时，应当如实告知劳动者工作内容、工作条件、工作地点、职业危害、安全生产状况、劳动报酬，以及劳动者要求了解的其他情况；用人单位有权了解劳动者与劳动合同直接相关的基本情况，劳动者应当如实说明。",
+            "scope": "招聘时的信息告知。",
+            "boundary": "需要比较实际承诺与事实；薪资面议或信息缺失本身不等于诈骗。",
+            "tags": [
+              "招聘承诺",
+              "薪资",
+              "岗位职责",
+              "工作地点",
+              "承诺矛盾",
+              "劳动合同法",
+              "第八条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 8,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified"
+          },
+          {
+            "id": "LCL-017",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第十七条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第十七条　劳动合同应当具备以下条款：\n（一）用人单位的名称、住所和法定代表人或者主要负责人；\n（二）劳动者的姓名、住址和居民身份证或者其他有效身份证件号码；\n（三）劳动合同期限；\n（四）工作内容和工作地点；\n（五）工作时间和休息休假；\n（六）劳动报酬；\n（七）社会保险；\n（八）劳动保护、劳动条件和职业危害防护；\n（九）法律、法规规定应当纳入劳动合同的其他事项。\n劳动合同除前款规定的必备条款外，用人单位与劳动者可以约定试用期、培训、保守秘密、补充保险和福利待遇等其他事项。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第十七条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 17,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified"
+          }
+        ]
+      },
+      {
+        "tool": "citation_repair",
+        "attempt": 1,
+        "issues": [
+          {
+            "type": "repair_action_changed",
+            "detail": "整理不得改变原action"
+          }
+        ]
+      },
+      {
+        "tool": "quality_review",
+        "attempt": 2,
+        "mode": "editor",
+        "before_titles": [
+          "“未满1.5年即赔偿全部培训费用”条款：培训性质、费用上限与离职索费",
+          "摘录未含费用凭证与裁判结论，实际赔偿数额无法判断"
+        ],
+        "after_titles": [
+          "“未满1.5年即赔偿全部培训费用”条款：培训性质、服务期效力、费用上限与离职索费"
+        ],
+        "validation": "passed"
+      }
+    ],
+    [
+      {
+        "tool": "search_knowledge",
+        "arguments": {
+          "query": "劳动争议 处理途径 劳动监察 投诉 劳动仲裁 管辖 时效"
+        },
+        "result": [
+          {
+            "id": "LL-2018-082",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第八十二条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第八十二条\n提出仲裁要求的一方应当自劳动争议发生之日起六十日内向劳动争议仲裁委员会提出书面申请。仲裁裁决一般应在收到仲裁申请的六十日内作出。对仲裁裁决无异议的，当事人必须履行。",
+            "scope": "本条所列情形；第十章 劳动争议",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。本条原文六十日仲裁期限须结合劳动争议调解仲裁法第二十七条的一年时效及中断、中止、欠薪例外；不得以六十日作为当前通用仲裁时效。",
+            "tags": [
+              "劳动法",
+              "第八十二条",
+              "第十章 劳动争议",
+              "仲裁",
+              "时效"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 82,
+            "chapter": "第十章 劳动争议",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": [
+              "https://www.moe.gov.cn/s78/A15/s8355/moe_782/tnull_39857.html"
+            ]
+          },
+          {
+            "id": "SUP-L-arbitration-27",
+            "title": "中华人民共和国劳动争议调解仲裁法",
+            "kind": "law",
+            "text": "第二十七条 劳动争议申请仲裁的时效期间为一年。仲裁时效期间从当事人知道或者应当知道其权利被侵害之日起计算。\n前款规定的仲裁时效，因当事人一方向对方当事人主张权利，或者向有关部门请求权利救济，或者对方当事人同意履行义务而中断。从中断时起，仲裁时效期间重新计算。\n因不可抗力或者有其他正当理由，当事人不能在本条第一款规定的仲裁时效期间申请仲裁的，仲裁时效中止。从中止时效的原因消除之日起，仲裁时效期间继续计算。\n劳动关系存续期间因拖欠劳动报酬发生争议的，劳动者申请仲裁不受本条第一款规定的仲裁时效期间的限制；但是，劳动关系终止的，应当自劳动关系终止之日起一年内提出。",
+            "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/201912/t20191219_1307906.html",
+            "location": "第二十七条",
+            "published_at": "2007-12-29",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国劳动争议调解仲裁法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": ""
+          },
+          {
+            "id": "SUP-L-arbitration-21",
+            "title": "中华人民共和国劳动争议调解仲裁法",
+            "kind": "law",
+            "text": "第二十一条 劳动争议仲裁委员会负责管辖本区域内发生的劳动争议。\n劳动争议由劳动合同履行地或者用人单位所在地的劳动争议仲裁委员会管辖。双方当事人分别向劳动合同履行地和用人单位所在地的劳动争议仲裁委员会申请仲裁的，由劳动合同履行地的劳动争议仲裁委员会管辖。",
+            "url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/201912/t20191219_1307906.html",
+            "location": "第二十一条",
+            "published_at": "2007-12-29",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国劳动争议调解仲裁法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": ""
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ]
+          },
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ]
+          },
+          {
+            "id": "SUP-C10",
+            "title": "12333人社咨询",
+            "kind": "support",
+            "text": "咨询当地劳动保障、就业与参保业务和对应投诉办理渠道，具体受理范围依当地安排。\n关联依据编号：核查入口与用途说明；不作法律定性",
+            "url": "https://12333.gov.cn/",
+            "location": "核查渠道",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "12333人社咨询",
+              "核查渠道"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [],
+            "support_category": "核查渠道",
+            "origin_document": "官方核查渠道清单.docx"
+          },
+          {
+            "id": "SUP-C14",
+            "title": "根治欠薪线索反映",
+            "kind": "support",
+            "text": "按官方指引进入全国根治欠薪线索反映平台，注意适用对象及范围，主要用于欠薪线索，不能当作培训贷款或所有消费纠纷的通用投诉入口。\n关联依据编号：核查入口与用途说明；不作法律定性",
+            "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zhuanti/jinbaogongcheng/jbgcdianhuazixunfuwu/jbgcdhzxfwgzdt/202012/t20201217_405910.html",
+            "location": "核查渠道",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "根治欠薪线索反映",
+              "核查渠道"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [],
+            "support_category": "核查渠道",
+            "origin_document": "官方核查渠道清单.docx"
+          },
+          {
+            "id": "C002-facts",
+            "title": "未签劳动合同、未缴社保与实际劳动关系争议",
+            "kind": "case",
+            "url": "",
+            "location": "法院查明事实；用户提供文书 P55–P61",
+            "published_at": "2026-05-20",
+            "verified_at": "2026-10-04",
+            "text": "【用户提供裁判文书的脱敏整理，已对照本地文档，官方真实性与完整性待核验；非法律原文】\n劳动者于2024年3月入职某公司从事财务出纳，约定月工资4000元，存在指纹考勤、请假审批和固定工作时间；公司未签书面劳动合同、未缴社会保险。劳动者于2025年4月发出解除通知，后申请仲裁。公司辩称双方系合作或代理记账关系；这一辩解不等于法院认定。",
+            "scope": "虽被称为合作关系但存在实际用工管理，未签书面合同、未缴社保的争议。",
+            "boundary": "须核实实际管理、报酬、业务组成、工作期限及仲裁时效。补偿与双倍工资金额仅针对本案；对应现行规则须另查法条。",
+            "tags": [
+              "劳动关系",
+              "未签合同",
+              "双倍工资",
+              "社保",
+              "考勤",
+              "合作关系",
+              "经济补偿"
+            ],
+            "case_id": "C002",
+            "chunk_role": "facts",
+            "related_ids": [
+              "C002-facts",
+              "C002-reasoning",
+              "C002-outcome"
+            ],
+            "court": "湖北省武汉市中级人民法院",
+            "judgment_date": "2026-05-20",
+            "procedural_status": "二审终审",
+            "source_document": "判决书原文.docx",
+            "source_paragraphs": "P55–P61",
+            "content_form": "redacted_summary",
+            "verification_status": "local_document_checked_official_pending",
+            "verification_note": "verified_at仅为本地文档核对日期，未完成法院官网真实性核验。"
+          },
+          {
+            "id": "C002-reasoning",
+            "title": "未签劳动合同、未缴社保与实际劳动关系争议",
+            "kind": "case",
+            "url": "",
+            "location": "法院理由；用户提供文书 P57–P59、P62–P63",
+            "published_at": "2026-05-20",
+            "verified_at": "2026-10-04",
+            "text": "【用户提供裁判文书的脱敏整理，已对照本地文档，官方真实性与完整性待核验；非法律原文】\n法院依据实际接受劳动管理、取得劳动报酬、工作属于公司业务组成等因素认定劳动关系；未签书面合同不使实际劳动关系消失。法院不采纳公司关于合作关系的抗辩，支持本案未签书面合同期间的双倍工资差额及因未缴社保解除的经济补偿。仲裁时效及解除通知的效果是该案具体审查内容。",
+            "scope": "虽被称为合作关系但存在实际用工管理，未签书面合同、未缴社保的争议。",
+            "boundary": "须核实实际管理、报酬、业务组成、工作期限及仲裁时效。补偿与双倍工资金额仅针对本案；对应现行规则须另查法条。",
+            "tags": [
+              "劳动关系",
+              "未签合同",
+              "双倍工资",
+              "社保",
+              "考勤",
+              "合作关系",
+              "经济补偿"
+            ],
+            "case_id": "C002",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "C002-facts",
+              "C002-reasoning",
+              "C002-outcome"
+            ],
+            "court": "湖北省武汉市中级人民法院",
+            "judgment_date": "2026-05-20",
+            "procedural_status": "二审终审",
+            "source_document": "判决书原文.docx",
+            "source_paragraphs": "P57–P59、P62–P63",
+            "content_form": "redacted_summary",
+            "verification_status": "local_document_checked_official_pending",
+            "verification_note": "verified_at仅为本地文档核对日期，未完成法院官网真实性核验。"
+          },
+          {
+            "id": "C002-outcome",
+            "title": "未签劳动合同、未缴社保与实际劳动关系争议",
+            "kind": "case",
+            "url": "",
+            "location": "裁判结果；用户提供文书 P60、P64–P67",
+            "published_at": "2026-05-20",
+            "verified_at": "2026-10-04",
+            "text": "【用户提供裁判文书的脱敏整理，已对照本地文档，官方真实性与完整性待核验；非法律原文】\n二审驳回上诉、维持原判，确认2024年3月10日至2025年4月7日存在劳动关系；支付经济补偿6000元和未订立书面劳动合同的双倍工资差额40086.43元。文书载明终审；不保证其他未签合同或未缴社保情形获得相同金额。",
+            "scope": "虽被称为合作关系但存在实际用工管理，未签书面合同、未缴社保的争议。",
+            "boundary": "须核实实际管理、报酬、业务组成、工作期限及仲裁时效。补偿与双倍工资金额仅针对本案；对应现行规则须另查法条。",
+            "tags": [
+              "劳动关系",
+              "未签合同",
+              "双倍工资",
+              "社保",
+              "考勤",
+              "合作关系",
+              "经济补偿"
+            ],
+            "case_id": "C002",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "C002-facts",
+              "C002-reasoning",
+              "C002-outcome"
+            ],
+            "court": "湖北省武汉市中级人民法院",
+            "judgment_date": "2026-05-20",
+            "procedural_status": "二审终审",
+            "source_document": "判决书原文.docx",
+            "source_paragraphs": "P60、P64–P67",
+            "content_form": "redacted_summary",
+            "verification_status": "local_document_checked_official_pending",
+            "verification_note": "verified_at仅为本地文档核对日期，未完成法院官网真实性核验。"
+          }
+        ]
+      },
+      {
+        "tool": "search_knowledge",
+        "arguments": {
+          "query": "培训服务期 违约金 证据 保存 培训费用凭证 举证责任"
+        },
+        "result": [
+          {
+            "id": "LCL-022",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第二十二条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第二十二条　用人单位为劳动者提供专项培训费用，对其进行专业技术培训的，可以与该劳动者订立协议，约定服务期。\n劳动者违反服务期约定的，应当按照约定向用人单位支付违约金。违约金的数额不得超过用人单位提供的培训费用。用人单位要求劳动者支付的违约金不得超过服务期尚未履行部分所应分摊的培训费用。\n用人单位与劳动者约定服务期的，不影响按照正常的工资调整机制提高劳动者在服务期期间的劳动报酬。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二十二条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 22,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified"
+          },
+          {
+            "id": "LCL-025",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第二十五条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第二十五条　除本法第二十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二十五条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 25,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [
+              "LCL-022"
+            ],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified"
+          },
+          {
+            "id": "LCL-090",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第九十条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第九十条　劳动者违反本法规定解除劳动合同，或者违反劳动合同中约定的保密义务或者竞业限制，给用人单位造成损失的，应当承担赔偿责任。",
+            "scope": "本条所列情形；第七章　法律责任 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第九十条",
+              "第七章　法律责任"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 90,
+            "chapter": "第七章　法律责任",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified"
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ]
+          },
+          {
+            "id": "K006",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第四项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "签订涉及贷款的协议，务必核实放款方资质、贷款利率、还款方式及违约责任。慎重在平台注册信息及办理贷款，坚持理性借贷，避免过度负债，切勿轻信“免息分期”“低门槛、秒到账”等承诺，避免陷入非法债务纠纷。",
+            "scope": "贷款或分期支付协议的核实事项。",
+            "boundary": "分期是否属于贷款要看协议和主体；不能仅凭分期二字认定违法。",
+            "tags": [
+              "分期",
+              "借款协议",
+              "贷款利率",
+              "还款",
+              "培训贷",
+              "违约责任"
+            ]
+          },
+          {
+            "id": "SUP-A01",
+            "title": "入职收费与培训贷款",
+            "kind": "support",
+            "text": "先暂停新增付款和不明授权，保存招聘、协议、转账、聊天证据；按主体及争议性质选择人社、消费维权、民事诉讼等渠道；涉嫌犯罪或人身危险报警。已签借款不要自行停还款，合同取消不当然免除借贷责任。\n关联依据编号：K001、K005",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "维权行动卡",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "入职收费与培训贷款",
+              "维权行动卡"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K001",
+              "K005"
+            ],
+            "support_category": "维权行动卡",
+            "origin_document": "维权行动指南.docx"
+          },
+          {
+            "id": "SUP-F13",
+            "title": "培训贷款已经签了怎么办",
+            "kind": "support",
+            "text": "保留招聘、培训、贷款三类协议及沟通、支付记录；核对主体、借款责任和承诺。按争议性质向人社、消费维权部门或司法渠道求助，涉嫌诈骗或安全受威胁可报警。不要自行停还款，也不保证培训合同解除后贷款自动免除。\n关联依据编号：K005、K001",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "培训贷款已经签了怎么办",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K005",
+              "K001"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx"
+          },
+          {
+            "id": "C003-facts",
+            "title": "收费培训服务纠纷：仅移送管辖、未判断退款",
+            "kind": "case",
+            "url": "",
+            "location": "当事人主张（未被实体认定）；用户提供文书 P92",
+            "published_at": "2024-06-05",
+            "verified_at": "2026-10-04",
+            "text": "【用户提供裁判文书的脱敏整理，已对照本地文档，官方真实性与完整性待核验；非法律原文】\n原告主张支付80000元飞行培训费，培训机构曾承诺安排工作及满足条件后返还费用，要求退款、利息和道歉，并提出欺诈等指控。上述内容来自原告诉称；本份文书未对这些实体事实作出认定，不能称为已查明的受害案例。",
+            "scope": "培训服务纠纷中合同约定管辖与诉讼程序的案例；仅作程序参考。",
+            "boundary": "该文书没有认定欺诈、培训贷或招转培违法，没有判令退还培训费；原告指控尚不能作为法院认定。",
+            "tags": [
+              "培训费",
+              "培训服务",
+              "退款",
+              "包就业",
+              "管辖",
+              "移送",
+              "服务协议"
+            ],
+            "case_id": "C003",
+            "chunk_role": "facts",
+            "related_ids": [
+              "C003-facts",
+              "C003-reasoning",
+              "C003-outcome"
+            ],
+            "court": "上海市长宁区人民法院",
+            "judgment_date": "2024-06-05",
+            "procedural_status": "一审管辖移送裁定，未作实体判断",
+            "source_document": "判决书原文.docx",
+            "source_paragraphs": "P92",
+            "content_form": "redacted_summary",
+            "verification_status": "local_document_checked_official_pending",
+            "verification_note": "verified_at仅为本地文档核对日期，未完成法院官网真实性核验。"
+          },
+          {
+            "id": "C003-reasoning",
+            "title": "收费培训服务纠纷：仅移送管辖、未判断退款",
+            "kind": "case",
+            "url": "",
+            "location": "法院程序理由；用户提供文书 P93–P94",
+            "published_at": "2024-06-05",
+            "verified_at": "2026-10-04",
+            "text": "【用户提供裁判文书的脱敏整理，已对照本地文档，官方真实性与完整性待核验；非法律原文】\n法院审查的是管辖问题：服务协议约定向特定一方所在地法院起诉，结合协议地址及实际经营地，认定应由另一法院管辖。这不是对培训资质、就业承诺真实性、欺诈或退款责任的实体审理。文书标题虽写“判决书”，正文及主文实际为管辖移送裁定。",
+            "scope": "培训服务纠纷中合同约定管辖与诉讼程序的案例；仅作程序参考。",
+            "boundary": "该文书没有认定欺诈、培训贷或招转培违法，没有判令退还培训费；原告指控尚不能作为法院认定。",
+            "tags": [
+              "培训费",
+              "培训服务",
+              "退款",
+              "包就业",
+              "管辖",
+              "移送",
+              "服务协议"
+            ],
+            "case_id": "C003",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "C003-facts",
+              "C003-reasoning",
+              "C003-outcome"
+            ],
+            "court": "上海市长宁区人民法院",
+            "judgment_date": "2024-06-05",
+            "procedural_status": "一审管辖移送裁定，未作实体判断",
+            "source_document": "判决书原文.docx",
+            "source_paragraphs": "P93–P94",
+            "content_form": "redacted_summary",
+            "verification_status": "local_document_checked_official_pending",
+            "verification_note": "verified_at仅为本地文档核对日期，未完成法院官网真实性核验。"
+          },
+          {
+            "id": "C003-outcome",
+            "title": "收费培训服务纠纷：仅移送管辖、未判断退款",
+            "kind": "case",
+            "url": "",
+            "location": "裁定结果与未决事项；用户提供文书 P95–P96",
+            "published_at": "2024-06-05",
+            "verified_at": "2026-10-04",
+            "text": "【用户提供裁判文书的脱敏整理，已对照本地文档，官方真实性与完整性待核验；非法律原文】\n裁定将本案移送上海市浦东新区人民法院处理，正文载明裁定作出即生效。本份材料未提供移送后的实体判决。是否应退80000元、是否欺诈、是否存在违法贷款均不能由本份文书确定。",
+            "scope": "培训服务纠纷中合同约定管辖与诉讼程序的案例；仅作程序参考。",
+            "boundary": "该文书没有认定欺诈、培训贷或招转培违法，没有判令退还培训费；原告指控尚不能作为法院认定。",
+            "tags": [
+              "培训费",
+              "培训服务",
+              "退款",
+              "包就业",
+              "管辖",
+              "移送",
+              "服务协议"
+            ],
+            "case_id": "C003",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "C003-facts",
+              "C003-reasoning",
+              "C003-outcome"
+            ],
+            "court": "上海市长宁区人民法院",
+            "judgment_date": "2024-06-05",
+            "procedural_status": "一审管辖移送裁定，未作实体判断",
+            "source_document": "判决书原文.docx",
+            "source_paragraphs": "P95–P96",
+            "content_form": "redacted_summary",
+            "verification_status": "local_document_checked_official_pending",
+            "verification_note": "verified_at仅为本地文档核对日期，未完成法院官网真实性核验。"
+          },
+          {
+            "id": "K001",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第九条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+            "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+            "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+            "tags": [
+              "保证金",
+              "押金",
+              "毕业证",
+              "身份证",
+              "扣押证件",
+              "入职收费",
+              "劳动合同法",
+              "第九条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 9,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified"
+          },
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ]
+          }
+        ]
+      },
+      {
+        "tool": "report_layout",
+        "stage": "draft",
+        "changes": [
+          "删除未涉及事实领域的建议段落"
+        ]
+      },
+      {
+        "tool": "quality_review",
+        "attempt": 1,
+        "mode": "editor",
+        "before_titles": [],
+        "after_titles": [],
+        "validation": "passed"
+      }
+    ]
+  ],
+  "elapsed_seconds": 39.34
+}

@@ -1,4 +1,5 @@
 """Render structured reports as editable Word documents; no model calls."""
+from .feedback import LEVEL_NOTE, ordered_sources, overview_ids
 from collections import Counter
 from datetime import datetime
 from io import BytesIO
@@ -87,6 +88,9 @@ def render_report_docx(report,title='求职材料自查',material_names=None):
     paragraph('本报告依据已提供材料进行风险提示；风险等级不是违法认定或风险概率。',color='71847D')
     document.add_heading('01  结论与风险概览',1)
     p=paragraph(report.get('summary','暂无结论')); shade(p,'EDF6F1')
+    ids=overview_ids(report)
+    if ids: paragraph('、'.join(ids),label='概览依据：',color='71847D')
+    paragraph(LEVEL_NOTE,color='71847D')
     findings=report.get('findings',[])
     picture=document.add_paragraph(); picture.add_run().add_picture(risk_chart(findings),width=Cm(17))
     paragraph('图中数量来自本报告已标注风险点；未发现问题不代表已证明安全。',color='71847D')
@@ -137,10 +141,14 @@ def render_report_docx(report,title='求职材料自查',material_names=None):
     document.add_heading('03  待核实事项与分析局限',1)
     for item in report.get('limitations',[]): document.add_paragraph(item,style='List Bullet')
     if not report.get('limitations'): paragraph('原报告未单独列出局限；这不代表所有事实均已核实。')
+    if report.get('self_checks'):
+        document.add_heading('关联自查清单',2)
+        paragraph('可在当前会话补充这些信息，必要时再修订报告；未确认的情形不计为新增风险。',color='71847D')
+        for question in report['self_checks']: document.add_paragraph(question,style='List Bullet')
     document.add_heading('04  依据与来源',1)
     paragraph('法条、风险提示、指南及案例分别标注；案例结论只用于个案参考。',color='71847D')
     kinds={'law':'法律条文','warning':'官方风险提示','guide':'办事与证据指南','case':'案例参考','support':'辅助资料（团队整理）'}
-    for source in report.get('sources',[]):
+    for source in ordered_sources(report):
         start=len(document.paragraphs)
         document.add_heading(f'{source["id"]}  {source["title"]}',2)
         paragraph(f'{kinds.get(source.get("kind"),"资料")} · {source["location"]}',color='71847D')
@@ -149,6 +157,9 @@ def render_report_docx(report,title='求职材料自查',material_names=None):
         if source.get('verification_status')=='local_document_checked_official_pending':
             paragraph('仅对照用户提供的本地文书，官方真实性与完整性待核验。',label='核验状态',color='B78224')
         if source.get('verified_at'): paragraph(source['verified_at'],label='资料核对日期',color='71847D')
+        if source.get('source_publisher'): paragraph(source['source_publisher'],label='发布机构',color='71847D')
+        if source.get('legal_database_url'):
+            p=paragraph(label='法律数据库查询入口'); link(p,'国家法律法规数据库（查询入口，未核验具体记录）',source['legal_database_url'])
         if source.get('url'):
             p=paragraph(label='来源链接'); link(p,source['url'],source['url'])
         elif source.get('source_document'): paragraph(source['source_document']+' · '+source.get('source_paragraphs',''),label='本地来源')

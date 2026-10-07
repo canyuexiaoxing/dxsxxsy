@@ -1,0 +1,14 @@
+{
+  "scope": "重放原失败模型输出，仅验证引用定位，不重新生成或认可草稿法律结论。",
+  "recovered": [
+    {
+      "finding_index": 2,
+      "previous_quote_id": "Qe0e14ee4041fbab5f347",
+      "quote_id": "Q30e14ee4041fbab5f347",
+      "material_id": "M1b025c8aab5d4dc792430c2c9d5bb543",
+      "page_number": 2,
+      "method": "exact_uploaded_page_match"
+    }
+  ],
+  "all_quote_ids_in_catalogue": true
+}

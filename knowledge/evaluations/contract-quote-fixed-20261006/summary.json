@@ -1,0 +1,50 @@
+[
+  {
+    "case": {
+      "id": "contract-pdf",
+      "title": "模拟劳动合同PDF审查",
+      "official_url": null,
+      "section": "两页待签劳动合同PDF",
+      "facts": "使用附带PDF完整条款，不使用案情总结。",
+      "file_path": "E:\\workp\\aixx\\output\\pdf\\模拟劳动合同.pdf",
+      "expected": [
+        "一年合同三个月试用期超限",
+        "试用期不缴社保",
+        "未约定专项培训服务期和竞业限制却设置30000元辞职违约金",
+        "正常报酬与工时条款不额外报风险",
+        "引用对应的PDF原文及页码"
+      ],
+      "request": "我准备入职，这是对方发来的两页待签劳动合同草案。请逐条审查风险并给出修改建议；尚未签署或实际履行，不要假定已发生欠薪、未缴社保或解除。"
+    },
+    "report_generated": true,
+    "quotes_match_supplied_material": true,
+    "finding_titles": [
+      "试用期约定3个月，超出一年期劳动合同的法定上限",
+      "约定试用期内不缴纳社会保险",
+      "约定30000元离职违约金，缺少法定可约定违约金情形",
+      "合同期限、岗位、工时等核心条款基本合规但留有需签署前核实的空白"
+    ],
+    "citation_ids": [
+      "K003",
+      "K004",
+      "LCL-020",
+      "LCL-022",
+      "LCL-023",
+      "LCL-025",
+      "LCL-038",
+      "LL-2018-021",
+      "LL-2018-072",
+      "SUP-F07",
+      "SUP-F15",
+      "SUP-L-implementation",
+      "SUP-L-social-58",
+      "SUP-L-social-84",
+      "SUP-R013",
+      "SUP-R022"
+    ],
+    "followup_action": "answer",
+    "report_versions_after_followup": 1,
+    "elapsed_seconds": 39.61,
+    "error": null
+  }
+]

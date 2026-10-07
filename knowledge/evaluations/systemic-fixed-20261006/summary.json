@@ -1,0 +1,46 @@
+[
+  {
+    "case": {
+      "id": "refused-contract",
+      "title": "真实案例-故意拒签与双倍工资",
+      "section": "官方案例2",
+      "kind": "pdf",
+      "initial": "劳动合同签订及履行事实摘录（非合同原件）\n2021年11月3日，员工入职某企业管理公司，任副总经理，月工资15000元。\n公司未与员工订立书面劳动合同。2022年8月2日解除劳动关系。\n目前未提供未签合同的原因、双方签约沟通或完整解除材料。\n本摘录不含裁判结果和法院说理。\n",
+      "supplement": "补充此前未提供的签约沟通事实：人事负责人多次要求订立劳动合同，2022年1月、4月微信记录显示员工以拖延方式拒绝签订；2022年5月5日录像中员工表示公司半年前就想签合同，但他不签，最好拖到一年。员工为索要未签合同双倍工资而拒签。这是新增材料披露的事实，非公司单方猜测；未提供任何裁判结果。请据此重新判断双倍工资请求的依据是否改变，并更新报告。",
+      "expected": "补充后不再把未签合同自动等同必得双倍工资，区分诚信与拒签证据；正式revise并写原因。",
+      "result": "仲裁驳回双倍工资请求，一审、二审与仲裁一致。"
+    },
+    "initial_report_generated": null,
+    "supplement_action": null,
+    "versions_after_supplement": null,
+    "change_reason": null,
+    "followup_action": null,
+    "versions_after_followup": null,
+    "vision_key_facts_present": null,
+    "all_report_quotes_match": null,
+    "error": "输出整理结果格式异常，本次未保存报告，请重试",
+    "elapsed_seconds": 21.28
+  },
+  {
+    "case": {
+      "id": "trial-lateness",
+      "title": "真实案例-试用期辞退与迟到证据",
+      "section": "官方案例6",
+      "kind": "text",
+      "initial": "劳动合同及辞退通知公开内容摘录（非文件原件）\n2023年4月26日，员工入职某科技公司，从事直播运营，合同约定试用期两个月。\n2023年6月21日，公司以试用期不符合录用条件为由送达辞退通知，解除劳动合同。\n员工表示入职时没有书面约定迟到次数与录用条件的关系。\n当前尚未提供考勤记录、实际出勤情况及提醒记录，合同总期限也未披露。\n本材料不含处理结果。\n",
+      "supplement": "补充考勤和提醒事实摘录\n按官方公开资料整理；非原始考勤截图，不补造未公开记录。\n员工入职后陆续迟到15次。\n迟到原因多为堵车、吃早餐耽误、等电梯时间过久。\n公司多次提醒改正，但效果不佳。\n上述为现在补充的实际事实，不仅是公司单方指控。\n没有提供仲裁结果、赔偿结论或案号。\n",
+      "expected": "不因没有书面迟到次数就保证违法解除，综合频次、原因、提醒事实；修订报告，不凭两个月试用期推定超期。",
+      "result": "仲裁驳回违法解除赔偿请求，裁决已生效；官方未称此案已有法院判决。"
+    },
+    "initial_report_generated": true,
+    "supplement_action": "revise",
+    "versions_after_supplement": 2,
+    "change_reason": "新增考勤与提醒事实后，将原“录用条件与举证情况不明”更新为“录用条件告知与迟到记录情况待综合评估”，明确单位主张具备一定事实基础、二倍赔偿的不确定性上升，同时保留双向可能性；修正标题将法定规则与待核查事项分离，保留合理条件与证据指引，不预设违法解除成立或2N可得。",
+    "followup_action": "answer",
+    "versions_after_followup": 2,
+    "vision_key_facts_present": true,
+    "all_report_quotes_match": true,
+    "error": null,
+    "elapsed_seconds": 68.59
+  }
+]

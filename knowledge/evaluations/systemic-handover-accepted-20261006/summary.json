@@ -1,0 +1,25 @@
+[
+  {
+    "case": {
+      "id": "resign-handover",
+      "title": "真实案例-研发员工离职拒交接",
+      "section": "最高法2024案例五",
+      "kind": "text",
+      "initial": "研发岗位合同公开摘录（非原件）\n2020年12月1日，员工与某公司订立三年劳动合同，担任研发岗位。\n合同约定：离职应办理工作交接手续，交还工具、技术资料，造成损失据实赔偿。\n2022年2月15日，员工提出辞职，随即离开且拒不办理工作交接。\n请按当年事实分析员工和单位双方的风险，不假设今天首次提出争议。这里不含裁判结论。\n",
+      "supplement": "补充公开事实：公司启动备用方案、招聘人员并委托设计补救研发项目；研发设计进度延误，迟延交付样机，公司承担了违约责任。员工未提前三十日通知即自行离职。尚未提供实际损失数额和具体支付凭证。请据此更新风险报告，不预设赔偿金额。",
+      "expected": "识别员工未通知、拒交接及损失之间关系；依法提示可能承担赔偿，不把单位一切费用自动归员工，不虚构五万元。",
+      "result": "法院酌定员工赔偿企业损失50000元。",
+      "url": "https://www.court.gov.cn/zixun/xiangqing/431252.html"
+    },
+    "initial_report_generated": true,
+    "supplement_action": "revise",
+    "versions_after_supplement": 2,
+    "change_reason": "用户补充“单位启动备用方案、招聘、委托设计补救并实际承担迟延交付违约责任、员工未提前三十日通知自行离职、尚未提供损失数额与支付凭证”等新事实，据此把原“未预告离职与不交接合并项”拆分为两项各自有具体异常事实支撑的风险，并新增一项关于损失范围与金额待核查的事项；仍不预设赔偿金额，保密竞业、时效、管辖等保持为局限。",
+    "followup_action": "answer",
+    "versions_after_followup": 2,
+    "vision_key_facts_present": null,
+    "all_report_quotes_match": true,
+    "error": null,
+    "elapsed_seconds": 73.01
+  }
+]

@@ -1,0 +1,167 @@
+{
+  "facts": "某高校毕业生与一家艺术培训学校签订就业协议，约定入职从事教学工作。学校称办理入职手续需要核对证件，要求毕业生提交毕业证和教师资格证原件，随后扣留这两份证件，拒绝归还。",
+  "report": {
+    "summary": "根据已提供事实，主要风险信号为：学校扣留毕业证、教师资格证原件并拒绝归还。相关判断须核对适用条件，不构成违法认定。",
+    "findings": [
+      {
+        "title": "学校扣留毕业证、教师资格证原件并拒绝归还",
+        "level": "high",
+        "quote": "学校称办理入职手续需要核对证件，要求毕业生提交毕业证和教师资格证原件，随后扣留这两份证件，拒绝归还。",
+        "material_id": "Md8fc471919964853b2e07db36beeeb21",
+        "page_number": 1,
+        "explanation": "材料明确记载：学校以'办理入职手续需要核对证件'为由，要求提交毕业证和教师资格证原件，随后扣留并拒绝归还。劳动合同法第九条规定，用人单位招用劳动者不得扣押劳动者的居民身份证和其他证件；正常当面核验与扣留原件性质不同，本案已超出临时核验范围，属于扣留且拒不返还。依第八十四条，劳动行政部门可责令限期退还劳动者本人并可依法处罚，给劳动者造成损害的还应承担赔偿责任。本条针对'招用'环节，材料所述正值入职手续办理阶段，事实契合度较高；但扣留主体是否即最终用人单位、证件实际保管状态，建议进一步固定证据。",
+        "evidence_ids": [
+          "K001",
+          "LCL-084",
+          "SUP-R003",
+          "SUP-F19"
+        ],
+        "suggestions": [
+          "立即以书面或可留痕方式（微信、邮件、短信）要求学校限期返还两证原件，并保留提出要求的记录。",
+          "固定'谁扣、何时扣、以何为名、拒还'的证据：如证件交付时的收条、聊天记录、通话录音、同岗位其他毕业生的类似情形；不要向对方或外部网站提供完整证件信息，已有复印件或照片注意脱敏。",
+          "可向学校所在地人力资源社会保障部门投诉举报，要求责令限期退还；也可就实际造成的损失主张赔偿。是否投诉及如何投诉由本人决定，不放弃协商渠道。",
+          "在证件返还前，暂缓向该单位提交其他个人证件原件或作出不利承诺，必要时先咨询学校就业指导中心或法律援助。"
+        ]
+      }
+    ],
+    "limitations": [
+      "材料为单页文字描述，未提供就业协议文本、双方全称、是否已实际到岗、是否另有收费或违约金约定，相关分析仅基于现有事实。",
+      "无法核实该艺术培训学校的主体资格、办学许可及是否即最终用人单位，本报告不构成对其资质或行为违法性的认定。",
+      "未检索到专门针对'扣留毕业证/教师资格证'的行政执法实例，结论以劳动合同法条文为准；实际处理结果取决于当地劳动行政部门与证据情况，不作结果保证。",
+      "本报告不构成法律意见，若纠纷升级建议咨询当地劳动保障部门或专业律师。",
+      "就业协议内容及实际用工情况需进一步核实；未提供协议文本不等于未签合同或已经违法，不单列风险。"
+    ],
+    "change_reason": "",
+    "version": 1,
+    "created_at": "2026-10-06T12:02:09.813461+00:00",
+    "sources": [
+      {
+        "id": "K001",
+        "title": "中华人民共和国劳动合同法",
+        "kind": "law",
+        "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+        "location": "第九条",
+        "published_at": "2012-12-28",
+        "verified_at": "2026-10-06",
+        "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+        "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+        "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+        "tags": [
+          "保证金",
+          "押金",
+          "毕业证",
+          "身份证",
+          "扣押证件",
+          "入职收费",
+          "劳动合同法",
+          "第九条",
+          "第二章　劳动合同的订立"
+        ],
+        "law_id": "labor-contract-law-2012",
+        "article_number": 9,
+        "chapter": "第二章　劳动合同的订立",
+        "section": "",
+        "version": "2012年12月28日修正",
+        "amendment_effective_at": "2013-07-01",
+        "content_form": "official_article_fulltext",
+        "verification_status": "official_source_checked",
+        "related_article_ids": [],
+        "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+        "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+        "source_publisher": "国家市场监督管理总局",
+        "source_level": "national_authority",
+        "legal_database_url": "https://flk.npc.gov.cn/",
+        "legal_database_status": "query_entry_only_not_verified"
+      },
+      {
+        "id": "LCL-084",
+        "title": "中华人民共和国劳动合同法",
+        "kind": "law",
+        "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+        "location": "第八十四条",
+        "published_at": "2012-12-28",
+        "verified_at": "2026-10-06",
+        "text": "第八十四条　用人单位违反本法规定，扣押劳动者居民身份证等证件的，由劳动行政部门责令限期退还劳动者本人，并依照有关法律规定给予处罚。\n用人单位违反本法规定，以担保或者其他名义向劳动者收取财物的，由劳动行政部门责令限期退还劳动者本人，并以每人五百元以上二千元以下的标准处以罚款；给劳动者造成损害的，应当承担赔偿责任。\n劳动者依法解除或者终止劳动合同，用人单位扣押劳动者档案或者其他物品的，依照前款规定处罚。",
+        "scope": "本条所列情形；第七章　法律责任 ",
+        "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+        "tags": [
+          "劳动合同法",
+          "第八十四条",
+          "第七章　法律责任",
+          "押金",
+          "扣押身份证",
+          "退还财物"
+        ],
+        "law_id": "labor-contract-law-2012",
+        "article_number": 84,
+        "chapter": "第七章　法律责任",
+        "section": "",
+        "version": "2012年12月28日修正",
+        "amendment_effective_at": "2013-07-01",
+        "content_form": "official_article_fulltext",
+        "verification_status": "official_source_checked",
+        "related_article_ids": [],
+        "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+        "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+        "source_publisher": "国家市场监督管理总局",
+        "source_level": "national_authority",
+        "legal_database_url": "https://flk.npc.gov.cn/",
+        "legal_database_status": "query_entry_only_not_verified"
+      },
+      {
+        "id": "SUP-R003",
+        "title": "扣押证件",
+        "kind": "support",
+        "text": "扣留身份证或其他证件原件作为入职或离职条件；正常查验不等于扣押。\n关联依据编号：K001",
+        "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+        "location": "风险判定辅助",
+        "published_at": "",
+        "verified_at": "2026-10-05",
+        "scope": "大学生招聘、签约、用工与就业权益咨询",
+        "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+        "tags": [
+          "扣押证件",
+          "风险判定辅助"
+        ],
+        "content_form": "reviewed_support",
+        "verification_status": "curated_with_references",
+        "related_article_ids": [
+          "K001"
+        ],
+        "support_category": "风险判定辅助",
+        "origin_document": "三色判定规则库.docx"
+      },
+      {
+        "id": "SUP-F19",
+        "title": "身份证原件抵押与正常核验",
+        "kind": "support",
+        "text": "用人单位招用劳动者不得扣押身份证等证件。正常当面核验身份与扣留原件不同；不提交不必要的完整证件信息，保存扣证要求并要求返还。\n关联依据编号：K001",
+        "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+        "location": "高频问答",
+        "published_at": "",
+        "verified_at": "2026-10-05",
+        "scope": "大学生招聘、签约、用工与就业权益咨询",
+        "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+        "tags": [
+          "身份证原件抵押与正常核验",
+          "高频问答"
+        ],
+        "content_form": "reviewed_support",
+        "verification_status": "curated_with_references",
+        "related_article_ids": [
+          "K001"
+        ],
+        "support_category": "高频问答",
+        "origin_document": "大学生就业权益高频问题回答.docx"
+      }
+    ],
+    "self_checks": [
+      "是否已经实际到岗并提供劳动？",
+      "除就业协议外，是否另行签署书面劳动合同？如已实际用工，请说明起始时间。"
+    ]
+  },
+  "postprocess_replay": [
+    "核查事项移出风险：就业协议与入职安排条款不明，缺少书面用工约定"
+  ],
+  "note": "最后一项核查事项分类使用保存的真实API输出回放，没有重新调用模型；原始实测记录保留。"
+}

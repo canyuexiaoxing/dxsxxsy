@@ -1,0 +1,16 @@
+[
+  {
+    "case": "registration-no-work",
+    "official_url": "https://www.jsfy.gov.cn/article/91645.html",
+    "court_result": "沭阳县法院、宿迁中院：求职登记和了解环境并非实际用工，驳回确认劳动关系请求。公开案例并未单独判定工伤或其他侵权请求。",
+    "agent_result": "未把登记、就餐、参观当实际用工；零项独立异常风险，劳动关系与工伤请求条件转入局限与建议。",
+    "assessment": "劳动关系判断方向一致；对工伤的提示不能称为已验证的法院同判。"
+  },
+  {
+    "case": "noncompete-masseur",
+    "official_url": "https://www.court.gov.cn/zixun/xiangqing/431252.html",
+    "court_result": "最高法发布案例三：结合岗位与实际接触信息，不属于应受竞业限制的负保密义务人员，驳回公司50000元违约金请求。",
+    "agent_result": "识别竞业条款和违约金请求适用风险，围绕实际保密事项与公开信息分析，不将50000元当成已确认债务。",
+    "assessment": "抗辩与风险判断方向一致；智能体保留核实条件，没有预测确定胜诉或精确判决。"
+  }
+]

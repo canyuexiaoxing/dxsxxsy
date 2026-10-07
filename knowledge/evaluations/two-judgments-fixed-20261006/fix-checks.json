@@ -1,0 +1,16 @@
+[
+  {
+    "case": "recruitment-region",
+    "findings": 1,
+    "quotes_verified": true,
+    "court_self_identity": false,
+    "followup_action": "answer"
+  },
+  {
+    "case": "contract-training",
+    "findings": 1,
+    "quotes_verified": true,
+    "court_self_identity": false,
+    "followup_action": "answer"
+  }
+]

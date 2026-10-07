@@ -1,9 +1,14 @@
+import json
 from typing import Literal
 from pydantic import BaseModel,ConfigDict,Field,field_validator
 
 
 class StrictModel(BaseModel):
     model_config=ConfigDict(extra='forbid',strict=True)
+
+class LegalClaim(StrictModel):
+    statement:str
+    basis_ids:list[str]=Field(min_length=1)
 
 class Finding(StrictModel):
     title:str
@@ -15,6 +20,9 @@ class Finding(StrictModel):
     explanation:str
     evidence_ids:list[str]
     suggestions:list[str]
+    category:Literal['risk','check','advice']='risk'
+    fact_basis:Literal['abnormal_clause','abnormal_behavior','missing_information','normal_fact','user_request'] | None=None
+    legal_claims:list[LegalClaim]=Field(default_factory=list)
 
 class Report(StrictModel):
     summary:str
@@ -43,3 +51,15 @@ class TurnResult(StrictModel):
     @classmethod
     def empty_questions(cls,value):
         return [] if value is None else value
+
+def decode_turn(content):
+    """Recover only a known, lossless field placement mistake; validate everything else."""
+    value=json.loads(content)
+    if isinstance(value,dict) and 'change_reason' in value and isinstance(value.get('report'),dict):
+        reason=value['change_reason'];nested=value['report'].get('change_reason')
+        if isinstance(reason,str) and (nested in (None,'') or nested==reason):
+            value['report']['change_reason']=value.pop('change_reason')
+    return value
+
+def parse_turn(content):
+    return TurnResult.model_validate(decode_turn(content))

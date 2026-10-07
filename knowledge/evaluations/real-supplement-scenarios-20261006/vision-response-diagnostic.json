@@ -1,0 +1,31 @@
+{
+  "status_code": 200,
+  "response": {
+    "id": "c9fee407-8244-4003-9cfa-7a5d2d5e190d",
+    "object": "chat.completion",
+    "created": 1791292134,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"type\": \"json_object\", \"text\": \"补充考勤和提醒事实摘录\\n按官方公开资料整理；非原始考勤截图，不补造未公开记录。\\n员工入职后陆续迟到15次。\\n迟到原因多为堵车、吃早餐耽误、等电梯时间过久。\\n公司多次提醒改正，但效果不佳。\\n上述为现在补充的实际事实，不仅是公司单方指控。\\n没有提供仲裁结果、赔偿结论或案号。\", \"issues\": [], \"unreadable\": false}"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1176,
+      "completion_tokens": 118,
+      "total_tokens": 1294,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 152
+    },
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+  }
+}

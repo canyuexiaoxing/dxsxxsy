@@ -1,0 +1,25 @@
+[
+  {
+    "case": {
+      "id": "withheld-certificates",
+      "title": "山东扣押毕业证和教师资格证",
+      "official_url": "https://chinajob.mohrss.gov.cn/c/2025-09-16/450655.shtml",
+      "section": "二、淄博衡中艺术学校扣押劳动者证件案",
+      "facts": "某高校毕业生与一家艺术培训学校签订就业协议，约定入职从事教学工作。学校称办理入职手续需要核对证件，要求毕业生提交毕业证和教师资格证原件，随后扣留这两份证件，拒绝归还。",
+      "expected": [
+        "识别核验与扣押证件的区别",
+        "关联劳动合同法第九条和第八十四条",
+        "建议书面要求返还、保存交接及拒还记录、向人社投诉",
+        "不能把就业协议直接当作劳动合同，也不能凭未披露事项认定欠薪或收费"
+      ]
+    },
+    "report_generated": null,
+    "quotes_match_supplied_material": null,
+    "finding_titles": null,
+    "citation_ids": null,
+    "followup_action": null,
+    "report_versions_after_followup": null,
+    "elapsed_seconds": 22.9,
+    "error": "未成功检索依据，本次不生成结论"
+  }
+]

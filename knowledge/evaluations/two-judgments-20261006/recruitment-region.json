@@ -1,0 +1,2200 @@
+{
+  "case": {
+    "id": "recruitment-region",
+    "title": "真实招聘案例-籍贯拒录",
+    "official_url": "https://www.court.gov.cn/fabu/xiangqing/364691.html",
+    "section": "指导案例185号基本案情中的招聘与平台通知信息，隐去姓名和企业名",
+    "facts": "招聘及平台通知信息（据法院公开资料整理，不是招聘启事全文）\n2019年7月，某公司在智联招聘平台招聘法务专员、董事长助理。\n一名求职者投递了这两个岗位，简历户口所在地填写河南南阳，现居城市填写浙江杭州西湖区。\n平台记录显示，两份简历均被查看后标记为不合适，不合适原因均为“河南人”。\n求职者已经保全相关平台记录，并为公证支付了1000元。\n公开资料未给出招聘启事的完整学历、经验、薪资或岗位说明，不补造这些内容。\n本材料未包含法院判断、裁判结果、赔偿金额或案号。",
+    "expected": [
+      "识别基于籍贯拒录的就业歧视风险",
+      "判断应围绕岗位内在要求及证明责任",
+      "维权路径包括平等就业权民事救济，不能一概要求劳动仲裁",
+      "不能保证赔偿金额或把公证费当作招聘收费"
+    ],
+    "request": "请分析这份招聘岗位信息和平台拒录通知，指出风险、判断条件、证据及处理途径。目前只能提供这些事实，无法补充未披露的岗位要求，请据现有材料出具有限报告。"
+  },
+  "official_url": "https://www.court.gov.cn/fabu/xiangqing/364691.html",
+  "input_disclosure": "仅输入法院公开披露的招聘通知或协议内容及履行事实，未提供裁判结果、理由、案号或来源链接；匿名化自然人和企业。",
+  "test_limit": "屏蔽同案C004条目及读取；第二案在本地案例库未检出。模型预训练记忆无法排除，不是严格盲测；两例不能推算实际准确率。",
+  "turns": [
+    {
+      "input": "请分析这份招聘岗位信息和平台拒录通知，指出风险、判断条件、证据及处理途径。目前只能提供这些事实，无法补充未披露的岗位要求，请据现有材料出具有限报告。",
+      "reply": {
+        "session_id": "S8c913b79de824d44bcb36d4f9b774efd",
+        "action": "report",
+        "message": "",
+        "questions": [],
+        "evidence_ids": [
+          "SUP-L-employment-3",
+          "SUP-L-employment-26",
+          "SUP-L-employment-62",
+          "SUP-F18",
+          "SUP-R005",
+          "SUP-A04",
+          "K007"
+        ],
+        "report": {
+          "summary": "基于你提供的材料（据法院公开资料整理，非招聘启事全文，且不含法院判断、裁判结果、赔偿金额或案号），可作以下有限分析：材料显示某公司在智联招聘平台招聘法务专员、董事长助理，一名求职者投递这两个岗位，两份简历被查看后均标记为“不合适”，理由均为“河南人”。这一与岗位无关联的地域排斥信号，在现有事实下指向平等就业/就业歧视风险，符合就业促进法第三条、第二十六条的规制方向，第六十二条赋予劳动者起诉途径。但材料缺少岗位要求与招聘启事全文，也没有法院认定，故不能得出该公司必然违法或必然赔偿的结论。以下为风险信号、判断条件、证据与处理途径。",
+          "findings": [
+            {
+              "title": "以“河南人”作为“不合适”的唯一理由，指向地域就业歧视风险",
+              "level": "high",
+              "quote": "平台记录显示，两份简历均被查看后标记为不合适，不合适原因均为“河南人”。",
+              "material_id": "M0d27687b48784b5db4a4111992a78749",
+              "page_number": 1,
+              "explanation": "材料记载“两份简历均被查看后标记为不合适，不合适原因均为‘河南人’”。就业促进法第三条明确劳动者享有平等就业权利、不因民族种族性别宗教信仰等不同而受歧视，第二十六条要求用人单位提供平等就业机会、不得实施就业歧视。所涉岗位为法务专员、董事长助理，材料未显示任何与地域或户籍相关的法定岗位条件，以“河南人”为拒录理由与岗位缺乏合理关联，属于平等就业歧视的高风险信号。但这只是风险信号，不等于已认定企业违法；是否最终成立仍取决于岗位真实要求、公司能否举证该理由与岗位存在合理正当联系及司法认定。",
+              "evidence_ids": [
+                "SUP-L-employment-3",
+                "SUP-L-employment-26",
+                "SUP-F18",
+                "SUP-R005"
+              ],
+              "suggestions": [
+                "核实两份岗位招聘启事原文，查看是否载有户籍、地域类限制及其与岗位的说明",
+                "设法以书面或平台留痕方式确认公司对“不合适”理由的说明",
+                "咨询当地人社部门、法律援助或律师，评估该拒录理由是否构成就业歧视",
+                "保留平台记录原文及公证材料，不要仅凭现有整理文字做定性"
+              ]
+            },
+            {
+              "title": "求职者可通过诉讼等途径主张就业歧视救济",
+              "level": "attention",
+              "quote": "求职者已经保全相关平台记录，并为公证支付了1000元。",
+              "material_id": "M0d27687b48784b5db4a4111992a78749",
+              "page_number": 1,
+              "explanation": "就业促进法第六十二条规定，违反该法实施就业歧视的，劳动者可以向人民法院提起诉讼；维权行动资料显示，合法保存招聘要求、沟通与拒录理由并核实岗位例外后，可咨询人社、妇联或法律服务，符合条件可向法院起诉。材料显示求职者已保全平台记录并进行了公证（支付公证费1000元），具备初步证据基础。但材料未包含法院判断、裁判结果、赔偿金额或案号，能否获赔及数额属个案认定，不能照搬其他地域歧视案例的赔偿数额。",
+              "evidence_ids": [
+                "SUP-L-employment-62",
+                "SUP-A04"
+              ],
+              "suggestions": [
+                "把平台查看记录、标签、拒录理由页面与公证文书原件按时间线整理",
+                "就公证费与维权请求金额以个案证据和法律意见为准，不预设固定赔偿额",
+                "在诉讼时效等程序问题上尽早咨询专业人士"
+              ]
+            },
+            {
+              "title": "证据已部分保全，但关键材料缺口影响举证强度",
+              "level": "attention",
+              "quote": "公开资料未给出招聘启事的完整学历、经验、薪资或岗位说明，不补造这些内容。",
+              "material_id": "M0d27687b48784b5db4a4111992a78749",
+              "page_number": 1,
+              "explanation": "材料仅称已保全平台记录并完成公证，同时明示“公开资料未给出招聘启事的完整学历、经验、薪资或岗位说明”。招聘启事原文、简历投递与查看的完整记录、公司方是否存在其他正当拒录理由均无从核实；而证明歧视成立往往需要拒录理由与岗位无合理关联的对照证据。官方风险提示也强调注意保留聊天记录、协议文本等为可能的纠纷留存证据。",
+              "evidence_ids": [
+                "K007"
+              ],
+              "suggestions": [
+                "保全并导出智联平台的原始记录（含时间戳、操作账号、标签设置）",
+                "保存公证文书、公证费票据及与平台的沟通记录",
+                "如仍有沟通渠道，用书面方式询问拒录具体理由并留痕，避免仅口头交涉",
+                "整理一份事实时间表（投递—查看—标记不合适—理由）便于咨询或举证"
+              ]
+            },
+            {
+              "title": "材料性质与信息缺口限制结论范围",
+              "level": "uncertain",
+              "quote": "本材料未包含法院判断、裁判结果、赔偿金额或案号。",
+              "material_id": "M0d27687b48784b5db4a4111992a78749",
+              "page_number": 1,
+              "explanation": "材料本身注明是“据法院公开资料整理，不是招聘启事全文”，且不含法院判断、裁判结果、赔偿金额或案号。因此现有信息只能支持风险识别与途径提示，无法确认该公司是否被认定违法、该岗位是否存在合法例外或案件处理结果。",
+              "evidence_ids": [
+                "SUP-R005"
+              ],
+              "suggestions": [
+                "如后续获得裁判文书，核对案号、审理法院及是否生效后再作定性",
+                "补齐招聘启事与岗位说明后，重新评估是否存在地域限制的合法例外"
+              ]
+            }
+          ],
+          "limitations": [
+            "材料非招聘启事全文，缺少岗位学历、经验、薪资及职责说明，无法判断地域限制是否与岗位存在关联",
+            "材料不含法院判断、裁判结果、赔偿金额及案号，本报告不作违法认定与赔偿预测",
+            "未提供公司名称与求职者可识别身份信息，无法核实具体企业招聘规则或作定向评价",
+            "本案涉及招聘阶段争议，材料未显示已建立劳动关系，故未按劳动合同争议规则分析",
+            "平台记录与公证的具体内容、时间、完整性未披露，举证强度无法评估"
+          ],
+          "change_reason": "",
+          "version": 1,
+          "created_at": "2026-10-06T12:21:55.347944+00:00",
+          "sources": [
+            {
+              "id": "SUP-L-employment-3",
+              "title": "中华人民共和国就业促进法",
+              "kind": "law",
+              "text": "第三条 劳动者依法享有平等就业和自主择业的权利。\n劳动者就业，不因民族、种族、性别、宗教信仰等不同而受歧视。",
+              "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+              "location": "第三条",
+              "published_at": "2015-04-24",
+              "verified_at": "2026-10-05",
+              "scope": "大学生招聘、签约、用工与就业权益咨询",
+              "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+              "tags": [
+                "中华人民共和国就业促进法",
+                "补充法条"
+              ],
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [],
+              "support_category": "补充法条",
+              "origin_document": "核对问答时补充的关联条文"
+            },
+            {
+              "id": "SUP-L-employment-26",
+              "title": "中华人民共和国就业促进法",
+              "kind": "law",
+              "text": "第二十六条 用人单位招用人员、职业中介机构从事职业中介活动，应当向劳动者提供平等的就业机会和公平的就业条件，不得实施就业歧视。",
+              "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+              "location": "第二十六条",
+              "published_at": "2015-04-24",
+              "verified_at": "2026-10-05",
+              "scope": "大学生招聘、签约、用工与就业权益咨询",
+              "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+              "tags": [
+                "中华人民共和国就业促进法",
+                "补充法条"
+              ],
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [],
+              "support_category": "补充法条",
+              "origin_document": "核对问答时补充的关联条文"
+            },
+            {
+              "id": "SUP-L-employment-62",
+              "title": "中华人民共和国就业促进法",
+              "kind": "law",
+              "text": "第六十二条 违反本法规定，实施就业歧视的，劳动者可以向人民法院提起诉讼。",
+              "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+              "location": "第六十二条",
+              "published_at": "2015-04-24",
+              "verified_at": "2026-10-05",
+              "scope": "大学生招聘、签约、用工与就业权益咨询",
+              "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+              "tags": [
+                "中华人民共和国就业促进法",
+                "补充法条"
+              ],
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [],
+              "support_category": "补充法条",
+              "origin_document": "补充法条＋官方文件.docx"
+            },
+            {
+              "id": "K007",
+              "title": "五部门警惕招转培、培训贷风险提示",
+              "kind": "guide",
+              "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+              "location": "风险提示第五项",
+              "published_at": "2026-05-18",
+              "verified_at": "2026-10-03",
+              "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+              "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+              "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+              "tags": [
+                "保留证据",
+                "聊天记录",
+                "转账凭证",
+                "投诉",
+                "报案",
+                "建议"
+              ]
+            },
+            {
+              "id": "SUP-F18",
+              "title": "招聘拒绝某地区求职者",
+              "kind": "support",
+              "text": "与岗位无合理关联的地域排斥有平等就业风险；需保存招聘要求和拒绝理由，核实是否存在法定岗位条件，不能仅凭户籍条件三个字认定所有招聘违法。\n关联依据编号：SUP-L-employment-3、SUP-L-employment-26、SUP-L-employment-62",
+              "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+              "location": "高频问答",
+              "published_at": "",
+              "verified_at": "2026-10-05",
+              "scope": "大学生招聘、签约、用工与就业权益咨询",
+              "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+              "tags": [
+                "招聘拒绝某地区求职者",
+                "高频问答"
+              ],
+              "content_form": "reviewed_support",
+              "verification_status": "curated_with_references",
+              "related_article_ids": [
+                "SUP-L-employment-3",
+                "SUP-L-employment-26",
+                "SUP-L-employment-62"
+              ],
+              "support_category": "高频问答",
+              "origin_document": "大学生就业权益高频问题回答.docx"
+            },
+            {
+              "id": "SUP-R005",
+              "title": "就业歧视",
+              "kind": "support",
+              "text": "核实限制性别、地域等要求与岗位关系及法定例外，不直接套用其他案例赔偿金额。\n关联依据编号：SUP-L-employment-3、SUP-L-employment-26、SUP-L-women-43",
+              "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+              "location": "风险判定辅助",
+              "published_at": "",
+              "verified_at": "2026-10-05",
+              "scope": "大学生招聘、签约、用工与就业权益咨询",
+              "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+              "tags": [
+                "就业歧视",
+                "风险判定辅助"
+              ],
+              "content_form": "reviewed_support",
+              "verification_status": "curated_with_references",
+              "related_article_ids": [
+                "SUP-L-employment-3",
+                "SUP-L-employment-26",
+                "SUP-L-women-43"
+              ],
+              "support_category": "风险判定辅助",
+              "origin_document": "三色判定规则库.docx"
+            },
+            {
+              "id": "SUP-A04",
+              "title": "就业歧视",
+              "kind": "support",
+              "text": "合法保存招聘要求、沟通与拒录理由，核实岗位例外，可咨询当地人社、妇联或法律服务；符合条件可向法院起诉。救济请求及数额依个案证据，不照搬其他案例的1万元。\n关联依据编号：SUP-L-employment-26、SUP-L-employment-62、SUP-L-women-43",
+              "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+              "location": "维权行动卡",
+              "published_at": "",
+              "verified_at": "2026-10-05",
+              "scope": "大学生招聘、签约、用工与就业权益咨询",
+              "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+              "tags": [
+                "就业歧视",
+                "维权行动卡"
+              ],
+              "content_form": "reviewed_support",
+              "verification_status": "curated_with_references",
+              "related_article_ids": [
+                "SUP-L-employment-26",
+                "SUP-L-employment-62",
+                "SUP-L-women-43"
+              ],
+              "support_category": "维权行动卡",
+              "origin_document": "维权行动指南.docx"
+            }
+          ],
+          "self_checks": []
+        },
+        "sources": [
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ]
+          },
+          {
+            "id": "SUP-A04",
+            "title": "就业歧视",
+            "kind": "support",
+            "text": "合法保存招聘要求、沟通与拒录理由，核实岗位例外，可咨询当地人社、妇联或法律服务；符合条件可向法院起诉。救济请求及数额依个案证据，不照搬其他案例的1万元。\n关联依据编号：SUP-L-employment-26、SUP-L-employment-62、SUP-L-women-43",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "维权行动卡",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "就业歧视",
+              "维权行动卡"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "SUP-L-employment-26",
+              "SUP-L-employment-62",
+              "SUP-L-women-43"
+            ],
+            "support_category": "维权行动卡",
+            "origin_document": "维权行动指南.docx"
+          },
+          {
+            "id": "SUP-F18",
+            "title": "招聘拒绝某地区求职者",
+            "kind": "support",
+            "text": "与岗位无合理关联的地域排斥有平等就业风险；需保存招聘要求和拒绝理由，核实是否存在法定岗位条件，不能仅凭户籍条件三个字认定所有招聘违法。\n关联依据编号：SUP-L-employment-3、SUP-L-employment-26、SUP-L-employment-62",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "招聘拒绝某地区求职者",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "SUP-L-employment-3",
+              "SUP-L-employment-26",
+              "SUP-L-employment-62"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx"
+          },
+          {
+            "id": "SUP-L-employment-26",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第二十六条 用人单位招用人员、职业中介机构从事职业中介活动，应当向劳动者提供平等的就业机会和公平的就业条件，不得实施就业歧视。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第二十六条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "核对问答时补充的关联条文"
+          },
+          {
+            "id": "SUP-L-employment-3",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第三条 劳动者依法享有平等就业和自主择业的权利。\n劳动者就业，不因民族、种族、性别、宗教信仰等不同而受歧视。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第三条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "核对问答时补充的关联条文"
+          },
+          {
+            "id": "SUP-L-employment-62",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第六十二条 违反本法规定，实施就业歧视的，劳动者可以向人民法院提起诉讼。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第六十二条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "补充法条＋官方文件.docx"
+          },
+          {
+            "id": "SUP-R005",
+            "title": "就业歧视",
+            "kind": "support",
+            "text": "核实限制性别、地域等要求与岗位关系及法定例外，不直接套用其他案例赔偿金额。\n关联依据编号：SUP-L-employment-3、SUP-L-employment-26、SUP-L-women-43",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "风险判定辅助",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "就业歧视",
+              "风险判定辅助"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "SUP-L-employment-3",
+              "SUP-L-employment-26",
+              "SUP-L-women-43"
+            ],
+            "support_category": "风险判定辅助",
+            "origin_document": "三色判定规则库.docx"
+          }
+        ]
+      }
+    },
+    {
+      "input": "针对刚才报告，下一步应该找谁处理，需要保存哪些证据？不要假定已有处罚或保证获得赔偿。",
+      "reply": {
+        "session_id": "S8c913b79de824d44bcb36d4f9b774efd",
+        "action": "answer",
+        "message": "结合现有有限报告，就“找谁处理、保存哪些证据”说明如下，不假定已有处罚或保证获赔。\n\n一、可以找谁处理（按渠道性质区分）\n1. 人社部门/12333：咨询并反映招聘歧视线索，确认当地对平等就业投诉的受理范围与材料要求。12333是就业与人力社保咨询入口，具体受理依当地安排。\n2. 劳动保障监察：如当地将招聘歧视纳入监察事项，可投诉举报；是否立案以当地规定和事实为准，不等于必然处理。\n3. 法院诉讼：就业促进法第六十二条规定，违反该法实施就业歧视的，劳动者可以向人民法院提起诉讼。可先咨询法律援助或律师，评估案由与请求。\n4. 法律援助/律师/学校就业指导与法务援助：用于评估请求金额、时效与举证方向。\n注意：材料未显示已建立劳动关系，因此不要走劳动仲裁路径；招聘阶段争议通常按民事诉讼或行政投诉渠道处理，具体以当地和专业人员意见为准。\n\n二、需要保存的证据（在既有公证基础上补强）\n1. 招聘端：两份岗位招聘启事原文/截图、发布主体、发布时间、岗位要求全文（用于对照地域条件是否与岗位相关）。\n2. 投递端：简历投递记录、投递时间、简历中户籍与现居信息的填列页面。\n3. 处理端：平台显示“已查看”“标记不合适”“不合适原因：河南人”的原始页面，保留时间戳、账号信息、操作记录，最好再次公证或做可信时间戳固定。\n4. 沟通记录：与平台、公司客服或HR的聊天记录、邮件、录音；如仍可沟通，用书面方式询问拒录具体理由并留痕，避免仅口头交涉。\n5. 公证与费用：已做的公证文书、公证费1000元票据、付款凭证。\n6. 辅助信息：平台规则、公司公开信息、同期同岗位是否对不同地域求职者差别处理的记录（如有）。\n7. 时间线：按“投递—查看—标记不合适—理由—公证”整理一页事实表，便于咨询和举证。\n\n三、提示\n现有材料不含法院判断、裁判结果、赔偿金额或案号，故不预设已受处罚或必然赔偿；请求金额、时效、能否胜诉均属个案认定，以专业人员意见和完整证据为准。材料与公证的具体内容、完整性未披露，上述证据多为建议固定类别，不代表你已全部持有。",
+        "questions": [],
+        "evidence_ids": [
+          "SUP-L-employment-3",
+          "SUP-L-employment-26",
+          "SUP-L-employment-62",
+          "SUP-F18",
+          "SUP-R005",
+          "SUP-A04",
+          "K007",
+          "SUP-C10",
+          "SUP-C12",
+          "LL-2018-012"
+        ],
+        "report": null,
+        "sources": [
+          {
+            "id": "SUP-L-employment-3",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第三条 劳动者依法享有平等就业和自主择业的权利。\n劳动者就业，不因民族、种族、性别、宗教信仰等不同而受歧视。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第三条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "核对问答时补充的关联条文"
+          },
+          {
+            "id": "SUP-L-employment-26",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第二十六条 用人单位招用人员、职业中介机构从事职业中介活动，应当向劳动者提供平等的就业机会和公平的就业条件，不得实施就业歧视。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第二十六条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "核对问答时补充的关联条文"
+          },
+          {
+            "id": "SUP-L-employment-62",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第六十二条 违反本法规定，实施就业歧视的，劳动者可以向人民法院提起诉讼。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第六十二条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "补充法条＋官方文件.docx"
+          },
+          {
+            "id": "SUP-F18",
+            "title": "招聘拒绝某地区求职者",
+            "kind": "support",
+            "text": "与岗位无合理关联的地域排斥有平等就业风险；需保存招聘要求和拒绝理由，核实是否存在法定岗位条件，不能仅凭户籍条件三个字认定所有招聘违法。\n关联依据编号：SUP-L-employment-3、SUP-L-employment-26、SUP-L-employment-62",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "招聘拒绝某地区求职者",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "SUP-L-employment-3",
+              "SUP-L-employment-26",
+              "SUP-L-employment-62"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx"
+          },
+          {
+            "id": "SUP-R005",
+            "title": "就业歧视",
+            "kind": "support",
+            "text": "核实限制性别、地域等要求与岗位关系及法定例外，不直接套用其他案例赔偿金额。\n关联依据编号：SUP-L-employment-3、SUP-L-employment-26、SUP-L-women-43",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "风险判定辅助",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "就业歧视",
+              "风险判定辅助"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "SUP-L-employment-3",
+              "SUP-L-employment-26",
+              "SUP-L-women-43"
+            ],
+            "support_category": "风险判定辅助",
+            "origin_document": "三色判定规则库.docx"
+          },
+          {
+            "id": "SUP-A04",
+            "title": "就业歧视",
+            "kind": "support",
+            "text": "合法保存招聘要求、沟通与拒录理由，核实岗位例外，可咨询当地人社、妇联或法律服务；符合条件可向法院起诉。救济请求及数额依个案证据，不照搬其他案例的1万元。\n关联依据编号：SUP-L-employment-26、SUP-L-employment-62、SUP-L-women-43",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "维权行动卡",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "就业歧视",
+              "维权行动卡"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "SUP-L-employment-26",
+              "SUP-L-employment-62",
+              "SUP-L-women-43"
+            ],
+            "support_category": "维权行动卡",
+            "origin_document": "维权行动指南.docx"
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ]
+          },
+          {
+            "id": "SUP-C10",
+            "title": "12333人社咨询",
+            "kind": "support",
+            "text": "咨询当地劳动保障、就业与参保业务和对应投诉办理渠道，具体受理范围依当地安排。\n关联依据编号：核查入口与用途说明；不作法律定性",
+            "url": "https://12333.gov.cn/",
+            "location": "核查渠道",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "12333人社咨询",
+              "核查渠道"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [],
+            "support_category": "核查渠道",
+            "origin_document": "官方核查渠道清单.docx"
+          },
+          {
+            "id": "SUP-C12",
+            "title": "12338妇女维权",
+            "kind": "support",
+            "text": "女性就业歧视等权益问题可联系12338；不替代仲裁和法院程序。\n关联依据编号：核查入口与用途说明；不作法律定性",
+            "url": "https://www.fujian.gov.cn/yy/wxym/cydh/",
+            "location": "核查渠道",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "12338妇女维权",
+              "核查渠道"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [],
+            "support_category": "核查渠道",
+            "origin_document": "官方核查渠道清单.docx"
+          },
+          {
+            "id": "LL-2018-012",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第十二条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第十二条\n劳动者就业，不因民族、种族、性别、宗教信仰不同而受歧视。",
+            "scope": "本条所列情形；第二章 促进就业",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+            "tags": [
+              "劳动法",
+              "第十二条",
+              "第二章 促进就业",
+              "招聘歧视",
+              "平等就业"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 12,
+            "chapter": "第二章 促进就业",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": []
+          }
+        ]
+      }
+    }
+  ],
+  "input_kind": "text",
+  "input_pages": [
+    {
+      "page_number": 1,
+      "text": "招聘及平台通知信息（据法院公开资料整理，不是招聘启事全文）\n2019年7月，某公司在智联招聘平台招聘法务专员、董事长助理。\n一名求职者投递了这两个岗位，简历户口所在地填写河南南阳，现居城市填写浙江杭州西湖区。\n平台记录显示，两份简历均被查看后标记为不合适，不合适原因均为“河南人”。\n求职者已经保全相关平台记录，并为公证支付了1000元。\n公开资料未给出招聘启事的完整学历、经验、薪资或岗位说明，不补造这些内容。\n本材料未包含法院判断、裁判结果、赔偿金额或案号。",
+      "method": "text",
+      "status": "read",
+      "issues": []
+    }
+  ],
+  "report_generated": true,
+  "quotes_match_supplied_material": true,
+  "summary": "基于你提供的材料（据法院公开资料整理，非招聘启事全文，且不含法院判断、裁判结果、赔偿金额或案号），可作以下有限分析：材料显示某公司在智联招聘平台招聘法务专员、董事长助理，一名求职者投递这两个岗位，两份简历被查看后均标记为“不合适”，理由均为“河南人”。这一与岗位无关联的地域排斥信号，在现有事实下指向平等就业/就业歧视风险，符合就业促进法第三条、第二十六条的规制方向，第六十二条赋予劳动者起诉途径。但材料缺少岗位要求与招聘启事全文，也没有法院认定，故不能得出该公司必然违法或必然赔偿的结论。以下为风险信号、判断条件、证据与处理途径。",
+  "finding_titles": [
+    "以“河南人”作为“不合适”的唯一理由，指向地域就业歧视风险",
+    "求职者可通过诉讼等途径主张就业歧视救济",
+    "证据已部分保全，但关键材料缺口影响举证强度",
+    "材料性质与信息缺口限制结论范围"
+  ],
+  "citation_ids": [
+    "K007",
+    "SUP-A04",
+    "SUP-F18",
+    "SUP-L-employment-26",
+    "SUP-L-employment-3",
+    "SUP-L-employment-62",
+    "SUP-R005"
+  ],
+  "followup_action": "answer",
+  "report_versions_after_followup": 1,
+  "traces": [
+    [
+      {
+        "tool": "search_knowledge",
+        "arguments": {
+          "query": "就业歧视 地域 河南人 平等就业权 招聘 拒绝录用 法律责任"
+        },
+        "result": [
+          {
+            "id": "LL-2018-012",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第十二条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第十二条\n劳动者就业，不因民族、种族、性别、宗教信仰不同而受歧视。",
+            "scope": "本条所列情形；第二章 促进就业",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+            "tags": [
+              "劳动法",
+              "第十二条",
+              "第二章 促进就业",
+              "招聘歧视",
+              "平等就业"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 12,
+            "chapter": "第二章 促进就业",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": []
+          },
+          {
+            "id": "LL-2018-013",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第十三条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第十三条\n妇女享有与男子平等的就业权利。在录用职工时，除国家规定的不适合妇女的工种或者岗位外，不得以性别为由拒绝录用妇女或者提高对妇女的录用标准。",
+            "scope": "本条所列情形；第二章 促进就业",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+            "tags": [
+              "劳动法",
+              "第十三条",
+              "第二章 促进就业",
+              "性别歧视",
+              "招聘女性"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 13,
+            "chapter": "第二章 促进就业",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": []
+          },
+          {
+            "id": "SUP-L-employment-27",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第二十七条 国家保障妇女享有与男子平等的劳动权利。\n用人单位招用人员，除国家规定的不适合妇女的工种或者岗位外，不得以性别为由拒绝录用妇女或者提高对妇女的录用标准。\n用人单位录用女职工，不得在劳动合同中规定限制女职工结婚、生育的内容。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第二十七条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "核对问答时补充的关联条文"
+          },
+          {
+            "id": "SUP-W-overseas",
+            "title": "公安机关提示：警惕境外高薪招聘",
+            "kind": "warning",
+            "text": "公安机关提醒：应警惕境外异常高薪、包吃住、报销机票、专人接送等组合诱饵，以及以旅游、商务考察代替合法工作手续的安排。不要仅凭这些宣传相信岗位真实。遇境外失联、被困，应向属地公安机关报警并向我国驻外使领馆求助。合法境外就业不能仅凭地点认定为诈骗。本条仅整理求职安全提示，不将历史侦查进展当作当前情况。",
+            "url": "https://gaj.wuhan.gov.cn/jmzx/jfts/202502/t20250210_2530886.html",
+            "location": "官方风险提示",
+            "published_at": "2025-02-10",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "公安机关提示：警惕境外高薪招聘",
+              "官方风险提示"
+            ],
+            "content_form": "official_warning_summary",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "官方风险提示",
+            "origin_document": "补充法条＋官方文件.docx"
+          },
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ]
+          },
+          {
+            "id": "SUP-F18",
+            "title": "招聘拒绝某地区求职者",
+            "kind": "support",
+            "text": "与岗位无合理关联的地域排斥有平等就业风险；需保存招聘要求和拒绝理由，核实是否存在法定岗位条件，不能仅凭户籍条件三个字认定所有招聘违法。\n关联依据编号：SUP-L-employment-3、SUP-L-employment-26、SUP-L-employment-62",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "招聘拒绝某地区求职者",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "SUP-L-employment-3",
+              "SUP-L-employment-26",
+              "SUP-L-employment-62"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx"
+          },
+          {
+            "id": "SUP-A04",
+            "title": "就业歧视",
+            "kind": "support",
+            "text": "合法保存招聘要求、沟通与拒录理由，核实岗位例外，可咨询当地人社、妇联或法律服务；符合条件可向法院起诉。救济请求及数额依个案证据，不照搬其他案例的1万元。\n关联依据编号：SUP-L-employment-26、SUP-L-employment-62、SUP-L-women-43",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "维权行动卡",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "就业歧视",
+              "维权行动卡"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "SUP-L-employment-26",
+              "SUP-L-employment-62",
+              "SUP-L-women-43"
+            ],
+            "support_category": "维权行动卡",
+            "origin_document": "维权行动指南.docx"
+          },
+          {
+            "id": "SUP-L-employment-3",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第三条 劳动者依法享有平等就业和自主择业的权利。\n劳动者就业，不因民族、种族、性别、宗教信仰等不同而受歧视。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第三条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "核对问答时补充的关联条文"
+          },
+          {
+            "id": "SUP-L-employment-26",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第二十六条 用人单位招用人员、职业中介机构从事职业中介活动，应当向劳动者提供平等的就业机会和公平的就业条件，不得实施就业歧视。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第二十六条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "核对问答时补充的关联条文"
+          },
+          {
+            "id": "SUP-L-employment-62",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第六十二条 违反本法规定，实施就业歧视的，劳动者可以向人民法院提起诉讼。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第六十二条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "补充法条＋官方文件.docx"
+          },
+          {
+            "id": "SUP-L-women-43",
+            "title": "中华人民共和国妇女权益保障法",
+            "kind": "law",
+            "text": "第四十三条 用人单位在招录（聘）过程中，除国家另有规定外，不得实施下列行为：\n（一）限定为男性或者规定男性优先；\n（二）除个人基本信息外，进一步询问或者调查女性求职者的婚育情况；\n（三）将妊娠测试作为入职体检项目；\n（四）将限制结婚、生育或者婚姻、生育状况作为录（聘）用条件；\n（五）其他以性别为由拒绝录（聘）用妇女或者差别化地提高对妇女录（聘）用标准的行为。",
+            "url": "https://gzca.miit.gov.cn/zwgk/zcwj/zcfg/art/2022/art_47b4c78a8f52484587e1b198c52fa909.html",
+            "location": "第四十三条",
+            "published_at": "2022-10-30",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国妇女权益保障法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": ""
+          }
+        ]
+      },
+      {
+        "tool": "search_knowledge",
+        "arguments": {
+          "query": "就业促进法 第三条 平等就业 民族 种族 性别 宗教信仰 户籍 歧视 劳动者"
+        },
+        "result": [
+          {
+            "id": "SUP-L-employment-3",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第三条 劳动者依法享有平等就业和自主择业的权利。\n劳动者就业，不因民族、种族、性别、宗教信仰等不同而受歧视。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第三条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "核对问答时补充的关联条文"
+          },
+          {
+            "id": "LL-2018-012",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第十二条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第十二条\n劳动者就业，不因民族、种族、性别、宗教信仰不同而受歧视。",
+            "scope": "本条所列情形；第二章 促进就业",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+            "tags": [
+              "劳动法",
+              "第十二条",
+              "第二章 促进就业",
+              "招聘歧视",
+              "平等就业"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 12,
+            "chapter": "第二章 促进就业",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": []
+          },
+          {
+            "id": "SUP-L-employment-26",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第二十六条 用人单位招用人员、职业中介机构从事职业中介活动，应当向劳动者提供平等的就业机会和公平的就业条件，不得实施就业歧视。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第二十六条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "核对问答时补充的关联条文"
+          },
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ]
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ]
+          },
+          {
+            "id": "SUP-A04",
+            "title": "就业歧视",
+            "kind": "support",
+            "text": "合法保存招聘要求、沟通与拒录理由，核实岗位例外，可咨询当地人社、妇联或法律服务；符合条件可向法院起诉。救济请求及数额依个案证据，不照搬其他案例的1万元。\n关联依据编号：SUP-L-employment-26、SUP-L-employment-62、SUP-L-women-43",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "维权行动卡",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "就业歧视",
+              "维权行动卡"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "SUP-L-employment-26",
+              "SUP-L-employment-62",
+              "SUP-L-women-43"
+            ],
+            "support_category": "维权行动卡",
+            "origin_document": "维权行动指南.docx"
+          },
+          {
+            "id": "SUP-F18",
+            "title": "招聘拒绝某地区求职者",
+            "kind": "support",
+            "text": "与岗位无合理关联的地域排斥有平等就业风险；需保存招聘要求和拒绝理由，核实是否存在法定岗位条件，不能仅凭户籍条件三个字认定所有招聘违法。\n关联依据编号：SUP-L-employment-3、SUP-L-employment-26、SUP-L-employment-62",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "招聘拒绝某地区求职者",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "SUP-L-employment-3",
+              "SUP-L-employment-26",
+              "SUP-L-employment-62"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx"
+          },
+          {
+            "id": "SUP-L-employment-62",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第六十二条 违反本法规定，实施就业歧视的，劳动者可以向人民法院提起诉讼。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第六十二条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "补充法条＋官方文件.docx"
+          },
+          {
+            "id": "SUP-L-women-43",
+            "title": "中华人民共和国妇女权益保障法",
+            "kind": "law",
+            "text": "第四十三条 用人单位在招录（聘）过程中，除国家另有规定外，不得实施下列行为：\n（一）限定为男性或者规定男性优先；\n（二）除个人基本信息外，进一步询问或者调查女性求职者的婚育情况；\n（三）将妊娠测试作为入职体检项目；\n（四）将限制结婚、生育或者婚姻、生育状况作为录（聘）用条件；\n（五）其他以性别为由拒绝录（聘）用妇女或者差别化地提高对妇女录（聘）用标准的行为。",
+            "url": "https://gzca.miit.gov.cn/zwgk/zcwj/zcfg/art/2022/art_47b4c78a8f52484587e1b198c52fa909.html",
+            "location": "第四十三条",
+            "published_at": "2022-10-30",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国妇女权益保障法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": ""
+          }
+        ]
+      },
+      {
+        "tool": "search_knowledge",
+        "arguments": {
+          "query": "就业歧视 赔偿 精神损害 赔礼道歉 地域歧视 案例 法院"
+        },
+        "result": [
+          {
+            "id": "SUP-L-employment-62",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第六十二条 违反本法规定，实施就业歧视的，劳动者可以向人民法院提起诉讼。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第六十二条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "补充法条＋官方文件.docx"
+          },
+          {
+            "id": "SUP-L-employment-26",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第二十六条 用人单位招用人员、职业中介机构从事职业中介活动，应当向劳动者提供平等的就业机会和公平的就业条件，不得实施就业歧视。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第二十六条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "核对问答时补充的关联条文"
+          },
+          {
+            "id": "LL-2018-012",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第十二条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第十二条\n劳动者就业，不因民族、种族、性别、宗教信仰不同而受歧视。",
+            "scope": "本条所列情形；第二章 促进就业",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+            "tags": [
+              "劳动法",
+              "第十二条",
+              "第二章 促进就业",
+              "招聘歧视",
+              "平等就业"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 12,
+            "chapter": "第二章 促进就业",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": []
+          },
+          {
+            "id": "SUP-W-overseas",
+            "title": "公安机关提示：警惕境外高薪招聘",
+            "kind": "warning",
+            "text": "公安机关提醒：应警惕境外异常高薪、包吃住、报销机票、专人接送等组合诱饵，以及以旅游、商务考察代替合法工作手续的安排。不要仅凭这些宣传相信岗位真实。遇境外失联、被困，应向属地公安机关报警并向我国驻外使领馆求助。合法境外就业不能仅凭地点认定为诈骗。本条仅整理求职安全提示，不将历史侦查进展当作当前情况。",
+            "url": "https://gaj.wuhan.gov.cn/jmzx/jfts/202502/t20250210_2530886.html",
+            "location": "官方风险提示",
+            "published_at": "2025-02-10",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "公安机关提示：警惕境外高薪招聘",
+              "官方风险提示"
+            ],
+            "content_form": "official_warning_summary",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "官方风险提示",
+            "origin_document": "补充法条＋官方文件.docx"
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ]
+          },
+          {
+            "id": "SUP-R005",
+            "title": "就业歧视",
+            "kind": "support",
+            "text": "核实限制性别、地域等要求与岗位关系及法定例外，不直接套用其他案例赔偿金额。\n关联依据编号：SUP-L-employment-3、SUP-L-employment-26、SUP-L-women-43",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "风险判定辅助",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "就业歧视",
+              "风险判定辅助"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "SUP-L-employment-3",
+              "SUP-L-employment-26",
+              "SUP-L-women-43"
+            ],
+            "support_category": "风险判定辅助",
+            "origin_document": "三色判定规则库.docx"
+          },
+          {
+            "id": "SUP-A04",
+            "title": "就业歧视",
+            "kind": "support",
+            "text": "合法保存招聘要求、沟通与拒录理由，核实岗位例外，可咨询当地人社、妇联或法律服务；符合条件可向法院起诉。救济请求及数额依个案证据，不照搬其他案例的1万元。\n关联依据编号：SUP-L-employment-26、SUP-L-employment-62、SUP-L-women-43",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "维权行动卡",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "就业歧视",
+              "维权行动卡"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "SUP-L-employment-26",
+              "SUP-L-employment-62",
+              "SUP-L-women-43"
+            ],
+            "support_category": "维权行动卡",
+            "origin_document": "维权行动指南.docx"
+          },
+          {
+            "id": "SUP-L-employment-3",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第三条 劳动者依法享有平等就业和自主择业的权利。\n劳动者就业，不因民族、种族、性别、宗教信仰等不同而受歧视。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第三条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "核对问答时补充的关联条文"
+          },
+          {
+            "id": "SUP-L-women-43",
+            "title": "中华人民共和国妇女权益保障法",
+            "kind": "law",
+            "text": "第四十三条 用人单位在招录（聘）过程中，除国家另有规定外，不得实施下列行为：\n（一）限定为男性或者规定男性优先；\n（二）除个人基本信息外，进一步询问或者调查女性求职者的婚育情况；\n（三）将妊娠测试作为入职体检项目；\n（四）将限制结婚、生育或者婚姻、生育状况作为录（聘）用条件；\n（五）其他以性别为由拒绝录（聘）用妇女或者差别化地提高对妇女录（聘）用标准的行为。",
+            "url": "https://gzca.miit.gov.cn/zwgk/zcwj/zcfg/art/2022/art_47b4c78a8f52484587e1b198c52fa909.html",
+            "location": "第四十三条",
+            "published_at": "2022-10-30",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国妇女权益保障法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": ""
+          }
+        ]
+      },
+      {
+        "tool": "search_knowledge",
+        "arguments": {
+          "query": "最高人民法院 平等就业权纠纷 民事案件案由 就业歧视 起诉"
+        },
+        "result": [
+          {
+            "id": "SUP-L-employment-62",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第六十二条 违反本法规定，实施就业歧视的，劳动者可以向人民法院提起诉讼。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第六十二条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "补充法条＋官方文件.docx"
+          },
+          {
+            "id": "LL-2018-012",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第十二条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第十二条\n劳动者就业，不因民族、种族、性别、宗教信仰不同而受歧视。",
+            "scope": "本条所列情形；第二章 促进就业",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+            "tags": [
+              "劳动法",
+              "第十二条",
+              "第二章 促进就业",
+              "招聘歧视",
+              "平等就业"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 12,
+            "chapter": "第二章 促进就业",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": []
+          },
+          {
+            "id": "LL-2018-013",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第十三条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第十三条\n妇女享有与男子平等的就业权利。在录用职工时，除国家规定的不适合妇女的工种或者岗位外，不得以性别为由拒绝录用妇女或者提高对妇女的录用标准。",
+            "scope": "本条所列情形；第二章 促进就业",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+            "tags": [
+              "劳动法",
+              "第十三条",
+              "第二章 促进就业",
+              "性别歧视",
+              "招聘女性"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 13,
+            "chapter": "第二章 促进就业",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": []
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ]
+          },
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ]
+          },
+          {
+            "id": "SUP-A04",
+            "title": "就业歧视",
+            "kind": "support",
+            "text": "合法保存招聘要求、沟通与拒录理由，核实岗位例外，可咨询当地人社、妇联或法律服务；符合条件可向法院起诉。救济请求及数额依个案证据，不照搬其他案例的1万元。\n关联依据编号：SUP-L-employment-26、SUP-L-employment-62、SUP-L-women-43",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "维权行动卡",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "就业歧视",
+              "维权行动卡"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "SUP-L-employment-26",
+              "SUP-L-employment-62",
+              "SUP-L-women-43"
+            ],
+            "support_category": "维权行动卡",
+            "origin_document": "维权行动指南.docx"
+          },
+          {
+            "id": "SUP-C12",
+            "title": "12338妇女维权",
+            "kind": "support",
+            "text": "女性就业歧视等权益问题可联系12338；不替代仲裁和法院程序。\n关联依据编号：核查入口与用途说明；不作法律定性",
+            "url": "https://www.fujian.gov.cn/yy/wxym/cydh/",
+            "location": "核查渠道",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "12338妇女维权",
+              "核查渠道"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [],
+            "support_category": "核查渠道",
+            "origin_document": "官方核查渠道清单.docx"
+          },
+          {
+            "id": "SUP-L-employment-26",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第二十六条 用人单位招用人员、职业中介机构从事职业中介活动，应当向劳动者提供平等的就业机会和公平的就业条件，不得实施就业歧视。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第二十六条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "核对问答时补充的关联条文"
+          },
+          {
+            "id": "SUP-L-women-43",
+            "title": "中华人民共和国妇女权益保障法",
+            "kind": "law",
+            "text": "第四十三条 用人单位在招录（聘）过程中，除国家另有规定外，不得实施下列行为：\n（一）限定为男性或者规定男性优先；\n（二）除个人基本信息外，进一步询问或者调查女性求职者的婚育情况；\n（三）将妊娠测试作为入职体检项目；\n（四）将限制结婚、生育或者婚姻、生育状况作为录（聘）用条件；\n（五）其他以性别为由拒绝录（聘）用妇女或者差别化地提高对妇女录（聘）用标准的行为。",
+            "url": "https://gzca.miit.gov.cn/zwgk/zcwj/zcfg/art/2022/art_47b4c78a8f52484587e1b198c52fa909.html",
+            "location": "第四十三条",
+            "published_at": "2022-10-30",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国妇女权益保障法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": ""
+          }
+        ]
+      },
+      {
+        "tool": "citation_repair",
+        "attempt": 1,
+        "issues": [
+          {
+            "type": "repair_action_changed",
+            "detail": "整理不得改变原action"
+          }
+        ]
+      },
+      {
+        "tool": "quality_review",
+        "attempt": 2,
+        "mode": "editor",
+        "before_titles": [
+          "以“河南人”作为“不合适”的唯一理由，指向地域就业歧视风险",
+          "求职者可通过诉讼等途径主张就业歧视救济",
+          "证据已部分保全，但关键材料缺口影响举证强度",
+          "材料性质与信息缺口限制结论范围"
+        ],
+        "after_titles": [
+          "以“河南人”作为“不合适”的唯一理由，指向地域就业歧视风险",
+          "求职者可通过诉讼等途径主张就业歧视救济",
+          "证据已部分保全，但关键材料缺口影响举证强度",
+          "材料性质与信息缺口限制结论范围"
+        ],
+        "validation": "passed"
+      }
+    ],
+    [
+      {
+        "tool": "search_knowledge",
+        "arguments": {
+          "query": "就业歧视投诉举报渠道 人力资源社会保障部门 劳动保障监察 受理"
+        },
+        "result": [
+          {
+            "id": "SUP-L-employment-62",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第六十二条 违反本法规定，实施就业歧视的，劳动者可以向人民法院提起诉讼。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第六十二条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "补充法条＋官方文件.docx"
+          },
+          {
+            "id": "SUP-L-employment-26",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第二十六条 用人单位招用人员、职业中介机构从事职业中介活动，应当向劳动者提供平等的就业机会和公平的就业条件，不得实施就业歧视。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第二十六条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "核对问答时补充的关联条文"
+          },
+          {
+            "id": "SUP-L-market",
+            "title": "人力资源市场暂行条例",
+            "kind": "law",
+            "text": "第十八条　经营性人力资源服务机构从事职业中介活动的，应当依法向人力资源社会保障行政部门申请行政许可，取得人力资源服务许可证。\n　　经营性人力资源服务机构开展人力资源供求信息的收集和发布、就业和创业指导、人力资源管理咨询、人力资源测评、人力资源培训、承接人力资源服务外包等人力资源服务业务的，应当自开展业务之日起15日内向人力资源社会保障行政部门备案。\n　　经营性人力资源服务机构从事劳务派遣业务的，执行国家有关劳务派遣的规定。",
+            "url": "https://www.beijing.gov.cn/zhengce/gwywj/201905/t20190522_61354.html",
+            "location": "第十八条",
+            "published_at": "2018-06-29",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "人力资源市场暂行条例",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "补充法条＋官方文件.docx"
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ]
+          },
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ]
+          },
+          {
+            "id": "SUP-C10",
+            "title": "12333人社咨询",
+            "kind": "support",
+            "text": "咨询当地劳动保障、就业与参保业务和对应投诉办理渠道，具体受理范围依当地安排。\n关联依据编号：核查入口与用途说明；不作法律定性",
+            "url": "https://12333.gov.cn/",
+            "location": "核查渠道",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "12333人社咨询",
+              "核查渠道"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [],
+            "support_category": "核查渠道",
+            "origin_document": "官方核查渠道清单.docx"
+          },
+          {
+            "id": "SUP-C12",
+            "title": "12338妇女维权",
+            "kind": "support",
+            "text": "女性就业歧视等权益问题可联系12338；不替代仲裁和法院程序。\n关联依据编号：核查入口与用途说明；不作法律定性",
+            "url": "https://www.fujian.gov.cn/yy/wxym/cydh/",
+            "location": "核查渠道",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "12338妇女维权",
+              "核查渠道"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [],
+            "support_category": "核查渠道",
+            "origin_document": "官方核查渠道清单.docx"
+          },
+          {
+            "id": "O002-facts",
+            "title": "无证中介承诺地铁内推、收定金后推诿退款",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+            "location": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件 · 调查事实",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】徐州某公司未取得人力资源服务许可，承诺推荐入职地铁公司，约定服务费5.8万元、收定金1.8万元；求职者未入职，退款遭推诿。",
+            "scope": "无证中介以入职推荐承诺收取费用及拒绝退款。",
+            "boundary": "行政处罚和线索通报不是刑事诈骗判决；原文未说明退款已到账。",
+            "tags": [
+              "高薪内推",
+              "地铁岗位",
+              "就业服务费",
+              "定金",
+              "退款",
+              "职业中介许可"
+            ],
+            "case_id": "O002",
+            "chunk_role": "facts",
+            "related_ids": [
+              "O002-facts",
+              "O002-reasoning",
+              "O002-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部",
+            "source_case_position": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "已行政处理，其他涉嫌违法线索移交；未披露刑事判决"
+          },
+          {
+            "id": "O002-reasoning",
+            "title": "无证中介承诺地铁内推、收定金后推诿退款",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+            "location": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件 · 执法认定",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】属地人社部门针对无证职业中介活动作出处理；涉嫌虚假宣传等材料通报相关部门。",
+            "scope": "无证中介以入职推荐承诺收取费用及拒绝退款。",
+            "boundary": "行政处罚和线索通报不是刑事诈骗判决；原文未说明退款已到账。",
+            "tags": [
+              "高薪内推",
+              "地铁岗位",
+              "就业服务费",
+              "定金",
+              "退款",
+              "职业中介许可"
+            ],
+            "case_id": "O002",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "O002-facts",
+              "O002-reasoning",
+              "O002-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部",
+            "source_case_position": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "已行政处理，其他涉嫌违法线索移交；未披露刑事判决"
+          },
+          {
+            "id": "O002-outcome",
+            "title": "无证中介承诺地铁内推、收定金后推诿退款",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+            "location": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件 · 处理结果",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】责令停止职业中介活动并行政处罚，相关线索通报市场监管、公安机关。未披露刑事定罪或退款完成。",
+            "scope": "无证中介以入职推荐承诺收取费用及拒绝退款。",
+            "boundary": "行政处罚和线索通报不是刑事诈骗判决；原文未说明退款已到账。",
+            "tags": [
+              "高薪内推",
+              "地铁岗位",
+              "就业服务费",
+              "定金",
+              "退款",
+              "职业中介许可"
+            ],
+            "case_id": "O002",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "O002-facts",
+              "O002-reasoning",
+              "O002-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部",
+            "source_case_position": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "已行政处理，其他涉嫌违法线索移交；未披露刑事判决"
+          }
+        ]
+      },
+      {
+        "tool": "search_knowledge",
+        "arguments": {
+          "query": "平等就业权纠纷 案由 民事诉讼 证据公证 招聘记录"
+        },
+        "result": [
+          {
+            "id": "LL-2018-012",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第十二条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第十二条\n劳动者就业，不因民族、种族、性别、宗教信仰不同而受歧视。",
+            "scope": "本条所列情形；第二章 促进就业",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+            "tags": [
+              "劳动法",
+              "第十二条",
+              "第二章 促进就业",
+              "招聘歧视",
+              "平等就业"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 12,
+            "chapter": "第二章 促进就业",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": []
+          },
+          {
+            "id": "LL-2018-013",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第十三条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第十三条\n妇女享有与男子平等的就业权利。在录用职工时，除国家规定的不适合妇女的工种或者岗位外，不得以性别为由拒绝录用妇女或者提高对妇女的录用标准。",
+            "scope": "本条所列情形；第二章 促进就业",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+            "tags": [
+              "劳动法",
+              "第十三条",
+              "第二章 促进就业",
+              "性别歧视",
+              "招聘女性"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 13,
+            "chapter": "第二章 促进就业",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": []
+          },
+          {
+            "id": "SUP-L-employment-62",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第六十二条 违反本法规定，实施就业歧视的，劳动者可以向人民法院提起诉讼。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第六十二条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "补充法条＋官方文件.docx"
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ]
+          },
+          {
+            "id": "SUP-W-hiring",
+            "title": "警惕付费保录、直签与国企内推骗局",
+            "kind": "warning",
+            "text": "官方专项整治案例披露：以有关系、送钱就能入职等话术，虚假承诺国企保录、直签并收取高额费用，是需要重点警惕的招聘风险。应核对企业官方网站招聘公告，核实招聘主体、联系方式和收费用途，不轻信付费保证录取。一般内部推荐本身不等于诈骗。本条为官方案例与警示的整理摘要，不是上传资料同名宣传图的逐字原文。",
+            "url": "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543035.shtml",
+            "location": "官方风险提示",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "警惕付费保录、直签与国企内推骗局",
+              "官方风险提示"
+            ],
+            "content_form": "official_warning_summary",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "官方风险提示",
+            "origin_document": "补充法条＋官方文件.docx"
+          },
+          {
+            "id": "SUP-A01",
+            "title": "入职收费与培训贷款",
+            "kind": "support",
+            "text": "先暂停新增付款和不明授权，保存招聘、协议、转账、聊天证据；按主体及争议性质选择人社、消费维权、民事诉讼等渠道；涉嫌犯罪或人身危险报警。已签借款不要自行停还款，合同取消不当然免除借贷责任。\n关联依据编号：K001、K005",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "维权行动卡",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "入职收费与培训贷款",
+              "维权行动卡"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K001",
+              "K005"
+            ],
+            "support_category": "维权行动卡",
+            "origin_document": "维权行动指南.docx"
+          },
+          {
+            "id": "SUP-F18",
+            "title": "招聘拒绝某地区求职者",
+            "kind": "support",
+            "text": "与岗位无合理关联的地域排斥有平等就业风险；需保存招聘要求和拒绝理由，核实是否存在法定岗位条件，不能仅凭户籍条件三个字认定所有招聘违法。\n关联依据编号：SUP-L-employment-3、SUP-L-employment-26、SUP-L-employment-62",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "招聘拒绝某地区求职者",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "SUP-L-employment-3",
+              "SUP-L-employment-26",
+              "SUP-L-employment-62"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx"
+          },
+          {
+            "id": "K001",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第九条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+            "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+            "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+            "tags": [
+              "保证金",
+              "押金",
+              "毕业证",
+              "身份证",
+              "扣押证件",
+              "入职收费",
+              "劳动合同法",
+              "第九条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 9,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified"
+          },
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ]
+          },
+          {
+            "id": "SUP-L-employment-3",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第三条 劳动者依法享有平等就业和自主择业的权利。\n劳动者就业，不因民族、种族、性别、宗教信仰等不同而受歧视。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第三条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "核对问答时补充的关联条文"
+          },
+          {
+            "id": "SUP-L-employment-26",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第二十六条 用人单位招用人员、职业中介机构从事职业中介活动，应当向劳动者提供平等的就业机会和公平的就业条件，不得实施就业歧视。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第二十六条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "核对问答时补充的关联条文"
+          }
+        ]
+      },
+      {
+        "tool": "report_layout",
+        "stage": "draft",
+        "changes": [
+          "删除未涉及事实领域的建议段落"
+        ]
+      },
+      {
+        "tool": "quality_review",
+        "attempt": 1,
+        "mode": "editor",
+        "before_titles": [],
+        "after_titles": [],
+        "validation": "passed"
+      }
+    ]
+  ],
+  "elapsed_seconds": 41.83
+}

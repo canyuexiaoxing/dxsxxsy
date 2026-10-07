@@ -1,0 +1,50 @@
+[
+  {
+    "case": "refused-contract",
+    "title": "真实案例-故意拒签与双倍工资",
+    "url": "https://rsj.beijing.gov.cn/bm/ztzl/dxal/202412/t20241217_3968004.html",
+    "actual_outcome": "仲裁驳回双倍工资请求，一审、二审与仲裁一致。",
+    "model_summary": "本轮补充的签约沟通事实（人事负责人多次要求订立劳动合同、2022年1月与4月微信记录显示员工以拖延方式拒绝、2022年5月5日录像中员工自述不签并欲拖满一年、目的为索要二倍工资）在性质上属于劳动者一方故意不订立书面劳动合同，改变了前次“未签原因不明、仅可初步主张”的判断基础：未签合同的二倍工资请求，从初步可主张转为存在被排除的高风险，继续主张的胜诉可能性显著降低。仍需核对两点：其一，该排除事由的直接规范为2025年9月1日施行的最高人民法院劳动争议司法解释（二）第七条，本案争议发生于2022年，历史案件应核对当时规则与实际裁判口径，不宜机械回溯；其二，用人单位是否已在用工之日起一个月内以可留存方式通知订立、以及是否因此在满一个月后依法终止劳动关系，会影响责任范围与事后责任。本报告不构成裁判认定，也不保证任何请求获得支持或驳回。",
+    "risk_count": 1,
+    "report_versions": 2,
+    "quotes_verified": true,
+    "internal_ids_hidden": true,
+    "source": "E:\\workp\\dxsxxsy\\knowledge\\evaluations\\systemic-accepted-20261006\\refused-contract.json"
+  },
+  {
+    "case": "trial-lateness",
+    "title": "真实案例-试用期辞退与迟到证据",
+    "url": "https://rsj.beijing.gov.cn/bm/ztzl/dxal/202412/t20241217_3968004.html",
+    "actual_outcome": "仲裁驳回违法解除赔偿请求，裁决已生效；官方未称此案已有法院判决。",
+    "model_summary": "新增图片事实显示：员工入职后陆续迟到15次，迟到原因多为堵车、吃早餐耽误、等电梯时间过久等非正当理由，公司多次提醒改正但效果不佳；上述被材料表述为实际事实，而非仅公司单方指控。结合原摘录（直播运营岗、试用期两个月、2023年6月21日以试用期不符合录用条件送达辞退通知、入职时无书面约定迟到次数与录用条件的关系），重新评估的结论是：解除的实体依据较原报告有所增强——反复、显著且无明显正当理由的迟到、经多次提醒仍未改正，可能支持单位关于其不符合录用条件或严重违反基本劳动纪律的主张；但材料仍未显示录用条件/规章制度是否事先明确并告知、迟到所适用的具体规则、解除是否已说明理由，且图片自述为非原始考勤截图，因此仍不能认定该解除合法或违法，也不能断定赔偿请求能否获支持。是否构成违法解除及是否赔偿须由仲裁机构或法院结合全部证据认定，本报告不保证结果。",
+    "risk_count": 1,
+    "report_versions": 2,
+    "quotes_verified": true,
+    "internal_ids_hidden": true,
+    "source": "E:\\workp\\dxsxxsy\\knowledge\\evaluations\\systemic-accepted-20261006\\trial-lateness.json"
+  },
+  {
+    "case": "salary-objection",
+    "title": "真实案例-三天工资异议期",
+    "url": "https://rsj.beijing.gov.cn/bm/ztzl/dxal/202412/t20241217_3968004.html",
+    "actual_outcome": "经仲裁庭调解，企业支付绩效差额2250元，员工撤回申请；不是判决。",
+    "model_summary": "现有事实显示，劳动合同预先约定“收款或银行进账后三日内应书面提出工资异议，否则视为本月各项劳动报酬已结清且无异议”，与2022年12月绩效奖金金额争议直接相关；公司现以该条款及“考核未达标但未举证”为由拒付绩效奖金差额。该三日条款能否排除工资请求权，需结合条款效力、举证责任与个案事实判断，不宜直接认定必然排除或必然无效；具体应发数额与请求结果不保证获赔。",
+    "risk_count": 1,
+    "report_versions": 2,
+    "quotes_verified": true,
+    "internal_ids_hidden": true,
+    "source": "E:\\workp\\dxsxxsy\\knowledge\\evaluations\\systemic-new-release-20261006\\salary-objection.json"
+  },
+  {
+    "case": "resign-handover",
+    "title": "真实案例-研发员工离职拒交接",
+    "url": "https://www.court.gov.cn/zixun/xiangqing/431252.html",
+    "actual_outcome": "法院酌定员工赔偿企业损失50000元。",
+    "model_summary": "根据已提供事实，员工于2022年2月15日提出辞职后随即离开且拒不办理工作交接，并已确认未提前三十日通知即自行离职。补充事实显示单位因该离职启动了备用方案、招聘并委托设计补救研发项目，研发进度延误、样机迟延交付，单位并对外承担了违约责任。原“未依法预告离职、拒绝交接所涉损失赔偿”风险的支持力度上升，但实际损失数额与支付凭证仍未提供，赔偿金额、因果关系与归责范围仍待证明，本报告不预设金额、不保证获支持。",
+    "risk_count": 1,
+    "report_versions": 2,
+    "quotes_verified": true,
+    "internal_ids_hidden": true,
+    "source": "E:\\workp\\dxsxxsy\\knowledge\\evaluations\\systemic-handover-final-20261006\\resign-handover.json"
+  }
+]
