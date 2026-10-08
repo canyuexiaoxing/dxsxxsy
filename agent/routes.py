@@ -96,7 +96,7 @@ def make_router(settings):
             lines.extend([f'## {f["title"]}（{f["level"]}）',f'原句：{f["quote"]}',f'位置：{f["material_id"]} 第{f["page_number"]}页',f['explanation'],'依据：'+', '.join(f['evidence_ids']),*['- '+s for s in f['suggestions']],''])
         lines.extend(['## 局限',*['- '+s for s in item['limitations']],'','## 依据来源'])
         for source in item['sources']: lines.append(f'- {source["id"]}：{source["title"]}，{source["location"]}，{source["url"]}')
-        if item['change_reason']: lines.extend(['','修改原因：'+item['change_reason']])
+        if version>1 and item['change_reason']: lines.extend(['','修改原因：'+item['change_reason']])
         return Response('\n'.join(lines),media_type='text/markdown; charset=utf-8',headers={'Content-Disposition':f'attachment; filename="report-{version}.md"'})
 
     @router.get('/api/knowledge')

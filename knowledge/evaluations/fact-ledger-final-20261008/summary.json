@@ -1,0 +1,30 @@
+[
+  {
+    "id": "recruit-paid-training",
+    "session_id": "S76a5adc237ec458292b2743f6fa57c57",
+    "flow_completed": true,
+    "content_verdict": "pending_human_review",
+    "error": null
+  },
+  {
+    "id": "normal-free-training",
+    "session_id": "S5b9f55a353064a3192ce77ef301f2a76",
+    "flow_completed": true,
+    "content_verdict": "pending_human_review",
+    "error": null
+  },
+  {
+    "id": "confirmed-loan",
+    "session_id": "S0a756874f7fa437eb5f39b6fa384ce89",
+    "flow_completed": true,
+    "content_verdict": "pending_human_review",
+    "error": null
+  },
+  {
+    "id": "fee-withdrawn",
+    "session_id": "Sa1cfeca5d72d413d8669d34665b2fb6e",
+    "flow_completed": true,
+    "content_verdict": "pending_human_review",
+    "error": null
+  }
+]

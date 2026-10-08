@@ -1,0 +1,16 @@
+[
+  {
+    "id": "normal-free-training",
+    "session_id": "S8c6c42168e7b4c348cc46c17fe76c126",
+    "flow_completed": true,
+    "content_verdict": "pending_human_review",
+    "error": null
+  },
+  {
+    "id": "confirmed-loan",
+    "session_id": "S1e02637c17bc497ea990e3ec8b6782f1",
+    "flow_completed": true,
+    "content_verdict": "pending_human_review",
+    "error": null
+  }
+]

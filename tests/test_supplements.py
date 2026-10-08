@@ -14,10 +14,10 @@ class SupplementsTests(unittest.TestCase):
   self.assertEqual(sum(e['kind']=='support' for e in result),2)
   self.assertEqual(sum(e['kind']=='law' for e in result),3)
   self.assertEqual(sum(e['kind']=='warning' for e in result),2)
- def test_curated_rules_cannot_alone_support_high_risk(self):
+ def test_program_checks_support_reference_exists_auditor_checks_use(self):
   result=TurnResult.model_validate({'action':'report','message':'','questions':[],'evidence_ids':['S'],'report':{'summary':'摘要','findings':[{'title':'风险','level':'high','quote':'公司收费','explanation':'说明','evidence_ids':['S'],'suggestions':['核实']}],'limitations':[],'change_reason':''}})
   engine=AgentEngine(None,None,None,None)
-  with self.assertRaises(AgentError):engine._validate(result,{'messages':[],'reports':[]},[],'公司收费',{'S':{'kind':'support'}})
+  engine._validate(result,{'messages':[],'reports':[]},[],'公司收费',{'S':{'kind':'support'}})
  def test_sensitive_text_stops_before_model_and_is_not_saved(self):
   with tempfile.TemporaryDirectory() as d:
    sessions=SessionStore(Path(d));sid=sessions.create('测试')['id']

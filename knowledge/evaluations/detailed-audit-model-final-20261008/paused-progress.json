@@ -1,0 +1,30 @@
+{
+  "paused_at": "2026-10-08",
+  "reason": "用户要求在适当节点暂停；测试驱动已停止，不再发起新测试。已进入服务端的请求可能在后台结束并保存会话，恢复时重新读取。",
+  "sessions": [
+    {
+      "case": "intern-task",
+      "session_id": "S79f3a8afd52c4b2f9e5439a0a97c61ec",
+      "saved_report_count": 1,
+      "saved_user_turns": 1,
+      "latest_review_status": {
+        "status": "passed",
+        "audit_count": 2,
+        "revision_count": 1,
+        "last_issues": []
+      }
+    },
+    {
+      "case": "technical-training-contract",
+      "session_id": "Sec62f5ee231b461d8a7aa5e604bb54d7",
+      "saved_report_count": 1,
+      "saved_user_turns": 1,
+      "latest_review_status": {
+        "status": "passed",
+        "audit_count": 2,
+        "revision_count": 1,
+        "last_issues": []
+      }
+    }
+  ]
+}

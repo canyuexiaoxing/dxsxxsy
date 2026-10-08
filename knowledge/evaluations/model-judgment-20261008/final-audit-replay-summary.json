@@ -1,0 +1,104 @@
+[
+  {
+    "case": "technical-training-contract",
+    "source": "E:\\workp\\dxsxxsy\\knowledge\\evaluations\\model-judgment-20261008\\technical-training-contract-saved-report-audit.json",
+    "issue_count": 4,
+    "issues": [
+      {
+        "code": "inconsistent",
+        "detail": "草稿顶层写 \"employment_stage\":\"employed\"、stage_reason:\"原程序基于关键词给出的阶段\"，与用户事实直接冲突。用户历史明确\"尚未实际用工\"，本轮补充再次写明\"我仍未入职、未签字、未付款\"，材料亦载\"毕业生尚未入职、未签约、未付款、未参加培训\"。协议中的\"培训完成后\"\"离职后\"均为未来约定，不能据此认定已提供劳动。修正方向：employment_stage 改为 preemployment，stage_reason 说明\"仅收到offer、未签约未用工、处于签约前决策阶段\"（草稿正文的签约前建议本身与 preemployment 相符，只需改正该字段及理由）。"
+      },
+      {
+        "code": "unsupported_fact",
+        "detail": "limitations 第4条称：\"试用期工资是否合规取决于本单位相同岗位工资结构、最低档工资数额及用人单位所在地最低工资标准，材料未提供\"。但材料已明确\"同岗位最低档工资6000元\"，并非未提供最低档工资数额；真正缺失的只是本单位工资结构细节与当地最低工资标准。同一报告\"核查与条件分析\"已正确写出\"试用期工资5600元…低于材料所写的同岗位最低档工资6000元\"，与本条 limitation 自相矛盾。修正方向：改为\"同岗位最低档工资6000元已知，试用期工资5600元低于该档位；尚缺当地最低工资标准与本单位工资结构细节，需据此分别核对第二十条的两项基准\"，不要笼统写\"材料未提供\"。"
+      },
+      {
+        "code": "inconsistent",
+        "detail": "培训核查事项的建议写\"要求随协议提供机构课程方案、培训合同、实际付款凭证与费用明细，确认课程属于本岗位专项专业技术培训\"。但事实是培训尚未发生、公司尚未付款，现在不存在\"实际付款凭证\"，签约前无法提供。修正方向：签约前只要求书面写入费用与凭证规则（违约金以公司实际支付并有凭证的专项培训费用为上限、按未履行部分分摊，预算或预计金额不作依据），把\"索取并核对实际付款凭证与费用明细\"安排在培训实际发生、公司付款之后。"
+      },
+      {
+        "code": "inconsistent",
+        "detail": "change_reason 末尾写\"将修订后培训条款适用条件与试用期工资作为核查事项（category=check，不计风险数）\"，在自然语言中直接写入内部字段名 category。修正方向：改为\"列为核查事项、不计入风险条数\"，删除字段名，避免暴露内部技术字段。"
+      }
+    ],
+    "checks": [
+      {
+        "name": "stage",
+        "verdict": "issues"
+      },
+      {
+        "name": "facts",
+        "verdict": "issues"
+      },
+      {
+        "name": "updates",
+        "verdict": "pass"
+      },
+      {
+        "name": "risk_grouping",
+        "verdict": "pass"
+      },
+      {
+        "name": "legal_basis",
+        "verdict": "pass"
+      },
+      {
+        "name": "advice",
+        "verdict": "issues"
+      },
+      {
+        "name": "delivery",
+        "verdict": "issues"
+      }
+    ]
+  },
+  {
+    "case": "intern-task",
+    "source": "E:\\workp\\dxsxxsy\\knowledge\\evaluations\\model-judgment-20261008\\final-intern-replay\\intern-task-saved-report-audit.json",
+    "issue_count": 3,
+    "issues": [
+      {
+        "code": "duplicate_risk",
+        "detail": "草稿 findings[0]、[1]、[4]（零起始第1、2、5条）针对的是同一笔垫资交易，被重复计为三条独立 high 风险。findings[0]标题为“以‘三天数据任务考核’为名要求自行垫资充值，并承诺本金加10%佣金返还”，引“你要用自己的钱给指定账户充值…每单完成后本金和10%佣金一起退”；findings[1]标题为“‘不垫钱就不能通过考核’＋先签任务确认书，构成付费前置的录用条件”，引“不垫钱就不能通过考核，且先签任务确认书”；findings[4]标题为“‘订单组合未完成前暂不提现、中断不退款、组合无金额上限’的退款与资金回收条款”，引“学生自行充值任务金额…若中断任务，已投入金额暂不退款”。三者为同一笔充值/垫资的‘充值要求—付款前置—退款条件’，草稿自己在 findings[1]写“是同一笔费用/垫资交易链条的组成部分，与上一条合并理解”、在 findings[4]写“与垫资风险合并理解，不重复计数”，却仍各列一条 high，构成“声明合并却仍重复计数”的实质矛盾。建议将 findings[1]、[4]并入 findings[0]一条（或作为该条下子要点），同一笔垫资只计一次；findings[2]限制联系、findings[3]主体分离属不同权利，可继续单列。"
+      },
+      {
+        "code": "unsupported_fact",
+        "detail": "limitations 写“付款对象（个人账号）与拟签约主体（信息咨询公司）是否为同一主体、款项实际归属均不明确”，另一条“核查与条件分析”写“你材料中的付款对象是个人账号和一家信息咨询公司”。但用户材料只说“报名通过自称合作招聘专员的个人聊天账号”，以及 HR 说“你要用自己的钱给指定账户充值：第一单200元、第二单800元、第三单2000元”——个人账号是聊天/联系账号，‘指定账户’才是收款账户，材料并未说明收款账户是个人账户或与其户名一致。把‘个人聊天账号’变成‘个人收款账户’属于事实扩写。建议改为“付款对象为对方所称‘指定账户’（其账户性质、户名、归属均未说明），与拟签约主体（信息咨询公司）、广告所称用工方（科技公司）之间的关系不明确”，findings[0]解释中已正确使用“指定账户”，应统一。"
+      },
+      {
+        "code": "inconsistent",
+        "detail": "limitations 末条写“内容复核未完成，本报告仍予交付，关键判断请结合原材料核实。”这是把旧版本/系统的复核状态写进新版交付内容，属于系统状态泄漏；本报告不应自行声明复核是否完成，该状态由程序独立显示。建议删除该句，或改写为与用户事实相关的提示，例如“本报告为签约与付款前的风险提示与核查清单，不构成对企业真实性或违法性质的认定”。"
+      }
+    ],
+    "checks": [
+      {
+        "name": "stage",
+        "verdict": "pass"
+      },
+      {
+        "name": "facts",
+        "verdict": "issues"
+      },
+      {
+        "name": "updates",
+        "verdict": "not_applicable"
+      },
+      {
+        "name": "risk_grouping",
+        "verdict": "issues"
+      },
+      {
+        "name": "legal_basis",
+        "verdict": "pass"
+      },
+      {
+        "name": "advice",
+        "verdict": "pass"
+      },
+      {
+        "name": "delivery",
+        "verdict": "issues"
+      }
+    ]
+  }
+]

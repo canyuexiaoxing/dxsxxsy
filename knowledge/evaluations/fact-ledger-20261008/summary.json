@@ -1,0 +1,30 @@
+[
+  {
+    "id": "recruit-paid-training",
+    "session_id": "S4b0781a60642404bbda7b2f7ce3264da",
+    "flow_completed": false,
+    "content_verdict": "pending_human_review",
+    "error": "RuntimeError: HTTP 422: 未成功检索依据：本地Embedding不可用，请先运行start-embedding.ps1；本次不生成结论"
+  },
+  {
+    "id": "normal-free-training",
+    "session_id": "Scf0ccdd2a3fb4bee92fac51e9971b8fe",
+    "flow_completed": false,
+    "content_verdict": "pending_human_review",
+    "error": "RuntimeError: HTTP 422: 未成功检索依据：本地Embedding不可用，请先运行start-embedding.ps1；本次不生成结论"
+  },
+  {
+    "id": "confirmed-loan",
+    "session_id": "S5003f200da644668a68073d4ebe07a72",
+    "flow_completed": false,
+    "content_verdict": "pending_human_review",
+    "error": "RuntimeError: HTTP 422: 工具调用超过上限，本次未生成报告"
+  },
+  {
+    "id": "fee-withdrawn",
+    "session_id": "S21a53f4ae58344788f6c605dd79bf820",
+    "flow_completed": false,
+    "content_verdict": "pending_human_review",
+    "error": "RuntimeError: HTTP 422: 未成功检索依据：本地Embedding不可用，请先运行start-embedding.ps1；本次不生成结论"
+  }
+]

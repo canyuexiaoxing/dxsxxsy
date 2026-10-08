@@ -1,0 +1,31 @@
+[
+  {
+    "name": "recruitment-fee",
+    "action": "report",
+    "findings": [
+      "以交3000元履约保证金作为录用前置条件（押金/担保收费）",
+      "拟签合同把履约保证金条款写入书面合同"
+    ],
+    "review_status": {
+      "status": "passed",
+      "audit_count": 1,
+      "revision_count": 0,
+      "last_issues": []
+    },
+    "elapsed_seconds": 20.1,
+    "output": "E:\\workp\\dxsxxsy\\knowledge\\evaluations\\bounded-review-20261008\\recruitment-fee.json"
+  },
+  {
+    "name": "ordinary-offer",
+    "action": "report",
+    "findings": [],
+    "review_status": {
+      "status": "passed",
+      "audit_count": 1,
+      "revision_count": 0,
+      "last_issues": []
+    },
+    "elapsed_seconds": 19.9,
+    "output": "E:\\workp\\dxsxxsy\\knowledge\\evaluations\\bounded-review-20261008\\ordinary-offer.json"
+  }
+]

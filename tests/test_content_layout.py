@@ -89,7 +89,8 @@ class EditorReintroductionTests(unittest.TestCase):
         edited=json.loads(output('report',raw)['content'])
         edited['report']['findings'].append(dict(raw['findings'][0],title='关键材料缺口影响举证强度'))
         edited['report']['findings'][0]['explanation']='本院认为该收费有风险。'
-        model=QualityModel([tool(),output('report',raw)],[{'corrected_result':edited,'issues':[]}])
+        fixed=json.loads(output('report',raw)['content']);fixed['report']['limitations']=['关键材料缺口仅列待核实']
+        model=QualityModel([tool(),{'role':'assistant','content':json.dumps(edited)},{'role':'assistant','content':json.dumps(fixed)}],[[{'code':'missing_as_risk','detail':'材料缺口应作为待核实事项，自称法院应改正','finding_indexes':[1],'evidence_ids':[]}],[]])
         reply=AgentEngine(self.sessions,self.materials,FakeRag(),model).turn(self.sid,'公司要求保证金')
         self.assertEqual(len(reply['report']['findings']),1)
         self.assertNotIn('本院',reply['report']['findings'][0]['explanation'])

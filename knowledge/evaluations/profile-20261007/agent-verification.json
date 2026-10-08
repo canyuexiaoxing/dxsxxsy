@@ -1,0 +1,354 @@
+[
+  {
+    "case": "task",
+    "input": "模拟招聘场景。我是大学生正在找实习，尚未入职也未付款。网上兼职说先给商品点赞，已向我返5元，现在要求充值500元完成订单，再垫付2000元才能领取佣金。我没有进行任何垫付。",
+    "disclosure": "模拟测试，非真实招聘或判决",
+    "result": {
+      "session_id": "S3d1e23da98784bd897e865022d906630",
+      "action": "report",
+      "message": "",
+      "questions": [],
+      "evidence_ids": [
+        "PRE-W-task",
+        "K005"
+      ],
+      "report": {
+        "summary": "你尚未入职、也未付款，目前没有实际资金损失。最需要注意的是：对方先给5元返利，再要求你充值500元、垫付2000元才能领佣金，这是刷单垫资类求职陷阱的典型流程；已收到的小额返利不能作为继续投入的理由。其次，任何以“做任务”为名要求先付款的兼职或实习，可以直接拒绝，不必先核实对方主体资质再决定是否付款。建议立即停止互动、不转任何款项，并保存聊天、链接、账号及5元入账记录。以下为有限报告，未核实对方主体，不构成违法或诈骗认定。",
+        "findings": [
+          {
+            "title": "小额返利后要求充值500元、垫付2000元才能领佣金，属刷单垫资型求职陷阱",
+            "level": "high",
+            "quote": "网上兼职说先给商品点赞，已向我返5元，现在要求充值500元完成订单，再垫付2000元才能领取佣金。",
+            "material_id": "M961e101f07904489b3f418d80aa38cc3",
+            "page_number": 1,
+            "explanation": "你的材料显示：对方先以“给商品点赞”支付5元小额返利，随后要求“充值500元完成订单，再垫付2000元才能领取佣金”。这是官方求职风险提示明确归纳的模式——刷单招聘常先小额返利建立信任，再诱导大额垫资，最后失联。核心异常在于：正常兼职或实习是你提供劳动后由对方支付报酬，收益的取得不应以你先充值或垫付为条件。已收到的5元只是降低防备的成本，不能作为任务安全或可继续投入的理由。你尚未垫付，目前无实际资金损失，当前最直接的动作是停止并不要再转任何款项。本条是对该交易模式的风险提示，不是对该主体是否构成诈骗的认定。",
+            "evidence_ids": [
+              "PRE-W-task"
+            ],
+            "suggestions": [
+              "立即停止与对方互动，不充值500元、不垫付2000元，也不要以“先小额试一次”的方式继续。",
+              "不要因“领取佣金”“解冻账户”“完成最后一单”等说辞追加任何金额，这类说辞通常是继续要钱的理由。",
+              "保存聊天记录、对方账号或联系方式、5元返利的收款记录、对方发送的链接或APP名称，截图留存，不要删除。",
+              "不向对方提供身份证正反面、银行卡号、短信验证码、人脸验证等信息；已提供的信息注意后续账号安全。",
+              "可向学校就业指导中心或辅导员说明情况，请其判断是否有其他同学收到同类邀约。"
+            ],
+            "category": "risk",
+            "fact_basis": "abnormal_behavior",
+            "legal_claims": [
+              {
+                "statement": "官方求职风险提示归纳：刷单招聘常以小额返利建立信任，再诱导大额垫资，最终失联；不应因已收到小额回款就相信任务安全，应停止垫资、保存记录，遭遇诈骗时报警。",
+                "basis_ids": [
+                  "PRE-W-task"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "以“做任务”为名要求先付款的兼职可直接拒绝，无需先核实主体资质",
+            "level": "attention",
+            "quote": "网上兼职说先给商品点赞，已向我返5元，现在要求充值500元完成订单，再垫付2000元才能领取佣金。",
+            "material_id": "M961e101f07904489b3f418d80aa38cc3",
+            "page_number": 1,
+            "explanation": "官方风险提示要求：面对求职过程中以各种理由要求参加需支付高额费用才能安排岗位的情况，应果断拒绝；确有培训需求的，才需核实机构许可资质以及是否存在不合理收费、贷款内容。你的情形中，500元充值和2000元垫付与“领取佣金”直接绑定，未说明收费主体、用途及其与岗位的关系。因此，即使暂时无法核验对方是谁，“不先付钱”本身就是可以执行的判断标准。需要区分：劳动合同法第九条关于用人单位招用劳动者不得要求提供担保或以其他名义收取财物的规定，适用于存在招用关系的场景；你的材料未显示存在用人单位和招用关系，也未见押金、保证金、扣押证件等事实，因此不据此认定该行为违法，仅作为招聘环节收费应高度警惕的规范背景。",
+            "evidence_ids": [
+              "K005",
+              "K001"
+            ],
+            "suggestions": [
+              "将“任何要求我先付款、先充值、先垫资的兼职或实习”一律视为不参与的信号，先拒绝，再考虑是否核实。",
+              "如对方改称是“服务费”“保证金”“押金”“培训费”“平台手续费”，同样先不付款，要求其以文字说明收款主体全称、款项用途、是否可退、退费条件与依据。",
+              "如已接触相关APP或平台，检查并关闭自动扣款、免密支付和已授权的第三方支付通道。"
+            ],
+            "category": "risk",
+            "fact_basis": "abnormal_behavior",
+            "legal_claims": [
+              {
+                "statement": "官方风险提示要求，求职者面对求职过程中以各种理由要求参加需支付高额费用才能安排岗位的情况应果断拒绝；确有培训需求才需核实机构许可资质及是否存在不合理收费、贷款内容。",
+                "basis_ids": [
+                  "K005"
+                ]
+              },
+              {
+                "statement": "劳动合同法第九条规定用人单位招用劳动者不得要求提供担保或以其他名义收取财物；该条适用于用人单位招用劳动者的场景，须先核实是否存在招用关系及相关事实，不能仅凭该条认定本案性质。",
+                "basis_ids": [
+                  "K001"
+                ]
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "你说明无法提供更多材料，本报告仅基于现有文字：对方以点赞返利名义先返5元、要求充值500元并垫付2000元、你未垫付及未入职。未收到聊天原文、对方账号、链接或APP名称，也未核实任何企业或平台信息。",
+          "材料未说明收费主体是谁、款项给谁、是否要求签署协议或贷款，也未说明是否被要求提供身份证、银行卡等信息。本报告不判断具体主体是否违法，不对是否构成诈骗、能否追回资金作出认定或保证。",
+          "材料中的“模拟招聘场景”表明你可能在测试场景，本报告按你描述的求职风险情形进行提示，不据此认定任何真实主体。",
+          "劳动合同法第八条、第九条等条款以存在用人单位招用劳动者为前提，材料未显示招用关系，相关条文仅作背景与核查方向，不作为认定本案违法的依据。",
+          "本报告不是法院、仲裁机构或行政机关的意见，不构成法律结论；如已发生转账或威胁，处理结果取决于具体证据和办案机关认定。",
+          "核查事项（不计为风险）：对方身份与招聘主体均未说明，无法核实岗位真实性。材料只说明是“网上兼职”，没有可核实的招聘主体名称、统一社会信用代码、办公地址、招聘渠道，也没有说明这500元、2000元由谁收取、给谁。因此目前无法判断对方是正规企业、职业中介还是个人，也无法判断是否存在真实岗位。核实前不宜继续任何付款或任务，但也不宜仅因信息缺失就断定对方是诈骗主体。"
+        ],
+        "change_reason": "按要求精简为两项独立风险：小额返利后要求充值、垫付属于异常行为风险；要求先付款可直接拒绝，无需先核实主体资质。其余核查事项归入limitations并删除无关内容。",
+        "version": 1,
+        "created_at": "2026-10-07T11:25:33.935867+00:00",
+        "sources": [
+          {
+            "id": "K001",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第九条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+            "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+            "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+            "tags": [
+              "保证金",
+              "押金",
+              "毕业证",
+              "身份证",
+              "扣押证件",
+              "入职收费",
+              "劳动合同法",
+              "第九条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 9,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "contract",
+              "identity"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "PRE-W-task",
+            "title": "招聘兼职刷单、垫资返佣风险",
+            "kind": "warning",
+            "url": "https://dxs.moe.gov.cn/zx/a/jobs_syzd/230810/1855462.shtml",
+            "location": "兼职刷单与盗用信息",
+            "published_at": "2023-08-10",
+            "verified_at": "2026-10-07",
+            "text": "刷单招聘常先小额返利，再诱导大额垫资，最后失联。勿因已收到小额回款就相信任务安全；停止垫资，保存记录，遭遇诈骗时报警。",
+            "scope": "大学生找实习、找工作及付款签约前的风险识别",
+            "boundary": "官方风险提示的归纳，不是法条原文、企业核验结果或个案违法认定。须结合行为、主体和事实；线上办公或信息缺失本身不等于诈骗。",
+            "tags": [
+              "刷单",
+              "垫资",
+              "返佣",
+              "返现",
+              "充值任务"
+            ],
+            "content_form": "official_warning_paraphrase",
+            "verification_status": "official_source_checked",
+            "source_publisher": "教育部中国大学生在线转载人社部提示",
+            "related_article_ids": [],
+            "origin_document": "常见的坑.xlsx（用于选题分类，非规范来源）",
+            "source_access_note": "已核对官方页面或官方来源索引全文",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "task_fraud",
+              "contract",
+              "trial_intern"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ],
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "training_loan"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07"
+          }
+        ],
+        "self_checks": [],
+        "employment_stage": "preemployment",
+        "prevention": {
+          "decision": "pause",
+          "label": "先暂缓相关付款、贷款或签约，核查后再决定",
+          "steps": [
+            "立即停止与对方互动，不充值500元、不垫付2000元，也不要以“先小额试一次”的方式继续。",
+            "不要因“领取佣金”“解冻账户”“完成最后一单”等说辞追加任何金额，这类说辞通常是继续要钱的理由。",
+            "保存聊天记录、对方账号或联系方式、5元返利的收款记录、对方发送的链接或APP名称，截图留存，不要删除。",
+            "不向对方提供身份证正反面、银行卡号、短信验证码、人脸验证等信息；已提供的信息注意后续账号安全。",
+            "可向学校就业指导中心或辅导员说明情况，请其判断是否有其他同学收到同类邀约。",
+            "将“任何要求我先付款、先充值、先垫资的兼职或实习”一律视为不参与的信号，先拒绝，再考虑是否核实。",
+            "如对方改称是“服务费”“保证金”“押金”“培训费”“平台手续费”，同样先不付款，要求其以文字说明收款主体全称、款项用途、是否可退、退费条件与依据。",
+            "如已接触相关APP或平台，检查并关闭自动扣款、免密支付和已授权的第三方支付通道。"
+          ],
+          "note": "这是签约与入职前的风险提示，不是对企业真实性、违法性质或岗位安全的认证。"
+        }
+      },
+      "sources": [
+        {
+          "id": "K001",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "location": "第九条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-06",
+          "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+          "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+          "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+          "tags": [
+            "保证金",
+            "押金",
+            "毕业证",
+            "身份证",
+            "扣押证件",
+            "入职收费",
+            "劳动合同法",
+            "第九条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 9,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "国家市场监督管理总局",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/",
+          "legal_database_status": "query_entry_only_not_verified",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "contract",
+            "identity"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "K005",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "kind": "warning",
+          "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+          "location": "风险提示第三项",
+          "published_at": "2026-05-18",
+          "verified_at": "2026-10-03",
+          "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+          "scope": "求职被转向收费培训及培训贷款风险。",
+          "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+          "tags": [
+            "招转培",
+            "培训贷",
+            "贷款",
+            "高额培训费",
+            "包就业",
+            "先培训后入职"
+          ],
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "training_loan"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "PRE-W-task",
+          "title": "招聘兼职刷单、垫资返佣风险",
+          "kind": "warning",
+          "url": "https://dxs.moe.gov.cn/zx/a/jobs_syzd/230810/1855462.shtml",
+          "location": "兼职刷单与盗用信息",
+          "published_at": "2023-08-10",
+          "verified_at": "2026-10-07",
+          "text": "刷单招聘常先小额返利，再诱导大额垫资，最后失联。勿因已收到小额回款就相信任务安全；停止垫资，保存记录，遭遇诈骗时报警。",
+          "scope": "大学生找实习、找工作及付款签约前的风险识别",
+          "boundary": "官方风险提示的归纳，不是法条原文、企业核验结果或个案违法认定。须结合行为、主体和事实；线上办公或信息缺失本身不等于诈骗。",
+          "tags": [
+            "刷单",
+            "垫资",
+            "返佣",
+            "返现",
+            "充值任务"
+          ],
+          "content_form": "official_warning_paraphrase",
+          "verification_status": "official_source_checked",
+          "source_publisher": "教育部中国大学生在线转载人社部提示",
+          "related_article_ids": [],
+          "origin_document": "常见的坑.xlsx（用于选题分类，非规范来源）",
+          "source_access_note": "已核对官方页面或官方来源索引全文",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "task_fraud",
+            "contract",
+            "trial_intern"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        }
+      ]
+    },
+    "passed": true,
+    "error": null
+  },
+  {
+    "case": "intern",
+    "input": "模拟招聘场景。我是大学生正在找实习，尚未入职、未付款。一个个人账号自称大厂员工招远程实习，收3000元实习证明费，让我替他完成私人接单任务；他拒绝提供公司官方招聘链接或授权，说不要联系公司HR。",
+    "disclosure": "模拟测试，非真实招聘或判决",
+    "passed": false,
+    "error": "新增官方提示未用于报告"
+  }
+]

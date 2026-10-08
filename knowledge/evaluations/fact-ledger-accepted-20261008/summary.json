@@ -1,0 +1,16 @@
+[
+  {
+    "id": "recruit-paid-training",
+    "session_id": "S0b7cff1429c84a51bf5f46c47734f9b6",
+    "flow_completed": true,
+    "content_verdict": "pending_human_review",
+    "error": null
+  },
+  {
+    "id": "fee-withdrawn",
+    "session_id": "S8d28f75a0cab410d923dee7a9535cc8e",
+    "flow_completed": true,
+    "content_verdict": "pending_human_review",
+    "error": null
+  }
+]

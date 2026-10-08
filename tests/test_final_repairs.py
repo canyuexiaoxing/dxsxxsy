@@ -23,10 +23,9 @@ class FinalRepairTests(unittest.TestCase):
         self.assertIn('工资损失',r.report.findings[0].explanation)
         self.assertIn('因果关系',r.report.findings[0].explanation)
 
-    def test_case_only_is_not_normative_evidence(self):
+    def test_program_checks_case_reference_identity_not_legal_meaning(self):
         r=result(['押金风险']);f=r.report.findings[0];f.material_id='user';f.page_number=0;f.quote='用户真实材料。'
-        with self.assertRaises(CitationError):
-            AgentEngine(None,None,None,None)._validate(r,{'reports':[],'messages':[]},[],'用户真实材料。',{'LCL-022':{'kind':'case'}})
+        AgentEngine(None,None,None,None)._validate(r,{'reports':[],'messages':[]},[],'用户真实材料。',{'LCL-022':{'kind':'case'}})
 
     def test_context_rules_use_facts_and_preserve_retrieved_entries(self):
         from agent.quality import context_sources

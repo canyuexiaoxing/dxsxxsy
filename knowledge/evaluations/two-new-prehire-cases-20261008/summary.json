@@ -1,0 +1,16 @@
+[
+  {
+    "id": "deposit-before-offer",
+    "session_id": "Sa01b6f0da1724d2ea62f16c5ea860396",
+    "flow_completed": false,
+    "content_verdict": "pending_human_review",
+    "error": "RuntimeError: HTTP 422: 模型结果格式或引用不合要求，本次未写入报告"
+  },
+  {
+    "id": "unsigned-contract",
+    "session_id": "S622b88e55c0f4269b808a7a21aeb7014",
+    "flow_completed": false,
+    "content_verdict": "pending_human_review",
+    "error": "RuntimeError: HTTP 422: 模型结果格式或引用不合要求，本次未写入报告"
+  }
+]

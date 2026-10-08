@@ -1,0 +1,1553 @@
+{
+  "input": "模拟求职材料：我是一名应届大学生，正在找工作，还没入职、签约、交钱或提供劳动。招聘启事写运营助理，月薪6000元。HR说入职前必须向招聘公司交3000元履约保证金，不交不能录用，离职后完成交接才能退。拟签合同也写了这项押金。公司名称已匿名，未核验公司资质。请直接根据现有材料输出求职前风险报告，缺失信息列待核实，不需要追问，不认定公司已经诈骗。",
+  "reply": {
+    "session_id": "Sd32d5b6101d8428bb334c9cdb080b323",
+    "action": "report",
+    "message": "",
+    "questions": [],
+    "evidence_ids": [
+      "K001",
+      "LCL-084",
+      "SUP-R001",
+      "K005",
+      "O005-reasoning",
+      "LCL-025",
+      "LCL-022",
+      "SUP-R008"
+    ],
+    "report": {
+      "summary": "根据已提供事实，主要风险信号为：以交3000元履约保证金作为录用前置条件（押金/担保收费）；拟签合同把履约保证金条款写入书面合同。相关判断须核对适用条件，不构成违法认定。",
+      "findings": [
+        {
+          "title": "以交3000元履约保证金作为录用前置条件（押金/担保收费）",
+          "level": "high",
+          "quote": "HR说入职前必须向招聘公司交3000元履约保证金，不交不能录用，离职后完成交接才能退。",
+          "material_id": "user",
+          "page_number": 0,
+          "explanation": "HR明确表示“入职前必须交3000元履约保证金，不交不能录用”，并称离职后完成交接才退。这是用人单位在招用环节把收取财物（押金、担保款）作为录用条件，属于法律禁止的情形：劳动合同法第九条明确用人单位招用劳动者不得要求提供担保或以其他名义收取财物；违反的，第八十四条规定由劳动行政部门责令退还，并可处每人500元以上2000元以下罚款，造成损害应赔偿。官方风险提示也提示对求职中被要求付费才能安排岗位的情况应拒绝。需注意：是否属于“用人单位招用”而非独立第三方合法收费，要根据收费主体、用途和与录用的关联判断（此处你已说明是“向招聘公司交”，指向用人单位本身）；是否已实际收取、能否退还属于后续事实，本报告不认定企业已违法或已诈骗。",
+          "evidence_ids": [
+            "K001",
+            "LCL-084",
+            "SUP-R001",
+            "K005",
+            "O005-reasoning"
+          ],
+          "suggestions": [
+            "不要支付这3000元，也不要为“保录用”签任何付款或分期文件；把录用与付费明确脱钩后再继续沟通。",
+            "书面（邮件/聊天留痕）向对方确认：收款主体全称、款项性质、是否开具正规票据、退还条件与时限、不交是否即不录用，保留记录。",
+            "在交钱或签合同前，先通过国家企业信用信息公示系统等官方渠道核验招聘公司与拟签合同主体是否为同一家企业、经营范围与招聘岗位是否匹配。",
+            "若已被要求转账，不要主动付款；如已付款或受到威胁、胁迫，保存聊天、转账、招聘页面证据，向当地人社部门投诉或报警求助。"
+          ],
+          "category": "risk",
+          "fact_basis": "abnormal_clause",
+          "legal_claims": [
+            {
+              "statement": "用人单位招用劳动者，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+              "basis_ids": [
+                "K001"
+              ]
+            },
+            {
+              "statement": "用人单位违反规定以担保或其他名义向劳动者收取财物的，由劳动行政部门责令退还，并可处以每人500元以上2000元以下罚款；造成损害的应承担赔偿责任。",
+              "basis_ids": [
+                "LCL-084"
+              ]
+            },
+            {
+              "statement": "求职中因“交钱才安排岗位/才录用”而被要求付费的，官方风险提示建议果断拒绝。",
+              "basis_ids": [
+                "K005"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "拟签合同把履约保证金条款写入书面合同",
+          "level": "high",
+          "quote": "拟签合同也写了这项押金。",
+          "material_id": "user",
+          "page_number": 0,
+          "explanation": "你说明拟签合同里也写了这项押金。合同一经签署，条款在将来可能被用作扣款或拒退的依据，因此签约前删除该条比事后争议更有效。劳动合同法第九条禁止用人单位收取财物或要求提供担保；第二十五条规定除第二十二条（专项培训服务期）和第二十三条（竞业限制）两种法定情形外，用人单位不得与劳动者约定由劳动者承担违约金；第二十二条同时限定违约金不得超过培训费用、且不得超过服务期未履行部分应分摊的费用。本材料未显示存在专项培训或竞业限制事实，因此该“履约保证金/押金”条款缺乏法定依据。这里是对拟签条款的签约前风险提示，不等于已经发生扣款或该条款已被认定无效。",
+          "evidence_ids": [
+            "K001",
+            "LCL-025",
+            "LCL-022",
+            "LCL-084"
+          ],
+          "suggestions": [
+            "签约前要求删除全部押金、保证金、担保金以及与录用挂钩的收费条款；对方若拒绝删除，可作为放弃该机会的重要依据。",
+            "核对合同中是否存在以“培训费”“服务期违约金”“设备押金”“管理费”等名义变相收费的条款。",
+            "若合同已签但尚未付款，先书面提出删除/修改条款；不要先付款再谈退还。",
+            "保留合同草案版本与沟通记录，便于日后投诉或举证。"
+          ],
+          "category": "risk",
+          "fact_basis": "abnormal_clause",
+          "legal_claims": [
+            {
+              "statement": "除专项培训服务期（第二十二条）和竞业限制（第二十三条）情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+              "basis_ids": [
+                "LCL-025"
+              ]
+            },
+            {
+              "statement": "服务期违约金数额不得超过用人单位提供的培训费用，且不得超过服务期尚未履行部分应分摊的培训费用。",
+              "basis_ids": [
+                "LCL-022"
+              ]
+            },
+            {
+              "statement": "用人单位以担保或其他名义收取财物的，劳动行政部门可责令退还并处罚款。",
+              "basis_ids": [
+                "LCL-084"
+              ]
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "本材料为模拟场景，公司名称匿名，未核验资质；本报告不对任何具体企业作违法、诈骗或犯罪认定。",
+        "收费主体（是否为用人单位本身还是第三方机构）、3000元的具体用途、是否开具票据均未提供，仅能按“交用人单位履约保证金”的描述作招聘阶段性判断。",
+        "是否已实际收费、是否已签合同、是否有培训或竞业限制等其他约定均未知，故未就实际用工后的返还、罚款或赔偿金额作结论。",
+        "引用的官方案例（含押金退还案例）为个案处理摘要，结果仅供参考，不代表同类情形必然得到相同结果，且该案为已用工后的争议，与你的招聘前阶段不同。",
+        "本报告不能替代人社部门、仲裁机构或法院对个案的认定；如后续发生争议，应结合完整事实和证据处理。",
+        "未涉及贷款、境外招聘等内容，因其未出现在你的材料中。",
+        "核查与条件分析（不计为风险）：招聘岗位、薪资与主体的真实性尚未核验。你说明公司名称已匿名、未核验资质。招聘启事写“运营助理、月薪6000元”，但岗位职责、工作地点、签约主体、社保与薪资构成均未提供，因此岗位与待遇真实性、公司是否真实招人尚无法判断。这属于待核实信息，不构成对公司的违法或诈骗认定。；建议：核对公司全称、统一社会信用代码、办公地址与招聘平台信息是否一致，优先通过官方渠道（国家企业信用信息公示系统）查询主体存续状态与经营范围。；要求书面明确岗位职责、工作地点、试用期、薪资构成（基本工资/绩效/提成）、发薪主体与发薪时间。；当面或视频确认办公地点和面试人员身份，警惕只线上沟通、只推岗位不落实录用的情形。；对任何“先交钱再安排入职/再确认岗位”的安排，一律先暂停。"
+      ],
+      "change_reason": "",
+      "version": 1,
+      "created_at": "2026-10-07T16:42:54.474013+00:00",
+      "sources": [
+        {
+          "id": "K001",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "location": "第九条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-06",
+          "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+          "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+          "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+          "tags": [
+            "保证金",
+            "押金",
+            "毕业证",
+            "身份证",
+            "扣押证件",
+            "入职收费",
+            "劳动合同法",
+            "第九条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 9,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "国家市场监督管理总局",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/",
+          "legal_database_status": "query_entry_only_not_verified",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "contract",
+            "identity"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "LCL-084",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "location": "第八十四条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-06",
+          "text": "第八十四条　用人单位违反本法规定，扣押劳动者居民身份证等证件的，由劳动行政部门责令限期退还劳动者本人，并依照有关法律规定给予处罚。\n用人单位违反本法规定，以担保或者其他名义向劳动者收取财物的，由劳动行政部门责令限期退还劳动者本人，并以每人五百元以上二千元以下的标准处以罚款；给劳动者造成损害的，应当承担赔偿责任。\n劳动者依法解除或者终止劳动合同，用人单位扣押劳动者档案或者其他物品的，依照前款规定处罚。",
+          "scope": "本条所列情形；第七章　法律责任 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第八十四条",
+            "第七章　法律责任",
+            "押金",
+            "扣押身份证",
+            "退还财物"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 84,
+          "chapter": "第七章　法律责任",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "国家市场监督管理总局",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/",
+          "legal_database_status": "query_entry_only_not_verified",
+          "stage_scope": "post",
+          "employment_stages": [
+            "employed"
+          ],
+          "risk_topics": [
+            "fees",
+            "contract",
+            "identity"
+          ],
+          "classification_reason": "主要为实际用工后的解除或责任规则；原文仍可按编号读取",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "LCL-025",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "location": "第二十五条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-06",
+          "text": "第二十五条　除本法第二十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+          "scope": "本条所列情形；第二章　劳动合同的订立 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第二十五条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 25,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [
+            "LCL-022"
+          ],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "国家市场监督管理总局",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/",
+          "legal_database_status": "query_entry_only_not_verified",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "LCL-022",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "location": "第二十二条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-06",
+          "text": "第二十二条　用人单位为劳动者提供专项培训费用，对其进行专业技术培训的，可以与该劳动者订立协议，约定服务期。\n劳动者违反服务期约定的，应当按照约定向用人单位支付违约金。违约金的数额不得超过用人单位提供的培训费用。用人单位要求劳动者支付的违约金不得超过服务期尚未履行部分所应分摊的培训费用。\n用人单位与劳动者约定服务期的，不影响按照正常的工资调整机制提高劳动者在服务期期间的劳动报酬。",
+          "scope": "本条所列情形；第二章　劳动合同的订立 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第二十二条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 22,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "国家市场监督管理总局",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/",
+          "legal_database_status": "query_entry_only_not_verified",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "K005",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "kind": "warning",
+          "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+          "location": "风险提示第三项",
+          "published_at": "2026-05-18",
+          "verified_at": "2026-10-03",
+          "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+          "scope": "求职被转向收费培训及培训贷款风险。",
+          "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+          "tags": [
+            "招转培",
+            "培训贷",
+            "贷款",
+            "高额培训费",
+            "包就业",
+            "先培训后入职"
+          ],
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "training_loan"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "O005-reasoning",
+          "title": "劳务派遣驾驶员工资被扣作风险押金",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+          "location": "第10项：上海某劳务派遣有限公司违法收取风险押金案件 · 执法认定",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-04",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门认定该收费违反劳动合同法有关不得要求担保或以其他名义收取财物的规定。",
+          "scope": "派遣单位按月扣工资作为风险押金。",
+          "boundary": "4.9万元为该案退还总额，不是每人金额或通用赔偿标准；原文未披露法院判决。",
+          "tags": [
+            "劳务派遣",
+            "驾驶员",
+            "风险押金",
+            "扣工资",
+            "保证金",
+            "退还押金"
+          ],
+          "case_id": "O005",
+          "chunk_role": "reasoning",
+          "related_ids": [
+            "O005-facts",
+            "O005-reasoning",
+            "O005-outcome"
+          ],
+          "source_publisher": "人力资源社会保障部",
+          "source_case_position": "第10项：上海某劳务派遣有限公司违法收取风险押金案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "人社部门督促退还押金，原文明确已退还",
+          "stage_scope": "post",
+          "employment_stages": [
+            "employed"
+          ],
+          "risk_topics": [
+            "fees"
+          ],
+          "classification_reason": "主要案情为已用工后的履行、解除或救济争议",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "SUP-R001",
+          "title": "入职收费",
+          "kind": "support",
+          "text": "用人单位将交押金或其他收费作为招用条件，须核对主体、用途、录用关联；正常第三方独立服务不能一概判红。\n关联依据编号：K001、K005",
+          "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "location": "风险判定辅助",
+          "published_at": "",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "入职收费",
+            "风险判定辅助"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "K001",
+            "K005"
+          ],
+          "support_category": "风险判定辅助",
+          "origin_document": "三色判定规则库.docx",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "fees",
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "SUP-R008",
+          "title": "高薪低门槛",
+          "kind": "support",
+          "text": "异常高薪、零门槛、无需面试等宣传须结合主体和具体岗位核实。\n关联依据编号：K005",
+          "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+          "location": "风险判定辅助",
+          "published_at": "",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "高薪低门槛",
+            "风险判定辅助"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "K005"
+          ],
+          "support_category": "风险判定辅助",
+          "origin_document": "三色判定规则库.docx",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "job_truth",
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        }
+      ],
+      "review_status": {
+        "status": "passed",
+        "audit_count": 1,
+        "revision_count": 0,
+        "last_issues": []
+      },
+      "self_checks": [],
+      "employment_stage": "employed"
+    },
+    "sources": [
+      {
+        "id": "K001",
+        "title": "中华人民共和国劳动合同法",
+        "kind": "law",
+        "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+        "location": "第九条",
+        "published_at": "2012-12-28",
+        "verified_at": "2026-10-06",
+        "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+        "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+        "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+        "tags": [
+          "保证金",
+          "押金",
+          "毕业证",
+          "身份证",
+          "扣押证件",
+          "入职收费",
+          "劳动合同法",
+          "第九条",
+          "第二章　劳动合同的订立"
+        ],
+        "law_id": "labor-contract-law-2012",
+        "article_number": 9,
+        "chapter": "第二章　劳动合同的订立",
+        "section": "",
+        "version": "2012年12月28日修正",
+        "amendment_effective_at": "2013-07-01",
+        "content_form": "official_article_fulltext",
+        "verification_status": "official_source_checked",
+        "related_article_ids": [],
+        "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+        "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+        "source_publisher": "国家市场监督管理总局",
+        "source_level": "national_authority",
+        "legal_database_url": "https://flk.npc.gov.cn/",
+        "legal_database_status": "query_entry_only_not_verified",
+        "stage_scope": "pre",
+        "employment_stages": [
+          "preemployment"
+        ],
+        "risk_topics": [
+          "fees",
+          "contract",
+          "identity"
+        ],
+        "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+        "classified_at": "2026-10-07"
+      },
+      {
+        "id": "K005",
+        "title": "五部门警惕招转培、培训贷风险提示",
+        "kind": "warning",
+        "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+        "location": "风险提示第三项",
+        "published_at": "2026-05-18",
+        "verified_at": "2026-10-03",
+        "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+        "scope": "求职被转向收费培训及培训贷款风险。",
+        "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+        "tags": [
+          "招转培",
+          "培训贷",
+          "贷款",
+          "高额培训费",
+          "包就业",
+          "先培训后入职"
+        ],
+        "stage_scope": "pre",
+        "employment_stages": [
+          "preemployment"
+        ],
+        "risk_topics": [
+          "fees",
+          "training_loan"
+        ],
+        "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+        "classified_at": "2026-10-07"
+      },
+      {
+        "id": "LCL-022",
+        "title": "中华人民共和国劳动合同法",
+        "kind": "law",
+        "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+        "location": "第二十二条",
+        "published_at": "2012-12-28",
+        "verified_at": "2026-10-06",
+        "text": "第二十二条　用人单位为劳动者提供专项培训费用，对其进行专业技术培训的，可以与该劳动者订立协议，约定服务期。\n劳动者违反服务期约定的，应当按照约定向用人单位支付违约金。违约金的数额不得超过用人单位提供的培训费用。用人单位要求劳动者支付的违约金不得超过服务期尚未履行部分所应分摊的培训费用。\n用人单位与劳动者约定服务期的，不影响按照正常的工资调整机制提高劳动者在服务期期间的劳动报酬。",
+        "scope": "本条所列情形；第二章　劳动合同的订立 ",
+        "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+        "tags": [
+          "劳动合同法",
+          "第二十二条",
+          "第二章　劳动合同的订立"
+        ],
+        "law_id": "labor-contract-law-2012",
+        "article_number": 22,
+        "chapter": "第二章　劳动合同的订立",
+        "section": "",
+        "version": "2012年12月28日修正",
+        "amendment_effective_at": "2013-07-01",
+        "content_form": "official_article_fulltext",
+        "verification_status": "official_source_checked",
+        "related_article_ids": [],
+        "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+        "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+        "source_publisher": "国家市场监督管理总局",
+        "source_level": "national_authority",
+        "legal_database_url": "https://flk.npc.gov.cn/",
+        "legal_database_status": "query_entry_only_not_verified",
+        "stage_scope": "both",
+        "employment_stages": [
+          "preemployment",
+          "employed"
+        ],
+        "risk_topics": [
+          "contract"
+        ],
+        "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+        "classified_at": "2026-10-07"
+      },
+      {
+        "id": "LCL-025",
+        "title": "中华人民共和国劳动合同法",
+        "kind": "law",
+        "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+        "location": "第二十五条",
+        "published_at": "2012-12-28",
+        "verified_at": "2026-10-06",
+        "text": "第二十五条　除本法第二十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+        "scope": "本条所列情形；第二章　劳动合同的订立 ",
+        "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+        "tags": [
+          "劳动合同法",
+          "第二十五条",
+          "第二章　劳动合同的订立"
+        ],
+        "law_id": "labor-contract-law-2012",
+        "article_number": 25,
+        "chapter": "第二章　劳动合同的订立",
+        "section": "",
+        "version": "2012年12月28日修正",
+        "amendment_effective_at": "2013-07-01",
+        "content_form": "official_article_fulltext",
+        "verification_status": "official_source_checked",
+        "related_article_ids": [
+          "LCL-022"
+        ],
+        "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+        "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+        "source_publisher": "国家市场监督管理总局",
+        "source_level": "national_authority",
+        "legal_database_url": "https://flk.npc.gov.cn/",
+        "legal_database_status": "query_entry_only_not_verified",
+        "stage_scope": "both",
+        "employment_stages": [
+          "preemployment",
+          "employed"
+        ],
+        "risk_topics": [
+          "contract"
+        ],
+        "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+        "classified_at": "2026-10-07"
+      },
+      {
+        "id": "LCL-084",
+        "title": "中华人民共和国劳动合同法",
+        "kind": "law",
+        "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+        "location": "第八十四条",
+        "published_at": "2012-12-28",
+        "verified_at": "2026-10-06",
+        "text": "第八十四条　用人单位违反本法规定，扣押劳动者居民身份证等证件的，由劳动行政部门责令限期退还劳动者本人，并依照有关法律规定给予处罚。\n用人单位违反本法规定，以担保或者其他名义向劳动者收取财物的，由劳动行政部门责令限期退还劳动者本人，并以每人五百元以上二千元以下的标准处以罚款；给劳动者造成损害的，应当承担赔偿责任。\n劳动者依法解除或者终止劳动合同，用人单位扣押劳动者档案或者其他物品的，依照前款规定处罚。",
+        "scope": "本条所列情形；第七章　法律责任 ",
+        "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+        "tags": [
+          "劳动合同法",
+          "第八十四条",
+          "第七章　法律责任",
+          "押金",
+          "扣押身份证",
+          "退还财物"
+        ],
+        "law_id": "labor-contract-law-2012",
+        "article_number": 84,
+        "chapter": "第七章　法律责任",
+        "section": "",
+        "version": "2012年12月28日修正",
+        "amendment_effective_at": "2013-07-01",
+        "content_form": "official_article_fulltext",
+        "verification_status": "official_source_checked",
+        "related_article_ids": [],
+        "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+        "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+        "source_publisher": "国家市场监督管理总局",
+        "source_level": "national_authority",
+        "legal_database_url": "https://flk.npc.gov.cn/",
+        "legal_database_status": "query_entry_only_not_verified",
+        "stage_scope": "post",
+        "employment_stages": [
+          "employed"
+        ],
+        "risk_topics": [
+          "fees",
+          "contract",
+          "identity"
+        ],
+        "classification_reason": "主要为实际用工后的解除或责任规则；原文仍可按编号读取",
+        "classified_at": "2026-10-07"
+      },
+      {
+        "id": "O005-reasoning",
+        "title": "劳务派遣驾驶员工资被扣作风险押金",
+        "kind": "case",
+        "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+        "location": "第10项：上海某劳务派遣有限公司违法收取风险押金案件 · 执法认定",
+        "published_at": "2025-12-11",
+        "verified_at": "2026-10-04",
+        "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门认定该收费违反劳动合同法有关不得要求担保或以其他名义收取财物的规定。",
+        "scope": "派遣单位按月扣工资作为风险押金。",
+        "boundary": "4.9万元为该案退还总额，不是每人金额或通用赔偿标准；原文未披露法院判决。",
+        "tags": [
+          "劳务派遣",
+          "驾驶员",
+          "风险押金",
+          "扣工资",
+          "保证金",
+          "退还押金"
+        ],
+        "case_id": "O005",
+        "chunk_role": "reasoning",
+        "related_ids": [
+          "O005-facts",
+          "O005-reasoning",
+          "O005-outcome"
+        ],
+        "source_publisher": "人力资源社会保障部",
+        "source_case_position": "第10项：上海某劳务派遣有限公司违法收取风险押金案件",
+        "content_form": "official_case_summary",
+        "verification_status": "official_source_checked",
+        "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+        "decision_type": "administrative_enforcement",
+        "procedural_status": "人社部门督促退还押金，原文明确已退还",
+        "stage_scope": "post",
+        "employment_stages": [
+          "employed"
+        ],
+        "risk_topics": [
+          "fees"
+        ],
+        "classification_reason": "主要案情为已用工后的履行、解除或救济争议",
+        "classified_at": "2026-10-07"
+      },
+      {
+        "id": "SUP-R001",
+        "title": "入职收费",
+        "kind": "support",
+        "text": "用人单位将交押金或其他收费作为招用条件，须核对主体、用途、录用关联；正常第三方独立服务不能一概判红。\n关联依据编号：K001、K005",
+        "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+        "location": "风险判定辅助",
+        "published_at": "",
+        "verified_at": "2026-10-05",
+        "scope": "大学生招聘、签约、用工与就业权益咨询",
+        "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+        "tags": [
+          "入职收费",
+          "风险判定辅助"
+        ],
+        "content_form": "reviewed_support",
+        "verification_status": "curated_with_references",
+        "related_article_ids": [
+          "K001",
+          "K005"
+        ],
+        "support_category": "风险判定辅助",
+        "origin_document": "三色判定规则库.docx",
+        "stage_scope": "both",
+        "employment_stages": [
+          "preemployment",
+          "employed"
+        ],
+        "risk_topics": [
+          "fees",
+          "contract"
+        ],
+        "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+        "classified_at": "2026-10-07"
+      },
+      {
+        "id": "SUP-R008",
+        "title": "高薪低门槛",
+        "kind": "support",
+        "text": "异常高薪、零门槛、无需面试等宣传须结合主体和具体岗位核实。\n关联依据编号：K005",
+        "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+        "location": "风险判定辅助",
+        "published_at": "",
+        "verified_at": "2026-10-05",
+        "scope": "大学生招聘、签约、用工与就业权益咨询",
+        "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+        "tags": [
+          "高薪低门槛",
+          "风险判定辅助"
+        ],
+        "content_form": "reviewed_support",
+        "verification_status": "curated_with_references",
+        "related_article_ids": [
+          "K005"
+        ],
+        "support_category": "风险判定辅助",
+        "origin_document": "三色判定规则库.docx",
+        "stage_scope": "both",
+        "employment_stages": [
+          "preemployment",
+          "employed"
+        ],
+        "risk_topics": [
+          "job_truth",
+          "contract"
+        ],
+        "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+        "classified_at": "2026-10-07"
+      }
+    ]
+  },
+  "trace": [
+    {
+      "tool": "search_knowledge",
+      "arguments": {
+        "query": "用人单位收取劳动者押金保证金 劳动合同法第九条"
+      },
+      "result": [
+        {
+          "id": "K001",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "location": "第九条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-06",
+          "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+          "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+          "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+          "tags": [
+            "保证金",
+            "押金",
+            "毕业证",
+            "身份证",
+            "扣押证件",
+            "入职收费",
+            "劳动合同法",
+            "第九条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 9,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "国家市场监督管理总局",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/",
+          "legal_database_status": "query_entry_only_not_verified",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "contract",
+            "identity"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "LCL-084",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "location": "第八十四条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-06",
+          "text": "第八十四条　用人单位违反本法规定，扣押劳动者居民身份证等证件的，由劳动行政部门责令限期退还劳动者本人，并依照有关法律规定给予处罚。\n用人单位违反本法规定，以担保或者其他名义向劳动者收取财物的，由劳动行政部门责令限期退还劳动者本人，并以每人五百元以上二千元以下的标准处以罚款；给劳动者造成损害的，应当承担赔偿责任。\n劳动者依法解除或者终止劳动合同，用人单位扣押劳动者档案或者其他物品的，依照前款规定处罚。",
+          "scope": "本条所列情形；第七章　法律责任 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第八十四条",
+            "第七章　法律责任",
+            "押金",
+            "扣押身份证",
+            "退还财物"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 84,
+          "chapter": "第七章　法律责任",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "国家市场监督管理总局",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/",
+          "legal_database_status": "query_entry_only_not_verified",
+          "stage_scope": "post",
+          "employment_stages": [
+            "employed"
+          ],
+          "risk_topics": [
+            "fees",
+            "contract",
+            "identity"
+          ],
+          "classification_reason": "主要为实际用工后的解除或责任规则；原文仍可按编号读取",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "LCL-025",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "location": "第二十五条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-06",
+          "text": "第二十五条　除本法第二十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+          "scope": "本条所列情形；第二章　劳动合同的订立 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第二十五条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 25,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [
+            "LCL-022"
+          ],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "国家市场监督管理总局",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/",
+          "legal_database_status": "query_entry_only_not_verified",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "K005",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "kind": "warning",
+          "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+          "location": "风险提示第三项",
+          "published_at": "2026-05-18",
+          "verified_at": "2026-10-03",
+          "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+          "scope": "求职被转向收费培训及培训贷款风险。",
+          "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+          "tags": [
+            "招转培",
+            "培训贷",
+            "贷款",
+            "高额培训费",
+            "包就业",
+            "先培训后入职"
+          ],
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "training_loan"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "K006",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "kind": "warning",
+          "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+          "location": "风险提示第四项",
+          "published_at": "2026-05-18",
+          "verified_at": "2026-10-03",
+          "text": "签订涉及贷款的协议，务必核实放款方资质、贷款利率、还款方式及违约责任。慎重在平台注册信息及办理贷款，坚持理性借贷，避免过度负债，切勿轻信“免息分期”“低门槛、秒到账”等承诺，避免陷入非法债务纠纷。",
+          "scope": "贷款或分期支付协议的核实事项。",
+          "boundary": "分期是否属于贷款要看协议和主体；不能仅凭分期二字认定违法。",
+          "tags": [
+            "分期",
+            "借款协议",
+            "贷款利率",
+            "还款",
+            "培训贷",
+            "违约责任"
+          ],
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "training_loan",
+            "contract"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "SUP-R001",
+          "title": "入职收费",
+          "kind": "support",
+          "text": "用人单位将交押金或其他收费作为招用条件，须核对主体、用途、录用关联；正常第三方独立服务不能一概判红。\n关联依据编号：K001、K005",
+          "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "location": "风险判定辅助",
+          "published_at": "",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "入职收费",
+            "风险判定辅助"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "K001",
+            "K005"
+          ],
+          "support_category": "风险判定辅助",
+          "origin_document": "三色判定规则库.docx",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "fees",
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "SUP-A01",
+          "title": "入职收费与培训贷款",
+          "kind": "support",
+          "text": "先暂停新增付款和不明授权，保存招聘、协议、转账、聊天证据；按主体及争议性质选择人社、消费维权、民事诉讼等渠道；涉嫌犯罪或人身危险报警。已签借款不要自行停还款，合同取消不当然免除借贷责任。\n关联依据编号：K001、K005",
+          "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "location": "维权行动卡",
+          "published_at": "",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "入职收费与培训贷款",
+            "维权行动卡"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "K001",
+            "K005"
+          ],
+          "support_category": "维权行动卡",
+          "origin_document": "维权行动指南.docx",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "fees",
+            "training_loan",
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "K008",
+          "title": "用人单位不得以任何理由收取劳动者财物",
+          "kind": "case",
+          "url": "https://rsj.beijing.gov.cn/bm/ztzl/dxal/202211/t20221117_2861158.html",
+          "location": "案情与审理（案例摘要）",
+          "published_at": "2022-11-17",
+          "verified_at": "2026-10-03",
+          "text": "官方案例摘要：建筑公司向项目工程师收取15200元项目风险抵押金，离职时仅愿返还部分。仲裁处理支持全额返还。该案分析认定钱款具有担保性质，并援引劳动合同法第九条。具体事实与原文请打开来源网址核对。",
+          "scope": "劳动关系中具有担保性质的抵押金争议。",
+          "boundary": "本条是案例摘要，不是法律原文；不能保证不同案件会得到同样处理结果。",
+          "tags": [
+            "保证金",
+            "风险抵押金",
+            "返还",
+            "仲裁",
+            "典型案例"
+          ],
+          "stage_scope": "post",
+          "employment_stages": [
+            "employed"
+          ],
+          "risk_topics": [
+            "fees"
+          ],
+          "classification_reason": "主要案情为已用工后的履行、解除或救济争议",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "LCL-022",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "location": "第二十二条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-06",
+          "text": "第二十二条　用人单位为劳动者提供专项培训费用，对其进行专业技术培训的，可以与该劳动者订立协议，约定服务期。\n劳动者违反服务期约定的，应当按照约定向用人单位支付违约金。违约金的数额不得超过用人单位提供的培训费用。用人单位要求劳动者支付的违约金不得超过服务期尚未履行部分所应分摊的培训费用。\n用人单位与劳动者约定服务期的，不影响按照正常的工资调整机制提高劳动者在服务期期间的劳动报酬。",
+          "scope": "本条所列情形；第二章　劳动合同的订立 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第二十二条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 22,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "国家市场监督管理总局",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/",
+          "legal_database_status": "query_entry_only_not_verified",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "tool": "search_knowledge",
+      "arguments": {
+        "query": "招聘录用前不得收取财物 求职风险提示 招聘求职陷阱"
+      },
+      "result": [
+        {
+          "id": "K001",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "location": "第九条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-06",
+          "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+          "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+          "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+          "tags": [
+            "保证金",
+            "押金",
+            "毕业证",
+            "身份证",
+            "扣押证件",
+            "入职收费",
+            "劳动合同法",
+            "第九条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 9,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "国家市场监督管理总局",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/",
+          "legal_database_status": "query_entry_only_not_verified",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "contract",
+            "identity"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "SUP-L-women-43",
+          "title": "中华人民共和国妇女权益保障法",
+          "kind": "law",
+          "text": "第四十三条 用人单位在招录（聘）过程中，除国家另有规定外，不得实施下列行为：\n（一）限定为男性或者规定男性优先；\n（二）除个人基本信息外，进一步询问或者调查女性求职者的婚育情况；\n（三）将妊娠测试作为入职体检项目；\n（四）将限制结婚、生育或者婚姻、生育状况作为录（聘）用条件；\n（五）其他以性别为由拒绝录（聘）用妇女或者差别化地提高对妇女录（聘）用标准的行为。",
+          "url": "https://gzca.miit.gov.cn/zwgk/zcwj/zcfg/art/2022/art_47b4c78a8f52484587e1b198c52fa909.html",
+          "location": "第四十三条",
+          "published_at": "2022-10-30",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "中华人民共和国妇女权益保障法",
+            "补充法条"
+          ],
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "support_category": "补充法条",
+          "origin_document": "",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "SUP-L-employment-26",
+          "title": "中华人民共和国就业促进法",
+          "kind": "law",
+          "text": "第二十六条 用人单位招用人员、职业中介机构从事职业中介活动，应当向劳动者提供平等的就业机会和公平的就业条件，不得实施就业歧视。",
+          "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+          "location": "第二十六条",
+          "published_at": "2015-04-24",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "中华人民共和国就业促进法",
+            "补充法条"
+          ],
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "support_category": "补充法条",
+          "origin_document": "核对问答时补充的关联条文",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "SUP-W-hiring",
+          "title": "警惕付费保录、直签与国企内推骗局",
+          "kind": "warning",
+          "text": "官方专项整治案例披露：以有关系、送钱就能入职等话术，虚假承诺国企保录、直签并收取高额费用，是需要重点警惕的招聘风险。应核对企业官方网站招聘公告，核实招聘主体、联系方式和收费用途，不轻信付费保证录取。一般内部推荐本身不等于诈骗。本条为官方案例与警示的整理摘要，不是上传资料同名宣传图的逐字原文。",
+          "url": "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543035.shtml",
+          "location": "官方风险提示",
+          "published_at": "2026-05-18",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "警惕付费保录、直签与国企内推骗局",
+            "官方风险提示"
+          ],
+          "content_form": "official_warning_summary",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "support_category": "官方风险提示",
+          "origin_document": "补充法条＋官方文件.docx",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "paid_offer",
+            "contract"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "SUP-W-overseas",
+          "title": "公安机关提示：警惕境外高薪招聘",
+          "kind": "warning",
+          "text": "公安机关提醒：应警惕境外异常高薪、包吃住、报销机票、专人接送等组合诱饵，以及以旅游、商务考察代替合法工作手续的安排。不要仅凭这些宣传相信岗位真实。遇境外失联、被困，应向属地公安机关报警并向我国驻外使领馆求助。合法境外就业不能仅凭地点认定为诈骗。本条仅整理求职安全提示，不将历史侦查进展当作当前情况。",
+          "url": "https://gaj.wuhan.gov.cn/jmzx/jfts/202502/t20250210_2530886.html",
+          "location": "官方风险提示",
+          "published_at": "2025-02-10",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "公安机关提示：警惕境外高薪招聘",
+            "官方风险提示"
+          ],
+          "content_form": "official_warning_summary",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "support_category": "官方风险提示",
+          "origin_document": "补充法条＋官方文件.docx",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "job_truth",
+            "contract",
+            "personal_safety"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "SUP-F12",
+          "title": "面试收培训费是否合法",
+          "kind": "support",
+          "text": "先问谁收、为何收、与录用有何关系。用人单位招用劳动者不得收取财物；真实自愿独立培训服务与附条件入职收费不同，不能仅见培训费三个字就自动套用第九条。\n关联依据编号：K001、K005",
+          "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "location": "高频问答",
+          "published_at": "",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "面试收培训费是否合法",
+            "高频问答"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "K001",
+            "K005"
+          ],
+          "support_category": "高频问答",
+          "origin_document": "大学生就业权益高频问题回答.docx",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "training_loan",
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "SUP-R008",
+          "title": "高薪低门槛",
+          "kind": "support",
+          "text": "异常高薪、零门槛、无需面试等宣传须结合主体和具体岗位核实。\n关联依据编号：K005",
+          "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+          "location": "风险判定辅助",
+          "published_at": "",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "高薪低门槛",
+            "风险判定辅助"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "K005"
+          ],
+          "support_category": "风险判定辅助",
+          "origin_document": "三色判定规则库.docx",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "job_truth",
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "O005-facts",
+          "title": "劳务派遣驾驶员工资被扣作风险押金",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+          "location": "第10项：上海某劳务派遣有限公司违法收取风险押金案件 · 调查事实",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-04",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】上海某派遣公司派遣11名驾驶员到客运公司工作，逐月扣部分工资作为风险押金。",
+          "scope": "派遣单位按月扣工资作为风险押金。",
+          "boundary": "4.9万元为该案退还总额，不是每人金额或通用赔偿标准；原文未披露法院判决。",
+          "tags": [
+            "劳务派遣",
+            "驾驶员",
+            "风险押金",
+            "扣工资",
+            "保证金",
+            "退还押金"
+          ],
+          "case_id": "O005",
+          "chunk_role": "facts",
+          "related_ids": [
+            "O005-facts",
+            "O005-reasoning",
+            "O005-outcome"
+          ],
+          "source_publisher": "人力资源社会保障部",
+          "source_case_position": "第10项：上海某劳务派遣有限公司违法收取风险押金案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "人社部门督促退还押金，原文明确已退还",
+          "stage_scope": "post",
+          "employment_stages": [
+            "employed"
+          ],
+          "risk_topics": [
+            "fees"
+          ],
+          "classification_reason": "主要案情为已用工后的履行、解除或救济争议",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "O005-reasoning",
+          "title": "劳务派遣驾驶员工资被扣作风险押金",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+          "location": "第10项：上海某劳务派遣有限公司违法收取风险押金案件 · 执法认定",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-04",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门认定该收费违反劳动合同法有关不得要求担保或以其他名义收取财物的规定。",
+          "scope": "派遣单位按月扣工资作为风险押金。",
+          "boundary": "4.9万元为该案退还总额，不是每人金额或通用赔偿标准；原文未披露法院判决。",
+          "tags": [
+            "劳务派遣",
+            "驾驶员",
+            "风险押金",
+            "扣工资",
+            "保证金",
+            "退还押金"
+          ],
+          "case_id": "O005",
+          "chunk_role": "reasoning",
+          "related_ids": [
+            "O005-facts",
+            "O005-reasoning",
+            "O005-outcome"
+          ],
+          "source_publisher": "人力资源社会保障部",
+          "source_case_position": "第10项：上海某劳务派遣有限公司违法收取风险押金案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "人社部门督促退还押金，原文明确已退还",
+          "stage_scope": "post",
+          "employment_stages": [
+            "employed"
+          ],
+          "risk_topics": [
+            "fees"
+          ],
+          "classification_reason": "主要案情为已用工后的履行、解除或救济争议",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "O005-outcome",
+          "title": "劳务派遣驾驶员工资被扣作风险押金",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+          "location": "第10项：上海某劳务派遣有限公司违法收取风险押金案件 · 处理结果",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-04",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】经属地人社部门督促，公司已退还风险押金合计4.9万元。不是每人退还4.9万元，也不是法院赔偿判项。",
+          "scope": "派遣单位按月扣工资作为风险押金。",
+          "boundary": "4.9万元为该案退还总额，不是每人金额或通用赔偿标准；原文未披露法院判决。",
+          "tags": [
+            "劳务派遣",
+            "驾驶员",
+            "风险押金",
+            "扣工资",
+            "保证金",
+            "退还押金"
+          ],
+          "case_id": "O005",
+          "chunk_role": "outcome",
+          "related_ids": [
+            "O005-facts",
+            "O005-reasoning",
+            "O005-outcome"
+          ],
+          "source_publisher": "人力资源社会保障部",
+          "source_case_position": "第10项：上海某劳务派遣有限公司违法收取风险押金案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "人社部门督促退还押金，原文明确已退还",
+          "stage_scope": "post",
+          "employment_stages": [
+            "employed"
+          ],
+          "risk_topics": [
+            "fees"
+          ],
+          "classification_reason": "主要案情为已用工后的履行、解除或救济争议",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "K005",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "kind": "warning",
+          "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+          "location": "风险提示第三项",
+          "published_at": "2026-05-18",
+          "verified_at": "2026-10-03",
+          "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+          "scope": "求职被转向收费培训及培训贷款风险。",
+          "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+          "tags": [
+            "招转培",
+            "培训贷",
+            "贷款",
+            "高额培训费",
+            "包就业",
+            "先培训后入职"
+          ],
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "training_loan"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "tool": "report_layout",
+      "stage": "draft",
+      "changes": [
+        "核查事项移出风险：招聘岗位、薪资与主体的真实性尚未核验"
+      ]
+    },
+    {
+      "tool": "quality_review",
+      "round": 1,
+      "mode": "audit",
+      "issues": [],
+      "status": "passed"
+    }
+  ]
+}

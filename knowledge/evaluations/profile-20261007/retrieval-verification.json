@@ -1,0 +1,276 @@
+[
+  {
+    "type": "乱收费",
+    "query": "未入职，招聘公司要收押金保证金建档费，怎么规避入职收费？",
+    "ids": [
+      "K001",
+      "LCL-060",
+      "SUP-L-women-43",
+      "SUP-W-hiring",
+      "K005",
+      "SUP-R001",
+      "SUP-A01",
+      "O009-facts",
+      "O009-reasoning",
+      "O009-outcome"
+    ],
+    "expected_refs": [
+      "K001"
+    ],
+    "coverage_hit": [
+      "K001"
+    ],
+    "passed": true
+  },
+  {
+    "type": "黑中介",
+    "query": "求职中介没有提供人力资源服务许可证，先收钱后推荐岗位，怎样核查？",
+    "ids": [
+      "SUP-L-market",
+      "K001",
+      "LCL-079",
+      "K007",
+      "K005",
+      "SUP-R007",
+      "SUP-A05",
+      "O002-facts",
+      "O002-reasoning",
+      "O002-outcome"
+    ],
+    "expected_refs": [
+      "SUP-L-market",
+      "SUP-R007",
+      "O002-facts"
+    ],
+    "coverage_hit": [
+      "O002-facts",
+      "SUP-L-market",
+      "SUP-R007"
+    ],
+    "passed": true
+  },
+  {
+    "type": "付费内推/保offer",
+    "query": "找实习遇到付费内推保offer，承诺收钱能进国企，能相信吗？",
+    "ids": [
+      "K001",
+      "SUP-L-employment-26",
+      "LCL-028",
+      "SUP-W-hiring",
+      "PRE-W-intern",
+      "SUP-R006",
+      "SUP-R008",
+      "O002-facts",
+      "O002-reasoning",
+      "O002-outcome"
+    ],
+    "expected_refs": [
+      "SUP-W-hiring",
+      "SUP-R006",
+      "O002-facts"
+    ],
+    "coverage_hit": [
+      "O002-facts",
+      "SUP-R006",
+      "SUP-W-hiring"
+    ],
+    "passed": true
+  },
+  {
+    "type": "培训贷/招转培",
+    "query": "面试后要求先缴培训费，贷款分期后才推荐工作，是招转培吗？",
+    "ids": [
+      "LCL-022",
+      "LCL-062",
+      "LL-2018-068",
+      "K005",
+      "K006",
+      "SUP-A01",
+      "SUP-R002",
+      "O003-facts",
+      "O003-reasoning",
+      "O003-outcome"
+    ],
+    "expected_refs": [
+      "K005",
+      "K006",
+      "O003-facts"
+    ],
+    "coverage_hit": [
+      "K005",
+      "K006",
+      "O003-facts"
+    ],
+    "passed": true
+  },
+  {
+    "type": "刷单、点赞、线上兼职",
+    "query": "线上兼职刷单点赞，先返小钱，后面要垫资充值完成任务，怎么办？",
+    "ids": [
+      "CIV-500",
+      "LCL-028",
+      "LCL-094",
+      "PRE-W-task",
+      "K007",
+      "SUP-F04",
+      "SUP-F07",
+      "O001-facts",
+      "O001-reasoning",
+      "O001-outcome"
+    ],
+    "expected_refs": [
+      "PRE-W-task"
+    ],
+    "coverage_hit": [
+      "PRE-W-task"
+    ],
+    "passed": true
+  },
+  {
+    "type": "虚假/注水岗位",
+    "query": "招聘说不做销售月薪8000，HR说实际电话销售底薪2500，未入职怎样核实？",
+    "ids": [
+      "K002",
+      "LCL-028",
+      "SUP-L-implementation",
+      "SUP-W-hiring",
+      "PRE-W-intern",
+      "SUP-R008",
+      "SUP-A01",
+      "O009-facts",
+      "O009-reasoning",
+      "O009-outcome"
+    ],
+    "expected_refs": [
+      "K002",
+      "SUP-C01"
+    ],
+    "coverage_hit": [
+      "K002"
+    ],
+    "passed": true
+  },
+  {
+    "type": "猫腻合同",
+    "query": "拟签合同岗位薪资空白，HR要我先签字后补全，应该注意什么？",
+    "ids": [
+      "K002",
+      "LCL-016",
+      "LCL-011",
+      "SUP-W-overseas",
+      "SUP-W-hiring",
+      "SUP-R036",
+      "SUP-F04",
+      "O003-facts",
+      "O003-reasoning",
+      "O003-outcome"
+    ],
+    "expected_refs": [
+      "LCL-016",
+      "LCL-017",
+      "SUP-R014"
+    ],
+    "coverage_hit": [
+      "LCL-016"
+    ],
+    "passed": true
+  },
+  {
+    "type": "试用期/实习期陷阱",
+    "query": "一年劳动合同拟定三个月试用期且试用工资低，未入职该怎么核查？",
+    "ids": [
+      "LL-2018-021",
+      "LCL-070",
+      "SUP-L-implementation",
+      "PRE-W-identity",
+      "PRE-W-intern",
+      "SUP-F07",
+      "SUP-R022",
+      "C001-facts",
+      "C001-reasoning",
+      "C001-outcome"
+    ],
+    "expected_refs": [
+      "K004",
+      "LCL-020",
+      "SUP-L-implementation",
+      "SUP-R024"
+    ],
+    "coverage_hit": [
+      "SUP-L-implementation"
+    ],
+    "passed": true
+  },
+  {
+    "type": "证件与个人信息泄露",
+    "query": "找工作要求交身份证原件，告诉HR银行卡密码验证码，怎样保护个人信息？",
+    "ids": [
+      "K001",
+      "LCL-017",
+      "K002",
+      "PRE-W-identity",
+      "K007",
+      "SUP-F19",
+      "SUP-R003",
+      "C004-facts",
+      "C004-reasoning",
+      "C004-outcome"
+    ],
+    "expected_refs": [
+      "K001",
+      "PRE-W-identity"
+    ],
+    "coverage_hit": [
+      "K001",
+      "PRE-W-identity"
+    ],
+    "passed": true
+  },
+  {
+    "type": "传销、境外高薪诱骗",
+    "query": "招聘兼职先交入门费，再发展下线拉人头获得提成，怎么规避传销？",
+    "ids": [
+      "LCL-060",
+      "K001",
+      "LCL-057",
+      "PRE-W-pyramid",
+      "PRE-W-task",
+      "SUP-F13",
+      "SUP-R020",
+      "O001-facts",
+      "O001-reasoning",
+      "O001-outcome"
+    ],
+    "expected_refs": [
+      "PRE-W-pyramid",
+      "SUP-W-overseas"
+    ],
+    "coverage_hit": [
+      "PRE-W-pyramid"
+    ],
+    "passed": true
+  },
+  {
+    "type": "实习生套娃/虚假实习",
+    "query": "个人以公司名义招实习，让我免费完成他私人任务，买实习证明，如何核查实习生套娃？",
+    "ids": [
+      "LCL-015",
+      "K004",
+      "SUP-L-dispatch",
+      "PRE-W-intern",
+      "PRE-W-identity",
+      "SUP-F06",
+      "SUP-R008",
+      "O001-facts",
+      "O001-reasoning",
+      "O001-outcome"
+    ],
+    "expected_refs": [
+      "PRE-W-intern"
+    ],
+    "coverage_hit": [
+      "PRE-W-intern"
+    ],
+    "passed": true
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "review_mode": false,
+  "message": {
+    "role": "assistant",
+    "content": "",
+    "tool_calls": [
+      {
+        "index": 0,
+        "id": "call_00_AvLi7UiGOYWp5xCQU4Jl4669",
+        "type": "function",
+        "function": {
+          "name": "search_knowledge",
+          "arguments": "{\"query\": \"竞业限制范围 全国 全行业 与商业秘密无关 效力 经济补偿 违约金 劳动合同法23 24\", \"stage\": \"preemployment\"}"
+        }
+      },
+      {
+        "index": 1,
+        "id": "call_01_bqQHMZTaZe3cSmokToXv4964",
+        "type": "function",
+        "function": {
+          "name": "search_knowledge",
+          "arguments": "{\"query\": \"专项培训服务期 违约金上限 实际培训费用 未履行部分分摊 劳动合同法22\", \"stage\": \"preemployment\"}"
+        }
+      }
+    ]
+  }
+}

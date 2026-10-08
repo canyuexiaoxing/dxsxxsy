@@ -1,0 +1,24 @@
+{
+  "case": {
+    "id": "normal-free-training",
+    "title": "正常免费岗前培训对照",
+    "turns": [
+      "我是大四学生，尚未入职或签约。校招软件测试助理，工资6500元，五天八小时。HR书面确认两周岗前培训由公司承担全部费用，无贷款，无押金，不收任何培训费，不附服务期违约金。我已通过学校就业中心独立核实招聘联系人授权，但没有做全面企业调查。请根据这些已给的信息输出有限的求职前报告，不保证企业安全。"
+    ],
+    "must": [
+      "承认已明确免费、无贷款和押金",
+      "仍说明核实范围有限"
+    ],
+    "must_not": [
+      "仅因存在培训认定招转培",
+      "编造收费、个人账户或贷款风险",
+      "认定岗位已完全安全"
+    ]
+  },
+  "turns": [],
+  "content_verdict": "pending_human_review",
+  "session_id": "Scf0ccdd2a3fb4bee92fac51e9971b8fe",
+  "flow_completed": false,
+  "error": "RuntimeError: HTTP 422: 未成功检索依据：本地Embedding不可用，请先运行start-embedding.ps1；本次不生成结论",
+  "elapsed_seconds": 17.6
+}

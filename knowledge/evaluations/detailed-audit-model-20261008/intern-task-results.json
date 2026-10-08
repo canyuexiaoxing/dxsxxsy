@@ -1,0 +1,3067 @@
+{
+  "case": {
+    "id": "intern-task",
+    "name": "回测一 实习招聘转垫资任务",
+    "materials": [
+      [
+        "招聘启事",
+        "【模拟材料】某科技公司招聘在校生远程电商运营实习生。实习8周，每周至少3天，广告写明内容编辑、数据统计，不销售，不收费，实习津贴2500元/月，完成后可出具实习证明。报名通过自称合作招聘专员的个人聊天账号，尚未独立核验授权。"
+      ],
+      [
+        "HR聊天记录",
+        "【模拟材料】学生：我是大三学生，学校没有安排这次实习，还没签协议或做任何工作。HR：先做三天平台数据任务，通过后才能安排到科技公司。你要用自己的钱给指定账户充值：第一单200元、第二单800元、第三单2000元；每单完成后本金和10%佣金一起退，不算收费，不用担心。学生：能否不垫钱？HR：不垫钱就不能通过考核，且先签任务确认书。学生：可以直接联系科技公司人事吗？HR：合作名额走我们的渠道，暂时不要联系公司，付款后才给公司的联系人。"
+      ],
+      [
+        "未签任务确认书",
+        "【模拟材料】服务方是一家信息咨询公司，学生尚未签署。服务内容为协助平台数据优化任务，不是科技公司的劳动合同或实习协议。学生自行充值任务金额，订单组合未完成前暂不提现；若中断任务，已投入金额暂不退款，完成全部组合后再按平台规则结算。文本没有说明订单组合总金额上限，也未附科技公司招聘授权和实习证明出具主体。"
+      ],
+      [
+        "当前事实",
+        "【模拟材料】学生未充值、未签字、未授权借款、未提供银行卡密码或验证码，没有实际损失；仅把招聘广告、聊天和确认书放在一起核对。未核验公司授权不等于已经确认冒名。"
+      ]
+    ],
+    "start": "我在找大学期间的实习，还没入职或实际做任务。请分别核对这四份模拟材料，明确现在要暂停什么、哪些信息需要核查。已有材料就是全部材料，请直接给有限报告，不要把尚未发生的损失当成事实，也不要直接认定已经诈骗。",
+    "supplement": "补充模拟事实：我通过科技公司独立公布的人事渠道核实，公司书面说明不认识这名招聘专员、未授权信息咨询公司招聘，不存在垫资任务。信息咨询公司发来新版确认书，声称已删除充值条款，改为支付699元资料整理服务费后提供科技公司的实习证明；我没有付款，也没有签新版确认书。请正式修订报告：旧充值要求已撤回，不继续把它算成当前付款要求，但保留核实得到的主体信息，分析新收费和证明承诺。",
+    "followup": "我想给学校负责实习的老师发一段情况说明，列出我应保存的三类材料。只回答建议，不修改报告，不把咨询公司的承诺说成已经能开证明。",
+    "expected": [
+      "先暂停垫资及签字",
+      "招聘内容与任务交易不同",
+      "未核验授权不等于已证明冒名",
+      "补充后确认招聘未授权",
+      "修订不把旧充值列为新要求",
+      "不虚构已付款损失、验证码或贷款"
+    ]
+  },
+  "turns": [
+    {
+      "session_id": "S118591f2dcb24dfb83973d2d55521b65",
+      "action": "report",
+      "employment_stage": "preemployment",
+      "stage_reason": "用户自述“我在找大学期间的实习，还没入职或实际做任务”，材料也载明学生尚未签协议、未充值时点，属求职与签约前阶段。",
+      "message": "",
+      "questions": [],
+      "evidence_ids": [
+        "K001",
+        "K005",
+        "K006",
+        "K007",
+        "SUP-L-market",
+        "SUP-L-employment-26",
+        "LCL-002",
+        "LCL-007",
+        "LCL-025",
+        "O004-facts",
+        "O004-reasoning",
+        "O004-outcome",
+        "O002-facts",
+        "O002-reasoning",
+        "O002-outcome"
+      ],
+      "report": {
+        "summary": "四份材料放在一起看，是一个典型的“招聘入口+个人聊天账号经手+要求先自掏钱充值做任务”的组合。现在最要紧的不是判断它是否已经构成诈骗，而是三件事：不付任何钱、不签任何“任务确认书”、不把身份证件或银行卡信息交出去；同时在未得到科技公司官方渠道直接确认之前，不要把这个“实习机会”当成已落实。材料里的正常承诺（不收费、不销售、2500元/月、给实习证明）只写在广告上，签约与出具主体都没落实，属于应聘前需要核实的宣传性表述。以下按四份材料分别列出风险点与核查事项。",
+        "findings": [
+          {
+            "title": "招聘方要求先自掏钱充值做任务，并与“通过考核”、先签确认书绑定，中断还不退",
+            "level": "high",
+            "quote": "你要用自己的钱给指定账户充值：第一单200元、第二单800元、第三单2000元；每单完成后本金和10%佣金一起退，不算收费，不用担心。",
+            "material_id": "Me21781176779463dbe021fed9d6cf789",
+            "page_number": 1,
+            "explanation": "材料二里HR要求学生用自己的钱给指定账户充值200元、800元、2000元，并称“不算收费”；学生问“能否不垫钱”，HR回答“不垫钱就不能通过考核，且先签任务确认书”。也就是说，是否获得安排岗位的机会被直接绑定在“先出资”上，而广告明确写着“不收费”，两者对同一笔钱的性质给出相反说法。材料三进一步写明：由学生自行充值，订单组合未完成前暂不提现；若中断任务，已投入金额暂不退款，完成全部组合后再按平台规则结算；且全文没有订单组合总金额上限。把这几组事实放在一起看，同一笔垫资交易的风险在于：金额逐单递增（200→800→2000）且上限不明，学生无法预估可能被要求投入多少；退出即“暂不退款”，能否拿回本金取决于对方单方解释的平台规则；同时又被催促先签一份内容尚不明确的“任务确认书”。目前学生未充值、未签字、无损失，因此这里描述的是签约前已经出现的异常要求与缺陷条款，不是既定损失，也不构成诈骗认定。",
+            "evidence_ids": [
+              "K001",
+              "K005",
+              "K006"
+            ],
+            "suggestions": [
+              "立即停止与HR的付款沟通，不向任何账户转入这200元、800元、2000元，也不要先充小额“试水”，更不要为“解锁提现”继续追加投入。",
+              "现在不签任务确认书；若对方愿意提供全文，要求同时书面写明：订单组合总金额上限、预计完成周期、退款触发条件与到账期限、收款方账户主体全称及其与科技公司的关系。写不清就不继续。",
+              "以书面（文字消息即可）向对方追问：这笔钱的收款方全称是谁、与科技公司是什么关系、用途是什么，并保留回复或不回复的记录。",
+              "真实招聘不会把“是否通过考核、是否给岗位”与求职者先付款绑定；只要对方坚持先付款后给岗位，就应终止这条渠道，并保留全部推广话术、聊天与文本截图，便于日后需要向人力资源社会保障部门投诉或报警时说明经过。"
+            ],
+            "category": "risk",
+            "fact_basis": "abnormal_behavior",
+            "legal_claims": [
+              {
+                "statement": "用人单位在招用劳动者环节不得要求劳动者提供担保或以其他名义收取财物，也不得扣押证件。",
+                "basis_ids": [
+                  "K001"
+                ]
+              },
+              {
+                "statement": "官方风险提示明确：求职过程中以各种理由要求先付费、以付费作为安排岗位前提的，应果断拒绝；确有培训需求时应先核实机构资质与收费、贷款内容。",
+                "basis_ids": [
+                  "K005"
+                ]
+              },
+              {
+                "statement": "对求职中被推销的付费项目、分期或借贷安排，应核实放款方资质、费用与违约责任，谨慎在平台注册信息和出资。",
+                "basis_ids": [
+                  "K006"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "交易主体与招聘主体分离：确认书由信息咨询公司出具，不是劳动合同或实习协议",
+            "level": "high",
+            "quote": "服务内容为协助平台数据优化任务，不是科技公司的劳动合同或实习协议。",
+            "material_id": "Mf4d6bda7d3174082982429b6e3c24d88",
+            "page_number": 1,
+            "explanation": "材料三显示，服务方是一家信息咨询公司，服务内容是“协助平台数据优化任务”，明确不是科技公司的劳动合同或实习协议；材料二里HR也只是自称“合作招聘专员”。也就是说，学生付的钱、签的文本、将来可能拿到的岗位与实习证明，分属不同主体，而这些主体之间的关系没有任何文件支持。广告中的“科技公司实习”与实际的付费任务文本之间存在明显落差，属于招聘与岗位真实性的核对重点。",
+            "evidence_ids": [
+              "K005",
+              "SUP-L-market"
+            ],
+            "suggestions": [
+              "要求提供科技公司对这家咨询公司/该HR的书面招聘授权，以及实习证明的出具主体全称。",
+              "在拿到授权前，不要把这份确认书理解为已获得科技公司实习岗位。",
+              "通过科技公司官网公示电话或官方邮箱直接核实是否有该实习项目与该渠道，不用对方转接的联系方式。"
+            ],
+            "category": "risk",
+            "fact_basis": "abnormal_clause",
+            "legal_claims": [
+              {
+                "statement": "经营性人力资源服务机构从事职业中介活动应依法取得人力资源服务许可，从事人力资源供求信息发布、培训等业务的应按规定备案。",
+                "basis_ids": [
+                  "SUP-L-market"
+                ]
+              },
+              {
+                "statement": "官方风险提示中的“招转培”模式，正是以招聘为入口、把求职者引向另一主体收费或付费任务，应结合招聘、培训、付款主体分别核实。",
+                "basis_ids": [
+                  "K005"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "阻止学生联系用工单位人事，并以“付款后才给联系人”为条件",
+            "level": "high",
+            "quote": "HR：合作名额走我们的渠道，暂时不要联系公司，付款后才给公司的联系人。",
+            "material_id": "Me21781176779463dbe021fed9d6cf789",
+            "page_number": 1,
+            "explanation": "材料二里学生提出“可以直接联系科技公司人事吗”，HR回答“合作名额走我们的渠道，暂时不要联系公司，付款后才给公司的联系人”。付款前切断求职者与用工单位的直接核验通道，使招聘授权、岗位内容、津贴与实习证明都由经手人单方转述，学生付钱后才发现承诺不实也难以提前验证。这是材料中已经出现的异常行为，不是对其动机的定性。",
+            "evidence_ids": [
+              "K005",
+              "SUP-L-market"
+            ],
+            "suggestions": [
+              "把“能否通过科技公司官方渠道直接核实岗位”作为继续接触的前置条件，而不是把付款当成交条件。",
+              "若对方持续拒绝提供任何官方核验渠道，应直接终止合作，不再签任何文本。",
+              "保存这段对话原文，作为日后投诉或报案时说明渠道异常的证据。"
+            ],
+            "category": "risk",
+            "fact_basis": "abnormal_behavior",
+            "legal_claims": [
+              {
+                "statement": "人力资源服务活动中，职业中介应依法取得许可；求职者有权核实招聘与收费主体的真实身份，付款前切断官方核实渠道的做法需高度警惕。",
+                "basis_ids": [
+                  "SUP-L-market",
+                  "K005"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "科技公司招聘授权与实习证明出具主体均未提供，需先核验",
+            "level": "uncertain",
+            "quote": "文本没有说明订单组合总金额上限，也未附科技公司招聘授权和实习证明出具主体。",
+            "material_id": "Mf4d6bda7d3174082982429b6e3c24d88",
+            "page_number": 1,
+            "explanation": "材料三载明文本未附科技公司招聘授权，也未说明实习证明的出具主体；材料一也说明报名走的是“自称合作招聘专员的个人聊天账号，尚未独立核验授权”。个人聊天账号不等于个人收款账户，未核验授权也不等于已经确认冒名——目前无法从材料判断该渠道是否真实，也无法判断“实习证明”由谁出具、是否对学生有用。此项为待核查事项，不作违法或诈骗认定。",
+            "evidence_ids": [
+              "SUP-L-market",
+              "SUP-A05"
+            ],
+            "suggestions": [
+              "按企业全称和统一社会信用代码在国家企业信用信息公示系统查询科技公司与咨询公司的登记状态、经营范围与异常记录，并核对联系方式是否为官方公示号码。",
+              "如涉及职业中介，可向当地人力资源社会保障部门查询该机构的人力资源服务许可证；未查询到不等于不存在，查到证照也不代表岗位与承诺已落实。",
+              "在核实清楚之前，不把这段实习经历计入简历或学分材料。"
+            ],
+            "category": "check",
+            "fact_basis": "missing_information",
+            "legal_claims": [
+              {
+                "statement": "经营性人力资源服务机构从事职业中介活动需取得人力资源服务许可，从事信息发布、培训等业务需依法备案。",
+                "basis_ids": [
+                  "SUP-L-market"
+                ]
+              },
+              {
+                "statement": "核实招聘主体时应按全称与统一社会信用代码核对登记、异常与处罚信息；未查询到不等于不存在，正常登记也不构成对其承诺的保证。",
+                "basis_ids": [
+                  "SUP-A05"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "广告中的实习津贴、工作内容与“实习证明”属于宣传表述，需在协议里落实",
+            "level": "uncertain",
+            "quote": "实习8周，每周至少3天，广告写明内容编辑、数据统计，不销售，不收费，实习津贴2500元/月，完成后可出具实习证明。",
+            "material_id": "M2348c44dc45b49a6b1f90e268a9e2e45",
+            "page_number": 1,
+            "explanation": "材料一广告写明实习8周、每周至少3天、内容编辑与数据统计、不销售不收费、津贴2500元/月、完成后出具实习证明。这些目前都只是广告与转述，没有对应的协议文本、发放主体与发放时间安排，而材料三的确认书内容是“平台数据优化任务”，与广告描述并不相同。需要核实的不是这些条件好不好，而是它们由谁承诺、由谁兑现。",
+            "evidence_ids": [
+              "LCL-002",
+              "LCL-007",
+              "SUP-F05",
+              "K005"
+            ],
+            "suggestions": [
+              "要求对方书面确认：谁是用工主体、谁发津贴、发放周期与支付方式、由谁出具实习证明及其形式。",
+              "如果最终以在校生身份独立应聘实习，注意区分学校教学实习与可能构成用工的情形；权利判断取决于实际管理与用工情况，不能仅凭“实习”名称确定。",
+              "在主体、津贴与证明都落到书面文件之前，不要把这份机会当成已确定的实习岗位。"
+            ],
+            "category": "check",
+            "fact_basis": "missing_information",
+            "legal_claims": [
+              {
+                "statement": "用人单位与劳动者建立劳动关系适用劳动合同法；是否成立劳动关系取决于实际用工而非名称，须结合管理、报酬与履行情况核实。",
+                "basis_ids": [
+                  "LCL-002",
+                  "LCL-007"
+                ]
+              },
+              {
+                "statement": "学校安排的教学实习与实际用工需要区分，不能仅因在校生身份或文本名为“实习”就一律套用或不适用劳动法保护，需核实实习目的、管理方式与报酬。",
+                "basis_ids": [
+                  "SUP-F05"
+                ]
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "本次分析仅基于用户提供的四份模拟材料，未独立核验科技公司、信息咨询公司或该个人聊天账号的任何资质、授权与登记信息，也未作诈骗或违法认定。",
+          "材料一中的“不销售、不收费、津贴2500元/月、可出具实习证明”均来自招聘广告或转述，没有协议、发放记录或出具主体确认，无法判断能否兑现。",
+          "任务确认书尚未签署，其完整条款未知；退款条件目前仅见“中断不退、完成后按平台规则结算”，平台规则细则及订单组合总金额上限未提供，因此无法核算学生可能被要求投入的上限。",
+          "学生在所有材料中的时点均为未入职、未做工、未充值、未签字、未授权借款、未提供银行卡密码或验证码，因此没有实际损失事实可供评估，本报告不推算可能损失金额。",
+          "科技公司、咨询公司、个人聊天账号三者之间的关系缺失，未提供任何授权文件，无法判断是否存在冒名、转包或纯中介情形。",
+          "涉及“实习证明”能否用于学分、评优或简历，需按所在学校的实习管理规定单独确认，本材料未涉及。",
+          "材料均为模拟材料，其中的企业名称、岗位与对话为示例，实际核实时请以真实主体信息为准。"
+        ],
+        "change_reason": "合并了原先分散在同一笔垫资交易上的多条风险：充值要求、金额递增无上限、以“不垫钱不通过考核”为付款前置、中断不退与完成后按平台规则结算，现作为同一交易风险的不同事实在同一风险点内说明；同时修正了关于退款条件的表述不一致，改以材料三实际披露的中断不退、完成后结算为准，平台规则细则与总额上限仍列为缺失。",
+        "prevention": {
+          "decision": "pause",
+          "label": "先暂停付款、签字与信息提供，核验后再决定",
+          "steps": [
+            "暂停：不向任何账户转入200元、800元、2000元或任何金额；不签任务确认书；不提供身份证、学生证原件、银行卡密码或验证码；不授权任何借款或分期。",
+            "保留：完整保存招聘广告截图、与“合作招聘专员”的全部聊天记录、任务确认书文本（如已收到）、以及任何账户与公司名称信息，不要删除对话。",
+            "书面追问（向对方）：收款方账户主体全称及与科技公司的关系；科技公司对该渠道的书面招聘授权；订单组合总金额上限、完成周期与退款条件；实习津贴与实习证明的出具主体。",
+            "官方核实（自己做）：按企业全称与统一社会信用代码在国家企业信用信息公示系统查登记与异常记录；向当地人力资源社会保障部门查询该机构的人力资源服务许可或备案；通过科技公司官网公示电话直接确认实习项目与该渠道是否存在。",
+            "继续条件：只有当“科技公司官方渠道确认存在该项目+授权文件可查+没有任何先付款要求+津贴与实习证明主体书面明确”同时满足时，才考虑继续接触；任一条件不满足即终止这条渠道。",
+            "如对方持续施压要求付款或签字，可停止回应，并向人力资源社会保障部门投诉举报，或就疑似骗局向公安机关报案；是否需要投诉或报案由你自行决定。"
+          ],
+          "note": "以上是求职前的预防与核实步骤，不是对该渠道的违法或诈骗认定，也不表示已核验任何公司资质。即便后续核实结果正常，也不构成入职或付款的安全保证。"
+        },
+        "self_checks": [
+          "“合作招聘专员”所属机构究竟是科技公司本身还是第三方，其人力资源服务许可或备案情况如何？",
+          "所谓“平台”的全称、运营主体与订单组合规则原文是什么，总金额上限是多少？",
+          "这份实习是否涉及学校学分或实习要求，学校对实习单位与协议有无必须履行的报备流程？"
+        ],
+        "version": 1,
+        "created_at": "2026-10-07T17:24:11.677217+00:00",
+        "sources": [
+          {
+            "id": "K001",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第九条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+            "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+            "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+            "tags": [
+              "保证金",
+              "押金",
+              "毕业证",
+              "身份证",
+              "扣押证件",
+              "入职收费",
+              "劳动合同法",
+              "第九条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 9,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "contract",
+              "identity"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "SUP-L-market",
+            "title": "人力资源市场暂行条例",
+            "kind": "law",
+            "text": "第十八条　经营性人力资源服务机构从事职业中介活动的，应当依法向人力资源社会保障行政部门申请行政许可，取得人力资源服务许可证。\n　　经营性人力资源服务机构开展人力资源供求信息的收集和发布、就业和创业指导、人力资源管理咨询、人力资源测评、人力资源培训、承接人力资源服务外包等人力资源服务业务的，应当自开展业务之日起15日内向人力资源社会保障行政部门备案。\n　　经营性人力资源服务机构从事劳务派遣业务的，执行国家有关劳务派遣的规定。",
+            "url": "https://www.beijing.gov.cn/zhengce/gwywj/201905/t20190522_61354.html",
+            "location": "第十八条",
+            "published_at": "2018-06-29",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "人力资源市场暂行条例",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "补充法条＋官方文件.docx",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "LCL-002",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第二条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第二条　中华人民共和国境内的企业、个体经济组织、民办非企业单位等组织（以下称用人单位）与劳动者建立劳动关系，订立、履行、变更、解除或者终止劳动合同，适用本法。\n国家机关、事业单位、社会团体和与其建立劳动关系的劳动者，订立、履行、变更、解除或者终止劳动合同，依照本法执行。",
+            "scope": "本条所列情形；第一章 总则 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二条",
+              "第一章 总则"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 2,
+            "chapter": "第一章 总则",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "LCL-007",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第七条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第七条　用人单位自用工之日起即与劳动者建立劳动关系。用人单位应当建立职工名册备查。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第七条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 7,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "LCL-025",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第二十五条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第二十五条　除本法第二十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二十五条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 25,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [
+              "LCL-022"
+            ],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "SUP-L-employment-26",
+            "title": "中华人民共和国就业促进法",
+            "kind": "law",
+            "text": "第二十六条 用人单位招用人员、职业中介机构从事职业中介活动，应当向劳动者提供平等的就业机会和公平的就业条件，不得实施就业歧视。",
+            "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+            "location": "第二十六条",
+            "published_at": "2015-04-24",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "中华人民共和国就业促进法",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "核对问答时补充的关联条文",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ],
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "training_loan"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "K006",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第四项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "签订涉及贷款的协议，务必核实放款方资质、贷款利率、还款方式及违约责任。慎重在平台注册信息及办理贷款，坚持理性借贷，避免过度负债，切勿轻信“免息分期”“低门槛、秒到账”等承诺，避免陷入非法债务纠纷。",
+            "scope": "贷款或分期支付协议的核实事项。",
+            "boundary": "分期是否属于贷款要看协议和主体；不能仅凭分期二字认定违法。",
+            "tags": [
+              "分期",
+              "借款协议",
+              "贷款利率",
+              "还款",
+              "培训贷",
+              "违约责任"
+            ],
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "training_loan",
+              "contract"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ],
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "training_loan"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "O002-facts",
+            "title": "无证中介承诺地铁内推、收定金后推诿退款",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+            "location": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件 · 调查事实",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】徐州某公司未取得人力资源服务许可，承诺推荐入职地铁公司，约定服务费5.8万元、收定金1.8万元；求职者未入职，退款遭推诿。",
+            "scope": "无证中介以入职推荐承诺收取费用及拒绝退款。",
+            "boundary": "行政处罚和线索通报不是刑事诈骗判决；原文未说明退款已到账。",
+            "tags": [
+              "高薪内推",
+              "地铁岗位",
+              "就业服务费",
+              "定金",
+              "退款",
+              "职业中介许可"
+            ],
+            "case_id": "O002",
+            "chunk_role": "facts",
+            "related_ids": [
+              "O002-facts",
+              "O002-reasoning",
+              "O002-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部",
+            "source_case_position": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "已行政处理，其他涉嫌违法线索移交；未披露刑事判决",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "agency",
+              "paid_offer",
+              "job_truth"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "O002-outcome",
+            "title": "无证中介承诺地铁内推、收定金后推诿退款",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+            "location": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件 · 处理结果",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】责令停止职业中介活动并行政处罚，相关线索通报市场监管、公安机关。未披露刑事定罪或退款完成。",
+            "scope": "无证中介以入职推荐承诺收取费用及拒绝退款。",
+            "boundary": "行政处罚和线索通报不是刑事诈骗判决；原文未说明退款已到账。",
+            "tags": [
+              "高薪内推",
+              "地铁岗位",
+              "就业服务费",
+              "定金",
+              "退款",
+              "职业中介许可"
+            ],
+            "case_id": "O002",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "O002-facts",
+              "O002-reasoning",
+              "O002-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部",
+            "source_case_position": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "已行政处理，其他涉嫌违法线索移交；未披露刑事判决",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "agency",
+              "paid_offer",
+              "job_truth"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "O002-reasoning",
+            "title": "无证中介承诺地铁内推、收定金后推诿退款",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+            "location": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件 · 执法认定",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】属地人社部门针对无证职业中介活动作出处理；涉嫌虚假宣传等材料通报相关部门。",
+            "scope": "无证中介以入职推荐承诺收取费用及拒绝退款。",
+            "boundary": "行政处罚和线索通报不是刑事诈骗判决；原文未说明退款已到账。",
+            "tags": [
+              "高薪内推",
+              "地铁岗位",
+              "就业服务费",
+              "定金",
+              "退款",
+              "职业中介许可"
+            ],
+            "case_id": "O002",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "O002-facts",
+              "O002-reasoning",
+              "O002-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部",
+            "source_case_position": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "已行政处理，其他涉嫌违法线索移交；未披露刑事判决",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "agency",
+              "paid_offer",
+              "job_truth"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "O004-facts",
+            "title": "新媒体岗位诱导44天培训、第三方分期支付",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+            "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 调查事实",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】四川某公司招聘新媒体运营人员，以缺乏经验为由要求44天培训，费用19800元，求职者通过第三方平台分期付款。",
+            "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+            "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+            "tags": [
+              "新媒体运营",
+              "44天",
+              "19800",
+              "培训分期",
+              "第三方平台",
+              "培训贷"
+            ],
+            "case_id": "O004",
+            "chunk_role": "facts",
+            "related_ids": [
+              "O004-facts",
+              "O004-reasoning",
+              "O004-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部",
+            "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "training_loan"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "O004-outcome",
+            "title": "新媒体岗位诱导44天培训、第三方分期支付",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+            "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 处理结果",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】属地人社部门立案调查，责令停止培训并退还所收费用；未公开刑事定罪、贷款利率或退款完成情况。",
+            "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+            "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+            "tags": [
+              "新媒体运营",
+              "44天",
+              "19800",
+              "培训分期",
+              "第三方平台",
+              "培训贷"
+            ],
+            "case_id": "O004",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "O004-facts",
+              "O004-reasoning",
+              "O004-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部",
+            "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "training_loan"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "O004-reasoning",
+            "title": "新媒体岗位诱导44天培训、第三方分期支付",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+            "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 执法认定",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门查明公司未取得职业技能培训许可，以招聘名义诱导培训牟取不正当利益。",
+            "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+            "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+            "tags": [
+              "新媒体运营",
+              "44天",
+              "19800",
+              "培训分期",
+              "第三方平台",
+              "培训贷"
+            ],
+            "case_id": "O004",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "O004-facts",
+              "O004-reasoning",
+              "O004-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部",
+            "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "training_loan"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "SUP-A05",
+            "title": "核验公司与中介",
+            "kind": "support",
+            "text": "按全称和统一社会信用代码查登记、异常处罚与执行记录，核对主体及联系方式；经营性职业中介查许可，其他人力资源业务区分备案。未查询到不是不存在，正常登记不是安全保证。\n关联依据编号：SUP-L-market",
+            "url": "https://www.beijing.gov.cn/zhengce/gwywj/201905/t20190522_61354.html",
+            "location": "维权行动卡",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "核验公司与中介",
+              "维权行动卡"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "SUP-L-market"
+            ],
+            "support_category": "维权行动卡",
+            "origin_document": "维权行动指南.docx",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "SUP-F05",
+            "title": "在校实习与试用期区别",
+            "kind": "support",
+            "text": "学校安排的教学实习与实际就业用工需要区分；不能仅以在校身份或合同名叫实习就认定一律不受劳动法保护。应核实实习目的、学校安排、管理、报酬和实际用工情况；劳动关系判断可能需要补充更具体的依据。\n关联依据编号：LCL-002、LCL-007、K004",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "在校实习与试用期区别",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "LCL-002",
+              "LCL-007",
+              "K004"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract",
+              "trial_intern"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07"
+          }
+        ],
+        "review_status": {
+          "status": "passed",
+          "audit_count": 2,
+          "revision_count": 1,
+          "last_issues": []
+        },
+        "employment_stage": "preemployment",
+        "stage_reason": "用户自述“我在找大学期间的实习，还没入职或实际做任务”，材料也载明学生尚未签协议、未充值时点，属求职与签约前阶段。",
+        "review_notes": []
+      },
+      "sources": [
+        {
+          "id": "K001",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "location": "第九条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-06",
+          "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+          "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+          "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+          "tags": [
+            "保证金",
+            "押金",
+            "毕业证",
+            "身份证",
+            "扣押证件",
+            "入职收费",
+            "劳动合同法",
+            "第九条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 9,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "国家市场监督管理总局",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/",
+          "legal_database_status": "query_entry_only_not_verified",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "contract",
+            "identity"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "K005",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "kind": "warning",
+          "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+          "location": "风险提示第三项",
+          "published_at": "2026-05-18",
+          "verified_at": "2026-10-03",
+          "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+          "scope": "求职被转向收费培训及培训贷款风险。",
+          "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+          "tags": [
+            "招转培",
+            "培训贷",
+            "贷款",
+            "高额培训费",
+            "包就业",
+            "先培训后入职"
+          ],
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "training_loan"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "K006",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "kind": "warning",
+          "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+          "location": "风险提示第四项",
+          "published_at": "2026-05-18",
+          "verified_at": "2026-10-03",
+          "text": "签订涉及贷款的协议，务必核实放款方资质、贷款利率、还款方式及违约责任。慎重在平台注册信息及办理贷款，坚持理性借贷，避免过度负债，切勿轻信“免息分期”“低门槛、秒到账”等承诺，避免陷入非法债务纠纷。",
+          "scope": "贷款或分期支付协议的核实事项。",
+          "boundary": "分期是否属于贷款要看协议和主体；不能仅凭分期二字认定违法。",
+          "tags": [
+            "分期",
+            "借款协议",
+            "贷款利率",
+            "还款",
+            "培训贷",
+            "违约责任"
+          ],
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "training_loan",
+            "contract"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "K007",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "kind": "guide",
+          "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+          "location": "风险提示第五项",
+          "published_at": "2026-05-18",
+          "verified_at": "2026-10-03",
+          "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+          "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+          "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+          "tags": [
+            "保留证据",
+            "聊天记录",
+            "转账凭证",
+            "投诉",
+            "报案",
+            "建议"
+          ],
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "training_loan"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "LCL-002",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "location": "第二条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-06",
+          "text": "第二条　中华人民共和国境内的企业、个体经济组织、民办非企业单位等组织（以下称用人单位）与劳动者建立劳动关系，订立、履行、变更、解除或者终止劳动合同，适用本法。\n国家机关、事业单位、社会团体和与其建立劳动关系的劳动者，订立、履行、变更、解除或者终止劳动合同，依照本法执行。",
+          "scope": "本条所列情形；第一章 总则 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第二条",
+            "第一章 总则"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 2,
+          "chapter": "第一章 总则",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "国家市场监督管理总局",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/",
+          "legal_database_status": "query_entry_only_not_verified",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "LCL-007",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "location": "第七条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-06",
+          "text": "第七条　用人单位自用工之日起即与劳动者建立劳动关系。用人单位应当建立职工名册备查。",
+          "scope": "本条所列情形；第二章　劳动合同的订立 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第七条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 7,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "国家市场监督管理总局",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/",
+          "legal_database_status": "query_entry_only_not_verified",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "LCL-025",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "location": "第二十五条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-06",
+          "text": "第二十五条　除本法第二十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+          "scope": "本条所列情形；第二章　劳动合同的订立 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第二十五条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 25,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [
+            "LCL-022"
+          ],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "国家市场监督管理总局",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/",
+          "legal_database_status": "query_entry_only_not_verified",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "O002-facts",
+          "title": "无证中介承诺地铁内推、收定金后推诿退款",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+          "location": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件 · 调查事实",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-04",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】徐州某公司未取得人力资源服务许可，承诺推荐入职地铁公司，约定服务费5.8万元、收定金1.8万元；求职者未入职，退款遭推诿。",
+          "scope": "无证中介以入职推荐承诺收取费用及拒绝退款。",
+          "boundary": "行政处罚和线索通报不是刑事诈骗判决；原文未说明退款已到账。",
+          "tags": [
+            "高薪内推",
+            "地铁岗位",
+            "就业服务费",
+            "定金",
+            "退款",
+            "职业中介许可"
+          ],
+          "case_id": "O002",
+          "chunk_role": "facts",
+          "related_ids": [
+            "O002-facts",
+            "O002-reasoning",
+            "O002-outcome"
+          ],
+          "source_publisher": "人力资源社会保障部",
+          "source_case_position": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "已行政处理，其他涉嫌违法线索移交；未披露刑事判决",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "agency",
+            "paid_offer",
+            "job_truth"
+          ],
+          "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "O002-outcome",
+          "title": "无证中介承诺地铁内推、收定金后推诿退款",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+          "location": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件 · 处理结果",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-04",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】责令停止职业中介活动并行政处罚，相关线索通报市场监管、公安机关。未披露刑事定罪或退款完成。",
+          "scope": "无证中介以入职推荐承诺收取费用及拒绝退款。",
+          "boundary": "行政处罚和线索通报不是刑事诈骗判决；原文未说明退款已到账。",
+          "tags": [
+            "高薪内推",
+            "地铁岗位",
+            "就业服务费",
+            "定金",
+            "退款",
+            "职业中介许可"
+          ],
+          "case_id": "O002",
+          "chunk_role": "outcome",
+          "related_ids": [
+            "O002-facts",
+            "O002-reasoning",
+            "O002-outcome"
+          ],
+          "source_publisher": "人力资源社会保障部",
+          "source_case_position": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "已行政处理，其他涉嫌违法线索移交；未披露刑事判决",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "agency",
+            "paid_offer",
+            "job_truth"
+          ],
+          "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "O002-reasoning",
+          "title": "无证中介承诺地铁内推、收定金后推诿退款",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+          "location": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件 · 执法认定",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-04",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】属地人社部门针对无证职业中介活动作出处理；涉嫌虚假宣传等材料通报相关部门。",
+          "scope": "无证中介以入职推荐承诺收取费用及拒绝退款。",
+          "boundary": "行政处罚和线索通报不是刑事诈骗判决；原文未说明退款已到账。",
+          "tags": [
+            "高薪内推",
+            "地铁岗位",
+            "就业服务费",
+            "定金",
+            "退款",
+            "职业中介许可"
+          ],
+          "case_id": "O002",
+          "chunk_role": "reasoning",
+          "related_ids": [
+            "O002-facts",
+            "O002-reasoning",
+            "O002-outcome"
+          ],
+          "source_publisher": "人力资源社会保障部",
+          "source_case_position": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "已行政处理，其他涉嫌违法线索移交；未披露刑事判决",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "agency",
+            "paid_offer",
+            "job_truth"
+          ],
+          "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "O004-facts",
+          "title": "新媒体岗位诱导44天培训、第三方分期支付",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+          "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 调查事实",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-04",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】四川某公司招聘新媒体运营人员，以缺乏经验为由要求44天培训，费用19800元，求职者通过第三方平台分期付款。",
+          "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+          "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+          "tags": [
+            "新媒体运营",
+            "44天",
+            "19800",
+            "培训分期",
+            "第三方平台",
+            "培训贷"
+          ],
+          "case_id": "O004",
+          "chunk_role": "facts",
+          "related_ids": [
+            "O004-facts",
+            "O004-reasoning",
+            "O004-outcome"
+          ],
+          "source_publisher": "人力资源社会保障部",
+          "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "training_loan"
+          ],
+          "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "O004-outcome",
+          "title": "新媒体岗位诱导44天培训、第三方分期支付",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+          "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 处理结果",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-04",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】属地人社部门立案调查，责令停止培训并退还所收费用；未公开刑事定罪、贷款利率或退款完成情况。",
+          "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+          "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+          "tags": [
+            "新媒体运营",
+            "44天",
+            "19800",
+            "培训分期",
+            "第三方平台",
+            "培训贷"
+          ],
+          "case_id": "O004",
+          "chunk_role": "outcome",
+          "related_ids": [
+            "O004-facts",
+            "O004-reasoning",
+            "O004-outcome"
+          ],
+          "source_publisher": "人力资源社会保障部",
+          "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "training_loan"
+          ],
+          "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "O004-reasoning",
+          "title": "新媒体岗位诱导44天培训、第三方分期支付",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+          "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 执法认定",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-04",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门查明公司未取得职业技能培训许可，以招聘名义诱导培训牟取不正当利益。",
+          "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+          "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+          "tags": [
+            "新媒体运营",
+            "44天",
+            "19800",
+            "培训分期",
+            "第三方平台",
+            "培训贷"
+          ],
+          "case_id": "O004",
+          "chunk_role": "reasoning",
+          "related_ids": [
+            "O004-facts",
+            "O004-reasoning",
+            "O004-outcome"
+          ],
+          "source_publisher": "人力资源社会保障部",
+          "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "training_loan"
+          ],
+          "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "SUP-A05",
+          "title": "核验公司与中介",
+          "kind": "support",
+          "text": "按全称和统一社会信用代码查登记、异常处罚与执行记录，核对主体及联系方式；经营性职业中介查许可，其他人力资源业务区分备案。未查询到不是不存在，正常登记不是安全保证。\n关联依据编号：SUP-L-market",
+          "url": "https://www.beijing.gov.cn/zhengce/gwywj/201905/t20190522_61354.html",
+          "location": "维权行动卡",
+          "published_at": "",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "核验公司与中介",
+            "维权行动卡"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "SUP-L-market"
+          ],
+          "support_category": "维权行动卡",
+          "origin_document": "维权行动指南.docx",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "SUP-F05",
+          "title": "在校实习与试用期区别",
+          "kind": "support",
+          "text": "学校安排的教学实习与实际就业用工需要区分；不能仅以在校身份或合同名叫实习就认定一律不受劳动法保护。应核实实习目的、学校安排、管理、报酬和实际用工情况；劳动关系判断可能需要补充更具体的依据。\n关联依据编号：LCL-002、LCL-007、K004",
+          "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "location": "高频问答",
+          "published_at": "",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "在校实习与试用期区别",
+            "高频问答"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "LCL-002",
+            "LCL-007",
+            "K004"
+          ],
+          "support_category": "高频问答",
+          "origin_document": "大学生就业权益高频问题回答.docx",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract",
+            "trial_intern"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "SUP-L-employment-26",
+          "title": "中华人民共和国就业促进法",
+          "kind": "law",
+          "text": "第二十六条 用人单位招用人员、职业中介机构从事职业中介活动，应当向劳动者提供平等的就业机会和公平的就业条件，不得实施就业歧视。",
+          "url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+          "location": "第二十六条",
+          "published_at": "2015-04-24",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "中华人民共和国就业促进法",
+            "补充法条"
+          ],
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "support_category": "补充法条",
+          "origin_document": "核对问答时补充的关联条文",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "SUP-L-market",
+          "title": "人力资源市场暂行条例",
+          "kind": "law",
+          "text": "第十八条　经营性人力资源服务机构从事职业中介活动的，应当依法向人力资源社会保障行政部门申请行政许可，取得人力资源服务许可证。\n　　经营性人力资源服务机构开展人力资源供求信息的收集和发布、就业和创业指导、人力资源管理咨询、人力资源测评、人力资源培训、承接人力资源服务外包等人力资源服务业务的，应当自开展业务之日起15日内向人力资源社会保障行政部门备案。\n　　经营性人力资源服务机构从事劳务派遣业务的，执行国家有关劳务派遣的规定。",
+          "url": "https://www.beijing.gov.cn/zhengce/gwywj/201905/t20190522_61354.html",
+          "location": "第十八条",
+          "published_at": "2018-06-29",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "人力资源市场暂行条例",
+            "补充法条"
+          ],
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "support_category": "补充法条",
+          "origin_document": "补充法条＋官方文件.docx",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "session_id": "S118591f2dcb24dfb83973d2d55521b65",
+      "action": "revise",
+      "employment_stage": "preemployment",
+      "stage_reason": "用户补充说明仍处于求职签约前（未入职、未做任务、未付新费用、未签新版确认书），并已从科技公司官方人事渠道取得书面答复核实主体。",
+      "message": "",
+      "questions": [],
+      "evidence_ids": [
+        "K001",
+        "K005",
+        "K007",
+        "PRE-W-intern",
+        "SUP-L-market",
+        "SUP-A05",
+        "SUP-F12",
+        "O003-facts",
+        "O003-reasoning",
+        "O003-outcome",
+        "O002-facts",
+        "O002-reasoning",
+        "O002-outcome"
+      ],
+      "report": {
+        "summary": "科技公司官方渠道已书面确认：不认识这名招聘专员、未授权信息咨询公司招聘、不存在垫资任务。现在真正的焦点是新版确认书——它把入口从“充值垫资”换成了“先付699元资料整理服务费、再提供科技公司的实习证明”。出具证明的主体既已否认授权，咨询公司仍以此收费，这个“先付费换证明”的安排目前没有任何来自出具方的支撑，是最需要盯住的一点；与此同时，新版确认书披露的信息极不完整，付费前无从判断能否兑现。你没有付款也没有签字，因此这是签约前的风险判断，不是损失认定，也不构成诈骗认定。",
+        "findings": [
+          {
+            "title": "已获公司官方否认授权后，咨询公司仍以699元服务费换取“科技公司实习证明”，且关键条款未披露",
+            "level": "high",
+            "quote": "信息咨询公司发来新版确认书，声称已删除充值条款，改为支付699元资料整理服务费后提供科技公司的实习证明；我没有付款，也没有签新版确认书。",
+            "material_id": "user",
+            "page_number": 0,
+            "explanation": "材料里的关键事实来自两处原文：科技公司通过其独立公布的人事渠道书面表示不认识该招聘专员、未授权信息咨询公司招聘、不存在垫资任务；同时信息咨询公司发来新版确认书，称已删除充值条款，改为支付699元“资料整理服务费”后提供科技公司的实习证明。把这两件事合在一起看，这是同一笔费用的两个侧面：出具实习证明的主体（科技公司）已否认与该渠道有授权关系，而收费方仍以“帮你在该公司留下实习证明”为对价收699元；同时新版确认书目前只披露了“删充值条款、付699元、给证明”三点，仍缺以下直接影响判断的内容——699元由谁收取、收款账户与合同相对方是否同一；证明由哪家公司、哪个部门出具、以什么形式、盖章单位全称是什么、能否被学校或用人单位核验；若无法出具是否退款、按什么条件和时限退；所谓“资料整理”的交付成果与验收标准是什么。因此付费买到的东西可能既不由该公司出具，也无法核验，且能否拿到不由你控制。旧版充值要求虽已撤回，“先付钱再换机会/凭证”的结构并未改变，只是从逐单递增改成一次性699元。你目前未付款、未签字，本项是签约前风险，不是已发生的损失，也不是诈骗认定。",
+            "evidence_ids": [
+              "K001",
+              "K005",
+              "PRE-W-intern",
+              "SUP-F12",
+              "SUP-L-market",
+              "SUP-A05"
+            ],
+            "suggestions": [
+              "继续暂停：不支付这699元，也不签新版确认书；不要为“保留名额”“限时优惠”先付小额。",
+              "要求对方提供新版确认书全文，并在付款或签字前逐条落实：699元的收费主体与合同相对方全称、收款账户名称是否与合同主体一致、款项性质与发票或收据；“科技公司实习证明”的出具单位与盖章全称、取得条件与形式；无法出具时的退款条件与时限；所谓“资料整理”的交付成果与验收标准。其中任何一项写不清就不继续。",
+              "把“科技公司官方书面否认授权”这一事实以文字方式转告咨询公司，请其书面说明为何仍能提供该公司的实习证明，保留其答复或沉默记录。",
+              "通过国家企业信用信息公示系统按全称与统一社会信用代码查询信息咨询公司的登记状态、经营范围与异常记录；核实其是否取得人力资源服务许可或完成备案，未查到不等于一定不存在，查到了也不代表承诺能兑现。",
+              "向学校就业或教务部门核实：第三方收费“代出”的实习证明能否用于学分、评优或背景核验；多数情况下学校只认可由实际实习单位出具并可核验的证明。",
+              "如对方持续催付或以“不付就取消资格”施压，可停止回应，并保留全部聊天、确认书文本与广告截图，必要时向人力资源社会保障部门投诉举报或向公安机关反映；是否投诉报案由你自行决定。"
+            ],
+            "category": "risk",
+            "fact_basis": "abnormal_behavior",
+            "legal_claims": [
+              {
+                "statement": "用人单位招用劳动者，不得要求劳动者提供担保或者以其他名义向劳动者收取财物；该条用于招用环节的收费判断，是否适用须核实收费主体及其是否属于招用方。",
+                "basis_ids": [
+                  "K001"
+                ]
+              },
+              {
+                "statement": "官方风险提示指出：存在冒用单位名义招实习生、收取实习费或分派私人任务的情形，求职者应通过单位官网和官方电话核实招聘信息及授权，并选择学校和官方就业渠道。",
+                "basis_ids": [
+                  "PRE-W-intern"
+                ]
+              },
+              {
+                "statement": "官方风险提示明确，对求职过程中以各种理由要求先付费才能安排岗位的情况应果断拒绝；本材料中收费换取的是实习证明而非岗位，须结合收费主体和用途另行核实，不能直接套用。",
+                "basis_ids": [
+                  "K005"
+                ]
+              },
+              {
+                "statement": "辅助资料提示：判断收费是否涉违法，须先问清谁收、为何收、与交付有何关系；真实自愿的独立服务与附条件收费不同，不能仅凭“服务费”字样就自动套用禁止收费规则。",
+                "basis_ids": [
+                  "SUP-F12"
+                ]
+              },
+              {
+                "statement": "经营性人力资源服务机构从事职业中介活动需取得人力资源服务许可，从事相关人力资源服务业务需备案；核实主体时应核对登记、许可与收费账户信息。",
+                "basis_ids": [
+                  "SUP-L-market",
+                  "SUP-A05"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "广告中的实习津贴与工作内容缺乏支撑，与“先付费”方案并存时更需甄别",
+            "level": "uncertain",
+            "quote": "实习8周，每周至少3天，广告写明内容编辑、数据统计，不销售，不收费，实习津贴2500元/月，完成后可出具实习证明。",
+            "material_id": "M2348c44dc45b49a6b1f90e268a9e2e45",
+            "page_number": 1,
+            "explanation": "原广告写明实习8周、每周至少3天、内容编辑与数据统计、不销售不收费、津贴2500元/月、完成后出具实习证明，但报名渠道是自称合作招聘专员的个人聊天账号（材料已载明尚未独立核验授权）。现在公司官方已书面否认与该渠道存在授权关系，这使广告中的岗位描述与津贴承诺更缺乏可兑现的主体；同时新方案仍要求先付费，与广告中“不收费”的表述相互矛盾。这不代表广告一定虚假，但从现有材料无法判断一旦付费后是否真会安排实习、由谁发津贴。你尚未入职、未做工，因此不存在欠薪或用工争议，本项只作为签约前需要落实的信息缺口。",
+            "evidence_ids": [
+              "PRE-W-intern",
+              "SUP-F05",
+              "LCL-002",
+              "LCL-007"
+            ],
+            "suggestions": [
+              "要求对方就“是否有真实岗位、由哪家公司提供、津贴由谁发放、每周工作如何安排”给出书面说明，并说明其与已否认授权的公司之间的关系。",
+              "仅在科技公司官方渠道重新确认存在该实习项目、且没有任何先付费要求时，才考虑继续；目前该前提并未满足。",
+              "在核实清楚前，不要把这8周实习、2500元津贴或“完成后出具实习证明”写入简历或用于学分申请。"
+            ],
+            "category": "check",
+            "fact_basis": "missing_information",
+            "legal_claims": [
+              {
+                "statement": "是否成立劳动关系取决于实际用工，而非名称；在校生参加实习的情形需结合管理、报酬与实际履行判断，不能仅凭“实习”名称或在校身份下结论。",
+                "basis_ids": [
+                  "LCL-002",
+                  "LCL-007",
+                  "SUP-F05"
+                ]
+              },
+              {
+                "statement": "官方风险提示指出，存在冒用单位名义招募实习生并收取实习费用的情况，应通过单位官网与官方电话核实招聘信息及授权。",
+                "basis_ids": [
+                  "PRE-W-intern"
+                ]
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "你已通过科技公司独立公布的人事渠道取得书面答复（不认识该招聘专员、未授权信息咨询公司招聘、不存在垫资任务）。这是你转述的核实结果，本次分析未独立向该公司复核，也未就此作出诈骗或违法认定。",
+          "新版确认书只被转述了两点信息（删除充值条款、699元服务费换实习证明），全文未提供：合同相对方与收款方是否同一、费用性质、证明出具主体与形式、退款条件、成果验收标准，均列为首项风险点的待核查内容。",
+          "旧版充值要求（200/800/2000元及10%佣金、不垫钱不通过考核）已由对方撤回，因此不作为当前付款要求分析；若对方以后重新提出，应按付款前置风险重新评估。",
+          "旧版材料中“阻止联系用工单位人事、付款后才给联系人”的做法，因公司官方渠道已可直接核实，其事实基础已变化，故本次不再单独列为当前风险。",
+          "你目前未付款、未签字、未做任务、未授权借款、未提供银行卡密码或验证码，因此没有实际损失事实，本报告不推算可能损失金额，也不保证任何退款或赔偿结果。",
+          "信息咨询公司与科技公司之间是否还存在其他关系、该招聘专员是否有其他渠道授权，材料未涉及，无法判断，也不因公司否认授权就认定该专员或公司已构成违法。",
+          "699元与实际市场价格、服务内容是否对价，取决于其交付什么成果；因成果与验收标准未披露，本报告不做价格是否合理的判断。",
+          "材料为模拟材料，企业名称与对话为示例，实际核实时请以真实主体信息为准。"
+        ],
+        "change_reason": "本次按你补充的事实作了四处调整：一是删除了原先以“自掏充值200/800/2000元”为核心的当前付款风险，因为对方已撤回该要求；二是把科技公司官方否认授权、不存在垫资任务的核实结果写入事实基础，原先“授权不明、待核验”的表述相应调整为“公司已否认相关渠道”，同时明确这仍不等于对违法或诈骗的认定；三是新增以699元资料整理服务费换取科技公司实习证明的收费风险，并把服务费性质、证明出具主体、退款与交付条件等信息缺口并入同一笔交易一并说明，避免对同一笔699元重复计数；四是保留并更新广告中津贴与实习证明承诺缺乏支撑的核查事项，明确在公司已否认授权的背景下更需落实主体。原先“阻止联系用工单位人事并以此作为付款条件”的表述也一并删除，因为公司官方渠道已可独立核实，该项事实基础已改变。",
+        "prevention": {
+          "decision": "pause",
+          "label": "继续暂停付款与签字，在主体和授权已明确的情况下重新判断",
+          "steps": [
+            "暂停：不支付699元或任何名目的服务费、资料费、保证金；不签新版确认书；不提供身份证原件、学生证原件、银行卡密码或验证码；不授权任何借款或分期。",
+            "保留：完整保存招聘广告截图、与该招聘专员的全部聊天、旧版与新版确认书文本，以及科技公司官方渠道书面答复的截图或邮件，不要删除。",
+            "书面追问（向咨询公司）：699元收费主体与合同相对方全称、款项性质、发票或收据；“科技公司实习证明”的出具单位与盖章全称、取得条件；无法提供时的退款条件与时限；“资料整理”的交付成果与验收标准。",
+            "官方核实（自己做）：按全称与统一社会信用代码在国家企业信用信息公示系统查该咨询公司登记与异常记录，核对收款账户名称是否与合同主体一致；向当地人力资源社会保障部门查询其是否取得人力资源服务许可或完成备案；如仍需该实习项目，只用科技公司官网公示电话直接确认是否有此项目。",
+            "继续条件：同时满足“科技公司官方确认存在该项目+无任何先付费要求+实习或证明材料由实际单位直接出具+合同相对方与收款方一致”时，才考虑继续；任一条件不满足即终止这条渠道。",
+            "如对方持续以电话、消息施压要求付款或签字，可停止回应；是否向人力资源社会保障部门投诉举报或向公安机关反映由你自行决定，两个渠道的适用情形不同。"
+          ],
+          "note": "以上是求职签约前的核实与预防步骤，不构成对该渠道的违法或诈骗认定，也不表示已核验任何公司或证明。即便后续核实结果正常，也不能作为付款或入职的安全保证。"
+        },
+        "self_checks": [
+          "新版确认书全文里，合同相对方与699元的实际收款方是否为同一主体？",
+          "如果对方仍能提供科技公司的实习证明，它凭什么出具——是公司授权、盖章单位，还是自行制作？",
+          "所在学校对实习证明的出具单位与形式有无硬性要求，这份收费换来的证明能否被学校或用人单位认可？"
+        ],
+        "version": 2,
+        "created_at": "2026-10-07T17:27:10.575171+00:00",
+        "sources": [
+          {
+            "id": "K001",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第九条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+            "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+            "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+            "tags": [
+              "保证金",
+              "押金",
+              "毕业证",
+              "身份证",
+              "扣押证件",
+              "入职收费",
+              "劳动合同法",
+              "第九条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 9,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "contract",
+              "identity"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "SUP-L-market",
+            "title": "人力资源市场暂行条例",
+            "kind": "law",
+            "text": "第十八条　经营性人力资源服务机构从事职业中介活动的，应当依法向人力资源社会保障行政部门申请行政许可，取得人力资源服务许可证。\n　　经营性人力资源服务机构开展人力资源供求信息的收集和发布、就业和创业指导、人力资源管理咨询、人力资源测评、人力资源培训、承接人力资源服务外包等人力资源服务业务的，应当自开展业务之日起15日内向人力资源社会保障行政部门备案。\n　　经营性人力资源服务机构从事劳务派遣业务的，执行国家有关劳务派遣的规定。",
+            "url": "https://www.beijing.gov.cn/zhengce/gwywj/201905/t20190522_61354.html",
+            "location": "第十八条",
+            "published_at": "2018-06-29",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "人力资源市场暂行条例",
+              "补充法条"
+            ],
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "support_category": "补充法条",
+            "origin_document": "补充法条＋官方文件.docx",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "LCL-002",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第二条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第二条　中华人民共和国境内的企业、个体经济组织、民办非企业单位等组织（以下称用人单位）与劳动者建立劳动关系，订立、履行、变更、解除或者终止劳动合同，适用本法。\n国家机关、事业单位、社会团体和与其建立劳动关系的劳动者，订立、履行、变更、解除或者终止劳动合同，依照本法执行。",
+            "scope": "本条所列情形；第一章 总则 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二条",
+              "第一章 总则"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 2,
+            "chapter": "第一章 总则",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "LCL-007",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "location": "第七条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-06",
+            "text": "第七条　用人单位自用工之日起即与劳动者建立劳动关系。用人单位应当建立职工名册备查。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第七条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 7,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "国家市场监督管理总局",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/",
+            "legal_database_status": "query_entry_only_not_verified",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ],
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "training_loan"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "PRE-W-intern",
+            "title": "警惕实习生套娃、有偿实习与招聘授权不明",
+            "kind": "warning",
+            "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/2024/2024_zt01/mtjj/202405/t20240513_1130292.html",
+            "location": "实习生套娃与四招求职秘籍",
+            "published_at": "2024-04-04",
+            "verified_at": "2026-10-07",
+            "text": "有人冒用单位名义招实习生，分派私人任务获取免费劳动或收取实习费用。通过单位官网和官方电话核实招聘信息及授权，选择学校和官方就业渠道。",
+            "scope": "大学生找实习、找工作及付款签约前的风险识别",
+            "boundary": "官方风险提示的归纳，不是法条原文、企业核验结果或个案违法认定。须结合行为、主体和事实；线上办公或信息缺失本身不等于诈骗。",
+            "tags": [
+              "实习生套娃",
+              "虚假实习",
+              "有偿实习",
+              "实习证明",
+              "招聘授权",
+              "免费劳动"
+            ],
+            "content_form": "official_warning_paraphrase",
+            "verification_status": "official_source_checked",
+            "source_publisher": "教育部网站转载央视新闻",
+            "related_article_ids": [],
+            "origin_document": "常见的坑.xlsx（用于选题分类，非规范来源）",
+            "source_access_note": "全文由搜索索引返回，直接打开超时；可通过来源网址复核",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "contract",
+              "trial_intern",
+              "fake_intern"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-18",
+            "verified_at": "2026-10-03",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ],
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "training_loan"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "O002-facts",
+            "title": "无证中介承诺地铁内推、收定金后推诿退款",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+            "location": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件 · 调查事实",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】徐州某公司未取得人力资源服务许可，承诺推荐入职地铁公司，约定服务费5.8万元、收定金1.8万元；求职者未入职，退款遭推诿。",
+            "scope": "无证中介以入职推荐承诺收取费用及拒绝退款。",
+            "boundary": "行政处罚和线索通报不是刑事诈骗判决；原文未说明退款已到账。",
+            "tags": [
+              "高薪内推",
+              "地铁岗位",
+              "就业服务费",
+              "定金",
+              "退款",
+              "职业中介许可"
+            ],
+            "case_id": "O002",
+            "chunk_role": "facts",
+            "related_ids": [
+              "O002-facts",
+              "O002-reasoning",
+              "O002-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部",
+            "source_case_position": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "已行政处理，其他涉嫌违法线索移交；未披露刑事判决",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "agency",
+              "paid_offer",
+              "job_truth"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "O002-outcome",
+            "title": "无证中介承诺地铁内推、收定金后推诿退款",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+            "location": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件 · 处理结果",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】责令停止职业中介活动并行政处罚，相关线索通报市场监管、公安机关。未披露刑事定罪或退款完成。",
+            "scope": "无证中介以入职推荐承诺收取费用及拒绝退款。",
+            "boundary": "行政处罚和线索通报不是刑事诈骗判决；原文未说明退款已到账。",
+            "tags": [
+              "高薪内推",
+              "地铁岗位",
+              "就业服务费",
+              "定金",
+              "退款",
+              "职业中介许可"
+            ],
+            "case_id": "O002",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "O002-facts",
+              "O002-reasoning",
+              "O002-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部",
+            "source_case_position": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "已行政处理，其他涉嫌违法线索移交；未披露刑事判决",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "agency",
+              "paid_offer",
+              "job_truth"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "O002-reasoning",
+            "title": "无证中介承诺地铁内推、收定金后推诿退款",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+            "location": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件 · 执法认定",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】属地人社部门针对无证职业中介活动作出处理；涉嫌虚假宣传等材料通报相关部门。",
+            "scope": "无证中介以入职推荐承诺收取费用及拒绝退款。",
+            "boundary": "行政处罚和线索通报不是刑事诈骗判决；原文未说明退款已到账。",
+            "tags": [
+              "高薪内推",
+              "地铁岗位",
+              "就业服务费",
+              "定金",
+              "退款",
+              "职业中介许可"
+            ],
+            "case_id": "O002",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "O002-facts",
+              "O002-reasoning",
+              "O002-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部",
+            "source_case_position": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "已行政处理，其他涉嫌违法线索移交；未披露刑事判决",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "agency",
+              "paid_offer",
+              "job_truth"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "O003-facts",
+            "title": "虚构化妆师助理岗位、招聘转为收费培训",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+            "location": "第7项：山东青岛两公司“招转培”案件 · 调查事实",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】青岛某文化服务公司没有化妆师岗位，却招聘化妆师助理；面试时以缺乏经验为由，引导求职者与另一科技公司签培训协议。",
+            "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+            "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+            "tags": [
+              "化妆师助理",
+              "虚假岗位",
+              "没有工作经验",
+              "招转培",
+              "培训协议",
+              "退还培训费"
+            ],
+            "case_id": "O003",
+            "chunk_role": "facts",
+            "related_ids": [
+              "O003-facts",
+              "O003-reasoning",
+              "O003-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部",
+            "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "agency",
+              "training_loan",
+              "job_truth",
+              "contract"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "O003-outcome",
+            "title": "虚构化妆师助理岗位、招聘转为收费培训",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+            "location": "第7项：山东青岛两公司“招转培”案件 · 处理结果",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】责令限期改正、关闭职业中介、停止办学、退还所收费用。官方未披露退款完成或刑事判决。",
+            "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+            "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+            "tags": [
+              "化妆师助理",
+              "虚假岗位",
+              "没有工作经验",
+              "招转培",
+              "培训协议",
+              "退还培训费"
+            ],
+            "case_id": "O003",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "O003-facts",
+              "O003-reasoning",
+              "O003-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部",
+            "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "agency",
+              "training_loan",
+              "job_truth",
+              "contract"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "O003-reasoning",
+            "title": "虚构化妆师助理岗位、招聘转为收费培训",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+            "location": "第7项：山东青岛两公司“招转培”案件 · 执法认定",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-04",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门查明虚假招聘信息，以及另一公司未经许可开展职业技能培训和职业中介活动。",
+            "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+            "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+            "tags": [
+              "化妆师助理",
+              "虚假岗位",
+              "没有工作经验",
+              "招转培",
+              "培训协议",
+              "退还培训费"
+            ],
+            "case_id": "O003",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "O003-facts",
+              "O003-reasoning",
+              "O003-outcome"
+            ],
+            "source_publisher": "人力资源社会保障部",
+            "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "agency",
+              "training_loan",
+              "job_truth",
+              "contract"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "SUP-F12",
+            "title": "面试收培训费是否合法",
+            "kind": "support",
+            "text": "先问谁收、为何收、与录用有何关系。用人单位招用劳动者不得收取财物；真实自愿独立培训服务与附条件入职收费不同，不能仅见培训费三个字就自动套用第九条。\n关联依据编号：K001、K005",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "面试收培训费是否合法",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K001",
+              "K005"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "training_loan",
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "SUP-A05",
+            "title": "核验公司与中介",
+            "kind": "support",
+            "text": "按全称和统一社会信用代码查登记、异常处罚与执行记录，核对主体及联系方式；经营性职业中介查许可，其他人力资源业务区分备案。未查询到不是不存在，正常登记不是安全保证。\n关联依据编号：SUP-L-market",
+            "url": "https://www.beijing.gov.cn/zhengce/gwywj/201905/t20190522_61354.html",
+            "location": "维权行动卡",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "核验公司与中介",
+              "维权行动卡"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "SUP-L-market"
+            ],
+            "support_category": "维权行动卡",
+            "origin_document": "维权行动指南.docx",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "SUP-F05",
+            "title": "在校实习与试用期区别",
+            "kind": "support",
+            "text": "学校安排的教学实习与实际就业用工需要区分；不能仅以在校身份或合同名叫实习就认定一律不受劳动法保护。应核实实习目的、学校安排、管理、报酬和实际用工情况；劳动关系判断可能需要补充更具体的依据。\n关联依据编号：LCL-002、LCL-007、K004",
+            "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-05",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "在校实习与试用期区别",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "LCL-002",
+              "LCL-007",
+              "K004"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract",
+              "trial_intern"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07"
+          }
+        ],
+        "review_status": {
+          "status": "passed",
+          "audit_count": 2,
+          "revision_count": 1,
+          "last_issues": []
+        },
+        "employment_stage": "preemployment",
+        "stage_reason": "用户补充说明仍处于求职签约前（未入职、未做任务、未付新费用、未签新版确认书），并已从科技公司官方人事渠道取得书面答复核实主体。",
+        "review_notes": []
+      },
+      "sources": [
+        {
+          "id": "K001",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "location": "第九条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-06",
+          "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+          "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+          "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+          "tags": [
+            "保证金",
+            "押金",
+            "毕业证",
+            "身份证",
+            "扣押证件",
+            "入职收费",
+            "劳动合同法",
+            "第九条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 9,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "国家市场监督管理总局",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/",
+          "legal_database_status": "query_entry_only_not_verified",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "contract",
+            "identity"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "K005",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "kind": "warning",
+          "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+          "location": "风险提示第三项",
+          "published_at": "2026-05-18",
+          "verified_at": "2026-10-03",
+          "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+          "scope": "求职被转向收费培训及培训贷款风险。",
+          "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+          "tags": [
+            "招转培",
+            "培训贷",
+            "贷款",
+            "高额培训费",
+            "包就业",
+            "先培训后入职"
+          ],
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "training_loan"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "K007",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "kind": "guide",
+          "url": "https://chinajob.mohrss.gov.cn/c/2026-05-18/543038.shtml",
+          "location": "风险提示第五项",
+          "published_at": "2026-05-18",
+          "verified_at": "2026-10-03",
+          "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+          "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+          "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+          "tags": [
+            "保留证据",
+            "聊天记录",
+            "转账凭证",
+            "投诉",
+            "报案",
+            "建议"
+          ],
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "training_loan"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "LCL-002",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "location": "第二条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-06",
+          "text": "第二条　中华人民共和国境内的企业、个体经济组织、民办非企业单位等组织（以下称用人单位）与劳动者建立劳动关系，订立、履行、变更、解除或者终止劳动合同，适用本法。\n国家机关、事业单位、社会团体和与其建立劳动关系的劳动者，订立、履行、变更、解除或者终止劳动合同，依照本法执行。",
+          "scope": "本条所列情形；第一章 总则 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第二条",
+            "第一章 总则"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 2,
+          "chapter": "第一章 总则",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "国家市场监督管理总局",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/",
+          "legal_database_status": "query_entry_only_not_verified",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "LCL-007",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "location": "第七条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-06",
+          "text": "第七条　用人单位自用工之日起即与劳动者建立劳动关系。用人单位应当建立职工名册备查。",
+          "scope": "本条所列情形；第二章　劳动合同的订立 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第七条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 7,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "国家市场监督管理总局",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/",
+          "legal_database_status": "query_entry_only_not_verified",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "O002-facts",
+          "title": "无证中介承诺地铁内推、收定金后推诿退款",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+          "location": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件 · 调查事实",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-04",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】徐州某公司未取得人力资源服务许可，承诺推荐入职地铁公司，约定服务费5.8万元、收定金1.8万元；求职者未入职，退款遭推诿。",
+          "scope": "无证中介以入职推荐承诺收取费用及拒绝退款。",
+          "boundary": "行政处罚和线索通报不是刑事诈骗判决；原文未说明退款已到账。",
+          "tags": [
+            "高薪内推",
+            "地铁岗位",
+            "就业服务费",
+            "定金",
+            "退款",
+            "职业中介许可"
+          ],
+          "case_id": "O002",
+          "chunk_role": "facts",
+          "related_ids": [
+            "O002-facts",
+            "O002-reasoning",
+            "O002-outcome"
+          ],
+          "source_publisher": "人力资源社会保障部",
+          "source_case_position": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "已行政处理，其他涉嫌违法线索移交；未披露刑事判决",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "agency",
+            "paid_offer",
+            "job_truth"
+          ],
+          "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "O002-outcome",
+          "title": "无证中介承诺地铁内推、收定金后推诿退款",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+          "location": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件 · 处理结果",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-04",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】责令停止职业中介活动并行政处罚，相关线索通报市场监管、公安机关。未披露刑事定罪或退款完成。",
+          "scope": "无证中介以入职推荐承诺收取费用及拒绝退款。",
+          "boundary": "行政处罚和线索通报不是刑事诈骗判决；原文未说明退款已到账。",
+          "tags": [
+            "高薪内推",
+            "地铁岗位",
+            "就业服务费",
+            "定金",
+            "退款",
+            "职业中介许可"
+          ],
+          "case_id": "O002",
+          "chunk_role": "outcome",
+          "related_ids": [
+            "O002-facts",
+            "O002-reasoning",
+            "O002-outcome"
+          ],
+          "source_publisher": "人力资源社会保障部",
+          "source_case_position": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "已行政处理，其他涉嫌违法线索移交；未披露刑事判决",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "agency",
+            "paid_offer",
+            "job_truth"
+          ],
+          "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "O002-reasoning",
+          "title": "无证中介承诺地铁内推、收定金后推诿退款",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+          "location": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件 · 执法认定",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-04",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】属地人社部门针对无证职业中介活动作出处理；涉嫌虚假宣传等材料通报相关部门。",
+          "scope": "无证中介以入职推荐承诺收取费用及拒绝退款。",
+          "boundary": "行政处罚和线索通报不是刑事诈骗判决；原文未说明退款已到账。",
+          "tags": [
+            "高薪内推",
+            "地铁岗位",
+            "就业服务费",
+            "定金",
+            "退款",
+            "职业中介许可"
+          ],
+          "case_id": "O002",
+          "chunk_role": "reasoning",
+          "related_ids": [
+            "O002-facts",
+            "O002-reasoning",
+            "O002-outcome"
+          ],
+          "source_publisher": "人力资源社会保障部",
+          "source_case_position": "第4项：江苏徐州某信息咨询服务有限公司“高薪内推”案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "已行政处理，其他涉嫌违法线索移交；未披露刑事判决",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "agency",
+            "paid_offer",
+            "job_truth"
+          ],
+          "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "O003-facts",
+          "title": "虚构化妆师助理岗位、招聘转为收费培训",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+          "location": "第7项：山东青岛两公司“招转培”案件 · 调查事实",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-04",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】青岛某文化服务公司没有化妆师岗位，却招聘化妆师助理；面试时以缺乏经验为由，引导求职者与另一科技公司签培训协议。",
+          "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+          "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+          "tags": [
+            "化妆师助理",
+            "虚假岗位",
+            "没有工作经验",
+            "招转培",
+            "培训协议",
+            "退还培训费"
+          ],
+          "case_id": "O003",
+          "chunk_role": "facts",
+          "related_ids": [
+            "O003-facts",
+            "O003-reasoning",
+            "O003-outcome"
+          ],
+          "source_publisher": "人力资源社会保障部",
+          "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "agency",
+            "training_loan",
+            "job_truth",
+            "contract"
+          ],
+          "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "O003-outcome",
+          "title": "虚构化妆师助理岗位、招聘转为收费培训",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+          "location": "第7项：山东青岛两公司“招转培”案件 · 处理结果",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-04",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】责令限期改正、关闭职业中介、停止办学、退还所收费用。官方未披露退款完成或刑事判决。",
+          "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+          "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+          "tags": [
+            "化妆师助理",
+            "虚假岗位",
+            "没有工作经验",
+            "招转培",
+            "培训协议",
+            "退还培训费"
+          ],
+          "case_id": "O003",
+          "chunk_role": "outcome",
+          "related_ids": [
+            "O003-facts",
+            "O003-reasoning",
+            "O003-outcome"
+          ],
+          "source_publisher": "人力资源社会保障部",
+          "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "agency",
+            "training_loan",
+            "job_truth",
+            "contract"
+          ],
+          "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "O003-reasoning",
+          "title": "虚构化妆师助理岗位、招聘转为收费培训",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/人力资源服务领域侵害求职者权益典型案例/",
+          "location": "第7项：山东青岛两公司“招转培”案件 · 执法认定",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-04",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门查明虚假招聘信息，以及另一公司未经许可开展职业技能培训和职业中介活动。",
+          "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+          "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+          "tags": [
+            "化妆师助理",
+            "虚假岗位",
+            "没有工作经验",
+            "招转培",
+            "培训协议",
+            "退还培训费"
+          ],
+          "case_id": "O003",
+          "chunk_role": "reasoning",
+          "related_ids": [
+            "O003-facts",
+            "O003-reasoning",
+            "O003-outcome"
+          ],
+          "source_publisher": "人力资源社会保障部",
+          "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "agency",
+            "training_loan",
+            "job_truth",
+            "contract"
+          ],
+          "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "PRE-W-intern",
+          "title": "警惕实习生套娃、有偿实习与招聘授权不明",
+          "kind": "warning",
+          "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/2024/2024_zt01/mtjj/202405/t20240513_1130292.html",
+          "location": "实习生套娃与四招求职秘籍",
+          "published_at": "2024-04-04",
+          "verified_at": "2026-10-07",
+          "text": "有人冒用单位名义招实习生，分派私人任务获取免费劳动或收取实习费用。通过单位官网和官方电话核实招聘信息及授权，选择学校和官方就业渠道。",
+          "scope": "大学生找实习、找工作及付款签约前的风险识别",
+          "boundary": "官方风险提示的归纳，不是法条原文、企业核验结果或个案违法认定。须结合行为、主体和事实；线上办公或信息缺失本身不等于诈骗。",
+          "tags": [
+            "实习生套娃",
+            "虚假实习",
+            "有偿实习",
+            "实习证明",
+            "招聘授权",
+            "免费劳动"
+          ],
+          "content_form": "official_warning_paraphrase",
+          "verification_status": "official_source_checked",
+          "source_publisher": "教育部网站转载央视新闻",
+          "related_article_ids": [],
+          "origin_document": "常见的坑.xlsx（用于选题分类，非规范来源）",
+          "source_access_note": "全文由搜索索引返回，直接打开超时；可通过来源网址复核",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "contract",
+            "trial_intern",
+            "fake_intern"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "SUP-A05",
+          "title": "核验公司与中介",
+          "kind": "support",
+          "text": "按全称和统一社会信用代码查登记、异常处罚与执行记录，核对主体及联系方式；经营性职业中介查许可，其他人力资源业务区分备案。未查询到不是不存在，正常登记不是安全保证。\n关联依据编号：SUP-L-market",
+          "url": "https://www.beijing.gov.cn/zhengce/gwywj/201905/t20190522_61354.html",
+          "location": "维权行动卡",
+          "published_at": "",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "核验公司与中介",
+            "维权行动卡"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "SUP-L-market"
+          ],
+          "support_category": "维权行动卡",
+          "origin_document": "维权行动指南.docx",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "SUP-F05",
+          "title": "在校实习与试用期区别",
+          "kind": "support",
+          "text": "学校安排的教学实习与实际就业用工需要区分；不能仅以在校身份或合同名叫实习就认定一律不受劳动法保护。应核实实习目的、学校安排、管理、报酬和实际用工情况；劳动关系判断可能需要补充更具体的依据。\n关联依据编号：LCL-002、LCL-007、K004",
+          "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "location": "高频问答",
+          "published_at": "",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "在校实习与试用期区别",
+            "高频问答"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "LCL-002",
+            "LCL-007",
+            "K004"
+          ],
+          "support_category": "高频问答",
+          "origin_document": "大学生就业权益高频问题回答.docx",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract",
+            "trial_intern"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "SUP-F12",
+          "title": "面试收培训费是否合法",
+          "kind": "support",
+          "text": "先问谁收、为何收、与录用有何关系。用人单位招用劳动者不得收取财物；真实自愿独立培训服务与附条件入职收费不同，不能仅见培训费三个字就自动套用第九条。\n关联依据编号：K001、K005",
+          "url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "location": "高频问答",
+          "published_at": "",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "面试收培训费是否合法",
+            "高频问答"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "K001",
+            "K005"
+          ],
+          "support_category": "高频问答",
+          "origin_document": "大学生就业权益高频问题回答.docx",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "training_loan",
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "SUP-L-market",
+          "title": "人力资源市场暂行条例",
+          "kind": "law",
+          "text": "第十八条　经营性人力资源服务机构从事职业中介活动的，应当依法向人力资源社会保障行政部门申请行政许可，取得人力资源服务许可证。\n　　经营性人力资源服务机构开展人力资源供求信息的收集和发布、就业和创业指导、人力资源管理咨询、人力资源测评、人力资源培训、承接人力资源服务外包等人力资源服务业务的，应当自开展业务之日起15日内向人力资源社会保障行政部门备案。\n　　经营性人力资源服务机构从事劳务派遣业务的，执行国家有关劳务派遣的规定。",
+          "url": "https://www.beijing.gov.cn/zhengce/gwywj/201905/t20190522_61354.html",
+          "location": "第十八条",
+          "published_at": "2018-06-29",
+          "verified_at": "2026-10-05",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "人力资源市场暂行条例",
+            "补充法条"
+          ],
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "support_category": "补充法条",
+          "origin_document": "补充法条＋官方文件.docx",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        }
+      ]
+    }
+  ],
+  "disclosure": "全部为模拟材料，非真实招聘或判决；调用实际模型API和正式RAG。",
+  "session_id": "S118591f2dcb24dfb83973d2d55521b65",
+  "word_files": [
+    "E:\\workp\\dxsxxsy\\knowledge\\evaluations\\detailed-audit-model-20261008\\intern-task_首次报告.docx",
+    "E:\\workp\\dxsxxsy\\knowledge\\evaluations\\detailed-audit-model-20261008\\intern-task_修订报告.docx"
+  ],
+  "error": "HTTPError: HTTP Error 422: Unprocessable Content",
+  "passed_flow": false,
+  "elapsed_seconds": 311.1,
+  "retry_error": "{\"detail\":\"回答内容为空\"}"
+}

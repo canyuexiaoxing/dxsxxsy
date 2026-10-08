@@ -101,6 +101,27 @@ class AgentTests(unittest.TestCase):
     def test_repeated_questions_are_rejected(self):
         self.engine([tool(),output()]).turn(self.sid,'分析',[self.material.material_id])
         with self.assertRaises(AgentError): self.engine([tool(),output()]).turn(self.sid,'不知道')
+    def test_failed_search_reports_dependency_reason_without_saving_report(self):
+        class OfflineRag(FakeRag):
+            def search(self,query): raise ValueError('本地Embedding不可用，请先运行start-embedding.ps1')
+        engine=AgentEngine(self.sessions,self.materials,OfflineRag(),FakeModel([tool(),output('report',self.report())]))
+        with self.assertRaisesRegex(AgentError,'本地Embedding不可用'):
+            engine.turn(self.sid,'分析',[self.material.material_id])
+        self.assertEqual(len(self.sessions.get(self.sid)['reports']),0)
+    def test_misplaced_empty_quote_metadata_is_losslessly_removed(self):
+        empty={'quote':'','material_id':'user','page_number':0}
+        report=self.report();report.update(empty)
+        body=json.loads(output('report',report)['content']);body.update(empty)
+        reply=self.engine([tool(),{'role':'assistant','content':json.dumps(body)}]).turn(self.sid,'分析',[self.material.material_id])
+        self.assertEqual(reply['report']['findings'][0]['quote'],self.material.pages[0].text)
+        self.assertNotIn('quote',reply['report'])
+        self.assertNotIn('quote',reply)
+    def test_misplaced_nonempty_quote_metadata_is_not_discarded(self):
+        from agent.schema import parse_turn
+        from pydantic import ValidationError
+        for metadata in [{'quote':'编造原句','material_id':'user','page_number':0}, {'quote':'','material_id':'MFAKE','page_number':9}]:
+            body=json.loads(output('report',self.report())['content']);body.update(metadata)
+            with self.assertRaises(ValidationError):parse_turn(json.dumps(body))
     def test_tool_loop_limit(self):
         with self.assertRaises(AgentError): self.engine([tool() for _ in range(8)]).turn(self.sid,'分析',[self.material.material_id])
     def test_no_report_replacement_without_revision(self):

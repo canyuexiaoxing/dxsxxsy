@@ -17,13 +17,13 @@ class SystemicRepairs(unittest.TestCase):
   normalize_layout(r,dict(current_message='员工辞职即走，拒绝交接，公司采取补救并承担损失。',materials=[],history=[]))
   self.assertEqual(len(r.report.findings),1)
   self.assertIn('因果关系',r.report.findings[0].explanation)
- def test_generic_contract_damage_cannot_use_article_90(self):
+ def test_program_leaves_article_90_applicability_to_auditor(self):
   r=turn('risk','abnormal_behavior');r.evidence_ids=['LCL-090'];f=r.report.findings[0];f.evidence_ids=['LCL-090']
   f.legal_claims[0].statement='劳动者违反劳动合同约定给单位造成损失的，应承担赔偿责任。';f.legal_claims[0].basis_ids=['LCL-090']
-  with self.assertRaises(CitationError):AgentEngine(None,None,None,None)._validate(r,dict(reports=[],messages=[]),[],f.quote,{'LCL-090':{'kind':'law'}})
- def test_penalty_reduction_needs_direct_rule(self):
+  AgentEngine(None,None,None,None)._validate(r,dict(reports=[],messages=[]),[],f.quote,{'LCL-090':{'kind':'law'}})
+ def test_program_leaves_penalty_reduction_to_auditor(self):
   r=turn('risk','abnormal_clause');r.evidence_ids=['LCL-023'];f=r.report.findings[0];f.evidence_ids=['LCL-023'];f.suggestions=['可以请求酌减违约金。'];f.legal_claims[0].basis_ids=['LCL-023']
-  with self.assertRaises(CitationError):AgentEngine(None,None,None,None)._validate(r,dict(reports=[],messages=[]),[],f.quote,{'LCL-023':{'kind':'law','text':'可以约定竞业限制条款。'}})
+  AgentEngine(None,None,None,None)._validate(r,dict(reports=[],messages=[]),[],f.quote,{'LCL-023':{'kind':'law','text':'可以约定竞业限制条款。'}})
  def test_limited_article_90_claim_is_accepted(self):
   r=turn('risk','abnormal_behavior');r.evidence_ids=['LCL-090'];f=r.report.findings[0];f.evidence_ids=['LCL-090']
   f.legal_claims[0].statement='违反本法规定解除劳动合同给单位造成损失，应当赔偿。';f.legal_claims[0].basis_ids=['LCL-090']
@@ -52,25 +52,22 @@ class SystemicRepairs(unittest.TestCase):
   from pydantic import ValidationError
   value=turn().model_dump();value['change_reason']='甲';value['report']['change_reason']='乙'
   with self.assertRaises(ValidationError):parse_turn(json.dumps(value))
- def test_editor_repairs_invalid_level_once(self):
+ def test_reviewer_accepts_issue_schema_in_one_request(self):
   from agent.model import ChatModel
-  valid=turn().model_dump();bad=json.loads(json.dumps(valid));bad['report']['findings'][0]['level']='check'
   class Stub(ChatModel):
    def __init__(self):self.calls=0
-   def complete(self,*args,**kwargs):
-    self.calls+=1;return {'content':json.dumps(bad if self.calls==1 else valid)}
+   def complete(self,*args,**kwargs):self.calls+=1;return {'content':json.dumps(__import__('tests.audit_fixture',fromlist=['audit']).audit())}
   model=Stub();context=dict(materials=[],history=[],latest_report=None,current_message='',material_quotes=[])
-  self.assertEqual(model.review(context,turn(),{})['corrected_result']['report']['findings'][0]['level'],'uncertain')
-  self.assertEqual(model.calls,2)
- def test_editor_persistently_invalid_fails_closed(self):
+  self.assertEqual(model.review(context,turn(),{})['issues'],[])
+  self.assertEqual(model.calls,1)
+ def test_reviewer_invalid_schema_does_not_add_audit_calls(self):
   from agent.model import ChatModel,ModelError
-  bad=turn().model_dump();bad['report']['findings'][0]['level']='check'
   class Stub(ChatModel):
    def __init__(self):self.calls=0
-   def complete(self,*args,**kwargs):self.calls+=1;return {'content':json.dumps(bad)}
+   def complete(self,*args,**kwargs):self.calls+=1;return {'content':json.dumps(turn().model_dump())}
   model=Stub();context=dict(materials=[],history=[],latest_report=None,current_message='',material_quotes=[])
   with self.assertRaises(ModelError):model.review(context,turn(),{})
-  self.assertEqual(model.calls,2)
+  self.assertEqual(model.calls,1)
  def vision(self,contents):
   answers=iter(contents)
   def handle(request):
@@ -91,10 +88,10 @@ class SystemicRepairs(unittest.TestCase):
  def test_missing_fact_cannot_be_counted_as_risk(self):
   r=turn('risk','missing_information');normalize_layout(r,{'current_message':'合同总期限未披露。','materials':[],'history':[]})
   self.assertEqual(len(r.report.findings),0)
- def test_case_cannot_substitute_for_claim_norm(self):
+ def test_program_checks_case_id_exists_without_deciding_applicability(self):
   r=turn('risk','abnormal_clause');r.report.findings[0].level='attention'
   r.report.findings[0].evidence_ids=['L','C'];r.report.findings[0].legal_claims[0].basis_ids=['C']
-  with self.assertRaises(CitationError):AgentEngine(None,None,None,None)._validate(r,{'reports':[],'messages':[]},[],'合同总期限未披露。',{'L':{'kind':'law'},'C':{'kind':'case'}})
+  AgentEngine(None,None,None,None)._validate(r,{'reports':[],'messages':[]},[],'合同总期限未披露。',{'L':{'kind':'law'},'C':{'kind':'case'}})
  def test_display_hides_internal_ids_without_rewriting_quote(self):
   from agent.report_layout import sanitize_display
   r=turn('risk','abnormal_clause');q='Q'+'a'*20

@@ -1,0 +1,88 @@
+{
+  "method": "读取用户输入、原句证据、最终报告及审核轨迹，人工按固定案例must/must_not检查；不是法律或企业事实认证。",
+  "cases": [
+    {
+      "case_id": "recruit-paid-training",
+      "source": "knowledge\\evaluations\\fact-ledger-accepted-20261008\\recruit-paid-training.json",
+      "session_id": "S0b7cff1429c84a51bf5f46c47734f9b6",
+      "flow_completed": true,
+      "manual_verdict": "核心风险与付款时点已修正；仍有来源措辞问题",
+      "manual_note": "limitations将招聘广告中的安排工作写作口头承诺，原输入来自广告，应保持来源表述。",
+      "latest_finding_count": 1,
+      "review_status": {
+        "status": "final_revision_unreviewed",
+        "audit_count": 2,
+        "revision_count": 2,
+        "last_issues": [
+          {
+            "code": "unsupported_fact",
+            "detail": "草稿summary写：“面试后却变成‘要先交9800元参加两个月培训才安排岗位’”，把费用表述为培训/安排岗位之前需“先交”，付款时点被写成明确的前置。但用户原文只是：“HR说我基础不足，需要先参加两个月培训，费用9800元。他说可以分期，不用现在一次性付清，并催我今天确认名额。”——用户只说明培训在前、费用为9800元、可分期、无需现在一次性付清，并未确认“必须先支付”或付款发生在培训前。草稿自己的finding也写“可以分期，不用现在一次性付清”“‘分期’究竟是公司允许你分期交费，还是通过第三方平台办理的贷款，目前未知”，与summary的“先交”存在强弱不一。建议把summary改为不预设付款时点，如“面试后却要求先参加两个月培训、并承担9800元培训费（对方称可分期）才安排岗位”，或直接写明“付款时点尚不明确、需书面确认”。",
+            "finding_indexes": [],
+            "evidence_ids": []
+          }
+        ]
+      },
+      "actions": [
+        "report"
+      ]
+    },
+    {
+      "case_id": "fee-withdrawn",
+      "source": "knowledge\\evaluations\\fact-ledger-accepted-20261008\\fee-withdrawn.json",
+      "session_id": "S8d28f75a0cab410d923dee7a9535cc8e",
+      "flow_completed": true,
+      "manual_verdict": "核心验收通过",
+      "manual_note": "新增明确撤回要求后，findings为空，原收费仅保留在修订说明，未当成当前风险。",
+      "latest_finding_count": 0,
+      "review_status": {
+        "status": "passed",
+        "audit_count": 2,
+        "revision_count": 1,
+        "last_issues": []
+      },
+      "actions": [
+        "report",
+        "revise"
+      ]
+    },
+    {
+      "case_id": "normal-free-training",
+      "source": "knowledge\\evaluations\\fact-ledger-accepted-controls-20261008\\normal-free-training.json",
+      "session_id": "S8c6c42168e7b4c348cc46c17fe76c126",
+      "flow_completed": true,
+      "manual_verdict": "核心验收通过",
+      "manual_note": "免费、无贷款、无押金承诺未被误报；联系人授权核实没有被扩大为企业安全保证。",
+      "latest_finding_count": 0,
+      "review_status": {
+        "status": "passed",
+        "audit_count": 1,
+        "revision_count": 0,
+        "last_issues": []
+      },
+      "actions": [
+        "report"
+      ]
+    },
+    {
+      "case_id": "confirmed-loan",
+      "source": "knowledge\\evaluations\\fact-ledger-accepted-controls-20261008\\confirmed-loan.json",
+      "session_id": "S1e02637c17bc497ea990e3ec8b6782f1",
+      "flow_completed": true,
+      "manual_verdict": "核心验收通过",
+      "manual_note": "保留12800元、12期、14560元及未签字未付款状态；收费培训与实际给出的借款页面分列两项，催促合并说明，不再另列信息缺口。",
+      "latest_finding_count": 2,
+      "review_status": {
+        "status": "passed",
+        "audit_count": 2,
+        "revision_count": 1,
+        "last_issues": []
+      },
+      "actions": [
+        "report"
+      ]
+    }
+  ],
+  "other_cases": "固定库共8类，另外4类本轮未调用真实API，不能计为已通过。",
+  "backend_tests": 181,
+  "frontend_packaging_tests": 4
+}

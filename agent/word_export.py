@@ -88,6 +88,12 @@ def render_report_docx(report,title='求职材料自查',material_names=None):
     paragraph('本报告依据已提供材料进行风险提示；风险等级不是违法认定或风险概率。',color='71847D')
     document.add_heading('01  结论与风险概览',1)
     p=paragraph(report.get('summary','暂无结论')); shade(p,'EDF6F1')
+    if report.get('prevention'):
+        prevention=report['prevention']
+        document.add_heading('签约与入职前，建议先做',2)
+        paragraph(prevention['label'])
+        for step in prevention['steps']:document.add_paragraph(step,style='List Bullet')
+        paragraph(prevention['note'],color='71847D')
     ids=overview_ids(report)
     if ids: paragraph('、'.join(ids),label='概览依据：',color='71847D')
     paragraph(LEVEL_NOTE,color='71847D')
@@ -115,7 +121,7 @@ def render_report_docx(report,title='求职材料自查',material_names=None):
                     p.paragraph_format.line_spacing=1.2; p.paragraph_format.space_after=Pt(7); p.paragraph_format.space_before=Pt(7)
                     for run in p.runs: run.font.size=Pt(9.5)
         if len(findings)>6: paragraph('速览展示前6项，完整内容见风险详情。',color='71847D')
-    if report.get('change_reason'): paragraph(report['change_reason'],label='本版修改')
+    if report.get('version',1)>1 and report.get('change_reason'): paragraph(report['change_reason'],label='本版修改')
     document.add_heading('02  风险详情',1)
     sources={s['id']:s for s in report.get('sources',[])}
     if not findings: paragraph('本次未列出具体风险点。请结合分析局限理解结论。')
@@ -139,7 +145,7 @@ def render_report_docx(report,title='求职材料自查',material_names=None):
             for p in group[:-1]: p.paragraph_format.keep_with_next=True
             group[-1].paragraph_format.keep_with_next=False
     document.add_heading('03  待核实事项与分析局限',1)
-    for item in report.get('limitations',[]): document.add_paragraph(item,style='List Bullet')
+    for item in report.get('review_notes',[])+report.get('limitations',[]): document.add_paragraph(item,style='List Bullet')
     if not report.get('limitations'): paragraph('原报告未单独列出局限；这不代表所有事实均已核实。')
     if report.get('self_checks'):
         document.add_heading('关联自查清单',2)

@@ -38,7 +38,7 @@ def main():
             else:raise RuntimeError('本地服务启动超时。')
         webview.settings['ALLOW_DOWNLOADS']=True
         webview.settings['ALLOW_FILE_URLS']=False
-        window=webview.create_window('求职避坑镜',URL,width=1380,height=950,min_size=(850,600),background_color='#FFFFFF',text_select=True)
+        window=webview.create_window('求职避坑镜',URL,width=1280,height=800,min_size=(850,600),background_color='#FFFFFF',text_select=True)
         window.events.loaded += lambda: (ROOT/'logs/desktop-loaded.txt').write_text('Desktop WebView loaded localhost frontend.',encoding='utf-8')
         webview.start(gui='edgechromium',private_mode=False,storage_path=str(ROOT/'data/webview'),icon=str(ROOT/'assets/app-icon.ico'))
     finally:

@@ -3,6 +3,7 @@ import json
 import re
 from pathlib import Path
 from threading import RLock
+from .profile import eligible_entries,boost_topic_scores
 
 
 def tokens(text):
@@ -30,6 +31,7 @@ def select_evidence(ranked_ids,mapping):
 
 
 class KnowledgeIndex:
+    stage_aware=True
     def __init__(self,directory:Path,source_path:Path,embedding):
         self.directory,self.source_path,self.embedding=directory,source_path,embedding
         self.lock=RLock()
@@ -64,24 +66,25 @@ class KnowledgeIndex:
             collection=self._collection()
             existing=collection.get()['ids']
             if existing: collection.delete(ids=existing)
-            collection.upsert(ids=[e['id'] for e in entries],embeddings=vectors,documents=[e['text'] for e in entries],metadatas=[{'kind':e['kind'],'case_id':e.get('case_id',''),'chunk_role':e.get('chunk_role','')} for e in entries])
+            collection.upsert(ids=[e['id'] for e in entries],embeddings=vectors,documents=[e['text'] for e in entries],metadatas=[{'kind':e['kind'],'case_id':e.get('case_id',''),'chunk_role':e.get('chunk_role',''),'stage_scope':e.get('stage_scope','both'),'risk_topics':','.join(e.get('risk_topics',[]))} for e in entries])
             collection.modify(metadata={'source_hash':self._fingerprint(),'embedding_model':self.embedding.model})
             return {'count':len(entries),'dimensions':len(vectors[0]),'model':self.embedding.model}
 
-    def search(self,query):
+    def search(self,query,stage="unknown"):
         if not isinstance(query,str) or not query.strip() or len(query)>1500: raise ValueError('检索问题应为1至1500字符')
         with self.lock:
             collection=self._collection()
             metadata=collection.metadata or {}
             if metadata.get('source_hash')!=self._fingerprint() or metadata.get('embedding_model')!=self.embedding.model:
                 raise ValueError('知识库尚未建立或资料/模型已变化，请重新运行build-knowledge.ps1')
-            entries=self._entries(); mapping={e['id']:e for e in entries}
+            entries=eligible_entries(self._entries(),stage); mapping={e['id']:e for e in entries}
             vector=self.embedding.encode([query])
             semantic=[]
             for kinds in [('law',),('warning','guide'),('support',),('case',)]:
                 count=sum(e['kind'] in kinds for e in entries)
                 if not count: continue
                 condition={'kind':kinds[0]} if len(kinds)==1 else {'kind':{'$in':list(kinds)}}
+                if stage=='preemployment':condition={'$and':[condition,{'stage_scope':{'$in':['pre','both']}}]}
                 result=collection.query(query_embeddings=vector,n_results=min(8,count),where=condition,include=['distances'])
                 semantic.extend(sid for sid,d in zip(result['ids'][0],result['distances'][0]) if d<0.75)
             query_tokens=tokens(query)
@@ -90,6 +93,7 @@ class KnowledgeIndex:
             scores={}
             for ranking in [semantic,keyword]:
                 for rank,sid in enumerate(ranking): scores[sid]=scores.get(sid,0)+1/(60+rank+1)
+            scores=boost_topic_scores(scores,mapping,query)
             return select_evidence(sorted(scores,key=scores.get,reverse=True),mapping)
 
     def get(self,source_id):

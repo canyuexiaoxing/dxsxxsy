@@ -1,0 +1,104 @@
+[
+  {
+    "type": "乱收费",
+    "topic": "fees",
+    "reference_ids": [
+      "K001"
+    ],
+    "correction": "区分用人单位招用收费、独立医院体检及独立合法服务；不能仅凭费用名称认定违法。"
+  },
+  {
+    "type": "黑中介",
+    "topic": "agency",
+    "reference_ids": [
+      "SUP-L-market",
+      "SUP-R007",
+      "O002-facts"
+    ],
+    "correction": "企业自行招员工与经营性职业中介不同；未查到许可证不自动证明无证。"
+  },
+  {
+    "type": "付费内推/保offer",
+    "topic": "paid_offer",
+    "reference_ids": [
+      "SUP-W-hiring",
+      "SUP-R006",
+      "O002-facts"
+    ],
+    "correction": "付费保录是风险信号，不承诺认定所有求职咨询收费违法。"
+  },
+  {
+    "type": "培训贷/招转培",
+    "topic": "training_loan",
+    "reference_ids": [
+      "K005",
+      "K006",
+      "O003-facts"
+    ],
+    "correction": "区分自主培训与招聘绑定付费培训，分别核对培训和借款协议。"
+  },
+  {
+    "type": "刷单、点赞、线上兼职",
+    "topic": "task_fraud",
+    "reference_ids": [
+      "PRE-W-task"
+    ],
+    "correction": "不把所有点赞或线上兼职判骗局；重点看垫资、充值、返利任务组合。"
+  },
+  {
+    "type": "虚假/注水岗位",
+    "topic": "job_truth",
+    "reference_ids": [
+      "K002",
+      "SUP-C01"
+    ],
+    "correction": "登记正常不代表岗位真实；交叉核对企业官方招聘与薪资构成。"
+  },
+  {
+    "type": "猫腻合同",
+    "topic": "contract",
+    "reference_ids": [
+      "LCL-016",
+      "LCL-017",
+      "SUP-R014"
+    ],
+    "correction": "未入职且尚未签合同不是已发生违法用工；实习及非全日制适用条件需分别确认。"
+  },
+  {
+    "type": "试用期/实习期陷阱",
+    "topic": "trial_intern",
+    "reference_ids": [
+      "K004",
+      "LCL-020",
+      "SUP-L-implementation",
+      "SUP-R024"
+    ],
+    "correction": "保留工资80%条件中的同岗标准、合同工资选择规则和当地最低工资底线；实习不自动等同劳动关系。"
+  },
+  {
+    "type": "证件与个人信息泄露",
+    "topic": "identity",
+    "reference_ids": [
+      "K001",
+      "PRE-W-identity"
+    ],
+    "correction": "区分现场核验与扣押；不将正常入职收集必要信息自动认定盗用。"
+  },
+  {
+    "type": "传销、境外高薪诱骗",
+    "topic": "personal_safety",
+    "reference_ids": [
+      "PRE-W-pyramid",
+      "SUP-W-overseas"
+    ],
+    "correction": "只提示风险组合；境外工作本身不等于诈骗或传销。"
+  },
+  {
+    "type": "实习生套娃/虚假实习",
+    "topic": "fake_intern",
+    "reference_ids": [
+      "PRE-W-intern"
+    ],
+    "correction": "远程实习、没有门禁本身不能证明虚假；核查招聘授权、任务归属和证明真实性。"
+  }
+]

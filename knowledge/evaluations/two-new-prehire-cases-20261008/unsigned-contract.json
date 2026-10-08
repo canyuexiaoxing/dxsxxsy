@@ -1,0 +1,23 @@
+{
+  "case": {
+    "id": "unsigned-contract",
+    "title": "拟签条款不等于已发生",
+    "turns": [
+      "我是应届毕业生，未入职未签字未付款，拟签合同写公司有权保管毕业证原件直到离职。我只是拿到了草案，证件仍在我手上。请给求职前有限报告。"
+    ],
+    "must": [
+      "分析拟签证件保管条款",
+      "建议签字前删除或澄清该条款"
+    ],
+    "must_not": [
+      "声称证件已扣押",
+      "直接作为已发生劳动争议提出索赔"
+    ]
+  },
+  "turns": [],
+  "content_verdict": "pending_human_review",
+  "session_id": "S622b88e55c0f4269b808a7a21aeb7014",
+  "flow_completed": false,
+  "error": "RuntimeError: HTTP 422: 模型结果格式或引用不合要求，本次未写入报告",
+  "elapsed_seconds": 4.0
+}

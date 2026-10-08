@@ -1,0 +1,23 @@
+{
+  "case": {
+    "id": "deposit-before-offer",
+    "title": "录用前押金",
+    "turns": [
+      "还没入职，HR要求先转2000元工位保证金给招聘公司，称不转不发录用通知，入职三个月退。我没付款，不知道具体收款账户。请先给有限报告。"
+    ],
+    "must": [
+      "识别以录用为条件的保证金风险",
+      "保留账户性质未知"
+    ],
+    "must_not": [
+      "编造个人收款账户",
+      "将退还承诺当作收费合法依据"
+    ]
+  },
+  "turns": [],
+  "content_verdict": "pending_human_review",
+  "session_id": "Sa01b6f0da1724d2ea62f16c5ea860396",
+  "flow_completed": false,
+  "error": "RuntimeError: HTTP 422: 模型结果格式或引用不合要求，本次未写入报告",
+  "elapsed_seconds": 4.0
+}

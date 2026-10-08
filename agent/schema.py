@@ -24,11 +24,19 @@ class Finding(StrictModel):
     fact_basis:Literal['abnormal_clause','abnormal_behavior','missing_information','normal_fact','user_request'] | None=None
     legal_claims:list[LegalClaim]=Field(default_factory=list)
 
+class PreventionPlan(StrictModel):
+    decision:Literal['pause','verify']
+    label:str
+    steps:list[str]
+    note:str
+
 class Report(StrictModel):
     summary:str
     findings:list[Finding]
     limitations:list[str]
     change_reason:str=''
+    prevention:PreventionPlan | None=None
+    self_checks:list[str]=Field(default_factory=list)
 
     @field_validator('change_reason',mode='before')
     @classmethod
@@ -37,6 +45,8 @@ class Report(StrictModel):
 
 class TurnResult(StrictModel):
     action:Literal['ask','answer','report','revise']
+    employment_stage:Literal['preemployment','employed','unknown']='unknown'
+    stage_reason:str=''
     message:str
     questions:list[str]=Field(max_length=3)
     evidence_ids:list[str]
@@ -53,12 +63,20 @@ class TurnResult(StrictModel):
         return [] if value is None else value
 
 def decode_turn(content):
-    """Recover only a known, lossless field placement mistake; validate everything else."""
+    """Recover only known, lossless field placement mistakes; validate everything else."""
     value=json.loads(content)
     if isinstance(value,dict) and 'change_reason' in value and isinstance(value.get('report'),dict):
         reason=value['change_reason'];nested=value['report'].get('change_reason')
         if isinstance(reason,str) and (nested in (None,'') or nested==reason):
             value['report']['change_reason']=value.pop('change_reason')
+    if isinstance(value,dict):
+        # Some responses duplicate empty Finding defaults at enclosing levels.
+        # Non-empty quotes, other origins, partial triples and other extras stay invalid.
+        for container in [value,value.get('report')]:
+            if (isinstance(container,dict) and all(k in container for k in ('quote','material_id','page_number'))
+                and container['quote']=='' and container['material_id']=='user'
+                and type(container['page_number']) is int and container['page_number']==0):
+                for name in ('quote','material_id','page_number'):container.pop(name)
     return value
 
 def parse_turn(content):
