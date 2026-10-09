@@ -1,0 +1,1789 @@
+{
+  "case": {
+    "id": "contract",
+    "turns": [
+      "我是大四学生，找第一份正式工作，未入职、未签合同、未付款。直接招聘的甲软件公司给我完整劳动合同草案，岗位软件测试，月薪6500元，期限3年，试用期3个月。合同明确写：签约时应向甲公司对公账户支付2000元履约保证金，入职满6个月无违纪退还；毕业证原件由甲公司保管至劳动合同解除。没有培训服务、第三方中介或分期贷款。保证金没有支付，毕业证在我手里，公司全称和统一社会信用代码已提供但尚未核查。请基于这些拟签条款直接生成报告。"
+    ]
+  },
+  "turns": [
+    {
+      "session_id": "S9687217c5d184e859db96521c20628f2",
+      "action": "report",
+      "employment_stage": "preemployment",
+      "stage_reason": "用户为大四学生、尚未入职、未签合同、未付款，仅收到甲公司劳动合同草案，属求职签约前阶段。",
+      "message": "",
+      "questions": [],
+      "evidence_ids": [
+        "K001",
+        "SUP-R003",
+        "SUP-F19",
+        "LCL-025",
+        "PRE-W-identity",
+        "K007"
+      ],
+      "report": {
+        "summary": "当前处于签约前阶段，最需要注意的是：甲公司在劳动合同草案中把『签约时先交2000元履约保证金』和『毕业证原件交由公司保管至合同解除』写成签约条件，这两项都是用人单位招用劳动者时法律明确禁止的要求，不要因为对方是对公账户、有统一社会信用代码就付款或交出毕业证原件；两条同时出现在正式劳动合同草案而非口头要求中，更说明不能当作偶发疏忽对待。其次是核对主体和岗位真实性：甲公司全称与统一社会信用代码尚未核查，软件测试岗位与月薪6500元、试用期3个月、期限3年之间的对应关系也需书面确认（3年期合同试用期3个月本身不超过法定上限）。建议先暂缓签字、暂缓任何付款、暂缓交出任何证件原件，就保证金和证件保管两项要求向甲公司书面提出异议并要求删除；若对方坚持这两条是签约前提、拒绝删改，应将其作为退出信号。以下为基于现有拟签条款的有限判断，不构成对甲公司是否违法的最终认定，也不是法院或仲裁机构结论。",
+        "findings": [
+          {
+            "title": "劳动合同约定签约时向公司支付2000元履约保证金",
+            "level": "high",
+            "quote": "合同明确写：签约时应向甲公司对公账户支付2000元履约保证金，入职满6个月无违纪退还；毕业证原件由甲公司保管至劳动合同解除。",
+            "material_id": "user",
+            "page_number": 0,
+            "explanation": "草案把『签约时应向甲公司对公账户支付2000元履约保证金、入职满6个月无违纪才退还』写成签约条件。劳动合同法第九条明确禁止用人单位招用劳动者时要求劳动者提供担保或以其他名义收取财物，『履约保证金』属于典型担保性收费，即使是对公账户、金额不高、约定了退还条件，也不因此合法。该条针对的是招用环节，未实际入职、尚未签约并不排除适用。需要加重说明的是：这一收费要求与后文毕业证保管要求是写在同一份正式劳动合同草案中的两条签约束条件，而非个别口头说法，说明该模板条款并非偶发笔误，更不宜按对方口径接受。需要注意：本条针对的是用人单位招用劳动者的收费，需核实收费主体确为拟招用你的甲公司本身、款项确为入职担保性质而非独立培训或服务对价；如属独立培训交易则另按相应规则评估。付费求职会明显增加损失风险，暂停推进有助于降低该风险，但不能保证不会产生任何损失。",
+            "evidence_ids": [
+              "K001",
+              "SUP-R003"
+            ],
+            "suggestions": [
+              "暂缓按草案向甲公司任何账户支付这2000元，也不要以个人微信、支付宝或他人账户代收转账。",
+              "书面向甲公司（邮件或可留痕的聊天记录）提出：劳动合同法第九条禁止用人单位招用劳动者时收取财物，请删除保证金条款或改为不具强制性的自愿结算安排，并请对方书面回复。",
+              "将两条要求一并作为是否继续推进的判断点：先要求书面删改，观察对方是否积极配合、是否说明理由；对方坚持『公司规定』『所有新人都交』且拒绝修改时，不要签字、不要付款、不要交证件原件。",
+              "若确需核实对方口径，要求其说明2000元的性质、用途、收款主体名称与账户是否与劳动合同用人单位一致，并保留书面凭证。",
+              "对方以『不交钱就不签』『不交视为放弃录用』施压时，将其视为退出信号，不要付款。"
+            ],
+            "category": "risk",
+            "fact_basis": "abnormal_clause",
+            "legal_claims": [
+              {
+                "statement": "用人单位招用劳动者，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+                "basis_ids": [
+                  "K001"
+                ]
+              },
+              {
+                "statement": "该禁止性规定指向招用环节，未实际入职、尚未签订劳动合同不影响其适用；本案需进一步核实收费主体是否为拟招用单位及款项性质。",
+                "basis_ids": [
+                  "K001"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "劳动合同约定毕业证原件由公司保管至合同解除",
+            "level": "high",
+            "quote": "合同明确写：签约时应向甲公司对公账户支付2000元履约保证金，入职满6个月无违纪退还；毕业证原件由甲公司保管至劳动合同解除。",
+            "material_id": "user",
+            "page_number": 0,
+            "explanation": "草案约定毕业证原件由甲公司保管至劳动合同解除。劳动合同法第九条同时禁止用人单位招用劳动者时扣押居民身份证和其他证件。毕业证原件属『其他证件』，以保管至合同解除的方式长期占有，与当场出示核验学历的正常做法不同，属禁止的扣证安排；且毕业证原件被他人长期持有，会实质影响你另行求职、报考、办理落户等事务的主动权。该证件保管要求与保证金要求出自同一份劳动合同草案、同一处条款表述，两条组合出现进一步说明该签约条件不宜按对方口径接受，但证件类禁止与收费类禁止是劳动合同法第九条下两种不同行为，需分别处理。目前毕业证在你手里，尚未发生实际扣押。",
+            "evidence_ids": [
+              "K001",
+              "SUP-R003",
+              "SUP-F19"
+            ],
+            "suggestions": [
+              "暂缓签署含该条款的合同，也不要把毕业证原件交给甲公司；如需核验学历，可提供复印件并注明限定用途，或由本人携带原件当场出示。",
+              "书面要求删除『毕业证原件由公司保管』条款；若对方称只是核验，要求其以书面方式确认仅查验、不扣留原件、当场归还原件及归还时间。",
+              "要求对方在书面回复中一并说明保证金与证件保管的关联性；对方将两者捆绑为签约前提时，视为退出信号。",
+              "如入职后确被扣留原件，保留书面要求返还的记录，必要时向人社部门投诉或向公安机关反映。 人社办事入口：https://www.12333.gov.cn/；咨询热线：12333。可选择所在地，具体许可查询和受理渠道请向属地人社部门确认。 遇到人身危险或紧急情况，请拨打110。"
+            ],
+            "category": "risk",
+            "fact_basis": "abnormal_clause",
+            "legal_claims": [
+              {
+                "statement": "用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件。",
+                "basis_ids": [
+                  "K001"
+                ]
+              },
+              {
+                "statement": "正常当面核验身份、学历与长期扣留证件原件属不同情形，后者属禁止行为。",
+                "basis_ids": [
+                  "SUP-R003",
+                  "SUP-F19"
+                ]
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "用户仅提供条款文字概述，未提供合同草案全文、页码或完整条款，本报告以用户陈述的条款内容为准，可能存在其他未披露条款（如违约金、服务期、竞业限制、工资构成等）尚待核实。",
+          "甲公司全称和统一社会信用代码已提供但尚未核查，本报告不能确认其是否为依法登记存续的主体、是否存在无证职业中介活动或异常经营记录。",
+          "『履约保证金』的实际收款主体、账户名称是否与劳动合同用人单位一致、款项性质是否为独立培训或第三方服务，尚未核实；若属独立培训交易或第三方收费，适用规则与结论可能不同。",
+          "未核实月薪6500元、软件测试岗位工作内容、工作地点、薪资构成（是否含绩效、是否含加班费）以及3年期合同与3个月试用期的具体对应关系；3年期合同试用期3个月不超法定上限，但试用期工资具体标准、当地最低工资口径需等实际签订与用工后核对。",
+          "用户说明不存在培训服务、第三方中介或分期贷款，本报告未就培训贷、分期等事项展开；如后续出现贷款、分期或第三方收费安排，应重新评估。",
+          "本报告为基于现有材料的求职风险自查分析，不是法院、仲裁机构或行政机关的认定，也不构成对甲公司是否违法的结论；个案结果不能直接套用。"
+        ],
+        "change_reason": "",
+        "prevention": {
+          "decision": "pause",
+          "label": "签约前暂停付款与交证，先书面核实并删改条款",
+          "steps": [
+            "暂缓签署该劳动合同草案；在条款删改前不向甲公司或其指定账户支付2000元履约保证金，也不办理任何形式的借款、分期或代付。",
+            "暂缓向甲公司交付毕业证原件；如对方要求核验学历，改为本人携带原件当场出示或提供注明用途的复印件。",
+            "以书面方式（邮件或可留痕聊天）向甲公司提出两项要求：删除保证金条款，删除毕业证原件保管条款，并要求对方书面回复是否同意修改。",
+            "书面追问并要求明确：劳动合同用人单位全称、统一社会信用代码、办公地址；2000元的性质、用途、收款主体与账户名称；岗位工作内容、工作地点、薪资构成、试用期工资标准与考核方式。",
+            "通过国家企业信用信息公示系统等官方渠道核对甲公司登记状态、经营范围与股东信息，但登记信息真实不能作为接受收费、扣证或付费求职的理由。 核查入口：https://www.gsxt.gov.cn/（国家企业信用信息公示系统）。",
+            "出现以下情形应退出：对方坚持不交钱/不交毕业证就不签合同、催促当天决定、拒绝书面回复或威胁影响录用。",
+            "保留合同草案文本、全部沟通记录、主体信息与任何转账凭证；如已发生收费或扣证争议，可通过12333向人社部门咨询投诉，或向公安机关反映。 人社办事入口：https://www.12333.gov.cn/；咨询热线：12333。可选择所在地，具体许可查询和受理渠道请向属地人社部门确认。 遇到人身危险或紧急情况，请拨打110。"
+          ],
+          "note": "上述为签约前可执行的预防与核实步骤，不保证任何特定结果，也不能替代对合同全文的审查；在条款删改并核实主体前，不建议推进签约、付款或交证。"
+        },
+        "self_checks": [
+          "合同草案中除保证金与证件保管外，是否还有违约金、服务期、竞业限制、工资构成、加班与休息、社保缴纳等条款？可否提供全文以进一步核对？",
+          "甲公司全称、统一社会信用代码是否已通过国家企业信用信息公示系统核对？其经营范围与登记状态如何？",
+          "保证金收款账户名称是否与劳动合同用人单位完全一致？对方口头或书面如何说明这2000元的性质与用途？"
+        ],
+        "version": 1,
+        "created_at": "2026-10-09T11:37:25.808762+00:00",
+        "sources": [
+          {
+            "id": "K001",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+            "location": "第九条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-08",
+            "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+            "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+            "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+            "tags": [
+              "保证金",
+              "押金",
+              "毕业证",
+              "身份证",
+              "扣押证件",
+              "入职收费",
+              "劳动合同法",
+              "第九条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 9,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "全国人民代表大会常务委员会",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+            "legal_database_status": "specific_record_checked",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "contract",
+              "identity"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07",
+            "source_role": "法律制定机关",
+            "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+          },
+          {
+            "id": "LCL-025",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+            "location": "第二十五条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-08",
+            "text": "第二十五条　除本法第二十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二十五条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 25,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [
+              "LCL-022"
+            ],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "全国人民代表大会常务委员会",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+            "legal_database_status": "specific_record_checked",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07",
+            "source_role": "法律制定机关",
+            "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+          },
+          {
+            "id": "PRE-W-identity",
+            "title": "招聘个人信息、账户及证件保护",
+            "kind": "warning",
+            "url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202404/t20240403_1123815.html",
+            "location": "严守隐私，防范信息泄露",
+            "published_at": "2024-04-03",
+            "verified_at": "2026-10-08",
+            "text": "先多渠道核验单位证照与岗位信息；警惕陌生招聘链接、转到私聊后要求下载APP，不泄露银行卡及网银密码。信息被盗用或遭受诈骗时向公安机关求助。",
+            "scope": "大学生找实习、找工作及付款签约前的风险识别",
+            "boundary": "官方风险提示的归纳，不是法条原文、企业核验结果或个案违法认定。须结合行为、主体和事实；线上办公或信息缺失本身不等于诈骗。",
+            "tags": [
+              "个人信息",
+              "银行卡",
+              "密码",
+              "验证码",
+              "账户",
+              "证件"
+            ],
+            "content_form": "official_warning_paraphrase",
+            "verification_status": "official_source_checked",
+            "source_publisher": "教育部",
+            "related_article_ids": [],
+            "origin_document": "常见的坑.xlsx（用于选题分类，非规范来源）",
+            "source_access_note": "已读取教育部原始发布页，核对及时核查招聘信息、保护证件和银行卡密码、保留证据等提示；陌生链接、私聊及下载APP风险由附列人社部原始提示第三类第6、9项支持。",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "contract",
+              "trial_intern",
+              "identity"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07",
+            "previous_source_urls": [
+              "https://www.huadu.gov.cn/zdlyxxgk/jycy/jycyxx/content/mpost_10394951.html"
+            ],
+            "source_title": "毕业生们，四招教你避开求职陷阱",
+            "source_role": "发布机关",
+            "source_relation": "issuing_agency_original",
+            "source_published_at": "2024-04-03",
+            "additional_official_sources": [
+              {
+                "title": "三部门发布求职招聘十个典型陷阱防范提示",
+                "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202306/t20230609_501276.html",
+                "publisher": "人力资源社会保障部、中央网信办、公安部",
+                "published_at": "2023-06-09",
+                "location": "第三类第6、9项及防范提示"
+              }
+            ]
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-15",
+            "verified_at": "2026-10-08",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ],
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "training_loan"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07",
+            "alternate_urls": [
+              "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+            ],
+            "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+            "source_site": "人力资源和社会保障部",
+            "source_access_note": "原始发布页与备用官方页面均已核对；网页若加载缓慢，可尝试备用官方页面。"
+          },
+          {
+            "id": "SUP-R003",
+            "title": "扣押证件",
+            "kind": "support",
+            "text": "扣留身份证或其他证件原件作为入职或离职条件；正常查验不等于扣押。\n关联依据编号：K001",
+            "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+            "location": "风险判定辅助",
+            "published_at": "",
+            "verified_at": "2026-10-08",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "扣押证件",
+              "风险判定辅助"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K001"
+            ],
+            "support_category": "风险判定辅助",
+            "origin_document": "三色判定规则库.docx",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract",
+              "identity"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07",
+            "previous_source_urls": [
+              "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm"
+            ],
+            "source_site": "国家法律法规数据库 全国人大常委会办公厅",
+            "source_published_at": "2012-12-28",
+            "source_effective_at": "2013-07-01",
+            "source_access_note": "已在全国人大数据库具体记录核对标题、版本及有效状态；正文未在本轮逐字重新核验。",
+            "source_publisher": "作品团队",
+            "source_role": "整理者",
+            "source_relation": "related_official_basis",
+            "related_source_publisher": "全国人民代表大会常务委员会"
+          },
+          {
+            "id": "SUP-F19",
+            "title": "身份证原件抵押与正常核验",
+            "kind": "support",
+            "text": "用人单位招用劳动者不得扣押身份证等证件。正常当面核验身份与扣留原件不同；不提交不必要的完整证件信息，保存扣证要求并要求返还。\n关联依据编号：K001",
+            "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-08",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "身份证原件抵押与正常核验",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K001"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract",
+              "identity"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07",
+            "previous_source_urls": [
+              "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm"
+            ],
+            "source_site": "国家法律法规数据库 全国人大常委会办公厅",
+            "source_published_at": "2012-12-28",
+            "source_effective_at": "2013-07-01",
+            "source_access_note": "已在全国人大数据库具体记录核对标题、版本及有效状态；正文未在本轮逐字重新核验。",
+            "source_publisher": "作品团队",
+            "source_role": "整理者",
+            "source_relation": "related_official_basis",
+            "related_source_publisher": "全国人民代表大会常务委员会"
+          }
+        ],
+        "employment_stage": "preemployment",
+        "stage_reason": "用户为大四学生、尚未入职、未签合同、未付款，仅收到甲公司劳动合同草案，属求职签约前阶段。",
+        "report_context": {
+          "user_statements": [
+            "我是大四学生，找第一份正式工作，未入职、未签合同、未付款。直接招聘的甲软件公司给我完整劳动合同草案，岗位软件测试，月薪6500元，期限3年，试用期3个月。合同明确写：签约时应向甲公司对公账户支付2000元履约保证金，入职满6个月无违纪退还；毕业证原件由甲公司保管至劳动合同解除。没有培训服务、第三方中介或分期贷款。保证金没有支付，毕业证在我手里，公司全称和统一社会信用代码已提供但尚未核查。请基于这些拟签条款直接生成报告。"
+          ],
+          "materials": []
+        }
+      },
+      "sources": [
+        {
+          "id": "K001",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+          "location": "第九条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-08",
+          "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+          "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+          "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+          "tags": [
+            "保证金",
+            "押金",
+            "毕业证",
+            "身份证",
+            "扣押证件",
+            "入职收费",
+            "劳动合同法",
+            "第九条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 9,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "全国人民代表大会常务委员会",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+          "legal_database_status": "specific_record_checked",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "contract",
+            "identity"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07",
+          "source_role": "法律制定机关",
+          "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+        },
+        {
+          "id": "K007",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "kind": "guide",
+          "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+          "location": "风险提示第五项",
+          "published_at": "2026-05-15",
+          "verified_at": "2026-10-08",
+          "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+          "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+          "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+          "tags": [
+            "保留证据",
+            "聊天记录",
+            "转账凭证",
+            "投诉",
+            "报案",
+            "建议"
+          ],
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "training_loan"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07",
+          "alternate_urls": [
+            "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+          ],
+          "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+          "source_site": "人力资源和社会保障部",
+          "source_access_note": "原始发布页与备用官方页面均已核对；网页若加载缓慢，可尝试备用官方页面。"
+        },
+        {
+          "id": "LCL-025",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+          "location": "第二十五条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-08",
+          "text": "第二十五条　除本法第二十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+          "scope": "本条所列情形；第二章　劳动合同的订立 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第二十五条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 25,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [
+            "LCL-022"
+          ],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "全国人民代表大会常务委员会",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+          "legal_database_status": "specific_record_checked",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07",
+          "source_role": "法律制定机关",
+          "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+        },
+        {
+          "id": "PRE-W-identity",
+          "title": "招聘个人信息、账户及证件保护",
+          "kind": "warning",
+          "url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202404/t20240403_1123815.html",
+          "location": "严守隐私，防范信息泄露",
+          "published_at": "2024-04-03",
+          "verified_at": "2026-10-08",
+          "text": "先多渠道核验单位证照与岗位信息；警惕陌生招聘链接、转到私聊后要求下载APP，不泄露银行卡及网银密码。信息被盗用或遭受诈骗时向公安机关求助。",
+          "scope": "大学生找实习、找工作及付款签约前的风险识别",
+          "boundary": "官方风险提示的归纳，不是法条原文、企业核验结果或个案违法认定。须结合行为、主体和事实；线上办公或信息缺失本身不等于诈骗。",
+          "tags": [
+            "个人信息",
+            "银行卡",
+            "密码",
+            "验证码",
+            "账户",
+            "证件"
+          ],
+          "content_form": "official_warning_paraphrase",
+          "verification_status": "official_source_checked",
+          "source_publisher": "教育部",
+          "related_article_ids": [],
+          "origin_document": "常见的坑.xlsx（用于选题分类，非规范来源）",
+          "source_access_note": "已读取教育部原始发布页，核对及时核查招聘信息、保护证件和银行卡密码、保留证据等提示；陌生链接、私聊及下载APP风险由附列人社部原始提示第三类第6、9项支持。",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "contract",
+            "trial_intern",
+            "identity"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07",
+          "previous_source_urls": [
+            "https://www.huadu.gov.cn/zdlyxxgk/jycy/jycyxx/content/mpost_10394951.html"
+          ],
+          "source_title": "毕业生们，四招教你避开求职陷阱",
+          "source_role": "发布机关",
+          "source_relation": "issuing_agency_original",
+          "source_published_at": "2024-04-03",
+          "additional_official_sources": [
+            {
+              "title": "三部门发布求职招聘十个典型陷阱防范提示",
+              "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202306/t20230609_501276.html",
+              "publisher": "人力资源社会保障部、中央网信办、公安部",
+              "published_at": "2023-06-09",
+              "location": "第三类第6、9项及防范提示"
+            }
+          ]
+        },
+        {
+          "id": "SUP-F19",
+          "title": "身份证原件抵押与正常核验",
+          "kind": "support",
+          "text": "用人单位招用劳动者不得扣押身份证等证件。正常当面核验身份与扣留原件不同；不提交不必要的完整证件信息，保存扣证要求并要求返还。\n关联依据编号：K001",
+          "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+          "location": "高频问答",
+          "published_at": "",
+          "verified_at": "2026-10-08",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "身份证原件抵押与正常核验",
+            "高频问答"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "K001"
+          ],
+          "support_category": "高频问答",
+          "origin_document": "大学生就业权益高频问题回答.docx",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract",
+            "identity"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07",
+          "previous_source_urls": [
+            "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm"
+          ],
+          "source_site": "国家法律法规数据库 全国人大常委会办公厅",
+          "source_published_at": "2012-12-28",
+          "source_effective_at": "2013-07-01",
+          "source_access_note": "已在全国人大数据库具体记录核对标题、版本及有效状态；正文未在本轮逐字重新核验。",
+          "source_publisher": "作品团队",
+          "source_role": "整理者",
+          "source_relation": "related_official_basis",
+          "related_source_publisher": "全国人民代表大会常务委员会"
+        },
+        {
+          "id": "SUP-R003",
+          "title": "扣押证件",
+          "kind": "support",
+          "text": "扣留身份证或其他证件原件作为入职或离职条件；正常查验不等于扣押。\n关联依据编号：K001",
+          "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+          "location": "风险判定辅助",
+          "published_at": "",
+          "verified_at": "2026-10-08",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "扣押证件",
+            "风险判定辅助"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "K001"
+          ],
+          "support_category": "风险判定辅助",
+          "origin_document": "三色判定规则库.docx",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract",
+            "identity"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07",
+          "previous_source_urls": [
+            "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm"
+          ],
+          "source_site": "国家法律法规数据库 全国人大常委会办公厅",
+          "source_published_at": "2012-12-28",
+          "source_effective_at": "2013-07-01",
+          "source_access_note": "已在全国人大数据库具体记录核对标题、版本及有效状态；正文未在本轮逐字重新核验。",
+          "source_publisher": "作品团队",
+          "source_role": "整理者",
+          "source_relation": "related_official_basis",
+          "related_source_publisher": "全国人民代表大会常务委员会"
+        }
+      ]
+    }
+  ],
+  "session_id": "S9687217c5d184e859db96521c20628f2",
+  "raw_session": {
+    "id": "S9687217c5d184e859db96521c20628f2",
+    "title": "第四次反馈回归 contract",
+    "state": "reported",
+    "material_ids": [],
+    "messages": [
+      {
+        "role": "user",
+        "text": "我是大四学生，找第一份正式工作，未入职、未签合同、未付款。直接招聘的甲软件公司给我完整劳动合同草案，岗位软件测试，月薪6500元，期限3年，试用期3个月。合同明确写：签约时应向甲公司对公账户支付2000元履约保证金，入职满6个月无违纪退还；毕业证原件由甲公司保管至劳动合同解除。没有培训服务、第三方中介或分期贷款。保证金没有支付，毕业证在我手里，公司全称和统一社会信用代码已提供但尚未核查。请基于这些拟签条款直接生成报告。",
+        "material_ids": []
+      },
+      {
+        "role": "assistant",
+        "result": {
+          "action": "report",
+          "employment_stage": "preemployment",
+          "stage_reason": "用户为大四学生、尚未入职、未签合同、未付款，仅收到甲公司劳动合同草案，属求职签约前阶段。",
+          "message": "",
+          "questions": [],
+          "evidence_ids": [
+            "K001",
+            "SUP-R003",
+            "SUP-F19",
+            "LCL-025",
+            "PRE-W-identity",
+            "K007"
+          ],
+          "report": {
+            "summary": "当前处于签约前阶段，最需要注意的是：甲公司在劳动合同草案中把『签约时先交2000元履约保证金』和『毕业证原件交由公司保管至合同解除』写成签约条件，这两项都是用人单位招用劳动者时法律明确禁止的要求，不要因为对方是对公账户、有统一社会信用代码就付款或交出毕业证原件；两条同时出现在正式劳动合同草案而非口头要求中，更说明不能当作偶发疏忽对待。其次是核对主体和岗位真实性：甲公司全称与统一社会信用代码尚未核查，软件测试岗位与月薪6500元、试用期3个月、期限3年之间的对应关系也需书面确认（3年期合同试用期3个月本身不超过法定上限）。建议先暂缓签字、暂缓任何付款、暂缓交出任何证件原件，就保证金和证件保管两项要求向甲公司书面提出异议并要求删除；若对方坚持这两条是签约前提、拒绝删改，应将其作为退出信号。以下为基于现有拟签条款的有限判断，不构成对甲公司是否违法的最终认定，也不是法院或仲裁机构结论。",
+            "findings": [
+              {
+                "title": "劳动合同约定签约时向公司支付2000元履约保证金",
+                "level": "high",
+                "quote": "合同明确写：签约时应向甲公司对公账户支付2000元履约保证金，入职满6个月无违纪退还；毕业证原件由甲公司保管至劳动合同解除。",
+                "material_id": "user",
+                "page_number": 0,
+                "explanation": "草案把『签约时应向甲公司对公账户支付2000元履约保证金、入职满6个月无违纪才退还』写成签约条件。劳动合同法第九条明确禁止用人单位招用劳动者时要求劳动者提供担保或以其他名义收取财物，『履约保证金』属于典型担保性收费，即使是对公账户、金额不高、约定了退还条件，也不因此合法。该条针对的是招用环节，未实际入职、尚未签约并不排除适用。需要加重说明的是：这一收费要求与后文毕业证保管要求是写在同一份正式劳动合同草案中的两条签约束条件，而非个别口头说法，说明该模板条款并非偶发笔误，更不宜按对方口径接受。需要注意：本条针对的是用人单位招用劳动者的收费，需核实收费主体确为拟招用你的甲公司本身、款项确为入职担保性质而非独立培训或服务对价；如属独立培训交易则另按相应规则评估。付费求职会明显增加损失风险，暂停推进有助于降低该风险，但不能保证不会产生任何损失。",
+                "evidence_ids": [
+                  "K001",
+                  "SUP-R003"
+                ],
+                "suggestions": [
+                  "暂缓按草案向甲公司任何账户支付这2000元，也不要以个人微信、支付宝或他人账户代收转账。",
+                  "书面向甲公司（邮件或可留痕的聊天记录）提出：劳动合同法第九条禁止用人单位招用劳动者时收取财物，请删除保证金条款或改为不具强制性的自愿结算安排，并请对方书面回复。",
+                  "将两条要求一并作为是否继续推进的判断点：先要求书面删改，观察对方是否积极配合、是否说明理由；对方坚持『公司规定』『所有新人都交』且拒绝修改时，不要签字、不要付款、不要交证件原件。",
+                  "若确需核实对方口径，要求其说明2000元的性质、用途、收款主体名称与账户是否与劳动合同用人单位一致，并保留书面凭证。",
+                  "对方以『不交钱就不签』『不交视为放弃录用』施压时，将其视为退出信号，不要付款。"
+                ],
+                "category": "risk",
+                "fact_basis": "abnormal_clause",
+                "legal_claims": [
+                  {
+                    "statement": "用人单位招用劳动者，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+                    "basis_ids": [
+                      "K001"
+                    ]
+                  },
+                  {
+                    "statement": "该禁止性规定指向招用环节，未实际入职、尚未签订劳动合同不影响其适用；本案需进一步核实收费主体是否为拟招用单位及款项性质。",
+                    "basis_ids": [
+                      "K001"
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "劳动合同约定毕业证原件由公司保管至合同解除",
+                "level": "high",
+                "quote": "合同明确写：签约时应向甲公司对公账户支付2000元履约保证金，入职满6个月无违纪退还；毕业证原件由甲公司保管至劳动合同解除。",
+                "material_id": "user",
+                "page_number": 0,
+                "explanation": "草案约定毕业证原件由甲公司保管至劳动合同解除。劳动合同法第九条同时禁止用人单位招用劳动者时扣押居民身份证和其他证件。毕业证原件属『其他证件』，以保管至合同解除的方式长期占有，与当场出示核验学历的正常做法不同，属禁止的扣证安排；且毕业证原件被他人长期持有，会实质影响你另行求职、报考、办理落户等事务的主动权。该证件保管要求与保证金要求出自同一份劳动合同草案、同一处条款表述，两条组合出现进一步说明该签约条件不宜按对方口径接受，但证件类禁止与收费类禁止是劳动合同法第九条下两种不同行为，需分别处理。目前毕业证在你手里，尚未发生实际扣押。",
+                "evidence_ids": [
+                  "K001",
+                  "SUP-R003",
+                  "SUP-F19"
+                ],
+                "suggestions": [
+                  "暂缓签署含该条款的合同，也不要把毕业证原件交给甲公司；如需核验学历，可提供复印件并注明限定用途，或由本人携带原件当场出示。",
+                  "书面要求删除『毕业证原件由公司保管』条款；若对方称只是核验，要求其以书面方式确认仅查验、不扣留原件、当场归还原件及归还时间。",
+                  "要求对方在书面回复中一并说明保证金与证件保管的关联性；对方将两者捆绑为签约前提时，视为退出信号。",
+                  "如入职后确被扣留原件，保留书面要求返还的记录，必要时向人社部门投诉或向公安机关反映。 人社办事入口：https://www.12333.gov.cn/；咨询热线：12333。可选择所在地，具体许可查询和受理渠道请向属地人社部门确认。 遇到人身危险或紧急情况，请拨打110。"
+                ],
+                "category": "risk",
+                "fact_basis": "abnormal_clause",
+                "legal_claims": [
+                  {
+                    "statement": "用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件。",
+                    "basis_ids": [
+                      "K001"
+                    ]
+                  },
+                  {
+                    "statement": "正常当面核验身份、学历与长期扣留证件原件属不同情形，后者属禁止行为。",
+                    "basis_ids": [
+                      "SUP-R003",
+                      "SUP-F19"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "limitations": [
+              "用户仅提供条款文字概述，未提供合同草案全文、页码或完整条款，本报告以用户陈述的条款内容为准，可能存在其他未披露条款（如违约金、服务期、竞业限制、工资构成等）尚待核实。",
+              "甲公司全称和统一社会信用代码已提供但尚未核查，本报告不能确认其是否为依法登记存续的主体、是否存在无证职业中介活动或异常经营记录。",
+              "『履约保证金』的实际收款主体、账户名称是否与劳动合同用人单位一致、款项性质是否为独立培训或第三方服务，尚未核实；若属独立培训交易或第三方收费，适用规则与结论可能不同。",
+              "未核实月薪6500元、软件测试岗位工作内容、工作地点、薪资构成（是否含绩效、是否含加班费）以及3年期合同与3个月试用期的具体对应关系；3年期合同试用期3个月不超法定上限，但试用期工资具体标准、当地最低工资口径需等实际签订与用工后核对。",
+              "用户说明不存在培训服务、第三方中介或分期贷款，本报告未就培训贷、分期等事项展开；如后续出现贷款、分期或第三方收费安排，应重新评估。",
+              "本报告为基于现有材料的求职风险自查分析，不是法院、仲裁机构或行政机关的认定，也不构成对甲公司是否违法的结论；个案结果不能直接套用。"
+            ],
+            "change_reason": "",
+            "prevention": {
+              "decision": "pause",
+              "label": "签约前暂停付款与交证，先书面核实并删改条款",
+              "steps": [
+                "暂缓签署该劳动合同草案；在条款删改前不向甲公司或其指定账户支付2000元履约保证金，也不办理任何形式的借款、分期或代付。",
+                "暂缓向甲公司交付毕业证原件；如对方要求核验学历，改为本人携带原件当场出示或提供注明用途的复印件。",
+                "以书面方式（邮件或可留痕聊天）向甲公司提出两项要求：删除保证金条款，删除毕业证原件保管条款，并要求对方书面回复是否同意修改。",
+                "书面追问并要求明确：劳动合同用人单位全称、统一社会信用代码、办公地址；2000元的性质、用途、收款主体与账户名称；岗位工作内容、工作地点、薪资构成、试用期工资标准与考核方式。",
+                "通过国家企业信用信息公示系统等官方渠道核对甲公司登记状态、经营范围与股东信息，但登记信息真实不能作为接受收费、扣证或付费求职的理由。 核查入口：https://www.gsxt.gov.cn/（国家企业信用信息公示系统）。",
+                "出现以下情形应退出：对方坚持不交钱/不交毕业证就不签合同、催促当天决定、拒绝书面回复或威胁影响录用。",
+                "保留合同草案文本、全部沟通记录、主体信息与任何转账凭证；如已发生收费或扣证争议，可通过12333向人社部门咨询投诉，或向公安机关反映。 人社办事入口：https://www.12333.gov.cn/；咨询热线：12333。可选择所在地，具体许可查询和受理渠道请向属地人社部门确认。 遇到人身危险或紧急情况，请拨打110。"
+              ],
+              "note": "上述为签约前可执行的预防与核实步骤，不保证任何特定结果，也不能替代对合同全文的审查；在条款删改并核实主体前，不建议推进签约、付款或交证。"
+            },
+            "self_checks": [
+              "合同草案中除保证金与证件保管外，是否还有违约金、服务期、竞业限制、工资构成、加班与休息、社保缴纳等条款？可否提供全文以进一步核对？",
+              "甲公司全称、统一社会信用代码是否已通过国家企业信用信息公示系统核对？其经营范围与登记状态如何？",
+              "保证金收款账户名称是否与劳动合同用人单位完全一致？对方口头或书面如何说明这2000元的性质与用途？"
+            ],
+            "version": 1,
+            "created_at": "2026-10-09T11:37:25.808762+00:00",
+            "sources": [
+              {
+                "id": "K001",
+                "title": "中华人民共和国劳动合同法",
+                "kind": "law",
+                "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+                "location": "第九条",
+                "published_at": "2012-12-28",
+                "verified_at": "2026-10-08",
+                "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+                "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+                "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+                "tags": [
+                  "保证金",
+                  "押金",
+                  "毕业证",
+                  "身份证",
+                  "扣押证件",
+                  "入职收费",
+                  "劳动合同法",
+                  "第九条",
+                  "第二章　劳动合同的订立"
+                ],
+                "law_id": "labor-contract-law-2012",
+                "article_number": 9,
+                "chapter": "第二章　劳动合同的订立",
+                "section": "",
+                "version": "2012年12月28日修正",
+                "amendment_effective_at": "2013-07-01",
+                "content_form": "official_article_fulltext",
+                "verification_status": "official_source_checked",
+                "related_article_ids": [],
+                "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+                "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+                "source_publisher": "全国人民代表大会常务委员会",
+                "source_level": "national_authority",
+                "legal_database_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+                "legal_database_status": "specific_record_checked",
+                "stage_scope": "pre",
+                "employment_stages": [
+                  "preemployment"
+                ],
+                "risk_topics": [
+                  "fees",
+                  "contract",
+                  "identity"
+                ],
+                "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+                "classified_at": "2026-10-07",
+                "source_role": "法律制定机关",
+                "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+              },
+              {
+                "id": "LCL-025",
+                "title": "中华人民共和国劳动合同法",
+                "kind": "law",
+                "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+                "location": "第二十五条",
+                "published_at": "2012-12-28",
+                "verified_at": "2026-10-08",
+                "text": "第二十五条　除本法第二十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+                "scope": "本条所列情形；第二章　劳动合同的订立 ",
+                "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+                "tags": [
+                  "劳动合同法",
+                  "第二十五条",
+                  "第二章　劳动合同的订立"
+                ],
+                "law_id": "labor-contract-law-2012",
+                "article_number": 25,
+                "chapter": "第二章　劳动合同的订立",
+                "section": "",
+                "version": "2012年12月28日修正",
+                "amendment_effective_at": "2013-07-01",
+                "content_form": "official_article_fulltext",
+                "verification_status": "official_source_checked",
+                "related_article_ids": [
+                  "LCL-022"
+                ],
+                "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+                "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+                "source_publisher": "全国人民代表大会常务委员会",
+                "source_level": "national_authority",
+                "legal_database_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+                "legal_database_status": "specific_record_checked",
+                "stage_scope": "both",
+                "employment_stages": [
+                  "preemployment",
+                  "employed"
+                ],
+                "risk_topics": [
+                  "contract"
+                ],
+                "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+                "classified_at": "2026-10-07",
+                "source_role": "法律制定机关",
+                "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+              },
+              {
+                "id": "PRE-W-identity",
+                "title": "招聘个人信息、账户及证件保护",
+                "kind": "warning",
+                "url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202404/t20240403_1123815.html",
+                "location": "严守隐私，防范信息泄露",
+                "published_at": "2024-04-03",
+                "verified_at": "2026-10-08",
+                "text": "先多渠道核验单位证照与岗位信息；警惕陌生招聘链接、转到私聊后要求下载APP，不泄露银行卡及网银密码。信息被盗用或遭受诈骗时向公安机关求助。",
+                "scope": "大学生找实习、找工作及付款签约前的风险识别",
+                "boundary": "官方风险提示的归纳，不是法条原文、企业核验结果或个案违法认定。须结合行为、主体和事实；线上办公或信息缺失本身不等于诈骗。",
+                "tags": [
+                  "个人信息",
+                  "银行卡",
+                  "密码",
+                  "验证码",
+                  "账户",
+                  "证件"
+                ],
+                "content_form": "official_warning_paraphrase",
+                "verification_status": "official_source_checked",
+                "source_publisher": "教育部",
+                "related_article_ids": [],
+                "origin_document": "常见的坑.xlsx（用于选题分类，非规范来源）",
+                "source_access_note": "已读取教育部原始发布页，核对及时核查招聘信息、保护证件和银行卡密码、保留证据等提示；陌生链接、私聊及下载APP风险由附列人社部原始提示第三类第6、9项支持。",
+                "stage_scope": "pre",
+                "employment_stages": [
+                  "preemployment"
+                ],
+                "risk_topics": [
+                  "contract",
+                  "trial_intern",
+                  "identity"
+                ],
+                "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+                "classified_at": "2026-10-07",
+                "previous_source_urls": [
+                  "https://www.huadu.gov.cn/zdlyxxgk/jycy/jycyxx/content/mpost_10394951.html"
+                ],
+                "source_title": "毕业生们，四招教你避开求职陷阱",
+                "source_role": "发布机关",
+                "source_relation": "issuing_agency_original",
+                "source_published_at": "2024-04-03",
+                "additional_official_sources": [
+                  {
+                    "title": "三部门发布求职招聘十个典型陷阱防范提示",
+                    "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202306/t20230609_501276.html",
+                    "publisher": "人力资源社会保障部、中央网信办、公安部",
+                    "published_at": "2023-06-09",
+                    "location": "第三类第6、9项及防范提示"
+                  }
+                ]
+              },
+              {
+                "id": "K007",
+                "title": "五部门警惕招转培、培训贷风险提示",
+                "kind": "guide",
+                "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+                "location": "风险提示第五项",
+                "published_at": "2026-05-15",
+                "verified_at": "2026-10-08",
+                "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+                "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+                "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+                "tags": [
+                  "保留证据",
+                  "聊天记录",
+                  "转账凭证",
+                  "投诉",
+                  "报案",
+                  "建议"
+                ],
+                "stage_scope": "pre",
+                "employment_stages": [
+                  "preemployment"
+                ],
+                "risk_topics": [
+                  "training_loan"
+                ],
+                "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+                "classified_at": "2026-10-07",
+                "alternate_urls": [
+                  "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+                ],
+                "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+                "source_site": "人力资源和社会保障部",
+                "source_access_note": "原始发布页与备用官方页面均已核对；网页若加载缓慢，可尝试备用官方页面。"
+              },
+              {
+                "id": "SUP-R003",
+                "title": "扣押证件",
+                "kind": "support",
+                "text": "扣留身份证或其他证件原件作为入职或离职条件；正常查验不等于扣押。\n关联依据编号：K001",
+                "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+                "location": "风险判定辅助",
+                "published_at": "",
+                "verified_at": "2026-10-08",
+                "scope": "大学生招聘、签约、用工与就业权益咨询",
+                "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+                "tags": [
+                  "扣押证件",
+                  "风险判定辅助"
+                ],
+                "content_form": "reviewed_support",
+                "verification_status": "curated_with_references",
+                "related_article_ids": [
+                  "K001"
+                ],
+                "support_category": "风险判定辅助",
+                "origin_document": "三色判定规则库.docx",
+                "stage_scope": "both",
+                "employment_stages": [
+                  "preemployment",
+                  "employed"
+                ],
+                "risk_topics": [
+                  "contract",
+                  "identity"
+                ],
+                "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+                "classified_at": "2026-10-07",
+                "previous_source_urls": [
+                  "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm"
+                ],
+                "source_site": "国家法律法规数据库 全国人大常委会办公厅",
+                "source_published_at": "2012-12-28",
+                "source_effective_at": "2013-07-01",
+                "source_access_note": "已在全国人大数据库具体记录核对标题、版本及有效状态；正文未在本轮逐字重新核验。",
+                "source_publisher": "作品团队",
+                "source_role": "整理者",
+                "source_relation": "related_official_basis",
+                "related_source_publisher": "全国人民代表大会常务委员会"
+              },
+              {
+                "id": "SUP-F19",
+                "title": "身份证原件抵押与正常核验",
+                "kind": "support",
+                "text": "用人单位招用劳动者不得扣押身份证等证件。正常当面核验身份与扣留原件不同；不提交不必要的完整证件信息，保存扣证要求并要求返还。\n关联依据编号：K001",
+                "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+                "location": "高频问答",
+                "published_at": "",
+                "verified_at": "2026-10-08",
+                "scope": "大学生招聘、签约、用工与就业权益咨询",
+                "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+                "tags": [
+                  "身份证原件抵押与正常核验",
+                  "高频问答"
+                ],
+                "content_form": "reviewed_support",
+                "verification_status": "curated_with_references",
+                "related_article_ids": [
+                  "K001"
+                ],
+                "support_category": "高频问答",
+                "origin_document": "大学生就业权益高频问题回答.docx",
+                "stage_scope": "both",
+                "employment_stages": [
+                  "preemployment",
+                  "employed"
+                ],
+                "risk_topics": [
+                  "contract",
+                  "identity"
+                ],
+                "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+                "classified_at": "2026-10-07",
+                "previous_source_urls": [
+                  "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm"
+                ],
+                "source_site": "国家法律法规数据库 全国人大常委会办公厅",
+                "source_published_at": "2012-12-28",
+                "source_effective_at": "2013-07-01",
+                "source_access_note": "已在全国人大数据库具体记录核对标题、版本及有效状态；正文未在本轮逐字重新核验。",
+                "source_publisher": "作品团队",
+                "source_role": "整理者",
+                "source_relation": "related_official_basis",
+                "related_source_publisher": "全国人民代表大会常务委员会"
+              }
+            ],
+            "employment_stage": "preemployment",
+            "stage_reason": "用户为大四学生、尚未入职、未签合同、未付款，仅收到甲公司劳动合同草案，属求职签约前阶段。",
+            "report_context": {
+              "user_statements": [
+                "我是大四学生，找第一份正式工作，未入职、未签合同、未付款。直接招聘的甲软件公司给我完整劳动合同草案，岗位软件测试，月薪6500元，期限3年，试用期3个月。合同明确写：签约时应向甲公司对公账户支付2000元履约保证金，入职满6个月无违纪退还；毕业证原件由甲公司保管至劳动合同解除。没有培训服务、第三方中介或分期贷款。保证金没有支付，毕业证在我手里，公司全称和统一社会信用代码已提供但尚未核查。请基于这些拟签条款直接生成报告。"
+              ],
+              "materials": []
+            }
+          },
+          "sources": [
+            {
+              "id": "K001",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+              "location": "第九条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-08",
+              "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+              "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+              "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+              "tags": [
+                "保证金",
+                "押金",
+                "毕业证",
+                "身份证",
+                "扣押证件",
+                "入职收费",
+                "劳动合同法",
+                "第九条",
+                "第二章　劳动合同的订立"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 9,
+              "chapter": "第二章　劳动合同的订立",
+              "section": "",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+              "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "source_publisher": "全国人民代表大会常务委员会",
+              "source_level": "national_authority",
+              "legal_database_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+              "legal_database_status": "specific_record_checked",
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "contract",
+                "identity"
+              ],
+              "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+              "classified_at": "2026-10-07",
+              "source_role": "法律制定机关",
+              "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+            },
+            {
+              "id": "K007",
+              "title": "五部门警惕招转培、培训贷风险提示",
+              "kind": "guide",
+              "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+              "location": "风险提示第五项",
+              "published_at": "2026-05-15",
+              "verified_at": "2026-10-08",
+              "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+              "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+              "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+              "tags": [
+                "保留证据",
+                "聊天记录",
+                "转账凭证",
+                "投诉",
+                "报案",
+                "建议"
+              ],
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "training_loan"
+              ],
+              "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+              "classified_at": "2026-10-07",
+              "alternate_urls": [
+                "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+              ],
+              "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+              "source_site": "人力资源和社会保障部",
+              "source_access_note": "原始发布页与备用官方页面均已核对；网页若加载缓慢，可尝试备用官方页面。"
+            },
+            {
+              "id": "LCL-025",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+              "location": "第二十五条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-08",
+              "text": "第二十五条　除本法第二十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+              "scope": "本条所列情形；第二章　劳动合同的订立 ",
+              "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+              "tags": [
+                "劳动合同法",
+                "第二十五条",
+                "第二章　劳动合同的订立"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 25,
+              "chapter": "第二章　劳动合同的订立",
+              "section": "",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [
+                "LCL-022"
+              ],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+              "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "source_publisher": "全国人民代表大会常务委员会",
+              "source_level": "national_authority",
+              "legal_database_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+              "legal_database_status": "specific_record_checked",
+              "stage_scope": "both",
+              "employment_stages": [
+                "preemployment",
+                "employed"
+              ],
+              "risk_topics": [
+                "contract"
+              ],
+              "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+              "classified_at": "2026-10-07",
+              "source_role": "法律制定机关",
+              "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+            },
+            {
+              "id": "PRE-W-identity",
+              "title": "招聘个人信息、账户及证件保护",
+              "kind": "warning",
+              "url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202404/t20240403_1123815.html",
+              "location": "严守隐私，防范信息泄露",
+              "published_at": "2024-04-03",
+              "verified_at": "2026-10-08",
+              "text": "先多渠道核验单位证照与岗位信息；警惕陌生招聘链接、转到私聊后要求下载APP，不泄露银行卡及网银密码。信息被盗用或遭受诈骗时向公安机关求助。",
+              "scope": "大学生找实习、找工作及付款签约前的风险识别",
+              "boundary": "官方风险提示的归纳，不是法条原文、企业核验结果或个案违法认定。须结合行为、主体和事实；线上办公或信息缺失本身不等于诈骗。",
+              "tags": [
+                "个人信息",
+                "银行卡",
+                "密码",
+                "验证码",
+                "账户",
+                "证件"
+              ],
+              "content_form": "official_warning_paraphrase",
+              "verification_status": "official_source_checked",
+              "source_publisher": "教育部",
+              "related_article_ids": [],
+              "origin_document": "常见的坑.xlsx（用于选题分类，非规范来源）",
+              "source_access_note": "已读取教育部原始发布页，核对及时核查招聘信息、保护证件和银行卡密码、保留证据等提示；陌生链接、私聊及下载APP风险由附列人社部原始提示第三类第6、9项支持。",
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "contract",
+                "trial_intern",
+                "identity"
+              ],
+              "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+              "classified_at": "2026-10-07",
+              "previous_source_urls": [
+                "https://www.huadu.gov.cn/zdlyxxgk/jycy/jycyxx/content/mpost_10394951.html"
+              ],
+              "source_title": "毕业生们，四招教你避开求职陷阱",
+              "source_role": "发布机关",
+              "source_relation": "issuing_agency_original",
+              "source_published_at": "2024-04-03",
+              "additional_official_sources": [
+                {
+                  "title": "三部门发布求职招聘十个典型陷阱防范提示",
+                  "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202306/t20230609_501276.html",
+                  "publisher": "人力资源社会保障部、中央网信办、公安部",
+                  "published_at": "2023-06-09",
+                  "location": "第三类第6、9项及防范提示"
+                }
+              ]
+            },
+            {
+              "id": "SUP-F19",
+              "title": "身份证原件抵押与正常核验",
+              "kind": "support",
+              "text": "用人单位招用劳动者不得扣押身份证等证件。正常当面核验身份与扣留原件不同；不提交不必要的完整证件信息，保存扣证要求并要求返还。\n关联依据编号：K001",
+              "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+              "location": "高频问答",
+              "published_at": "",
+              "verified_at": "2026-10-08",
+              "scope": "大学生招聘、签约、用工与就业权益咨询",
+              "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+              "tags": [
+                "身份证原件抵押与正常核验",
+                "高频问答"
+              ],
+              "content_form": "reviewed_support",
+              "verification_status": "curated_with_references",
+              "related_article_ids": [
+                "K001"
+              ],
+              "support_category": "高频问答",
+              "origin_document": "大学生就业权益高频问题回答.docx",
+              "stage_scope": "both",
+              "employment_stages": [
+                "preemployment",
+                "employed"
+              ],
+              "risk_topics": [
+                "contract",
+                "identity"
+              ],
+              "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+              "classified_at": "2026-10-07",
+              "previous_source_urls": [
+                "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm"
+              ],
+              "source_site": "国家法律法规数据库 全国人大常委会办公厅",
+              "source_published_at": "2012-12-28",
+              "source_effective_at": "2013-07-01",
+              "source_access_note": "已在全国人大数据库具体记录核对标题、版本及有效状态；正文未在本轮逐字重新核验。",
+              "source_publisher": "作品团队",
+              "source_role": "整理者",
+              "source_relation": "related_official_basis",
+              "related_source_publisher": "全国人民代表大会常务委员会"
+            },
+            {
+              "id": "SUP-R003",
+              "title": "扣押证件",
+              "kind": "support",
+              "text": "扣留身份证或其他证件原件作为入职或离职条件；正常查验不等于扣押。\n关联依据编号：K001",
+              "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+              "location": "风险判定辅助",
+              "published_at": "",
+              "verified_at": "2026-10-08",
+              "scope": "大学生招聘、签约、用工与就业权益咨询",
+              "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+              "tags": [
+                "扣押证件",
+                "风险判定辅助"
+              ],
+              "content_form": "reviewed_support",
+              "verification_status": "curated_with_references",
+              "related_article_ids": [
+                "K001"
+              ],
+              "support_category": "风险判定辅助",
+              "origin_document": "三色判定规则库.docx",
+              "stage_scope": "both",
+              "employment_stages": [
+                "preemployment",
+                "employed"
+              ],
+              "risk_topics": [
+                "contract",
+                "identity"
+              ],
+              "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+              "classified_at": "2026-10-07",
+              "previous_source_urls": [
+                "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm"
+              ],
+              "source_site": "国家法律法规数据库 全国人大常委会办公厅",
+              "source_published_at": "2012-12-28",
+              "source_effective_at": "2013-07-01",
+              "source_access_note": "已在全国人大数据库具体记录核对标题、版本及有效状态；正文未在本轮逐字重新核验。",
+              "source_publisher": "作品团队",
+              "source_role": "整理者",
+              "source_relation": "related_official_basis",
+              "related_source_publisher": "全国人民代表大会常务委员会"
+            }
+          ]
+        }
+      }
+    ],
+    "reports": [
+      {
+        "summary": "当前处于签约前阶段，最需要注意的是：甲公司在劳动合同草案中把『签约时先交2000元履约保证金』和『毕业证原件交由公司保管至合同解除』写成签约条件，这两项都是用人单位招用劳动者时法律明确禁止的要求，不要因为对方是对公账户、有统一社会信用代码就付款或交出毕业证原件；两条同时出现在正式劳动合同草案而非口头要求中，更说明不能当作偶发疏忽对待。其次是核对主体和岗位真实性：甲公司全称与统一社会信用代码尚未核查，软件测试岗位与月薪6500元、试用期3个月、期限3年之间的对应关系也需书面确认（3年期合同试用期3个月本身不超过法定上限）。建议先暂缓签字、暂缓任何付款、暂缓交出任何证件原件，就保证金和证件保管两项要求向甲公司书面提出异议并要求删除；若对方坚持这两条是签约前提、拒绝删改，应将其作为退出信号。以下为基于现有拟签条款的有限判断，不构成对甲公司是否违法的最终认定，也不是法院或仲裁机构结论。",
+        "findings": [
+          {
+            "title": "劳动合同约定签约时向公司支付2000元履约保证金",
+            "level": "high",
+            "quote": "合同明确写：签约时应向甲公司对公账户支付2000元履约保证金，入职满6个月无违纪退还；毕业证原件由甲公司保管至劳动合同解除。",
+            "material_id": "user",
+            "page_number": 0,
+            "explanation": "草案把『签约时应向甲公司对公账户支付2000元履约保证金、入职满6个月无违纪才退还』写成签约条件。劳动合同法第九条明确禁止用人单位招用劳动者时要求劳动者提供担保或以其他名义收取财物，『履约保证金』属于典型担保性收费，即使是对公账户、金额不高、约定了退还条件，也不因此合法。该条针对的是招用环节，未实际入职、尚未签约并不排除适用。需要加重说明的是：这一收费要求与后文毕业证保管要求是写在同一份正式劳动合同草案中的两条签约束条件，而非个别口头说法，说明该模板条款并非偶发笔误，更不宜按对方口径接受。需要注意：本条针对的是用人单位招用劳动者的收费，需核实收费主体确为拟招用你的甲公司本身、款项确为入职担保性质而非独立培训或服务对价；如属独立培训交易则另按相应规则评估。付费求职会明显增加损失风险，暂停推进有助于降低该风险，但不能保证不会产生任何损失。",
+            "evidence_ids": [
+              "K001",
+              "SUP-R003"
+            ],
+            "suggestions": [
+              "暂缓按草案向甲公司任何账户支付这2000元，也不要以个人微信、支付宝或他人账户代收转账。",
+              "书面向甲公司（邮件或可留痕的聊天记录）提出：劳动合同法第九条禁止用人单位招用劳动者时收取财物，请删除保证金条款或改为不具强制性的自愿结算安排，并请对方书面回复。",
+              "将两条要求一并作为是否继续推进的判断点：先要求书面删改，观察对方是否积极配合、是否说明理由；对方坚持『公司规定』『所有新人都交』且拒绝修改时，不要签字、不要付款、不要交证件原件。",
+              "若确需核实对方口径，要求其说明2000元的性质、用途、收款主体名称与账户是否与劳动合同用人单位一致，并保留书面凭证。",
+              "对方以『不交钱就不签』『不交视为放弃录用』施压时，将其视为退出信号，不要付款。"
+            ],
+            "category": "risk",
+            "fact_basis": "abnormal_clause",
+            "legal_claims": [
+              {
+                "statement": "用人单位招用劳动者，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+                "basis_ids": [
+                  "K001"
+                ]
+              },
+              {
+                "statement": "该禁止性规定指向招用环节，未实际入职、尚未签订劳动合同不影响其适用；本案需进一步核实收费主体是否为拟招用单位及款项性质。",
+                "basis_ids": [
+                  "K001"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "劳动合同约定毕业证原件由公司保管至合同解除",
+            "level": "high",
+            "quote": "合同明确写：签约时应向甲公司对公账户支付2000元履约保证金，入职满6个月无违纪退还；毕业证原件由甲公司保管至劳动合同解除。",
+            "material_id": "user",
+            "page_number": 0,
+            "explanation": "草案约定毕业证原件由甲公司保管至劳动合同解除。劳动合同法第九条同时禁止用人单位招用劳动者时扣押居民身份证和其他证件。毕业证原件属『其他证件』，以保管至合同解除的方式长期占有，与当场出示核验学历的正常做法不同，属禁止的扣证安排；且毕业证原件被他人长期持有，会实质影响你另行求职、报考、办理落户等事务的主动权。该证件保管要求与保证金要求出自同一份劳动合同草案、同一处条款表述，两条组合出现进一步说明该签约条件不宜按对方口径接受，但证件类禁止与收费类禁止是劳动合同法第九条下两种不同行为，需分别处理。目前毕业证在你手里，尚未发生实际扣押。",
+            "evidence_ids": [
+              "K001",
+              "SUP-R003",
+              "SUP-F19"
+            ],
+            "suggestions": [
+              "暂缓签署含该条款的合同，也不要把毕业证原件交给甲公司；如需核验学历，可提供复印件并注明限定用途，或由本人携带原件当场出示。",
+              "书面要求删除『毕业证原件由公司保管』条款；若对方称只是核验，要求其以书面方式确认仅查验、不扣留原件、当场归还原件及归还时间。",
+              "要求对方在书面回复中一并说明保证金与证件保管的关联性；对方将两者捆绑为签约前提时，视为退出信号。",
+              "如入职后确被扣留原件，保留书面要求返还的记录，必要时向人社部门投诉或向公安机关反映。 人社办事入口：https://www.12333.gov.cn/；咨询热线：12333。可选择所在地，具体许可查询和受理渠道请向属地人社部门确认。 遇到人身危险或紧急情况，请拨打110。"
+            ],
+            "category": "risk",
+            "fact_basis": "abnormal_clause",
+            "legal_claims": [
+              {
+                "statement": "用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件。",
+                "basis_ids": [
+                  "K001"
+                ]
+              },
+              {
+                "statement": "正常当面核验身份、学历与长期扣留证件原件属不同情形，后者属禁止行为。",
+                "basis_ids": [
+                  "SUP-R003",
+                  "SUP-F19"
+                ]
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "用户仅提供条款文字概述，未提供合同草案全文、页码或完整条款，本报告以用户陈述的条款内容为准，可能存在其他未披露条款（如违约金、服务期、竞业限制、工资构成等）尚待核实。",
+          "甲公司全称和统一社会信用代码已提供但尚未核查，本报告不能确认其是否为依法登记存续的主体、是否存在无证职业中介活动或异常经营记录。",
+          "『履约保证金』的实际收款主体、账户名称是否与劳动合同用人单位一致、款项性质是否为独立培训或第三方服务，尚未核实；若属独立培训交易或第三方收费，适用规则与结论可能不同。",
+          "未核实月薪6500元、软件测试岗位工作内容、工作地点、薪资构成（是否含绩效、是否含加班费）以及3年期合同与3个月试用期的具体对应关系；3年期合同试用期3个月不超法定上限，但试用期工资具体标准、当地最低工资口径需等实际签订与用工后核对。",
+          "用户说明不存在培训服务、第三方中介或分期贷款，本报告未就培训贷、分期等事项展开；如后续出现贷款、分期或第三方收费安排，应重新评估。",
+          "本报告为基于现有材料的求职风险自查分析，不是法院、仲裁机构或行政机关的认定，也不构成对甲公司是否违法的结论；个案结果不能直接套用。"
+        ],
+        "change_reason": "",
+        "prevention": {
+          "decision": "pause",
+          "label": "签约前暂停付款与交证，先书面核实并删改条款",
+          "steps": [
+            "暂缓签署该劳动合同草案；在条款删改前不向甲公司或其指定账户支付2000元履约保证金，也不办理任何形式的借款、分期或代付。",
+            "暂缓向甲公司交付毕业证原件；如对方要求核验学历，改为本人携带原件当场出示或提供注明用途的复印件。",
+            "以书面方式（邮件或可留痕聊天）向甲公司提出两项要求：删除保证金条款，删除毕业证原件保管条款，并要求对方书面回复是否同意修改。",
+            "书面追问并要求明确：劳动合同用人单位全称、统一社会信用代码、办公地址；2000元的性质、用途、收款主体与账户名称；岗位工作内容、工作地点、薪资构成、试用期工资标准与考核方式。",
+            "通过国家企业信用信息公示系统等官方渠道核对甲公司登记状态、经营范围与股东信息，但登记信息真实不能作为接受收费、扣证或付费求职的理由。 核查入口：https://www.gsxt.gov.cn/（国家企业信用信息公示系统）。",
+            "出现以下情形应退出：对方坚持不交钱/不交毕业证就不签合同、催促当天决定、拒绝书面回复或威胁影响录用。",
+            "保留合同草案文本、全部沟通记录、主体信息与任何转账凭证；如已发生收费或扣证争议，可通过12333向人社部门咨询投诉，或向公安机关反映。 人社办事入口：https://www.12333.gov.cn/；咨询热线：12333。可选择所在地，具体许可查询和受理渠道请向属地人社部门确认。 遇到人身危险或紧急情况，请拨打110。"
+          ],
+          "note": "上述为签约前可执行的预防与核实步骤，不保证任何特定结果，也不能替代对合同全文的审查；在条款删改并核实主体前，不建议推进签约、付款或交证。"
+        },
+        "self_checks": [
+          "合同草案中除保证金与证件保管外，是否还有违约金、服务期、竞业限制、工资构成、加班与休息、社保缴纳等条款？可否提供全文以进一步核对？",
+          "甲公司全称、统一社会信用代码是否已通过国家企业信用信息公示系统核对？其经营范围与登记状态如何？",
+          "保证金收款账户名称是否与劳动合同用人单位完全一致？对方口头或书面如何说明这2000元的性质与用途？"
+        ],
+        "version": 1,
+        "created_at": "2026-10-09T11:37:25.808762+00:00",
+        "sources": [
+          {
+            "id": "K001",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+            "location": "第九条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-08",
+            "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+            "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+            "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+            "tags": [
+              "保证金",
+              "押金",
+              "毕业证",
+              "身份证",
+              "扣押证件",
+              "入职收费",
+              "劳动合同法",
+              "第九条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 9,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "全国人民代表大会常务委员会",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+            "legal_database_status": "specific_record_checked",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "contract",
+              "identity"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07",
+            "source_role": "法律制定机关",
+            "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+          },
+          {
+            "id": "LCL-025",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+            "location": "第二十五条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-08",
+            "text": "第二十五条　除本法第二十二条和第二十三条规定的情形外，用人单位不得与劳动者约定由劳动者承担违约金。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二十五条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 25,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [
+              "LCL-022"
+            ],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "全国人民代表大会常务委员会",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+            "legal_database_status": "specific_record_checked",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07",
+            "source_role": "法律制定机关",
+            "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+          },
+          {
+            "id": "PRE-W-identity",
+            "title": "招聘个人信息、账户及证件保护",
+            "kind": "warning",
+            "url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202404/t20240403_1123815.html",
+            "location": "严守隐私，防范信息泄露",
+            "published_at": "2024-04-03",
+            "verified_at": "2026-10-08",
+            "text": "先多渠道核验单位证照与岗位信息；警惕陌生招聘链接、转到私聊后要求下载APP，不泄露银行卡及网银密码。信息被盗用或遭受诈骗时向公安机关求助。",
+            "scope": "大学生找实习、找工作及付款签约前的风险识别",
+            "boundary": "官方风险提示的归纳，不是法条原文、企业核验结果或个案违法认定。须结合行为、主体和事实；线上办公或信息缺失本身不等于诈骗。",
+            "tags": [
+              "个人信息",
+              "银行卡",
+              "密码",
+              "验证码",
+              "账户",
+              "证件"
+            ],
+            "content_form": "official_warning_paraphrase",
+            "verification_status": "official_source_checked",
+            "source_publisher": "教育部",
+            "related_article_ids": [],
+            "origin_document": "常见的坑.xlsx（用于选题分类，非规范来源）",
+            "source_access_note": "已读取教育部原始发布页，核对及时核查招聘信息、保护证件和银行卡密码、保留证据等提示；陌生链接、私聊及下载APP风险由附列人社部原始提示第三类第6、9项支持。",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "contract",
+              "trial_intern",
+              "identity"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07",
+            "previous_source_urls": [
+              "https://www.huadu.gov.cn/zdlyxxgk/jycy/jycyxx/content/mpost_10394951.html"
+            ],
+            "source_title": "毕业生们，四招教你避开求职陷阱",
+            "source_role": "发布机关",
+            "source_relation": "issuing_agency_original",
+            "source_published_at": "2024-04-03",
+            "additional_official_sources": [
+              {
+                "title": "三部门发布求职招聘十个典型陷阱防范提示",
+                "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202306/t20230609_501276.html",
+                "publisher": "人力资源社会保障部、中央网信办、公安部",
+                "published_at": "2023-06-09",
+                "location": "第三类第6、9项及防范提示"
+              }
+            ]
+          },
+          {
+            "id": "K007",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "guide",
+            "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+            "location": "风险提示第五项",
+            "published_at": "2026-05-15",
+            "verified_at": "2026-10-08",
+            "text": "求职者要注意保留相关聊天记录、协议文本和转账凭证等，为可能的纠纷留存证据。如果落入骗局，请向人力资源社会保障部门投诉举报，或向公安机关报案。",
+            "scope": "求职纠纷证据保存与官方提示中的求助方向。",
+            "boundary": "是否存在骗局或适用具体程序仍要核实；不自动替用户投诉或报案。",
+            "tags": [
+              "保留证据",
+              "聊天记录",
+              "转账凭证",
+              "投诉",
+              "报案",
+              "建议"
+            ],
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "training_loan"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07",
+            "alternate_urls": [
+              "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+            ],
+            "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+            "source_site": "人力资源和社会保障部",
+            "source_access_note": "原始发布页与备用官方页面均已核对；网页若加载缓慢，可尝试备用官方页面。"
+          },
+          {
+            "id": "SUP-R003",
+            "title": "扣押证件",
+            "kind": "support",
+            "text": "扣留身份证或其他证件原件作为入职或离职条件；正常查验不等于扣押。\n关联依据编号：K001",
+            "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+            "location": "风险判定辅助",
+            "published_at": "",
+            "verified_at": "2026-10-08",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "扣押证件",
+              "风险判定辅助"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K001"
+            ],
+            "support_category": "风险判定辅助",
+            "origin_document": "三色判定规则库.docx",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract",
+              "identity"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07",
+            "previous_source_urls": [
+              "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm"
+            ],
+            "source_site": "国家法律法规数据库 全国人大常委会办公厅",
+            "source_published_at": "2012-12-28",
+            "source_effective_at": "2013-07-01",
+            "source_access_note": "已在全国人大数据库具体记录核对标题、版本及有效状态；正文未在本轮逐字重新核验。",
+            "source_publisher": "作品团队",
+            "source_role": "整理者",
+            "source_relation": "related_official_basis",
+            "related_source_publisher": "全国人民代表大会常务委员会"
+          },
+          {
+            "id": "SUP-F19",
+            "title": "身份证原件抵押与正常核验",
+            "kind": "support",
+            "text": "用人单位招用劳动者不得扣押身份证等证件。正常当面核验身份与扣留原件不同；不提交不必要的完整证件信息，保存扣证要求并要求返还。\n关联依据编号：K001",
+            "url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-08",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "身份证原件抵押与正常核验",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K001"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract",
+              "identity"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07",
+            "previous_source_urls": [
+              "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm"
+            ],
+            "source_site": "国家法律法规数据库 全国人大常委会办公厅",
+            "source_published_at": "2012-12-28",
+            "source_effective_at": "2013-07-01",
+            "source_access_note": "已在全国人大数据库具体记录核对标题、版本及有效状态；正文未在本轮逐字重新核验。",
+            "source_publisher": "作品团队",
+            "source_role": "整理者",
+            "source_relation": "related_official_basis",
+            "related_source_publisher": "全国人民代表大会常务委员会"
+          }
+        ],
+        "employment_stage": "preemployment",
+        "stage_reason": "用户为大四学生、尚未入职、未签合同、未付款，仅收到甲公司劳动合同草案，属求职签约前阶段。",
+        "report_context": {
+          "user_statements": [
+            "我是大四学生，找第一份正式工作，未入职、未签合同、未付款。直接招聘的甲软件公司给我完整劳动合同草案，岗位软件测试，月薪6500元，期限3年，试用期3个月。合同明确写：签约时应向甲公司对公账户支付2000元履约保证金，入职满6个月无违纪退还；毕业证原件由甲公司保管至劳动合同解除。没有培训服务、第三方中介或分期贷款。保证金没有支付，毕业证在我手里，公司全称和统一社会信用代码已提供但尚未核查。请基于这些拟签条款直接生成报告。"
+          ],
+          "materials": []
+        }
+      }
+    ],
+    "revision": 1,
+    "updated_at": "2026-10-09T11:37:25.808804+00:00"
+  }
+}

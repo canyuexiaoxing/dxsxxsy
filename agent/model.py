@@ -1,6 +1,7 @@
 import json
 from urllib.parse import urlsplit
 import httpx
+from .tasks import check_cancelled,abortable_client,TaskCancelled
 
 
 class ModelError(RuntimeError): pass
@@ -10,6 +11,7 @@ class ChatModel:
     requires_structured_findings=True
     def __init__(self,settings,transport=None): self.settings,self.transport=settings,transport
     def complete(self,messages,tools=None,force_search=False,review_mode=False):
+        check_cancelled()
         cfg=self.settings
         if not cfg.api_key: raise ModelError('未配置DeepSeek密钥')
         parsed=urlsplit(cfg.base_url)
@@ -21,16 +23,32 @@ class ChatModel:
             payload['tool_choice']={'type':'function','function':{'name':'search_knowledge'}} if force_search else 'auto'
         else: payload['response_format']={'type':'json_object'}
         try:
-            with httpx.Client(timeout=cfg.timeout,transport=self.transport,follow_redirects=False,trust_env=False) as client:
+            with httpx.Client(timeout=cfg.timeout,transport=self.transport,follow_redirects=False,trust_env=False) as client, abortable_client(client):
                 result=client.post(cfg.base_url.rstrip('/')+'/chat/completions',headers={'Authorization':'Bearer '+cfg.api_key},json=payload)
             if result.status_code!=200: raise ModelError(f'模型接口HTTP {result.status_code}，本次未生成报告')
             choice=result.json()['choices'][0]
             if choice.get('finish_reason')=='length': raise ModelError('模型输出被截断，本次未生成完整报告')
             message=choice['message']
             return {k:message[k] for k in ['role','content','tool_calls'] if k in message}
-        except ModelError: raise
-        except Exception: raise ModelError('模型接口超时、连接失败或响应格式异常') from None
+        except (ModelError,TaskCancelled): raise
+        except Exception:
+            check_cancelled()
+            raise ModelError('模型接口超时、连接失败或响应格式异常') from None
 
+
+    def summarize_situation(self,context):
+        from .situation import SITUATION_PROMPT, overview_input, valid_overview
+        payload=overview_input(context)
+        encoded=json.dumps(payload,ensure_ascii=False)
+        if len(encoded)>200000:raise ModelError('情况概述材料超过预算')
+        message=self.complete([{'role':'system','content':SITUATION_PROMPT},
+                               {'role':'user','content':encoded}])
+        try:
+            value=json.loads(message.get('content') or '')
+            if not isinstance(value,dict) or set(value)!={'overview'} or not valid_overview(value['overview']):
+                raise ValueError()
+            return ' '.join(value['overview'].split())
+        except (ValueError,TypeError):raise ModelError('情况概述格式不合要求') from None
 
     def extract_facts(self,context):
         from .facts import FACT_PROMPT,FactLedger

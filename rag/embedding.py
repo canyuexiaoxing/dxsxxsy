@@ -1,5 +1,6 @@
 from urllib.parse import urlsplit
 import httpx
+from agent.tasks import check_cancelled,abortable_client
 
 
 class OllamaEmbedding:
@@ -11,11 +12,12 @@ class OllamaEmbedding:
 
     def encode(self,texts):
         try:
-            with httpx.Client(timeout=120,trust_env=False) as client:
+            with httpx.Client(timeout=120,trust_env=False) as client, abortable_client(client):
                 response=client.post(self.base_url+'/api/embed',json={'model':self.model,'input':texts,'truncate':False,'options':{'num_ctx':2048}})
                 response.raise_for_status()
                 vectors=response.json()['embeddings']
             if len(vectors)!=len(texts) or not vectors or not vectors[0]: raise ValueError()
             return vectors
         except Exception:
+            check_cancelled()
             raise ValueError('本地Embedding不可用，请先运行start-embedding.ps1') from None

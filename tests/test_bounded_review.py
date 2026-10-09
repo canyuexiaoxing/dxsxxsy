@@ -20,7 +20,8 @@ class BoundedReviewTests(unittest.TestCase):
   self.assertEqual(reply['report']['review_status']['audit_count'],2)
   self.assertEqual(reply['report']['review_status']['revision_count'],2)
   self.assertEqual(reply['report']['review_status']['status'],'final_revision_unreviewed')
-  self.assertTrue(any('复核' in s for s in reply['report']['review_notes']))
+  self.assertTrue(any('核实关键事实' in s for s in reply['report']['review_notes']))
+  self.assertFalse(any('复核' in s for s in reply['report']['review_notes']))
  def test_failed_first_audit_does_not_claim_two_revisions(self):
   class Retry(QualityModel):
    def __init__(self,*a):super().__init__(*a);self.first=True
@@ -75,7 +76,8 @@ class BoundedReviewTests(unittest.TestCase):
    def review(self,*args):raise ModelError('不可用')
   reply=AgentEngine(self.sessions,self.materials,FakeRag(),Offline([tool(),output('report',self.report())],[])).turn(self.sid,'公司要求保证金')
   with ZipFile(BytesIO(render_report_docx(reply['report']))) as doc:
-   self.assertIn('内容复核未完成',doc.read('word/document.xml').decode())
+   self.assertNotIn('内容复核未完成',doc.read('word/document.xml').decode())
+   self.assertIn('核实关键事实',doc.read('word/document.xml').decode())
 
 class ReviewerIsolationTests(unittest.TestCase):
  def test_reviewer_returns_issues_with_separate_memory_and_no_assistant_history(self):

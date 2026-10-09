@@ -1,0 +1,28 @@
+[
+  {
+    "id": "recruit-paid-training",
+    "session_id": "S42099a72dce24ac29f51cba0bec1ea7f",
+    "flow_completed": true,
+    "content_verdict": "needs_fix_unsupported_communication_medium_and_missing_document_assertion",
+    "error": null,
+    "manual_review": {
+      "correct": [
+        "One recruitment-to-paid-training high-risk finding",
+        "Unknown installment nature was not treated as an established loan",
+        "Full original input preserved in Word"
+      ],
+      "remaining": [
+        "Report calls HR statements oral although communication medium is unspecified",
+        "No written employment promise was asserted despite input only saying no training agreement received",
+        "Model audit passed and missed these unsupported expansions"
+      ],
+      "export_qa": {
+        "pages": 9,
+        "all_pages_visually_checked": true,
+        "pdf_link_annotations": 15,
+        "distinct_link_targets": 7
+      },
+      "flow": "Model generated a limited report directly; this run did not demonstrate a follow-up question."
+    }
+  }
+]

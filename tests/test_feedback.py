@@ -12,7 +12,10 @@ class FeedbackTests(unittest.TestCase):
   entries=json.loads((Path(__file__).resolve().parents[1]/'knowledge/entries.json').read_text(encoding='utf-8-sig'))
   item=next(e for e in entries if e['id']=='K001')
   self.assertIn('证件',item['boundary']);self.assertIn('核验',item['boundary']);self.assertIn('收费',item['boundary'])
-  self.assertIn('samr.gov.cn',item['url'])
+  self.assertIn('flk.npc.gov.cn/detail?',item['url'])
+  self.assertIn('id=2c909fdd678bf17901678bf74d7106b3',item['url'])
+  self.assertEqual(item['source_publisher'],'全国人民代表大会常务委员会')
+  self.assertEqual(item['legal_database_status'],'specific_record_checked')
  def test_report_renders_level_mapping_citations_and_self_checks(self):
   report=example();report['self_checks']=['是否已经实际到岗并提供劳动？']
   document=Document(BytesIO(render_report_docx(report)))
@@ -23,6 +26,7 @@ class FeedbackTests(unittest.TestCase):
  def test_official_laws_precede_guides_without_changing_findings(self):
   report=example();law=report['sources'][0]
   report['sources']=[dict(law,id='G001',title='证据指南',kind='guide'),law]
+  report['findings'][0]['evidence_ids'].append('G001')
   document=Document(BytesIO(render_report_docx(report)))
   text='\n'.join(p.text for p in document.paragraphs)
   self.assertLess(text.index('K001  中华人民共和国劳动合同法'),text.index('G001  证据指南'))

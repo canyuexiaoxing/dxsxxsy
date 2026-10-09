@@ -1,0 +1,53 @@
+{
+  "channels": {
+    "SUP-C12": {
+      "url": "https://cnwomen.tianditu.gov.cn/12338/",
+      "text": "女性求职中的权益问题可联系12338妇联维权服务中心寻求法律咨询等帮助。全国妇联官网“维权服务”链接提供服务中心地图，可按所在地查找服务中心及联系方式；具体服务和工作时间以当地中心公布信息为准。不替代仲裁和法院程序。\n关联依据编号：核查入口与用途说明；不作法律定性",
+      "source_publisher": "中华全国妇女联合会",
+      "source_site": "全国妇联官网链接的12338妇联维权服务中心地图",
+      "source_title": "12338妇联维权服务中心",
+      "source_relation": "official_service_entry",
+      "source_access_note": "实际读取全国妇联官网并确认“维权服务”指向该地图入口；实际打开地图。法律咨询等用途同时核对全国妇联女性之声文章。不能把个别地方的24小时服务推广为全国统一服务时间。",
+      "source_reference_urls": [
+        "https://www.women.org.cn/",
+        "https://www.womenvoice.cn/voice/shouye/womenzaixingdong/2412/0065-1.htm"
+      ],
+      "published_at": ""
+    },
+    "SUP-C13": {
+      "url": "https://chinajob.mohrss.gov.cn/c/2023-10-09/388347.shtml",
+      "text": "职工权益问题可拨12351联系工会咨询。全国总工会组织建设12351职工维权服务热线，由全总、省级及下级工会衔接服务。具体受理范围、服务时间和拨号方式须向所在地工会确认；尚未入职的求职问题应先确认是否属于当地受理范围，不替代仲裁和法院程序。\n关联依据编号：核查入口与用途说明；不作法律定性",
+      "source_publisher": "中国工会新闻网（页面标注来源）",
+      "source_site": "中国就业网（中国就业培训技术指导中心主办）",
+      "source_title": "坚持一手抓防范化解，一手抓引领构建，扎实推动工会社会联络工作高质量发展——助推劳动关系和职工队伍持续稳定向好",
+      "source_relation": "central_agency_reprint",
+      "source_access_note": "实际读取中央部门所属中国就业网正文，核对全国总工会12351热线建设及全国工会联动。未定位到可读取的acftu.org对应原始公告，不冒称全国总工会官网原始发布页；未将建设进度表述为当前各地服务时间保证。",
+      "source_reference_urls": [
+        "https://www.acftu.org/"
+      ],
+      "published_at": "2023-10-09"
+    },
+    "SUP-C15": {
+      "url": "https://www.mee.gov.cn/zcwj/gwywj/202205/t20220516_982293.shtml",
+      "text": "涉嫌招聘诈骗等违法犯罪，或人身财产安全受到紧急威胁时，可拨打110报警或紧急求助。国务院办公厅国办发〔2022〕12号明确：110受理处置报警、紧急求助和警务投诉；普通合同争议不应一律视为报警事项，应根据事实核对行政、民事等受理路径。\n关联依据编号：核查入口与用途说明；不作法律定性",
+      "source_publisher": "国务院办公厅",
+      "source_site": "生态环境部官网（页面标注来源：中国政府网）",
+      "source_title": "国务院办公厅关于推动12345政务服务便民热线与110报警服务台高效对接联动的意见",
+      "source_relation": "central_agency_reprint",
+      "source_access_note": "实际读取生态环境部官网转载全文，核对第二部分第一项110职责边界及第三部分第二项。文件来源为中国政府网；该链接不是公安部原始新闻页。",
+      "source_document_number": "国办发〔2022〕12号",
+      "published_at": "2022-05-16"
+    }
+  },
+  "case_numbers": {
+    "C001": "(2022)辽07民终2313号",
+    "C002": "(2026)鄂01民终8085号",
+    "C005": "(2019)京0108民初44374号"
+  },
+  "case_check": "Full-docket C001 query redirected to the official unified-account login; no official case text obtained. No authenticity claim for C001/C002/C005.",
+  "removed_ids": [
+    "C003-facts",
+    "C003-reasoning",
+    "C003-outcome"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-08",
+  "changed_entries": 8,
+  "changed_warnings": 5,
+  "official_case_groups_updated": 1,
+  "reembedded_vectors": 3,
+  "reused_vectors": 398,
+  "support_entries_unchanged": 71,
+  "changes": [
+    {
+      "id": "C004-facts",
+      "old_url": "",
+      "new_url": "https://www.court.gov.cn/fabu/xiangqing/364691.html",
+      "source_title": "指导案例185号：闫佳琳诉浙江喜来登度假村有限公司平等就业权纠纷案"
+    },
+    {
+      "id": "C004-reasoning",
+      "old_url": "",
+      "new_url": "https://www.court.gov.cn/fabu/xiangqing/364691.html",
+      "source_title": "指导案例185号：闫佳琳诉浙江喜来登度假村有限公司平等就业权纠纷案"
+    },
+    {
+      "id": "C004-outcome",
+      "old_url": "",
+      "new_url": "https://www.court.gov.cn/fabu/xiangqing/364691.html",
+      "source_title": "指导案例185号：闫佳琳诉浙江喜来登度假村有限公司平等就业权纠纷案"
+    },
+    {
+      "id": "SUP-W-hiring",
+      "old_url": "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543035.shtml",
+      "new_url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576244.html",
+      "source_title": "侵害劳动者就业权益典型案例"
+    },
+    {
+      "id": "PRE-W-task",
+      "old_url": "https://dxs.moe.gov.cn/zx/a/jobs_syzd/230810/1855462.shtml",
+      "new_url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202306/t20230609_501276.html",
+      "source_title": "三部门发布求职招聘十个典型陷阱防范提示"
+    },
+    {
+      "id": "PRE-W-pyramid",
+      "old_url": "https://dxs.moe.gov.cn/zx/a/jobs_syzd/230810/1855462.shtml",
+      "new_url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202306/t20230609_501276.html",
+      "source_title": "三部门发布求职招聘十个典型陷阱防范提示"
+    },
+    {
+      "id": "PRE-W-identity",
+      "old_url": "https://www.huadu.gov.cn/zdlyxxgk/jycy/jycyxx/content/mpost_10394951.html",
+      "new_url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202404/t20240403_1123815.html",
+      "source_title": "毕业生们，四招教你避开求职陷阱"
+    },
+    {
+      "id": "PRE-W-intern",
+      "old_url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/2024/2024_zt01/mtjj/202405/t20240513_1130292.html",
+      "new_url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202404/t20240403_1123815.html",
+      "source_title": "毕业生们，四招教你避开求职陷阱"
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "SUP-W-overseas",
+      "reason": "现有武汉公安转载仍保留；本轮未核验到公安部或中国警察网的具体原始发布页，不替换成首页或其他部门转载。"
+    },
+    {
+      "id": "C001",
+      "case_number": "（2022）辽07民终2313号",
+      "reason": "未核验到可读取的官方具体记录；裁判文书检索未正常返回结果。"
+    },
+    {
+      "id": "C002",
+      "case_number": "（2026）鄂01民终8085号",
+      "reason": "未核验到官方具体记录；搜索中的2016年同尾号案件不是本案。"
+    },
+    {
+      "id": "C003",
+      "case_number": "（2024）沪0105民初5189号",
+      "reason": "未核验到官方具体记录；本地材料为管辖移送，不能当作支持退费的实体裁判。"
+    },
+    {
+      "id": "C005",
+      "case_number": "（2019）京0108民初44374号",
+      "reference_number": "2024-07-2-490-002",
+      "related_url": "https://m.thepaper.cn/newsDetail_forward_31400203",
+      "reason": "宽甸法院官方账号刊载了同案参考案例选介，覆盖重复试用期及部分工资判项，并记载二审维持原判；它不是源头发布全文，也未覆盖本地摘要中全部绩效扣减、违法解除及金额。本轮保留原条目待核验，不用转载替代源头。人民法院案例库跳转统一账号登录；人民法院报网站连接关闭。"
+    }
+  ]
+}

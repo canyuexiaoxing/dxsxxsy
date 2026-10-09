@@ -1,4 +1,6 @@
 from pathlib import Path
+from uuid import uuid4
+from .tasks import TaskRegistry,TaskCancelled
 from threading import Lock
 from typing import Annotated,Literal
 from fastapi import APIRouter,HTTPException
@@ -12,17 +14,20 @@ from .memory import SessionStore
 from .model import ChatModel,ModelError
 from .engine import AgentEngine,AgentError
 from .word_export import render_report_docx
+from .presentation import public_report, public_reply, public_session
 from rag.embedding import OllamaEmbedding
 from rag.index import KnowledgeIndex
 
 
 class NewSession(BaseModel): title:str=Field(default='新会话',max_length=80)
 class Message(BaseModel):
+    request_id:str=Field(default="",max_length=64,pattern=r"^[A-Za-z0-9_-]*$")
     text:str=Field(default='',max_length=100000)
     material_ids:list[str]=Field(default_factory=list,max_length=20)
 
 
-def make_router(settings):
+def make_router(settings,tasks=None):
+    tasks=tasks or TaskRegistry()
     root=Path(__file__).resolve().parent.parent
     values={**dotenv_values(root/'.env'),**os.environ}
     rag=KnowledgeIndex(settings.data_dir/'chroma',root/'knowledge'/'entries.json',OllamaEmbedding(values.get('EMBEDDING_MODEL') or 'qwen3-embedding:4b',values.get('EMBEDDING_BASE_URL') or 'http://127.0.0.1:11434'))
@@ -43,19 +48,32 @@ def make_router(settings):
 
     @router.get('/api/sessions/{sid}')
     def get_session(sid:str):
-        try: return sessions.get(sid)
+        try: return public_session(sessions.get(sid))
         except KeyError: raise HTTPException(404,'会话不存在') from None
 
     @router.post('/api/sessions/{sid}/messages')
     def send_message(sid:str,body:Message):
         with lock_for(sid):
-            try: return engine.turn(sid,body.text,body.material_ids)
+            try:
+                with tasks.scope(sid,body.request_id or uuid4().hex):
+                    return public_reply(engine.turn(sid,body.text,body.material_ids))
+            except TaskCancelled as exc:raise HTTPException(410,str(exc)) from None
             except KeyError: raise HTTPException(404,'会话不存在') from None
             except InputError as exc: raise HTTPException(400,str(exc)) from None
             except (AgentError,ModelError,ValueError) as exc: raise HTTPException(422,str(exc)) from None
 
+    @router.post('/api/sessions/{sid}/tasks/{request_id}/cancel')
+    def cancel_task(sid:str,request_id:str):
+        try:sessions.get(sid)
+        except KeyError:raise HTTPException(404,'会话不存在') from None
+        if not request_id or len(request_id)>64 or not all(c.isalnum() or c in '_-' for c in request_id):
+            raise HTTPException(422,'任务编号无效')
+        return {'status':tasks.get(sid,request_id).cancel()}
     @router.delete('/api/sessions/{sid}')
     def delete_session(sid:str):
+        try:sessions.get(sid)
+        except KeyError:raise HTTPException(404,'会话不存在') from None
+        tasks.cancel_session(sid)
         with lock_for(sid):
             try:
                 session=sessions.get(sid)
@@ -76,22 +94,59 @@ def make_router(settings):
         try:
             session=sessions.get(sid)
             if version<1 or version>len(session['reports']): raise KeyError()
-            return session['reports'][version-1]
+            return public_report(session['reports'][version-1])
         except KeyError: raise HTTPException(404,'报告不存在') from None
 
     @router.get('/api/sessions/{sid}/reports/{version}/download')
     def download(sid:str,version:int,format:Literal['md','docx']='md'):
         item=report(sid,version)
         if format=='docx':
+            # Refresh link metadata only when the original evidence text is identical.
+            sources=[]
+            metadata_keys=('url','source_publisher','source_role','source_site','source_relation','source_access_note','alternate_urls','legal_database_url','legal_database_status','verified_at')
+            for source in item.get('sources',[]):
+                try:current=rag.get(source['id'])
+                except ValueError:current={}
+                if current.get('text')==source.get('text'):
+                    source={**source,**{key:current[key] for key in metadata_keys if key in current}}
+                sources.append(source)
+            item={**item,'sources':sources}
             names={}
             for finding in item['findings']:
                 mid=finding.get('material_id')
                 if mid and mid!='user':
                     try: names[mid]=materials.load(mid).filename
                     except (InputError,FileNotFoundError,ValueError): pass
-            data=render_report_docx(item,sessions.get(sid)['title'],names)
+            session=sessions.get(sid)
+            if 'report_context' not in item:
+                statements=[];found=False
+                for message in session['messages']:
+                    if message['role']=='user':statements.append(message['text'])
+                    elif (message.get('result',{}).get('report') or {}).get('version')==version:
+                        found=True;break
+                item={**item,'report_context':{'user_statements':statements if found else []}}
+            if not item.get('situation_overview') and settings.api_key:
+                context=item.get('report_context',{})
+                mids=[m['material_id'] for m in context.get('materials',[]) if m.get('material_id')]
+                if not mids:
+                    # Legacy reports: only material IDs submitted before this version.
+                    for message in session['messages']:
+                        if message['role']=='user':mids.extend(message.get('material_ids',[]))
+                        elif (message.get('result',{}).get('report') or {}).get('version')==version:break
+                extracted=[]
+                for mid in dict.fromkeys(mids):
+                    try:extracted.append(materials.load(mid).model_dump())
+                    except (InputError,FileNotFoundError,ValueError):pass
+                try:
+                    item={**item,'situation_overview':engine.model.summarize_situation(
+                        {**context,'materials':extracted})}
+                except ModelError:pass  # Never substitute the transcript on failure.
+            data=render_report_docx(item,session['title'],names)
             return Response(data,media_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document',headers={'Content-Disposition':f'attachment; filename="report-{version}.docx"'})
         lines=[f'# 求职风险自查报告 · 第{version}版','',item['summary'],'']
+        if item.get('prevention'):
+            prevention=item['prevention']
+            lines.extend(['## 签约与入职前，建议先做',prevention['label'],*['- '+s for s in prevention['steps']],prevention['note'],''])
         for f in item['findings']:
             lines.extend([f'## {f["title"]}（{f["level"]}）',f'原句：{f["quote"]}',f'位置：{f["material_id"]} 第{f["page_number"]}页',f['explanation'],'依据：'+', '.join(f['evidence_ids']),*['- '+s for s in f['suggestions']],''])
         lines.extend(['## 局限',*['- '+s for s in item['limitations']],'','## 依据来源'])

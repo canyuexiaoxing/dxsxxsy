@@ -3,6 +3,7 @@ import json
 import re
 from urllib.parse import urlsplit
 import httpx
+from agent.tasks import check_cancelled,abortable_client
 from pydantic import BaseModel, ConfigDict
 from .config import Settings
 
@@ -36,6 +37,7 @@ class VisionClient:
         self.transport = transport
 
     def extract(self, data: bytes, mime: str) -> VisionResult:
+        check_cancelled()
         cfg = self.settings
         if not cfg.api_key: raise VisionError('未配置DEEPSEEK_API_KEY，暂不能识别图片或扫描页')
         url = urlsplit(cfg.base_url)
@@ -52,7 +54,7 @@ class VisionClient:
             'thinking':{'type':'disabled'},
         }
         try:
-            with httpx.Client(timeout=cfg.timeout, transport=self.transport, follow_redirects=False, trust_env=False) as client:
+            with httpx.Client(timeout=cfg.timeout, transport=self.transport, follow_redirects=False, trust_env=False) as client, abortable_client(client):
                 response = client.post(cfg.base_url.rstrip('/')+'/chat/completions',
                     headers={'Authorization':'Bearer '+cfg.api_key},json=payload)
             if response.status_code != 200:
@@ -67,7 +69,7 @@ class VisionClient:
                 # partial response as extracted material.
                 payload['messages'].append({'role':'assistant','content':choice.get('message',{}).get('content') or ''})
                 payload['messages'].append({'role':'user','content':'上次字段缺失或类型错误。请重新读取原图，仅输出text字符串、issues字符串数组、unreadable布尔值；不猜测文字。'})
-                with httpx.Client(timeout=cfg.timeout,transport=self.transport,follow_redirects=False,trust_env=False) as client:
+                with httpx.Client(timeout=cfg.timeout,transport=self.transport,follow_redirects=False,trust_env=False) as client, abortable_client(client):
                     repaired=client.post(cfg.base_url.rstrip('/')+'/chat/completions',headers={'Authorization':'Bearer '+cfg.api_key},json=payload)
                 if repaired.status_code!=200:raise VisionError(f'视觉格式修正返回HTTP {repaired.status_code}；本页尚未成功识别')
                 if len(repaired.content)>2*1024*1024:raise VisionError('视觉接口响应过大')

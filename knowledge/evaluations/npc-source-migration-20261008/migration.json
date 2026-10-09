@@ -1,0 +1,516 @@
+{
+  "entry_count": 401,
+  "vectors_reused": 401,
+  "law_npc_count": 223,
+  "law_other_count": 1,
+  "changed_law": 19,
+  "changed_support": 43,
+  "changes": [
+    {
+      "id": "SUP-L-civil-585",
+      "kind": "law",
+      "title": "中华人民共和国民法典",
+      "old_url": "https://www.court.gov.cn/zixun/xiangqing/233181.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff808081729d1efe01729d50b5c500bf&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%B0%91%E6%B3%95%E5%85%B8"
+    },
+    {
+      "id": "SUP-L-employment-3",
+      "kind": "law",
+      "title": "中华人民共和国就业促进法",
+      "old_url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf7b34f07df&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%B0%B1%E4%B8%9A%E4%BF%83%E8%BF%9B%E6%B3%95"
+    },
+    {
+      "id": "SUP-L-employment-26",
+      "kind": "law",
+      "title": "中华人民共和国就业促进法",
+      "old_url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf7b34f07df&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%B0%B1%E4%B8%9A%E4%BF%83%E8%BF%9B%E6%B3%95"
+    },
+    {
+      "id": "SUP-L-employment-27",
+      "kind": "law",
+      "title": "中华人民共和国就业促进法",
+      "old_url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf7b34f07df&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%B0%B1%E4%B8%9A%E4%BF%83%E8%BF%9B%E6%B3%95"
+    },
+    {
+      "id": "SUP-L-employment-62",
+      "kind": "law",
+      "title": "中华人民共和国就业促进法",
+      "old_url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf7b34f07df&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%B0%B1%E4%B8%9A%E4%BF%83%E8%BF%9B%E6%B3%95"
+    },
+    {
+      "id": "SUP-L-social-58",
+      "kind": "law",
+      "title": "中华人民共和国社会保险法",
+      "old_url": "https://www.hbqj.gov.cn/zjz/zfxxgk/fdzdgknr/gysyjs_34501/shbz_36238/202106/t20210624_3611391.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f210989b9179a&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%A4%BE%E4%BC%9A%E4%BF%9D%E9%99%A9%E6%B3%95"
+    },
+    {
+      "id": "SUP-L-social-84",
+      "kind": "law",
+      "title": "中华人民共和国社会保险法",
+      "old_url": "https://www.hbqj.gov.cn/zjz/zfxxgk/fdzdgknr/gysyjs_34501/shbz_36238/202106/t20210624_3611391.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f210989b9179a&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%A4%BE%E4%BC%9A%E4%BF%9D%E9%99%A9%E6%B3%95"
+    },
+    {
+      "id": "SUP-L-implementation",
+      "kind": "law",
+      "title": "中华人民共和国劳动合同法实施条例",
+      "old_url": "https://rsj.sh.gov.cn/tgwyxzfgwj_17255/20200617/t0035_1388240.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f40927caf049c&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95%E5%AE%9E%E6%96%BD%E6%9D%A1%E4%BE%8B"
+    },
+    {
+      "id": "SUP-L-market",
+      "kind": "law",
+      "title": "人力资源市场暂行条例",
+      "old_url": "https://www.beijing.gov.cn/zhengce/gwywj/201905/t20190522_61354.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f414082e71ee1&title=%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E5%B8%82%E5%9C%BA%E6%9A%82%E8%A1%8C%E6%9D%A1%E4%BE%8B"
+    },
+    {
+      "id": "SUP-L-dispatch",
+      "kind": "law",
+      "title": "劳务派遣暂行规定",
+      "old_url": "https://rsj.sh.gov.cn/trlzyhshbzbgz_17256/20240813/t0035_1427021.html",
+      "new_url": "https://www.mohrss.gov.cn/xxgk2020/gzk/gz/202112/P020211229555505969637.pdf"
+    },
+    {
+      "id": "SUP-L-women-43",
+      "kind": "law",
+      "title": "中华人民共和国妇女权益保障法",
+      "old_url": "https://gzca.miit.gov.cn/zwgk/zcwj/zcfg/art/2022/art_47b4c78a8f52484587e1b198c52fa909.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff808181841257210184281512de0eec&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%A6%87%E5%A5%B3%E6%9D%83%E7%9B%8A%E4%BF%9D%E9%9A%9C%E6%B3%95"
+    },
+    {
+      "id": "SUP-L-arbitration-21",
+      "kind": "law",
+      "title": "中华人民共和国劳动争议调解仲裁法",
+      "old_url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/201912/t20191219_1307906.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf64f28039d&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E4%BA%89%E8%AE%AE%E8%B0%83%E8%A7%A3%E4%BB%B2%E8%A3%81%E6%B3%95"
+    },
+    {
+      "id": "SUP-L-arbitration-27",
+      "kind": "law",
+      "title": "中华人民共和国劳动争议调解仲裁法",
+      "old_url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/201912/t20191219_1307906.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf64f28039d&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E4%BA%89%E8%AE%AE%E8%B0%83%E8%A7%A3%E4%BB%B2%E8%A3%81%E6%B3%95"
+    },
+    {
+      "id": "SUP-F01",
+      "kind": "support",
+      "title": "三方协议与劳动合同区别",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-F02",
+      "kind": "support",
+      "title": "只签三方不签劳动合同",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-F03",
+      "kind": "support",
+      "title": "试用期是否包含在合同期限",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-F04",
+      "kind": "support",
+      "title": "空白合同怎么办",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-F05",
+      "kind": "support",
+      "title": "在校实习与试用期区别",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-F06",
+      "kind": "support",
+      "title": "无薪试岗和面试技能测试",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-F07",
+      "kind": "support",
+      "title": "试用期时长上限",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-F08",
+      "kind": "support",
+      "title": "试用期被辞退能否获得赔偿",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-F09",
+      "kind": "support",
+      "title": "社保补贴能否代替缴纳",
+      "old_url": "https://www.hbqj.gov.cn/zjz/zfxxgk/fdzdgknr/gysyjs_34501/shbz_36238/202106/t20210624_3611391.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f210989b9179a&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%A4%BE%E4%BC%9A%E4%BF%9D%E9%99%A9%E6%B3%95"
+    },
+    {
+      "id": "SUP-F10",
+      "kind": "support",
+      "title": "试用期工资标准",
+      "old_url": "https://rsj.sh.gov.cn/tgwyxzfgwj_17255/20200617/t0035_1388240.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f40927caf049c&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95%E5%AE%9E%E6%96%BD%E6%9D%A1%E4%BE%8B"
+    },
+    {
+      "id": "SUP-F11",
+      "kind": "support",
+      "title": "加班费与拒绝违法加班",
+      "old_url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f20f16ee11737&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E6%B3%95"
+    },
+    {
+      "id": "SUP-F14",
+      "kind": "support",
+      "title": "零首付购车公司代还贷款",
+      "old_url": "https://www.court.gov.cn/zixun/xiangqing/233181.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff808081729d1efe01729d50b5c500bf&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%B0%91%E6%B3%95%E5%85%B8"
+    },
+    {
+      "id": "SUP-F15",
+      "kind": "support",
+      "title": "三方协议违约金超过5000元",
+      "old_url": "https://www.court.gov.cn/zixun/xiangqing/233181.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff808081729d1efe01729d50b5c500bf&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%B0%91%E6%B3%95%E5%85%B8"
+    },
+    {
+      "id": "SUP-F16",
+      "kind": "support",
+      "title": "招聘限男性是否违法",
+      "old_url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf7b34f07df&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%B0%B1%E4%B8%9A%E4%BF%83%E8%BF%9B%E6%B3%95"
+    },
+    {
+      "id": "SUP-F17",
+      "kind": "support",
+      "title": "面试询问婚育与恋爱",
+      "old_url": "https://gzca.miit.gov.cn/zwgk/zcwj/zcfg/art/2022/art_47b4c78a8f52484587e1b198c52fa909.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff808181841257210184281512de0eec&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%A6%87%E5%A5%B3%E6%9D%83%E7%9B%8A%E4%BF%9D%E9%9A%9C%E6%B3%95"
+    },
+    {
+      "id": "SUP-F18",
+      "kind": "support",
+      "title": "招聘拒绝某地区求职者",
+      "old_url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf7b34f07df&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%B0%B1%E4%B8%9A%E4%BF%83%E8%BF%9B%E6%B3%95"
+    },
+    {
+      "id": "SUP-F19",
+      "kind": "support",
+      "title": "身份证原件抵押与正常核验",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-F20",
+      "kind": "support",
+      "title": "离职档案与证明",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-R001",
+      "kind": "support",
+      "title": "入职收费",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-R003",
+      "kind": "support",
+      "title": "扣押证件",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-R005",
+      "kind": "support",
+      "title": "就业歧视",
+      "old_url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf7b34f07df&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%B0%B1%E4%B8%9A%E4%BF%83%E8%BF%9B%E6%B3%95"
+    },
+    {
+      "id": "SUP-R007",
+      "kind": "support",
+      "title": "职业中介许可",
+      "old_url": "https://www.beijing.gov.cn/zhengce/gwywj/201905/t20190522_61354.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f414082e71ee1&title=%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E5%B8%82%E5%9C%BA%E6%9A%82%E8%A1%8C%E6%9D%A1%E4%BE%8B"
+    },
+    {
+      "id": "SUP-R011",
+      "kind": "support",
+      "title": "薪资面议",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-R012",
+      "kind": "support",
+      "title": "超过一个月未签合同",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-R013",
+      "kind": "support",
+      "title": "试用期不办理社保",
+      "old_url": "https://www.hbqj.gov.cn/zjz/zfxxgk/fdzdgknr/gysyjs_34501/shbz_36238/202106/t20210624_3611391.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f210989b9179a&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%A4%BE%E4%BC%9A%E4%BF%9D%E9%99%A9%E6%B3%95"
+    },
+    {
+      "id": "SUP-R014",
+      "kind": "support",
+      "title": "空白合同或仅约定试用期",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-R015",
+      "kind": "support",
+      "title": "自愿放弃社保",
+      "old_url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f20f16ee11737&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E6%B3%95"
+    },
+    {
+      "id": "SUP-R016",
+      "kind": "support",
+      "title": "三方协议违约金",
+      "old_url": "https://www.court.gov.cn/zixun/xiangqing/233181.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff808081729d1efe01729d50b5c500bf&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%B0%91%E6%B3%95%E5%85%B8"
+    },
+    {
+      "id": "SUP-R018",
+      "kind": "support",
+      "title": "外包与劳务派遣",
+      "old_url": "https://rsj.sh.gov.cn/trlzyhshbzbgz_17256/20240813/t0035_1427021.html",
+      "new_url": "https://www.mohrss.gov.cn/xxgk2020/gzk/gz/202112/P020211229555505969637.pdf"
+    },
+    {
+      "id": "SUP-R021",
+      "kind": "support",
+      "title": "重复或期满延长试用期",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-R022",
+      "kind": "support",
+      "title": "试用期超过上限",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-R023",
+      "kind": "support",
+      "title": "试用期低工资",
+      "old_url": "https://rsj.sh.gov.cn/tgwyxzfgwj_17255/20200617/t0035_1388240.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f40927caf049c&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95%E5%AE%9E%E6%96%BD%E6%9D%A1%E4%BE%8B"
+    },
+    {
+      "id": "SUP-R024",
+      "kind": "support",
+      "title": "无薪试岗",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-R025",
+      "kind": "support",
+      "title": "绩效不达标辞退",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-R026",
+      "kind": "support",
+      "title": "拖欠或克扣工资",
+      "old_url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f20f16ee11737&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E6%B3%95"
+    },
+    {
+      "id": "SUP-R027",
+      "kind": "support",
+      "title": "996与未付加班费",
+      "old_url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f20f16ee11737&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E6%B3%95"
+    },
+    {
+      "id": "SUP-R028",
+      "kind": "support",
+      "title": "口头加班与审批",
+      "old_url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f20f16ee11737&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E6%B3%95"
+    },
+    {
+      "id": "SUP-R036",
+      "kind": "support",
+      "title": "岗位薪资清晰检查",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-R037",
+      "kind": "support",
+      "title": "书面合同完整检查",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-A02",
+      "kind": "support",
+      "title": "不签合同或不交社保",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-A03",
+      "kind": "support",
+      "title": "试用期与辞退争议",
+      "old_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+      "new_url": "https://flk.npc.gov.cn/detail?title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95&id=2c909fdd678bf17901678bf74d7106b3"
+    },
+    {
+      "id": "SUP-A04",
+      "kind": "support",
+      "title": "就业歧视",
+      "old_url": "https://www.jyg.gov.cn/rsj/zwxxgk/zc/gjfg/jycy/art/2022/art_e4fecc8f78e7429ab0c267e397024588.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf7b34f07df&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%B0%B1%E4%B8%9A%E4%BF%83%E8%BF%9B%E6%B3%95"
+    },
+    {
+      "id": "SUP-A05",
+      "kind": "support",
+      "title": "核验公司与中介",
+      "old_url": "https://www.beijing.gov.cn/zhengce/gwywj/201905/t20190522_61354.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f414082e71ee1&title=%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E5%B8%82%E5%9C%BA%E6%9A%82%E8%A1%8C%E6%9D%A1%E4%BE%8B"
+    },
+    {
+      "id": "CIV-500",
+      "kind": "law",
+      "title": "中华人民共和国民法典第五百条",
+      "old_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5212250/content.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff808081729d1efe01729d50b5c500bf&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%B0%91%E6%B3%95%E5%85%B8"
+    },
+    {
+      "id": "LAB-J1-001",
+      "kind": "law",
+      "title": "最高人民法院关于审理劳动争议案件适用法律问题的解释（一）第一条",
+      "old_url": "https://www.court.gov.cn/fabu/xiangqing/282121.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff80808177e75f88017800739d621b12&title=%E6%9C%80%E9%AB%98%E4%BA%BA%E6%B0%91%E6%B3%95%E9%99%A2%E5%85%B3%E4%BA%8E%E5%AE%A1%E7%90%86%E5%8A%B3%E5%8A%A8%E4%BA%89%E8%AE%AE%E6%A1%88%E4%BB%B6%E9%80%82%E7%94%A8%E6%B3%95%E5%BE%8B%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E9%87%8A%EF%BC%88%E4%B8%80%EF%BC%89"
+    },
+    {
+      "id": "LAB-J1-035",
+      "kind": "law",
+      "title": "最高人民法院关于审理劳动争议案件适用法律问题的解释（一）第三十五条",
+      "old_url": "https://www.court.gov.cn/fabu/xiangqing/282121.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff80808177e75f88017800739d621b12&title=%E6%9C%80%E9%AB%98%E4%BA%BA%E6%B0%91%E6%B3%95%E9%99%A2%E5%85%B3%E4%BA%8E%E5%AE%A1%E7%90%86%E5%8A%B3%E5%8A%A8%E4%BA%89%E8%AE%AE%E6%A1%88%E4%BB%B6%E9%80%82%E7%94%A8%E6%B3%95%E5%BE%8B%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E9%87%8A%EF%BC%88%E4%B8%80%EF%BC%89"
+    },
+    {
+      "id": "LAB-J2-013",
+      "kind": "law",
+      "title": "最高人民法院关于审理劳动争议案件适用法律问题的解释（二）第十三条",
+      "old_url": "https://www.court.gov.cn/zixun/xiangqing/472691.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff80818198a7eafa0199329bcc11687f&title=%E6%9C%80%E9%AB%98%E4%BA%BA%E6%B0%91%E6%B3%95%E9%99%A2%E5%85%B3%E4%BA%8E%E5%AE%A1%E7%90%86%E5%8A%B3%E5%8A%A8%E4%BA%89%E8%AE%AE%E6%A1%88%E4%BB%B6%E9%80%82%E7%94%A8%E6%B3%95%E5%BE%8B%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E9%87%8A%EF%BC%88%E4%BA%8C%EF%BC%89"
+    },
+    {
+      "id": "LAB-J2-019",
+      "kind": "law",
+      "title": "最高人民法院关于审理劳动争议案件适用法律问题的解释（二）第十九条",
+      "old_url": "https://www.court.gov.cn/zixun/xiangqing/472691.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff80818198a7eafa0199329bcc11687f&title=%E6%9C%80%E9%AB%98%E4%BA%BA%E6%B0%91%E6%B3%95%E9%99%A2%E5%85%B3%E4%BA%8E%E5%AE%A1%E7%90%86%E5%8A%B3%E5%8A%A8%E4%BA%89%E8%AE%AE%E6%A1%88%E4%BB%B6%E9%80%82%E7%94%A8%E6%B3%95%E5%BE%8B%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E9%87%8A%EF%BC%88%E4%BA%8C%EF%BC%89"
+    },
+    {
+      "id": "LAB-J2-007",
+      "kind": "law",
+      "title": "最高人民法院关于审理劳动争议案件适用法律问题的解释（二）第七条",
+      "old_url": "https://www.court.gov.cn/zixun/xiangqing/472691.html",
+      "new_url": "https://flk.npc.gov.cn/detail?id=ff80818198a7eafa0199329bcc11687f&title=%E6%9C%80%E9%AB%98%E4%BA%BA%E6%B0%91%E6%B3%95%E9%99%A2%E5%85%B3%E4%BA%8E%E5%AE%A1%E7%90%86%E5%8A%B3%E5%8A%A8%E4%BA%89%E8%AE%AE%E6%A1%88%E4%BB%B6%E9%80%82%E7%94%A8%E6%B3%95%E5%BE%8B%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E9%87%8A%EF%BC%88%E4%BA%8C%EF%BC%89"
+    }
+  ],
+  "verified_records": [
+    {
+      "title": "中华人民共和国民法典",
+      "url": "https://flk.npc.gov.cn/detail?id=ff808081729d1efe01729d50b5c500bf&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%B0%91%E6%B3%95%E5%85%B8",
+      "publisher": "全国人民代表大会",
+      "published_at": "2020-05-28",
+      "effective_at": "2021-01-01"
+    },
+    {
+      "title": "中华人民共和国社会保险法",
+      "url": "https://flk.npc.gov.cn/detail?id=ff8080816f135f46016f210989b9179a&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%A4%BE%E4%BC%9A%E4%BF%9D%E9%99%A9%E6%B3%95",
+      "publisher": "全国人民代表大会常务委员会",
+      "published_at": "2018-12-29",
+      "effective_at": "2018-12-29"
+    },
+    {
+      "title": "人力资源市场暂行条例",
+      "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f414082e71ee1&title=%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E5%B8%82%E5%9C%BA%E6%9A%82%E8%A1%8C%E6%9D%A1%E4%BE%8B",
+      "publisher": "国务院",
+      "published_at": "2018-06-29",
+      "effective_at": "2018-10-01"
+    },
+    {
+      "title": "中华人民共和国妇女权益保障法",
+      "url": "https://flk.npc.gov.cn/detail?id=ff808181841257210184281512de0eec&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%A6%87%E5%A5%B3%E6%9D%83%E7%9B%8A%E4%BF%9D%E9%9A%9C%E6%B3%95",
+      "publisher": "全国人民代表大会",
+      "published_at": "2022-10-30",
+      "effective_at": "2023-01-01"
+    },
+    {
+      "title": "中华人民共和国劳动争议调解仲裁法",
+      "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf64f28039d&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E4%BA%89%E8%AE%AE%E8%B0%83%E8%A7%A3%E4%BB%B2%E8%A3%81%E6%B3%95",
+      "publisher": "全国人民代表大会常务委员会",
+      "published_at": "2007-12-29",
+      "effective_at": "2008-05-01"
+    },
+    {
+      "title": "中华人民共和国劳动合同法实施条例",
+      "url": "https://flk.npc.gov.cn/detail?id=ff8080816f3cbb3c016f40927caf049c&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%8A%B3%E5%8A%A8%E5%90%88%E5%90%8C%E6%B3%95%E5%AE%9E%E6%96%BD%E6%9D%A1%E4%BE%8B",
+      "publisher": "国务院",
+      "published_at": "2008-09-18",
+      "effective_at": "2008-09-18"
+    },
+    {
+      "title": "中华人民共和国就业促进法",
+      "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf7b34f07df&title=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%B0%B1%E4%B8%9A%E4%BF%83%E8%BF%9B%E6%B3%95",
+      "publisher": "全国人民代表大会常务委员会",
+      "published_at": "2015-04-24",
+      "effective_at": "2015-04-24"
+    },
+    {
+      "title": "最高人民法院关于审理劳动争议案件适用法律问题的解释（一）",
+      "url": "https://flk.npc.gov.cn/detail?id=ff80808177e75f88017800739d621b12&title=%E6%9C%80%E9%AB%98%E4%BA%BA%E6%B0%91%E6%B3%95%E9%99%A2%E5%85%B3%E4%BA%8E%E5%AE%A1%E7%90%86%E5%8A%B3%E5%8A%A8%E4%BA%89%E8%AE%AE%E6%A1%88%E4%BB%B6%E9%80%82%E7%94%A8%E6%B3%95%E5%BE%8B%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E9%87%8A%EF%BC%88%E4%B8%80%EF%BC%89",
+      "publisher": "最高人民法院",
+      "published_at": "2020-12-29",
+      "effective_at": "2021-01-01"
+    },
+    {
+      "title": "最高人民法院关于审理劳动争议案件适用法律问题的解释（二）",
+      "url": "https://flk.npc.gov.cn/detail?id=ff80818198a7eafa0199329bcc11687f&title=%E6%9C%80%E9%AB%98%E4%BA%BA%E6%B0%91%E6%B3%95%E9%99%A2%E5%85%B3%E4%BA%8E%E5%AE%A1%E7%90%86%E5%8A%B3%E5%8A%A8%E4%BA%89%E8%AE%AE%E6%A1%88%E4%BB%B6%E9%80%82%E7%94%A8%E6%B3%95%E5%BE%8B%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E9%87%8A%EF%BC%88%E4%BA%8C%EF%BC%89",
+      "publisher": "最高人民法院",
+      "published_at": "2025-07-31",
+      "effective_at": "2025-09-01"
+    }
+  ],
+  "exception": {
+    "title": "劳务派遣暂行规定",
+    "url": "https://www.mohrss.gov.cn/xxgk2020/gzk/gz/202112/P020211229555505969637.pdf",
+    "publisher": "人力资源和社会保障部",
+    "published_at": "2014-01-24",
+    "effective_at": "2014-03-01"
+  }
+}

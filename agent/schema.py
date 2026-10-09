@@ -31,12 +31,21 @@ class PreventionPlan(StrictModel):
     note:str
 
 class Report(StrictModel):
+    situation_overview:str=Field(default="",max_length=350)
     summary:str
     findings:list[Finding]
     limitations:list[str]
     change_reason:str=''
     prevention:PreventionPlan | None=None
     self_checks:list[str]=Field(default_factory=list)
+
+    @field_validator('situation_overview')
+    @classmethod
+    def clean_overview(cls,value):
+        from .situation import valid_overview
+        if value and not valid_overview(value):
+            raise ValueError('情况概述不得包含内部备注或超长内容')
+        return ' '.join(value.split())
 
     @field_validator('change_reason',mode='before')
     @classmethod

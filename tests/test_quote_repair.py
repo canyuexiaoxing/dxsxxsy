@@ -41,21 +41,21 @@ class QuoteRepairTests(unittest.TestCase):
         trace=self.sessions.get(self.sid)['traces'][-1];self.assertTrue(any(t['tool']=='citation_repair' for t in trace))
     def test_persistently_bad_quote_never_writes_report(self):
         invalid=report(finding(quote='建议投诉举报',material_id='K007'))
-        with self.assertRaisesRegex(AgentError,'引用修正'):
+        with self.assertRaisesRegex(AgentError,'本次未能完成分析'):
             self.run_turn([search(),invalid,invalid,invalid])
         self.assertEqual(len(self.sessions.get(self.sid)['reports']),0);self.assertEqual(len(self.model.contexts),4)
     def test_unknown_quote_id_cannot_fall_back_to_free_text(self):
         invalid=report(finding(quote_id='FAKE'))
-        with self.assertRaisesRegex(AgentError,'引用修正'):self.run_turn([search(),invalid,invalid,invalid])
+        with self.assertRaisesRegex(AgentError,'本次未能完成分析'):self.run_turn([search(),invalid,invalid,invalid])
         self.assertEqual(self.sessions.get(self.sid)['reports'],[])
     def test_quote_cannot_join_two_user_messages(self):
         s=self.sessions.get(self.sid);s['messages']=[{'role':'user','text':'公司要求','material_ids':[]}];self.sessions.save(s)
         invalid=report(finding(quote='公司要求每周工作6天。'))
-        with self.assertRaisesRegex(AgentError,'引用修正'):self.run_turn([search(),invalid,invalid,invalid],'每周工作6天。')
+        with self.assertRaisesRegex(AgentError,'本次未能完成分析'):self.run_turn([search(),invalid,invalid,invalid],'每周工作6天。')
     def test_repair_cannot_introduce_unretrieved_evidence(self):
         invalid=report(finding(quote='建议投诉举报',material_id='K007'))
         def repaired(messages):
             response=selected(messages);data=json.loads(response['content']);data['report']['findings'][0]['evidence_ids']=['FAKE'];response['content']=json.dumps(data);return response
-        with self.assertRaisesRegex(AgentError,'引用修正'):self.run_turn([search(),invalid,repaired,repaired])
+        with self.assertRaisesRegex(AgentError,'本次未能完成分析'):self.run_turn([search(),invalid,repaired,repaired])
         self.assertEqual(self.sessions.get(self.sid)['reports'],[])
 if __name__=='__main__':unittest.main()

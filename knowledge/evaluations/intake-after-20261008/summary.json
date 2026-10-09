@@ -1,0 +1,17 @@
+[
+  {
+    "id": "fee-details",
+    "actions_pass": true,
+    "error": null
+  },
+  {
+    "id": "unknown-then-request",
+    "actions_pass": true,
+    "error": null
+  },
+  {
+    "id": "sufficient-contract",
+    "actions_pass": true,
+    "error": null
+  }
+]

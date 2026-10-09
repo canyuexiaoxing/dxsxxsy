@@ -1,0 +1,4667 @@
+{
+  "case": {
+    "id": "recruit-paid-training",
+    "title": "招聘转收费培训且贷款未知",
+    "turns": [
+      "我是大四学生，正在找第一份工作，还没有入职、签协议或付款。招聘广告写：招聘软件测试助理，不要求工作经验，月薪6000—8000元，公司提供岗前培训，培训后安排工作。面试结束后，HR说我基础不足，需要先参加两个月培训，费用9800元。他说可以分期，不用现在一次性付清，并催我今天确认名额。我现在只拿到了招聘截图和这些聊天内容，还没看到培训协议，也不知道培训是谁提供、费用付给谁、分期是不是贷款。"
+    ],
+    "must": [
+      "识别招聘转收费培训风险和限时催促",
+      "保持贷款、培训方、收款方未知",
+      "优先暂停与获取岗位挂钩的付款和签约"
+    ],
+    "must_not": [
+      "认定已贷款、已付款或确定诈骗",
+      "假称广告保证免费培训、直接录用",
+      "核实对公账户或持牌放款方后就可放心继续",
+      "首版出现内部草稿修改说明"
+    ]
+  },
+  "turns": [
+    {
+      "session_id": "S42099a72dce24ac29f51cba0bec1ea7f",
+      "action": "report",
+      "employment_stage": "preemployment",
+      "stage_reason": "用户明确表示是大四学生、正在找第一份工作，尚未入职、签协议或付款，仅拿到招聘截图和聊天内容。",
+      "message": "",
+      "questions": [],
+      "evidence_ids": [
+        "K005",
+        "K006",
+        "K001",
+        "LCL-022",
+        "SUP-R002",
+        "SUP-F12",
+        "SUP-A01",
+        "O004-facts",
+        "O004-reasoning",
+        "O004-outcome",
+        "O003-facts",
+        "O003-reasoning",
+        "O003-outcome"
+      ],
+      "report": {
+        "summary": "这是典型的“招聘转付费培训”场景：招聘广告称公司提供岗前培训、培训后安排工作，面试后却以你能力不足为由，要求你先参加费用9800元的培训，并称可以分期、催你当天确认名额。官方五部门风险提示明确，求职过程中以各种理由要求参加需支付高额费用培训才能安排岗位的，应果断拒绝；确需培训应核实机构资质及是否含贷款内容。现阶段最应做的是：暂缓付款、暂缓签任何分期或借款文件、暂缓确认名额，先书面问清培训主体、收款方、分期性质，并保留全部聊天和招聘截图证据。",
+        "findings": [
+          {
+            "title": "招聘岗位疑似被转为高额付费培训（招转培）",
+            "level": "high",
+            "quote": "招聘广告写：招聘软件测试助理，不要求工作经验，月薪6000—8000元，公司提供岗前培训，培训后安排工作。",
+            "material_id": "user",
+            "page_number": 0,
+            "explanation": "招聘广告承诺“公司提供岗前培训，培训后安排工作”，但面试后HR以你基础不足为由，要求你先参加两个月培训、费用9800元（引材料原句），并称“可以分期，不用现在一次性付清”且催促你当天确认名额（引材料原句）。收费时间与方式尚未明确，但催促确认名额与分期说法都服务于同一笔9800元收费交易，应一并评估。这一前后变化与官方风险提示描述的“以招聘为名引导求职者参加需支付高额费用的培训才能安排岗位”高度吻合，五部门明确要求对此类情形果断拒绝。9800元相对广告月薪6000—8000元占比较高（约1.2至1.6个月工资），且“培训后安排工作”并非录用承诺，仍有以培训代替录用、甚至不实际安排岗位的风险；分期究竟属于公司内部付款安排还是第三方贷款，你目前也不清楚（引材料原句），若在岗位未落实前先签分期或借款文件，可能先行承担独立还款义务。目前尚不能认定对方违法或诈骗，但该风险已足以支持暂停付款与签约。人力社保部门公布的“招转培”案例中，存在公司无培训许可、以招聘名义诱导求职者培训牟利并被责令停止培训、退还费用的处理先例，可作个案参考，不是本案定性。",
+            "evidence_ids": [
+              "K005",
+              "K006",
+              "SUP-R002",
+              "SUP-A01",
+              "O003-facts",
+              "O004-facts"
+            ],
+            "suggestions": [
+              "暂缓支付9800元，也暂缓以任何形式确认“名额”，不接受“今天不确认就没了”的催促。",
+              "要求招聘方以书面（微信、邮件均可）明确：培训由哪家公司提供、与招聘公司是什么关系、该机构是否具备职业技能培训许可资质。",
+              "书面询问招聘公司：完成培训是否保证录用、与谁签订劳动合同、岗位名称和薪资构成、有无试用期；答复含糊或拒绝书面说明即为退出信号。",
+              "在看清分期协议文本前，不要点击任何贷款或分期平台的注册、授权、授信链接，不提供身份证、银行卡、人脸识别或征信授权；书面问清分期是公司内部分期付款，还是第三方金融机构贷款，放款方全称、年化利率、期数、每期金额、提前终止条件分别是什么。",
+              "保留招聘截图、全部聊天记录，截图时保留对方账号昵称、时间和原文；要求先拿到完整协议文本（含培训协议与任何分期/借款协议）再决定。",
+              "若确有独立培训需求，应与本次求职分开评估培训质量与费用，不能把付费当作获得岗位的条件。"
+            ],
+            "category": "risk",
+            "fact_basis": "abnormal_behavior",
+            "legal_claims": [
+              {
+                "statement": "求职过程中被以各种理由要求参加需支付高额费用的培训才能安排岗位的，应果断拒绝；确有培训需求应核实机构是否具备依法审批的许可资质、是否存在不合理收费或贷款内容。",
+                "basis_ids": [
+                  "K005"
+                ]
+              },
+              {
+                "statement": "签订涉及贷款的协议前，应核实放款方资质、贷款利率、还款方式及违约责任；慎在平台注册信息及办理贷款，切勿轻信“免息分期”“低门槛、秒到账”等承诺。",
+                "basis_ids": [
+                  "K006"
+                ]
+              },
+              {
+                "statement": "用人单位招用劳动者，不得要求劳动者提供担保或者以其他名义向劳动者收取财物；是否适用本条需先核实收费主体、收费行为与招用环节的关系，不能把独立合法培训服务或所有贷款自动套入。",
+                "basis_ids": [
+                  "K001"
+                ]
+              },
+              {
+                "statement": "用人单位可以建立职业培训制度并按规定提取使用培训经费，但这不构成求职者须先自费培训才能获得岗位的依据。",
+                "basis_ids": [
+                  "LL-2018-068"
+                ]
+              },
+              {
+                "statement": "官方公布案例中，存在公司无职业技能培训许可、以招聘名义诱导求职者培训牟利并被责令停止培训、退还费用的处理先例，属个案参考，不得直接套用于本案。",
+                "basis_ids": [
+                  "O003-reasoning",
+                  "O003-outcome",
+                  "O004-reasoning",
+                  "O004-outcome"
+                ]
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "目前只有招聘截图和聊天内容，没有培训协议、服务期条款、分期或借款合同文本，无法判断9800元费用的性质、是否设违约金、退款条件；分期究竟是公司内部分期付款还是第三方贷款尚属未知，需拿到相关协议后再评估是否构成独立金融义务。",
+          "培训提供方、费用收款方、分期或放款方均未确认，无法判断是否存在人力资源服务或职业技能培训许可问题，也无法确认收费主体与招聘主体是否为同一家公司。",
+          "招聘公司名称、办公地址、是否真实存在软件测试助理岗位均未提供，“公司提供岗前培训、培训后安排工作”目前只是广告与HR口头说法，尚无书面录用承诺。",
+          "说明：招聘广告称公司提供培训，不因此可推出培训免费、属于直接招聘或保证录用；广告条件与面试后要求先付费培训之间的不一致，本身就是需要核实的信号。",
+          "招聘截图与聊天记录未提供原文文件，本报告仅依据用户转述内容分析，未核验对方主体资质或经营状况。",
+          "本报告是风险提示与分析，不构成对任何主体违法或诈骗的认定，也不代替司法、行政或调解机构的判断。"
+        ],
+        "change_reason": "",
+        "prevention": {
+          "decision": "pause",
+          "label": "暂缓付款、签约与名额确认",
+          "steps": [
+            "先不要支付9800元或任何定金、诚意金、资料费，也不要办理分期、贷款或平台授信。",
+            "不交出身份证、银行卡、毕业证原件，不做人脸识别或征信授权；如对方要求核验，可先以复印件加注用途替代。",
+            "用微信或邮件书面问清五件事：培训提供方全称、费用收款方全称、分期是公司分期还是第三方贷款、培训后是否保证录用及拟签合同主体、岗位薪资构成与试用期。",
+            "要求对方先提供完整培训协议与分期协议文本，拿到纸质或电子文件后仔细核对：费用总额、违约责任、退款条件、服务期与竞业条款、是否包含授权查询征信的条款。",
+            "通过国家企业信用信息公示系统查询招聘公司与培训公司是否同一地址、同一法定代表人；通过当地人力资源社会保障部门官网或12333咨询该机构是否具备职业培训与职业中介许可。核查只能减少特定疑点，不代表岗位安全，也不构成继续付费求职的理由。",
+            "出现以下任一情形即退出：拒绝书面说明收费主体、拒绝提供协议文本、坚持先付款才谈岗位、声称不签分期即取消名额、或收费后只承诺“推荐面试”而不承诺录用。"
+          ],
+          "note": "真正直接招聘员工的公司在录用前通常不会让求职者为“岗前培训”先自付高额费用再安排工作。把付费培训与获得岗位拆开判断：如果岗位本身不存在，付费培训就没有意义；如果你确实想学这项技能，也应作为独立消费决定，与本次求职分开评估、另行比较机构与价格。"
+        },
+        "self_checks": [
+          "你能否拿到招聘公司的全称与统一社会信用代码，以及培训协议中写明的培训主体和收款账户？",
+          "对方是否愿意以书面形式确认：分期是内部付款安排还是第三方贷款，放款方是谁、利率与期数是多少？",
+          "培训结束后是保证与该公司或其关联公司签订劳动合同，还是仅“推荐面试/安排面试”？"
+        ],
+        "version": 1,
+        "created_at": "2026-10-08T11:46:01.611486+00:00",
+        "sources": [
+          {
+            "id": "K001",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+            "location": "第九条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-08",
+            "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+            "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+            "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+            "tags": [
+              "保证金",
+              "押金",
+              "毕业证",
+              "身份证",
+              "扣押证件",
+              "入职收费",
+              "劳动合同法",
+              "第九条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 9,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "全国人民代表大会常务委员会",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+            "legal_database_status": "specific_record_checked",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "contract",
+              "identity"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07",
+            "source_role": "法律制定机关",
+            "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+          },
+          {
+            "id": "LCL-022",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+            "location": "第二十二条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-08",
+            "text": "第二十二条　用人单位为劳动者提供专项培训费用，对其进行专业技术培训的，可以与该劳动者订立协议，约定服务期。\n劳动者违反服务期约定的，应当按照约定向用人单位支付违约金。违约金的数额不得超过用人单位提供的培训费用。用人单位要求劳动者支付的违约金不得超过服务期尚未履行部分所应分摊的培训费用。\n用人单位与劳动者约定服务期的，不影响按照正常的工资调整机制提高劳动者在服务期期间的劳动报酬。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二十二条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 22,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "全国人民代表大会常务委员会",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+            "legal_database_status": "specific_record_checked",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07",
+            "source_role": "法律制定机关",
+            "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+          },
+          {
+            "id": "LL-2018-068",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第六十八条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第六十八条\n用人单位应当建立职业培训制度，按照国家规定提取和使用职业培训经费，根据本单位实际，有计划地对劳动者进行职业培训。\n从事技术工种的劳动者，上岗前必须经过培训。",
+            "scope": "本条所列情形；第八章 职业培训",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+            "tags": [
+              "劳动法",
+              "第六十八条",
+              "第八章 职业培训"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 68,
+            "chapter": "第八章 职业培训",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": [],
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "training_loan"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-15",
+            "verified_at": "2026-10-08",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ],
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "training_loan"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07",
+            "alternate_urls": [
+              "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+            ],
+            "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+            "source_site": "人力资源和社会保障部",
+            "source_access_note": "已定位原始发布页；本次直连超时，备用官方页面全文已核对。"
+          },
+          {
+            "id": "K006",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+            "location": "风险提示第四项",
+            "published_at": "2026-05-15",
+            "verified_at": "2026-10-08",
+            "text": "签订涉及贷款的协议，务必核实放款方资质、贷款利率、还款方式及违约责任。慎重在平台注册信息及办理贷款，坚持理性借贷，避免过度负债，切勿轻信“免息分期”“低门槛、秒到账”等承诺，避免陷入非法债务纠纷。",
+            "scope": "贷款或分期支付协议的核实事项。",
+            "boundary": "分期是否属于贷款要看协议和主体；不能仅凭分期二字认定违法。",
+            "tags": [
+              "分期",
+              "借款协议",
+              "贷款利率",
+              "还款",
+              "培训贷",
+              "违约责任"
+            ],
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "training_loan",
+              "contract"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07",
+            "alternate_urls": [
+              "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+            ],
+            "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+            "source_site": "人力资源和社会保障部",
+            "source_access_note": "已定位原始发布页；本次直连超时，备用官方页面全文已核对。"
+          },
+          {
+            "id": "O003-facts",
+            "title": "虚构化妆师助理岗位、招聘转为收费培训",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+            "location": "第7项：山东青岛两公司“招转培”案件 · 调查事实",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-08",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】青岛某文化服务公司没有化妆师岗位，却招聘化妆师助理；面试时以缺乏经验为由，引导求职者与另一科技公司签培训协议。",
+            "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+            "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+            "tags": [
+              "化妆师助理",
+              "虚假岗位",
+              "没有工作经验",
+              "招转培",
+              "培训协议",
+              "退还培训费"
+            ],
+            "case_id": "O003",
+            "chunk_role": "facts",
+            "related_ids": [
+              "O003-facts",
+              "O003-reasoning",
+              "O003-outcome"
+            ],
+            "source_publisher": "人力资源和社会保障部",
+            "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "agency",
+              "training_loan",
+              "job_truth",
+              "contract"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07",
+            "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+          },
+          {
+            "id": "O004-facts",
+            "title": "新媒体岗位诱导44天培训、第三方分期支付",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+            "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 调查事实",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-08",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】四川某公司招聘新媒体运营人员，以缺乏经验为由要求44天培训，费用19800元，求职者通过第三方平台分期付款。",
+            "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+            "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+            "tags": [
+              "新媒体运营",
+              "44天",
+              "19800",
+              "培训分期",
+              "第三方平台",
+              "培训贷"
+            ],
+            "case_id": "O004",
+            "chunk_role": "facts",
+            "related_ids": [
+              "O004-facts",
+              "O004-reasoning",
+              "O004-outcome"
+            ],
+            "source_publisher": "人力资源和社会保障部",
+            "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "training_loan"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07",
+            "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+          },
+          {
+            "id": "O003-outcome",
+            "title": "虚构化妆师助理岗位、招聘转为收费培训",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+            "location": "第7项：山东青岛两公司“招转培”案件 · 处理结果",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-08",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】责令限期改正、关闭职业中介、停止办学、退还所收费用。官方未披露退款完成或刑事判决。",
+            "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+            "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+            "tags": [
+              "化妆师助理",
+              "虚假岗位",
+              "没有工作经验",
+              "招转培",
+              "培训协议",
+              "退还培训费"
+            ],
+            "case_id": "O003",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "O003-facts",
+              "O003-reasoning",
+              "O003-outcome"
+            ],
+            "source_publisher": "人力资源和社会保障部",
+            "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "agency",
+              "training_loan",
+              "job_truth",
+              "contract"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07",
+            "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+          },
+          {
+            "id": "O003-reasoning",
+            "title": "虚构化妆师助理岗位、招聘转为收费培训",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+            "location": "第7项：山东青岛两公司“招转培”案件 · 执法认定",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-08",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门查明虚假招聘信息，以及另一公司未经许可开展职业技能培训和职业中介活动。",
+            "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+            "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+            "tags": [
+              "化妆师助理",
+              "虚假岗位",
+              "没有工作经验",
+              "招转培",
+              "培训协议",
+              "退还培训费"
+            ],
+            "case_id": "O003",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "O003-facts",
+              "O003-reasoning",
+              "O003-outcome"
+            ],
+            "source_publisher": "人力资源和社会保障部",
+            "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "agency",
+              "training_loan",
+              "job_truth",
+              "contract"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07",
+            "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+          },
+          {
+            "id": "O004-outcome",
+            "title": "新媒体岗位诱导44天培训、第三方分期支付",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+            "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 处理结果",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-08",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】属地人社部门立案调查，责令停止培训并退还所收费用；未公开刑事定罪、贷款利率或退款完成情况。",
+            "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+            "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+            "tags": [
+              "新媒体运营",
+              "44天",
+              "19800",
+              "培训分期",
+              "第三方平台",
+              "培训贷"
+            ],
+            "case_id": "O004",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "O004-facts",
+              "O004-reasoning",
+              "O004-outcome"
+            ],
+            "source_publisher": "人力资源和社会保障部",
+            "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "training_loan"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07",
+            "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+          },
+          {
+            "id": "O004-reasoning",
+            "title": "新媒体岗位诱导44天培训、第三方分期支付",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+            "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 执法认定",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-08",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门查明公司未取得职业技能培训许可，以招聘名义诱导培训牟取不正当利益。",
+            "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+            "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+            "tags": [
+              "新媒体运营",
+              "44天",
+              "19800",
+              "培训分期",
+              "第三方平台",
+              "培训贷"
+            ],
+            "case_id": "O004",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "O004-facts",
+              "O004-reasoning",
+              "O004-outcome"
+            ],
+            "source_publisher": "人力资源和社会保障部",
+            "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "training_loan"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07",
+            "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+          },
+          {
+            "id": "SUP-R002",
+            "title": "招聘转培训和贷款",
+            "kind": "support",
+            "text": "先招聘再以能力不足推销培训贷款，核对招聘承诺、培训与放款主体；高风险信号不等于最终诈骗定性。\n关联依据编号：K005、K001",
+            "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+            "location": "风险判定辅助",
+            "published_at": "",
+            "verified_at": "2026-10-08",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "招聘转培训和贷款",
+              "风险判定辅助"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K005",
+              "K001"
+            ],
+            "support_category": "风险判定辅助",
+            "origin_document": "三色判定规则库.docx",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "training_loan",
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07",
+            "source_publisher": "作品团队",
+            "source_role": "整理者",
+            "source_relation": "related_official_basis",
+            "source_site": "关联官方原文，团队整理内容并非官方原文",
+            "alternate_urls": [
+              "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+            ],
+            "source_access_note": "原始发布页本次直连超时，备用官方页面全文已核对。"
+          },
+          {
+            "id": "SUP-A01",
+            "title": "入职收费与培训贷款",
+            "kind": "support",
+            "text": "先暂停新增付款和不明授权，保存招聘、协议、转账、聊天证据；按主体及争议性质选择人社、消费维权、民事诉讼等渠道；涉嫌犯罪或人身危险报警。已签借款不要自行停还款，合同取消不当然免除借贷责任。\n关联依据编号：K001、K005",
+            "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+            "location": "维权行动卡",
+            "published_at": "",
+            "verified_at": "2026-10-08",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "入职收费与培训贷款",
+              "维权行动卡"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K001",
+              "K005"
+            ],
+            "support_category": "维权行动卡",
+            "origin_document": "维权行动指南.docx",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "fees",
+              "training_loan",
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07",
+            "source_publisher": "作品团队",
+            "source_role": "整理者",
+            "source_relation": "related_official_basis",
+            "source_site": "关联官方原文，团队整理内容并非官方原文",
+            "alternate_urls": [
+              "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+            ],
+            "source_access_note": "原始发布页本次直连超时，备用官方页面全文已核对。"
+          },
+          {
+            "id": "SUP-F12",
+            "title": "面试收培训费是否合法",
+            "kind": "support",
+            "text": "先问谁收、为何收、与录用有何关系。用人单位招用劳动者不得收取财物；真实自愿独立培训服务与附条件入职收费不同，不能仅见培训费三个字就自动套用第九条。\n关联依据编号：K001、K005",
+            "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-08",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "面试收培训费是否合法",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K001",
+              "K005"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "training_loan",
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07",
+            "source_publisher": "作品团队",
+            "source_role": "整理者",
+            "source_relation": "related_official_basis",
+            "source_site": "关联官方原文，团队整理内容并非官方原文"
+          }
+        ],
+        "review_status": {
+          "status": "passed",
+          "audit_count": 2,
+          "revision_count": 1,
+          "last_issues": []
+        },
+        "employment_stage": "preemployment",
+        "stage_reason": "用户明确表示是大四学生、正在找第一份工作，尚未入职、签协议或付款，仅拿到招聘截图和聊天内容。",
+        "review_notes": [],
+        "report_context": {
+          "user_statements": [
+            "我是大四学生，正在找第一份工作，还没有入职、签协议或付款。招聘广告写：招聘软件测试助理，不要求工作经验，月薪6000—8000元，公司提供岗前培训，培训后安排工作。面试结束后，HR说我基础不足，需要先参加两个月培训，费用9800元。他说可以分期，不用现在一次性付清，并催我今天确认名额。我现在只拿到了招聘截图和这些聊天内容，还没看到培训协议，也不知道培训是谁提供、费用付给谁、分期是不是贷款。"
+          ],
+          "materials": []
+        }
+      },
+      "sources": [
+        {
+          "id": "K001",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+          "location": "第九条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-08",
+          "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+          "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+          "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+          "tags": [
+            "保证金",
+            "押金",
+            "毕业证",
+            "身份证",
+            "扣押证件",
+            "入职收费",
+            "劳动合同法",
+            "第九条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 9,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "全国人民代表大会常务委员会",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+          "legal_database_status": "specific_record_checked",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "contract",
+            "identity"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07",
+          "source_role": "法律制定机关",
+          "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+        },
+        {
+          "id": "K005",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "kind": "warning",
+          "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+          "location": "风险提示第三项",
+          "published_at": "2026-05-15",
+          "verified_at": "2026-10-08",
+          "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+          "scope": "求职被转向收费培训及培训贷款风险。",
+          "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+          "tags": [
+            "招转培",
+            "培训贷",
+            "贷款",
+            "高额培训费",
+            "包就业",
+            "先培训后入职"
+          ],
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "training_loan"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07",
+          "alternate_urls": [
+            "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+          ],
+          "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+          "source_site": "人力资源和社会保障部",
+          "source_access_note": "已定位原始发布页；本次直连超时，备用官方页面全文已核对。"
+        },
+        {
+          "id": "K006",
+          "title": "五部门警惕招转培、培训贷风险提示",
+          "kind": "warning",
+          "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+          "location": "风险提示第四项",
+          "published_at": "2026-05-15",
+          "verified_at": "2026-10-08",
+          "text": "签订涉及贷款的协议，务必核实放款方资质、贷款利率、还款方式及违约责任。慎重在平台注册信息及办理贷款，坚持理性借贷，避免过度负债，切勿轻信“免息分期”“低门槛、秒到账”等承诺，避免陷入非法债务纠纷。",
+          "scope": "贷款或分期支付协议的核实事项。",
+          "boundary": "分期是否属于贷款要看协议和主体；不能仅凭分期二字认定违法。",
+          "tags": [
+            "分期",
+            "借款协议",
+            "贷款利率",
+            "还款",
+            "培训贷",
+            "违约责任"
+          ],
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "training_loan",
+            "contract"
+          ],
+          "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+          "classified_at": "2026-10-07",
+          "alternate_urls": [
+            "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+          ],
+          "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+          "source_site": "人力资源和社会保障部",
+          "source_access_note": "已定位原始发布页；本次直连超时，备用官方页面全文已核对。"
+        },
+        {
+          "id": "LCL-022",
+          "title": "中华人民共和国劳动合同法",
+          "kind": "law",
+          "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+          "location": "第二十二条",
+          "published_at": "2012-12-28",
+          "verified_at": "2026-10-08",
+          "text": "第二十二条　用人单位为劳动者提供专项培训费用，对其进行专业技术培训的，可以与该劳动者订立协议，约定服务期。\n劳动者违反服务期约定的，应当按照约定向用人单位支付违约金。违约金的数额不得超过用人单位提供的培训费用。用人单位要求劳动者支付的违约金不得超过服务期尚未履行部分所应分摊的培训费用。\n用人单位与劳动者约定服务期的，不影响按照正常的工资调整机制提高劳动者在服务期期间的劳动报酬。",
+          "scope": "本条所列情形；第二章　劳动合同的订立 ",
+          "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+          "tags": [
+            "劳动合同法",
+            "第二十二条",
+            "第二章　劳动合同的订立"
+          ],
+          "law_id": "labor-contract-law-2012",
+          "article_number": 22,
+          "chapter": "第二章　劳动合同的订立",
+          "section": "",
+          "version": "2012年12月28日修正",
+          "amendment_effective_at": "2013-07-01",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "related_article_ids": [],
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+          "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+          "source_publisher": "全国人民代表大会常务委员会",
+          "source_level": "national_authority",
+          "legal_database_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+          "legal_database_status": "specific_record_checked",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07",
+          "source_role": "法律制定机关",
+          "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+        },
+        {
+          "id": "LL-2018-068",
+          "title": "中华人民共和国劳动法",
+          "kind": "law",
+          "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+          "location": "第六十八条",
+          "published_at": "2018-12-29",
+          "verified_at": "2026-10-05",
+          "text": "第六十八条\n用人单位应当建立职业培训制度，按照国家规定提取和使用职业培训经费，根据本单位实际，有计划地对劳动者进行职业培训。\n从事技术工种的劳动者，上岗前必须经过培训。",
+          "scope": "本条所列情形；第八章 职业培训",
+          "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+          "tags": [
+            "劳动法",
+            "第六十八条",
+            "第八章 职业培训"
+          ],
+          "law_id": "labor-law-2018",
+          "article_number": 68,
+          "chapter": "第八章 职业培训",
+          "version": "2018年12月29日修正",
+          "content_form": "official_article_fulltext",
+          "verification_status": "official_source_checked",
+          "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+          "related_article_ids": [],
+          "supporting_source_urls": [],
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "training_loan"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07"
+        },
+        {
+          "id": "O003-facts",
+          "title": "虚构化妆师助理岗位、招聘转为收费培训",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+          "location": "第7项：山东青岛两公司“招转培”案件 · 调查事实",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-08",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】青岛某文化服务公司没有化妆师岗位，却招聘化妆师助理；面试时以缺乏经验为由，引导求职者与另一科技公司签培训协议。",
+          "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+          "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+          "tags": [
+            "化妆师助理",
+            "虚假岗位",
+            "没有工作经验",
+            "招转培",
+            "培训协议",
+            "退还培训费"
+          ],
+          "case_id": "O003",
+          "chunk_role": "facts",
+          "related_ids": [
+            "O003-facts",
+            "O003-reasoning",
+            "O003-outcome"
+          ],
+          "source_publisher": "人力资源和社会保障部",
+          "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "agency",
+            "training_loan",
+            "job_truth",
+            "contract"
+          ],
+          "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+          "classified_at": "2026-10-07",
+          "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+        },
+        {
+          "id": "O003-outcome",
+          "title": "虚构化妆师助理岗位、招聘转为收费培训",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+          "location": "第7项：山东青岛两公司“招转培”案件 · 处理结果",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-08",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】责令限期改正、关闭职业中介、停止办学、退还所收费用。官方未披露退款完成或刑事判决。",
+          "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+          "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+          "tags": [
+            "化妆师助理",
+            "虚假岗位",
+            "没有工作经验",
+            "招转培",
+            "培训协议",
+            "退还培训费"
+          ],
+          "case_id": "O003",
+          "chunk_role": "outcome",
+          "related_ids": [
+            "O003-facts",
+            "O003-reasoning",
+            "O003-outcome"
+          ],
+          "source_publisher": "人力资源和社会保障部",
+          "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "agency",
+            "training_loan",
+            "job_truth",
+            "contract"
+          ],
+          "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+          "classified_at": "2026-10-07",
+          "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+        },
+        {
+          "id": "O003-reasoning",
+          "title": "虚构化妆师助理岗位、招聘转为收费培训",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+          "location": "第7项：山东青岛两公司“招转培”案件 · 执法认定",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-08",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门查明虚假招聘信息，以及另一公司未经许可开展职业技能培训和职业中介活动。",
+          "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+          "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+          "tags": [
+            "化妆师助理",
+            "虚假岗位",
+            "没有工作经验",
+            "招转培",
+            "培训协议",
+            "退还培训费"
+          ],
+          "case_id": "O003",
+          "chunk_role": "reasoning",
+          "related_ids": [
+            "O003-facts",
+            "O003-reasoning",
+            "O003-outcome"
+          ],
+          "source_publisher": "人力资源和社会保障部",
+          "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "agency",
+            "training_loan",
+            "job_truth",
+            "contract"
+          ],
+          "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+          "classified_at": "2026-10-07",
+          "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+        },
+        {
+          "id": "O004-facts",
+          "title": "新媒体岗位诱导44天培训、第三方分期支付",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+          "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 调查事实",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-08",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】四川某公司招聘新媒体运营人员，以缺乏经验为由要求44天培训，费用19800元，求职者通过第三方平台分期付款。",
+          "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+          "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+          "tags": [
+            "新媒体运营",
+            "44天",
+            "19800",
+            "培训分期",
+            "第三方平台",
+            "培训贷"
+          ],
+          "case_id": "O004",
+          "chunk_role": "facts",
+          "related_ids": [
+            "O004-facts",
+            "O004-reasoning",
+            "O004-outcome"
+          ],
+          "source_publisher": "人力资源和社会保障部",
+          "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "training_loan"
+          ],
+          "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+          "classified_at": "2026-10-07",
+          "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+        },
+        {
+          "id": "O004-outcome",
+          "title": "新媒体岗位诱导44天培训、第三方分期支付",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+          "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 处理结果",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-08",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】属地人社部门立案调查，责令停止培训并退还所收费用；未公开刑事定罪、贷款利率或退款完成情况。",
+          "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+          "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+          "tags": [
+            "新媒体运营",
+            "44天",
+            "19800",
+            "培训分期",
+            "第三方平台",
+            "培训贷"
+          ],
+          "case_id": "O004",
+          "chunk_role": "outcome",
+          "related_ids": [
+            "O004-facts",
+            "O004-reasoning",
+            "O004-outcome"
+          ],
+          "source_publisher": "人力资源和社会保障部",
+          "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "training_loan"
+          ],
+          "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+          "classified_at": "2026-10-07",
+          "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+        },
+        {
+          "id": "O004-reasoning",
+          "title": "新媒体岗位诱导44天培训、第三方分期支付",
+          "kind": "case",
+          "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+          "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 执法认定",
+          "published_at": "2025-12-11",
+          "verified_at": "2026-10-08",
+          "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门查明公司未取得职业技能培训许可，以招聘名义诱导培训牟取不正当利益。",
+          "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+          "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+          "tags": [
+            "新媒体运营",
+            "44天",
+            "19800",
+            "培训分期",
+            "第三方平台",
+            "培训贷"
+          ],
+          "case_id": "O004",
+          "chunk_role": "reasoning",
+          "related_ids": [
+            "O004-facts",
+            "O004-reasoning",
+            "O004-outcome"
+          ],
+          "source_publisher": "人力资源和社会保障部",
+          "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+          "content_form": "official_case_summary",
+          "verification_status": "official_source_checked",
+          "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+          "decision_type": "administrative_enforcement",
+          "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+          "stage_scope": "pre",
+          "employment_stages": [
+            "preemployment"
+          ],
+          "risk_topics": [
+            "fees",
+            "training_loan"
+          ],
+          "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+          "classified_at": "2026-10-07",
+          "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+        },
+        {
+          "id": "SUP-A01",
+          "title": "入职收费与培训贷款",
+          "kind": "support",
+          "text": "先暂停新增付款和不明授权，保存招聘、协议、转账、聊天证据；按主体及争议性质选择人社、消费维权、民事诉讼等渠道；涉嫌犯罪或人身危险报警。已签借款不要自行停还款，合同取消不当然免除借贷责任。\n关联依据编号：K001、K005",
+          "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+          "location": "维权行动卡",
+          "published_at": "",
+          "verified_at": "2026-10-08",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "入职收费与培训贷款",
+            "维权行动卡"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "K001",
+            "K005"
+          ],
+          "support_category": "维权行动卡",
+          "origin_document": "维权行动指南.docx",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "fees",
+            "training_loan",
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07",
+          "source_publisher": "作品团队",
+          "source_role": "整理者",
+          "source_relation": "related_official_basis",
+          "source_site": "关联官方原文，团队整理内容并非官方原文",
+          "alternate_urls": [
+            "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+          ],
+          "source_access_note": "原始发布页本次直连超时，备用官方页面全文已核对。"
+        },
+        {
+          "id": "SUP-F12",
+          "title": "面试收培训费是否合法",
+          "kind": "support",
+          "text": "先问谁收、为何收、与录用有何关系。用人单位招用劳动者不得收取财物；真实自愿独立培训服务与附条件入职收费不同，不能仅见培训费三个字就自动套用第九条。\n关联依据编号：K001、K005",
+          "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+          "location": "高频问答",
+          "published_at": "",
+          "verified_at": "2026-10-08",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "面试收培训费是否合法",
+            "高频问答"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "K001",
+            "K005"
+          ],
+          "support_category": "高频问答",
+          "origin_document": "大学生就业权益高频问题回答.docx",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "training_loan",
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07",
+          "source_publisher": "作品团队",
+          "source_role": "整理者",
+          "source_relation": "related_official_basis",
+          "source_site": "关联官方原文，团队整理内容并非官方原文"
+        },
+        {
+          "id": "SUP-R002",
+          "title": "招聘转培训和贷款",
+          "kind": "support",
+          "text": "先招聘再以能力不足推销培训贷款，核对招聘承诺、培训与放款主体；高风险信号不等于最终诈骗定性。\n关联依据编号：K005、K001",
+          "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+          "location": "风险判定辅助",
+          "published_at": "",
+          "verified_at": "2026-10-08",
+          "scope": "大学生招聘、签约、用工与就业权益咨询",
+          "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+          "tags": [
+            "招聘转培训和贷款",
+            "风险判定辅助"
+          ],
+          "content_form": "reviewed_support",
+          "verification_status": "curated_with_references",
+          "related_article_ids": [
+            "K005",
+            "K001"
+          ],
+          "support_category": "风险判定辅助",
+          "origin_document": "三色判定规则库.docx",
+          "stage_scope": "both",
+          "employment_stages": [
+            "preemployment",
+            "employed"
+          ],
+          "risk_topics": [
+            "training_loan",
+            "contract"
+          ],
+          "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+          "classified_at": "2026-10-07",
+          "source_publisher": "作品团队",
+          "source_role": "整理者",
+          "source_relation": "related_official_basis",
+          "source_site": "关联官方原文，团队整理内容并非官方原文",
+          "alternate_urls": [
+            "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+          ],
+          "source_access_note": "原始发布页本次直连超时，备用官方页面全文已核对。"
+        }
+      ]
+    }
+  ],
+  "content_verdict": "pending_human_review",
+  "session_id": "S42099a72dce24ac29f51cba0bec1ea7f",
+  "session": {
+    "id": "S42099a72dce24ac29f51cba0bec1ea7f",
+    "title": "事实表固定测试 招聘转收费培训且贷款未知",
+    "state": "reported",
+    "material_ids": [],
+    "messages": [
+      {
+        "role": "user",
+        "text": "我是大四学生，正在找第一份工作，还没有入职、签协议或付款。招聘广告写：招聘软件测试助理，不要求工作经验，月薪6000—8000元，公司提供岗前培训，培训后安排工作。面试结束后，HR说我基础不足，需要先参加两个月培训，费用9800元。他说可以分期，不用现在一次性付清，并催我今天确认名额。我现在只拿到了招聘截图和这些聊天内容，还没看到培训协议，也不知道培训是谁提供、费用付给谁、分期是不是贷款。",
+        "material_ids": []
+      },
+      {
+        "role": "assistant",
+        "result": {
+          "action": "report",
+          "employment_stage": "preemployment",
+          "stage_reason": "用户明确表示是大四学生、正在找第一份工作，尚未入职、签协议或付款，仅拿到招聘截图和聊天内容。",
+          "message": "",
+          "questions": [],
+          "evidence_ids": [
+            "K005",
+            "K006",
+            "K001",
+            "LCL-022",
+            "SUP-R002",
+            "SUP-F12",
+            "SUP-A01",
+            "O004-facts",
+            "O004-reasoning",
+            "O004-outcome",
+            "O003-facts",
+            "O003-reasoning",
+            "O003-outcome"
+          ],
+          "report": {
+            "summary": "这是典型的“招聘转付费培训”场景：招聘广告称公司提供岗前培训、培训后安排工作，面试后却以你能力不足为由，要求你先参加费用9800元的培训，并称可以分期、催你当天确认名额。官方五部门风险提示明确，求职过程中以各种理由要求参加需支付高额费用培训才能安排岗位的，应果断拒绝；确需培训应核实机构资质及是否含贷款内容。现阶段最应做的是：暂缓付款、暂缓签任何分期或借款文件、暂缓确认名额，先书面问清培训主体、收款方、分期性质，并保留全部聊天和招聘截图证据。",
+            "findings": [
+              {
+                "title": "招聘岗位疑似被转为高额付费培训（招转培）",
+                "level": "high",
+                "quote": "招聘广告写：招聘软件测试助理，不要求工作经验，月薪6000—8000元，公司提供岗前培训，培训后安排工作。",
+                "material_id": "user",
+                "page_number": 0,
+                "explanation": "招聘广告承诺“公司提供岗前培训，培训后安排工作”，但面试后HR以你基础不足为由，要求你先参加两个月培训、费用9800元（引材料原句），并称“可以分期，不用现在一次性付清”且催促你当天确认名额（引材料原句）。收费时间与方式尚未明确，但催促确认名额与分期说法都服务于同一笔9800元收费交易，应一并评估。这一前后变化与官方风险提示描述的“以招聘为名引导求职者参加需支付高额费用的培训才能安排岗位”高度吻合，五部门明确要求对此类情形果断拒绝。9800元相对广告月薪6000—8000元占比较高（约1.2至1.6个月工资），且“培训后安排工作”并非录用承诺，仍有以培训代替录用、甚至不实际安排岗位的风险；分期究竟属于公司内部付款安排还是第三方贷款，你目前也不清楚（引材料原句），若在岗位未落实前先签分期或借款文件，可能先行承担独立还款义务。目前尚不能认定对方违法或诈骗，但该风险已足以支持暂停付款与签约。人力社保部门公布的“招转培”案例中，存在公司无培训许可、以招聘名义诱导求职者培训牟利并被责令停止培训、退还费用的处理先例，可作个案参考，不是本案定性。",
+                "evidence_ids": [
+                  "K005",
+                  "K006",
+                  "SUP-R002",
+                  "SUP-A01",
+                  "O003-facts",
+                  "O004-facts"
+                ],
+                "suggestions": [
+                  "暂缓支付9800元，也暂缓以任何形式确认“名额”，不接受“今天不确认就没了”的催促。",
+                  "要求招聘方以书面（微信、邮件均可）明确：培训由哪家公司提供、与招聘公司是什么关系、该机构是否具备职业技能培训许可资质。",
+                  "书面询问招聘公司：完成培训是否保证录用、与谁签订劳动合同、岗位名称和薪资构成、有无试用期；答复含糊或拒绝书面说明即为退出信号。",
+                  "在看清分期协议文本前，不要点击任何贷款或分期平台的注册、授权、授信链接，不提供身份证、银行卡、人脸识别或征信授权；书面问清分期是公司内部分期付款，还是第三方金融机构贷款，放款方全称、年化利率、期数、每期金额、提前终止条件分别是什么。",
+                  "保留招聘截图、全部聊天记录，截图时保留对方账号昵称、时间和原文；要求先拿到完整协议文本（含培训协议与任何分期/借款协议）再决定。",
+                  "若确有独立培训需求，应与本次求职分开评估培训质量与费用，不能把付费当作获得岗位的条件。"
+                ],
+                "category": "risk",
+                "fact_basis": "abnormal_behavior",
+                "legal_claims": [
+                  {
+                    "statement": "求职过程中被以各种理由要求参加需支付高额费用的培训才能安排岗位的，应果断拒绝；确有培训需求应核实机构是否具备依法审批的许可资质、是否存在不合理收费或贷款内容。",
+                    "basis_ids": [
+                      "K005"
+                    ]
+                  },
+                  {
+                    "statement": "签订涉及贷款的协议前，应核实放款方资质、贷款利率、还款方式及违约责任；慎在平台注册信息及办理贷款，切勿轻信“免息分期”“低门槛、秒到账”等承诺。",
+                    "basis_ids": [
+                      "K006"
+                    ]
+                  },
+                  {
+                    "statement": "用人单位招用劳动者，不得要求劳动者提供担保或者以其他名义向劳动者收取财物；是否适用本条需先核实收费主体、收费行为与招用环节的关系，不能把独立合法培训服务或所有贷款自动套入。",
+                    "basis_ids": [
+                      "K001"
+                    ]
+                  },
+                  {
+                    "statement": "用人单位可以建立职业培训制度并按规定提取使用培训经费，但这不构成求职者须先自费培训才能获得岗位的依据。",
+                    "basis_ids": [
+                      "LL-2018-068"
+                    ]
+                  },
+                  {
+                    "statement": "官方公布案例中，存在公司无职业技能培训许可、以招聘名义诱导求职者培训牟利并被责令停止培训、退还费用的处理先例，属个案参考，不得直接套用于本案。",
+                    "basis_ids": [
+                      "O003-reasoning",
+                      "O003-outcome",
+                      "O004-reasoning",
+                      "O004-outcome"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "limitations": [
+              "目前只有招聘截图和聊天内容，没有培训协议、服务期条款、分期或借款合同文本，无法判断9800元费用的性质、是否设违约金、退款条件；分期究竟是公司内部分期付款还是第三方贷款尚属未知，需拿到相关协议后再评估是否构成独立金融义务。",
+              "培训提供方、费用收款方、分期或放款方均未确认，无法判断是否存在人力资源服务或职业技能培训许可问题，也无法确认收费主体与招聘主体是否为同一家公司。",
+              "招聘公司名称、办公地址、是否真实存在软件测试助理岗位均未提供，“公司提供岗前培训、培训后安排工作”目前只是广告与HR口头说法，尚无书面录用承诺。",
+              "说明：招聘广告称公司提供培训，不因此可推出培训免费、属于直接招聘或保证录用；广告条件与面试后要求先付费培训之间的不一致，本身就是需要核实的信号。",
+              "招聘截图与聊天记录未提供原文文件，本报告仅依据用户转述内容分析，未核验对方主体资质或经营状况。",
+              "本报告是风险提示与分析，不构成对任何主体违法或诈骗的认定，也不代替司法、行政或调解机构的判断。"
+            ],
+            "change_reason": "",
+            "prevention": {
+              "decision": "pause",
+              "label": "暂缓付款、签约与名额确认",
+              "steps": [
+                "先不要支付9800元或任何定金、诚意金、资料费，也不要办理分期、贷款或平台授信。",
+                "不交出身份证、银行卡、毕业证原件，不做人脸识别或征信授权；如对方要求核验，可先以复印件加注用途替代。",
+                "用微信或邮件书面问清五件事：培训提供方全称、费用收款方全称、分期是公司分期还是第三方贷款、培训后是否保证录用及拟签合同主体、岗位薪资构成与试用期。",
+                "要求对方先提供完整培训协议与分期协议文本，拿到纸质或电子文件后仔细核对：费用总额、违约责任、退款条件、服务期与竞业条款、是否包含授权查询征信的条款。",
+                "通过国家企业信用信息公示系统查询招聘公司与培训公司是否同一地址、同一法定代表人；通过当地人力资源社会保障部门官网或12333咨询该机构是否具备职业培训与职业中介许可。核查只能减少特定疑点，不代表岗位安全，也不构成继续付费求职的理由。",
+                "出现以下任一情形即退出：拒绝书面说明收费主体、拒绝提供协议文本、坚持先付款才谈岗位、声称不签分期即取消名额、或收费后只承诺“推荐面试”而不承诺录用。"
+              ],
+              "note": "真正直接招聘员工的公司在录用前通常不会让求职者为“岗前培训”先自付高额费用再安排工作。把付费培训与获得岗位拆开判断：如果岗位本身不存在，付费培训就没有意义；如果你确实想学这项技能，也应作为独立消费决定，与本次求职分开评估、另行比较机构与价格。"
+            },
+            "self_checks": [
+              "你能否拿到招聘公司的全称与统一社会信用代码，以及培训协议中写明的培训主体和收款账户？",
+              "对方是否愿意以书面形式确认：分期是内部付款安排还是第三方贷款，放款方是谁、利率与期数是多少？",
+              "培训结束后是保证与该公司或其关联公司签订劳动合同，还是仅“推荐面试/安排面试”？"
+            ],
+            "version": 1,
+            "created_at": "2026-10-08T11:46:01.611486+00:00",
+            "sources": [
+              {
+                "id": "K001",
+                "title": "中华人民共和国劳动合同法",
+                "kind": "law",
+                "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+                "location": "第九条",
+                "published_at": "2012-12-28",
+                "verified_at": "2026-10-08",
+                "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+                "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+                "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+                "tags": [
+                  "保证金",
+                  "押金",
+                  "毕业证",
+                  "身份证",
+                  "扣押证件",
+                  "入职收费",
+                  "劳动合同法",
+                  "第九条",
+                  "第二章　劳动合同的订立"
+                ],
+                "law_id": "labor-contract-law-2012",
+                "article_number": 9,
+                "chapter": "第二章　劳动合同的订立",
+                "section": "",
+                "version": "2012年12月28日修正",
+                "amendment_effective_at": "2013-07-01",
+                "content_form": "official_article_fulltext",
+                "verification_status": "official_source_checked",
+                "related_article_ids": [],
+                "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+                "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+                "source_publisher": "全国人民代表大会常务委员会",
+                "source_level": "national_authority",
+                "legal_database_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+                "legal_database_status": "specific_record_checked",
+                "stage_scope": "pre",
+                "employment_stages": [
+                  "preemployment"
+                ],
+                "risk_topics": [
+                  "fees",
+                  "contract",
+                  "identity"
+                ],
+                "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+                "classified_at": "2026-10-07",
+                "source_role": "法律制定机关",
+                "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+              },
+              {
+                "id": "LCL-022",
+                "title": "中华人民共和国劳动合同法",
+                "kind": "law",
+                "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+                "location": "第二十二条",
+                "published_at": "2012-12-28",
+                "verified_at": "2026-10-08",
+                "text": "第二十二条　用人单位为劳动者提供专项培训费用，对其进行专业技术培训的，可以与该劳动者订立协议，约定服务期。\n劳动者违反服务期约定的，应当按照约定向用人单位支付违约金。违约金的数额不得超过用人单位提供的培训费用。用人单位要求劳动者支付的违约金不得超过服务期尚未履行部分所应分摊的培训费用。\n用人单位与劳动者约定服务期的，不影响按照正常的工资调整机制提高劳动者在服务期期间的劳动报酬。",
+                "scope": "本条所列情形；第二章　劳动合同的订立 ",
+                "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+                "tags": [
+                  "劳动合同法",
+                  "第二十二条",
+                  "第二章　劳动合同的订立"
+                ],
+                "law_id": "labor-contract-law-2012",
+                "article_number": 22,
+                "chapter": "第二章　劳动合同的订立",
+                "section": "",
+                "version": "2012年12月28日修正",
+                "amendment_effective_at": "2013-07-01",
+                "content_form": "official_article_fulltext",
+                "verification_status": "official_source_checked",
+                "related_article_ids": [],
+                "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+                "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+                "source_publisher": "全国人民代表大会常务委员会",
+                "source_level": "national_authority",
+                "legal_database_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+                "legal_database_status": "specific_record_checked",
+                "stage_scope": "both",
+                "employment_stages": [
+                  "preemployment",
+                  "employed"
+                ],
+                "risk_topics": [
+                  "contract"
+                ],
+                "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+                "classified_at": "2026-10-07",
+                "source_role": "法律制定机关",
+                "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+              },
+              {
+                "id": "LL-2018-068",
+                "title": "中华人民共和国劳动法",
+                "kind": "law",
+                "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+                "location": "第六十八条",
+                "published_at": "2018-12-29",
+                "verified_at": "2026-10-05",
+                "text": "第六十八条\n用人单位应当建立职业培训制度，按照国家规定提取和使用职业培训经费，根据本单位实际，有计划地对劳动者进行职业培训。\n从事技术工种的劳动者，上岗前必须经过培训。",
+                "scope": "本条所列情形；第八章 职业培训",
+                "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+                "tags": [
+                  "劳动法",
+                  "第六十八条",
+                  "第八章 职业培训"
+                ],
+                "law_id": "labor-law-2018",
+                "article_number": 68,
+                "chapter": "第八章 职业培训",
+                "version": "2018年12月29日修正",
+                "content_form": "official_article_fulltext",
+                "verification_status": "official_source_checked",
+                "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+                "related_article_ids": [],
+                "supporting_source_urls": [],
+                "stage_scope": "both",
+                "employment_stages": [
+                  "preemployment",
+                  "employed"
+                ],
+                "risk_topics": [
+                  "training_loan"
+                ],
+                "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+                "classified_at": "2026-10-07"
+              },
+              {
+                "id": "K005",
+                "title": "五部门警惕招转培、培训贷风险提示",
+                "kind": "warning",
+                "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+                "location": "风险提示第三项",
+                "published_at": "2026-05-15",
+                "verified_at": "2026-10-08",
+                "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+                "scope": "求职被转向收费培训及培训贷款风险。",
+                "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+                "tags": [
+                  "招转培",
+                  "培训贷",
+                  "贷款",
+                  "高额培训费",
+                  "包就业",
+                  "先培训后入职"
+                ],
+                "stage_scope": "pre",
+                "employment_stages": [
+                  "preemployment"
+                ],
+                "risk_topics": [
+                  "fees",
+                  "training_loan"
+                ],
+                "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+                "classified_at": "2026-10-07",
+                "alternate_urls": [
+                  "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+                ],
+                "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+                "source_site": "人力资源和社会保障部",
+                "source_access_note": "已定位原始发布页；本次直连超时，备用官方页面全文已核对。"
+              },
+              {
+                "id": "K006",
+                "title": "五部门警惕招转培、培训贷风险提示",
+                "kind": "warning",
+                "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+                "location": "风险提示第四项",
+                "published_at": "2026-05-15",
+                "verified_at": "2026-10-08",
+                "text": "签订涉及贷款的协议，务必核实放款方资质、贷款利率、还款方式及违约责任。慎重在平台注册信息及办理贷款，坚持理性借贷，避免过度负债，切勿轻信“免息分期”“低门槛、秒到账”等承诺，避免陷入非法债务纠纷。",
+                "scope": "贷款或分期支付协议的核实事项。",
+                "boundary": "分期是否属于贷款要看协议和主体；不能仅凭分期二字认定违法。",
+                "tags": [
+                  "分期",
+                  "借款协议",
+                  "贷款利率",
+                  "还款",
+                  "培训贷",
+                  "违约责任"
+                ],
+                "stage_scope": "pre",
+                "employment_stages": [
+                  "preemployment"
+                ],
+                "risk_topics": [
+                  "training_loan",
+                  "contract"
+                ],
+                "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+                "classified_at": "2026-10-07",
+                "alternate_urls": [
+                  "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+                ],
+                "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+                "source_site": "人力资源和社会保障部",
+                "source_access_note": "已定位原始发布页；本次直连超时，备用官方页面全文已核对。"
+              },
+              {
+                "id": "O003-facts",
+                "title": "虚构化妆师助理岗位、招聘转为收费培训",
+                "kind": "case",
+                "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+                "location": "第7项：山东青岛两公司“招转培”案件 · 调查事实",
+                "published_at": "2025-12-11",
+                "verified_at": "2026-10-08",
+                "text": "【官方发布案例的核对摘要，非完整裁判文书】青岛某文化服务公司没有化妆师岗位，却招聘化妆师助理；面试时以缺乏经验为由，引导求职者与另一科技公司签培训协议。",
+                "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+                "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+                "tags": [
+                  "化妆师助理",
+                  "虚假岗位",
+                  "没有工作经验",
+                  "招转培",
+                  "培训协议",
+                  "退还培训费"
+                ],
+                "case_id": "O003",
+                "chunk_role": "facts",
+                "related_ids": [
+                  "O003-facts",
+                  "O003-reasoning",
+                  "O003-outcome"
+                ],
+                "source_publisher": "人力资源和社会保障部",
+                "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+                "content_form": "official_case_summary",
+                "verification_status": "official_source_checked",
+                "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+                "decision_type": "administrative_enforcement",
+                "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+                "stage_scope": "pre",
+                "employment_stages": [
+                  "preemployment"
+                ],
+                "risk_topics": [
+                  "fees",
+                  "agency",
+                  "training_loan",
+                  "job_truth",
+                  "contract"
+                ],
+                "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+                "classified_at": "2026-10-07",
+                "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+              },
+              {
+                "id": "O004-facts",
+                "title": "新媒体岗位诱导44天培训、第三方分期支付",
+                "kind": "case",
+                "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+                "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 调查事实",
+                "published_at": "2025-12-11",
+                "verified_at": "2026-10-08",
+                "text": "【官方发布案例的核对摘要，非完整裁判文书】四川某公司招聘新媒体运营人员，以缺乏经验为由要求44天培训，费用19800元，求职者通过第三方平台分期付款。",
+                "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+                "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+                "tags": [
+                  "新媒体运营",
+                  "44天",
+                  "19800",
+                  "培训分期",
+                  "第三方平台",
+                  "培训贷"
+                ],
+                "case_id": "O004",
+                "chunk_role": "facts",
+                "related_ids": [
+                  "O004-facts",
+                  "O004-reasoning",
+                  "O004-outcome"
+                ],
+                "source_publisher": "人力资源和社会保障部",
+                "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+                "content_form": "official_case_summary",
+                "verification_status": "official_source_checked",
+                "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+                "decision_type": "administrative_enforcement",
+                "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+                "stage_scope": "pre",
+                "employment_stages": [
+                  "preemployment"
+                ],
+                "risk_topics": [
+                  "fees",
+                  "training_loan"
+                ],
+                "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+                "classified_at": "2026-10-07",
+                "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+              },
+              {
+                "id": "O003-outcome",
+                "title": "虚构化妆师助理岗位、招聘转为收费培训",
+                "kind": "case",
+                "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+                "location": "第7项：山东青岛两公司“招转培”案件 · 处理结果",
+                "published_at": "2025-12-11",
+                "verified_at": "2026-10-08",
+                "text": "【官方发布案例的核对摘要，非完整裁判文书】责令限期改正、关闭职业中介、停止办学、退还所收费用。官方未披露退款完成或刑事判决。",
+                "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+                "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+                "tags": [
+                  "化妆师助理",
+                  "虚假岗位",
+                  "没有工作经验",
+                  "招转培",
+                  "培训协议",
+                  "退还培训费"
+                ],
+                "case_id": "O003",
+                "chunk_role": "outcome",
+                "related_ids": [
+                  "O003-facts",
+                  "O003-reasoning",
+                  "O003-outcome"
+                ],
+                "source_publisher": "人力资源和社会保障部",
+                "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+                "content_form": "official_case_summary",
+                "verification_status": "official_source_checked",
+                "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+                "decision_type": "administrative_enforcement",
+                "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+                "stage_scope": "pre",
+                "employment_stages": [
+                  "preemployment"
+                ],
+                "risk_topics": [
+                  "fees",
+                  "agency",
+                  "training_loan",
+                  "job_truth",
+                  "contract"
+                ],
+                "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+                "classified_at": "2026-10-07",
+                "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+              },
+              {
+                "id": "O003-reasoning",
+                "title": "虚构化妆师助理岗位、招聘转为收费培训",
+                "kind": "case",
+                "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+                "location": "第7项：山东青岛两公司“招转培”案件 · 执法认定",
+                "published_at": "2025-12-11",
+                "verified_at": "2026-10-08",
+                "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门查明虚假招聘信息，以及另一公司未经许可开展职业技能培训和职业中介活动。",
+                "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+                "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+                "tags": [
+                  "化妆师助理",
+                  "虚假岗位",
+                  "没有工作经验",
+                  "招转培",
+                  "培训协议",
+                  "退还培训费"
+                ],
+                "case_id": "O003",
+                "chunk_role": "reasoning",
+                "related_ids": [
+                  "O003-facts",
+                  "O003-reasoning",
+                  "O003-outcome"
+                ],
+                "source_publisher": "人力资源和社会保障部",
+                "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+                "content_form": "official_case_summary",
+                "verification_status": "official_source_checked",
+                "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+                "decision_type": "administrative_enforcement",
+                "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+                "stage_scope": "pre",
+                "employment_stages": [
+                  "preemployment"
+                ],
+                "risk_topics": [
+                  "fees",
+                  "agency",
+                  "training_loan",
+                  "job_truth",
+                  "contract"
+                ],
+                "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+                "classified_at": "2026-10-07",
+                "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+              },
+              {
+                "id": "O004-outcome",
+                "title": "新媒体岗位诱导44天培训、第三方分期支付",
+                "kind": "case",
+                "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+                "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 处理结果",
+                "published_at": "2025-12-11",
+                "verified_at": "2026-10-08",
+                "text": "【官方发布案例的核对摘要，非完整裁判文书】属地人社部门立案调查，责令停止培训并退还所收费用；未公开刑事定罪、贷款利率或退款完成情况。",
+                "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+                "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+                "tags": [
+                  "新媒体运营",
+                  "44天",
+                  "19800",
+                  "培训分期",
+                  "第三方平台",
+                  "培训贷"
+                ],
+                "case_id": "O004",
+                "chunk_role": "outcome",
+                "related_ids": [
+                  "O004-facts",
+                  "O004-reasoning",
+                  "O004-outcome"
+                ],
+                "source_publisher": "人力资源和社会保障部",
+                "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+                "content_form": "official_case_summary",
+                "verification_status": "official_source_checked",
+                "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+                "decision_type": "administrative_enforcement",
+                "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+                "stage_scope": "pre",
+                "employment_stages": [
+                  "preemployment"
+                ],
+                "risk_topics": [
+                  "fees",
+                  "training_loan"
+                ],
+                "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+                "classified_at": "2026-10-07",
+                "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+              },
+              {
+                "id": "O004-reasoning",
+                "title": "新媒体岗位诱导44天培训、第三方分期支付",
+                "kind": "case",
+                "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+                "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 执法认定",
+                "published_at": "2025-12-11",
+                "verified_at": "2026-10-08",
+                "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门查明公司未取得职业技能培训许可，以招聘名义诱导培训牟取不正当利益。",
+                "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+                "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+                "tags": [
+                  "新媒体运营",
+                  "44天",
+                  "19800",
+                  "培训分期",
+                  "第三方平台",
+                  "培训贷"
+                ],
+                "case_id": "O004",
+                "chunk_role": "reasoning",
+                "related_ids": [
+                  "O004-facts",
+                  "O004-reasoning",
+                  "O004-outcome"
+                ],
+                "source_publisher": "人力资源和社会保障部",
+                "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+                "content_form": "official_case_summary",
+                "verification_status": "official_source_checked",
+                "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+                "decision_type": "administrative_enforcement",
+                "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+                "stage_scope": "pre",
+                "employment_stages": [
+                  "preemployment"
+                ],
+                "risk_topics": [
+                  "fees",
+                  "training_loan"
+                ],
+                "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+                "classified_at": "2026-10-07",
+                "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+              },
+              {
+                "id": "SUP-R002",
+                "title": "招聘转培训和贷款",
+                "kind": "support",
+                "text": "先招聘再以能力不足推销培训贷款，核对招聘承诺、培训与放款主体；高风险信号不等于最终诈骗定性。\n关联依据编号：K005、K001",
+                "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+                "location": "风险判定辅助",
+                "published_at": "",
+                "verified_at": "2026-10-08",
+                "scope": "大学生招聘、签约、用工与就业权益咨询",
+                "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+                "tags": [
+                  "招聘转培训和贷款",
+                  "风险判定辅助"
+                ],
+                "content_form": "reviewed_support",
+                "verification_status": "curated_with_references",
+                "related_article_ids": [
+                  "K005",
+                  "K001"
+                ],
+                "support_category": "风险判定辅助",
+                "origin_document": "三色判定规则库.docx",
+                "stage_scope": "both",
+                "employment_stages": [
+                  "preemployment",
+                  "employed"
+                ],
+                "risk_topics": [
+                  "training_loan",
+                  "contract"
+                ],
+                "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+                "classified_at": "2026-10-07",
+                "source_publisher": "作品团队",
+                "source_role": "整理者",
+                "source_relation": "related_official_basis",
+                "source_site": "关联官方原文，团队整理内容并非官方原文",
+                "alternate_urls": [
+                  "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+                ],
+                "source_access_note": "原始发布页本次直连超时，备用官方页面全文已核对。"
+              },
+              {
+                "id": "SUP-A01",
+                "title": "入职收费与培训贷款",
+                "kind": "support",
+                "text": "先暂停新增付款和不明授权，保存招聘、协议、转账、聊天证据；按主体及争议性质选择人社、消费维权、民事诉讼等渠道；涉嫌犯罪或人身危险报警。已签借款不要自行停还款，合同取消不当然免除借贷责任。\n关联依据编号：K001、K005",
+                "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+                "location": "维权行动卡",
+                "published_at": "",
+                "verified_at": "2026-10-08",
+                "scope": "大学生招聘、签约、用工与就业权益咨询",
+                "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+                "tags": [
+                  "入职收费与培训贷款",
+                  "维权行动卡"
+                ],
+                "content_form": "reviewed_support",
+                "verification_status": "curated_with_references",
+                "related_article_ids": [
+                  "K001",
+                  "K005"
+                ],
+                "support_category": "维权行动卡",
+                "origin_document": "维权行动指南.docx",
+                "stage_scope": "both",
+                "employment_stages": [
+                  "preemployment",
+                  "employed"
+                ],
+                "risk_topics": [
+                  "fees",
+                  "training_loan",
+                  "contract"
+                ],
+                "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+                "classified_at": "2026-10-07",
+                "source_publisher": "作品团队",
+                "source_role": "整理者",
+                "source_relation": "related_official_basis",
+                "source_site": "关联官方原文，团队整理内容并非官方原文",
+                "alternate_urls": [
+                  "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+                ],
+                "source_access_note": "原始发布页本次直连超时，备用官方页面全文已核对。"
+              },
+              {
+                "id": "SUP-F12",
+                "title": "面试收培训费是否合法",
+                "kind": "support",
+                "text": "先问谁收、为何收、与录用有何关系。用人单位招用劳动者不得收取财物；真实自愿独立培训服务与附条件入职收费不同，不能仅见培训费三个字就自动套用第九条。\n关联依据编号：K001、K005",
+                "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+                "location": "高频问答",
+                "published_at": "",
+                "verified_at": "2026-10-08",
+                "scope": "大学生招聘、签约、用工与就业权益咨询",
+                "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+                "tags": [
+                  "面试收培训费是否合法",
+                  "高频问答"
+                ],
+                "content_form": "reviewed_support",
+                "verification_status": "curated_with_references",
+                "related_article_ids": [
+                  "K001",
+                  "K005"
+                ],
+                "support_category": "高频问答",
+                "origin_document": "大学生就业权益高频问题回答.docx",
+                "stage_scope": "both",
+                "employment_stages": [
+                  "preemployment",
+                  "employed"
+                ],
+                "risk_topics": [
+                  "training_loan",
+                  "contract"
+                ],
+                "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+                "classified_at": "2026-10-07",
+                "source_publisher": "作品团队",
+                "source_role": "整理者",
+                "source_relation": "related_official_basis",
+                "source_site": "关联官方原文，团队整理内容并非官方原文"
+              }
+            ],
+            "review_status": {
+              "status": "passed",
+              "audit_count": 2,
+              "revision_count": 1,
+              "last_issues": []
+            },
+            "employment_stage": "preemployment",
+            "stage_reason": "用户明确表示是大四学生、正在找第一份工作，尚未入职、签协议或付款，仅拿到招聘截图和聊天内容。",
+            "review_notes": [],
+            "report_context": {
+              "user_statements": [
+                "我是大四学生，正在找第一份工作，还没有入职、签协议或付款。招聘广告写：招聘软件测试助理，不要求工作经验，月薪6000—8000元，公司提供岗前培训，培训后安排工作。面试结束后，HR说我基础不足，需要先参加两个月培训，费用9800元。他说可以分期，不用现在一次性付清，并催我今天确认名额。我现在只拿到了招聘截图和这些聊天内容，还没看到培训协议，也不知道培训是谁提供、费用付给谁、分期是不是贷款。"
+              ],
+              "materials": []
+            }
+          },
+          "sources": [
+            {
+              "id": "K001",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+              "location": "第九条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-08",
+              "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+              "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+              "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+              "tags": [
+                "保证金",
+                "押金",
+                "毕业证",
+                "身份证",
+                "扣押证件",
+                "入职收费",
+                "劳动合同法",
+                "第九条",
+                "第二章　劳动合同的订立"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 9,
+              "chapter": "第二章　劳动合同的订立",
+              "section": "",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+              "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "source_publisher": "全国人民代表大会常务委员会",
+              "source_level": "national_authority",
+              "legal_database_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+              "legal_database_status": "specific_record_checked",
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "contract",
+                "identity"
+              ],
+              "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+              "classified_at": "2026-10-07",
+              "source_role": "法律制定机关",
+              "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+            },
+            {
+              "id": "K005",
+              "title": "五部门警惕招转培、培训贷风险提示",
+              "kind": "warning",
+              "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+              "location": "风险提示第三项",
+              "published_at": "2026-05-15",
+              "verified_at": "2026-10-08",
+              "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+              "scope": "求职被转向收费培训及培训贷款风险。",
+              "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+              "tags": [
+                "招转培",
+                "培训贷",
+                "贷款",
+                "高额培训费",
+                "包就业",
+                "先培训后入职"
+              ],
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "training_loan"
+              ],
+              "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+              "classified_at": "2026-10-07",
+              "alternate_urls": [
+                "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+              ],
+              "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+              "source_site": "人力资源和社会保障部",
+              "source_access_note": "已定位原始发布页；本次直连超时，备用官方页面全文已核对。"
+            },
+            {
+              "id": "K006",
+              "title": "五部门警惕招转培、培训贷风险提示",
+              "kind": "warning",
+              "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+              "location": "风险提示第四项",
+              "published_at": "2026-05-15",
+              "verified_at": "2026-10-08",
+              "text": "签订涉及贷款的协议，务必核实放款方资质、贷款利率、还款方式及违约责任。慎重在平台注册信息及办理贷款，坚持理性借贷，避免过度负债，切勿轻信“免息分期”“低门槛、秒到账”等承诺，避免陷入非法债务纠纷。",
+              "scope": "贷款或分期支付协议的核实事项。",
+              "boundary": "分期是否属于贷款要看协议和主体；不能仅凭分期二字认定违法。",
+              "tags": [
+                "分期",
+                "借款协议",
+                "贷款利率",
+                "还款",
+                "培训贷",
+                "违约责任"
+              ],
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "training_loan",
+                "contract"
+              ],
+              "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+              "classified_at": "2026-10-07",
+              "alternate_urls": [
+                "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+              ],
+              "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+              "source_site": "人力资源和社会保障部",
+              "source_access_note": "已定位原始发布页；本次直连超时，备用官方页面全文已核对。"
+            },
+            {
+              "id": "LCL-022",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+              "location": "第二十二条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-08",
+              "text": "第二十二条　用人单位为劳动者提供专项培训费用，对其进行专业技术培训的，可以与该劳动者订立协议，约定服务期。\n劳动者违反服务期约定的，应当按照约定向用人单位支付违约金。违约金的数额不得超过用人单位提供的培训费用。用人单位要求劳动者支付的违约金不得超过服务期尚未履行部分所应分摊的培训费用。\n用人单位与劳动者约定服务期的，不影响按照正常的工资调整机制提高劳动者在服务期期间的劳动报酬。",
+              "scope": "本条所列情形；第二章　劳动合同的订立 ",
+              "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+              "tags": [
+                "劳动合同法",
+                "第二十二条",
+                "第二章　劳动合同的订立"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 22,
+              "chapter": "第二章　劳动合同的订立",
+              "section": "",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+              "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "source_publisher": "全国人民代表大会常务委员会",
+              "source_level": "national_authority",
+              "legal_database_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+              "legal_database_status": "specific_record_checked",
+              "stage_scope": "both",
+              "employment_stages": [
+                "preemployment",
+                "employed"
+              ],
+              "risk_topics": [
+                "contract"
+              ],
+              "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+              "classified_at": "2026-10-07",
+              "source_role": "法律制定机关",
+              "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+            },
+            {
+              "id": "LL-2018-068",
+              "title": "中华人民共和国劳动法",
+              "kind": "law",
+              "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+              "location": "第六十八条",
+              "published_at": "2018-12-29",
+              "verified_at": "2026-10-05",
+              "text": "第六十八条\n用人单位应当建立职业培训制度，按照国家规定提取和使用职业培训经费，根据本单位实际，有计划地对劳动者进行职业培训。\n从事技术工种的劳动者，上岗前必须经过培训。",
+              "scope": "本条所列情形；第八章 职业培训",
+              "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+              "tags": [
+                "劳动法",
+                "第六十八条",
+                "第八章 职业培训"
+              ],
+              "law_id": "labor-law-2018",
+              "article_number": 68,
+              "chapter": "第八章 职业培训",
+              "version": "2018年12月29日修正",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+              "related_article_ids": [],
+              "supporting_source_urls": [],
+              "stage_scope": "both",
+              "employment_stages": [
+                "preemployment",
+                "employed"
+              ],
+              "risk_topics": [
+                "training_loan"
+              ],
+              "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+              "classified_at": "2026-10-07"
+            },
+            {
+              "id": "O003-facts",
+              "title": "虚构化妆师助理岗位、招聘转为收费培训",
+              "kind": "case",
+              "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+              "location": "第7项：山东青岛两公司“招转培”案件 · 调查事实",
+              "published_at": "2025-12-11",
+              "verified_at": "2026-10-08",
+              "text": "【官方发布案例的核对摘要，非完整裁判文书】青岛某文化服务公司没有化妆师岗位，却招聘化妆师助理；面试时以缺乏经验为由，引导求职者与另一科技公司签培训协议。",
+              "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+              "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+              "tags": [
+                "化妆师助理",
+                "虚假岗位",
+                "没有工作经验",
+                "招转培",
+                "培训协议",
+                "退还培训费"
+              ],
+              "case_id": "O003",
+              "chunk_role": "facts",
+              "related_ids": [
+                "O003-facts",
+                "O003-reasoning",
+                "O003-outcome"
+              ],
+              "source_publisher": "人力资源和社会保障部",
+              "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+              "content_form": "official_case_summary",
+              "verification_status": "official_source_checked",
+              "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+              "decision_type": "administrative_enforcement",
+              "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "agency",
+                "training_loan",
+                "job_truth",
+                "contract"
+              ],
+              "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+              "classified_at": "2026-10-07",
+              "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+            },
+            {
+              "id": "O003-outcome",
+              "title": "虚构化妆师助理岗位、招聘转为收费培训",
+              "kind": "case",
+              "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+              "location": "第7项：山东青岛两公司“招转培”案件 · 处理结果",
+              "published_at": "2025-12-11",
+              "verified_at": "2026-10-08",
+              "text": "【官方发布案例的核对摘要，非完整裁判文书】责令限期改正、关闭职业中介、停止办学、退还所收费用。官方未披露退款完成或刑事判决。",
+              "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+              "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+              "tags": [
+                "化妆师助理",
+                "虚假岗位",
+                "没有工作经验",
+                "招转培",
+                "培训协议",
+                "退还培训费"
+              ],
+              "case_id": "O003",
+              "chunk_role": "outcome",
+              "related_ids": [
+                "O003-facts",
+                "O003-reasoning",
+                "O003-outcome"
+              ],
+              "source_publisher": "人力资源和社会保障部",
+              "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+              "content_form": "official_case_summary",
+              "verification_status": "official_source_checked",
+              "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+              "decision_type": "administrative_enforcement",
+              "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "agency",
+                "training_loan",
+                "job_truth",
+                "contract"
+              ],
+              "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+              "classified_at": "2026-10-07",
+              "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+            },
+            {
+              "id": "O003-reasoning",
+              "title": "虚构化妆师助理岗位、招聘转为收费培训",
+              "kind": "case",
+              "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+              "location": "第7项：山东青岛两公司“招转培”案件 · 执法认定",
+              "published_at": "2025-12-11",
+              "verified_at": "2026-10-08",
+              "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门查明虚假招聘信息，以及另一公司未经许可开展职业技能培训和职业中介活动。",
+              "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+              "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+              "tags": [
+                "化妆师助理",
+                "虚假岗位",
+                "没有工作经验",
+                "招转培",
+                "培训协议",
+                "退还培训费"
+              ],
+              "case_id": "O003",
+              "chunk_role": "reasoning",
+              "related_ids": [
+                "O003-facts",
+                "O003-reasoning",
+                "O003-outcome"
+              ],
+              "source_publisher": "人力资源和社会保障部",
+              "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+              "content_form": "official_case_summary",
+              "verification_status": "official_source_checked",
+              "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+              "decision_type": "administrative_enforcement",
+              "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "agency",
+                "training_loan",
+                "job_truth",
+                "contract"
+              ],
+              "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+              "classified_at": "2026-10-07",
+              "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+            },
+            {
+              "id": "O004-facts",
+              "title": "新媒体岗位诱导44天培训、第三方分期支付",
+              "kind": "case",
+              "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+              "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 调查事实",
+              "published_at": "2025-12-11",
+              "verified_at": "2026-10-08",
+              "text": "【官方发布案例的核对摘要，非完整裁判文书】四川某公司招聘新媒体运营人员，以缺乏经验为由要求44天培训，费用19800元，求职者通过第三方平台分期付款。",
+              "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+              "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+              "tags": [
+                "新媒体运营",
+                "44天",
+                "19800",
+                "培训分期",
+                "第三方平台",
+                "培训贷"
+              ],
+              "case_id": "O004",
+              "chunk_role": "facts",
+              "related_ids": [
+                "O004-facts",
+                "O004-reasoning",
+                "O004-outcome"
+              ],
+              "source_publisher": "人力资源和社会保障部",
+              "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+              "content_form": "official_case_summary",
+              "verification_status": "official_source_checked",
+              "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+              "decision_type": "administrative_enforcement",
+              "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "training_loan"
+              ],
+              "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+              "classified_at": "2026-10-07",
+              "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+            },
+            {
+              "id": "O004-outcome",
+              "title": "新媒体岗位诱导44天培训、第三方分期支付",
+              "kind": "case",
+              "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+              "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 处理结果",
+              "published_at": "2025-12-11",
+              "verified_at": "2026-10-08",
+              "text": "【官方发布案例的核对摘要，非完整裁判文书】属地人社部门立案调查，责令停止培训并退还所收费用；未公开刑事定罪、贷款利率或退款完成情况。",
+              "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+              "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+              "tags": [
+                "新媒体运营",
+                "44天",
+                "19800",
+                "培训分期",
+                "第三方平台",
+                "培训贷"
+              ],
+              "case_id": "O004",
+              "chunk_role": "outcome",
+              "related_ids": [
+                "O004-facts",
+                "O004-reasoning",
+                "O004-outcome"
+              ],
+              "source_publisher": "人力资源和社会保障部",
+              "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+              "content_form": "official_case_summary",
+              "verification_status": "official_source_checked",
+              "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+              "decision_type": "administrative_enforcement",
+              "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "training_loan"
+              ],
+              "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+              "classified_at": "2026-10-07",
+              "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+            },
+            {
+              "id": "O004-reasoning",
+              "title": "新媒体岗位诱导44天培训、第三方分期支付",
+              "kind": "case",
+              "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+              "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 执法认定",
+              "published_at": "2025-12-11",
+              "verified_at": "2026-10-08",
+              "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门查明公司未取得职业技能培训许可，以招聘名义诱导培训牟取不正当利益。",
+              "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+              "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+              "tags": [
+                "新媒体运营",
+                "44天",
+                "19800",
+                "培训分期",
+                "第三方平台",
+                "培训贷"
+              ],
+              "case_id": "O004",
+              "chunk_role": "reasoning",
+              "related_ids": [
+                "O004-facts",
+                "O004-reasoning",
+                "O004-outcome"
+              ],
+              "source_publisher": "人力资源和社会保障部",
+              "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+              "content_form": "official_case_summary",
+              "verification_status": "official_source_checked",
+              "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+              "decision_type": "administrative_enforcement",
+              "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "training_loan"
+              ],
+              "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+              "classified_at": "2026-10-07",
+              "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+            },
+            {
+              "id": "SUP-A01",
+              "title": "入职收费与培训贷款",
+              "kind": "support",
+              "text": "先暂停新增付款和不明授权，保存招聘、协议、转账、聊天证据；按主体及争议性质选择人社、消费维权、民事诉讼等渠道；涉嫌犯罪或人身危险报警。已签借款不要自行停还款，合同取消不当然免除借贷责任。\n关联依据编号：K001、K005",
+              "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+              "location": "维权行动卡",
+              "published_at": "",
+              "verified_at": "2026-10-08",
+              "scope": "大学生招聘、签约、用工与就业权益咨询",
+              "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+              "tags": [
+                "入职收费与培训贷款",
+                "维权行动卡"
+              ],
+              "content_form": "reviewed_support",
+              "verification_status": "curated_with_references",
+              "related_article_ids": [
+                "K001",
+                "K005"
+              ],
+              "support_category": "维权行动卡",
+              "origin_document": "维权行动指南.docx",
+              "stage_scope": "both",
+              "employment_stages": [
+                "preemployment",
+                "employed"
+              ],
+              "risk_topics": [
+                "fees",
+                "training_loan",
+                "contract"
+              ],
+              "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+              "classified_at": "2026-10-07",
+              "source_publisher": "作品团队",
+              "source_role": "整理者",
+              "source_relation": "related_official_basis",
+              "source_site": "关联官方原文，团队整理内容并非官方原文",
+              "alternate_urls": [
+                "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+              ],
+              "source_access_note": "原始发布页本次直连超时，备用官方页面全文已核对。"
+            },
+            {
+              "id": "SUP-F12",
+              "title": "面试收培训费是否合法",
+              "kind": "support",
+              "text": "先问谁收、为何收、与录用有何关系。用人单位招用劳动者不得收取财物；真实自愿独立培训服务与附条件入职收费不同，不能仅见培训费三个字就自动套用第九条。\n关联依据编号：K001、K005",
+              "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+              "location": "高频问答",
+              "published_at": "",
+              "verified_at": "2026-10-08",
+              "scope": "大学生招聘、签约、用工与就业权益咨询",
+              "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+              "tags": [
+                "面试收培训费是否合法",
+                "高频问答"
+              ],
+              "content_form": "reviewed_support",
+              "verification_status": "curated_with_references",
+              "related_article_ids": [
+                "K001",
+                "K005"
+              ],
+              "support_category": "高频问答",
+              "origin_document": "大学生就业权益高频问题回答.docx",
+              "stage_scope": "both",
+              "employment_stages": [
+                "preemployment",
+                "employed"
+              ],
+              "risk_topics": [
+                "training_loan",
+                "contract"
+              ],
+              "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+              "classified_at": "2026-10-07",
+              "source_publisher": "作品团队",
+              "source_role": "整理者",
+              "source_relation": "related_official_basis",
+              "source_site": "关联官方原文，团队整理内容并非官方原文"
+            },
+            {
+              "id": "SUP-R002",
+              "title": "招聘转培训和贷款",
+              "kind": "support",
+              "text": "先招聘再以能力不足推销培训贷款，核对招聘承诺、培训与放款主体；高风险信号不等于最终诈骗定性。\n关联依据编号：K005、K001",
+              "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+              "location": "风险判定辅助",
+              "published_at": "",
+              "verified_at": "2026-10-08",
+              "scope": "大学生招聘、签约、用工与就业权益咨询",
+              "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+              "tags": [
+                "招聘转培训和贷款",
+                "风险判定辅助"
+              ],
+              "content_form": "reviewed_support",
+              "verification_status": "curated_with_references",
+              "related_article_ids": [
+                "K005",
+                "K001"
+              ],
+              "support_category": "风险判定辅助",
+              "origin_document": "三色判定规则库.docx",
+              "stage_scope": "both",
+              "employment_stages": [
+                "preemployment",
+                "employed"
+              ],
+              "risk_topics": [
+                "training_loan",
+                "contract"
+              ],
+              "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+              "classified_at": "2026-10-07",
+              "source_publisher": "作品团队",
+              "source_role": "整理者",
+              "source_relation": "related_official_basis",
+              "source_site": "关联官方原文，团队整理内容并非官方原文",
+              "alternate_urls": [
+                "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+              ],
+              "source_access_note": "原始发布页本次直连超时，备用官方页面全文已核对。"
+            }
+          ]
+        }
+      }
+    ],
+    "reports": [
+      {
+        "summary": "这是典型的“招聘转付费培训”场景：招聘广告称公司提供岗前培训、培训后安排工作，面试后却以你能力不足为由，要求你先参加费用9800元的培训，并称可以分期、催你当天确认名额。官方五部门风险提示明确，求职过程中以各种理由要求参加需支付高额费用培训才能安排岗位的，应果断拒绝；确需培训应核实机构资质及是否含贷款内容。现阶段最应做的是：暂缓付款、暂缓签任何分期或借款文件、暂缓确认名额，先书面问清培训主体、收款方、分期性质，并保留全部聊天和招聘截图证据。",
+        "findings": [
+          {
+            "title": "招聘岗位疑似被转为高额付费培训（招转培）",
+            "level": "high",
+            "quote": "招聘广告写：招聘软件测试助理，不要求工作经验，月薪6000—8000元，公司提供岗前培训，培训后安排工作。",
+            "material_id": "user",
+            "page_number": 0,
+            "explanation": "招聘广告承诺“公司提供岗前培训，培训后安排工作”，但面试后HR以你基础不足为由，要求你先参加两个月培训、费用9800元（引材料原句），并称“可以分期，不用现在一次性付清”且催促你当天确认名额（引材料原句）。收费时间与方式尚未明确，但催促确认名额与分期说法都服务于同一笔9800元收费交易，应一并评估。这一前后变化与官方风险提示描述的“以招聘为名引导求职者参加需支付高额费用的培训才能安排岗位”高度吻合，五部门明确要求对此类情形果断拒绝。9800元相对广告月薪6000—8000元占比较高（约1.2至1.6个月工资），且“培训后安排工作”并非录用承诺，仍有以培训代替录用、甚至不实际安排岗位的风险；分期究竟属于公司内部付款安排还是第三方贷款，你目前也不清楚（引材料原句），若在岗位未落实前先签分期或借款文件，可能先行承担独立还款义务。目前尚不能认定对方违法或诈骗，但该风险已足以支持暂停付款与签约。人力社保部门公布的“招转培”案例中，存在公司无培训许可、以招聘名义诱导求职者培训牟利并被责令停止培训、退还费用的处理先例，可作个案参考，不是本案定性。",
+            "evidence_ids": [
+              "K005",
+              "K006",
+              "SUP-R002",
+              "SUP-A01",
+              "O003-facts",
+              "O004-facts"
+            ],
+            "suggestions": [
+              "暂缓支付9800元，也暂缓以任何形式确认“名额”，不接受“今天不确认就没了”的催促。",
+              "要求招聘方以书面（微信、邮件均可）明确：培训由哪家公司提供、与招聘公司是什么关系、该机构是否具备职业技能培训许可资质。",
+              "书面询问招聘公司：完成培训是否保证录用、与谁签订劳动合同、岗位名称和薪资构成、有无试用期；答复含糊或拒绝书面说明即为退出信号。",
+              "在看清分期协议文本前，不要点击任何贷款或分期平台的注册、授权、授信链接，不提供身份证、银行卡、人脸识别或征信授权；书面问清分期是公司内部分期付款，还是第三方金融机构贷款，放款方全称、年化利率、期数、每期金额、提前终止条件分别是什么。",
+              "保留招聘截图、全部聊天记录，截图时保留对方账号昵称、时间和原文；要求先拿到完整协议文本（含培训协议与任何分期/借款协议）再决定。",
+              "若确有独立培训需求，应与本次求职分开评估培训质量与费用，不能把付费当作获得岗位的条件。"
+            ],
+            "category": "risk",
+            "fact_basis": "abnormal_behavior",
+            "legal_claims": [
+              {
+                "statement": "求职过程中被以各种理由要求参加需支付高额费用的培训才能安排岗位的，应果断拒绝；确有培训需求应核实机构是否具备依法审批的许可资质、是否存在不合理收费或贷款内容。",
+                "basis_ids": [
+                  "K005"
+                ]
+              },
+              {
+                "statement": "签订涉及贷款的协议前，应核实放款方资质、贷款利率、还款方式及违约责任；慎在平台注册信息及办理贷款，切勿轻信“免息分期”“低门槛、秒到账”等承诺。",
+                "basis_ids": [
+                  "K006"
+                ]
+              },
+              {
+                "statement": "用人单位招用劳动者，不得要求劳动者提供担保或者以其他名义向劳动者收取财物；是否适用本条需先核实收费主体、收费行为与招用环节的关系，不能把独立合法培训服务或所有贷款自动套入。",
+                "basis_ids": [
+                  "K001"
+                ]
+              },
+              {
+                "statement": "用人单位可以建立职业培训制度并按规定提取使用培训经费，但这不构成求职者须先自费培训才能获得岗位的依据。",
+                "basis_ids": [
+                  "LL-2018-068"
+                ]
+              },
+              {
+                "statement": "官方公布案例中，存在公司无职业技能培训许可、以招聘名义诱导求职者培训牟利并被责令停止培训、退还费用的处理先例，属个案参考，不得直接套用于本案。",
+                "basis_ids": [
+                  "O003-reasoning",
+                  "O003-outcome",
+                  "O004-reasoning",
+                  "O004-outcome"
+                ]
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "目前只有招聘截图和聊天内容，没有培训协议、服务期条款、分期或借款合同文本，无法判断9800元费用的性质、是否设违约金、退款条件；分期究竟是公司内部分期付款还是第三方贷款尚属未知，需拿到相关协议后再评估是否构成独立金融义务。",
+          "培训提供方、费用收款方、分期或放款方均未确认，无法判断是否存在人力资源服务或职业技能培训许可问题，也无法确认收费主体与招聘主体是否为同一家公司。",
+          "招聘公司名称、办公地址、是否真实存在软件测试助理岗位均未提供，“公司提供岗前培训、培训后安排工作”目前只是广告与HR口头说法，尚无书面录用承诺。",
+          "说明：招聘广告称公司提供培训，不因此可推出培训免费、属于直接招聘或保证录用；广告条件与面试后要求先付费培训之间的不一致，本身就是需要核实的信号。",
+          "招聘截图与聊天记录未提供原文文件，本报告仅依据用户转述内容分析，未核验对方主体资质或经营状况。",
+          "本报告是风险提示与分析，不构成对任何主体违法或诈骗的认定，也不代替司法、行政或调解机构的判断。"
+        ],
+        "change_reason": "",
+        "prevention": {
+          "decision": "pause",
+          "label": "暂缓付款、签约与名额确认",
+          "steps": [
+            "先不要支付9800元或任何定金、诚意金、资料费，也不要办理分期、贷款或平台授信。",
+            "不交出身份证、银行卡、毕业证原件，不做人脸识别或征信授权；如对方要求核验，可先以复印件加注用途替代。",
+            "用微信或邮件书面问清五件事：培训提供方全称、费用收款方全称、分期是公司分期还是第三方贷款、培训后是否保证录用及拟签合同主体、岗位薪资构成与试用期。",
+            "要求对方先提供完整培训协议与分期协议文本，拿到纸质或电子文件后仔细核对：费用总额、违约责任、退款条件、服务期与竞业条款、是否包含授权查询征信的条款。",
+            "通过国家企业信用信息公示系统查询招聘公司与培训公司是否同一地址、同一法定代表人；通过当地人力资源社会保障部门官网或12333咨询该机构是否具备职业培训与职业中介许可。核查只能减少特定疑点，不代表岗位安全，也不构成继续付费求职的理由。",
+            "出现以下任一情形即退出：拒绝书面说明收费主体、拒绝提供协议文本、坚持先付款才谈岗位、声称不签分期即取消名额、或收费后只承诺“推荐面试”而不承诺录用。"
+          ],
+          "note": "真正直接招聘员工的公司在录用前通常不会让求职者为“岗前培训”先自付高额费用再安排工作。把付费培训与获得岗位拆开判断：如果岗位本身不存在，付费培训就没有意义；如果你确实想学这项技能，也应作为独立消费决定，与本次求职分开评估、另行比较机构与价格。"
+        },
+        "self_checks": [
+          "你能否拿到招聘公司的全称与统一社会信用代码，以及培训协议中写明的培训主体和收款账户？",
+          "对方是否愿意以书面形式确认：分期是内部付款安排还是第三方贷款，放款方是谁、利率与期数是多少？",
+          "培训结束后是保证与该公司或其关联公司签订劳动合同，还是仅“推荐面试/安排面试”？"
+        ],
+        "version": 1,
+        "created_at": "2026-10-08T11:46:01.611486+00:00",
+        "sources": [
+          {
+            "id": "K001",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+            "location": "第九条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-08",
+            "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+            "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+            "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+            "tags": [
+              "保证金",
+              "押金",
+              "毕业证",
+              "身份证",
+              "扣押证件",
+              "入职收费",
+              "劳动合同法",
+              "第九条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 9,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "全国人民代表大会常务委员会",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+            "legal_database_status": "specific_record_checked",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "contract",
+              "identity"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07",
+            "source_role": "法律制定机关",
+            "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+          },
+          {
+            "id": "LCL-022",
+            "title": "中华人民共和国劳动合同法",
+            "kind": "law",
+            "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+            "location": "第二十二条",
+            "published_at": "2012-12-28",
+            "verified_at": "2026-10-08",
+            "text": "第二十二条　用人单位为劳动者提供专项培训费用，对其进行专业技术培训的，可以与该劳动者订立协议，约定服务期。\n劳动者违反服务期约定的，应当按照约定向用人单位支付违约金。违约金的数额不得超过用人单位提供的培训费用。用人单位要求劳动者支付的违约金不得超过服务期尚未履行部分所应分摊的培训费用。\n用人单位与劳动者约定服务期的，不影响按照正常的工资调整机制提高劳动者在服务期期间的劳动报酬。",
+            "scope": "本条所列情形；第二章　劳动合同的订立 ",
+            "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+            "tags": [
+              "劳动合同法",
+              "第二十二条",
+              "第二章　劳动合同的订立"
+            ],
+            "law_id": "labor-contract-law-2012",
+            "article_number": 22,
+            "chapter": "第二章　劳动合同的订立",
+            "section": "",
+            "version": "2012年12月28日修正",
+            "amendment_effective_at": "2013-07-01",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "related_article_ids": [],
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+            "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+            "source_publisher": "全国人民代表大会常务委员会",
+            "source_level": "national_authority",
+            "legal_database_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+            "legal_database_status": "specific_record_checked",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07",
+            "source_role": "法律制定机关",
+            "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+          },
+          {
+            "id": "LL-2018-068",
+            "title": "中华人民共和国劳动法",
+            "kind": "law",
+            "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+            "location": "第六十八条",
+            "published_at": "2018-12-29",
+            "verified_at": "2026-10-05",
+            "text": "第六十八条\n用人单位应当建立职业培训制度，按照国家规定提取和使用职业培训经费，根据本单位实际，有计划地对劳动者进行职业培训。\n从事技术工种的劳动者，上岗前必须经过培训。",
+            "scope": "本条所列情形；第八章 职业培训",
+            "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+            "tags": [
+              "劳动法",
+              "第六十八条",
+              "第八章 职业培训"
+            ],
+            "law_id": "labor-law-2018",
+            "article_number": 68,
+            "chapter": "第八章 职业培训",
+            "version": "2018年12月29日修正",
+            "content_form": "official_article_fulltext",
+            "verification_status": "official_source_checked",
+            "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+            "related_article_ids": [],
+            "supporting_source_urls": [],
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "training_loan"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07"
+          },
+          {
+            "id": "K005",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+            "location": "风险提示第三项",
+            "published_at": "2026-05-15",
+            "verified_at": "2026-10-08",
+            "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+            "scope": "求职被转向收费培训及培训贷款风险。",
+            "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+            "tags": [
+              "招转培",
+              "培训贷",
+              "贷款",
+              "高额培训费",
+              "包就业",
+              "先培训后入职"
+            ],
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "training_loan"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07",
+            "alternate_urls": [
+              "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+            ],
+            "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+            "source_site": "人力资源和社会保障部",
+            "source_access_note": "已定位原始发布页；本次直连超时，备用官方页面全文已核对。"
+          },
+          {
+            "id": "K006",
+            "title": "五部门警惕招转培、培训贷风险提示",
+            "kind": "warning",
+            "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+            "location": "风险提示第四项",
+            "published_at": "2026-05-15",
+            "verified_at": "2026-10-08",
+            "text": "签订涉及贷款的协议，务必核实放款方资质、贷款利率、还款方式及违约责任。慎重在平台注册信息及办理贷款，坚持理性借贷，避免过度负债，切勿轻信“免息分期”“低门槛、秒到账”等承诺，避免陷入非法债务纠纷。",
+            "scope": "贷款或分期支付协议的核实事项。",
+            "boundary": "分期是否属于贷款要看协议和主体；不能仅凭分期二字认定违法。",
+            "tags": [
+              "分期",
+              "借款协议",
+              "贷款利率",
+              "还款",
+              "培训贷",
+              "违约责任"
+            ],
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "training_loan",
+              "contract"
+            ],
+            "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+            "classified_at": "2026-10-07",
+            "alternate_urls": [
+              "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+            ],
+            "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+            "source_site": "人力资源和社会保障部",
+            "source_access_note": "已定位原始发布页；本次直连超时，备用官方页面全文已核对。"
+          },
+          {
+            "id": "O003-facts",
+            "title": "虚构化妆师助理岗位、招聘转为收费培训",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+            "location": "第7项：山东青岛两公司“招转培”案件 · 调查事实",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-08",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】青岛某文化服务公司没有化妆师岗位，却招聘化妆师助理；面试时以缺乏经验为由，引导求职者与另一科技公司签培训协议。",
+            "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+            "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+            "tags": [
+              "化妆师助理",
+              "虚假岗位",
+              "没有工作经验",
+              "招转培",
+              "培训协议",
+              "退还培训费"
+            ],
+            "case_id": "O003",
+            "chunk_role": "facts",
+            "related_ids": [
+              "O003-facts",
+              "O003-reasoning",
+              "O003-outcome"
+            ],
+            "source_publisher": "人力资源和社会保障部",
+            "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "agency",
+              "training_loan",
+              "job_truth",
+              "contract"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07",
+            "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+          },
+          {
+            "id": "O004-facts",
+            "title": "新媒体岗位诱导44天培训、第三方分期支付",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+            "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 调查事实",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-08",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】四川某公司招聘新媒体运营人员，以缺乏经验为由要求44天培训，费用19800元，求职者通过第三方平台分期付款。",
+            "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+            "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+            "tags": [
+              "新媒体运营",
+              "44天",
+              "19800",
+              "培训分期",
+              "第三方平台",
+              "培训贷"
+            ],
+            "case_id": "O004",
+            "chunk_role": "facts",
+            "related_ids": [
+              "O004-facts",
+              "O004-reasoning",
+              "O004-outcome"
+            ],
+            "source_publisher": "人力资源和社会保障部",
+            "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "training_loan"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07",
+            "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+          },
+          {
+            "id": "O003-outcome",
+            "title": "虚构化妆师助理岗位、招聘转为收费培训",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+            "location": "第7项：山东青岛两公司“招转培”案件 · 处理结果",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-08",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】责令限期改正、关闭职业中介、停止办学、退还所收费用。官方未披露退款完成或刑事判决。",
+            "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+            "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+            "tags": [
+              "化妆师助理",
+              "虚假岗位",
+              "没有工作经验",
+              "招转培",
+              "培训协议",
+              "退还培训费"
+            ],
+            "case_id": "O003",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "O003-facts",
+              "O003-reasoning",
+              "O003-outcome"
+            ],
+            "source_publisher": "人力资源和社会保障部",
+            "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "agency",
+              "training_loan",
+              "job_truth",
+              "contract"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07",
+            "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+          },
+          {
+            "id": "O003-reasoning",
+            "title": "虚构化妆师助理岗位、招聘转为收费培训",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+            "location": "第7项：山东青岛两公司“招转培”案件 · 执法认定",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-08",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门查明虚假招聘信息，以及另一公司未经许可开展职业技能培训和职业中介活动。",
+            "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+            "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+            "tags": [
+              "化妆师助理",
+              "虚假岗位",
+              "没有工作经验",
+              "招转培",
+              "培训协议",
+              "退还培训费"
+            ],
+            "case_id": "O003",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "O003-facts",
+              "O003-reasoning",
+              "O003-outcome"
+            ],
+            "source_publisher": "人力资源和社会保障部",
+            "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "agency",
+              "training_loan",
+              "job_truth",
+              "contract"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07",
+            "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+          },
+          {
+            "id": "O004-outcome",
+            "title": "新媒体岗位诱导44天培训、第三方分期支付",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+            "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 处理结果",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-08",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】属地人社部门立案调查，责令停止培训并退还所收费用；未公开刑事定罪、贷款利率或退款完成情况。",
+            "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+            "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+            "tags": [
+              "新媒体运营",
+              "44天",
+              "19800",
+              "培训分期",
+              "第三方平台",
+              "培训贷"
+            ],
+            "case_id": "O004",
+            "chunk_role": "outcome",
+            "related_ids": [
+              "O004-facts",
+              "O004-reasoning",
+              "O004-outcome"
+            ],
+            "source_publisher": "人力资源和社会保障部",
+            "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "training_loan"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07",
+            "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+          },
+          {
+            "id": "O004-reasoning",
+            "title": "新媒体岗位诱导44天培训、第三方分期支付",
+            "kind": "case",
+            "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+            "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 执法认定",
+            "published_at": "2025-12-11",
+            "verified_at": "2026-10-08",
+            "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门查明公司未取得职业技能培训许可，以招聘名义诱导培训牟取不正当利益。",
+            "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+            "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+            "tags": [
+              "新媒体运营",
+              "44天",
+              "19800",
+              "培训分期",
+              "第三方平台",
+              "培训贷"
+            ],
+            "case_id": "O004",
+            "chunk_role": "reasoning",
+            "related_ids": [
+              "O004-facts",
+              "O004-reasoning",
+              "O004-outcome"
+            ],
+            "source_publisher": "人力资源和社会保障部",
+            "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+            "content_form": "official_case_summary",
+            "verification_status": "official_source_checked",
+            "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+            "decision_type": "administrative_enforcement",
+            "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+            "stage_scope": "pre",
+            "employment_stages": [
+              "preemployment"
+            ],
+            "risk_topics": [
+              "fees",
+              "training_loan"
+            ],
+            "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+            "classified_at": "2026-10-07",
+            "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+          },
+          {
+            "id": "SUP-R002",
+            "title": "招聘转培训和贷款",
+            "kind": "support",
+            "text": "先招聘再以能力不足推销培训贷款，核对招聘承诺、培训与放款主体；高风险信号不等于最终诈骗定性。\n关联依据编号：K005、K001",
+            "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+            "location": "风险判定辅助",
+            "published_at": "",
+            "verified_at": "2026-10-08",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "招聘转培训和贷款",
+              "风险判定辅助"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K005",
+              "K001"
+            ],
+            "support_category": "风险判定辅助",
+            "origin_document": "三色判定规则库.docx",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "training_loan",
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07",
+            "source_publisher": "作品团队",
+            "source_role": "整理者",
+            "source_relation": "related_official_basis",
+            "source_site": "关联官方原文，团队整理内容并非官方原文",
+            "alternate_urls": [
+              "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+            ],
+            "source_access_note": "原始发布页本次直连超时，备用官方页面全文已核对。"
+          },
+          {
+            "id": "SUP-A01",
+            "title": "入职收费与培训贷款",
+            "kind": "support",
+            "text": "先暂停新增付款和不明授权，保存招聘、协议、转账、聊天证据；按主体及争议性质选择人社、消费维权、民事诉讼等渠道；涉嫌犯罪或人身危险报警。已签借款不要自行停还款，合同取消不当然免除借贷责任。\n关联依据编号：K001、K005",
+            "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+            "location": "维权行动卡",
+            "published_at": "",
+            "verified_at": "2026-10-08",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "入职收费与培训贷款",
+              "维权行动卡"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K001",
+              "K005"
+            ],
+            "support_category": "维权行动卡",
+            "origin_document": "维权行动指南.docx",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "fees",
+              "training_loan",
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07",
+            "source_publisher": "作品团队",
+            "source_role": "整理者",
+            "source_relation": "related_official_basis",
+            "source_site": "关联官方原文，团队整理内容并非官方原文",
+            "alternate_urls": [
+              "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+            ],
+            "source_access_note": "原始发布页本次直连超时，备用官方页面全文已核对。"
+          },
+          {
+            "id": "SUP-F12",
+            "title": "面试收培训费是否合法",
+            "kind": "support",
+            "text": "先问谁收、为何收、与录用有何关系。用人单位招用劳动者不得收取财物；真实自愿独立培训服务与附条件入职收费不同，不能仅见培训费三个字就自动套用第九条。\n关联依据编号：K001、K005",
+            "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+            "location": "高频问答",
+            "published_at": "",
+            "verified_at": "2026-10-08",
+            "scope": "大学生招聘、签约、用工与就业权益咨询",
+            "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+            "tags": [
+              "面试收培训费是否合法",
+              "高频问答"
+            ],
+            "content_form": "reviewed_support",
+            "verification_status": "curated_with_references",
+            "related_article_ids": [
+              "K001",
+              "K005"
+            ],
+            "support_category": "高频问答",
+            "origin_document": "大学生就业权益高频问题回答.docx",
+            "stage_scope": "both",
+            "employment_stages": [
+              "preemployment",
+              "employed"
+            ],
+            "risk_topics": [
+              "training_loan",
+              "contract"
+            ],
+            "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+            "classified_at": "2026-10-07",
+            "source_publisher": "作品团队",
+            "source_role": "整理者",
+            "source_relation": "related_official_basis",
+            "source_site": "关联官方原文，团队整理内容并非官方原文"
+          }
+        ],
+        "review_status": {
+          "status": "passed",
+          "audit_count": 2,
+          "revision_count": 1,
+          "last_issues": []
+        },
+        "employment_stage": "preemployment",
+        "stage_reason": "用户明确表示是大四学生、正在找第一份工作，尚未入职、签协议或付款，仅拿到招聘截图和聊天内容。",
+        "review_notes": [],
+        "report_context": {
+          "user_statements": [
+            "我是大四学生，正在找第一份工作，还没有入职、签协议或付款。招聘广告写：招聘软件测试助理，不要求工作经验，月薪6000—8000元，公司提供岗前培训，培训后安排工作。面试结束后，HR说我基础不足，需要先参加两个月培训，费用9800元。他说可以分期，不用现在一次性付清，并催我今天确认名额。我现在只拿到了招聘截图和这些聊天内容，还没看到培训协议，也不知道培训是谁提供、费用付给谁、分期是不是贷款。"
+          ],
+          "materials": []
+        }
+      }
+    ],
+    "traces": [
+      [
+        {
+          "tool": "search_knowledge",
+          "arguments": {
+            "query": "招聘转培训 岗前培训收费 求职诈骗风险提示 大学生求职 培训贷 分期付款",
+            "stage": "preemployment"
+          },
+          "result": [
+            {
+              "id": "LL-2018-068",
+              "title": "中华人民共和国劳动法",
+              "kind": "law",
+              "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+              "location": "第六十八条",
+              "published_at": "2018-12-29",
+              "verified_at": "2026-10-05",
+              "text": "第六十八条\n用人单位应当建立职业培训制度，按照国家规定提取和使用职业培训经费，根据本单位实际，有计划地对劳动者进行职业培训。\n从事技术工种的劳动者，上岗前必须经过培训。",
+              "scope": "本条所列情形；第八章 职业培训",
+              "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+              "tags": [
+                "劳动法",
+                "第六十八条",
+                "第八章 职业培训"
+              ],
+              "law_id": "labor-law-2018",
+              "article_number": 68,
+              "chapter": "第八章 职业培训",
+              "version": "2018年12月29日修正",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+              "related_article_ids": [],
+              "supporting_source_urls": [],
+              "stage_scope": "both",
+              "employment_stages": [
+                "preemployment",
+                "employed"
+              ],
+              "risk_topics": [
+                "training_loan"
+              ],
+              "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+              "classified_at": "2026-10-07"
+            },
+            {
+              "id": "K001",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+              "location": "第九条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-08",
+              "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+              "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+              "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+              "tags": [
+                "保证金",
+                "押金",
+                "毕业证",
+                "身份证",
+                "扣押证件",
+                "入职收费",
+                "劳动合同法",
+                "第九条",
+                "第二章　劳动合同的订立"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 9,
+              "chapter": "第二章　劳动合同的订立",
+              "section": "",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+              "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "source_publisher": "全国人民代表大会常务委员会",
+              "source_level": "national_authority",
+              "legal_database_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+              "legal_database_status": "specific_record_checked",
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "contract",
+                "identity"
+              ],
+              "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+              "classified_at": "2026-10-07",
+              "source_role": "法律制定机关",
+              "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+            },
+            {
+              "id": "LL-2018-067",
+              "title": "中华人民共和国劳动法",
+              "kind": "law",
+              "url": "https://rsj.weihai.gov.cn/art/2018/12/31/art_79306_2674768.html",
+              "location": "第六十七条",
+              "published_at": "2018-12-29",
+              "verified_at": "2026-10-05",
+              "text": "第六十七条\n各级人民政府应当把发展职业培训纳入社会经济发展的规划，鼓励和支持有条件的企业、事业组织、社会团体和个人进行各种形式的职业培训。",
+              "scope": "本条所列情形；第八章 职业培训",
+              "boundary": "须结合后续专门法律、行政法规、司法解释及工作地现行规定判断；本条完整原文不等于个案的全部适用依据。",
+              "tags": [
+                "劳动法",
+                "第六十七条",
+                "第八章 职业培训"
+              ],
+              "law_id": "labor-law-2018",
+              "article_number": 67,
+              "chapter": "第八章 职业培训",
+              "version": "2018年12月29日修正",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_d9aa750028b14b99a776cb93726a360d.html",
+              "related_article_ids": [],
+              "supporting_source_urls": [],
+              "stage_scope": "both",
+              "employment_stages": [
+                "preemployment",
+                "employed"
+              ],
+              "risk_topics": [
+                "training_loan"
+              ],
+              "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+              "classified_at": "2026-10-07"
+            },
+            {
+              "id": "K005",
+              "title": "五部门警惕招转培、培训贷风险提示",
+              "kind": "warning",
+              "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+              "location": "风险提示第三项",
+              "published_at": "2026-05-15",
+              "verified_at": "2026-10-08",
+              "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+              "scope": "求职被转向收费培训及培训贷款风险。",
+              "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+              "tags": [
+                "招转培",
+                "培训贷",
+                "贷款",
+                "高额培训费",
+                "包就业",
+                "先培训后入职"
+              ],
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "training_loan"
+              ],
+              "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+              "classified_at": "2026-10-07",
+              "alternate_urls": [
+                "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+              ],
+              "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+              "source_site": "人力资源和社会保障部",
+              "source_access_note": "已定位原始发布页；本次直连超时，备用官方页面全文已核对。"
+            },
+            {
+              "id": "K006",
+              "title": "五部门警惕招转培、培训贷风险提示",
+              "kind": "warning",
+              "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+              "location": "风险提示第四项",
+              "published_at": "2026-05-15",
+              "verified_at": "2026-10-08",
+              "text": "签订涉及贷款的协议，务必核实放款方资质、贷款利率、还款方式及违约责任。慎重在平台注册信息及办理贷款，坚持理性借贷，避免过度负债，切勿轻信“免息分期”“低门槛、秒到账”等承诺，避免陷入非法债务纠纷。",
+              "scope": "贷款或分期支付协议的核实事项。",
+              "boundary": "分期是否属于贷款要看协议和主体；不能仅凭分期二字认定违法。",
+              "tags": [
+                "分期",
+                "借款协议",
+                "贷款利率",
+                "还款",
+                "培训贷",
+                "违约责任"
+              ],
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "training_loan",
+                "contract"
+              ],
+              "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+              "classified_at": "2026-10-07",
+              "alternate_urls": [
+                "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+              ],
+              "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+              "source_site": "人力资源和社会保障部",
+              "source_access_note": "已定位原始发布页；本次直连超时，备用官方页面全文已核对。"
+            },
+            {
+              "id": "SUP-R002",
+              "title": "招聘转培训和贷款",
+              "kind": "support",
+              "text": "先招聘再以能力不足推销培训贷款，核对招聘承诺、培训与放款主体；高风险信号不等于最终诈骗定性。\n关联依据编号：K005、K001",
+              "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+              "location": "风险判定辅助",
+              "published_at": "",
+              "verified_at": "2026-10-08",
+              "scope": "大学生招聘、签约、用工与就业权益咨询",
+              "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+              "tags": [
+                "招聘转培训和贷款",
+                "风险判定辅助"
+              ],
+              "content_form": "reviewed_support",
+              "verification_status": "curated_with_references",
+              "related_article_ids": [
+                "K005",
+                "K001"
+              ],
+              "support_category": "风险判定辅助",
+              "origin_document": "三色判定规则库.docx",
+              "stage_scope": "both",
+              "employment_stages": [
+                "preemployment",
+                "employed"
+              ],
+              "risk_topics": [
+                "training_loan",
+                "contract"
+              ],
+              "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+              "classified_at": "2026-10-07",
+              "source_publisher": "作品团队",
+              "source_role": "整理者",
+              "source_relation": "related_official_basis",
+              "source_site": "关联官方原文，团队整理内容并非官方原文",
+              "alternate_urls": [
+                "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+              ],
+              "source_access_note": "原始发布页本次直连超时，备用官方页面全文已核对。"
+            },
+            {
+              "id": "SUP-A01",
+              "title": "入职收费与培训贷款",
+              "kind": "support",
+              "text": "先暂停新增付款和不明授权，保存招聘、协议、转账、聊天证据；按主体及争议性质选择人社、消费维权、民事诉讼等渠道；涉嫌犯罪或人身危险报警。已签借款不要自行停还款，合同取消不当然免除借贷责任。\n关联依据编号：K001、K005",
+              "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+              "location": "维权行动卡",
+              "published_at": "",
+              "verified_at": "2026-10-08",
+              "scope": "大学生招聘、签约、用工与就业权益咨询",
+              "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+              "tags": [
+                "入职收费与培训贷款",
+                "维权行动卡"
+              ],
+              "content_form": "reviewed_support",
+              "verification_status": "curated_with_references",
+              "related_article_ids": [
+                "K001",
+                "K005"
+              ],
+              "support_category": "维权行动卡",
+              "origin_document": "维权行动指南.docx",
+              "stage_scope": "both",
+              "employment_stages": [
+                "preemployment",
+                "employed"
+              ],
+              "risk_topics": [
+                "fees",
+                "training_loan",
+                "contract"
+              ],
+              "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+              "classified_at": "2026-10-07",
+              "source_publisher": "作品团队",
+              "source_role": "整理者",
+              "source_relation": "related_official_basis",
+              "source_site": "关联官方原文，团队整理内容并非官方原文",
+              "alternate_urls": [
+                "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+              ],
+              "source_access_note": "原始发布页本次直连超时，备用官方页面全文已核对。"
+            },
+            {
+              "id": "O004-facts",
+              "title": "新媒体岗位诱导44天培训、第三方分期支付",
+              "kind": "case",
+              "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+              "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 调查事实",
+              "published_at": "2025-12-11",
+              "verified_at": "2026-10-08",
+              "text": "【官方发布案例的核对摘要，非完整裁判文书】四川某公司招聘新媒体运营人员，以缺乏经验为由要求44天培训，费用19800元，求职者通过第三方平台分期付款。",
+              "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+              "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+              "tags": [
+                "新媒体运营",
+                "44天",
+                "19800",
+                "培训分期",
+                "第三方平台",
+                "培训贷"
+              ],
+              "case_id": "O004",
+              "chunk_role": "facts",
+              "related_ids": [
+                "O004-facts",
+                "O004-reasoning",
+                "O004-outcome"
+              ],
+              "source_publisher": "人力资源和社会保障部",
+              "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+              "content_form": "official_case_summary",
+              "verification_status": "official_source_checked",
+              "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+              "decision_type": "administrative_enforcement",
+              "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "training_loan"
+              ],
+              "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+              "classified_at": "2026-10-07",
+              "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+            },
+            {
+              "id": "O004-reasoning",
+              "title": "新媒体岗位诱导44天培训、第三方分期支付",
+              "kind": "case",
+              "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+              "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 执法认定",
+              "published_at": "2025-12-11",
+              "verified_at": "2026-10-08",
+              "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门查明公司未取得职业技能培训许可，以招聘名义诱导培训牟取不正当利益。",
+              "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+              "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+              "tags": [
+                "新媒体运营",
+                "44天",
+                "19800",
+                "培训分期",
+                "第三方平台",
+                "培训贷"
+              ],
+              "case_id": "O004",
+              "chunk_role": "reasoning",
+              "related_ids": [
+                "O004-facts",
+                "O004-reasoning",
+                "O004-outcome"
+              ],
+              "source_publisher": "人力资源和社会保障部",
+              "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+              "content_form": "official_case_summary",
+              "verification_status": "official_source_checked",
+              "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+              "decision_type": "administrative_enforcement",
+              "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "training_loan"
+              ],
+              "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+              "classified_at": "2026-10-07",
+              "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+            },
+            {
+              "id": "O004-outcome",
+              "title": "新媒体岗位诱导44天培训、第三方分期支付",
+              "kind": "case",
+              "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+              "location": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件 · 处理结果",
+              "published_at": "2025-12-11",
+              "verified_at": "2026-10-08",
+              "text": "【官方发布案例的核对摘要，非完整裁判文书】属地人社部门立案调查，责令停止培训并退还所收费用；未公开刑事定罪、贷款利率或退款完成情况。",
+              "scope": "以招聘为入口引导无许可收费培训和第三方分期。",
+              "boundary": "官方明确培训收费和第三方分期，但未披露贷款合同、具体利率或退款完成，不得补写。",
+              "tags": [
+                "新媒体运营",
+                "44天",
+                "19800",
+                "培训分期",
+                "第三方平台",
+                "培训贷"
+              ],
+              "case_id": "O004",
+              "chunk_role": "outcome",
+              "related_ids": [
+                "O004-facts",
+                "O004-reasoning",
+                "O004-outcome"
+              ],
+              "source_publisher": "人力资源和社会保障部",
+              "source_case_position": "第8项：四川某品牌管理有限公司“招转培”“培训贷”案件",
+              "content_form": "official_case_summary",
+              "verification_status": "official_source_checked",
+              "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+              "decision_type": "administrative_enforcement",
+              "procedural_status": "立案调查并责令停止培训、退费；未披露刑事判决",
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "training_loan"
+              ],
+              "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+              "classified_at": "2026-10-07",
+              "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+            }
+          ]
+        },
+        {
+          "tool": "search_knowledge",
+          "arguments": {
+            "query": "用人单位向劳动者收取培训费 押金 禁止 劳动合同法第九条 就业服务与就业管理规定",
+            "stage": "preemployment"
+          },
+          "result": [
+            {
+              "id": "K001",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+              "location": "第九条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-08",
+              "text": "第九条　用人单位招用劳动者，不得扣押劳动者的居民身份证和其他证件，不得要求劳动者提供担保或者以其他名义向劳动者收取财物。",
+              "scope": "用人单位招用劳动者时的证件、担保及收费行为。",
+              "boundary": "涉及证件时，核实是否处于招用环节、证件类别及实际保管方式，区分临时核验与扣押或拒不归还；涉及收费或担保时，核实收费主体、行为和用途，不把独立合法培训服务或所有贷款自动套入本条。证件和收费是本条两类不同禁止行为，分别分析。",
+              "tags": [
+                "保证金",
+                "押金",
+                "毕业证",
+                "身份证",
+                "扣押证件",
+                "入职收费",
+                "劳动合同法",
+                "第九条",
+                "第二章　劳动合同的订立"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 9,
+              "chapter": "第二章　劳动合同的订立",
+              "section": "",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+              "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "source_publisher": "全国人民代表大会常务委员会",
+              "source_level": "national_authority",
+              "legal_database_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+              "legal_database_status": "specific_record_checked",
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "contract",
+                "identity"
+              ],
+              "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+              "classified_at": "2026-10-07",
+              "source_role": "法律制定机关",
+              "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+            },
+            {
+              "id": "LCL-022",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+              "location": "第二十二条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-08",
+              "text": "第二十二条　用人单位为劳动者提供专项培训费用，对其进行专业技术培训的，可以与该劳动者订立协议，约定服务期。\n劳动者违反服务期约定的，应当按照约定向用人单位支付违约金。违约金的数额不得超过用人单位提供的培训费用。用人单位要求劳动者支付的违约金不得超过服务期尚未履行部分所应分摊的培训费用。\n用人单位与劳动者约定服务期的，不影响按照正常的工资调整机制提高劳动者在服务期期间的劳动报酬。",
+              "scope": "本条所列情形；第二章　劳动合同的订立 ",
+              "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+              "tags": [
+                "劳动合同法",
+                "第二十二条",
+                "第二章　劳动合同的订立"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 22,
+              "chapter": "第二章　劳动合同的订立",
+              "section": "",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+              "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "source_publisher": "全国人民代表大会常务委员会",
+              "source_level": "national_authority",
+              "legal_database_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+              "legal_database_status": "specific_record_checked",
+              "stage_scope": "both",
+              "employment_stages": [
+                "preemployment",
+                "employed"
+              ],
+              "risk_topics": [
+                "contract"
+              ],
+              "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+              "classified_at": "2026-10-07",
+              "source_role": "法律制定机关",
+              "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+            },
+            {
+              "id": "LCL-093",
+              "title": "中华人民共和国劳动合同法",
+              "kind": "law",
+              "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+              "location": "第九十三条",
+              "published_at": "2012-12-28",
+              "verified_at": "2026-10-08",
+              "text": "第九十三条　对不具备合法经营资格的用人单位的违法犯罪行为，依法追究法律责任；劳动者已经付出劳动的，该单位或者其出资人应当依照本法有关规定向劳动者支付劳动报酬、经济补偿、赔偿金；给劳动者造成损害的，应当承担赔偿责任。",
+              "scope": "本条所列情形；第七章　法律责任 ",
+              "boundary": "须核实本条适用条件、例外和用户事实，并结合关联条款及相关配套规定；不得直接凭法条认定个案违法。",
+              "tags": [
+                "劳动合同法",
+                "第九十三条",
+                "第七章　法律责任"
+              ],
+              "law_id": "labor-contract-law-2012",
+              "article_number": 93,
+              "chapter": "第七章　法律责任",
+              "section": "",
+              "version": "2012年12月28日修正",
+              "amendment_effective_at": "2013-07-01",
+              "content_form": "official_article_fulltext",
+              "verification_status": "official_source_checked",
+              "related_article_ids": [],
+              "cross_check_url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_0abfdd261c03417b949df19d869add8d.html",
+              "secondary_source_url": "https://www.dhlh.gov.cn/rsj/Web/_F0_0_28D04GIGEN3XZTQZ5FVD0YUCHG.htm",
+              "source_publisher": "全国人民代表大会常务委员会",
+              "source_level": "national_authority",
+              "legal_database_url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+              "legal_database_status": "specific_record_checked",
+              "stage_scope": "both",
+              "employment_stages": [
+                "preemployment",
+                "employed"
+              ],
+              "risk_topics": [
+                "contract"
+              ],
+              "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+              "classified_at": "2026-10-07",
+              "source_role": "法律制定机关",
+              "source_site": "国家法律法规数据库 全国人大常委会办公厅"
+            },
+            {
+              "id": "K005",
+              "title": "五部门警惕招转培、培训贷风险提示",
+              "kind": "warning",
+              "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+              "location": "风险提示第三项",
+              "published_at": "2026-05-15",
+              "verified_at": "2026-10-08",
+              "text": "求职者面对求职过程中以各种理由要求参加需支付高额费用的培训，才能够安排岗位的情况，应果断拒绝。确有需求参加培训的，应核实培训机构是否具备依法审批的许可资质，是否含有不合理收费项目、贷款内容。",
+              "scope": "求职被转向收费培训及培训贷款风险。",
+              "boundary": "官方风险提示不是违法认定；结合招聘、培训、贷款主体及协议分析。",
+              "tags": [
+                "招转培",
+                "培训贷",
+                "贷款",
+                "高额培训费",
+                "包就业",
+                "先培训后入职"
+              ],
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "training_loan"
+              ],
+              "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+              "classified_at": "2026-10-07",
+              "alternate_urls": [
+                "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+              ],
+              "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+              "source_site": "人力资源和社会保障部",
+              "source_access_note": "已定位原始发布页；本次直连超时，备用官方页面全文已核对。"
+            },
+            {
+              "id": "K006",
+              "title": "五部门警惕招转培、培训贷风险提示",
+              "kind": "warning",
+              "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+              "location": "风险提示第四项",
+              "published_at": "2026-05-15",
+              "verified_at": "2026-10-08",
+              "text": "签订涉及贷款的协议，务必核实放款方资质、贷款利率、还款方式及违约责任。慎重在平台注册信息及办理贷款，坚持理性借贷，避免过度负债，切勿轻信“免息分期”“低门槛、秒到账”等承诺，避免陷入非法债务纠纷。",
+              "scope": "贷款或分期支付协议的核实事项。",
+              "boundary": "分期是否属于贷款要看协议和主体；不能仅凭分期二字认定违法。",
+              "tags": [
+                "分期",
+                "借款协议",
+                "贷款利率",
+                "还款",
+                "培训贷",
+                "违约责任"
+              ],
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "training_loan",
+                "contract"
+              ],
+              "classification_reason": "招聘告知、收费扣证或官方求职预防提示",
+              "classified_at": "2026-10-07",
+              "alternate_urls": [
+                "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+              ],
+              "source_publisher": "人力资源和社会保障部、中央网络安全和信息化委员会办公室、教育部、公安部、国家金融监督管理总局",
+              "source_site": "人力资源和社会保障部",
+              "source_access_note": "已定位原始发布页；本次直连超时，备用官方页面全文已核对。"
+            },
+            {
+              "id": "SUP-F12",
+              "title": "面试收培训费是否合法",
+              "kind": "support",
+              "text": "先问谁收、为何收、与录用有何关系。用人单位招用劳动者不得收取财物；真实自愿独立培训服务与附条件入职收费不同，不能仅见培训费三个字就自动套用第九条。\n关联依据编号：K001、K005",
+              "url": "https://flk.npc.gov.cn/detail?id=2c909fdd678bf17901678bf74d7106b3",
+              "location": "高频问答",
+              "published_at": "",
+              "verified_at": "2026-10-08",
+              "scope": "大学生招聘、签约、用工与就业权益咨询",
+              "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+              "tags": [
+                "面试收培训费是否合法",
+                "高频问答"
+              ],
+              "content_form": "reviewed_support",
+              "verification_status": "curated_with_references",
+              "related_article_ids": [
+                "K001",
+                "K005"
+              ],
+              "support_category": "高频问答",
+              "origin_document": "大学生就业权益高频问题回答.docx",
+              "stage_scope": "both",
+              "employment_stages": [
+                "preemployment",
+                "employed"
+              ],
+              "risk_topics": [
+                "training_loan",
+                "contract"
+              ],
+              "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+              "classified_at": "2026-10-07",
+              "source_publisher": "作品团队",
+              "source_role": "整理者",
+              "source_relation": "related_official_basis",
+              "source_site": "关联官方原文，团队整理内容并非官方原文"
+            },
+            {
+              "id": "SUP-A01",
+              "title": "入职收费与培训贷款",
+              "kind": "support",
+              "text": "先暂停新增付款和不明授权，保存招聘、协议、转账、聊天证据；按主体及争议性质选择人社、消费维权、民事诉讼等渠道；涉嫌犯罪或人身危险报警。已签借款不要自行停还款，合同取消不当然免除借贷责任。\n关联依据编号：K001、K005",
+              "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202605/t20260515_576264.html",
+              "location": "维权行动卡",
+              "published_at": "",
+              "verified_at": "2026-10-08",
+              "scope": "大学生招聘、签约、用工与就业权益咨询",
+              "boundary": "团队整理的辅助资料，不是官方规范原文；不能单独支撑风险定性。请读取关联依据。必须核对适用条件、例外、时间、地域及用户事实；不代替司法或行政认定。",
+              "tags": [
+                "入职收费与培训贷款",
+                "维权行动卡"
+              ],
+              "content_form": "reviewed_support",
+              "verification_status": "curated_with_references",
+              "related_article_ids": [
+                "K001",
+                "K005"
+              ],
+              "support_category": "维权行动卡",
+              "origin_document": "维权行动指南.docx",
+              "stage_scope": "both",
+              "employment_stages": [
+                "preemployment",
+                "employed"
+              ],
+              "risk_topics": [
+                "fees",
+                "training_loan",
+                "contract"
+              ],
+              "classification_reason": "规范及预防类比可用于拟签材料，不能认定实际用工",
+              "classified_at": "2026-10-07",
+              "source_publisher": "作品团队",
+              "source_role": "整理者",
+              "source_relation": "related_official_basis",
+              "source_site": "关联官方原文，团队整理内容并非官方原文",
+              "alternate_urls": [
+                "https://chinajob.mohrss.gov.cn/h5/c/2026-05-18/543038.shtml"
+              ],
+              "source_access_note": "原始发布页本次直连超时，备用官方页面全文已核对。"
+            },
+            {
+              "id": "O003-facts",
+              "title": "虚构化妆师助理岗位、招聘转为收费培训",
+              "kind": "case",
+              "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+              "location": "第7项：山东青岛两公司“招转培”案件 · 调查事实",
+              "published_at": "2025-12-11",
+              "verified_at": "2026-10-08",
+              "text": "【官方发布案例的核对摘要，非完整裁判文书】青岛某文化服务公司没有化妆师岗位，却招聘化妆师助理；面试时以缺乏经验为由，引导求职者与另一科技公司签培训协议。",
+              "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+              "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+              "tags": [
+                "化妆师助理",
+                "虚假岗位",
+                "没有工作经验",
+                "招转培",
+                "培训协议",
+                "退还培训费"
+              ],
+              "case_id": "O003",
+              "chunk_role": "facts",
+              "related_ids": [
+                "O003-facts",
+                "O003-reasoning",
+                "O003-outcome"
+              ],
+              "source_publisher": "人力资源和社会保障部",
+              "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+              "content_form": "official_case_summary",
+              "verification_status": "official_source_checked",
+              "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+              "decision_type": "administrative_enforcement",
+              "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "agency",
+                "training_loan",
+                "job_truth",
+                "contract"
+              ],
+              "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+              "classified_at": "2026-10-07",
+              "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+            },
+            {
+              "id": "O003-reasoning",
+              "title": "虚构化妆师助理岗位、招聘转为收费培训",
+              "kind": "case",
+              "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+              "location": "第7项：山东青岛两公司“招转培”案件 · 执法认定",
+              "published_at": "2025-12-11",
+              "verified_at": "2026-10-08",
+              "text": "【官方发布案例的核对摘要，非完整裁判文书】人社部门查明虚假招聘信息，以及另一公司未经许可开展职业技能培训和职业中介活动。",
+              "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+              "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+              "tags": [
+                "化妆师助理",
+                "虚假岗位",
+                "没有工作经验",
+                "招转培",
+                "培训协议",
+                "退还培训费"
+              ],
+              "case_id": "O003",
+              "chunk_role": "reasoning",
+              "related_ids": [
+                "O003-facts",
+                "O003-reasoning",
+                "O003-outcome"
+              ],
+              "source_publisher": "人力资源和社会保障部",
+              "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+              "content_form": "official_case_summary",
+              "verification_status": "official_source_checked",
+              "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+              "decision_type": "administrative_enforcement",
+              "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "agency",
+                "training_loan",
+                "job_truth",
+                "contract"
+              ],
+              "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+              "classified_at": "2026-10-07",
+              "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+            },
+            {
+              "id": "O003-outcome",
+              "title": "虚构化妆师助理岗位、招聘转为收费培训",
+              "kind": "case",
+              "url": "https://chrm.mohrss.gov.cn/?p=14881&post_type=post",
+              "location": "第7项：山东青岛两公司“招转培”案件 · 处理结果",
+              "published_at": "2025-12-11",
+              "verified_at": "2026-10-08",
+              "text": "【官方发布案例的核对摘要，非完整裁判文书】责令限期改正、关闭职业中介、停止办学、退还所收费用。官方未披露退款完成或刑事判决。",
+              "scope": "虚假岗位招聘与无许可培训、职业中介活动。",
+              "boundary": "仅收录官方行政处理结果；责令退费不等于所有求职者已实际收到退款。",
+              "tags": [
+                "化妆师助理",
+                "虚假岗位",
+                "没有工作经验",
+                "招转培",
+                "培训协议",
+                "退还培训费"
+              ],
+              "case_id": "O003",
+              "chunk_role": "outcome",
+              "related_ids": [
+                "O003-facts",
+                "O003-reasoning",
+                "O003-outcome"
+              ],
+              "source_publisher": "人力资源和社会保障部",
+              "source_case_position": "第7项：山东青岛两公司“招转培”案件",
+              "content_form": "official_case_summary",
+              "verification_status": "official_source_checked",
+              "verification_note": "已打开官方网页逐项核对；未独立调取完整裁判文书。日期为官网发布日期，不是裁判日期。",
+              "decision_type": "administrative_enforcement",
+              "procedural_status": "行政责令改正、停止办学和退费；未披露退款完成",
+              "stage_scope": "pre",
+              "employment_stages": [
+                "preemployment"
+              ],
+              "risk_topics": [
+                "fees",
+                "agency",
+                "training_loan",
+                "job_truth",
+                "contract"
+              ],
+              "classification_reason": "案情涉及录用、求职收费或招聘阶段",
+              "classified_at": "2026-10-07",
+              "source_site": "中国人力资源市场网 人力资源和社会保障部主办"
+            }
+          ]
+        },
+        {
+          "tool": "quality_review",
+          "round": 1,
+          "mode": "audit",
+          "issues": [
+            {
+              "code": "duplicate_risk",
+              "detail": "草稿 findings[2] 以『催促“今天确认名额”的限时压力式推销』独立成条。用户原文为『他说可以分期，不用现在一次性付清，并催我今天确认名额。』该催促完全服务于同一笔9800元收费交易，按规则‘催促如果服务于同一笔收费交易，合入该交易的说明，不单独计数’，应并入 findings[0]（招转培）的说明或 suggestions，不应另计一条风险。",
+              "finding_indexes": [
+                2
+              ],
+              "evidence_ids": [
+                "K005"
+              ]
+            },
+            {
+              "code": "duplicate_risk",
+              "detail": "草稿 findings[1] 以『以“可分期”替代一次性付清，提示可能存在培训贷或借款义务』独立成条（attention级）。用户原文仅称『他说可以分期，不用现在一次性付清』，并自述『也不知道……分期是不是贷款』，即贷款性质纯属未知核实项，无任何借款协议或第三方放款证据。规则明确：未知贷款性质只是核实项，不能以‘可能是独立法律关系’将其作为风险条；收费招转培与可能贷款可在同项解释中保留，只有独立异常借款义务或行为已有证据时才考虑单列。建议将分期/是否贷款并入 findings[0] 的解释，并移入 limitations 或 self_checks（待拿到借款协议等证据再单列）。",
+              "finding_indexes": [
+                1
+              ],
+              "evidence_ids": [
+                "K005",
+                "K006"
+              ]
+            },
+            {
+              "code": "unsupported_fact",
+              "detail": "草稿摘要写『面试后却以你能力不足为由要求先交9800元培训费』，其中‘先交9800元培训费’含一次性先行付清之意。对应用户原文为『需要先参加两个月培训，费用9800元』且『可以分期，不用现在一次性付清』——‘先参加培训且费用9800’不等于‘先交清9800’，收费时间与方式并未明确。建议改为『要求先参加费用9800元的培训，并称可分期、催当天确认名额』，避免把尚不明确的付款时点写成先行付清。",
+              "finding_indexes": [],
+              "evidence_ids": []
+            }
+          ],
+          "checks": [
+            {
+              "title": "",
+              "finding_indexes": [],
+              "evidence_ids": [],
+              "name": "stage",
+              "verdict": "pass",
+              "detail": "用户明确‘还没有入职、签协议或付款’，为大四找第一份工作，属求职前阶段；草稿 employment_stage=preemployment 与最新明确说明一致，未凭‘培训后安排工作’‘入职后’等约定用语判为已入职。"
+            },
+            {
+              "title": "",
+              "finding_indexes": [],
+              "evidence_ids": [],
+              "name": "facts",
+              "verdict": "issues",
+              "detail": "已明确事实：招聘软件测试助理、不要求经验、月薪6000—8000元、培训两个月、费用9800元、可分期、催今天确认名额、未入职/未签约/未付款、培训提供方与收款方未知。草稿摘要‘要求先交9800元培训费’把‘先参加培训（费用9800）’写成先行付清，与用户‘可以分期，不用现在一次性付清’不一致；其余金额、区间、时限、未付款均与原文吻合，未出现‘已收款/已付款’式扩写。"
+            },
+            {
+              "title": "",
+              "finding_indexes": [],
+              "evidence_ids": [],
+              "name": "updates",
+              "verdict": "pass",
+              "detail": "本轮 history 为空、latest_report 为 null、无旧版报告，change_reason 为空符合首次交付；未发现以旧结论覆盖新事实，也无可被撤回的旧要求、旧押金或旧期限残留。"
+            },
+            {
+              "title": "",
+              "finding_indexes": [],
+              "evidence_ids": [],
+              "name": "risk_grouping",
+              "verdict": "issues",
+              "detail": "三条 finding 实为同一笔9800元收费交易：findings[1]（可分期→可能培训贷）属贷款性质未知的核实项，应在招转培条内保留或移入 limitations/self_checks，不宜单列；findings[2]（催促今天确认名额）服务于同一收费交易，应合入该交易说明、不单独计数。正文未写‘已合并’却实际拆成三条，属风险计数偏多。"
+            },
+            {
+              "title": "",
+              "finding_indexes": [],
+              "evidence_ids": [],
+              "name": "legal_basis",
+              "verdict": "pass",
+              "detail": "引用的 K005（招转培风险提示）、K006（涉贷款协议告诫）、K001（劳动合同法第九条）与结论对应，并对第九条适用保留‘需先核实收费主体与招用环节关系’的条件；LL-2018-068 用于说明培训经费不构成求职者先自费的理由；O003、O004 案例均标注为个案参考、未据此补写用户事实或代替规范，属于合理引用。"
+            },
+            {
+              "title": "",
+              "finding_indexes": [],
+              "evidence_ids": [],
+              "name": "advice",
+              "verdict": "pass",
+              "detail": "建议贴合求职前阶段：暂缓付款、签约、确认名额，不办理分期/授信，要求书面说明培训主体与收款方、分期性质，明确‘确需独立培训应与求职分开评估、不能把付费当作获得岗位的条件’；未保证岗位安全、未预测裁判结果、未要求现在拿出尚不存在的付款凭证，也提示了核查不代表可继续付费求职。"
+            },
+            {
+              "title": "",
+              "finding_indexes": [],
+              "evidence_ids": [],
+              "name": "delivery",
+              "verdict": "pass",
+              "detail": "summary、message、limitations、change_reason 与正文结论方向一致，change_reason 为空与首次交付相符；自然语言字符串未出现 evidence_ids/legal_claims/category 等内部字段名，未自称法院，未把系统审核状态写成‘审核已通过’，仅称‘已生成有限报告’。"
+            }
+          ],
+          "status": "changes_requested"
+        },
+        {
+          "tool": "quality_revision",
+          "round": 1,
+          "status": "validated"
+        },
+        {
+          "tool": "quality_review",
+          "round": 2,
+          "mode": "audit",
+          "issues": [],
+          "checks": [
+            {
+              "title": "",
+              "finding_indexes": [],
+              "evidence_ids": [],
+              "name": "stage",
+              "verdict": "pass",
+              "detail": "用户原文明确『还没有入职、签协议或付款』『正在找第一份工作』，属求职前阶段；草稿 employment_stage=preemployment 与最新明确说明一致。未把广告/HR 所述『培训后安排工作』『入职后』等约定或未来用语误判为已入职、已提供劳动。事实表将阶段记为 unknown 属整理偏差，不影响草稿判断。"
+            },
+            {
+              "title": "",
+              "finding_indexes": [],
+              "evidence_ids": [],
+              "name": "facts",
+              "verdict": "pass",
+              "detail": "已明确关键事实与草稿核对：招聘软件测试助理、不要求工作经验、月薪6000—8000元、公司提供岗前培训并称培训后安排工作；面试后HR称基础不足、需先参加两个月培训、费用9800元；可分期、不用现在一次性付清、催今天确认名额；未入职/未签协议/未付款；培训提供方、费用收款方、分期是否贷款均未知。草稿摘要已改为『要求你先参加费用9800元的培训，并称可以分期、催你当天确认名额』，与『先参加培训（费用9800）』『可以分期，不用现在一次性付清』一致，未再把付款时点写成先行付清。费用工资比按完整区间6000—8000计算为约1.2—1.6个月，数值正确。limitations 中『未提供/未确认』项（培训协议、收款方、放款方、公司名称地址等）均与用户明示的未知项吻合，未出现把个人聊天账号误写成收款账户、或把未付款写成已付款的扩写。"
+            },
+            {
+              "title": "",
+              "finding_indexes": [],
+              "evidence_ids": [],
+              "name": "updates",
+              "verdict": "pass",
+              "detail": "本轮 history 为空、latest_report 为 null，无旧版报告或已撤回要求、已删除押金、已改正期限需要处理，也无以旧结论覆盖新事实的情形。change_reason 为空与首次交付相符（即使内部审核修改过草稿，首次交付的修订说明为空也符合约定），未发现把旧版内容说成新版原文或不实署名来源的问题。"
+            },
+            {
+              "title": "",
+              "finding_indexes": [],
+              "evidence_ids": [],
+              "name": "risk_grouping",
+              "verdict": "pass",
+              "detail": "本轮仅保留一条 finding『招聘岗位疑似被转为高额付费培训（招转培）』，将同笔9800元收费交易中的付款前置、可分期、催促确认名额一并置于该条解释与建议中，符合『催促与分期服务于同一笔收费交易合入该交易、不再单列』的要求；未知的贷款性质以『分期究竟是公司内部付款安排还是第三方贷款，你目前也不清楚』保留为核实项并写入 limitations/self_checks，未作为独立风险条。上一轮 findings[1]（可能培训贷）、findings[2]（催促限时）已合并且不再重复计数，无『已合并不重复计数』却仍列多项的矛盾。"
+            },
+            {
+              "title": "",
+              "finding_indexes": [],
+              "evidence_ids": [],
+              "name": "legal_basis",
+              "verdict": "pass",
+              "detail": "引用与结论对应：K005 支撑『以免付高额培训费为条件安排岗位应果断拒绝』，K006 支撑涉贷款协议前核实放款方、利率、还款与违约责任，K001 用于用人单位不得以其他名义收取财物并保留『需先核实收费主体、行为与招用环节关系，不把独立合法培训服务或所有贷款自动套入』的条件；LL-2018-068 仅说明培训经费不构成求职者须先自费的理由，未越界推出免费或保证录用；O003/O004 案例均标注为个案参考、非本案定性，未补写用户事实或代替规范。未发现明确法律错误或不区分适用条件的简化。"
+            },
+            {
+              "title": "",
+              "finding_indexes": [],
+              "evidence_ids": [],
+              "name": "advice",
+              "verdict": "pass",
+              "detail": "建议贴合求职前、尚未付款签约的阶段：暂缓支付9800元、暂缓确认名额、暂缓签署任何分期或借款文件，要求书面说明培训主体与收款方、分期性质；提示在看清协议前不点击贷款/分期平台注册、授权、授信链接、不提供身份证银行卡与人脸识别/征信授权；明确『若确有独立培训需求应与本次求职分开评估、不能把付费当作获得岗位的条件』。未保证岗位安全、未预测裁判结果，也未要求现在拿出尚不存在的付款凭证；prevention 的退出信号（拒书面说明、拒给协议文本、坚持先付款）具可执行性。"
+            },
+            {
+              "title": "",
+              "finding_indexes": [],
+              "evidence_ids": [],
+              "name": "delivery",
+              "verdict": "pass",
+              "detail": "summary、limitations、prevention、change_reason 相互一致，均围绕招转培、暂缓付款签约与待核实项展开；message 为空，未与报告结论冲突。自然语言中未出现 evidence_ids、legal_claims、category 等内部技术字段名，未自称法院或代替司法认定，也未把旧版『复核未完成』等系统状态或『审核已通过』写入正文。change_reason 为空对应首次交付，非相反事实表述。"
+            }
+          ],
+          "status": "passed"
+        }
+      ]
+    ],
+    "revision": 1,
+    "updated_at": "2026-10-08T11:46:01.611546+00:00",
+    "fact_ledgers": [
+      {
+        "turn_index": 1,
+        "ledger": {
+          "items": [
+            {
+              "status": "known",
+              "statement": "用户是大四学生，正在找第一份工作。",
+              "quote_ids": [
+                "Q30da5494b235ac1b6edd"
+              ],
+              "rationale": "",
+              "evidence": [
+                {
+                  "quote_id": "Q30da5494b235ac1b6edd",
+                  "material_id": "user",
+                  "page_number": 0,
+                  "quote": "我是大四学生，正在找第一份工作，还没有入职、签协议或付款。"
+                }
+              ]
+            },
+            {
+              "status": "known",
+              "statement": "用户目前还没有入职、签协议或付款。",
+              "quote_ids": [
+                "Q30da5494b235ac1b6edd"
+              ],
+              "rationale": "",
+              "evidence": [
+                {
+                  "quote_id": "Q30da5494b235ac1b6edd",
+                  "material_id": "user",
+                  "page_number": 0,
+                  "quote": "我是大四学生，正在找第一份工作，还没有入职、签协议或付款。"
+                }
+              ]
+            },
+            {
+              "status": "known",
+              "statement": "招聘广告内容为招聘软件测试助理，不要求工作经验，月薪6000—8000元，公司提供岗前培训，培训后安排工作。",
+              "quote_ids": [
+                "Q88e3d528bd9c624b4135"
+              ],
+              "rationale": "",
+              "evidence": [
+                {
+                  "quote_id": "Q88e3d528bd9c624b4135",
+                  "material_id": "user",
+                  "page_number": 0,
+                  "quote": "招聘广告写：招聘软件测试助理，不要求工作经验，月薪6000—8000元，公司提供岗前培训，培训后安排工作。"
+                }
+              ]
+            },
+            {
+              "status": "known",
+              "statement": "面试结束后，HR说用户基础不足，需要先参加两个月培训，费用9800元。",
+              "quote_ids": [
+                "Q037229d015d4514f3bbb"
+              ],
+              "rationale": "",
+              "evidence": [
+                {
+                  "quote_id": "Q037229d015d4514f3bbb",
+                  "material_id": "user",
+                  "page_number": 0,
+                  "quote": "面试结束后，HR说我基础不足，需要先参加两个月培训，费用9800元。"
+                }
+              ]
+            },
+            {
+              "status": "known",
+              "statement": "HR说培训费用可以分期，不用现在一次性付清，并催用户今天确认名额。",
+              "quote_ids": [
+                "Q9c2bf5c9af52afcac43d"
+              ],
+              "rationale": "",
+              "evidence": [
+                {
+                  "quote_id": "Q9c2bf5c9af52afcac43d",
+                  "material_id": "user",
+                  "page_number": 0,
+                  "quote": "他说可以分期，不用现在一次性付清，并催我今天确认名额。"
+                }
+              ]
+            },
+            {
+              "status": "known",
+              "statement": "用户目前只拿到了招聘截图和聊天内容。",
+              "quote_ids": [
+                "Q01a44ae3fea8b6ed75c9"
+              ],
+              "rationale": "",
+              "evidence": [
+                {
+                  "quote_id": "Q01a44ae3fea8b6ed75c9",
+                  "material_id": "user",
+                  "page_number": 0,
+                  "quote": "我现在只拿到了招聘截图和这些聊天内容，还没看到培训协议，也不知道培训是谁提供、费用付给谁、分期是不是贷款。"
+                }
+              ]
+            },
+            {
+              "status": "known",
+              "statement": "用户还没看到培训协议。",
+              "quote_ids": [
+                "Q01a44ae3fea8b6ed75c9"
+              ],
+              "rationale": "",
+              "evidence": [
+                {
+                  "quote_id": "Q01a44ae3fea8b6ed75c9",
+                  "material_id": "user",
+                  "page_number": 0,
+                  "quote": "我现在只拿到了招聘截图和这些聊天内容，还没看到培训协议，也不知道培训是谁提供、费用付给谁、分期是不是贷款。"
+                }
+              ]
+            },
+            {
+              "status": "unknown",
+              "statement": "培训由谁提供未知。",
+              "quote_ids": [],
+              "rationale": "",
+              "evidence": []
+            },
+            {
+              "status": "unknown",
+              "statement": "培训费用支付给谁未知。",
+              "quote_ids": [],
+              "rationale": "",
+              "evidence": []
+            },
+            {
+              "status": "unknown",
+              "statement": "分期是否属于贷款未知。",
+              "quote_ids": [],
+              "rationale": "",
+              "evidence": []
+            },
+            {
+              "status": "unknown",
+              "statement": "培训后是否安排工作及安排的工作主体和条件未知。",
+              "quote_ids": [],
+              "rationale": "",
+              "evidence": []
+            },
+            {
+              "status": "unknown",
+              "statement": "培训协议的具体条款和签约主体未知。",
+              "quote_ids": [],
+              "rationale": "",
+              "evidence": []
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "flow_completed": true,
+  "elapsed_seconds": 140.2
+}

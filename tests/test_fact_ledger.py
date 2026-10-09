@@ -23,6 +23,39 @@ class FactLedgerTests(unittest.TestCase):
  setUp=helper.ReportQualityTests.setUp
  tearDown=helper.ReportQualityTests.tearDown
  report=helper.ReportQualityTests.report
+ def test_quote_ids_are_short_unique_and_preserve_originals(self):
+  from agent.engine import material_quotes
+  text='尚未付款。费用9800元。可以分期。'
+  quotes=material_quotes({'messages':[]},[],text)
+  self.assertEqual([q['quote_id'] for q in quotes],['Q0001','Q0002','Q0003'])
+  self.assertEqual(''.join(q['quote'] for q in quotes),text)
+ def test_retry_receives_exact_reference_error_and_recovers(self):
+  class Repairing(LedgerModel):
+   def extract_facts(self,context):
+    self.extract_contexts.append(context)
+    if len(self.extract_contexts)==1:return {'items':[{'status':'known','statement':'公司要求保证金','quote_ids':['Q000'],'rationale':''}]}
+    feedback=context['repair_feedback']
+    self_feedback=feedback['errors'][0]
+    assert self_feedback['type']=='unknown_quote_id'
+    assert feedback['allowed_quote_ids']==['Q0001']
+    return {'items':[{'status':'known','statement':'公司要求保证金','quote_ids':['Q0001'],'rationale':''}]}
+  model=Repairing([tool(),output('report',self.report())],[[]])
+  with self.assertLogs('agent.engine',level='WARNING') as logs:
+   result=AgentEngine(self.sessions,self.materials,FakeRag(),model).turn(self.sid,'公司要求保证金')
+  self.assertEqual(result['action'],'report')
+  self.assertIn('unknown_quote_id',' '.join(logs.output))
+  self.assertNotIn('公司要求保证金',' '.join(logs.output))
+ def test_interface_error_is_not_disguised_as_reference_error(self):
+  from agent.model import ModelError
+  class Unavailable(LedgerModel):
+   def extract_facts(self,context):
+    self.extract_contexts.append(context)
+    raise ModelError('模型接口HTTP 429，本次未生成报告')
+  model=Unavailable([],[])
+  with self.assertRaisesRegex(AgentError,'HTTP 429'):
+   AgentEngine(self.sessions,self.materials,FakeRag(),model).turn(self.sid,'公司要求保证金')
+  self.assertEqual(len(model.extract_contexts),2)
+
  def test_fact_extraction_retry_has_a_fixed_limit(self):
   model=LedgerModel([tool(),output('report',self.report())],[[]],bad=True)
   with self.assertRaises(AgentError):AgentEngine(self.sessions,self.materials,FakeRag(),model).turn(self.sid,'公司要求保证金')

@@ -1,0 +1,39 @@
+{
+  "count": 398,
+  "removed_ids": [
+    "C003-facts",
+    "C003-reasoning",
+    "C003-outcome"
+  ],
+  "updated_ids": [
+    "C001-facts",
+    "C001-reasoning",
+    "C001-outcome",
+    "C002-facts",
+    "C002-reasoning",
+    "C002-outcome",
+    "C005-facts",
+    "C005-reasoning",
+    "C005-outcome",
+    "SUP-C12",
+    "SUP-C13",
+    "SUP-C15"
+  ],
+  "vectors_updated": 3,
+  "vectors_reused": 395,
+  "retrieval_checks": [
+    {
+      "id": "SUP-C12",
+      "url": "https://cnwomen.tianditu.gov.cn/12338/"
+    },
+    {
+      "id": "SUP-C13",
+      "url": "https://chinajob.mohrss.gov.cn/c/2023-10-09/388347.shtml"
+    },
+    {
+      "id": "SUP-C15",
+      "url": "https://www.mee.gov.cn/zcwj/gwywj/202205/t20220516_982293.shtml"
+    }
+  ],
+  "withdrawn_case_not_retrieved": true
+}
