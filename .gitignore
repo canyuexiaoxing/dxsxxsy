@@ -15,3 +15,10 @@ frontend/dist/
 
 # 本地原始裁判文书与追溯材料
 knowledge/private/
+
+# 安装包生成产物
+build/
+dist/
+release/
+knowledge/public-seed.json
+packaging/MicrosoftEdgeWebview2Setup.exe

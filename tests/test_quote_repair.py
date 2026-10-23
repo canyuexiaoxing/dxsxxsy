@@ -10,6 +10,8 @@ SOURCE={'id':'K007','kind':'guide','text':'建议投诉举报','title':'指南'}
 class Rag:
     def search(self,query):return [SOURCE]
 class Model:
+    # Quote tests simulate explicit report authorization.
+    def classify_report_request(self,text):return True
     def __init__(self,responses):self.responses=responses;self.contexts=[]
     def complete(self,messages,**kwargs):
         self.contexts.append(json.loads(json.dumps(messages)))

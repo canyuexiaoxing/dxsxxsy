@@ -1,3 +1,4 @@
+from agent.timing import timed
 from urllib.parse import urlsplit
 import httpx
 from agent.tasks import check_cancelled,abortable_client
@@ -10,6 +11,7 @@ class OllamaEmbedding:
         if parsed.hostname not in {'127.0.0.1','localhost','::1'} or parsed.scheme not in {'http','https'}:
             raise ValueError('本地Embedding地址必须指向本机')
 
+    @timed('embedding')
     def encode(self,texts):
         try:
             with httpx.Client(timeout=120,trust_env=False) as client, abortable_client(client):

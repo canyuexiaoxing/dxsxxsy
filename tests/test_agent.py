@@ -31,6 +31,8 @@ def output(action='ask',report=None):
     return {'role':'assistant','content':json.dumps({'action':action,'message':'请核实收费主体和用途。','questions':['谁收钱？'] if action=='ask' else [],'evidence_ids':['K001'],'report':report},ensure_ascii=False)}
 
 class FakeModel:
+    # Existing report-validation fixtures simulate an explicit user request.
+    def classify_report_request(self,text):return True
     def __init__(self,outputs): self.outputs=list(outputs)
     def complete(self,messages,tools=None,force_search=False): return self.outputs.pop(0)
 

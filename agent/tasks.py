@@ -53,6 +53,7 @@ class TaskRegistry:
     @contextmanager
     def scope(self,sid,request_id):
         token=self.get(sid,request_id)
+        token.request_id=request_id
         with token.lock:
             token.check()
             if token.status=='completed':raise TaskCancelled('本次任务已完成，请勿重复提交')

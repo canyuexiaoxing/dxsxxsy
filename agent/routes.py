@@ -1,3 +1,4 @@
+from .timing import event
 from pathlib import Path
 from uuid import uuid4
 from .tasks import TaskRegistry,TaskCancelled
@@ -6,7 +7,7 @@ from typing import Annotated,Literal
 from fastapi import APIRouter,HTTPException
 from fastapi.responses import Response
 from pydantic import BaseModel,Field
-from dotenv import dotenv_values
+from reader.config import configuration_values
 import os
 from reader.store import MaterialStore
 from reader.models import InputError
@@ -29,7 +30,7 @@ class Message(BaseModel):
 def make_router(settings,tasks=None):
     tasks=tasks or TaskRegistry()
     root=Path(__file__).resolve().parent.parent
-    values={**dotenv_values(root/'.env'),**os.environ}
+    values=configuration_values()
     rag=KnowledgeIndex(settings.data_dir/'chroma',root/'knowledge'/'entries.json',OllamaEmbedding(values.get('EMBEDDING_MODEL') or 'qwen3-embedding:4b',values.get('EMBEDDING_BASE_URL') or 'http://127.0.0.1:11434'))
     sessions=SessionStore(settings.data_dir)
     materials=MaterialStore(settings.data_dir)
@@ -68,7 +69,9 @@ def make_router(settings,tasks=None):
         except KeyError:raise HTTPException(404,'会话不存在') from None
         if not request_id or len(request_id)>64 or not all(c.isalnum() or c in '_-' for c in request_id):
             raise HTTPException(422,'任务编号无效')
-        return {'status':tasks.get(sid,request_id).cancel()}
+        status=tasks.get(sid,request_id).cancel()
+        event('cancel_request','received',session_id=sid,request_id=request_id,status=status)
+        return {'status':status}
     @router.delete('/api/sessions/{sid}')
     def delete_session(sid:str):
         try:sessions.get(sid)
