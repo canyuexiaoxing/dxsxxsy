@@ -85,6 +85,17 @@ findings只输出独立风险；检查事项直接放limitations，建议放sugg
 正文、摘要、limitations、change_reason不得输出内部字段名称或技术过程；只讲用户理解的事实变化。不得向用户披露审核轮次、内部修改意见或agent协作过程；只解释材料缺口和判断局限。建议涉及核查或咨询时，应附资料中能够确认的官方入口和热线；不得编造地方网址或电话号码。
 """
 
+PROMPT += """
+对话方式更新（优先遵循）：
+普通材料分析以澄清信息为先，不把聊天回复写成无附件的完整报告。先逐项对照用户本轮、历史用户说明、材料和fact_ledger，判断是否还存在影响当前建议的重要缺口。
+只要存在用户尚未回答、尚未说明不知道或无法获得、且会改变判断或行动的关键缺口，优先action=ask，questions列1至3个最重要且用户能回答的问题。不能因为已能看出明显风险就跳过追问；也不能把追问埋在message的长篇核查清单中。问题放questions，message只写基于现有信息的简短分析和当下措施，不再列“可以追问对方”等问题清单，通常120至250字，最多600字，不重复问题，不列完整风险报告、全面法条解读或多层行动清单。界面先展示questions，再展示message。
+例如：用户说未签协议、收费培养36800元或工作后按薪资分成、承诺内推，却未说明招聘与培训主体、内推是否保证录用、退出及费用条件。应先追问其中最关键的1至3项，message只指出当前已有的收费与录用绑定疑点，提醒先核实再签付；不能直接输出全面风险分析而questions为空。
+如果用户已经明确不知道某项，不反复追问它；继续检查其他尚可回答的重要缺口。用户已说未拿到协议时，不再问“协议里的退款、违约条款怎么写”，也不以“若没有协议请说明”变相重复；改问对方已口头或书面说过的承诺，或其他可回答的主体与收费信息。索取协议可以放简短建议，但不要当成用户当前必须答出的协议内容。其余缺口都无法补充或不影响当前建议时action=answer，简短说明已知和仍不确定的部分。不根据固定字数、固定轮数或是否首次输入机械追问。
+纯粹咨询术语、追问上一条建议、打招呼及已完整说明的单个问题，直接简短回答，不为凑轮数追问。
+仅context.report_requested=true时才进入report/revise，用户主动要求报告时用现有资料给出有边界的报告，不因未知信息阻止生成；未知列入待核实。报告后的普通问答仍按本轮问题处理。
+"""
+
+
 def check_sensitive_text(text):
     identity=r'(?<![0-9])[1-9][0-9]{5}(?:19|20)[0-9]{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12][0-9]|3[01])[0-9]{3}[0-9Xx](?![0-9])'
     labelled=r'(?:银行卡(?:号)?|银行账号|身份证(?:号码|号)?|家庭住址|家庭地址)\s*[:：=]\s*[^\s，。；;]{4,}'
@@ -255,7 +266,7 @@ class AgentEngine:
                         raise CitationError([{'type':'report_not_requested','field':['action'],
                                               'detail':'用户本轮没有要求报告。改为ask追问或answer简短分析与措施，report必须为null，不在message中变相输出完整报告。'}])
                     if original_action is None:original_action=result.action
-                    elif result.action!=original_action:raise CitationError([{'type':'repair_action_changed','detail':'修正不得改变原action，必须保留报告或问答动作'}])
+                    elif result.action!=original_action and not (not report_requested and result.action in {'ask','answer'} and original_action in {'ask','answer'}):raise CitationError([{'type':'repair_action_changed','detail':'修正不得改变原action，必须保留报告或问答动作'}])
                     quote_repairs=resolve_quotes(result,catalogue)
                     if quote_repairs:trace.append({'tool':'quote_id_recovery','stage':'draft','repairs':quote_repairs})
                     self._validate(result,session,material_data,text,sources)
@@ -382,11 +393,13 @@ class AgentEngine:
     def _validate(self,result,session,materials,text,sources):
         if result.action=='report' and result.report and not session['reports']:
             result.report.change_reason=''  # First delivery has no preceding user report.
+        if result.action in {'ask','answer'} and len(result.message)>600:
+            raise CitationError([{'field':['message'],'type':'dialogue_too_long','detail':'普通对话最多600字；有关键缺口时改为ask，将1至3个问题放questions，message只保留简短分析与当前措施，不写完整报告。'}])
         if result.action=='answer' and not result.message.strip(): raise CitationError([{'field':['message'],'type':'empty_answer','detail':'action=answer时必须在message提供非空的用户可读回答，report仍为null'}])
         if any(key not in sources for key in result.evidence_ids): raise CitationError([{'field':['evidence_ids'],'type':'unretrieved_evidence'}])
         if result.action in {'ask','answer'} and result.report is not None: raise AgentError('普通问答不能隐式修改报告')
         if result.action=='ask':
-            if not result.questions: raise AgentError('追问不能为空')
+            if not result.questions: raise CitationError([{'field':['questions'],'type':'empty_questions','detail':'ask必须提供1至3个尚未解决的问题；信息已足够时改为answer，简短回答，report=null。'}])
             old={normal(q) for m in session['messages'] if m['role']=='assistant' for q in m['result'].get('questions',[])}
             if any(normal(q) in old for q in result.questions): raise AgentError('模型重复追问，请补充材料或要求先输出有限报告')
         if result.action in {'report','revise'}:

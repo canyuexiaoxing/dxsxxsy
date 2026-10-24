@@ -18,3 +18,6 @@
 .generation-status{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 4px 12px;color:#537468;font-size:13px}.generation-status>span{display:flex;align-items:center;gap:8px}.stop-generation{color:#9b4d40;border-color:#ebcfc7;background:#fff8f5;padding:8px 13px}.stop-generation:hover{background:#fff0eb}
 
 .history-row{display:flex;align-items:center;border-radius:10px;gap:2px}.history-row.selected{background:#e7f2ec}.history-row .history-item{flex:1;min-width:0;margin:0;padding-right:4px}.history-delete{flex-shrink:0;color:#8a9991;width:30px;height:32px;margin-right:4px}.history-delete:hover{color:#af5948;background:#fff0eb}
+
+/* Clarify first, then concise advice; keep the established mint palette. */
+.dialogue-heading{font-size:15px;font-weight:600;line-height:1.6;margin:0 0 10px;color:#287f68}.clarification-block{padding:16px 20px;border:1px solid #dbece5;border-radius:14px;background:#f3faf6;margin-bottom:20px}.clarification-block .questions{margin:0;padding-left:22px}.brief-analysis{margin-bottom:16px}.brief-analysis>p{margin-top:0}
